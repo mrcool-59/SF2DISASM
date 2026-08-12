@@ -38,30 +38,30 @@
 		dw Music_32
 		dw Music_32
 		dw Music_32
-		include "music09.asm"		; Music 09
-		include "music10.asm"		; Music 10
-		include "music11.asm"		; Music 11
-		include "music01.asm"		; Music 01
-		include "music02.asm"		; Music 02
-		include "music03.asm"		; Music 03 and 04 combined for optimization
-		include "music05.asm"		; Music 05
-		include "music06.asm"		; Music 06
-		include "music07.asm"		; Music 07
-		include "music08.asm"		; Music 08
-		include "music12.asm"		; Music 12
-		include "music13.asm"		; Music 13 and 14 combined for optimization
-		include "music15.asm"		; Music 15
-		include "music16.asm"		; Music 16
-		include "music17.asm"		; Music 17
-		include "music18.asm"		; Music 18
-		include "music19.asm"		; Music 19
-		include "music20.asm"		; Music 20
-		include "music21.asm"		; Music 21
-		include "music22.asm"		; Music 22
-		include "music23.asm"		; Music 23
-		include "music24.asm"		; Music 24
-		include "music25.asm"		; Music 25
-		include "music26.asm"		; Music 26
-		include "music27.asm"		; Music 27
-		include "music28.asm"		; Music 28
-		include "music32.asm"		; Music 32
+		include "music01.asm"
+		include "music02.asm"
+		include "music03.asm"
+		include "music05.asm"
+		include "music06.asm"
+		include "music07.asm"
+		include "music08.asm"
+		include "music09.asm"
+		include "music10.asm"
+		include "music11.asm"
+		include "music12.asm"
+		include "music13.asm"
+		include "music15.asm"
+		include "music16.asm"
+		include "music17.asm"
+		include "music18.asm"
+		include "music19.asm"
+		include "music20.asm"
+		include "music21.asm"
+		include "music22.asm"
+		include "music23.asm"
+		include "music24.asm"
+		include "music25.asm"
+		include "music26.asm"
+		include "music27.asm"
+		include "music28.asm"
+		include "music32.asm"
