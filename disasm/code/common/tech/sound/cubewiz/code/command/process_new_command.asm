@@ -28,9 +28,12 @@ ProcessNewCommand:
     cp  0F0h
     jp  z, ApplyOutputLevel
 
-    ; Music ids from 1 to 40h, SFX ids from 41h
+    ; Music ids from 1 to 40h, SFX ids from 41h, then music again from C1h
+	cp  0C1h
+	jp 	nc, $$handleMusicOrExtMusic
     cp  41h
-    jp  nc, $$loadSfx  
+    jp  nc, $$loadSfx
+$$handleMusicOrExtMusic:
     ld  ix, PREVIOUS_MUSIC
     cp  (ix)
     jp  nz, $$loadNewMusic
@@ -64,9 +67,9 @@ $$loadNewMusic:
     ld  (SAVED_MUSIC_BANK), a  
     pop  af
     push  af
-	cp  61h
+	cp  0E1h
     jr  nc, $$loadMusicFromBankExt2
-	cp  41h
+	cp  0C1h
     jr  nc, $$loadMusicFromBankExt1
     cp  21h
     jr  nc, $$loadMusicFromBank2
@@ -95,7 +98,7 @@ $$loadMusicFromBank2:
     jp  $$loadMusicEntry
 
 $$loadMusicFromBankExt1:
-    ; id from $41 to $60
+    ; id from $C1 to $E0
     ld  a, MUSIC_BANK_EXT_1  
     ld  (MUSIC_BANK), a
     call  LoadBank
@@ -104,11 +107,11 @@ $$loadMusicFromBankExt1:
     pop  af
     ld  (CURRENT_MUSIC), a
     ld  de, 8000h
-    sub  40h
+    sub  0C0h
     jp  $$loadMusicEntry
 
 $$loadMusicFromBankExt2:
-    ; id from $61 to $80
+    ; id from $E1 to $FF
     ld  a, MUSIC_BANK_EXT_2 
     ld  (MUSIC_BANK), a
     call  LoadBank
@@ -117,7 +120,7 @@ $$loadMusicFromBankExt2:
     pop  af
     ld  (CURRENT_MUSIC), a
     ld  de, 8000h
-    sub  60h
+    sub  0E0h
 
 $$loadMusicEntry:
     dec  a    ; decrement music/sound index (no $00 entry)
