@@ -28,12 +28,9 @@ ProcessNewCommand:
     cp  0F0h
     jp  z, ApplyOutputLevel
 
-    ; Music ids from 1 to 40h, SFX ids from 41h, then music again from C1h
-	cp  0C1h
-	jp 	nc, $$handleMusicOrExtMusic
+    ; Music ids from 1 to 40h, SFX ids from 41h
     cp  41h
     jp  nc, $$loadSfx
-$$handleMusicOrExtMusic:
     ld  ix, PREVIOUS_MUSIC
     cp  (ix)
     jp  nz, $$loadNewMusic
