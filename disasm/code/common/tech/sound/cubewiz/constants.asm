@@ -6,6 +6,8 @@ DAC_BANK_2_ROM_OFFSET          equ 01E8000h
 YM_INSTRUMENTS_BANK_ROM_OFFSET equ 01EB000h
 MUSIC_BANK_2_ROM_OFFSET        equ 01F0000h
 MUSIC_BANK_1_ROM_OFFSET        equ 01F8000h
+MUSIC_BANK_EXT_2_ROM_OFFSET    equ 0200000h ; Requires ROM to be expanded to >= 4MB and expanded music banks enabled
+MUSIC_BANK_EXT_1_ROM_OFFSET    equ 0208000h ; Requires ROM to be expanded to >= 4MB and expanded music banks enabled
 
 ; Banks defined by 32kB slot position in ROM, 
 ; and then pointers to mapped range 0x8000..0xFFFF when needed
@@ -15,6 +17,8 @@ DAC_BANK_1                     equ DAC_BANK_1_ROM_OFFSET/08000h
 DAC_BANK_2                     equ DAC_BANK_2_ROM_OFFSET/08000h
 MUSIC_BANK_1                   equ MUSIC_BANK_1_ROM_OFFSET/08000h
 MUSIC_BANK_2                   equ MUSIC_BANK_2_ROM_OFFSET/08000h
+MUSIC_BANK_EXT_1               equ MUSIC_BANK_EXT_1_ROM_OFFSET/08000h
+MUSIC_BANK_EXT_2               equ MUSIC_BANK_EXT_2_ROM_OFFSET/08000h
 YM_INSTRUMENTS_BANK            equ YM_INSTRUMENTS_BANK_ROM_OFFSET/08000h
 YM_INSTRUMENTS_BANK_OFFSET     equ YM_INSTRUMENTS_BANK_ROM_OFFSET#08000h+08000h
 

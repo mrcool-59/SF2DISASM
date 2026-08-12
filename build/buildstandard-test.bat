@@ -28,6 +28,14 @@ cd ../musicbank1-standard/
 echo Assembling music bank 1 ...
     ..\..\..\..\tools\asw\asw.exe .\musicbank1.asm
     ..\..\..\..\tools\asw\p2bin.exe .\musicbank1.p ..\musicbank1.bin -k -r $8000-$ffff
+cd ../musicbankext0/
+echo Assembling music bank ext 0 ...
+    ..\..\..\..\tools\asw\asw.exe .\musicbankext0.asm
+    ..\..\..\..\tools\asw\p2bin.exe .\musicbankext0.p ..\musicbankext0.bin -k -r $8000-$ffff
+cd ../musicbankext1/
+echo Assembling music bank ext 1 ...
+    ..\..\..\..\tools\asw\asw.exe .\musicbankext1.asm
+    ..\..\..\..\tools\asw\p2bin.exe .\musicbankext1.p ..\musicbankext1.bin -k -r $8000-$ffff
 cd ../sfxbank/
 echo Assembling SFX bank ...
     ..\..\..\..\tools\asw\asw.exe .\sfxbank.asm

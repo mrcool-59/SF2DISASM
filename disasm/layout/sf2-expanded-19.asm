@@ -1,6 +1,11 @@
 
 ; GAME SECTION 19 : ROM EXPANSION.
 
+		if (EXPANDED_MUSIC_BANKS=1)
+			include "data/sound/musicbankext1.bin"							; Extra Music Banks 1 and 0
+			include "data/sound/musicbankext0.bin"
+		endif
+		
         include "data\graphics\maps\maptilesets\entries.asm"                ; Map Tilesets
         align
         include "data\graphics\battles\backgrounds\entries.asm"             ; Battlescene Backgrounds

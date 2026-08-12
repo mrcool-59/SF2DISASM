@@ -64,6 +64,10 @@ $$loadNewMusic:
     ld  (SAVED_MUSIC_BANK), a  
     pop  af
     push  af
+	cp  61h
+    jr  nc, $$loadMusicFromBankExt2
+	cp  41h
+    jr  nc, $$loadMusicFromBankExt1
     cp  21h
     jr  nc, $$loadMusicFromBank2
     ; id from 1 to $20
@@ -88,6 +92,32 @@ $$loadMusicFromBank2:
     ld  (CURRENT_MUSIC), a
     ld  de, 8000h
     sub  20h
+    jp  $$loadMusicEntry
+
+$$loadMusicFromBankExt1:
+    ; id from $41 to $60
+    ld  a, MUSIC_BANK_EXT_1  
+    ld  (MUSIC_BANK), a
+    call  LoadBank
+    ld  a, (CURRENT_MUSIC)  
+    ld  (PREVIOUS_MUSIC), a
+    pop  af
+    ld  (CURRENT_MUSIC), a
+    ld  de, 8000h
+    sub  40h
+    jp  $$loadMusicEntry
+
+$$loadMusicFromBankExt2:
+    ; id from $61 to $80
+    ld  a, MUSIC_BANK_EXT_2 
+    ld  (MUSIC_BANK), a
+    call  LoadBank
+    ld  a, (CURRENT_MUSIC)  
+    ld  (PREVIOUS_MUSIC), a
+    pop  af
+    ld  (CURRENT_MUSIC), a
+    ld  de, 8000h
+    sub  60h
 
 $$loadMusicEntry:
     dec  a    ; decrement music/sound index (no $00 entry)
