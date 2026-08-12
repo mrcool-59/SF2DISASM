@@ -6,7 +6,9 @@
 
                 incbin "data/sound/pcmbank0.bin"
                 incbin "data/sound/pcmbank1.bin"
-                incbin "data/sound/yminst.bin"
+				incbinIfVanilla "data/sound/yminst.bin"
+                incbinIfStandard "data/sound/yminst-standard.bin"
+				
 SoundDriver:
                 
                 incbinIfStandard "data/sound/cubewiz.bin"

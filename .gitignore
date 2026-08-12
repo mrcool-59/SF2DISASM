@@ -280,6 +280,7 @@ disasm/data/scripting/map/testintro.asm
 *.nam
 *.til
 *.tfi
+disasm/data/sound/yminst-standard.bin
 disasm/data/sound/musicbank1/LostForest.txt
 disasm/data/sound/musicbank1/LostForest02.asm
 disasm/data/sound/musicbank1/propellerplanesf2.asm
