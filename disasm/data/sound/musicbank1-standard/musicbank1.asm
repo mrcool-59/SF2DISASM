@@ -38,13 +38,13 @@
 		dw Music_48		; SHADOWED
 		dw Music_48		; SHADOWED
 		dw Music_48		; SHADOWED
-		include "music33.asm"
+		include "music33.asm"	; [CUSTOM] The First Battle
 		include "music34.asm"
 		include "music35.asm"
 		include "music36.asm"
 		include "music37.asm"
 		include "music38.asm"
 		include "music39.asm"
-		include "music40.asm"
-		include "music41.asm"
+		include "music40.asm"	; [CUSTOM] Advanced Test
+		include "music41.asm"	; [CUSTOM] Simple Test
 		include "music48.asm"
