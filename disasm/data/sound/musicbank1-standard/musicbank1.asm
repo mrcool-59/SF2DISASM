@@ -15,29 +15,29 @@
 		dw Music_39
 		dw Music_40
 		dw Music_41
-		dw Music_48
-		dw Music_48
-		dw Music_48
-		dw Music_48
-		dw Music_48
-		dw Music_48
-		dw Music_48
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
-		dw Music_48		; SHADOWED
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
+		dw Music_64
 		include "music33.asm"	; [CUSTOM] The First Battle
 		include "music34.asm"
 		include "music35.asm"
@@ -47,4 +47,4 @@
 		include "music39.asm"
 		include "music40.asm"	; [CUSTOM] Advanced Test
 		include "music41.asm"	; [CUSTOM] Simple Test
-		include "music48.asm"
+		include "music64.asm"
