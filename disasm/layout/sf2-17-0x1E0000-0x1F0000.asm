@@ -12,7 +12,7 @@
 SoundDriver:
                 
                 incbinIfStandard "data/sound/cubewiz.bin"
-                incbinIfStandard "data/sound/sfxbank-standard.bin"
+                incbinIfStandard "data/sound/sfxbank.bin"
                 
                 incbinIfVanilla "data/sound/sounddriver.bin"
                 includeIfVanilla "code\common\tech\pointers\s17_pointers.asm"    ; Game Section 17 Pointers
