@@ -38,13 +38,13 @@
 		dw Music_64
 		dw Music_64
 		dw Music_64
-		include "music33.asm"	; [CUSTOM] The First Battle
+		include "music33.asm"	; [CUSTOM] The First Battle / The Call of a Long Journey
 		include "music34.asm"
 		include "music35.asm"
 		include "music36.asm"
 		include "music37.asm"
 		include "music38.asm"
 		include "music39.asm"
-		include "music40.asm"	; [CUSTOM] Advanced Test
-		include "music41.asm"	; [CUSTOM] Simple Test
+		include "music40.asm"	; [CUSTOM] Advanced Test / Ancient Wings
+		include "music41.asm"	; [CUSTOM] Simple Test / Chosen Heroes
 		include "music64.asm"
