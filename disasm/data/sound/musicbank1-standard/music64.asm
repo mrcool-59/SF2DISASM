@@ -1,7 +1,7 @@
 
 ; ASM FILE music64.asm :
 ; 0xFD9E..0xFDB9 : Music 64
-Music_48:       db 0
+Music_64:       db 0
 		db 0
 		db 0
 		db 0C8h
