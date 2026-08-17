@@ -3,6 +3,10 @@
 *.bin
 !*-standard.bin
 
+# Custom FM instruments and PCM banks are in *-standard.bin files to keep vanilla *.bin files intact that tools can use as reference, these shouldn't be on the repository either
+disasm/data/sound/yminst-standard.bin
+disasm/data/sound/pcmbank*-standard.bin
+
 # No symbols or listings files
 *.lst
 *.sym
@@ -280,7 +284,6 @@ disasm/data/scripting/map/testintro.asm
 *.nam
 *.til
 *.tfi
-disasm/data/sound/yminst-standard.bin
 disasm/data/sound/musicbank1/LostForest.txt
 disasm/data/sound/musicbank1/LostForest02.asm
 disasm/data/sound/musicbank1/propellerplanesf2.asm

@@ -1001,7 +1001,9 @@
 #split	0x1DEE44,0x1DEF04,data/graphics/icons/other/icon004.bin
 #split	0x1DEF04,0x1DEFC4,data/graphics/icons/other/icon005.bin
 #split	0x1E0000,0x1E8000,data/sound/pcmbank0.bin
+#split	0x1E0000,0x1E8000,data/sound/pcmbank0-standard.bin
 #split	0x1E8000,0x1EB000,data/sound/pcmbank1.bin
+#split	0x1E8000,0x1EB000,data/sound/pcmbank1-standard.bin
 #split	0x1EB000,0x1EC000,data/sound/yminst.bin
 #split	0x1EB000,0x1EC000,data/sound/yminst-standard.bin
 /*#split	0x1EC000,0x1EE000,data/sound/sounddriver.bin*/
