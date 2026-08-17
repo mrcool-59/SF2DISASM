@@ -53,7 +53,8 @@
   align 10h, 0
     include "data\psg_instruments.asm"
   align 10h, 0
-    include "data\pcm_samples.asm"
+    ; include "data\pcm_samples.asm"
+	include "data\pcm_samples-standard.asm"
     align 1800h, 0
     include "data\channel_data.asm"
     align 1FC0h, 0
