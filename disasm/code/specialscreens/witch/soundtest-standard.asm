@@ -67,10 +67,10 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
 ; ---------------------------------------------------------------------------
 
 table_Soundtracks:
+                dc.b MUSIC_MAIN_THEME
                 dc.b MUSIC_BATTLE_THEME_3
                 dc.b MUSIC_MITULA_SHRINE
                 dc.b MUSIC_ENDING
-                dc.b MUSIC_MAIN_THEME
                 dc.b MUSIC_ATTACK
                 dc.b MUSIC_PROMOTED_ATTACK
                 dc.b MUSIC_ENEMY_ATTACK
@@ -165,7 +165,7 @@ table_Soundtracks:
 
 table_SoundtrackTitles:
                 defineName ""
-                defineName "Legend of Light"
+                defineName "Silence / Legend of Light"
                 defineName "The Young Men of Granseal"
                 defineName "Fight, with the Ancient Light"
                 defineName ""
