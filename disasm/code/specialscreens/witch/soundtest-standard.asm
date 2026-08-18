@@ -22,7 +22,7 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
                 
 @Right:         btst    #INPUT_BIT_RIGHT,((PLAYER_1_INPUT-$1000000)).w
                 beq.s   @Left
-                cmpi.w  #91,d7      ; check we're not trying to go beyond final track
+                cmpi.w  #92,d7      ; check we're not trying to go beyond final track
                 bge.s   @First      ; if we are, go to first track (circular navigation)
                 addq.w  #1,d7
                 bra.s   @UpdateTrack
@@ -37,7 +37,7 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
 @First:         move.b  #0,d7       ; go to first track
                 bra.s   @UpdateTrack
 
-@Last:          move.b  #91,d7      ; go to last track
+@Last:          move.b  #92,d7      ; go to last track
                 bra.s   @UpdateTrack
 
 @A:             btst    #INPUT_BIT_A,((PLAYER_1_INPUT-$1000000)).w
@@ -68,11 +68,11 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
 
 table_Soundtracks:
                 dc.b MUSIC_MAIN_THEME
-                dc.b MUSIC_BATTLE_THEME_3
-                dc.b MUSIC_MITULA_SHRINE
-                dc.b MUSIC_ENDING
                 dc.b MUSIC_ATTACK
                 dc.b MUSIC_PROMOTED_ATTACK
+                dc.b MUSIC_PROMOTED_ATTACK_LOOP
+                dc.b MUSIC_BATTLE_THEME_3
+                dc.b MUSIC_ENDING
                 dc.b MUSIC_ENEMY_ATTACK
                 dc.b MUSIC_BOSS_ATTACK
                 dc.b MUSIC_ZEON_ATTACK
@@ -103,6 +103,7 @@ table_Soundtracks:
                 dc.b MUSIC_MITHRIL_DIGGERS
                 dc.b MUSIC_CASTLE
                 dc.b MUSIC_HEADQUARTERS
+                dc.b MUSIC_MITULA_SHRINE
                 dc.b SFX_MENU_SWITCH
                 dc.b SFX_MENU_SELECTION
                 dc.b SFX_VALIDATION
@@ -165,10 +166,10 @@ table_Soundtracks:
 
 table_SoundtrackTitles:
                 defineName ""
-                defineName "Silence / Legend of Light"
-                defineName "The Young Men of Granseal"
-                defineName "Fight, with the Ancient Light"
-                defineName ""
+                defineName "Test Silence / Legend of Light"
+                defineName "Test Note Length / The Young Men of Granseal"
+                defineName "Test Basic / Fight, with the Ancient Light"
+                defineName "Test Basic"
                 defineName "Dark Force"
                 defineName "Footsteps of Ruin"
                 defineName "Roar of the King of Devils"
@@ -204,8 +205,8 @@ table_SoundtrackTitles:
                 defineName "Dwarf Dwarf Dwarf"
                 defineName "The Bloodline of Ground Seal"
                 defineName "The Caravan Proceeds"
-                defineName "Advanced Test / Ancient Wings"
-                defineName "Simple Test / Chosen Heroes"
+                defineName "Ancient Wings"
+                defineName "Choose your Path / Chosen Heroes"
                 defineName ""
                 defineName ""
                 defineName ""

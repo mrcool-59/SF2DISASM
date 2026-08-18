@@ -45,6 +45,6 @@
 		include "music37.asm"
 		include "music38.asm"
 		include "music39.asm"
-		include "music40.asm"	; [CUSTOM] Advanced Test / Ancient Wings
-		include "music41.asm"	; [CUSTOM] Simple Test / Chosen Heroes
+		include "music40.asm"
+		include "music41.asm"	; [CUSTOM] Choose your Path / Chosen Heroes
 		include "music64.asm"
