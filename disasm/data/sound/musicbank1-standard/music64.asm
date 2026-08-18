@@ -9,25 +9,16 @@ Music_64:
 		db 1	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
 		db 0C8h	; YM Timer B (music tempo)
-		dw Music_64_Channel_0
-		dw Music_64_Channel_1
-		dw Music_64_Channel_2
-		dw Music_64_Channel_3
-		dw Music_64_Channel_4
-		dw Music_64_Channel_5
-		dw Music_64_Channel_6
-		dw Music_64_Channel_7
-		dw Music_64_Channel_8
+		dw Music_64_Channel_9
+		dw Music_64_Channel_9
+		dw Music_64_Channel_9
+		dw Music_64_Channel_9
+		dw Music_64_Channel_9
+		dw Music_64_Channel_9
+		dw Music_64_Channel_9
+		dw Music_64_Channel_9
+		dw Music_64_Channel_9
 		dw Music_64_Channel_9
 
-Music_64_Channel_0:
-Music_64_Channel_1:
-Music_64_Channel_2:
-Music_64_Channel_3:
-Music_64_Channel_4:
-Music_64_Channel_5:
-Music_64_Channel_6:
-Music_64_Channel_7:
-Music_64_Channel_8:
 Music_64_Channel_9:
 		channel_end

@@ -9,25 +9,16 @@ Music_1:		; [CUSTOM] Test Silence
 		db 1	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
 		db 00h	; YM Timer B (music tempo)
-		dw Music_1_Channel_0
-		dw Music_1_Channel_1
-		dw Music_1_Channel_2
-		dw Music_1_Channel_3
-		dw Music_1_Channel_4
-		dw Music_1_Channel_5
-		dw Music_1_Channel_6
-		dw Music_1_Channel_7
-		dw Music_1_Channel_8
+		dw Music_1_Channel_9
+		dw Music_1_Channel_9
+		dw Music_1_Channel_9
+		dw Music_1_Channel_9
+		dw Music_1_Channel_9
+		dw Music_1_Channel_9
+		dw Music_1_Channel_9
+		dw Music_1_Channel_9
+		dw Music_1_Channel_9
 		dw Music_1_Channel_9
 
-Music_1_Channel_0:
-Music_1_Channel_1:
-Music_1_Channel_2:
-Music_1_Channel_3:
-Music_1_Channel_4:
-Music_1_Channel_5:
-Music_1_Channel_6:
-Music_1_Channel_7:
-Music_1_Channel_8:
 Music_1_Channel_9:
 		channel_end

@@ -169,7 +169,7 @@ table_SoundtrackTitles:
                 defineName "Test Silence / Legend of Light"
                 defineName "Test Note Length / The Young Men of Granseal"
                 defineName "Test Basic / Fight, with the Ancient Light"
-                defineName "Test Basic"
+                defineName "Test Basic / MUSIC_PROMOTED_ATTACK_LOOP"
                 defineName "Dark Force"
                 defineName "Footsteps of Ruin"
                 defineName "Roar of the King of Devils"
