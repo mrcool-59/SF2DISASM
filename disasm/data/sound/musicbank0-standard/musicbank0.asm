@@ -41,6 +41,7 @@
 		include "music01.asm"	; [CUSTOM] Test Silence / Legend of Light
 		include "music02.asm"	; [CUSTOM] Test Note Length / The Young Men of Granseal
 		include "music03.asm"	; [CUSTOM] Test Basic / Fight, with the Ancient Light
+		include "music04.asm"	; [CUSTOM] Test Fine Loop / MUSIC_PROMOTED_ATTACK_LOOP
 		include "music05.asm"
 		include "music06.asm"
 		include "music07.asm"

@@ -3,7 +3,6 @@
 ; This output is from an automated tool, please avoid manual edits in it, instead it is better to improve/fix the tool!
 
 Music_3:		; [CUSTOM] Test Basic
-Music_4:		; Special case, these two musics are paired in SF2DISASM
 		db 0	; Must be zero
 		db 1	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
