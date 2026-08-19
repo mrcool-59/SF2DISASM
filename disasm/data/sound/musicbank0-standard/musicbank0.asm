@@ -42,7 +42,7 @@
 		include "music02.asm"	; [CUSTOM] Test Note Length / The Young Men of Granseal
 		include "music03.asm"	; [CUSTOM] Test Basic / Fight, with the Ancient Light
 		include "music04.asm"	; [CUSTOM] Test Tricky Loop / MUSIC_PROMOTED_ATTACK_LOOP
-		include "music05.asm"
+		include "music05.asm"	; [CUSTOM] Test Illegal Volume Ramp / Dark Force
 		include "music06.asm"
 		include "music07.asm"
 		include "music08.asm"

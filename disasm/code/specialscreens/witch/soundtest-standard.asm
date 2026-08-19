@@ -71,9 +71,9 @@ table_Soundtracks:
                 dc.b MUSIC_ATTACK
                 dc.b MUSIC_PROMOTED_ATTACK
                 dc.b MUSIC_PROMOTED_ATTACK_LOOP
+                dc.b MUSIC_ENEMY_ATTACK
                 dc.b MUSIC_BATTLE_THEME_3
                 dc.b MUSIC_ENDING
-                dc.b MUSIC_ENEMY_ATTACK
                 dc.b MUSIC_BOSS_ATTACK
                 dc.b MUSIC_ZEON_ATTACK
                 dc.b MUSIC_TOWN
@@ -170,7 +170,7 @@ table_SoundtrackTitles:
                 defineName "Test Note Length / The Young Men of Granseal"
                 defineName "Test Basic / Fight, with the Ancient Light"
                 defineName "Test Tricky Loop / MUSIC_PROMOTED_ATTACK_LOOP"
-                defineName "Dark Force"
+                defineName "Test Illegal Volume Ramp / Dark Force"
                 defineName "Footsteps of Ruin"
                 defineName "Roar of the King of Devils"
                 defineName "A Peaceful Moment"
