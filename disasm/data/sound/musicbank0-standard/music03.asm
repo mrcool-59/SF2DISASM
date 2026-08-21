@@ -19,9 +19,9 @@ Music_3:		; [CUSTOM] Test Basic
 		dw Music_3_Channel_9
 
 Music_3_Channel_0:
-		stereo 0C0h
 		vibrato 0
 		mainLoopStart
+		stereo 0C0h
 		inst 29
 		vol 15
 		setRelease 1
@@ -31,9 +31,9 @@ Music_3_Channel_0:
 		countedLoopEnd
 		mainLoopEnd
 Music_3_Channel_1:
-		stereo 0C0h
 		vibrato 0
 		mainLoopStart
+		stereo 0C0h
 		inst 28
 		vol 15
 		setRelease 1
@@ -71,10 +71,10 @@ Music_3_Channel_1:
 		note  D7
 		mainLoopEnd
 Music_3_Channel_2:
-		stereo 0C0h
 		vibrato 0
 		waitL 1
 		mainLoopStart
+		stereo 0C0h
 		inst 28
 		vol 15
 		setRelease 0
@@ -112,9 +112,9 @@ Music_3_Channel_2:
 		note  C7
 		mainLoopEnd
 Music_3_Channel_3:
-		stereo 0C0h
 		vibrato 0
 		mainLoopStart
+		stereo 0C0h
 		inst 30
 		vol 15
 		setRelease 1
@@ -128,9 +128,9 @@ Music_3_Channel_3:
 		countedLoopEnd
 		mainLoopEnd
 Music_3_Channel_4:
-		stereo 0C0h
 		vibrato 0
 		mainLoopStart
+		stereo 0C0h
 		inst 28
 		vol 15
 		setRelease 1
@@ -166,9 +166,9 @@ Music_3_Channel_4:
 		note  C6
 		mainLoopEnd
 Music_3_Channel_5:
-		stereo 0C0h
 		vibrato 0
 		mainLoopStart
+		stereo 0C0h
 		inst 28
 		vol 15
 		setRelease 1
