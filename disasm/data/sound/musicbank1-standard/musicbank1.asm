@@ -39,12 +39,12 @@
 		dw Music_64
 		dw Music_64
 		include "music33.asm"	; [CUSTOM] The First Battle / The Call of a Long Journey
-		include "music34.asm"
+		include "music34.asm"	; [CUSTOM] Silence / Entrance to the Demon World
 		include "music35.asm"
 		include "music36.asm"
 		include "music37.asm"
 		include "music38.asm"
 		include "music39.asm"
 		include "music40.asm"
-		include "music41.asm"	; [CUSTOM] Choose your Path / Chosen Heroes
+		include "music41.asm"
 		include "music64.asm"

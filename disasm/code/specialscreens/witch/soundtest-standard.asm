@@ -73,7 +73,7 @@ table_Soundtracks:
                 dc.b MUSIC_PROMOTED_ATTACK_LOOP
                 dc.b MUSIC_ENEMY_ATTACK
                 dc.b MUSIC_BATTLE_THEME_3
-                dc.b MUSIC_ENDING
+                dc.b MUSIC_BATTLE_THEME_1
                 dc.b MUSIC_BOSS_ATTACK
                 dc.b MUSIC_ZEON_ATTACK
                 dc.b MUSIC_TOWN
@@ -97,13 +97,13 @@ table_Soundtracks:
                 dc.b MUSIC_CURSED_ITEM
                 dc.b MUSIC_ITEM
                 dc.b MUSIC_TITLE
-                dc.b MUSIC_BATTLE_THEME_1
                 dc.b MUSIC_SHRINE
                 dc.b MUSIC_FINAL_BATTLE
                 dc.b MUSIC_MITHRIL_DIGGERS
                 dc.b MUSIC_CASTLE
                 dc.b MUSIC_HEADQUARTERS
                 dc.b MUSIC_MITULA_SHRINE
+                dc.b MUSIC_ENDING
                 dc.b SFX_MENU_SWITCH
                 dc.b SFX_MENU_SELECTION
                 dc.b SFX_VALIDATION
@@ -199,14 +199,14 @@ table_SoundtrackTitles:
                 defineName ""
                 defineName ""
                 defineName "The First Battle / The Call of a Long Journey"
-                defineName "Entrance to the Demon World"
+                defineName "Silence / Entrance to the Demon World"
                 defineName "A Message from Ancient Times"
                 defineName "The King of Devils has Appeared"
                 defineName "Dwarf Dwarf Dwarf"
                 defineName "The Bloodline of Ground Seal"
                 defineName "The Caravan Proceeds"
                 defineName "Ancient Wings"
-                defineName "Choose your Path / Chosen Heroes"
+                defineName "Chosen Heroes"
                 defineName ""
                 defineName ""
                 defineName ""
