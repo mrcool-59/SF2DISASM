@@ -6,7 +6,7 @@
 
 Music_64:
 		db 0	; Must be zero
-		db 1	; DAC mode (0=YES, 1=NO)
+		db 0	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
 		db 0C8h	; YM Timer B (music tempo)
 		dw Music_64_Channel_9

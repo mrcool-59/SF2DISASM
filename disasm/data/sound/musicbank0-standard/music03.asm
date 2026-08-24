@@ -22,7 +22,7 @@ Music_3_Channel_0:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 29
+		inst 3
 		vol 15
 		setRelease 1
 		noteL D3,4
@@ -34,7 +34,7 @@ Music_3_Channel_1:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 28
+		inst 2
 		vol 15
 		setRelease 1
 		noteL D5,2
@@ -75,7 +75,7 @@ Music_3_Channel_2:
 		waitL 1
 		mainLoopStart
 		stereo 0C0h
-		inst 28
+		inst 2
 		vol 15
 		setRelease 0
 		noteL F5,2
@@ -115,7 +115,7 @@ Music_3_Channel_3:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 30
+		inst 4
 		vol 15
 		setRelease 1
 		noteL D6,4
@@ -131,7 +131,7 @@ Music_3_Channel_4:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 28
+		inst 2
 		vol 15
 		setRelease 1
 		noteL F6,4
@@ -169,7 +169,7 @@ Music_3_Channel_5:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 28
+		inst 2
 		vol 15
 		setRelease 1
 		noteL D6,4

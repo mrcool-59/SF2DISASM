@@ -4,7 +4,7 @@
 
 Music_5:		; [CUSTOM] Test Illegal Volume Ramp
 		db 0	; Must be zero
-		db 1	; DAC mode (0=YES, 1=NO)
+		db 0	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
 		db 00h	; YM Timer B (music tempo)
 		dw Music_5_Channel_0
@@ -22,7 +22,7 @@ Music_5_Channel_0:
 		vibrato 0
 		mainLoopStart
 		stereo 40h
-		inst 18
+		inst 0
 		vol 15
 		setRelease 0
 		noteL C6,16

@@ -4,7 +4,7 @@
 
 Music_2:		; [CUSTOM] Test Note Length
 		db 0	; Must be zero
-		db 1	; DAC mode (0=YES, 1=NO)
+		db 0	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
 		db 75h	; YM Timer B (music tempo)
 		dw Music_2_Channel_0
@@ -22,7 +22,7 @@ Music_2_Channel_0:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 28
+		inst 2
 		vol 15
 		sustain
 		noteL D5,255
@@ -35,7 +35,7 @@ Music_2_Channel_1:
 		waitL 16
 		mainLoopStart
 		stereo 0C0h
-		inst 18
+		inst 0
 		vol 15
 		setRelease 0
 		noteL C5,2
@@ -48,7 +48,7 @@ Music_2_Channel_2:
 		waitL 32
 		mainLoopStart
 		stereo 0C0h
-		inst 23
+		inst 1
 		vol 15
 		setRelease 127
 		noteL E5,129

@@ -4,7 +4,7 @@
 
 Music_4:		; [CUSTOM] Test Tricky Loop
 		db 0	; Must be zero
-		db 1	; DAC mode (0=YES, 1=NO)
+		db 0	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
 		db 00h	; YM Timer B (music tempo)
 		dw Music_4_Channel_0
@@ -21,7 +21,7 @@ Music_4:		; [CUSTOM] Test Tricky Loop
 Music_4_Channel_0:
 		vibrato 0
 		stereo 0C0h
-		inst 28
+		inst 2
 		vol 15
 		sustain
 		noteL D5,255
@@ -34,7 +34,7 @@ Music_4_Channel_1:
 		vibrato 0
 		waitL 16
 		stereo 0C0h
-		inst 18
+		inst 0
 		vol 15
 		setRelease 0
 		noteL C5,14
@@ -49,7 +49,7 @@ Music_4_Channel_2:
 		waitL 32
 		mainLoopStart
 		stereo 0C0h
-		inst 23
+		inst 1
 		vol 15
 		setRelease 0
 		noteL E5,8

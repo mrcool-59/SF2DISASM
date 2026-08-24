@@ -22,7 +22,7 @@ Music_33_Channel_0:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 29
+		inst 3
 		vol 13
 		setRelease 1
 		noteL D4,4
@@ -469,7 +469,7 @@ Music_33_Channel_1:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 28
+		inst 2
 		vol 13
 		setRelease 0
 		noteL E5,2
@@ -659,7 +659,7 @@ Music_33_Channel_1:
 		note  D5
 		note  C5
 		note  As4
-		inst 28
+		inst 2
 		vol 10
 		setRelease 3
 		note  A6
@@ -673,7 +673,7 @@ Music_33_Channel_1:
 		noteL A6,4
 		setRelease 39
 		noteL A6,40
-		inst 28
+		inst 2
 		vol 15
 		setRelease 2
 		noteL A4,4
@@ -829,7 +829,7 @@ Music_33_Channel_1:
 		note  D5
 		note  C5
 		note  As4
-		inst 28
+		inst 2
 		vol 10
 		setRelease 3
 		note  A6
@@ -1138,7 +1138,7 @@ Music_33_Channel_2:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 23
+		inst 1
 		vol 13
 		setRelease 0
 		noteL F6,4
@@ -1209,7 +1209,7 @@ Music_33_Channel_2:
 		noteL G6,8
 		setRelease 14
 		noteL D6,39
-		inst 28
+		inst 2
 		vol 14
 		setRelease 0
 		noteL A4,4
@@ -1390,7 +1390,7 @@ Music_33_Channel_2:
 		note  C5
 		setRelease 3
 		noteL As4,5
-		inst 28
+		inst 2
 		vol 10
 		setRelease 7
 		noteL E6,8
@@ -1402,7 +1402,7 @@ Music_33_Channel_2:
 		noteL E6,4
 		setRelease 42
 		noteL E6,43
-		inst 28
+		inst 2
 		vol 14
 		setRelease 0
 		noteL A4,4
@@ -1583,7 +1583,7 @@ Music_33_Channel_2:
 		note  C5
 		setRelease 3
 		noteL As4,5
-		inst 28
+		inst 2
 		vol 10
 		setRelease 7
 		noteL E6,8
@@ -1893,7 +1893,7 @@ Music_33_Channel_3:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 23
+		inst 1
 		vol 13
 		setRelease 1
 		noteL D6,4
@@ -1966,7 +1966,7 @@ Music_33_Channel_3:
 		setRelease 7
 		noteL As5,32
 		stereo 40h
-		inst 28
+		inst 2
 		vol 9
 		setRelease 0
 		noteL F6,4
@@ -2159,7 +2159,7 @@ Music_33_Channel_3:
 		note  C6
 		note  As5
 		stereo 0C0h
-		inst 28
+		inst 2
 		vol 15
 		setRelease 2
 		note  A5
@@ -2180,7 +2180,7 @@ Music_33_Channel_3:
 		note  D6
 		note  C6
 		stereo 40h
-		inst 28
+		inst 2
 		vol 9
 		countedLoopStart 7
 		setRelease 0
@@ -2344,7 +2344,7 @@ Music_33_Channel_3:
 		note  C6
 		note  As5
 		stereo 0C0h
-		inst 28
+		inst 2
 		vol 15
 		setRelease 2
 		note  A5
@@ -2365,7 +2365,7 @@ Music_33_Channel_3:
 		note  D6
 		setRelease 0
 		note  C6
-		inst 30
+		inst 4
 		vol 13
 		setRelease 1
 		countedLoopStart 3
@@ -2427,7 +2427,7 @@ Music_33_Channel_4:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 18
+		inst 0
 		vol 13
 		setRelease 1
 		noteL D4,4
@@ -2499,7 +2499,7 @@ Music_33_Channel_4:
 		setRelease 7
 		noteL D5,32
 		stereo 80h
-		inst 28
+		inst 2
 		vol 9
 		setRelease 1
 		noteL D6,4
@@ -2691,7 +2691,7 @@ Music_33_Channel_4:
 		setRelease 3
 		note  A5
 		note  G5
-		inst 23
+		inst 1
 		vol 13
 		setRelease 2
 		note  A6
@@ -2714,7 +2714,7 @@ Music_33_Channel_4:
 		note  E6
 		note  D6
 		note  C6
-		inst 28
+		inst 2
 		vol 9
 		countedLoopStart 7
 		note  D6
@@ -2905,7 +2905,7 @@ Music_33_Channel_4:
 		setRelease 3
 		note  A5
 		note  G5
-		inst 23
+		inst 1
 		vol 13
 		setRelease 2
 		note  A6
@@ -2929,7 +2929,7 @@ Music_33_Channel_4:
 		note  E6
 		note  D6
 		note  C6
-		inst 28
+		inst 2
 		countedLoopStart 3
 		note  E6
 		setRelease 2
@@ -3165,7 +3165,7 @@ Music_33_Channel_5:
 		vibrato 0
 		mainLoopStart
 		stereo 0C0h
-		inst 18
+		inst 0
 		vol 13
 		setRelease 1
 		noteL F6,4
@@ -3220,7 +3220,7 @@ Music_33_Channel_5:
 		note  F6
 		setRelease 35
 		noteL E6,36
-		inst 31
+		inst 5
 		vol 9
 		setRelease 15
 		noteL Fs3,16
@@ -3386,7 +3386,7 @@ Music_33_Channel_5:
 		noteL C3,4
 		setRelease 7
 		noteL D3,8
-		inst 23
+		inst 1
 		vol 13
 		setRelease 2
 		noteL E6,4
@@ -3400,7 +3400,7 @@ Music_33_Channel_5:
 		noteL E6,4
 		setRelease 6
 		noteL E6,8
-		inst 31
+		inst 5
 		vol 10
 		setRelease 3
 		noteL Fs3,4
@@ -3568,7 +3568,7 @@ Music_33_Channel_5:
 		noteL C3,4
 		setRelease 7
 		noteL D3,8
-		inst 23
+		inst 1
 		vol 13
 		setRelease 2
 		noteL E6,4
@@ -3583,7 +3583,7 @@ Music_33_Channel_5:
 		setRelease 6
 		noteL E6,8
 		stereo 80h
-		inst 31
+		inst 5
 		vol 10
 		setRelease 3
 		noteL Fs3,4
@@ -3593,7 +3593,7 @@ Music_33_Channel_5:
 		note  Fs3
 		note  As3
 		note  G3
-		inst 28
+		inst 2
 		countedLoopStart 3
 		setRelease 1
 		note  C6
