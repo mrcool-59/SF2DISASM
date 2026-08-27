@@ -6,7 +6,7 @@ Music_6:		; [CUSTOM] Test Sample
 		db 0	; Must be zero
 		db 0	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
-		db 00h	; YM Timer B (music tempo)
+		db 91h	; YM Timer B (music tempo)
 		dw Music_6_Channel_9
 		dw Music_6_Channel_9
 		dw Music_6_Channel_9
@@ -24,9 +24,9 @@ Music_6_Channel_5:
 		stereo 0C0h
 		vol 15
 		setRelease 0
-		sampleL 0,4
+		sampleL 0,12
 		sample  1
-		sampleL 2,8
+		sampleL 2,24
 		mainLoopEnd
 Music_6_Channel_9:
 		channel_end

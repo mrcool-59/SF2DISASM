@@ -6,7 +6,7 @@ Music_33:		; [CUSTOM] The First Battle
 		db 0	; Must be zero
 		db 1	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
-		db 75h	; YM Timer B (music tempo)
+		db 0BBh	; YM Timer B (music tempo)
 		dw Music_33_Channel_0
 		dw Music_33_Channel_1
 		dw Music_33_Channel_2
@@ -24,77 +24,77 @@ Music_33_Channel_0:
 		stereo 0C0h
 		inst 3
 		vol 13
-		setRelease 1
-		noteL D4,4
 		setRelease 2
+		noteL D4,8
+		setRelease 4
 		note  As3
-		setRelease 3
+		setRelease 6
 		note  C4
-		setRelease 1
+		setRelease 2
 		note  D4
-		setRelease 2
+		setRelease 4
 		note  C4
-		setRelease 3
+		setRelease 6
 		note  As3
-		setRelease 1
+		setRelease 2
 		note  D4
-		setRelease 2
+		setRelease 4
 		note  As3
-		setRelease 3
+		setRelease 6
 		note  C4
-		setRelease 1
+		setRelease 2
 		note  E4
+		setRelease 4
+		note  D4
+		setRelease 6
+		note  C4
 		setRelease 2
 		note  D4
-		setRelease 3
+		setRelease 4
 		note  C4
-		setRelease 1
-		note  D4
-		setRelease 2
-		note  C4
-		setRelease 3
+		setRelease 6
 		note  As3
 		note  A3
-		setRelease 1
-		note  F4
 		setRelease 2
-		note  D4
-		setRelease 3
-		note  E4
-		setRelease 1
 		note  F4
-		setRelease 2
-		note  E4
-		setRelease 3
+		setRelease 4
 		note  D4
-		setRelease 1
+		setRelease 6
+		note  E4
+		setRelease 2
 		note  F4
-		setRelease 2
-		note  D4
-		setRelease 3
+		setRelease 4
 		note  E4
-		setRelease 1
+		setRelease 6
+		note  D4
+		setRelease 2
+		note  F4
+		setRelease 4
+		note  D4
+		setRelease 6
+		note  E4
+		setRelease 2
 		note  G4
+		setRelease 4
+		note  F4
+		setRelease 6
+		note  E4
 		setRelease 2
 		note  F4
-		setRelease 3
+		setRelease 4
 		note  E4
-		setRelease 1
-		note  F4
-		setRelease 2
-		note  E4
-		setRelease 3
+		setRelease 6
 		note  D4
 		note  C4
-		setRelease 2
-		noteL C5,12
+		setRelease 4
+		noteL C5,24
 		note  B4
-		setRelease 1
-		noteL G4,8
-		setRelease 8
-		noteL F4,32
-		setRelease 1
-		noteL D4,4
+		setRelease 2
+		noteL G4,16
+		setRelease 16
+		noteL F4,64
+		setRelease 2
+		noteL D4,8
 		countedLoopStart 1
 		note  D4
 		note  D4
@@ -221,15 +221,15 @@ Music_33_Channel_0:
 		note  E4
 		note  A3
 		countedLoopStart 1
-		setRelease 5
+		setRelease 10
+		noteL A3,16
+		setRelease 2
 		noteL A3,8
-		setRelease 1
-		noteL A3,4
 		countedLoopEnd
-		setRelease 5
-		noteL A3,8
-		setRelease 1
-		noteL G3,4
+		setRelease 10
+		noteL A3,16
+		setRelease 2
+		noteL G3,8
 		note  A3
 		note  C4
 		note  F4
@@ -372,15 +372,15 @@ Music_33_Channel_0:
 		note  E4
 		note  A3
 		countedLoopStart 1
-		setRelease 5
+		setRelease 10
+		noteL A3,16
+		setRelease 2
 		noteL A3,8
-		setRelease 1
-		noteL A3,4
 		countedLoopEnd
-		setRelease 5
-		noteL A3,8
-		setRelease 1
-		noteL G3,4
+		setRelease 10
+		noteL A3,16
+		setRelease 2
+		noteL G3,8
 		note  A3
 		note  C4
 		note  F4
@@ -462,8 +462,8 @@ Music_33_Channel_0:
 		countedLoopStart 30
 		note  D3
 		countedLoopEnd
-		setRelease 2
-		noteL D3,5
+		setRelease 4
+		noteL D3,10
 		mainLoopEnd
 Music_33_Channel_1:
 		vibrato 0
@@ -472,7 +472,7 @@ Music_33_Channel_1:
 		inst 2
 		vol 13
 		setRelease 0
-		noteL E5,2
+		noteL E5,4
 		countedLoopStart 6
 		note  D5
 		note  C5
@@ -501,149 +501,149 @@ Music_33_Channel_1:
 		note  D5
 		note  G5
 		note  B5
-		noteL D6,36
+		noteL D6,72
 		vol 15
-		setRelease 1
-		noteL A4,4
-		setRelease 3
-		note  C5
 		setRelease 2
-		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
-		note  C5
+		noteL A4,8
 		setRelease 6
-		noteL A4,24
-		setRelease 2
-		noteL C5,4
-		noteL G4,16
-		setRelease 10
-		noteL F4,24
-		setRelease 2
-		noteL A4,4
 		note  C5
+		setRelease 4
 		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
-		note  C6
-		setRelease 6
-		noteL A5,24
-		setRelease 0
-		noteL A5,2
-		note  As5
-		setRelease 2
-		noteL A5,16
-		setRelease 10
 		noteL G5,24
-		setRelease 2
-		noteL A4,4
-		note  C5
-		note  D5
-		noteL G5,12
 		note  F5
 		note  D5
 		note  C5
+		setRelease 12
+		noteL A4,48
+		setRelease 4
+		noteL C5,8
+		noteL G4,32
+		setRelease 20
+		noteL F4,48
+		setRelease 4
+		noteL A4,8
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		note  C6
+		setRelease 12
+		noteL A5,48
+		setRelease 0
+		noteL A5,4
+		note  As5
+		setRelease 4
+		noteL A5,32
+		setRelease 20
+		noteL G5,48
+		setRelease 4
+		noteL A4,8
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		note  C5
+		setRelease 12
+		noteL A4,48
+		setRelease 4
+		noteL C5,8
+		noteL G4,32
+		setRelease 20
+		noteL F4,48
+		setRelease 4
+		noteL A4,8
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		note  C6
+		setRelease 12
+		noteL A5,48
+		setRelease 0
+		noteL A5,4
+		note  As5
+		setRelease 4
+		noteL A5,32
+		setRelease 12
+		noteL G5,40
+		setRelease 4
+		noteL F5,8
+		note  G5
+		note  A5
 		setRelease 6
-		noteL A4,24
-		setRelease 2
-		noteL C5,4
+		noteL D5,16
+		setRelease 4
+		noteL D5,8
+		note  C5
+		noteL D5,24
+		noteL A4,8
+		noteL C5,16
+		setRelease 10
+		noteL D5,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
+		note  C5
+		noteL D5,24
+		noteL A4,8
 		noteL G4,16
 		setRelease 10
-		noteL F4,24
-		setRelease 2
-		noteL A4,4
+		noteL A4,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
 		note  C5
-		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
+		noteL D5,24
+		noteL A4,8
+		noteL C5,16
+		setRelease 10
+		noteL D5,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
+		setRelease 0
 		note  C6
-		setRelease 6
+		setRelease 4
+		noteL D6,24
+		noteL A5,8
+		noteL G5,16
+		noteL D5,8
+		note  F5
+		note  G5
 		noteL A5,24
-		setRelease 0
-		noteL A5,2
-		note  As5
-		setRelease 2
-		noteL A5,16
-		setRelease 6
-		noteL G5,20
-		setRelease 2
-		noteL F5,4
 		note  G5
-		note  A5
-		setRelease 3
-		noteL D5,8
-		setRelease 2
-		noteL D5,4
-		note  C5
-		noteL D5,12
-		noteL A4,4
-		noteL C5,8
-		setRelease 5
-		noteL D5,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		note  C5
-		noteL D5,12
-		noteL A4,4
-		noteL G4,8
-		setRelease 5
-		noteL A4,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		note  C5
-		noteL D5,12
-		noteL A4,4
-		noteL C5,8
-		setRelease 5
-		noteL D5,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		setRelease 0
-		note  C6
-		setRelease 2
-		noteL D6,12
-		noteL A5,4
-		noteL G5,8
-		noteL D5,4
-		note  F5
-		note  G5
-		noteL A5,12
-		note  G5
-		setRelease 5
-		noteL D5,8
-		setRelease 2
-		noteL F5,12
 		setRelease 10
-		noteL D5,20
-		setRelease 2
-		noteL A5,12
+		noteL D5,16
+		setRelease 4
+		noteL F5,24
+		setRelease 20
+		noteL D5,40
+		setRelease 4
+		noteL A5,24
 		note  G5
-		setRelease 5
-		noteL D5,8
-		setRelease 0
-		noteL F5,12
 		setRelease 10
-		noteL D5,20
-		setRelease 2
-		noteL As5,4
+		noteL D5,16
+		setRelease 0
+		noteL F5,24
+		setRelease 20
+		noteL D5,40
+		setRelease 4
+		noteL As5,8
 		note  A5
 		note  G5
 		note  A5
@@ -661,159 +661,159 @@ Music_33_Channel_1:
 		note  As4
 		inst 2
 		vol 10
-		setRelease 3
+		setRelease 6
 		note  A6
-		setRelease 7
-		noteL A6,8
+		setRelease 14
+		noteL A6,16
 		setRelease 0
-		noteL A6,4
+		noteL A6,8
+		setRelease 12
+		noteL A6,16
 		setRelease 6
 		noteL A6,8
-		setRelease 3
-		noteL A6,4
-		setRelease 39
-		noteL A6,40
+		setRelease 78
+		noteL A6,80
 		inst 2
 		vol 15
-		setRelease 2
-		noteL A4,4
+		setRelease 4
+		noteL A4,8
 		note  C5
 		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
-		note  C5
-		setRelease 6
-		noteL A4,24
-		setRelease 2
-		noteL C5,4
-		noteL G4,16
-		setRelease 10
-		noteL F4,24
-		setRelease 2
-		noteL A4,4
-		note  C5
-		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
-		note  C6
-		setRelease 6
-		noteL A5,24
-		setRelease 0
-		noteL A5,2
-		note  As5
-		setRelease 2
-		noteL A5,16
-		setRelease 10
 		noteL G5,24
-		setRelease 2
-		noteL A4,4
-		note  C5
-		note  D5
-		noteL G5,12
 		note  F5
 		note  D5
 		note  C5
+		setRelease 12
+		noteL A4,48
+		setRelease 4
+		noteL C5,8
+		noteL G4,32
+		setRelease 20
+		noteL F4,48
+		setRelease 4
+		noteL A4,8
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		note  C6
+		setRelease 12
+		noteL A5,48
+		setRelease 0
+		noteL A5,4
+		note  As5
+		setRelease 4
+		noteL A5,32
+		setRelease 20
+		noteL G5,48
+		setRelease 4
+		noteL A4,8
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		note  C5
+		setRelease 12
+		noteL A4,48
+		setRelease 4
+		noteL C5,8
+		noteL G4,32
+		setRelease 20
+		noteL F4,48
+		setRelease 4
+		noteL A4,8
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		note  C6
+		setRelease 12
+		noteL A5,48
+		setRelease 0
+		noteL A5,4
+		note  As5
+		setRelease 4
+		noteL A5,32
+		setRelease 12
+		noteL G5,40
+		setRelease 4
+		noteL F5,8
+		note  G5
+		note  A5
 		setRelease 6
-		noteL A4,24
-		setRelease 2
-		noteL C5,4
+		noteL D5,16
+		setRelease 4
+		noteL D5,8
+		note  C5
+		noteL D5,24
+		noteL A4,8
+		noteL C5,16
+		setRelease 10
+		noteL D5,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
+		note  C5
+		noteL D5,24
+		noteL A4,8
 		noteL G4,16
 		setRelease 10
-		noteL F4,24
-		setRelease 2
-		noteL A4,4
+		noteL A4,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
 		note  C5
-		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
+		noteL D5,24
+		noteL A4,8
+		noteL C5,16
+		setRelease 10
+		noteL D5,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
+		setRelease 0
 		note  C6
-		setRelease 6
+		setRelease 4
+		noteL D6,24
+		noteL A5,8
+		noteL G5,16
+		noteL D5,8
+		note  F5
+		note  G5
 		noteL A5,24
-		setRelease 0
-		noteL A5,2
-		note  As5
-		setRelease 2
-		noteL A5,16
-		setRelease 6
-		noteL G5,20
-		setRelease 2
-		noteL F5,4
 		note  G5
-		note  A5
-		setRelease 3
-		noteL D5,8
-		setRelease 2
-		noteL D5,4
-		note  C5
-		noteL D5,12
-		noteL A4,4
-		noteL C5,8
-		setRelease 5
-		noteL D5,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		note  C5
-		noteL D5,12
-		noteL A4,4
-		noteL G4,8
-		setRelease 5
-		noteL A4,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		note  C5
-		noteL D5,12
-		noteL A4,4
-		noteL C5,8
-		setRelease 5
-		noteL D5,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		setRelease 0
-		note  C6
-		setRelease 2
-		noteL D6,12
-		noteL A5,4
-		noteL G5,8
-		noteL D5,4
-		note  F5
-		note  G5
-		noteL A5,12
-		note  G5
-		setRelease 5
-		noteL D5,8
-		setRelease 2
-		noteL F5,12
 		setRelease 10
-		noteL D5,20
-		setRelease 2
-		noteL A5,12
+		noteL D5,16
+		setRelease 4
+		noteL F5,24
+		setRelease 20
+		noteL D5,40
+		setRelease 4
+		noteL A5,24
 		note  G5
-		setRelease 5
-		noteL D5,8
-		setRelease 0
-		noteL F5,12
 		setRelease 10
-		noteL D5,20
-		setRelease 2
-		noteL As5,4
+		noteL D5,16
+		setRelease 0
+		noteL F5,24
+		setRelease 20
+		noteL D5,40
+		setRelease 4
+		noteL As5,8
 		note  A5
 		note  G5
 		note  A5
@@ -831,21 +831,21 @@ Music_33_Channel_1:
 		note  As4
 		inst 2
 		vol 10
-		setRelease 3
+		setRelease 6
 		note  A6
-		setRelease 7
-		noteL A6,8
+		setRelease 14
+		noteL A6,16
 		setRelease 0
-		noteL A6,4
+		noteL A6,8
+		setRelease 12
+		noteL A6,16
 		setRelease 6
 		noteL A6,8
-		setRelease 3
-		noteL A6,4
-		setRelease 35
-		noteL A6,36
+		setRelease 70
+		noteL A6,72
 		vol 15
 		setRelease 0
-		noteL G5,4
+		noteL G5,8
 		countedLoopStart 1
 		note  G4
 		note  C5
@@ -872,28 +872,28 @@ Music_33_Channel_1:
 		note  A5
 		note  As5
 		note  A5
-		setRelease 4
-		noteL F5,8
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL C5,4
+		noteL C5,8
 		note  D5
-		setRelease 5
-		noteL C5,24
-		setRelease 0
-		noteL C5,4
-		note  F5
-		note  G5
-		note  A5
-		note  As5
-		note  A5
-		setRelease 6
-		noteL F5,8
-		setRelease 0
-		noteL D6,4
 		setRelease 10
-		noteL C6,40
+		noteL C5,48
 		setRelease 0
-		noteL G5,4
+		noteL C5,8
+		note  F5
+		note  G5
+		note  A5
+		note  As5
+		note  A5
+		setRelease 12
+		noteL F5,16
+		setRelease 0
+		noteL D6,8
+		setRelease 20
+		noteL C6,80
+		setRelease 0
+		noteL G5,8
 		countedLoopStart 1
 		note  G4
 		note  C5
@@ -920,19 +920,19 @@ Music_33_Channel_1:
 		note  A5
 		note  As5
 		note  A5
-		setRelease 4
-		noteL F5,8
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL C5,4
+		noteL C5,8
 		note  D5
-		setRelease 6
-		noteL C5,24
+		setRelease 12
+		noteL C5,48
 		setRelease 0
-		noteL A5,4
+		noteL A5,8
 		note  As5
 		note  A5
 		note  D6
-		setRelease 2
+		setRelease 4
 		note  C6
 		setRelease 0
 		note  F5
@@ -940,13 +940,13 @@ Music_33_Channel_1:
 		note  C6
 		note  F6
 		note  E6
-		setRelease 6
-		noteL C6,24
+		setRelease 12
+		noteL C6,48
 		setRelease 0
-		noteL A5,4
+		noteL A5,8
 		note  As5
-		noteL C6,8
-		noteL F5,4
+		noteL C6,16
+		noteL F5,8
 		note  G5
 		note  C6
 		note  F5
@@ -956,13 +956,13 @@ Music_33_Channel_1:
 		note  G5
 		note  D6
 		note  C6
-		setRelease 4
-		noteL F5,8
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL F5,4
+		noteL F5,8
 		note  G5
-		noteL C6,8
-		noteL F5,4
+		noteL C6,16
+		noteL F5,8
 		note  G5
 		note  C6
 		note  F5
@@ -972,38 +972,38 @@ Music_33_Channel_1:
 		note  G5
 		note  D6
 		note  C6
-		setRelease 4
-		noteL F5,8
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL A5,4
+		noteL A5,8
 		note  As5
-		noteL C6,12
-		setRelease 4
-		noteL F5,8
-		setRelease 0
-		noteL E5,4
-		setRelease 4
-		noteL F5,8
-		setRelease 6
 		noteL C6,24
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL C6,4
-		note  D6
-		setRelease 2
-		noteL C6,12
-		setRelease 5
-		noteL F6,8
+		noteL E5,8
+		setRelease 8
+		noteL F5,16
+		setRelease 12
+		noteL C6,48
 		setRelease 0
-		noteL E6,4
-		setRelease 6
 		noteL C6,8
+		note  D6
+		setRelease 4
+		noteL C6,24
+		setRelease 10
+		noteL F6,16
+		setRelease 0
+		noteL E6,8
+		setRelease 12
+		noteL C6,16
 		setRelease 0
 		note  A5
-		noteL As5,4
+		noteL As5,8
 		note  D6
-		noteL C6,8
+		noteL C6,16
 		countedLoopStart 1
-		noteL F5,4
+		noteL F5,8
 		note  E5
 		note  F5
 		note  C6
@@ -1017,75 +1017,75 @@ Music_33_Channel_1:
 		note  F5
 		note  C6
 		note  D6
-		setRelease 5
-		noteL C6,8
+		setRelease 10
+		noteL C6,16
 		setRelease 0
 		countedLoopEnd
-		noteL A5,4
+		noteL A5,8
 		note  As5
-		noteL C6,12
-		setRelease 4
-		noteL F5,8
-		setRelease 0
-		noteL E5,4
-		setRelease 6
-		noteL F5,8
 		noteL C6,24
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL C6,4
+		noteL E5,8
+		setRelease 12
+		noteL F5,16
+		noteL C6,48
+		setRelease 0
+		noteL C6,8
 		note  D6
-		noteL C6,12
+		noteL C6,24
+		setRelease 8
+		noteL F6,16
+		setRelease 0
+		noteL G6,8
+		setRelease 8
+		noteL C6,16
+		setRelease 0
+		note  A6
 		setRelease 4
+		noteL As6,8
+		note  A6
+		setRelease 0
+		noteL G6,16
+		noteL As6,8
+		note  A6
+		setRelease 4
+		noteL F6,48
+		setRelease 6
+		noteL C6,16
+		setRelease 0
+		note  F6
+		setRelease 4
+		noteL G6,8
+		setRelease 22
+		noteL F6,48
+		setRelease 12
+		note  F6
+		setRelease 0
+		noteL G6,2
+		setRelease 4
+		noteL Gs6,6
+		setRelease 6
+		noteL G6,16
+		setRelease 8
+		note  F6
+		setRelease 6
 		noteL F6,8
 		setRelease 0
-		noteL G6,4
-		setRelease 4
-		noteL C6,8
-		setRelease 0
-		note  A6
-		setRelease 2
-		noteL As6,4
-		note  A6
-		setRelease 0
-		noteL G6,8
-		noteL As6,4
-		note  A6
-		setRelease 2
-		noteL F6,24
-		setRelease 3
-		noteL C6,8
-		setRelease 0
-		note  F6
-		setRelease 2
-		noteL G6,4
-		setRelease 11
-		noteL F6,24
-		setRelease 6
-		note  F6
-		setRelease 0
-		noteL G6,1
-		setRelease 2
-		noteL Gs6,3
-		setRelease 3
-		noteL G6,8
-		setRelease 4
-		note  F6
-		setRelease 3
-		noteL F6,4
-		setRelease 0
-		noteL F6,1
-		noteL G6,3
-		noteL F6,4
+		noteL F6,2
+		noteL G6,6
+		noteL F6,8
 		note  G6
+		setRelease 12
+		noteL F6,16
 		setRelease 6
-		noteL F6,8
-		setRelease 3
-		noteL C6,4
+		noteL C6,8
 		setRelease 0
-		noteL C6,1
-		setRelease 1
-		noteL D6,25
 		noteL C6,2
+		setRelease 2
+		noteL D6,50
+		noteL C6,4
 		note  F6
 		note  D6
 		note  C6
@@ -1131,8 +1131,8 @@ Music_33_Channel_1:
 		note  C7
 		note  A6
 		note  C7
-		setRelease 2
-		noteL D7,3
+		setRelease 4
+		noteL D7,6
 		mainLoopEnd
 Music_33_Channel_2:
 		vibrato 0
@@ -1141,464 +1141,464 @@ Music_33_Channel_2:
 		inst 1
 		vol 13
 		setRelease 0
-		noteL F6,4
-		setRelease 2
+		noteL F6,8
+		setRelease 4
 		note  D6
-		setRelease 3
+		setRelease 6
 		note  E6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  D6
-		setRelease 3
+		setRelease 6
 		note  E6
 		setRelease 0
 		note  G6
-		setRelease 2
+		setRelease 4
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  E6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		note  C6
 		setRelease 0
 		note  A6
-		setRelease 2
+		setRelease 4
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  G6
 		setRelease 0
 		note  A6
-		setRelease 2
+		setRelease 4
 		note  G6
-		setRelease 3
+		setRelease 6
 		note  F6
 		setRelease 0
 		note  A6
-		setRelease 2
+		setRelease 4
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  G6
 		setRelease 0
 		note  As6
-		setRelease 2
+		setRelease 4
 		note  A6
-		setRelease 3
+		setRelease 6
 		note  G6
 		setRelease 0
 		note  A6
-		setRelease 2
+		setRelease 4
 		note  G6
-		setRelease 3
+		setRelease 6
 		note  F6
 		note  E6
-		noteL C7,12
-		setRelease 2
+		noteL C7,24
+		setRelease 4
 		note  B6
+		setRelease 12
+		noteL G6,16
+		setRelease 28
+		noteL D6,78
+		inst 2
+		vol 14
+		setRelease 0
+		noteL A4,8
+		setRelease 4
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		noteL C5,22
+		setRelease 10
+		noteL A4,48
+		setRelease 4
+		noteL C5,8
+		noteL G4,32
+		setRelease 18
+		noteL F4,48
+		setRelease 0
+		noteL A4,8
+		setRelease 4
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		noteL C6,26
+		setRelease 12
+		noteL A5,50
+		setRelease 0
+		noteL A5,4
+		note  As5
+		setRelease 4
+		noteL A5,30
+		setRelease 20
+		noteL G5,48
+		setRelease 0
+		noteL A4,8
+		setRelease 4
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		noteL C5,22
+		setRelease 10
+		noteL A4,48
+		setRelease 4
+		noteL C5,8
+		noteL G4,32
+		setRelease 18
+		noteL F4,48
+		setRelease 0
+		noteL A4,8
+		setRelease 4
+		note  C5
+		note  D5
+		noteL G5,24
+		note  F5
+		note  D5
+		noteL C6,26
+		setRelease 12
+		noteL A5,50
+		setRelease 0
+		noteL A5,4
+		note  As5
+		setRelease 4
+		noteL A5,30
+		setRelease 12
+		noteL G5,40
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
+		setRelease 0
+		note  C5
+		setRelease 4
+		noteL D5,24
+		setRelease 0
+		noteL A4,8
+		noteL C5,16
+		setRelease 8
+		noteL D5,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
+		setRelease 0
+		note  C5
+		setRelease 4
+		noteL D5,24
+		setRelease 0
+		noteL A4,8
+		noteL G4,16
+		setRelease 8
+		noteL A4,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		noteL D5,16
+		noteL D5,8
+		note  C5
+		setRelease 4
+		noteL D5,24
+		setRelease 0
+		noteL A4,8
+		noteL C5,16
+		setRelease 8
+		noteL D5,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		noteL D5,16
+		setRelease 4
+		noteL D5,8
+		setRelease 0
+		note  C6
+		setRelease 4
+		noteL D6,24
+		setRelease 0
+		noteL A5,8
+		setRelease 4
+		noteL G5,16
+		setRelease 0
+		noteL D5,8
+		setRelease 4
+		note  F5
+		note  G5
+		noteL A5,24
+		note  G5
+		setRelease 8
+		noteL D5,16
+		setRelease 4
+		noteL F5,24
+		setRelease 18
+		noteL D5,40
+		setRelease 4
+		noteL A5,24
+		note  G5
+		setRelease 8
+		noteL D5,16
+		setRelease 0
+		noteL F5,24
+		setRelease 18
+		noteL D5,40
+		setRelease 0
+		noteL As5,8
+		setRelease 4
+		note  A5
+		note  G5
+		setRelease 0
+		note  A5
+		setRelease 4
+		note  G5
+		note  F5
+		setRelease 0
+		note  G5
+		setRelease 4
+		note  F5
+		note  E5
+		setRelease 0
+		note  F5
+		setRelease 4
+		note  E5
 		setRelease 6
-		noteL G6,8
+		note  D5
+		setRelease 0
+		note  E5
+		setRelease 4
+		note  D5
+		note  C5
+		setRelease 6
+		noteL As4,10
+		inst 2
+		vol 10
 		setRelease 14
-		noteL D6,39
+		noteL E6,16
+		setRelease 0
+		noteL E6,8
+		setRelease 14
+		noteL E6,16
+		setRelease 6
+		noteL E6,8
+		setRelease 84
+		noteL E6,86
 		inst 2
 		vol 14
 		setRelease 0
-		noteL A4,4
-		setRelease 2
+		noteL A4,8
+		setRelease 4
 		note  C5
 		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
-		noteL C5,11
-		setRelease 5
-		noteL A4,24
-		setRelease 2
-		noteL C5,4
-		noteL G4,16
-		setRelease 9
-		noteL F4,24
-		setRelease 0
-		noteL A4,4
-		setRelease 2
-		note  C5
-		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
-		noteL C6,13
-		setRelease 6
-		noteL A5,25
-		setRelease 0
-		noteL A5,2
-		note  As5
-		setRelease 2
-		noteL A5,15
-		setRelease 10
 		noteL G5,24
-		setRelease 0
-		noteL A4,4
-		setRelease 2
-		note  C5
-		note  D5
-		noteL G5,12
 		note  F5
 		note  D5
-		noteL C5,11
-		setRelease 5
-		noteL A4,24
-		setRelease 2
-		noteL C5,4
-		noteL G4,16
-		setRelease 9
-		noteL F4,24
+		noteL C5,22
+		setRelease 10
+		noteL A4,48
+		setRelease 4
+		noteL C5,8
+		noteL G4,32
+		setRelease 18
+		noteL F4,48
 		setRelease 0
-		noteL A4,4
-		setRelease 2
+		noteL A4,8
+		setRelease 4
 		note  C5
 		note  D5
-		noteL G5,12
+		noteL G5,24
 		note  F5
 		note  D5
-		noteL C6,13
-		setRelease 6
-		noteL A5,25
-		setRelease 0
-		noteL A5,2
-		note  As5
-		setRelease 2
-		noteL A5,15
-		setRelease 6
-		noteL G5,20
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		setRelease 0
-		note  C5
-		setRelease 2
-		noteL D5,12
-		setRelease 0
-		noteL A4,4
-		noteL C5,8
-		setRelease 4
-		noteL D5,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		setRelease 0
-		note  C5
-		setRelease 2
-		noteL D5,12
-		setRelease 0
-		noteL A4,4
-		noteL G4,8
-		setRelease 4
-		noteL A4,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		noteL D5,8
-		noteL D5,4
-		note  C5
-		setRelease 2
-		noteL D5,12
-		setRelease 0
-		noteL A4,4
-		noteL C5,8
-		setRelease 4
-		noteL D5,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		noteL D5,8
-		setRelease 2
-		noteL D5,4
-		setRelease 0
-		note  C6
-		setRelease 2
-		noteL D6,12
+		noteL C6,26
+		setRelease 12
+		noteL A5,50
 		setRelease 0
 		noteL A5,4
-		setRelease 2
-		noteL G5,8
-		setRelease 0
-		noteL D5,4
-		setRelease 2
-		note  F5
-		note  G5
-		noteL A5,12
-		note  G5
-		setRelease 4
-		noteL D5,8
-		setRelease 2
-		noteL F5,12
-		setRelease 9
-		noteL D5,20
-		setRelease 2
-		noteL A5,12
-		note  G5
-		setRelease 4
-		noteL D5,8
-		setRelease 0
-		noteL F5,12
-		setRelease 9
-		noteL D5,20
-		setRelease 0
-		noteL As5,4
-		setRelease 2
-		note  A5
-		note  G5
-		setRelease 0
-		note  A5
-		setRelease 2
-		note  G5
-		note  F5
-		setRelease 0
-		note  G5
-		setRelease 2
-		note  F5
-		note  E5
-		setRelease 0
-		note  F5
-		setRelease 2
-		note  E5
-		setRelease 3
-		note  D5
-		setRelease 0
-		note  E5
-		setRelease 2
-		note  D5
-		note  C5
-		setRelease 3
-		noteL As4,5
-		inst 2
-		vol 10
-		setRelease 7
-		noteL E6,8
-		setRelease 0
-		noteL E6,4
-		setRelease 7
-		noteL E6,8
-		setRelease 3
-		noteL E6,4
-		setRelease 42
-		noteL E6,43
-		inst 2
-		vol 14
-		setRelease 0
-		noteL A4,4
-		setRelease 2
-		note  C5
-		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
-		noteL C5,11
-		setRelease 5
-		noteL A4,24
-		setRelease 2
-		noteL C5,4
-		noteL G4,16
-		setRelease 9
-		noteL F4,24
-		setRelease 0
-		noteL A4,4
-		setRelease 2
-		note  C5
-		note  D5
-		noteL G5,12
-		note  F5
-		note  D5
-		noteL C6,13
-		setRelease 6
-		noteL A5,25
-		setRelease 0
-		noteL A5,2
 		note  As5
-		setRelease 2
-		noteL A5,15
-		setRelease 10
+		setRelease 4
+		noteL A5,30
+		setRelease 20
+		noteL G5,48
+		setRelease 0
+		noteL A4,8
+		setRelease 4
+		note  C5
+		note  D5
 		noteL G5,24
-		setRelease 0
-		noteL A4,4
-		setRelease 2
-		note  C5
-		note  D5
-		noteL G5,12
 		note  F5
 		note  D5
-		noteL C5,11
-		setRelease 5
-		noteL A4,24
-		setRelease 2
-		noteL C5,4
-		noteL G4,16
-		setRelease 9
-		noteL F4,24
+		noteL C5,22
+		setRelease 10
+		noteL A4,48
+		setRelease 4
+		noteL C5,8
+		noteL G4,32
+		setRelease 18
+		noteL F4,48
 		setRelease 0
-		noteL A4,4
-		setRelease 2
+		noteL A4,8
+		setRelease 4
 		note  C5
 		note  D5
-		noteL G5,12
+		noteL G5,24
 		note  F5
 		note  D5
-		noteL C6,13
-		setRelease 6
-		noteL A5,25
-		setRelease 0
-		noteL A5,2
-		note  As5
-		setRelease 2
-		noteL A5,15
-		setRelease 6
-		noteL G5,20
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		setRelease 0
-		note  C5
-		setRelease 2
-		noteL D5,12
-		setRelease 0
-		noteL A4,4
-		noteL C5,8
-		setRelease 4
-		noteL D5,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		setRelease 2
-		noteL D5,8
-		noteL D5,4
-		setRelease 0
-		note  C5
-		setRelease 2
-		noteL D5,12
-		setRelease 0
-		noteL A4,4
-		noteL G4,8
-		setRelease 4
-		noteL A4,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		noteL D5,8
-		noteL D5,4
-		note  C5
-		setRelease 2
-		noteL D5,12
-		setRelease 0
-		noteL A4,4
-		noteL C5,8
-		setRelease 4
-		noteL D5,12
-		setRelease 0
-		noteL F5,4
-		note  G5
-		note  A5
-		noteL D5,8
-		setRelease 2
-		noteL D5,4
-		setRelease 0
-		note  C6
-		setRelease 2
-		noteL D6,12
+		noteL C6,26
+		setRelease 12
+		noteL A5,50
 		setRelease 0
 		noteL A5,4
-		setRelease 2
-		noteL G5,8
+		note  As5
+		setRelease 4
+		noteL A5,30
+		setRelease 12
+		noteL G5,40
 		setRelease 0
-		noteL D5,4
-		setRelease 2
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
+		setRelease 0
+		note  C5
+		setRelease 4
+		noteL D5,24
+		setRelease 0
+		noteL A4,8
+		noteL C5,16
+		setRelease 8
+		noteL D5,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		setRelease 4
+		noteL D5,16
+		noteL D5,8
+		setRelease 0
+		note  C5
+		setRelease 4
+		noteL D5,24
+		setRelease 0
+		noteL A4,8
+		noteL G4,16
+		setRelease 8
+		noteL A4,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		noteL D5,16
+		noteL D5,8
+		note  C5
+		setRelease 4
+		noteL D5,24
+		setRelease 0
+		noteL A4,8
+		noteL C5,16
+		setRelease 8
+		noteL D5,24
+		setRelease 0
+		noteL F5,8
+		note  G5
+		note  A5
+		noteL D5,16
+		setRelease 4
+		noteL D5,8
+		setRelease 0
+		note  C6
+		setRelease 4
+		noteL D6,24
+		setRelease 0
+		noteL A5,8
+		setRelease 4
+		noteL G5,16
+		setRelease 0
+		noteL D5,8
+		setRelease 4
 		note  F5
 		note  G5
-		noteL A5,12
+		noteL A5,24
 		note  G5
+		setRelease 8
+		noteL D5,16
 		setRelease 4
-		noteL D5,8
-		setRelease 2
-		noteL F5,12
-		setRelease 9
-		noteL D5,20
-		setRelease 2
-		noteL A5,12
+		noteL F5,24
+		setRelease 18
+		noteL D5,40
+		setRelease 4
+		noteL A5,24
 		note  G5
+		setRelease 8
+		noteL D5,16
+		setRelease 0
+		noteL F5,24
+		setRelease 18
+		noteL D5,40
+		setRelease 0
+		noteL As5,8
 		setRelease 4
-		noteL D5,8
-		setRelease 0
-		noteL F5,12
-		setRelease 9
-		noteL D5,20
-		setRelease 0
-		noteL As5,4
-		setRelease 2
 		note  A5
 		note  G5
 		setRelease 0
 		note  A5
-		setRelease 2
+		setRelease 4
 		note  G5
 		note  F5
 		setRelease 0
 		note  G5
-		setRelease 2
+		setRelease 4
 		note  F5
 		note  E5
 		setRelease 0
 		note  F5
-		setRelease 2
+		setRelease 4
 		note  E5
-		setRelease 3
+		setRelease 6
 		note  D5
 		setRelease 0
 		note  E5
-		setRelease 2
+		setRelease 4
 		note  D5
 		note  C5
-		setRelease 3
-		noteL As4,5
+		setRelease 6
+		noteL As4,10
 		inst 2
 		vol 10
-		setRelease 7
-		noteL E6,8
+		setRelease 14
+		noteL E6,16
 		setRelease 0
-		noteL E6,4
-		setRelease 7
 		noteL E6,8
-		setRelease 3
-		noteL E6,4
-		setRelease 38
-		noteL E6,39
+		setRelease 14
+		noteL E6,16
+		setRelease 6
+		noteL E6,8
+		setRelease 76
+		noteL E6,78
 		stereo 80h
 		vol 14
 		setRelease 0
-		noteL G5,4
+		noteL G5,8
 		countedLoopStart 1
 		note  G4
 		note  C5
@@ -1625,28 +1625,28 @@ Music_33_Channel_2:
 		note  A5
 		note  As5
 		note  A5
-		setRelease 4
-		noteL F5,8
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL C5,4
+		noteL C5,8
 		note  D5
-		setRelease 5
-		noteL C5,24
+		setRelease 10
+		noteL C5,48
 		setRelease 0
-		noteL C5,4
+		noteL C5,8
 		note  F5
 		note  G5
 		note  A5
 		note  As5
 		note  A5
-		setRelease 6
-		noteL F5,8
+		setRelease 12
+		noteL F5,16
 		setRelease 0
-		noteL D6,4
-		setRelease 9
-		noteL C6,40
+		noteL D6,8
+		setRelease 18
+		noteL C6,80
 		setRelease 0
-		noteL G5,4
+		noteL G5,8
 		countedLoopStart 1
 		note  G4
 		note  C5
@@ -1673,21 +1673,21 @@ Music_33_Channel_2:
 		note  A5
 		note  As5
 		note  A5
-		setRelease 4
-		noteL F5,8
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL C5,4
+		noteL C5,8
 		note  D5
-		setRelease 5
-		noteL C5,24
+		setRelease 10
+		noteL C5,48
 		setRelease 0
-		noteL A5,4
-		setRelease 2
+		noteL A5,8
+		setRelease 4
 		note  As5
 		setRelease 0
 		note  A5
 		note  D6
-		setRelease 2
+		setRelease 4
 		note  C6
 		setRelease 0
 		note  F5
@@ -1695,13 +1695,13 @@ Music_33_Channel_2:
 		note  C6
 		note  F6
 		note  E6
-		setRelease 5
-		noteL C6,24
+		setRelease 10
+		noteL C6,48
 		setRelease 0
-		noteL A5,4
+		noteL A5,8
 		note  As5
-		noteL C6,8
-		noteL F5,4
+		noteL C6,16
+		noteL F5,8
 		note  G5
 		note  C6
 		note  F5
@@ -1711,13 +1711,13 @@ Music_33_Channel_2:
 		note  G5
 		note  D6
 		note  C6
-		setRelease 4
-		noteL F5,8
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL F5,4
+		noteL F5,8
 		note  G5
-		noteL C6,8
-		noteL F5,4
+		noteL C6,16
+		noteL F5,8
 		note  G5
 		note  C6
 		note  F5
@@ -1727,37 +1727,37 @@ Music_33_Channel_2:
 		note  G5
 		note  D6
 		note  C6
-		setRelease 4
-		noteL F5,8
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL A5,4
+		noteL A5,8
 		note  As5
-		noteL C6,12
-		setRelease 4
-		noteL F5,8
-		setRelease 0
-		noteL E5,4
-		setRelease 4
-		noteL F5,8
-		setRelease 5
 		noteL C6,24
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL C6,4
-		note  D6
-		noteL C6,12
-		setRelease 4
-		noteL F6,8
+		noteL E5,8
+		setRelease 8
+		noteL F5,16
+		setRelease 10
+		noteL C6,48
 		setRelease 0
-		noteL E6,4
-		setRelease 6
 		noteL C6,8
+		note  D6
+		noteL C6,24
+		setRelease 8
+		noteL F6,16
+		setRelease 0
+		noteL E6,8
+		setRelease 12
+		noteL C6,16
 		setRelease 0
 		note  A5
-		noteL As5,4
+		noteL As5,8
 		note  D6
-		noteL C6,8
+		noteL C6,16
 		countedLoopStart 1
-		noteL F5,4
+		noteL F5,8
 		note  E5
 		note  F5
 		note  C6
@@ -1771,77 +1771,77 @@ Music_33_Channel_2:
 		note  F5
 		note  C6
 		note  D6
-		setRelease 4
-		noteL C6,8
+		setRelease 8
+		noteL C6,16
 		setRelease 0
 		countedLoopEnd
-		noteL A5,4
+		noteL A5,8
 		note  As5
-		noteL C6,12
-		setRelease 4
-		noteL F5,8
-		setRelease 0
-		noteL E5,4
-		setRelease 6
-		noteL F5,8
-		setRelease 5
 		noteL C6,24
+		setRelease 8
+		noteL F5,16
 		setRelease 0
-		noteL C6,4
+		noteL E5,8
+		setRelease 12
+		noteL F5,16
+		setRelease 10
+		noteL C6,48
+		setRelease 0
+		noteL C6,8
 		note  D6
-		noteL C6,12
-		setRelease 4
-		noteL F6,8
-		setRelease 0
-		noteL G6,4
-		setRelease 4
-		noteL C6,8
-		setRelease 0
-		note  A6
-		setRelease 2
-		noteL As6,4
-		note  A6
+		noteL C6,24
+		setRelease 8
+		noteL F6,16
 		setRelease 0
 		noteL G6,8
-		noteL As6,4
+		setRelease 8
+		noteL C6,16
+		setRelease 0
 		note  A6
-		setRelease 2
-		noteL F6,24
-		setRelease 3
-		noteL C6,8
+		setRelease 4
+		noteL As6,8
+		note  A6
 		setRelease 0
-		note  F6
-		setRelease 2
-		noteL G6,4
-		setRelease 11
-		noteL F6,24
-		setRelease 5
-		note  F6
-		setRelease 0
-		noteL G6,1
-		setRelease 1
-		noteL Gs6,3
-		setRelease 2
-		noteL G6,8
-		setRelease 3
-		note  F6
-		setRelease 2
-		noteL F6,4
-		setRelease 0
-		noteL F6,1
-		noteL G6,3
-		noteL F6,4
-		note  G6
+		noteL G6,16
+		noteL As6,8
+		note  A6
+		setRelease 4
+		noteL F6,48
 		setRelease 6
-		noteL F6,8
-		setRelease 2
-		noteL C6,4
+		noteL C6,16
 		setRelease 0
-		noteL C6,1
-		setRelease 1
-		noteL D6,25
+		note  F6
+		setRelease 4
+		noteL G6,8
+		setRelease 22
+		noteL F6,48
+		setRelease 10
+		note  F6
+		setRelease 0
+		noteL G6,2
+		setRelease 2
+		noteL Gs6,6
+		setRelease 4
+		noteL G6,16
+		setRelease 6
+		note  F6
+		setRelease 4
+		noteL F6,8
+		setRelease 0
+		noteL F6,2
+		noteL G6,6
+		noteL F6,8
+		note  G6
+		setRelease 12
+		noteL F6,16
+		setRelease 4
+		noteL C6,8
 		setRelease 0
 		noteL C6,2
+		setRelease 2
+		noteL D6,50
+		setRelease 0
+		noteL C6,4
 		note  F6
 		note  D6
 		note  C6
@@ -1886,7 +1886,7 @@ Music_33_Channel_2:
 		note  A6
 		note  C7
 		note  A6
-		setRelease 1
+		setRelease 2
 		note  C7
 		mainLoopEnd
 Music_33_Channel_3:
@@ -1895,284 +1895,284 @@ Music_33_Channel_3:
 		stereo 0C0h
 		inst 1
 		vol 13
-		setRelease 1
-		noteL D6,4
 		setRelease 2
+		noteL D6,8
+		setRelease 4
 		note  As5
-		setRelease 3
+		setRelease 6
 		note  C6
-		setRelease 1
+		setRelease 2
 		note  D6
-		setRelease 2
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
-		setRelease 1
+		setRelease 2
 		note  D6
-		setRelease 2
+		setRelease 4
 		note  As5
-		setRelease 3
+		setRelease 6
 		note  C6
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
 		note  A5
-		setRelease 1
-		note  F6
 		setRelease 2
-		note  D6
-		setRelease 3
-		note  E6
-		setRelease 1
 		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
+		setRelease 4
 		note  D6
-		setRelease 1
+		setRelease 6
+		note  E6
+		setRelease 2
 		note  F6
-		setRelease 2
-		note  D6
-		setRelease 3
+		setRelease 4
 		note  E6
-		setRelease 1
+		setRelease 6
+		note  D6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  E6
+		setRelease 2
 		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
 		setRelease 2
 		note  F6
-		setRelease 3
+		setRelease 4
 		note  E6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		note  C6
-		setRelease 2
-		noteL A6,12
+		setRelease 4
+		noteL A6,24
+		setRelease 8
+		note  G6
+		setRelease 12
+		noteL E6,16
+		setRelease 14
+		noteL As5,64
+		stereo 40h
+		inst 2
+		vol 9
+		setRelease 0
+		noteL F6,8
+		countedLoopStart 7
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		note  C6
+		setRelease 0
+		note  F6
+		countedLoopEnd
+		countedLoopStart 1
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		setRelease 0
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		setRelease 0
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		note  C6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		note  C6
+		setRelease 0
+		note  F6
+		countedLoopEnd
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		note  C6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  C6
+		setRelease 0
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
+		setRelease 0
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		note  C6
+		setRelease 0
+		note  As6
+		setRelease 4
+		note  A6
+		setRelease 6
+		note  G6
+		setRelease 0
+		note  A6
 		setRelease 4
 		note  G6
 		setRelease 6
-		noteL E6,8
-		setRelease 7
-		noteL As5,32
-		stereo 40h
-		inst 2
-		vol 9
-		setRelease 0
-		noteL F6,4
-		countedLoopStart 7
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  E6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		note  C6
-		setRelease 0
-		note  F6
-		countedLoopEnd
-		countedLoopStart 1
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		setRelease 0
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		setRelease 0
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  E6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		note  C6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  E6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		note  C6
-		setRelease 0
-		note  F6
-		countedLoopEnd
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  E6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		note  C6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  C6
-		setRelease 0
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  E6
-		setRelease 0
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		note  C6
-		setRelease 0
-		note  As6
-		setRelease 2
-		note  A6
-		setRelease 3
-		note  G6
-		setRelease 0
-		note  A6
-		setRelease 2
-		note  G6
-		setRelease 3
 		note  F6
 		setRelease 0
 		note  G6
-		setRelease 2
+		setRelease 4
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  E6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		setRelease 0
 		note  E6
-		setRelease 2
+		setRelease 4
 		note  D6
-		setRelease 3
+		setRelease 6
 		note  C6
 		note  As5
 		stereo 0C0h
 		inst 2
 		vol 15
+		setRelease 4
+		note  A5
+		note  A4
+		note  A4
+		note  A5
+		note  A4
+		note  A4
+		note  A5
+		setRelease 12
+		noteL A4,16
 		setRelease 2
-		note  A5
-		note  A4
-		note  A4
-		note  A5
-		note  A4
-		note  A4
-		note  A5
-		setRelease 6
-		noteL A4,8
-		setRelease 1
-		noteL G5,4
+		noteL G5,8
 		note  A5
 		note  C6
 		note  F6
@@ -2185,179 +2185,179 @@ Music_33_Channel_3:
 		countedLoopStart 7
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  C6
 		setRelease 0
 		note  E6
-		setRelease 2
+		setRelease 4
 		note  D6
-		setRelease 3
+		setRelease 6
 		note  C6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  C6
 		setRelease 0
 		note  G6
-		setRelease 2
+		setRelease 4
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  E6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		note  C6
 		countedLoopEnd
 		countedLoopStart 1
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		setRelease 0
 		note  E6
-		setRelease 2
+		setRelease 4
 		note  D6
-		setRelease 3
+		setRelease 6
 		note  C6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		setRelease 0
 		note  G6
-		setRelease 2
+		setRelease 4
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  E6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		note  C6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  C6
 		setRelease 0
 		note  G6
-		setRelease 2
+		setRelease 4
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  E6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		note  C6
 		countedLoopEnd
 		countedLoopStart 1
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  C6
 		setRelease 0
 		note  E6
-		setRelease 2
+		setRelease 4
 		note  D6
-		setRelease 3
+		setRelease 6
 		note  C6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  C6
 		setRelease 0
 		note  G6
-		setRelease 2
+		setRelease 4
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  E6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		note  C6
 		countedLoopEnd
 		setRelease 0
 		note  As6
-		setRelease 2
+		setRelease 4
 		note  A6
-		setRelease 3
+		setRelease 6
 		note  G6
 		setRelease 0
 		note  A6
-		setRelease 2
+		setRelease 4
 		note  G6
-		setRelease 3
+		setRelease 6
 		note  F6
 		setRelease 0
 		note  G6
-		setRelease 2
+		setRelease 4
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  E6
 		setRelease 0
 		note  F6
-		setRelease 2
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		setRelease 0
 		note  E6
-		setRelease 2
+		setRelease 4
 		note  D6
-		setRelease 3
+		setRelease 6
 		note  C6
 		note  As5
 		stereo 0C0h
 		inst 2
 		vol 15
+		setRelease 4
+		note  A5
+		note  A4
+		note  A4
+		note  A5
+		note  A4
+		note  A4
+		note  A5
+		setRelease 12
+		noteL A4,16
 		setRelease 2
-		note  A5
-		note  A4
-		note  A4
-		note  A5
-		note  A4
-		note  A4
-		note  A5
-		setRelease 6
-		noteL A4,8
-		setRelease 1
-		noteL G5,4
+		noteL G5,8
 		note  A5
 		note  C6
 		note  F6
@@ -2367,22 +2367,22 @@ Music_33_Channel_3:
 		note  C6
 		inst 4
 		vol 13
-		setRelease 1
+		setRelease 2
 		countedLoopStart 3
-		noteL As4,56
-		noteL A4,4
+		noteL As4,112
+		noteL A4,8
 		note  As4
-		noteL C5,48
+		noteL C5,96
+		setRelease 4
+		noteL C5,32
 		setRelease 2
-		noteL C5,16
-		setRelease 1
-		noteL F5,48
+		noteL F5,96
+		setRelease 4
+		noteL F5,24
 		setRelease 2
-		noteL F5,12
-		setRelease 1
-		noteL G5,4
-		noteL A5,40
-		noteL G5,4
+		noteL G5,8
+		noteL A5,80
+		noteL G5,8
 		note  A5
 		note  C6
 		note  As5
@@ -2391,37 +2391,37 @@ Music_33_Channel_3:
 		countedLoopEnd
 		countedLoopStart 4
 		note  As5
-		setRelease 3
+		setRelease 6
 		note  F5
-		setRelease 1
+		setRelease 2
 		note  F5
 		countedLoopEnd
 		note  As5
 		countedLoopStart 4
 		note  Cs6
-		setRelease 3
+		setRelease 6
 		note  Gs5
-		setRelease 1
+		setRelease 2
 		note  Gs5
 		countedLoopEnd
 		note  Cs6
 		countedLoopStart 4
 		note  D6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  A5
 		countedLoopEnd
 		note  D6
 		countedLoopStart 4
 		note  D6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  A5
 		countedLoopEnd
-		setRelease 2
-		noteL D6,5
+		setRelease 4
+		noteL D6,10
 		mainLoopEnd
 Music_33_Channel_4:
 		vibrato 0
@@ -2429,285 +2429,285 @@ Music_33_Channel_4:
 		stereo 0C0h
 		inst 0
 		vol 13
-		setRelease 1
-		noteL D4,4
 		setRelease 2
+		noteL D4,8
+		setRelease 4
 		note  As3
-		setRelease 3
+		setRelease 6
 		note  C4
-		setRelease 1
+		setRelease 2
 		note  D4
-		setRelease 2
+		setRelease 4
 		note  C4
-		setRelease 3
+		setRelease 6
 		note  As3
-		setRelease 1
+		setRelease 2
 		note  D4
-		setRelease 2
+		setRelease 4
 		note  As3
-		setRelease 3
+		setRelease 6
 		note  C4
-		setRelease 1
+		setRelease 2
 		note  E4
+		setRelease 4
+		note  D4
+		setRelease 6
+		note  C4
 		setRelease 2
 		note  D4
-		setRelease 3
+		setRelease 4
 		note  C4
-		setRelease 1
-		note  D4
-		setRelease 2
-		note  C4
-		setRelease 3
+		setRelease 6
 		note  As3
 		note  A3
-		setRelease 1
-		note  F4
 		setRelease 2
-		note  D4
-		setRelease 3
-		note  E4
-		setRelease 1
 		note  F4
-		setRelease 2
-		note  E4
-		setRelease 3
+		setRelease 4
 		note  D4
-		setRelease 1
+		setRelease 6
+		note  E4
+		setRelease 2
 		note  F4
-		setRelease 2
-		note  D4
-		setRelease 3
+		setRelease 4
 		note  E4
-		setRelease 1
+		setRelease 6
+		note  D4
+		setRelease 2
+		note  F4
+		setRelease 4
+		note  D4
+		setRelease 6
+		note  E4
+		setRelease 2
 		note  G4
+		setRelease 4
+		note  F4
+		setRelease 6
+		note  E4
 		setRelease 2
 		note  F4
-		setRelease 3
+		setRelease 4
 		note  E4
-		setRelease 1
-		note  F4
-		setRelease 2
-		note  E4
-		setRelease 3
+		setRelease 6
 		note  D4
 		note  C4
-		setRelease 1
-		noteL C6,12
+		setRelease 2
+		noteL C6,24
 		note  B5
 		setRelease 0
-		noteL G5,8
-		setRelease 7
-		noteL D5,32
+		noteL G5,16
+		setRelease 14
+		noteL D5,64
 		stereo 80h
 		inst 2
 		vol 9
-		setRelease 1
-		noteL D6,4
+		setRelease 2
+		noteL D6,8
 		countedLoopStart 7
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
 		setRelease 2
 		note  C6
-		setRelease 3
+		setRelease 4
 		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
+		setRelease 6
 		note  G5
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  D6
 		countedLoopEnd
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
 		setRelease 2
 		note  C6
-		setRelease 3
+		setRelease 4
 		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
+		setRelease 6
 		note  G5
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
 		note  G5
 		countedLoopStart 1
-		setRelease 1
-		note  D6
 		setRelease 2
-		note  C6
-		setRelease 3
-		note  A5
-		setRelease 1
 		note  D6
-		setRelease 2
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  D6
-		setRelease 2
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
 		setRelease 2
 		note  C6
-		setRelease 3
+		setRelease 4
 		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
+		setRelease 6
 		note  G5
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
 		note  A5
 		countedLoopEnd
-		setRelease 1
+		setRelease 2
 		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
 		setRelease 2
 		note  C6
-		setRelease 3
+		setRelease 4
 		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
+		setRelease 6
 		note  G5
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
 		setRelease 2
 		note  F6
-		setRelease 3
+		setRelease 4
 		note  E6
-		setRelease 1
-		note  F6
+		setRelease 6
+		note  D6
 		setRelease 2
 		note  E6
-		setRelease 3
+		setRelease 4
 		note  D6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
+		setRelease 6
 		note  C6
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
-		setRelease 1
-		note  C6
 		setRelease 2
+		note  C6
+		setRelease 4
 		note  As5
-		setRelease 3
+		setRelease 6
 		note  A5
 		note  G5
 		inst 1
 		vol 13
-		setRelease 2
+		setRelease 4
 		note  A6
-		setRelease 6
-		noteL A6,8
+		setRelease 12
+		noteL A6,16
 		setRelease 0
-		noteL A6,4
-		setRelease 6
 		noteL A6,8
-		setRelease 2
-		noteL A6,4
-		setRelease 6
+		setRelease 12
+		noteL A6,16
+		setRelease 4
 		noteL A6,8
+		setRelease 12
+		noteL A6,16
 		vol 10
-		setRelease 1
-		noteL G5,4
+		setRelease 2
+		noteL G5,8
 		note  A5
 		note  C6
 		note  F6
@@ -2718,211 +2718,211 @@ Music_33_Channel_4:
 		vol 9
 		countedLoopStart 7
 		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
 		setRelease 2
 		note  C6
-		setRelease 3
+		setRelease 4
 		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
+		setRelease 6
 		note  G5
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
 		note  A5
-		setRelease 1
+		setRelease 2
 		countedLoopEnd
 		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
 		setRelease 2
 		note  C6
-		setRelease 3
+		setRelease 4
 		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
+		setRelease 6
 		note  G5
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
 		note  G5
 		countedLoopStart 1
-		setRelease 1
-		note  D6
 		setRelease 2
-		note  C6
-		setRelease 3
-		note  A5
-		setRelease 1
 		note  D6
-		setRelease 2
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  D6
-		setRelease 2
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
 		setRelease 2
 		note  C6
-		setRelease 3
+		setRelease 4
 		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
+		setRelease 6
 		note  G5
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
 		note  A5
 		countedLoopEnd
-		setRelease 1
+		setRelease 2
 		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
 		setRelease 2
 		note  C6
-		setRelease 3
+		setRelease 4
 		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
+		setRelease 6
 		note  G5
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
 		setRelease 2
 		note  F6
-		setRelease 3
+		setRelease 4
 		note  E6
-		setRelease 1
-		note  F6
+		setRelease 6
+		note  D6
 		setRelease 2
 		note  E6
-		setRelease 3
+		setRelease 4
 		note  D6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
+		setRelease 6
 		note  C6
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  As5
-		setRelease 1
-		note  C6
 		setRelease 2
+		note  C6
+		setRelease 4
 		note  As5
-		setRelease 3
+		setRelease 6
 		note  A5
 		note  G5
 		inst 1
 		vol 13
-		setRelease 2
+		setRelease 4
 		note  A6
-		setRelease 6
-		noteL A6,8
+		setRelease 12
+		noteL A6,16
 		setRelease 0
-		noteL A6,4
-		setRelease 6
 		noteL A6,8
-		setRelease 2
-		noteL A6,4
-		setRelease 6
+		setRelease 12
+		noteL A6,16
+		setRelease 4
 		noteL A6,8
+		setRelease 12
+		noteL A6,16
 		stereo 40h
 		vol 10
-		setRelease 1
-		noteL G5,4
+		setRelease 2
+		noteL G5,8
 		note  A5
 		note  C6
 		note  F6
@@ -2932,234 +2932,234 @@ Music_33_Channel_4:
 		inst 2
 		countedLoopStart 3
 		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  E6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  F6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  E6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  F6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  E6
-		note  F6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  E6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  F6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  E6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  F6
-		setRelease 1
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  E6
-		note  F6
-		setRelease 1
-		note  A6
-		setRelease 2
-		note  G6
-		setRelease 3
-		note  A6
-		setRelease 1
-		note  As6
-		setRelease 2
-		note  A6
-		setRelease 3
-		note  As6
-		setRelease 1
-		note  A6
-		setRelease 2
-		note  G6
-		setRelease 3
-		note  A6
-		setRelease 1
-		note  As6
-		setRelease 2
-		note  A6
-		setRelease 3
-		note  As6
-		setRelease 1
-		note  A6
-		setRelease 2
-		note  G6
-		setRelease 3
-		note  A6
-		note  As6
-		setRelease 1
-		note  C7
-		setRelease 2
-		note  As6
-		setRelease 3
-		note  C7
-		setRelease 1
-		note  D7
-		setRelease 2
-		note  C7
-		setRelease 3
-		note  D7
-		setRelease 1
-		note  C7
-		setRelease 2
-		note  As6
-		setRelease 3
-		note  C7
-		setRelease 1
-		note  D7
-		setRelease 2
-		note  C7
-		setRelease 3
-		note  D7
-		setRelease 1
-		note  C7
-		setRelease 2
-		note  As6
-		setRelease 3
-		note  C7
-		note  D7
-		setRelease 1
-		countedLoopEnd
-		countedLoopStart 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  E6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  F6
-		setRelease 1
-		countedLoopEnd
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  E6
-		note  F6
-		countedLoopStart 1
-		setRelease 1
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  G6
-		setRelease 1
-		note  Gs6
-		setRelease 2
-		note  G6
-		setRelease 3
-		note  Gs6
-		countedLoopEnd
-		setRelease 1
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  G6
-		note  F6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  C6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		setRelease 1
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  E6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		note  C6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  C6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
-		setRelease 1
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  E6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  D6
 		setRelease 4
-		noteL C6,5
+		note  D6
+		setRelease 6
+		note  E6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  F6
+		setRelease 2
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  E6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  F6
+		setRelease 2
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  E6
+		note  F6
+		setRelease 2
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  E6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  F6
+		setRelease 2
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  E6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  F6
+		setRelease 2
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
+		note  F6
+		setRelease 2
+		note  A6
+		setRelease 4
+		note  G6
+		setRelease 6
+		note  A6
+		setRelease 2
+		note  As6
+		setRelease 4
+		note  A6
+		setRelease 6
+		note  As6
+		setRelease 2
+		note  A6
+		setRelease 4
+		note  G6
+		setRelease 6
+		note  A6
+		setRelease 2
+		note  As6
+		setRelease 4
+		note  A6
+		setRelease 6
+		note  As6
+		setRelease 2
+		note  A6
+		setRelease 4
+		note  G6
+		setRelease 6
+		note  A6
+		note  As6
+		setRelease 2
+		note  C7
+		setRelease 4
+		note  As6
+		setRelease 6
+		note  C7
+		setRelease 2
+		note  D7
+		setRelease 4
+		note  C7
+		setRelease 6
+		note  D7
+		setRelease 2
+		note  C7
+		setRelease 4
+		note  As6
+		setRelease 6
+		note  C7
+		setRelease 2
+		note  D7
+		setRelease 4
+		note  C7
+		setRelease 6
+		note  D7
+		setRelease 2
+		note  C7
+		setRelease 4
+		note  As6
+		setRelease 6
+		note  C7
+		note  D7
+		setRelease 2
+		countedLoopEnd
+		countedLoopStart 1
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  E6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  F6
+		setRelease 2
+		countedLoopEnd
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  E6
+		note  F6
+		countedLoopStart 1
+		setRelease 2
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  G6
+		setRelease 2
+		note  Gs6
+		setRelease 4
+		note  G6
+		setRelease 6
+		note  Gs6
+		countedLoopEnd
+		setRelease 2
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  G6
+		note  F6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		setRelease 2
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		setRelease 2
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		note  C6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		setRelease 2
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		setRelease 2
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
+		setRelease 8
+		noteL C6,10
 		mainLoopEnd
 Music_33_Channel_5:
 		vibrato 0
@@ -3167,243 +3167,243 @@ Music_33_Channel_5:
 		stereo 0C0h
 		inst 0
 		vol 13
-		setRelease 1
-		noteL F6,4
-		setRelease 3
+		setRelease 2
+		noteL F6,8
+		setRelease 6
 		note  D6
 		note  E6
-		setRelease 1
+		setRelease 2
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  E6
 		note  D6
-		setRelease 1
+		setRelease 2
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  D6
 		note  E6
-		setRelease 1
+		setRelease 2
 		note  G6
-		setRelease 3
+		setRelease 6
 		note  F6
 		note  E6
-		setRelease 1
+		setRelease 2
 		note  F6
-		setRelease 3
+		setRelease 6
 		note  E6
 		note  D6
 		note  C6
-		setRelease 1
+		setRelease 2
 		note  A6
-		setRelease 3
+		setRelease 6
 		note  F6
 		note  G6
-		setRelease 1
+		setRelease 2
 		note  A6
-		setRelease 3
+		setRelease 6
 		note  G6
 		note  F6
-		setRelease 1
+		setRelease 2
 		note  A6
-		setRelease 3
+		setRelease 6
 		note  F6
 		note  G6
-		setRelease 1
+		setRelease 2
 		note  As6
-		setRelease 3
+		setRelease 6
 		note  A6
 		note  G6
-		setRelease 1
+		setRelease 2
 		note  A6
-		setRelease 3
+		setRelease 6
 		note  G6
 		note  F6
-		setRelease 35
-		noteL E6,36
+		setRelease 70
+		noteL E6,72
 		inst 5
 		vol 9
-		setRelease 15
-		noteL Fs3,16
-		setRelease 3
-		noteL Fs3,4
+		setRelease 30
+		noteL Fs3,32
+		setRelease 6
+		noteL Fs3,8
 		note  As3
-		setRelease 7
-		noteL G3,8
+		setRelease 14
+		noteL G3,16
 		countedLoopStart 2
-		setRelease 1
-		noteL Fs3,2
-		note  D3
-		setRelease 3
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
 		note  D3
-		note  Fs3
-		note  C3
-		note  Fs3
-		note  D3
-		setRelease 3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
+		note  D3
+		note  Fs3
+		note  C3
+		note  Fs3
+		note  D3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
+		noteL Fs3,4
 		note  D3
 		note  Fs3
 		note  D3
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
-		note  C3
-		note  D3
-		setRelease 3
-		noteL C3,4
-		note  C3
-		setRelease 7
-		noteL D3,8
-		setRelease 3
-		noteL C3,4
 		note  D3
 		note  D3
-		setRelease 7
+		setRelease 14
+		noteL C3,16
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
+		setRelease 14
+		noteL D3,16
 		note  C3
 		note  D3
-		setRelease 3
-		noteL C3,4
-		note  C3
-		setRelease 7
-		noteL D3,8
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
 		note  C3
-		note  D3
-		setRelease 3
-		noteL C3,4
-		note  C3
-		setRelease 7
-		noteL D3,8
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 14
+		noteL D3,16
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
+		note  C3
+		note  D3
+		setRelease 6
+		noteL C3,8
+		note  C3
+		setRelease 14
+		noteL D3,16
+		setRelease 6
+		noteL C3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
+		note  C3
+		note  D3
+		setRelease 6
+		noteL C3,8
+		note  C3
+		setRelease 14
+		noteL D3,16
+		setRelease 6
+		noteL C3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
 		countedLoopEnd
-		setRelease 1
-		noteL Fs3,2
-		note  D3
-		setRelease 3
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
+		note  D3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
+		noteL Fs3,4
 		note  D3
 		note  Fs3
 		note  C3
 		note  Fs3
 		note  D3
-		setRelease 3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
 		note  D3
 		note  Fs3
 		note  D3
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
-		note  C3
-		note  D3
-		setRelease 3
-		noteL C3,4
-		note  C3
-		setRelease 7
-		noteL D3,8
-		setRelease 3
-		noteL C3,4
 		note  D3
 		note  D3
-		setRelease 7
+		setRelease 14
+		noteL C3,16
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
-		setRelease 1
-		noteL Fs3,2
+		setRelease 14
+		noteL D3,16
+		note  C3
 		note  D3
-		setRelease 3
+		setRelease 6
+		noteL C3,8
+		note  C3
+		setRelease 14
+		noteL D3,16
+		setRelease 6
+		noteL C3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
+		note  D3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
+		noteL Fs3,4
 		note  D3
 		note  Fs3
 		note  C3
 		note  Fs3
 		note  D3
-		setRelease 3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
 		note  D3
 		note  Fs3
 		note  D3
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
 		inst 1
 		vol 13
-		setRelease 2
-		noteL E6,4
-		setRelease 6
+		setRelease 4
 		noteL E6,8
+		setRelease 12
+		noteL E6,16
 		setRelease 0
-		noteL E6,4
-		setRelease 6
 		noteL E6,8
-		setRelease 2
-		noteL E6,4
-		setRelease 6
+		setRelease 12
+		noteL E6,16
+		setRelease 4
 		noteL E6,8
+		setRelease 12
+		noteL E6,16
 		inst 5
 		vol 10
-		setRelease 3
-		noteL Fs3,4
+		setRelease 6
+		noteL Fs3,8
 		note  As3
 		note  G3
 		note  As3
@@ -3412,181 +3412,181 @@ Music_33_Channel_5:
 		note  G3
 		vol 9
 		countedLoopStart 2
-		setRelease 1
-		noteL Fs3,2
-		note  D3
-		setRelease 3
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
 		note  D3
-		note  Fs3
-		note  C3
-		note  Fs3
-		note  D3
-		setRelease 3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
+		note  D3
+		note  Fs3
+		note  C3
+		note  Fs3
+		note  D3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
+		noteL Fs3,4
 		note  D3
 		note  Fs3
 		note  D3
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
-		note  C3
-		note  D3
-		setRelease 3
-		noteL C3,4
-		note  C3
-		setRelease 7
-		noteL D3,8
-		setRelease 3
-		noteL C3,4
 		note  D3
 		note  D3
-		setRelease 7
+		setRelease 14
+		noteL C3,16
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
+		setRelease 14
+		noteL D3,16
 		note  C3
 		note  D3
-		setRelease 3
-		noteL C3,4
-		note  C3
-		setRelease 7
-		noteL D3,8
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
 		note  C3
-		note  D3
-		setRelease 3
-		noteL C3,4
-		note  C3
-		setRelease 7
-		noteL D3,8
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 14
+		noteL D3,16
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
+		note  C3
+		note  D3
+		setRelease 6
+		noteL C3,8
+		note  C3
+		setRelease 14
+		noteL D3,16
+		setRelease 6
+		noteL C3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
+		note  C3
+		note  D3
+		setRelease 6
+		noteL C3,8
+		note  C3
+		setRelease 14
+		noteL D3,16
+		setRelease 6
+		noteL C3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
 		countedLoopEnd
-		setRelease 1
-		noteL Fs3,2
-		note  D3
-		setRelease 3
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
+		note  D3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
+		noteL Fs3,4
 		note  D3
 		note  Fs3
 		note  C3
 		note  Fs3
 		note  D3
-		setRelease 3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
 		note  D3
 		note  Fs3
 		note  D3
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
-		note  C3
-		note  D3
-		setRelease 3
-		noteL C3,4
-		note  C3
-		setRelease 7
-		noteL D3,8
-		setRelease 3
-		noteL C3,4
 		note  D3
 		note  D3
-		setRelease 7
+		setRelease 14
+		noteL C3,16
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
-		setRelease 1
-		noteL Fs3,2
+		setRelease 14
+		noteL D3,16
+		note  C3
 		note  D3
-		setRelease 3
+		setRelease 6
+		noteL C3,8
+		note  C3
+		setRelease 14
+		noteL D3,16
+		setRelease 6
+		noteL C3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
+		note  D3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
+		noteL Fs3,4
 		note  D3
 		note  Fs3
 		note  C3
 		note  Fs3
 		note  D3
-		setRelease 3
+		setRelease 6
+		noteL Fs3,8
+		setRelease 2
 		noteL Fs3,4
-		setRelease 1
-		noteL Fs3,2
 		note  D3
 		note  Fs3
 		note  D3
-		setRelease 3
-		noteL C3,4
-		note  D3
-		note  D3
-		setRelease 7
+		setRelease 6
 		noteL C3,8
-		setRelease 3
-		noteL C3,4
-		setRelease 7
-		noteL D3,8
+		note  D3
+		note  D3
+		setRelease 14
+		noteL C3,16
+		setRelease 6
+		noteL C3,8
+		setRelease 14
+		noteL D3,16
 		inst 1
 		vol 13
-		setRelease 2
-		noteL E6,4
-		setRelease 6
+		setRelease 4
 		noteL E6,8
+		setRelease 12
+		noteL E6,16
 		setRelease 0
-		noteL E6,4
-		setRelease 6
 		noteL E6,8
-		setRelease 2
-		noteL E6,4
-		setRelease 6
+		setRelease 12
+		noteL E6,16
+		setRelease 4
 		noteL E6,8
+		setRelease 12
+		noteL E6,16
 		stereo 80h
 		inst 5
 		vol 10
-		setRelease 3
-		noteL Fs3,4
+		setRelease 6
+		noteL Fs3,8
 		note  As3
 		note  G3
 		note  As3
@@ -3595,236 +3595,236 @@ Music_33_Channel_5:
 		note  G3
 		inst 2
 		countedLoopStart 3
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  As5
-		setRelease 3
-		note  C6
-		setRelease 1
-		note  D6
 		setRelease 2
 		note  C6
-		setRelease 3
-		note  D6
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  As5
-		setRelease 3
-		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  D6
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  As5
-		setRelease 3
-		note  C6
-		note  D6
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  As5
-		setRelease 3
-		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  D6
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  As5
-		setRelease 3
-		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  D6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  C6
-		note  D6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  F6
-		setRelease 1
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  G6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  F6
-		setRelease 1
-		note  G6
-		setRelease 2
-		note  F6
-		setRelease 3
-		note  G6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
-		note  F6
-		note  G6
-		setRelease 1
-		note  A6
-		setRelease 2
-		note  G6
-		setRelease 3
-		note  A6
-		setRelease 1
-		note  As6
-		setRelease 2
-		note  A6
-		setRelease 3
-		note  As6
-		setRelease 1
-		note  A6
-		setRelease 2
-		note  G6
-		setRelease 3
-		note  A6
-		setRelease 1
-		note  As6
-		setRelease 2
-		note  A6
-		setRelease 3
-		note  As6
-		setRelease 1
-		note  A6
-		setRelease 2
-		note  G6
-		setRelease 3
-		note  A6
-		note  As6
-		countedLoopEnd
-		countedLoopStart 1
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  As5
-		setRelease 3
-		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  D6
-		countedLoopEnd
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  As5
-		setRelease 3
-		note  C6
-		note  D6
-		countedLoopStart 1
-		setRelease 1
-		note  Ds6
-		setRelease 2
-		note  Cs6
-		setRelease 3
-		note  Ds6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  Ds6
-		setRelease 3
-		note  F6
-		countedLoopEnd
-		setRelease 1
-		note  Ds6
-		setRelease 2
-		note  Cs6
-		setRelease 3
-		note  Ds6
-		note  Cs6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
-		note  G5
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  A5
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  A5
-		note  G5
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
-		note  G5
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  A5
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
-		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
-		note  A5
 		setRelease 4
-		noteL G5,5
+		note  As5
+		setRelease 6
+		note  C6
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  D6
+		setRelease 2
+		note  C6
+		setRelease 4
+		note  As5
+		setRelease 6
+		note  C6
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  D6
+		setRelease 2
+		note  C6
+		setRelease 4
+		note  As5
+		setRelease 6
+		note  C6
+		note  D6
+		setRelease 2
+		note  C6
+		setRelease 4
+		note  As5
+		setRelease 6
+		note  C6
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  D6
+		setRelease 2
+		note  C6
+		setRelease 4
+		note  As5
+		setRelease 6
+		note  C6
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  D6
+		setRelease 2
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
+		note  D6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  F6
+		setRelease 2
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  G6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  F6
+		setRelease 2
+		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  G6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  F6
+		note  G6
+		setRelease 2
+		note  A6
+		setRelease 4
+		note  G6
+		setRelease 6
+		note  A6
+		setRelease 2
+		note  As6
+		setRelease 4
+		note  A6
+		setRelease 6
+		note  As6
+		setRelease 2
+		note  A6
+		setRelease 4
+		note  G6
+		setRelease 6
+		note  A6
+		setRelease 2
+		note  As6
+		setRelease 4
+		note  A6
+		setRelease 6
+		note  As6
+		setRelease 2
+		note  A6
+		setRelease 4
+		note  G6
+		setRelease 6
+		note  A6
+		note  As6
+		countedLoopEnd
+		countedLoopStart 1
+		setRelease 2
+		note  C6
+		setRelease 4
+		note  As5
+		setRelease 6
+		note  C6
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  D6
+		countedLoopEnd
+		setRelease 2
+		note  C6
+		setRelease 4
+		note  As5
+		setRelease 6
+		note  C6
+		note  D6
+		countedLoopStart 1
+		setRelease 2
+		note  Ds6
+		setRelease 4
+		note  Cs6
+		setRelease 6
+		note  Ds6
+		setRelease 2
+		note  F6
+		setRelease 4
+		note  Ds6
+		setRelease 6
+		note  F6
+		countedLoopEnd
+		setRelease 2
+		note  Ds6
+		setRelease 4
+		note  Cs6
+		setRelease 6
+		note  Ds6
+		note  Cs6
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
+		setRelease 2
+		note  C6
+		setRelease 4
+		note  A5
+		setRelease 6
+		note  G5
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
+		setRelease 2
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
+		note  G5
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
+		setRelease 2
+		note  C6
+		setRelease 4
+		note  A5
+		setRelease 6
+		note  G5
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
+		setRelease 2
+		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
+		setRelease 2
+		note  D6
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
+		setRelease 8
+		noteL G5,10
 		mainLoopEnd
 Music_33_Channel_9:
 		channel_end

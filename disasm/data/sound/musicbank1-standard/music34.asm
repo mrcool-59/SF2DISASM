@@ -8,7 +8,7 @@ Music_34:		; [CUSTOM] Silence
 		db 0	; Must be zero
 		db 0	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
-		db 00h	; YM Timer B (music tempo)
+		db 91h	; YM Timer B (music tempo)
 		dw Music_34_Channel_9
 		dw Music_34_Channel_9
 		dw Music_34_Channel_9

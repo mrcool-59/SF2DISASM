@@ -6,7 +6,7 @@ Music_5:		; [CUSTOM] Test Illegal Volume Ramp
 		db 0	; Must be zero
 		db 0	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
-		db 00h	; YM Timer B (music tempo)
+		db 0C9h	; YM Timer B (music tempo)
 		dw Music_5_Channel_0
 		dw Music_5_Channel_9
 		dw Music_5_Channel_9
@@ -25,7 +25,7 @@ Music_5_Channel_0:
 		inst 0
 		vol 15
 		setRelease 0
-		noteL C6,16
+		noteL C6,144
 		mainLoopEnd
 Music_5_Channel_9:
 		channel_end

@@ -6,7 +6,7 @@ Music_3:		; [CUSTOM] Test Basic
 		db 0	; Must be zero
 		db 1	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
-		db 75h	; YM Timer B (music tempo)
+		db 0BBh	; YM Timer B (music tempo)
 		dw Music_3_Channel_0
 		dw Music_3_Channel_1
 		dw Music_3_Channel_2
@@ -24,8 +24,8 @@ Music_3_Channel_0:
 		stereo 0C0h
 		inst 3
 		vol 15
-		setRelease 1
-		noteL D3,4
+		setRelease 2
+		noteL D3,8
 		countedLoopStart 14
 		note  D3
 		countedLoopEnd
@@ -36,8 +36,8 @@ Music_3_Channel_1:
 		stereo 0C0h
 		inst 2
 		vol 15
-		setRelease 1
-		noteL D5,2
+		setRelease 2
+		noteL D5,4
 		note  C5
 		note  A4
 		note  G4
@@ -72,13 +72,13 @@ Music_3_Channel_1:
 		mainLoopEnd
 Music_3_Channel_2:
 		vibrato 0
-		waitL 1
+		waitL 2
 		mainLoopStart
 		stereo 0C0h
 		inst 2
 		vol 15
 		setRelease 0
-		noteL F5,2
+		noteL F5,4
 		note  D5
 		note  C5
 		note  A4
@@ -117,12 +117,12 @@ Music_3_Channel_3:
 		stereo 0C0h
 		inst 4
 		vol 15
-		setRelease 1
-		noteL D6,4
+		setRelease 2
+		noteL D6,8
 		countedLoopStart 4
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  A5
 		note  D6
 		countedLoopEnd
@@ -133,35 +133,35 @@ Music_3_Channel_4:
 		stereo 0C0h
 		inst 2
 		vol 15
-		setRelease 1
-		noteL F6,4
+		setRelease 2
+		noteL F6,8
+		setRelease 4
+		note  E6
+		setRelease 6
+		note  D6
 		setRelease 2
 		note  E6
-		setRelease 3
+		setRelease 4
 		note  D6
-		setRelease 1
-		note  E6
-		setRelease 2
-		note  D6
-		setRelease 3
+		setRelease 6
 		note  C6
-		setRelease 1
-		note  F6
 		setRelease 2
+		note  F6
+		setRelease 4
 		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
-		setRelease 1
+		setRelease 2
 		note  G6
+		setRelease 4
+		note  F6
+		setRelease 6
+		note  E6
 		setRelease 2
 		note  F6
-		setRelease 3
+		setRelease 4
 		note  E6
-		setRelease 1
-		note  F6
-		setRelease 2
-		note  E6
-		setRelease 3
+		setRelease 6
 		note  D6
 		note  C6
 		mainLoopEnd
@@ -171,35 +171,35 @@ Music_3_Channel_5:
 		stereo 0C0h
 		inst 2
 		vol 15
-		setRelease 1
-		noteL D6,4
+		setRelease 2
+		noteL D6,8
+		setRelease 4
+		note  C6
+		setRelease 6
+		note  A5
 		setRelease 2
 		note  C6
-		setRelease 3
+		setRelease 4
 		note  A5
-		setRelease 1
-		note  C6
-		setRelease 2
-		note  A5
-		setRelease 3
+		setRelease 6
 		note  G5
-		setRelease 1
-		note  D6
 		setRelease 2
+		note  D6
+		setRelease 4
 		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
-		setRelease 1
+		setRelease 2
 		note  E6
+		setRelease 4
+		note  D6
+		setRelease 6
+		note  C6
 		setRelease 2
 		note  D6
-		setRelease 3
+		setRelease 4
 		note  C6
-		setRelease 1
-		note  D6
-		setRelease 2
-		note  C6
-		setRelease 3
+		setRelease 6
 		note  A5
 		note  G5
 		mainLoopEnd
