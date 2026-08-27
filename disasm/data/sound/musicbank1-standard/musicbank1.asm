@@ -46,5 +46,5 @@
 		include "music38.asm"
 		include "music39.asm"
 		include "music40.asm"
-		include "music41.asm"
+		include "music41.asm"	; [CUSTOM] Choose your Path / Chosen Heroes
 		include "music64.asm"

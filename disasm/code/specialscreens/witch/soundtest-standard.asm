@@ -75,6 +75,7 @@ table_Soundtracks:
                 dc.b MUSIC_BOSS_ATTACK
                 dc.b MUSIC_BATTLE_THEME_3
                 dc.b MUSIC_BATTLE_THEME_1
+                dc.b MUSIC_ENDING
                 dc.b MUSIC_ZEON_ATTACK
                 dc.b MUSIC_TOWN
                 dc.b MUSIC_INTRO
@@ -103,7 +104,6 @@ table_Soundtracks:
                 dc.b MUSIC_CASTLE
                 dc.b MUSIC_HEADQUARTERS
                 dc.b MUSIC_MITULA_SHRINE
-                dc.b MUSIC_ENDING
                 dc.b SFX_MENU_SWITCH
                 dc.b SFX_MENU_SELECTION
                 dc.b SFX_VALIDATION
@@ -206,7 +206,7 @@ table_SoundtrackTitles:
                 defineName "The Bloodline of Ground Seal (NUKED)"
                 defineName "The Caravan Proceeds (NUKED)"
                 defineName "Ancient Wings (NUKED)"
-                defineName "Chosen Heroes (NUKED)"
+                defineName "Choose your Path / Chosen Heroes"
                 defineName ""
                 defineName ""
                 defineName ""
