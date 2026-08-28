@@ -73,8 +73,13 @@ table_Soundtracks:
                 dc.b MUSIC_PROMOTED_ATTACK_LOOP
                 dc.b MUSIC_ENEMY_ATTACK
                 dc.b MUSIC_BOSS_ATTACK
+                dc.b MUSIC_PROMOTION
                 dc.b MUSIC_BATTLE_THEME_3
                 dc.b MUSIC_BATTLE_THEME_1
+                dc.b MUSIC_MITHRIL_DIGGERS
+                dc.b MUSIC_CASTLE
+                dc.b MUSIC_HEADQUARTERS
+                dc.b MUSIC_MITULA_SHRINE
                 dc.b MUSIC_ENDING
                 dc.b MUSIC_ZEON_ATTACK
                 dc.b MUSIC_TOWN
@@ -94,16 +99,11 @@ table_Soundtracks:
                 dc.b MUSIC_CURE
                 dc.b MUSIC_UNUSED_REVIVE
                 dc.b MUSIC_REVIVE
-                dc.b MUSIC_PROMOTION
                 dc.b MUSIC_CURSED_ITEM
                 dc.b MUSIC_ITEM
                 dc.b MUSIC_TITLE
                 dc.b MUSIC_SHRINE
                 dc.b MUSIC_FINAL_BATTLE
-                dc.b MUSIC_MITHRIL_DIGGERS
-                dc.b MUSIC_CASTLE
-                dc.b MUSIC_HEADQUARTERS
-                dc.b MUSIC_MITULA_SHRINE
                 dc.b SFX_MENU_SWITCH
                 dc.b SFX_MENU_SELECTION
                 dc.b SFX_VALIDATION
@@ -190,7 +190,7 @@ table_SoundtrackTitles:
                 defineName "Antidote (NUKED)"
                 defineName "Revival, Long Version (NUKED)"
                 defineName "Revival (NUKED)"
-                defineName "Promotion (NUKED)"
+                defineName "First Area / Promotion"
                 defineName "You've Been Cursed! (NUKED)"
                 defineName "It's a Treasure Chest! (NUKED)"
                 defineName "Shining Force II (NUKED)"
@@ -202,10 +202,10 @@ table_SoundtrackTitles:
                 defineName "Silence / Entrance to the Demon World"
                 defineName "A Message from Ancient Times (NUKED)"
                 defineName "The King of Devils has Appeared (NUKED)"
-                defineName "Dwarf Dwarf Dwarf (NUKED)"
-                defineName "The Bloodline of Ground Seal (NUKED)"
-                defineName "The Caravan Proceeds (NUKED)"
-                defineName "Ancient Wings (NUKED)"
+                defineName "Self Discipline / Dwarf Dwarf Dwarf"
+                defineName "Final / The Bloodline of Ground Seal"
+                defineName "Last Area (Abridged) / The Caravan Proceeds"
+                defineName "Shop / Ancient Wings"
                 defineName "Choose your Path / Chosen Heroes"
                 defineName ""
                 defineName ""
