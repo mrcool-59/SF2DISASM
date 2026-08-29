@@ -2831,9 +2831,9 @@ Music_40_Channel_5:
 		setRelease 0
 		sampleL 6,12
 		mainLoopStart
-		waitL 12
 		stereo 0C0h
 		vol 15
+		waitL 12
 		setRelease 0
 		sampleL 7,19
 		waitL 6

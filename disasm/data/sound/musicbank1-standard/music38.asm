@@ -534,8 +534,8 @@ Music_38_Channel_0:
 		vol 13
 		noteL B3,1
 		noteL A3,2
-		waitL 12
 		vol 12
+		waitL 12
 		noteL A5,17
 		noteL G5,16
 		noteL F5,17
