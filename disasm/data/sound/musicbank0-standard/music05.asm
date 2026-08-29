@@ -21,7 +21,7 @@ Music_5:		; [CUSTOM] Test Illegal Volume Ramp
 Music_5_Channel_0:
 		vibrato 0
 		mainLoopStart
-		stereo 40h
+		stereo 80h
 		inst 0
 		vol 15
 		setRelease 0
