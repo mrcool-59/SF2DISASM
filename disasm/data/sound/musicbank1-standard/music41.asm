@@ -23,7 +23,7 @@ Music_41_Channel_0:
 		waitL 1
 		mainLoopStart
 		stereo 0C0h
-		inst 46
+		inst 50
 		vol 13
 		setRelease 0
 		note  D4
@@ -242,7 +242,7 @@ Music_41_Channel_1:
 		waitL 7
 		mainLoopStart
 		stereo 40h
-		inst 47
+		inst 51
 		vol 11
 		setRelease 0
 		noteL D3,2
@@ -375,7 +375,7 @@ Music_41_Channel_1:
 		waitL 1
 		noteL D4,4
 		stereo 0C0h
-		inst 48
+		inst 52
 		vol 13
 		noteL G5,7
 		waitL 1
@@ -406,7 +406,7 @@ Music_41_Channel_1:
 		note  D6
 		noteL A6,9
 		stereo 80h
-		inst 47
+		inst 51
 		vol 12
 		noteL G4,3
 		waitL 1
@@ -521,7 +521,7 @@ Music_41_Channel_1:
 		waitL 1
 		noteL D4,4
 		stereo 40h
-		inst 48
+		inst 52
 		vol 13
 		noteL Fs6,44
 		stereo 80h
@@ -717,7 +717,7 @@ Music_41_Channel_2:
 		waitL 1
 		mainLoopStart
 		stereo 0C0h
-		inst 47
+		inst 51
 		vol 9
 		setRelease 0
 		noteL D3,2
@@ -741,7 +741,7 @@ Music_41_Channel_2:
 		note  C2
 		noteL C2,3
 		waitL 2
-		inst 49
+		inst 53
 		noteL D6,9
 		waitL 8
 		note  D6
@@ -890,7 +890,7 @@ Music_41_Channel_3:
 		waitL 30
 		mainLoopStart
 		stereo 0C0h
-		inst 50
+		inst 54
 		vol 11
 		setRelease 0
 		noteL A7,9
@@ -1010,7 +1010,7 @@ Music_41_Channel_3:
 		stereo 0C0h
 		noteL A7,9
 		stereo 0C0h
-		inst 51
+		inst 55
 		vol 10
 		noteL A5,175
 		stereo 0C0h
@@ -1085,7 +1085,7 @@ Music_41_Channel_4:
 		waitL 7
 		mainLoopStart
 		stereo 80h
-		inst 46
+		inst 50
 		vol 9
 		setRelease 0
 		noteL D4,2
@@ -1105,7 +1105,7 @@ Music_41_Channel_4:
 		note  As2
 		note  A2
 		stereo 0C0h
-		inst 49
+		inst 53
 		noteL E5,9
 		waitL 8
 		note  E5
@@ -1321,248 +1321,248 @@ Music_41_Channel_5:
 		stereo 0C0h
 		vol 15
 		setRelease 0
-		sampleL 5,4
-		sampleL 5,10
-		sampleL 5,4
-		sample  5
-		sampleL 5,21
-		sampleL 5,3
-		sampleL 5,5
-		sampleL 5,9
+		sampleL 8,4
+		sampleL 8,10
+		sampleL 8,4
+		sample  8
+		sampleL 8,21
+		sampleL 8,3
+		sampleL 8,5
+		sampleL 8,9
 		countedLoopStart 1
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
 		countedLoopEnd
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,10
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sampleL 5,9
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,2
-		sampleL 5,16
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,2
-		sampleL 5,5
-		sampleL 5,2
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,10
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sampleL 8,9
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,2
+		sampleL 8,16
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,2
+		sampleL 8,5
+		sampleL 8,2
 		waitL 1
 		countedLoopStart 1
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
 		countedLoopEnd
-		sample  5
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,8
+		sample  8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,8
 		waitL 1
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,2
-		sampleL 5,6
-		sampleL 5,2
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sample  5
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sampleL 5,17
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,10
-		sampleL 5,16
-		sampleL 5,17
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,10
-		sampleL 5,17
-		sampleL 5,7
-		sampleL 5,6
-		sampleL 5,2
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,2
+		sampleL 8,6
+		sampleL 8,2
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sample  8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sampleL 8,17
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,10
+		sampleL 8,16
+		sampleL 8,17
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,10
+		sampleL 8,17
+		sampleL 8,7
+		sampleL 8,6
+		sampleL 8,2
 		waitL 1
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,10
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sample  5
-		sampleL 5,7
-		sample  5
-		sampleL 5,2
-		sampleL 5,8
-		sampleL 5,6
-		sampleL 5,2
-		sampleL 5,7
-		sampleL 5,3
-		sampleL 5,16
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sample  5
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,2
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,10
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sample  5
-		sampleL 5,3
-		sampleL 5,5
-		sampleL 5,16
-		sampleL 5,5
-		sampleL 5,4
-		sampleL 5,6
-		sampleL 5,1
-		sampleL 5,5
-		sampleL 5,4
-		sampleL 5,5
-		sampleL 5,3
-		sampleL 5,5
-		sample  5
-		sampleL 5,7
-		sampleL 5,5
-		sampleL 5,3
-		sampleL 5,4
-		sample  5
-		sampleL 5,2
-		sampleL 5,4
-		sample  5
-		sample  5
-		sample  5
-		sampleL 5,17
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,2
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,10
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sample  8
+		sampleL 8,7
+		sample  8
+		sampleL 8,2
+		sampleL 8,8
+		sampleL 8,6
+		sampleL 8,2
+		sampleL 8,7
+		sampleL 8,3
+		sampleL 8,16
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sample  8
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,2
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,10
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sample  8
+		sampleL 8,3
+		sampleL 8,5
+		sampleL 8,16
+		sampleL 8,5
+		sampleL 8,4
+		sampleL 8,6
+		sampleL 8,1
+		sampleL 8,5
+		sampleL 8,4
+		sampleL 8,5
+		sampleL 8,3
+		sampleL 8,5
+		sample  8
+		sampleL 8,7
+		sampleL 8,5
+		sampleL 8,3
+		sampleL 8,4
+		sample  8
+		sampleL 8,2
+		sampleL 8,4
+		sample  8
+		sample  8
+		sample  8
+		sampleL 8,17
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,2
 		countedLoopStart 1
-		sampleL 5,17
-		sampleL 5,16
-		sampleL 5,9
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
+		sampleL 8,17
+		sampleL 8,16
+		sampleL 8,9
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
 		countedLoopEnd
-		sampleL 5,17
-		sampleL 5,8
-		sampleL 5,4
-		sampleL 5,3
-		sampleL 5,2
-		sampleL 5,4
-		sample  5
-		sample  5
-		sample  5
-		sampleL 5,8
-		sampleL 5,7
-		sampleL 5,2
+		sampleL 8,17
+		sampleL 8,8
+		sampleL 8,4
+		sampleL 8,3
+		sampleL 8,2
+		sampleL 8,4
+		sample  8
+		sample  8
+		sample  8
+		sampleL 8,8
+		sampleL 8,7
+		sampleL 8,2
 		countedLoopStart 1
-		sampleL 5,17
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,2
-		sampleL 5,16
+		sampleL 8,17
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,2
+		sampleL 8,16
 		countedLoopEnd
-		sampleL 5,17
-		sampleL 5,9
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sampleL 5,17
-		sampleL 5,4
-		sample  5
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sampleL 5,4
-		sampleL 5,3
-		sampleL 5,1
-		sampleL 5,8
-		sampleL 5,6
-		sampleL 5,2
-		sampleL 5,7
-		sampleL 5,3
-		sampleL 5,17
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,5
-		sampleL 5,17
-		sample  5
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sampleL 5,17
-		sample  5
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,2
-		sampleL 5,16
-		sampleL 5,17
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sample  5
+		sampleL 8,17
+		sampleL 8,9
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sampleL 8,17
+		sampleL 8,4
+		sample  8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sampleL 8,4
+		sampleL 8,3
+		sampleL 8,1
+		sampleL 8,8
+		sampleL 8,6
+		sampleL 8,2
+		sampleL 8,7
+		sampleL 8,3
+		sampleL 8,17
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,5
+		sampleL 8,17
+		sample  8
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sampleL 8,17
+		sample  8
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,2
+		sampleL 8,16
+		sampleL 8,17
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sample  8
 		countedLoopStart 1
-		sampleL 5,17
-		sampleL 5,16
-		sampleL 5,9
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
+		sampleL 8,17
+		sampleL 8,16
+		sampleL 8,9
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
 		countedLoopEnd
-		sampleL 5,17
-		sampleL 5,4
-		sample  5
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,2
-		sampleL 5,4
-		sample  5
-		sampleL 5,3
-		sampleL 5,4
-		sampleL 5,1
-		sampleL 5,6
-		sampleL 5,3
-		sample  5
-		sampleL 5,5
-		sampleL 5,8
-		sampleL 5,3
-		sampleL 5,4
+		sampleL 8,17
+		sampleL 8,4
+		sample  8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,2
+		sampleL 8,4
+		sample  8
+		sampleL 8,3
+		sampleL 8,4
+		sampleL 8,1
+		sampleL 8,6
+		sampleL 8,3
+		sample  8
+		sampleL 8,5
+		sampleL 8,8
+		sampleL 8,3
+		sampleL 8,4
 		countedLoopStart 1
-		sampleL 5,2
-		sampleL 5,5
+		sampleL 8,2
+		sampleL 8,5
 		countedLoopEnd
-		sampleL 5,4
-		sampleL 5,5
-		sampleL 5,4
-		sample  5
-		sampleL 5,21
+		sampleL 8,4
+		sampleL 8,5
+		sampleL 8,4
+		sample  8
+		sampleL 8,21
 		mainLoopEnd
 Music_41_Channel_6:
 		vibrato 0

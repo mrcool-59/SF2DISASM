@@ -724,7 +724,7 @@ Music_37_Channel_5:
 		vibrato 0
 		waitL 2
 		stereo 0C0h
-		inst 23
+		inst 27
 		vol 15
 		setRelease 4
 		noteL E5,8

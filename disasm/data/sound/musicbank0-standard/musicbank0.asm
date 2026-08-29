@@ -61,7 +61,7 @@
 		include "music21.asm"
 		include "music22.asm"
 		include "music23.asm"
-		include "music24.asm"
+		include "music24.asm"	; [CUSTOM] SF1 Attack / Revival
 		include "music25.asm"	; [CUSTOM] First Area / Promotion
 		include "music26.asm"
 		include "music27.asm"

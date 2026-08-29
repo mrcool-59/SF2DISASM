@@ -3220,7 +3220,7 @@ Music_33_Channel_5:
 		note  F6
 		setRelease 70
 		noteL E6,72
-		inst 23
+		inst 27
 		vol 9
 		setRelease 30
 		noteL Fs3,32
@@ -3400,7 +3400,7 @@ Music_33_Channel_5:
 		noteL E6,8
 		setRelease 12
 		noteL E6,16
-		inst 23
+		inst 27
 		vol 10
 		setRelease 6
 		noteL Fs3,8
@@ -3583,7 +3583,7 @@ Music_33_Channel_5:
 		setRelease 12
 		noteL E6,16
 		stereo 80h
-		inst 23
+		inst 27
 		vol 10
 		setRelease 6
 		noteL Fs3,8
