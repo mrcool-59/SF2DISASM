@@ -12427,8 +12427,8 @@ Music_39_Channel_4:
 		; 04:6F  .......F232
 		; 04:70  A-30C7BF209  note length = 1
 		noteL A4,1
-		; 04:71  OFF....EA00  silence length = 36
-		waitL 36
+		; 04:71  OFF....EA00  silence length = 15
+		waitL 15
 		; 04:72  .......
 		; 04:73  .......
 		; 04:74  .......
