@@ -21,7 +21,7 @@ Music_38:		; [CUSTOM] Final
 Music_38_Channel_0:
 		vibrato 0
 		stereo 0C0h
-		inst 28
+		inst 38
 		vol 11
 		setRelease 0
 		noteL A8,4
@@ -78,7 +78,7 @@ Music_38_Channel_0:
 		waitL 23
 		mainLoopStart
 		stereo 0C0h
-		inst 29
+		inst 39
 		vol 10
 		setRelease 0
 		noteL D5,11
@@ -120,7 +120,7 @@ Music_38_Channel_0:
 		waitL 22
 		noteL C5,12
 		noteL D5,11
-		inst 30
+		inst 40
 		vol 15
 		sustain
 		noteL D5,1
@@ -286,7 +286,7 @@ Music_38_Channel_0:
 		noteL G6,11
 		note  Fs6
 		noteL D6,12
-		inst 29
+		inst 39
 		noteL E5,5
 		noteL G5,6
 		note  B5
@@ -361,7 +361,7 @@ Music_38_Channel_0:
 		noteL Fs4,8
 		noteL Fs4,7
 		stereo 40h
-		inst 28
+		inst 38
 		vol 14
 		noteL D5,23
 		stereo 0C0h
@@ -374,7 +374,7 @@ Music_38_Channel_0:
 		noteL As4,13
 		noteL A4,3
 		stereo 0C0h
-		inst 29
+		inst 39
 		vol 13
 		setRelease 0
 		countedLoopStart 1
@@ -564,7 +564,7 @@ Music_38_Channel_1:
 		vibrato 0
 		waitL 181
 		stereo 80h
-		inst 29
+		inst 39
 		vol 11
 		setRelease 0
 		noteL A3,6
@@ -573,7 +573,7 @@ Music_38_Channel_1:
 		note  A3
 		mainLoopStart
 		stereo 80h
-		inst 29
+		inst 39
 		vol 11
 		setRelease 0
 		noteL A4,11
@@ -1102,7 +1102,7 @@ Music_38_Channel_2:
 		vibrato 0
 		waitL 136
 		stereo 0C0h
-		inst 31
+		inst 41
 		vol 12
 		setRelease 0
 		noteL E3,2
@@ -1134,7 +1134,7 @@ Music_38_Channel_2:
 		note  A3
 		mainLoopStart
 		stereo 0C0h
-		inst 31
+		inst 41
 		vol 12
 		setRelease 0
 		noteL A4,11
@@ -1659,7 +1659,7 @@ Music_38_Channel_3:
 		vibrato 0
 		waitL 91
 		stereo 40h
-		inst 32
+		inst 42
 		vol 15
 		setRelease 0
 		noteL D6,1
@@ -1744,100 +1744,100 @@ Music_38_Channel_3:
 		note  Cs5
 		noteL C5,2
 		stereo 0C0h
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
 		mainLoopStart
 		stereo 0C0h
-		inst 35
+		inst 45
 		vol 14
 		setRelease 0
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -1848,97 +1848,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -1949,85 +1949,85 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 34
+		inst 44
 		countedLoopStart 1
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		countedLoopEnd
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -2038,97 +2038,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -2139,52 +2139,52 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -2195,97 +2195,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -2296,97 +2296,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -2397,299 +2397,299 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
-		vol 12
-		setRelease 0
-		noteL B4,6
-		note  B4
-		inst 33
-		noteL C3,5
-		noteL C3,6
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,2
-		inst 34
-		vol 12
-		setRelease 0
-		noteL B4,5
-		inst 33
-		noteL C3,6
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,2
-		inst 34
-		vol 12
-		setRelease 0
-		noteL B4,5
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,2
-		setRelease 0
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,1
-		inst 33
-		vol 12
-		setRelease 0
-		noteL C3,6
-		inst 34
-		note  B4
-		inst 33
-		noteL C3,5
-		noteL C3,6
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,2
-		inst 34
-		vol 12
-		setRelease 0
-		noteL B4,5
-		noteL B4,6
-		inst 33
-		note  C3
-		noteL C3,5
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,2
-		inst 34
-		vol 12
-		setRelease 0
-		noteL B4,6
-		inst 33
-		noteL C3,5
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,2
-		inst 34
-		vol 12
-		setRelease 0
-		noteL B4,6
-		noteL B4,5
-		inst 33
-		noteL C3,6
-		noteL C3,5
-		inst 34
-		noteL B4,6
-		inst 33
-		note  C3
-		noteL C3,5
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,2
-		inst 34
-		vol 12
-		setRelease 0
-		noteL B4,6
-		noteL B4,5
-		inst 33
-		noteL C3,6
-		note  C3
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,1
-		inst 34
-		vol 12
-		setRelease 0
-		noteL B4,6
-		inst 33
-		note  C3
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,1
-		inst 34
-		vol 12
-		setRelease 0
-		noteL B4,6
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,2
-		setRelease 0
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,1
-		inst 33
-		vol 12
-		setRelease 0
-		noteL C3,6
-		inst 34
-		noteL B4,5
-		inst 33
-		noteL C3,6
-		note  C3
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,5
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,2
+		setRelease 0
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,1
+		inst 43
+		vol 12
+		setRelease 0
+		noteL C3,6
+		inst 44
+		note  B4
+		inst 43
+		noteL C3,5
+		noteL C3,6
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,2
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 34
-		noteL B4,6
-		inst 33
-		noteL C3,5
-		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,6
+		inst 43
+		noteL C3,5
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,2
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,6
+		noteL B4,5
+		inst 43
+		noteL C3,6
+		noteL C3,5
+		inst 44
+		noteL B4,6
+		inst 43
+		note  C3
+		noteL C3,5
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,2
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,6
+		noteL B4,5
+		inst 43
+		noteL C3,6
+		note  C3
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,1
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,6
+		inst 43
+		note  C3
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,1
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,6
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,2
+		setRelease 0
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,1
+		inst 43
+		vol 12
+		setRelease 0
+		noteL C3,6
+		inst 44
+		noteL B4,5
+		inst 43
+		noteL C3,6
+		note  C3
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,1
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,6
+		note  B4
+		inst 43
+		noteL C3,5
+		noteL C3,6
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,2
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,5
+		inst 43
+		noteL C3,6
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,2
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
-		vol 14
-		noteL C4,1
-		sustain
-		noteL B3,3
-		noteL As3,2
-		inst 34
-		vol 12
-		setRelease 0
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		noteL C3,6
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,5
+		noteL B4,6
+		inst 43
+		note  C3
+		noteL C3,5
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,2
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 43
+		noteL C3,5
+		inst 45
+		vol 14
+		noteL C4,1
+		sustain
+		noteL B3,3
+		noteL As3,2
+		inst 44
+		vol 12
+		setRelease 0
+		noteL B4,6
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -2700,97 +2700,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -2801,85 +2801,85 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 34
+		inst 44
 		countedLoopStart 1
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		countedLoopEnd
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -2890,97 +2890,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -2991,97 +2991,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -3092,97 +3092,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -3193,97 +3193,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -3294,97 +3294,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -3395,97 +3395,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -3496,97 +3496,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 34
+		inst 44
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -3597,97 +3597,97 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 34
+		inst 44
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,5
 		noteL B4,6
-		inst 33
+		inst 43
 		note  C3
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -3698,43 +3698,43 @@ Music_38_Channel_3:
 		sustain
 		noteL B3,3
 		noteL As3,2
-		inst 33
+		inst 43
 		vol 12
 		setRelease 0
 		noteL C3,6
-		inst 34
+		inst 44
 		countedLoopStart 1
 		noteL B4,5
-		inst 33
+		inst 43
 		noteL C3,6
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		countedLoopEnd
-		inst 33
+		inst 43
 		note  C3
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
 		noteL B3,3
 		noteL As3,1
-		inst 34
+		inst 44
 		vol 12
 		setRelease 0
 		noteL B4,6
 		note  B4
-		inst 33
+		inst 43
 		noteL C3,5
-		inst 35
+		inst 45
 		vol 14
 		noteL C4,1
 		sustain
@@ -3747,7 +3747,7 @@ Music_38_Channel_3:
 		note  A3
 		note  Gs3
 		stereo 40h
-		inst 32
+		inst 42
 		vol 15
 		setRelease 0
 		noteL D6,1
@@ -3822,7 +3822,7 @@ Music_38_Channel_3:
 		countedLoopEnd
 		note  As4
 		stereo 0C0h
-		inst 35
+		inst 45
 		vol 14
 		setRelease 0
 		note  C4
@@ -3836,7 +3836,7 @@ Music_38_Channel_3:
 		note  A3
 		noteL Gs3,1
 		stereo 40h
-		inst 32
+		inst 42
 		vol 15
 		countedLoopStart 1
 		setRelease 0
@@ -3924,7 +3924,7 @@ Music_38_Channel_3:
 		noteL B4,1
 		note  As4
 		stereo 0C0h
-		inst 35
+		inst 45
 		vol 14
 		setRelease 0
 		note  C4
@@ -3938,7 +3938,7 @@ Music_38_Channel_3:
 		note  A3
 		noteL Gs3,1
 		stereo 40h
-		inst 32
+		inst 42
 		vol 15
 		countedLoopStart 1
 		setRelease 0
@@ -4026,7 +4026,7 @@ Music_38_Channel_3:
 		noteL C5,2
 		noteL B4,1
 		stereo 0C0h
-		inst 35
+		inst 45
 		vol 14
 		setRelease 0
 		note  C4
@@ -4040,7 +4040,7 @@ Music_38_Channel_3:
 		note  A3
 		note  Gs3
 		stereo 40h
-		inst 32
+		inst 42
 		vol 15
 		setRelease 0
 		noteL D6,1
@@ -4117,7 +4117,7 @@ Music_38_Channel_3:
 		sustain
 		noteL As4,1
 		stereo 0C0h
-		inst 35
+		inst 45
 		vol 14
 		setRelease 0
 		note  C4
@@ -4134,7 +4134,7 @@ Music_38_Channel_4:
 		vibrato 0
 		waitL 12
 		stereo 0C0h
-		inst 28
+		inst 38
 		vol 9
 		setRelease 0
 		noteL A8,4
@@ -4191,7 +4191,7 @@ Music_38_Channel_4:
 		waitL 23
 		mainLoopStart
 		stereo 0C0h
-		inst 29
+		inst 39
 		vol 9
 		setRelease 0
 		countedLoopStart 1
@@ -4233,7 +4233,7 @@ Music_38_Channel_4:
 		countedLoopEnd
 		noteL C5,11
 		note  D5
-		inst 30
+		inst 40
 		vol 12
 		noteL E5,6
 		note  Fs5
@@ -4393,7 +4393,7 @@ Music_38_Channel_4:
 		note  G6
 		noteL Fs6,12
 		noteL D6,11
-		inst 29
+		inst 39
 		vol 11
 		noteL E5,6
 		noteL G5,5
@@ -4469,7 +4469,7 @@ Music_38_Channel_4:
 		noteL Fs4,8
 		noteL Fs4,7
 		stereo 40h
-		inst 28
+		inst 38
 		vol 13
 		noteL D5,23
 		stereo 0C0h
@@ -4482,7 +4482,7 @@ Music_38_Channel_4:
 		noteL As4,13
 		noteL A4,4
 		stereo 0C0h
-		inst 29
+		inst 39
 		vol 11
 		setRelease 0
 		countedLoopStart 1
@@ -4650,7 +4650,7 @@ Music_38_Channel_5:
 		vibrato 0
 		waitL 183
 		stereo 40h
-		inst 29
+		inst 39
 		vol 10
 		setRelease 0
 		noteL A3,6
@@ -4659,7 +4659,7 @@ Music_38_Channel_5:
 		note  A3
 		mainLoopStart
 		stereo 40h
-		inst 29
+		inst 39
 		vol 10
 		setRelease 0
 		noteL A4,11

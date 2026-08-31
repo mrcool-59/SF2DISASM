@@ -755,7 +755,7 @@ Music_37_Channel_5:
 		vibrato 0
 		waitL 2
 		stereo 0C0h
-		inst 27
+		inst 37
 		vol 15
 		setRelease 4
 		noteL E5,8
@@ -780,7 +780,7 @@ Music_37_Channel_5:
 		note  E6
 		mainLoopStart
 		stereo 0C0h
-		inst 27
+		inst 37
 		vol 15
 		setRelease 4
 		noteL G5,8

@@ -73,6 +73,7 @@ table_Soundtracks:
                 dc.b MUSIC_PROMOTED_ATTACK_LOOP
                 dc.b MUSIC_ENEMY_ATTACK
                 dc.b MUSIC_BOSS_ATTACK
+                dc.b MUSIC_UNUSED_REVIVE
                 dc.b MUSIC_REVIVE
                 dc.b MUSIC_PROMOTION
                 dc.b MUSIC_BATTLE_THEME_3
@@ -98,7 +99,6 @@ table_Soundtracks:
                 dc.b MUSIC_SAD_JOIN
                 dc.b MUSIC_SAVE
                 dc.b MUSIC_CURE
-                dc.b MUSIC_UNUSED_REVIVE
                 dc.b MUSIC_CURSED_ITEM
                 dc.b MUSIC_ITEM
                 dc.b MUSIC_TITLE
@@ -188,7 +188,7 @@ table_SoundtrackTitles:
                 defineName "Sadly Joined the Party (NUKED)"
                 defineName "Save (NUKED)"
                 defineName "Antidote (NUKED)"
-                defineName "Revival, Long Version (NUKED)"
+                defineName "L1 Battle / Revival, Long Version"
                 defineName "SF1 Attack / Revival"
                 defineName "First Area / Promotion"
                 defineName "You've Been Cursed! (NUKED)"

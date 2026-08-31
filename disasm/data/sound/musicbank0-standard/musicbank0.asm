@@ -60,7 +60,7 @@
 		include "music20.asm"
 		include "music21.asm"
 		include "music22.asm"
-		include "music23.asm"
+		include "music23.asm"	; [CUSTOM] L1 Battle / Revival, Long Version
 		include "music24.asm"	; [CUSTOM] SF1 Attack / Revival
 		include "music25.asm"	; [CUSTOM] First Area / Promotion
 		include "music26.asm"

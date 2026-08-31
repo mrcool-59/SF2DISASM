@@ -23,7 +23,7 @@ Music_40_Channel_0:
 		waitL 210
 		mainLoopStart
 		stereo 0C0h
-		inst 45
+		inst 55
 		vol 11
 		setRelease 0
 		noteL A3,7
@@ -324,7 +324,7 @@ Music_40_Channel_0:
 Music_40_Channel_1:
 		vibrato 0
 		stereo 80h
-		inst 46
+		inst 56
 		vol 11
 		setRelease 0
 		noteL A5,1
@@ -431,7 +431,7 @@ Music_40_Channel_1:
 		waitL 4
 		mainLoopStart
 		stereo 40h
-		inst 46
+		inst 56
 		vol 10
 		setRelease 0
 		noteL A5,2
@@ -1546,14 +1546,14 @@ Music_40_Channel_2:
 		vibrato 0
 		waitL 198
 		stereo 0C0h
-		inst 47
+		inst 57
 		vol 10
 		setRelease 0
 		noteL A6,11
 		waitL 1
 		mainLoopStart
 		stereo 0C0h
-		inst 47
+		inst 57
 		vol 10
 		setRelease 0
 		noteL A6,12
@@ -1805,7 +1805,7 @@ Music_40_Channel_3:
 		vibrato 0
 		waitL 6
 		stereo 0C0h
-		inst 46
+		inst 56
 		vol 8
 		setRelease 0
 		noteL A5,1
@@ -1895,7 +1895,7 @@ Music_40_Channel_3:
 		noteL A5,1
 		waitL 10
 		stereo 0C0h
-		inst 48
+		inst 58
 		vol 12
 		noteL A5,1
 		sustain
@@ -1903,7 +1903,7 @@ Music_40_Channel_3:
 		waitL 1
 		mainLoopStart
 		stereo 0C0h
-		inst 48
+		inst 58
 		vol 12
 		setRelease 0
 		noteL A3,5
@@ -2253,7 +2253,7 @@ Music_40_Channel_4:
 		vibrato 0
 		waitL 100
 		stereo 0C0h
-		inst 49
+		inst 59
 		vol 12
 		setRelease 0
 		noteL Fs3,10
@@ -2292,7 +2292,7 @@ Music_40_Channel_4:
 		waitL 1
 		mainLoopStart
 		stereo 0C0h
-		inst 49
+		inst 59
 		vol 10
 		setRelease 0
 		noteL Fs3,5
@@ -2829,208 +2829,208 @@ Music_40_Channel_5:
 		stereo 0C0h
 		vol 15
 		setRelease 0
-		sampleL 6,12
+		sampleL 12,12
 		mainLoopStart
 		stereo 0C0h
 		vol 15
 		waitL 12
 		setRelease 0
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		wait
 		countedLoopStart 1
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 7,19
+		sampleL 13,19
 		waitL 5
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
 		countedLoopEnd
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 7,12
-		sampleL 7,13
-		sampleL 7,6
-		sample  7
-		sample  7
-		sampleL 7,7
-		sampleL 6,12
+		sampleL 13,12
+		sampleL 13,13
+		sampleL 13,6
+		sample  13
+		sample  13
+		sampleL 13,7
+		sampleL 12,12
 		wait
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 7,19
+		sampleL 13,19
 		waitL 5
 		countedLoopStart 1
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
 		countedLoopEnd
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 7,12
-		sampleL 7,6
-		sample  7
-		sample  7
-		sampleL 7,7
-		sampleL 6,12
-		sampleL 7,19
+		sampleL 13,12
+		sampleL 13,6
+		sample  13
+		sample  13
+		sampleL 13,7
+		sampleL 12,12
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sampleL 7,13
-		sampleL 6,12
-		sample  6
+		sampleL 13,13
+		sampleL 12,12
+		sample  12
 		waitL 13
-		sampleL 7,12
-		sample  6
+		sampleL 13,12
+		sample  12
 		waitL 1
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sampleL 7,13
-		sampleL 6,12
-		sample  6
+		sampleL 13,13
+		sampleL 12,12
+		sample  12
 		waitL 13
-		sampleL 7,12
-		sample  6
-		sample  6
+		sampleL 13,12
+		sample  12
+		sample  12
 		waitL 13
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 7,5
-		sampleL 7,7
-		sampleL 7,12
-		sampleL 7,13
-		sampleL 7,6
-		sample  7
-		sampleL 6,12
+		sampleL 13,5
+		sampleL 13,7
+		sampleL 13,12
+		sampleL 13,13
+		sampleL 13,6
+		sample  13
+		sampleL 12,12
 		waitL 13
-		sampleL 7,12
-		sample  6
-		sample  6
+		sampleL 13,12
+		sample  12
+		sample  12
 		waitL 13
-		sampleL 7,12
-		sample  6
+		sampleL 13,12
+		sample  12
 		waitL 1
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sampleL 7,13
-		sampleL 6,12
-		sample  6
+		sampleL 13,13
+		sampleL 12,12
+		sample  12
 		waitL 13
-		sampleL 7,12
-		sample  6
+		sampleL 13,12
+		sample  12
 		waitL 1
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 7,12
-		sample  6
-		sample  6
+		sampleL 13,12
+		sample  12
+		sample  12
 		waitL 1
-		sampleL 7,6
-		sample  7
+		sampleL 13,6
+		sample  13
 		countedLoopStart 1
-		sampleL 6,12
-		sampleL 7,6
-		sampleL 7,7
+		sampleL 12,12
+		sampleL 13,6
+		sampleL 13,7
 		countedLoopEnd
-		sampleL 6,12
-		sampleL 7,6
-		sample  7
-		sampleL 6,12
+		sampleL 12,12
+		sampleL 13,6
+		sample  13
+		sampleL 12,12
 		waitL 13
-		sampleL 7,12
-		sample  6
+		sampleL 13,12
+		sample  12
 		waitL 1
-		sampleL 6,12
+		sampleL 12,12
 		wait
 		countedLoopStart 1
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 7,12
-		sample  6
-		sample  6
+		sampleL 13,12
+		sample  12
+		sample  12
 		waitL 13
 		countedLoopEnd
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sampleL 7,13
-		sampleL 6,12
-		sample  6
+		sampleL 13,13
+		sampleL 12,12
+		sample  12
 		waitL 13
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sample  7
-		sample  6
+		sample  13
+		sample  12
 		waitL 1
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 7,19
+		sampleL 13,19
 		waitL 5
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 7,12
-		sample  6
+		sampleL 13,12
+		sample  12
 		waitL 1
-		sampleL 6,12
+		sampleL 12,12
 		wait
-		sampleL 7,19
+		sampleL 13,19
 		waitL 6
-		sampleL 7,12
-		sample  6
+		sampleL 13,12
+		sample  12
 		waitL 1
-		sampleL 6,12
-		sample  7
-		sample  6
+		sampleL 12,12
+		sample  13
+		sample  12
 		waitL 1
-		sampleL 6,12
+		sampleL 12,12
 		waitL 13
-		sampleL 6,12
-		sample  7
-		sample  6
+		sampleL 12,12
+		sample  13
+		sample  12
 		waitL 1
-		sampleL 7,12
-		sample  7
-		sampleL 7,6
-		sampleL 7,7
-		sampleL 7,6
-		sample  7
-		sample  7
-		sample  7
-		sample  7
-		sampleL 7,7
-		sampleL 6,13
+		sampleL 13,12
+		sample  13
+		sampleL 13,6
+		sampleL 13,7
+		sampleL 13,6
+		sample  13
+		sample  13
+		sample  13
+		sample  13
+		sampleL 13,7
+		sampleL 12,13
 		mainLoopEnd
 Music_40_Channel_6:
 		vibrato 0
