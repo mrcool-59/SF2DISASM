@@ -20,7 +20,6 @@ Music_4:		; [CUSTOM] Test Tricky Loop
 
 Music_4_Channel_0:
 		vibrato 0
-		stereo 0C0h
 		inst 2
 		vol 15
 		sustain
@@ -34,7 +33,6 @@ Music_4_Channel_0:
 Music_4_Channel_1:
 		vibrato 0
 		waitL 144
-		stereo 0C0h
 		inst 0
 		vol 15
 		setRelease 0
@@ -43,6 +41,7 @@ Music_4_Channel_1:
 		stereo 0C0h
 		inst 0
 		vol 15
+		shifting 00h
 		waitL 72
 		mainLoopEnd
 Music_4_Channel_2:
@@ -53,6 +52,7 @@ Music_4_Channel_2:
 		stereo 0C0h
 		inst 1
 		vol 15
+		shifting 00h
 		setRelease 0
 		noteL E5,72
 		mainLoopEnd
