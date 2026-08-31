@@ -1229,10 +1229,10 @@ Music_25_Channel_2:
 		noteL G2,228
 		mainLoopStart
 		stereo 0C0h
-		inst 28
 		vol 11
 		shifting 00h
 		waitL 4
+		inst 28
 		setRelease 0
 		noteL G2,2
 		waitL 3
