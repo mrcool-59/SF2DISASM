@@ -44,7 +44,7 @@
 		include "music04.asm"	; [CUSTOM] Test Tricky Loop / MUSIC_PROMOTED_ATTACK_LOOP
 		include "music05.asm"	; [CUSTOM] Test Illegal Volume Ramp / Dark Force
 		include "music06.asm"	; [CUSTOM] Test Sample / Footsteps of Ruin
-		include "music07.asm"
+		include "music07.asm"	; [CUSTOM] Test Effects / Roar of the King of Devils
 		include "music08.asm"
 		include "music09.asm"
 		include "music10.asm"
