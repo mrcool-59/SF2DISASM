@@ -65,449 +65,449 @@ pt_SFX:
     dw Sfx_56	; #120 - SFX_TINKLING
 Sfx_1:
 		db 2	; SFX type
-		dw Sfx_1_Channel_6
-		dw Sfx_1_Channel_6
-		dw Sfx_1_Channel_6
+		dw Sfx_1_Channel_5
+		dw Sfx_1_Channel_5
+		dw Sfx_1_Channel_5
 
-Sfx_1_Channel_6:
+Sfx_1_Channel_5:
 		channel_end
 Sfx_2:
 		db 2	; SFX type
-		dw Sfx_2_Channel_6
-		dw Sfx_2_Channel_6
-		dw Sfx_2_Channel_6
+		dw Sfx_2_Channel_5
+		dw Sfx_2_Channel_5
+		dw Sfx_2_Channel_5
 
-Sfx_2_Channel_6:
+Sfx_2_Channel_5:
 		channel_end
 Sfx_3:
 		db 2	; SFX type
-		dw Sfx_3_Channel_6
-		dw Sfx_3_Channel_6
-		dw Sfx_3_Channel_6
+		dw Sfx_3_Channel_5
+		dw Sfx_3_Channel_5
+		dw Sfx_3_Channel_5
 
-Sfx_3_Channel_6:
+Sfx_3_Channel_5:
 		channel_end
 Sfx_4:
 		db 2	; SFX type
-		dw Sfx_4_Channel_6
-		dw Sfx_4_Channel_6
-		dw Sfx_4_Channel_6
+		dw Sfx_4_Channel_5
+		dw Sfx_4_Channel_5
+		dw Sfx_4_Channel_5
 
-Sfx_4_Channel_6:
+Sfx_4_Channel_5:
 		channel_end
 Sfx_5:
 		db 2	; SFX type
-		dw Sfx_5_Channel_6
-		dw Sfx_5_Channel_6
-		dw Sfx_5_Channel_6
+		dw Sfx_5_Channel_5
+		dw Sfx_5_Channel_5
+		dw Sfx_5_Channel_5
 
-Sfx_5_Channel_6:
+Sfx_5_Channel_5:
 		channel_end
 Sfx_6:
 		db 2	; SFX type
-		dw Sfx_6_Channel_6
-		dw Sfx_6_Channel_6
-		dw Sfx_6_Channel_6
+		dw Sfx_6_Channel_5
+		dw Sfx_6_Channel_5
+		dw Sfx_6_Channel_5
 
-Sfx_6_Channel_6:
+Sfx_6_Channel_5:
 		channel_end
 Sfx_7:
 		db 2	; SFX type
-		dw Sfx_7_Channel_6
-		dw Sfx_7_Channel_6
-		dw Sfx_7_Channel_6
+		dw Sfx_7_Channel_5
+		dw Sfx_7_Channel_5
+		dw Sfx_7_Channel_5
 
-Sfx_7_Channel_6:
+Sfx_7_Channel_5:
 		channel_end
 Sfx_8:
 		db 2	; SFX type
-		dw Sfx_8_Channel_6
-		dw Sfx_8_Channel_6
-		dw Sfx_8_Channel_6
+		dw Sfx_8_Channel_5
+		dw Sfx_8_Channel_5
+		dw Sfx_8_Channel_5
 
-Sfx_8_Channel_6:
+Sfx_8_Channel_5:
 		channel_end
 Sfx_9:
 		db 2	; SFX type
-		dw Sfx_9_Channel_6
-		dw Sfx_9_Channel_6
-		dw Sfx_9_Channel_6
+		dw Sfx_9_Channel_5
+		dw Sfx_9_Channel_5
+		dw Sfx_9_Channel_5
 
-Sfx_9_Channel_6:
+Sfx_9_Channel_5:
 		channel_end
 Sfx_10:
 		db 2	; SFX type
-		dw Sfx_10_Channel_6
-		dw Sfx_10_Channel_6
-		dw Sfx_10_Channel_6
+		dw Sfx_10_Channel_5
+		dw Sfx_10_Channel_5
+		dw Sfx_10_Channel_5
 
-Sfx_10_Channel_6:
+Sfx_10_Channel_5:
 		channel_end
 Sfx_11:
 		db 2	; SFX type
-		dw Sfx_11_Channel_6
-		dw Sfx_11_Channel_6
-		dw Sfx_11_Channel_6
+		dw Sfx_11_Channel_5
+		dw Sfx_11_Channel_5
+		dw Sfx_11_Channel_5
 
-Sfx_11_Channel_6:
+Sfx_11_Channel_5:
 		channel_end
 Sfx_12:
 		db 2	; SFX type
-		dw Sfx_12_Channel_6
-		dw Sfx_12_Channel_6
-		dw Sfx_12_Channel_6
+		dw Sfx_12_Channel_5
+		dw Sfx_12_Channel_5
+		dw Sfx_12_Channel_5
 
-Sfx_12_Channel_6:
+Sfx_12_Channel_5:
 		channel_end
 Sfx_13:
 		db 2	; SFX type
-		dw Sfx_13_Channel_6
-		dw Sfx_13_Channel_6
-		dw Sfx_13_Channel_6
+		dw Sfx_13_Channel_5
+		dw Sfx_13_Channel_5
+		dw Sfx_13_Channel_5
 
-Sfx_13_Channel_6:
+Sfx_13_Channel_5:
 		channel_end
 Sfx_14:
 		db 2	; SFX type
-		dw Sfx_14_Channel_6
-		dw Sfx_14_Channel_6
-		dw Sfx_14_Channel_6
+		dw Sfx_14_Channel_5
+		dw Sfx_14_Channel_5
+		dw Sfx_14_Channel_5
 
-Sfx_14_Channel_6:
+Sfx_14_Channel_5:
 		channel_end
 Sfx_15:
 		db 2	; SFX type
-		dw Sfx_15_Channel_6
-		dw Sfx_15_Channel_6
-		dw Sfx_15_Channel_6
+		dw Sfx_15_Channel_5
+		dw Sfx_15_Channel_5
+		dw Sfx_15_Channel_5
 
-Sfx_15_Channel_6:
+Sfx_15_Channel_5:
 		channel_end
 Sfx_16:
 		db 2	; SFX type
-		dw Sfx_16_Channel_6
-		dw Sfx_16_Channel_6
-		dw Sfx_16_Channel_6
+		dw Sfx_16_Channel_5
+		dw Sfx_16_Channel_5
+		dw Sfx_16_Channel_5
 
-Sfx_16_Channel_6:
+Sfx_16_Channel_5:
 		channel_end
 Sfx_17:
 		db 2	; SFX type
-		dw Sfx_17_Channel_6
-		dw Sfx_17_Channel_6
-		dw Sfx_17_Channel_6
+		dw Sfx_17_Channel_5
+		dw Sfx_17_Channel_5
+		dw Sfx_17_Channel_5
 
-Sfx_17_Channel_6:
+Sfx_17_Channel_5:
 		channel_end
 Sfx_18:
 		db 2	; SFX type
-		dw Sfx_18_Channel_6
-		dw Sfx_18_Channel_6
-		dw Sfx_18_Channel_6
+		dw Sfx_18_Channel_5
+		dw Sfx_18_Channel_5
+		dw Sfx_18_Channel_5
 
-Sfx_18_Channel_6:
+Sfx_18_Channel_5:
 		channel_end
 Sfx_19:
 		db 2	; SFX type
-		dw Sfx_19_Channel_6
-		dw Sfx_19_Channel_6
-		dw Sfx_19_Channel_6
+		dw Sfx_19_Channel_5
+		dw Sfx_19_Channel_5
+		dw Sfx_19_Channel_5
 
-Sfx_19_Channel_6:
+Sfx_19_Channel_5:
 		channel_end
 Sfx_20:
 		db 2	; SFX type
-		dw Sfx_20_Channel_6
-		dw Sfx_20_Channel_6
-		dw Sfx_20_Channel_6
+		dw Sfx_20_Channel_5
+		dw Sfx_20_Channel_5
+		dw Sfx_20_Channel_5
 
-Sfx_20_Channel_6:
+Sfx_20_Channel_5:
 		channel_end
 Sfx_21:
 		db 2	; SFX type
-		dw Sfx_21_Channel_6
-		dw Sfx_21_Channel_6
-		dw Sfx_21_Channel_6
+		dw Sfx_21_Channel_5
+		dw Sfx_21_Channel_5
+		dw Sfx_21_Channel_5
 
-Sfx_21_Channel_6:
+Sfx_21_Channel_5:
 		channel_end
 Sfx_22:
 		db 2	; SFX type
-		dw Sfx_22_Channel_6
-		dw Sfx_22_Channel_6
-		dw Sfx_22_Channel_6
+		dw Sfx_22_Channel_5
+		dw Sfx_22_Channel_5
+		dw Sfx_22_Channel_5
 
-Sfx_22_Channel_6:
+Sfx_22_Channel_5:
 		channel_end
 Sfx_23:
 		db 2	; SFX type
-		dw Sfx_23_Channel_6
-		dw Sfx_23_Channel_6
-		dw Sfx_23_Channel_6
+		dw Sfx_23_Channel_5
+		dw Sfx_23_Channel_5
+		dw Sfx_23_Channel_5
 
-Sfx_23_Channel_6:
+Sfx_23_Channel_5:
 		channel_end
 Sfx_24:
 		db 2	; SFX type
-		dw Sfx_24_Channel_6
-		dw Sfx_24_Channel_6
-		dw Sfx_24_Channel_6
+		dw Sfx_24_Channel_5
+		dw Sfx_24_Channel_5
+		dw Sfx_24_Channel_5
 
-Sfx_24_Channel_6:
+Sfx_24_Channel_5:
 		channel_end
 Sfx_25:
 		db 2	; SFX type
-		dw Sfx_25_Channel_6
-		dw Sfx_25_Channel_6
-		dw Sfx_25_Channel_6
+		dw Sfx_25_Channel_5
+		dw Sfx_25_Channel_5
+		dw Sfx_25_Channel_5
 
-Sfx_25_Channel_6:
+Sfx_25_Channel_5:
 		channel_end
 Sfx_26:
 		db 2	; SFX type
-		dw Sfx_26_Channel_6
-		dw Sfx_26_Channel_6
-		dw Sfx_26_Channel_6
+		dw Sfx_26_Channel_5
+		dw Sfx_26_Channel_5
+		dw Sfx_26_Channel_5
 
-Sfx_26_Channel_6:
+Sfx_26_Channel_5:
 		channel_end
 Sfx_27:
 		db 2	; SFX type
-		dw Sfx_27_Channel_6
-		dw Sfx_27_Channel_6
-		dw Sfx_27_Channel_6
+		dw Sfx_27_Channel_5
+		dw Sfx_27_Channel_5
+		dw Sfx_27_Channel_5
 
-Sfx_27_Channel_6:
+Sfx_27_Channel_5:
 		channel_end
 Sfx_28:
 		db 2	; SFX type
-		dw Sfx_28_Channel_6
-		dw Sfx_28_Channel_6
-		dw Sfx_28_Channel_6
+		dw Sfx_28_Channel_5
+		dw Sfx_28_Channel_5
+		dw Sfx_28_Channel_5
 
-Sfx_28_Channel_6:
+Sfx_28_Channel_5:
 		channel_end
 Sfx_29:
 		db 2	; SFX type
-		dw Sfx_29_Channel_6
-		dw Sfx_29_Channel_6
-		dw Sfx_29_Channel_6
+		dw Sfx_29_Channel_5
+		dw Sfx_29_Channel_5
+		dw Sfx_29_Channel_5
 
-Sfx_29_Channel_6:
+Sfx_29_Channel_5:
 		channel_end
 Sfx_30:
 		db 2	; SFX type
-		dw Sfx_30_Channel_6
-		dw Sfx_30_Channel_6
-		dw Sfx_30_Channel_6
+		dw Sfx_30_Channel_5
+		dw Sfx_30_Channel_5
+		dw Sfx_30_Channel_5
 
-Sfx_30_Channel_6:
+Sfx_30_Channel_5:
 		channel_end
 Sfx_31:
 		db 2	; SFX type
-		dw Sfx_31_Channel_6
-		dw Sfx_31_Channel_6
-		dw Sfx_31_Channel_6
+		dw Sfx_31_Channel_5
+		dw Sfx_31_Channel_5
+		dw Sfx_31_Channel_5
 
-Sfx_31_Channel_6:
+Sfx_31_Channel_5:
 		channel_end
 Sfx_32:
 		db 2	; SFX type
-		dw Sfx_32_Channel_6
-		dw Sfx_32_Channel_6
-		dw Sfx_32_Channel_6
+		dw Sfx_32_Channel_5
+		dw Sfx_32_Channel_5
+		dw Sfx_32_Channel_5
 
-Sfx_32_Channel_6:
+Sfx_32_Channel_5:
 		channel_end
 Sfx_33:
 		db 2	; SFX type
-		dw Sfx_33_Channel_6
-		dw Sfx_33_Channel_6
-		dw Sfx_33_Channel_6
+		dw Sfx_33_Channel_5
+		dw Sfx_33_Channel_5
+		dw Sfx_33_Channel_5
 
-Sfx_33_Channel_6:
+Sfx_33_Channel_5:
 		channel_end
 Sfx_34:
 		db 2	; SFX type
-		dw Sfx_34_Channel_6
-		dw Sfx_34_Channel_6
-		dw Sfx_34_Channel_6
+		dw Sfx_34_Channel_5
+		dw Sfx_34_Channel_5
+		dw Sfx_34_Channel_5
 
-Sfx_34_Channel_6:
+Sfx_34_Channel_5:
 		channel_end
 Sfx_35:
 		db 2	; SFX type
-		dw Sfx_35_Channel_6
-		dw Sfx_35_Channel_6
-		dw Sfx_35_Channel_6
+		dw Sfx_35_Channel_5
+		dw Sfx_35_Channel_5
+		dw Sfx_35_Channel_5
 
-Sfx_35_Channel_6:
+Sfx_35_Channel_5:
 		channel_end
 Sfx_36:
 		db 2	; SFX type
-		dw Sfx_36_Channel_6
-		dw Sfx_36_Channel_6
-		dw Sfx_36_Channel_6
+		dw Sfx_36_Channel_5
+		dw Sfx_36_Channel_5
+		dw Sfx_36_Channel_5
 
-Sfx_36_Channel_6:
+Sfx_36_Channel_5:
 		channel_end
 Sfx_37:
 		db 2	; SFX type
-		dw Sfx_37_Channel_6
-		dw Sfx_37_Channel_6
-		dw Sfx_37_Channel_6
+		dw Sfx_37_Channel_5
+		dw Sfx_37_Channel_5
+		dw Sfx_37_Channel_5
 
-Sfx_37_Channel_6:
+Sfx_37_Channel_5:
 		channel_end
 Sfx_38:
 		db 2	; SFX type
-		dw Sfx_38_Channel_6
-		dw Sfx_38_Channel_6
-		dw Sfx_38_Channel_6
+		dw Sfx_38_Channel_5
+		dw Sfx_38_Channel_5
+		dw Sfx_38_Channel_5
 
-Sfx_38_Channel_6:
+Sfx_38_Channel_5:
 		channel_end
 Sfx_39:
 		db 2	; SFX type
-		dw Sfx_39_Channel_6
-		dw Sfx_39_Channel_6
-		dw Sfx_39_Channel_6
+		dw Sfx_39_Channel_5
+		dw Sfx_39_Channel_5
+		dw Sfx_39_Channel_5
 
-Sfx_39_Channel_6:
+Sfx_39_Channel_5:
 		channel_end
 Sfx_40:
 		db 2	; SFX type
-		dw Sfx_40_Channel_6
-		dw Sfx_40_Channel_6
-		dw Sfx_40_Channel_6
+		dw Sfx_40_Channel_5
+		dw Sfx_40_Channel_5
+		dw Sfx_40_Channel_5
 
-Sfx_40_Channel_6:
+Sfx_40_Channel_5:
 		channel_end
 Sfx_41:
 		db 2	; SFX type
-		dw Sfx_41_Channel_6
-		dw Sfx_41_Channel_6
-		dw Sfx_41_Channel_6
+		dw Sfx_41_Channel_5
+		dw Sfx_41_Channel_5
+		dw Sfx_41_Channel_5
 
-Sfx_41_Channel_6:
+Sfx_41_Channel_5:
 		channel_end
 Sfx_42:
 		db 2	; SFX type
-		dw Sfx_42_Channel_6
-		dw Sfx_42_Channel_6
-		dw Sfx_42_Channel_6
+		dw Sfx_42_Channel_5
+		dw Sfx_42_Channel_5
+		dw Sfx_42_Channel_5
 
-Sfx_42_Channel_6:
+Sfx_42_Channel_5:
 		channel_end
 Sfx_43:
 		db 2	; SFX type
-		dw Sfx_43_Channel_6
-		dw Sfx_43_Channel_6
-		dw Sfx_43_Channel_6
+		dw Sfx_43_Channel_5
+		dw Sfx_43_Channel_5
+		dw Sfx_43_Channel_5
 
-Sfx_43_Channel_6:
+Sfx_43_Channel_5:
 		channel_end
 Sfx_44:
 		db 2	; SFX type
-		dw Sfx_44_Channel_6
-		dw Sfx_44_Channel_6
-		dw Sfx_44_Channel_6
+		dw Sfx_44_Channel_5
+		dw Sfx_44_Channel_5
+		dw Sfx_44_Channel_5
 
-Sfx_44_Channel_6:
+Sfx_44_Channel_5:
 		channel_end
 Sfx_45:
 		db 2	; SFX type
-		dw Sfx_45_Channel_6
-		dw Sfx_45_Channel_6
-		dw Sfx_45_Channel_6
+		dw Sfx_45_Channel_5
+		dw Sfx_45_Channel_5
+		dw Sfx_45_Channel_5
 
-Sfx_45_Channel_6:
+Sfx_45_Channel_5:
 		channel_end
 Sfx_46:
 		db 2	; SFX type
-		dw Sfx_46_Channel_6
-		dw Sfx_46_Channel_6
-		dw Sfx_46_Channel_6
+		dw Sfx_46_Channel_5
+		dw Sfx_46_Channel_5
+		dw Sfx_46_Channel_5
 
-Sfx_46_Channel_6:
+Sfx_46_Channel_5:
 		channel_end
 Sfx_47:
 		db 2	; SFX type
-		dw Sfx_47_Channel_6
-		dw Sfx_47_Channel_6
-		dw Sfx_47_Channel_6
+		dw Sfx_47_Channel_5
+		dw Sfx_47_Channel_5
+		dw Sfx_47_Channel_5
 
-Sfx_47_Channel_6:
+Sfx_47_Channel_5:
 		channel_end
 Sfx_48:
 		db 2	; SFX type
-		dw Sfx_48_Channel_6
-		dw Sfx_48_Channel_6
-		dw Sfx_48_Channel_6
+		dw Sfx_48_Channel_5
+		dw Sfx_48_Channel_5
+		dw Sfx_48_Channel_5
 
-Sfx_48_Channel_6:
+Sfx_48_Channel_5:
 		channel_end
 Sfx_49:
 		db 2	; SFX type
-		dw Sfx_49_Channel_6
-		dw Sfx_49_Channel_6
-		dw Sfx_49_Channel_6
+		dw Sfx_49_Channel_5
+		dw Sfx_49_Channel_5
+		dw Sfx_49_Channel_5
 
-Sfx_49_Channel_6:
+Sfx_49_Channel_5:
 		channel_end
 Sfx_50:
 		db 2	; SFX type
-		dw Sfx_50_Channel_6
-		dw Sfx_50_Channel_6
-		dw Sfx_50_Channel_6
+		dw Sfx_50_Channel_5
+		dw Sfx_50_Channel_5
+		dw Sfx_50_Channel_5
 
-Sfx_50_Channel_6:
+Sfx_50_Channel_5:
 		channel_end
 Sfx_51:
 		db 2	; SFX type
-		dw Sfx_51_Channel_6
-		dw Sfx_51_Channel_6
-		dw Sfx_51_Channel_6
+		dw Sfx_51_Channel_5
+		dw Sfx_51_Channel_5
+		dw Sfx_51_Channel_5
 
-Sfx_51_Channel_6:
+Sfx_51_Channel_5:
 		channel_end
 Sfx_52:
 		db 2	; SFX type
-		dw Sfx_52_Channel_6
-		dw Sfx_52_Channel_6
-		dw Sfx_52_Channel_6
+		dw Sfx_52_Channel_5
+		dw Sfx_52_Channel_5
+		dw Sfx_52_Channel_5
 
-Sfx_52_Channel_6:
+Sfx_52_Channel_5:
 		channel_end
 Sfx_53:
 		db 2	; SFX type
-		dw Sfx_53_Channel_6
-		dw Sfx_53_Channel_6
-		dw Sfx_53_Channel_6
+		dw Sfx_53_Channel_5
+		dw Sfx_53_Channel_5
+		dw Sfx_53_Channel_5
 
-Sfx_53_Channel_6:
+Sfx_53_Channel_5:
 		channel_end
 Sfx_54:
 		db 2	; SFX type
-		dw Sfx_54_Channel_6
-		dw Sfx_54_Channel_6
-		dw Sfx_54_Channel_6
+		dw Sfx_54_Channel_5
+		dw Sfx_54_Channel_5
+		dw Sfx_54_Channel_5
 
-Sfx_54_Channel_6:
+Sfx_54_Channel_5:
 		channel_end
 Sfx_55:
 		db 2	; SFX type
-		dw Sfx_55_Channel_6
-		dw Sfx_55_Channel_6
-		dw Sfx_55_Channel_6
+		dw Sfx_55_Channel_5
+		dw Sfx_55_Channel_5
+		dw Sfx_55_Channel_5
 
-Sfx_55_Channel_6:
+Sfx_55_Channel_5:
 		channel_end
 Sfx_56:
 		db 2	; SFX type
-		dw Sfx_56_Channel_6
-		dw Sfx_56_Channel_6
-		dw Sfx_56_Channel_6
+		dw Sfx_56_Channel_5
+		dw Sfx_56_Channel_5
+		dw Sfx_56_Channel_5
 
-Sfx_56_Channel_6:
+Sfx_56_Channel_5:
 		channel_end
