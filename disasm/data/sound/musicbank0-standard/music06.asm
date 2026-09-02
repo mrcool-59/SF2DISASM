@@ -19,9 +19,9 @@ Music_6:		; [CUSTOM] Test Sample
 		dw Music_6_Channel_9
 
 Music_6_Channel_5:
-		vibrato 0
 		mainLoopStart
 		vol 15
+		vibrato 00h
 		setRelease 0
 		sampleL 0,12
 		sample  1

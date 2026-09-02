@@ -19,10 +19,10 @@ Music_39:		; [CUSTOM] Last Area (Abridged)
 		dw Music_39_Channel_9
 
 Music_39_Channel_0:
-		vibrato 0
 		waitL 1
 		inst 46
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL D3,5
 		note  G3
@@ -276,10 +276,10 @@ Music_39_Channel_0:
 		waitL 21
 		mainLoopEnd
 Music_39_Channel_1:
-		vibrato 0
 		waitL 83
 		inst 51
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL E3,10
 		noteL Ds3,1
@@ -809,11 +809,11 @@ Music_39_Channel_1:
 		noteL E3,10
 		mainLoopEnd
 Music_39_Channel_2:
-		vibrato 0
 		waitL 83
 		stereo 80h
 		inst 52
 		vol 14
+		vibrato 00h
 		setRelease 0
 		noteL G6,20
 		mainLoopStart
@@ -1156,11 +1156,11 @@ Music_39_Channel_2:
 		noteL G6,20
 		mainLoopEnd
 Music_39_Channel_3:
-		vibrato 0
 		waitL 82
 		stereo 40h
 		inst 52
 		vol 14
+		vibrato 00h
 		setRelease 0
 		noteL Ds6,1
 		sustain
@@ -1500,9 +1500,9 @@ Music_39_Channel_3:
 		noteL E6,20
 		mainLoopEnd
 Music_39_Channel_4:
-		vibrato 0
 		inst 53
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL C2,11
 		inst 54
@@ -2397,10 +2397,10 @@ Music_39_Channel_4:
 		noteL Ds2,11
 		mainLoopEnd
 Music_39_Channel_5:
-		vibrato 0
 		waitL 11
 		inst 46
 		vol 13
+		vibrato 00h
 		setRelease 0
 		noteL D3,5
 		note  G3

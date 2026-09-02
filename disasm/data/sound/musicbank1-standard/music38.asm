@@ -19,9 +19,9 @@ Music_38:		; [CUSTOM] Final
 		dw Music_38_Channel_9
 
 Music_38_Channel_0:
-		vibrato 0
 		inst 38
 		vol 11
+		vibrato 00h
 		setRelease 0
 		noteL A8,4
 		sustain
@@ -540,11 +540,11 @@ Music_38_Channel_0:
 		noteL A4,13
 		mainLoopEnd
 Music_38_Channel_1:
-		vibrato 0
 		waitL 181
 		stereo 80h
 		inst 39
 		vol 11
+		vibrato 00h
 		setRelease 0
 		noteL A3,6
 		noteL A3,5
@@ -1075,10 +1075,10 @@ Music_38_Channel_1:
 		noteL F3,13
 		mainLoopEnd
 Music_38_Channel_2:
-		vibrato 0
 		waitL 136
 		inst 41
 		vol 12
+		vibrato 00h
 		setRelease 0
 		noteL E3,2
 		note  F3
@@ -1628,11 +1628,11 @@ Music_38_Channel_2:
 		noteL F3,13
 		mainLoopEnd
 Music_38_Channel_3:
-		vibrato 0
 		waitL 91
 		stereo 40h
 		inst 42
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL D6,1
 		sustain
@@ -4279,10 +4279,10 @@ Music_38_Channel_3:
 		note  As3
 		mainLoopEnd
 Music_38_Channel_4:
-		vibrato 0
 		waitL 12
 		inst 38
 		vol 9
+		vibrato 00h
 		setRelease 0
 		noteL A8,4
 		sustain
@@ -4793,11 +4793,11 @@ Music_38_Channel_4:
 		noteL B4,29
 		mainLoopEnd
 Music_38_Channel_5:
-		vibrato 0
 		waitL 183
 		stereo 40h
 		inst 39
 		vol 10
+		vibrato 00h
 		setRelease 0
 		noteL A3,6
 		noteL A3,5

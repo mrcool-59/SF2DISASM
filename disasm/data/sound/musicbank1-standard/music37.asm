@@ -19,10 +19,10 @@ Music_37:		; [CUSTOM] Self Discipline
 		dw Music_37_Channel_9
 
 Music_37_Channel_0:
-		vibrato 0
 		waitL 2
 		inst 3
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL E4,24
 		note  D4
@@ -211,10 +211,10 @@ Music_37_Channel_0:
 		note  D3
 		mainLoopEnd
 Music_37_Channel_1:
-		vibrato 0
 		waitL 2
 		inst 1
 		vol 15
+		vibrato 20h
 		setRelease 0
 		noteL E5,4
 		note  E5
@@ -434,11 +434,11 @@ Music_37_Channel_1:
 		note  E6
 		mainLoopEnd
 Music_37_Channel_2:
-		vibrato 0
 		waitL 2
 		stereo 40h
 		inst 2
 		vol 15
+		vibrato 00h
 		setRelease 4
 		noteL B5,8
 		note  E5
@@ -618,11 +618,11 @@ Music_37_Channel_2:
 		note  C7
 		mainLoopEnd
 Music_37_Channel_3:
-		vibrato 0
 		waitL 2
 		stereo 80h
 		inst 4
 		vol 13
+		vibrato 00h
 		setRelease 0
 		noteL G6,24
 		note  Fs6
@@ -680,11 +680,11 @@ Music_37_Channel_3:
 		note  D5
 		mainLoopEnd
 Music_37_Channel_4:
-		vibrato 0
 		waitL 2
 		stereo 80h
 		inst 4
 		vol 13
+		vibrato 00h
 		setRelease 0
 		noteL B6,24
 		note  A6
@@ -742,10 +742,10 @@ Music_37_Channel_4:
 		note  A5
 		mainLoopEnd
 Music_37_Channel_5:
-		vibrato 0
 		waitL 2
 		inst 37
 		vol 15
+		vibrato 00h
 		setRelease 4
 		noteL E5,8
 		note  B4

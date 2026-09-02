@@ -19,9 +19,9 @@ Music_4:		; [CUSTOM] Test Tricky Loop
 		dw Music_4_Channel_9
 
 Music_4_Channel_0:
-		vibrato 0
 		inst 2
 		vol 15
+		vibrato 00h
 		sustain
 		noteL D5,255
 		countedLoopStart 25
@@ -31,22 +31,22 @@ Music_4_Channel_0:
 		noteL D5,27
 		channel_end
 Music_4_Channel_1:
-		vibrato 0
 		waitL 144
 		inst 0
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL C5,126
 		mainLoopStart
 		waitL 72
 		mainLoopEnd
 Music_4_Channel_2:
-		vibrato 0
 		waitL 255
 		waitL 33
 		mainLoopStart
 		inst 1
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL E5,72
 		mainLoopEnd

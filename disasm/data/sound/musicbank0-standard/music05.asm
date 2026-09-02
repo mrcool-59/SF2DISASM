@@ -19,11 +19,11 @@ Music_5:		; [CUSTOM] Test Illegal Volume Ramp
 		dw Music_5_Channel_9
 
 Music_5_Channel_0:
-		vibrato 0
 		mainLoopStart
 		stereo 80h
 		inst 0
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL C6,144
 		mainLoopEnd

@@ -19,10 +19,10 @@ Music_2:		; [CUSTOM] Test Note Length
 		dw Music_2_Channel_9
 
 Music_2_Channel_0:
-		vibrato 0
 		mainLoopStart
 		inst 2
 		vol 15
+		vibrato 00h
 		sustain
 		noteL D5,255
 		note  D5
@@ -33,11 +33,11 @@ Music_2_Channel_0:
 		noteL D5,5
 		mainLoopEnd
 Music_2_Channel_1:
-		vibrato 0
 		waitL 32
 		mainLoopStart
 		inst 0
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL C5,4
 		waitL 255
@@ -48,11 +48,11 @@ Music_2_Channel_1:
 		waitL 1
 		mainLoopEnd
 Music_2_Channel_2:
-		vibrato 0
 		waitL 64
 		mainLoopStart
 		inst 1
 		vol 15
+		vibrato 00h
 		setRelease 127
 		noteL E5,131
 		waitL 255

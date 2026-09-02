@@ -19,10 +19,10 @@ Music_3:		; [CUSTOM] Test Basic
 		dw Music_3_Channel_9
 
 Music_3_Channel_0:
-		vibrato 0
 		mainLoopStart
 		inst 3
 		vol 15
+		vibrato 00h
 		setRelease 2
 		noteL D3,8
 		countedLoopStart 14
@@ -30,10 +30,10 @@ Music_3_Channel_0:
 		countedLoopEnd
 		mainLoopEnd
 Music_3_Channel_1:
-		vibrato 0
 		mainLoopStart
 		inst 2
 		vol 15
+		vibrato 00h
 		setRelease 2
 		noteL D5,4
 		note  C5
@@ -69,11 +69,11 @@ Music_3_Channel_1:
 		note  D7
 		mainLoopEnd
 Music_3_Channel_2:
-		vibrato 0
 		waitL 2
 		mainLoopStart
 		inst 2
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL F5,4
 		note  D5
@@ -109,10 +109,10 @@ Music_3_Channel_2:
 		note  C7
 		mainLoopEnd
 Music_3_Channel_3:
-		vibrato 0
 		mainLoopStart
 		inst 4
 		vol 15
+		vibrato 00h
 		setRelease 2
 		noteL D6,8
 		countedLoopStart 4
@@ -124,10 +124,10 @@ Music_3_Channel_3:
 		countedLoopEnd
 		mainLoopEnd
 Music_3_Channel_4:
-		vibrato 0
 		mainLoopStart
 		inst 2
 		vol 15
+		vibrato 00h
 		setRelease 2
 		noteL F6,8
 		setRelease 4
@@ -161,10 +161,10 @@ Music_3_Channel_4:
 		note  C6
 		mainLoopEnd
 Music_3_Channel_5:
-		vibrato 0
 		mainLoopStart
 		inst 2
 		vol 15
+		vibrato 00h
 		setRelease 2
 		noteL D6,8
 		setRelease 4

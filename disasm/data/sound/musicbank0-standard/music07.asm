@@ -19,9 +19,9 @@ Music_7:		; [CUSTOM] Test Effects
 		dw Music_7_Channel_9
 
 Music_7_Channel_0:
-		vibrato 0
 		inst 4
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL Cs4,18
 		setSlide 05h
@@ -31,10 +31,10 @@ Music_7_Channel_0:
 		noteL Cs3,199
 		channel_end
 Music_7_Channel_1:
-		vibrato 0
 		waitL 177
 		inst 2
 		vol 15
+		vibrato 00h
 		setRelease 0
 		noteL Cs4,11
 		shifting 60h
