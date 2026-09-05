@@ -3052,11 +3052,11 @@ Music_40_Channel_6:
 		psgNoteL A4,12
 		psgNote  B4
 		waitL 13
-		psgNoteL C5,24
+		psgNoteL Cs5,24
 		psgNoteL C5,3
-		psgNoteL C5,2
+		psgNoteL Cs5,2
 		psgNoteL D5,3
-		psgNoteL C5,2
+		psgNoteL Cs5,2
 		psgNoteL C5,3
 		waitL 99
 		psgNoteL E4,6
@@ -3164,11 +3164,11 @@ Music_40_Channel_7:
 		psgNoteL A4,12
 		psgNoteL B4,13
 		waitL 12
-		psgNoteL C5,25
+		psgNoteL Cs5,25
 		psgNoteL C5,3
-		psgNoteL C5,2
+		psgNoteL Cs5,2
 		psgNoteL D5,3
-		psgNoteL C5,2
+		psgNoteL Cs5,2
 		psgNote  C5
 		waitL 99
 		psgNoteL E4,6

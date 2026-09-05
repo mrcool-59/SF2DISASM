@@ -642,7 +642,7 @@ Music_24_Channel_6:
 		psgInst 12
 		vibrato 00h
 		setRelease 0
-		psgNoteL C5,1
+		psgNoteL Cs5,1
 		psgNote  D5
 		psgNote  Ds5
 		psgNote  Ds5
@@ -650,13 +650,13 @@ Music_24_Channel_6:
 		psgNoteL Ds5,20
 		setRelease 0
 		psgNoteL C5,1
-		psgNote  C5
+		psgNote  Cs5
 		psgNote  D5
 		psgNote  Ds5
 		setRelease 39
 		psgNoteL Ds5,44
 		setRelease 0
-		psgNoteL C5,1
+		psgNoteL Cs5,1
 		psgNote  D5
 		psgNote  Ds5
 		psgNote  Ds5
@@ -664,7 +664,7 @@ Music_24_Channel_6:
 		psgNoteL Ds5,20
 		setRelease 0
 		psgNoteL C5,1
-		psgNote  C5
+		psgNote  Cs5
 		psgNote  D5
 		psgNote  Ds5
 		setRelease 127
@@ -698,7 +698,7 @@ Music_24_Channel_6:
 		psgNoteL As4,1
 		psgNote  B4
 		psgNote  C5
-		psgNote  C5
+		psgNote  Cs5
 		setRelease 39
 		psgNoteL D5,44
 		countedLoopEnd
@@ -792,9 +792,9 @@ Music_24_Channel_6:
 		psgNoteL Gs4,3
 		psgNoteL As4,4
 		psgNoteL C5,3
-		psgNoteL C5,4
+		psgNoteL Cs5,4
 		psgNoteL Ds5,3
-		psgNoteL C5,4
+		psgNoteL Cs5,4
 		psgNoteL C5,3
 		psgNoteL As4,4
 		psgNoteL Gs4,3
@@ -806,7 +806,7 @@ Music_24_Channel_6:
 		psgNoteL Gs4,3
 		psgNoteL As4,4
 		psgNoteL C5,3
-		psgNoteL C5,4
+		psgNoteL Cs5,4
 		psgNote  Ds5
 		psgInst 12
 		setRelease 1
@@ -860,7 +860,7 @@ Music_24_Channel_7:
 		setRelease 7
 		psgNoteL Ds5,10
 		setRelease 0
-		psgNoteL C5,1
+		psgNoteL Cs5,1
 		psgNote  D5
 		psgNote  Ds5
 		psgNote  Ds5
@@ -875,7 +875,7 @@ Music_24_Channel_7:
 		setRelease 39
 		psgNoteL B4,44
 		setRelease 0
-		psgNoteL C5,1
+		psgNoteL Cs5,1
 		psgNote  D5
 		psgNote  Ds5
 		psgNote  Ds5
@@ -890,7 +890,7 @@ Music_24_Channel_7:
 		psgNoteL B4,44
 		psgInst 11
 		setRelease 0
-		psgNoteL C5,1
+		psgNoteL Cs5,1
 		psgNote  D5
 		psgNote  Ds5
 		psgNote  Ds5

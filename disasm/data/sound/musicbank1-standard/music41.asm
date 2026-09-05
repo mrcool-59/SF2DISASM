@@ -1720,7 +1720,7 @@ Music_41_Channel_7:
 		psgNote  G4
 		psgNote  A4
 		psgNoteL D5,3
-		psgNoteL C5,1
+		psgNoteL Cs5,1
 		psgNoteL A4,5
 		psgNoteL G4,4
 		psgNote  D4
@@ -1738,7 +1738,7 @@ Music_41_Channel_7:
 		psgNote  G4
 		psgNoteL A4,5
 		psgNoteL D5,3
-		psgNoteL C5,1
+		psgNoteL Cs5,1
 		psgNoteL A4,4
 		psgNote  G4
 		psgNote  D4
@@ -1774,7 +1774,7 @@ Music_41_Channel_7:
 		psgNoteL G4,5
 		psgNoteL A4,4
 		psgNoteL D5,3
-		psgNoteL C5,1
+		psgNoteL Cs5,1
 		psgNoteL A4,4
 		psgNote  G4
 		psgNote  D4
@@ -1792,7 +1792,7 @@ Music_41_Channel_7:
 		psgNote  G4
 		psgNote  A4
 		psgNoteL D5,3
-		psgNoteL C5,1
+		psgNoteL Cs5,1
 		psgNoteL A4,4
 		psgNoteL G4,5
 		psgNoteL D4,4
