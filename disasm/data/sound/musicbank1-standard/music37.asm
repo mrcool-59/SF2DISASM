@@ -743,7 +743,7 @@ Music_37_Channel_4:
 		mainLoopEnd
 Music_37_Channel_5:
 		waitL 2
-		inst 37
+		inst 7
 		vol 15
 		vibrato 00h
 		setRelease 4

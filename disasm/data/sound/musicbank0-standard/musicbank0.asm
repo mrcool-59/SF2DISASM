@@ -59,7 +59,7 @@
 		include "music19.asm"
 		include "music20.asm"
 		include "music21.asm"
-		include "music22.asm"
+		include "music22.asm"	; [CUSTOM] Maker's Ruin / Antidote
 		include "music23.asm"	; [CUSTOM] L1 Battle / Revival, Long Version
 		include "music24.asm"	; [CUSTOM] SF1 Attack / Revival
 		include "music25.asm"	; [CUSTOM] First Area / Promotion

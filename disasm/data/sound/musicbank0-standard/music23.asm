@@ -21,7 +21,7 @@ Music_23:		; [CUSTOM] L1 Battle
 Music_23_Channel_0:
 		waitL 48
 		mainLoopStart
-		inst 7
+		inst 11
 		vol 13
 		vibrato 00h
 		setRelease 1
@@ -72,72 +72,72 @@ Music_23_Channel_0:
 		note  C3
 		note  C4
 		countedLoopStart 7
-		inst 14
+		inst 18
 		vol 11
 		note  C5
-		inst 7
+		inst 11
 		vol 13
 		note  As3
 		countedLoopEnd
 		countedLoopStart 3
-		inst 14
+		inst 18
 		vol 11
 		note  C5
-		inst 7
+		inst 11
 		vol 13
 		note  C4
 		countedLoopEnd
 		countedLoopStart 3
-		inst 14
+		inst 18
 		vol 11
 		note  C5
-		inst 7
+		inst 11
 		vol 13
 		note  A3
 		countedLoopEnd
 		countedLoopStart 7
-		inst 14
+		inst 18
 		vol 11
 		note  C5
-		inst 7
+		inst 11
 		vol 13
 		note  As3
 		countedLoopEnd
 		countedLoopStart 3
-		inst 14
+		inst 18
 		vol 11
 		note  C5
-		inst 7
+		inst 11
 		vol 13
 		note  C4
 		countedLoopEnd
 		countedLoopStart 1
-		inst 14
+		inst 18
 		vol 11
 		note  C5
-		inst 7
+		inst 11
 		vol 13
 		note  A3
 		countedLoopEnd
-		inst 14
+		inst 18
 		vol 11
 		note  C5
-		inst 7
+		inst 11
 		vol 13
 		note  Cs4
-		inst 14
+		inst 18
 		vol 11
 		note  C5
-		inst 7
+		inst 11
 		vol 13
 		setRelease 25
 		noteL Cs4,36
-		inst 5
+		inst 9
 		vol 10
 		vibrato 2Ah
 		setRelease 1
 		noteL E5,72
-		inst 7
+		inst 11
 		vol 13
 		vibrato 00h
 		noteL D4,12
@@ -184,7 +184,7 @@ Music_23_Channel_0:
 Music_23_Channel_1:
 		waitL 60
 		mainLoopStart
-		inst 6
+		inst 10
 		vol 9
 		vibrato 00h
 		setRelease 1
@@ -260,7 +260,7 @@ Music_23_Channel_1:
 		setRelease 1
 		noteL Cs5,12
 		stereo 40h
-		inst 12
+		inst 16
 		vol 11
 		note  A4
 		countedLoopStart 1
@@ -274,7 +274,7 @@ Music_23_Channel_1:
 		setRelease 13
 		noteL A6,30
 		stereo 0C0h
-		inst 6
+		inst 10
 		vol 9
 		setRelease 1
 		noteL D4,6
@@ -348,14 +348,14 @@ Music_23_Channel_1:
 		noteL Cs5,24
 		setRelease 73
 		noteL Cs5,84
-		inst 12
+		inst 16
 		vol 11
 		setRelease 1
 		noteL A6,6
 		note  E6
 		note  Cs6
 		note  A5
-		inst 11
+		inst 15
 		vol 10
 		note  D4
 		note  F4
@@ -483,12 +483,12 @@ Music_23_Channel_1:
 		setRelease 49
 		noteL A6,54
 		stereo 80h
-		inst 5
+		inst 9
 		vol 10
 		vibrato 2Ah
 		setRelease 1
 		noteL Cs6,48
-		inst 13
+		inst 17
 		vol 10
 		vibrato 00h
 		noteL A5,6
@@ -571,7 +571,7 @@ Music_23_Channel_1:
 Music_23_Channel_2:
 		waitL 72
 		mainLoopStart
-		inst 6
+		inst 10
 		vol 9
 		vibrato 2Ah
 		setRelease 1
@@ -636,7 +636,7 @@ Music_23_Channel_2:
 		setRelease 15
 		noteL A5,26
 		stereo 80h
-		inst 12
+		inst 16
 		vol 11
 		setRelease 1
 		countedLoopStart 1
@@ -650,7 +650,7 @@ Music_23_Channel_2:
 		setRelease 25
 		noteL A6,40
 		stereo 0C0h
-		inst 6
+		inst 10
 		vol 9
 		vibrato 2Ah
 		setRelease 1
@@ -714,7 +714,7 @@ Music_23_Channel_2:
 		noteL A5,24
 		setRelease 73
 		noteL A5,84
-		inst 12
+		inst 16
 		vol 11
 		setRelease 1
 		noteL E6,6
@@ -723,7 +723,7 @@ Music_23_Channel_2:
 		setRelease 9
 		noteL E5,14
 		stereo 40h
-		inst 11
+		inst 15
 		vol 8
 		setRelease 1
 		noteL D4,6
@@ -866,12 +866,12 @@ Music_23_Channel_2:
 		setRelease 73
 		noteL E6,76
 		stereo 40h
-		inst 5
+		inst 9
 		vol 10
 		vibrato 2Ah
 		setRelease 2
 		noteL A6,25
-		inst 13
+		inst 17
 		vol 10
 		vibrato 00h
 		setRelease 1
@@ -955,7 +955,7 @@ Music_23_Channel_2:
 Music_23_Channel_3:
 		waitL 48
 		mainLoopStart
-		inst 8
+		inst 12
 		vol 10
 		vibrato 2Ah
 		setRelease 1
@@ -1090,7 +1090,7 @@ Music_23_Channel_3:
 		noteL E7,12
 		vibrato 2Ah
 		noteL G7,48
-		inst 10
+		inst 14
 		vol 11
 		vibrato 00h
 		setRelease 13
@@ -1134,7 +1134,7 @@ Music_23_Channel_3:
 		vibrato 00h
 		setRelease 73
 		noteL E6,168
-		inst 9
+		inst 13
 		vol 10
 		setRelease 1
 		noteL D6,24
@@ -1179,7 +1179,7 @@ Music_23_Channel_3:
 Music_23_Channel_4:
 		waitL 58
 		mainLoopStart
-		inst 8
+		inst 12
 		vol 8
 		vibrato 2Ah
 		setRelease 1
@@ -1314,7 +1314,7 @@ Music_23_Channel_4:
 		noteL E7,12
 		vibrato 1Ah
 		noteL G7,48
-		inst 10
+		inst 14
 		vol 9
 		vibrato 00h
 		setRelease 13
@@ -1358,7 +1358,7 @@ Music_23_Channel_4:
 		vibrato 00h
 		setRelease 71
 		noteL E6,166
-		inst 9
+		inst 13
 		vol 8
 		setRelease 1
 		noteL D6,24
