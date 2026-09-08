@@ -46,5 +46,5 @@
 		include "music38.asm"	; [CUSTOM] Final / The Bloodline of Ground Seal
 		include "music39.asm"	; [CUSTOM] Last Area (Abridged) / The Caravan Proceeds
 		include "music40.asm"	; [CUSTOM] Shop / Ancient Wings
-		include "music41.asm"	; [CUSTOM] Choose your Path / Chosen Heroes
+		include "music41.asm"
 		include "music64.asm"

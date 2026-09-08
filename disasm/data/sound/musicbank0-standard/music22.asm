@@ -68,7 +68,7 @@ Music_22_Channel_0:
 		noteL As2,160
 		mainLoopEnd
 Music_22_Channel_1:
-		inst 5
+		inst 11
 		vol 13
 		vibrato 20h
 		setRelease 0
@@ -242,13 +242,13 @@ Music_22_Channel_2:
 		mainLoopEnd
 Music_22_Channel_3:
 		stereo 80h
-		inst 5
+		inst 11
 		vol 13
 		vibrato 00h
 		setRelease 0
 		noteL C6,64
 		mainLoopStart
-		inst 6
+		inst 12
 		vol 13
 		setRelease 0
 		noteL G4,128
@@ -321,7 +321,7 @@ Music_22_Channel_4:
 		waitL 192
 		mainLoopStart
 		stereo 80h
-		inst 8
+		inst 14
 		vol 15
 		vibrato 20h
 		setRelease 0
@@ -374,7 +374,7 @@ Music_22_Channel_4:
 		noteL D6,16
 		setRelease 32
 		noteL F6,48
-		inst 6
+		inst 12
 		vol 15
 		setRelease 12
 		noteL C5,16
@@ -416,7 +416,7 @@ Music_22_Channel_4:
 		mainLoopEnd
 Music_22_Channel_5:
 		stereo 40h
-		inst 7
+		inst 13
 		vol 4
 		vibrato 00h
 		setRelease 4
@@ -553,7 +553,7 @@ Music_22_Channel_6:
 		psgInst 0
 		waitL 64
 		mainLoopStart
-		psgInst 13
+		psgInst 253
 		vibrato 00h
 		setRelease 0
 		psgNoteL G4,32
@@ -634,7 +634,7 @@ Music_22_Channel_7:
 		psgInst 0
 		waitL 192
 		mainLoopStart
-		psgInst 13
+		psgInst 253
 		vibrato 00h
 		setRelease 0
 		psgNoteL Ds3,24

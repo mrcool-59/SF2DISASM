@@ -19,7 +19,7 @@ Music_24:		; [CUSTOM] SF1 Attack
 		dw Music_24_Channel_9
 
 Music_24_Channel_0:
-		inst 19
+		inst 25
 		vol 9
 		vibrato 20h
 		setRelease 2
@@ -100,7 +100,7 @@ Music_24_Channel_0:
 		setRelease 2
 		noteL D7,6
 		noteL D7,144
-		inst 21
+		inst 27
 		vol 12
 		setRelease 13
 		noteL F6,18
@@ -160,7 +160,7 @@ Music_24_Channel_0:
 		mainLoopEnd
 Music_24_Channel_1:
 		stereo 80h
-		inst 20
+		inst 26
 		vol 15
 		vibrato 00h
 		setRelease 1
@@ -236,7 +236,7 @@ Music_24_Channel_1:
 		mainLoopEnd
 Music_24_Channel_2:
 		stereo 40h
-		inst 22
+		inst 28
 		vol 14
 		vibrato 2Ah
 		setRelease 1
@@ -287,7 +287,7 @@ Music_24_Channel_2:
 		countedLoopEnd
 		mainLoopEnd
 Music_24_Channel_3:
-		inst 19
+		inst 25
 		vol 10
 		vibrato 20h
 		setRelease 2
@@ -361,7 +361,7 @@ Music_24_Channel_3:
 		setRelease 2
 		noteL G6,6
 		noteL G6,144
-		inst 21
+		inst 27
 		vol 12
 		setRelease 13
 		noteL C6,18
@@ -420,7 +420,7 @@ Music_24_Channel_3:
 		noteL C6,6
 		mainLoopEnd
 Music_24_Channel_4:
-		inst 19
+		inst 25
 		vol 10
 		vibrato 20h
 		setRelease 2
@@ -494,7 +494,7 @@ Music_24_Channel_4:
 		setRelease 2
 		noteL D4,6
 		noteL B5,144
-		inst 21
+		inst 27
 		vol 12
 		setRelease 13
 		noteL As5,18
@@ -555,86 +555,86 @@ Music_24_Channel_4:
 Music_24_Channel_5:
 		waitL 42
 		setRelease 0
-		sampleL 11,2
+		sampleL 12,2
+		sample  12
+		sample  11
+		countedLoopStart 1
+		sampleL 10,24
+		sample  10
+		sampleL 10,6
+		sample  11
+		sampleL 10,12
+		countedLoopEnd
+		sampleL 12,6
+		sample  12
+		sample  12
+		sample  11
+		sample  11
 		sample  11
 		sample  10
-		countedLoopStart 1
-		sampleL 9,24
-		sample  9
-		sampleL 9,6
 		sample  10
-		sampleL 9,12
-		countedLoopEnd
+		countedLoopStart 1
+		sampleL 10,12
 		sampleL 11,6
-		sample  11
-		sample  11
-		sample  10
-		sample  10
-		sample  10
-		sample  9
-		sample  9
-		countedLoopStart 1
-		sampleL 9,12
-		sampleL 10,6
-		sample  11
-		sampleL 9,12
-		sampleL 10,6
-		sample  11
-		sampleL 9,12
-		sampleL 10,6
-		sample  11
-		sample  9
-		sample  10
+		sample  12
+		sampleL 10,12
+		sampleL 11,6
+		sample  12
+		sampleL 10,12
+		sampleL 11,6
+		sample  12
 		sample  10
 		sample  11
+		sample  11
+		sample  12
 		countedLoopEnd
-		sampleL 9,24
-		sample  9
-		sampleL 9,6
+		sampleL 10,24
 		sample  10
-		sampleL 9,12
-		sampleL 9,24
-		sample  9
-		sampleL 9,6
-		sample  9
-		sampleL 9,12
-		sampleL 11,4
+		sampleL 10,6
+		sample  11
+		sampleL 10,12
+		sampleL 10,24
+		sample  10
+		sampleL 10,6
+		sample  10
+		sampleL 10,12
+		sampleL 12,4
+		sample  12
+		sample  11
 		sample  11
 		sample  10
 		sample  10
-		sample  9
-		sample  9
 		countedLoopStart 1
-		sampleL 9,12
-		sampleL 10,6
-		sample  11
-		sampleL 9,12
-		sampleL 10,6
-		sample  11
-		sampleL 9,12
-		sampleL 10,6
-		sample  11
-		sample  9
-		sample  10
+		sampleL 10,12
+		sampleL 11,6
+		sample  12
+		sampleL 10,12
+		sampleL 11,6
+		sample  12
+		sampleL 10,12
+		sampleL 11,6
+		sample  12
 		sample  10
 		sample  11
+		sample  11
+		sample  12
 		countedLoopEnd
 		mainLoopStart
 		setRelease 0
 		countedLoopStart 7
-		sampleL 9,12
-		sampleL 10,6
-		sample  11
-		sampleL 9,12
-		sampleL 10,6
-		sample  11
-		sampleL 9,12
-		sampleL 10,6
-		sample  11
-		sample  9
-		sample  10
+		sampleL 10,12
+		sampleL 11,6
+		sample  12
+		sampleL 10,12
+		sampleL 11,6
+		sample  12
+		sampleL 10,12
+		sampleL 11,6
+		sample  12
 		sample  10
 		sample  11
+		sample  11
+		sample  12
 		countedLoopEnd
 		mainLoopEnd
 Music_24_Channel_6:

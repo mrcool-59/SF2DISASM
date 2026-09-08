@@ -75,6 +75,7 @@ table_Soundtracks:
                 dc.b MUSIC_BOSS_ATTACK
                 dc.b MUSIC_ZEON_ATTACK
                 dc.b MUSIC_TOWN
+                dc.b MUSIC_SAVE
                 dc.b MUSIC_CURE
                 dc.b MUSIC_UNUSED_REVIVE
                 dc.b MUSIC_REVIVE
@@ -85,7 +86,6 @@ table_Soundtracks:
                 dc.b MUSIC_CASTLE
                 dc.b MUSIC_HEADQUARTERS
                 dc.b MUSIC_MITULA_SHRINE
-                dc.b MUSIC_ENDING
                 dc.b MUSIC_INTRO
                 dc.b MUSIC_WITCH
                 dc.b MUSIC_SUSPEND
@@ -98,12 +98,12 @@ table_Soundtracks:
                 dc.b MUSIC_CORRUPTED_SAVE
                 dc.b MUSIC_JOIN
                 dc.b MUSIC_SAD_JOIN
-                dc.b MUSIC_SAVE
                 dc.b MUSIC_CURSED_ITEM
                 dc.b MUSIC_ITEM
                 dc.b MUSIC_TITLE
                 dc.b MUSIC_SHRINE
                 dc.b MUSIC_FINAL_BATTLE
+                dc.b MUSIC_ENDING
                 dc.b SFX_MENU_SWITCH
                 dc.b SFX_MENU_SELECTION
                 dc.b SFX_VALIDATION
@@ -186,7 +186,7 @@ table_SoundtrackTitles:
                 defineName "Oh, Damnit (NUKED)"
                 defineName "Joined the Party (NUKED)"
                 defineName "Sadly Joined the Party (NUKED)"
-                defineName "Save (NUKED)"
+                defineName "Choose your Path / Save"
                 defineName "Maker's Ruin / Antidote"
                 defineName "L1 Battle / Revival, Long Version"
                 defineName "SF1 Attack / Revival"
@@ -206,7 +206,7 @@ table_SoundtrackTitles:
                 defineName "Final / The Bloodline of Ground Seal"
                 defineName "Last Area (Abridged) / The Caravan Proceeds"
                 defineName "Shop / Ancient Wings"
-                defineName "Choose your Path / Chosen Heroes"
+                defineName "Chosen Heroes (NUKED)"
                 defineName ""
                 defineName ""
                 defineName ""
