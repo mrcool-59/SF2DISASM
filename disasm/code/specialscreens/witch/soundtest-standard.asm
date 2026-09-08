@@ -74,6 +74,7 @@ table_Soundtracks:
                 dc.b MUSIC_ENEMY_ATTACK
                 dc.b MUSIC_BOSS_ATTACK
                 dc.b MUSIC_ZEON_ATTACK
+                dc.b MUSIC_TOWN
                 dc.b MUSIC_CURE
                 dc.b MUSIC_UNUSED_REVIVE
                 dc.b MUSIC_REVIVE
@@ -85,7 +86,6 @@ table_Soundtracks:
                 dc.b MUSIC_HEADQUARTERS
                 dc.b MUSIC_MITULA_SHRINE
                 dc.b MUSIC_ENDING
-                dc.b MUSIC_TOWN
                 dc.b MUSIC_INTRO
                 dc.b MUSIC_WITCH
                 dc.b MUSIC_SUSPEND
@@ -173,7 +173,7 @@ table_SoundtrackTitles:
                 defineName "Test Illegal Volume Ramp / Dark Force"
                 defineName "Test Sample / Footsteps of Ruin"
                 defineName "Test Effects / Roar of the King of Devils"
-                defineName "A Peaceful Moment (NUKED)"
+                defineName "Test PSG / A Peaceful Moment"
                 defineName "Lurking in the Darkness (NUKED)"
                 defineName "Witch in the Forest of Illusion (NUKED)"
                 defineName "Midnight in the Forest of Illusion (NUKED)"
