@@ -41,9 +41,11 @@
     include "code\dac\send_dac_byte.asm"
   align 1400h, 0
   align 1500h, 0
-    include "data\ym_frequencies.asm"
+    ; include "data\ym_frequencies.asm"
+    include "data\ym_frequencies-standard.asm"
   align 10h, 0
-    include "data\psg_frequencies.asm"
+    ; include "data\psg_frequencies.asm"
+    include "data\psg_frequencies-standard.asm"
   align 10h, 0
     include "data\ym_levels.asm"
   align 10h, 0
