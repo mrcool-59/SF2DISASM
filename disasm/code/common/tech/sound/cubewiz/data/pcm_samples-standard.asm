@@ -5,7 +5,6 @@ PCM_SAMPLE_ENTRIES:
     dw  4, DAC_BANK_1,  0300h, 8000h
     dw  8, DAC_BANK_1,  05D0h, 8300h
     dw 17, DAC_BANK_1,  01ECh, 8622h
-    dw 35, DAC_BANK_1,  0001h, 8014h
     dw 14, DAC_BANK_1,  0BC5h, 88D0h
     dw 12, DAC_BANK_1,  0AD2h, 9495h
     dw  4, DAC_BANK_1,  0F44h, 9F67h
@@ -17,5 +16,6 @@ PCM_SAMPLE_ENTRIES:
     dw  1, DAC_BANK_1,  0D3Ah, 0D187h
     dw  1, DAC_BANK_1,  0951h, 0DEC1h
     dw  1, DAC_BANK_1,  0F0Ah, 0E812h
+    dw  0, DAC_BANK_1,  0000h, 8000h
     dw  0, DAC_BANK_1,  0000h, 8000h
     dw  0, DAC_BANK_1,  0000h, 8000h

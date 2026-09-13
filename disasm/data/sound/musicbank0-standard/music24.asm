@@ -555,86 +555,86 @@ Music_24_Channel_4:
 Music_24_Channel_5:
 		waitL 42
 		setRelease 0
-		sampleL 12,2
-		sample  12
+		sampleL 11,2
 		sample  11
-		countedLoopStart 1
-		sampleL 10,24
 		sample  10
-		sampleL 10,6
-		sample  11
-		sampleL 10,12
+		countedLoopStart 1
+		sampleL 9,24
+		sample  9
+		sampleL 9,6
+		sample  10
+		sampleL 9,12
 		countedLoopEnd
-		sampleL 12,6
-		sample  12
-		sample  12
-		sample  11
+		sampleL 11,6
 		sample  11
 		sample  11
 		sample  10
 		sample  10
+		sample  10
+		sample  9
+		sample  9
 		countedLoopStart 1
-		sampleL 10,12
-		sampleL 11,6
-		sample  12
-		sampleL 10,12
-		sampleL 11,6
-		sample  12
-		sampleL 10,12
-		sampleL 11,6
-		sample  12
+		sampleL 9,12
+		sampleL 10,6
+		sample  11
+		sampleL 9,12
+		sampleL 10,6
+		sample  11
+		sampleL 9,12
+		sampleL 10,6
+		sample  11
+		sample  9
+		sample  10
 		sample  10
 		sample  11
-		sample  11
-		sample  12
 		countedLoopEnd
-		sampleL 10,24
+		sampleL 9,24
+		sample  9
+		sampleL 9,6
 		sample  10
-		sampleL 10,6
-		sample  11
-		sampleL 10,12
-		sampleL 10,24
-		sample  10
-		sampleL 10,6
-		sample  10
-		sampleL 10,12
-		sampleL 12,4
-		sample  12
-		sample  11
+		sampleL 9,12
+		sampleL 9,24
+		sample  9
+		sampleL 9,6
+		sample  9
+		sampleL 9,12
+		sampleL 11,4
 		sample  11
 		sample  10
 		sample  10
+		sample  9
+		sample  9
 		countedLoopStart 1
-		sampleL 10,12
-		sampleL 11,6
-		sample  12
-		sampleL 10,12
-		sampleL 11,6
-		sample  12
-		sampleL 10,12
-		sampleL 11,6
-		sample  12
+		sampleL 9,12
+		sampleL 10,6
+		sample  11
+		sampleL 9,12
+		sampleL 10,6
+		sample  11
+		sampleL 9,12
+		sampleL 10,6
+		sample  11
+		sample  9
+		sample  10
 		sample  10
 		sample  11
-		sample  11
-		sample  12
 		countedLoopEnd
 		mainLoopStart
 		setRelease 0
 		countedLoopStart 7
-		sampleL 10,12
-		sampleL 11,6
-		sample  12
-		sampleL 10,12
-		sampleL 11,6
-		sample  12
-		sampleL 10,12
-		sampleL 11,6
-		sample  12
+		sampleL 9,12
+		sampleL 10,6
+		sample  11
+		sampleL 9,12
+		sampleL 10,6
+		sample  11
+		sampleL 9,12
+		sampleL 10,6
+		sample  11
+		sample  9
+		sample  10
 		sample  10
 		sample  11
-		sample  11
-		sample  12
 		countedLoopEnd
 		mainLoopEnd
 Music_24_Channel_6:

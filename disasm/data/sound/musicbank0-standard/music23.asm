@@ -1403,153 +1403,153 @@ Music_23_Channel_4:
 Music_23_Channel_5:
 		stereo 40h
 		setRelease 0
-		sampleL 6,6
-		sample  6
-		sample  6
-		sample  6
+		sampleL 5,6
+		sample  5
+		sample  5
+		sample  5
 		stereo 0C0h
-		sample  7
-		sample  7
+		sample  6
+		sample  6
 		stereo 80h
-		sample  8
-		sample  8
+		sample  7
+		sample  7
 		mainLoopStart
 		stereo 0C0h
 		setRelease 0
-		sampleL 4,24
+		sampleL 3,24
 		countedLoopStart 2
-		sampleL 5,12
+		sampleL 4,12
+		sampleL 3,24
+		sampleL 3,12
+		sampleL 4,36
+		sampleL 3,12
 		sampleL 4,24
-		sampleL 4,12
-		sampleL 5,36
-		sampleL 4,12
-		sampleL 5,24
-		sampleL 4,12
-		sample  4
-		sampleL 5,24
-		sample  4
+		sampleL 3,12
+		sample  3
+		sampleL 4,24
+		sample  3
 		countedLoopEnd
-		sampleL 5,12
-		sampleL 4,24
 		sampleL 4,12
-		sampleL 5,36
+		sampleL 3,24
+		sampleL 3,12
+		sampleL 4,36
+		sampleL 3,6
+		sample  3
+		sampleL 4,18
+		sampleL 3,6
+		sampleL 3,12
+		sample  3
+		sample  4
 		sampleL 4,6
 		sample  4
-		sampleL 5,18
-		sampleL 4,6
-		sampleL 4,12
-		sample  4
-		sample  5
-		sampleL 5,6
-		sample  5
-		sampleL 4,24
+		sampleL 3,24
 		countedLoopStart 2
-		sampleL 5,12
+		sampleL 4,12
+		sampleL 3,24
+		sampleL 3,12
+		sampleL 4,36
+		sampleL 3,12
 		sampleL 4,24
-		sampleL 4,12
-		sampleL 5,36
-		sampleL 4,12
-		sampleL 5,24
-		sampleL 4,12
-		sample  4
-		sampleL 5,24
-		sample  4
+		sampleL 3,12
+		sample  3
+		sampleL 4,24
+		sample  3
 		countedLoopEnd
-		sampleL 5,12
-		sampleL 4,24
 		sampleL 4,12
-		sampleL 5,24
+		sampleL 3,24
+		sampleL 3,12
+		sampleL 4,24
 		stereo 40h
-		sampleL 6,6
-		sample  6
-		sample  6
-		sample  6
+		sampleL 5,6
+		sample  5
+		sample  5
+		sample  5
 		stereo 0C0h
-		sample  7
-		sample  7
-		sample  7
-		sample  7
+		sample  6
+		sample  6
+		sample  6
+		sample  6
 		stereo 80h
-		sample  8
-		sample  8
-		sample  8
-		sample  8
+		sample  7
+		sample  7
+		sample  7
+		sample  7
 		stereo 0C0h
-		sample  5
-		sample  5
-		sample  5
-		sample  5
-		sampleL 4,12
+		sample  4
+		sample  4
+		sample  4
+		sample  4
+		sampleL 3,12
 		countedLoopStart 2
-		sampleL 4,24
-		sampleL 4,12
-		sampleL 5,36
-		sampleL 4,24
-		sampleL 4,12
+		sampleL 3,24
+		sampleL 3,12
+		sampleL 4,36
+		sampleL 3,24
+		sampleL 3,12
 		stereo 80h
-		sampleL 8,24
+		sampleL 7,24
 		stereo 0C0h
-		sampleL 5,12
-		sampleL 4,24
 		sampleL 4,12
-		sample  4
+		sampleL 3,24
+		sampleL 3,12
+		sample  3
 		countedLoopEnd
-		sampleL 4,24
-		sampleL 4,12
-		sampleL 5,36
-		sampleL 4,24
-		sampleL 4,12
+		sampleL 3,24
+		sampleL 3,12
+		sampleL 4,36
+		sampleL 3,24
+		sampleL 3,12
 		stereo 80h
-		sampleL 8,24
+		sampleL 7,24
 		stereo 0C0h
-		sampleL 5,12
-		sampleL 4,24
 		sampleL 4,12
-		sampleL 9,24
+		sampleL 3,24
+		sampleL 3,12
+		sampleL 8,24
+		sample  3
+		sample  3
+		sampleL 4,6
 		sample  4
 		sample  4
-		sampleL 5,6
-		sample  5
-		sample  5
-		sample  5
-		sampleL 4,24
+		sample  4
+		sampleL 3,24
 		countedLoopStart 2
-		sampleL 5,12
+		sampleL 4,12
+		sampleL 3,24
+		sampleL 3,12
+		sampleL 4,36
+		sampleL 3,12
 		sampleL 4,24
-		sampleL 4,12
-		sampleL 5,36
-		sampleL 4,12
-		sampleL 5,24
-		sampleL 4,12
-		sample  4
-		sampleL 5,24
-		sample  4
+		sampleL 3,12
+		sample  3
+		sampleL 4,24
+		sample  3
 		countedLoopEnd
-		sampleL 5,12
-		sampleL 4,24
 		sampleL 4,12
-		sampleL 5,24
-		sampleL 5,6
-		sample  5
-		sampleL 5,12
-		sample  5
-		sampleL 5,6
-		sample  5
+		sampleL 3,24
+		sampleL 3,12
+		sampleL 4,24
+		sampleL 4,6
 		sample  4
+		sampleL 4,12
+		sample  4
+		sampleL 4,6
+		sample  4
+		sample  3
 		countedLoopStart 6
-		sample  5
+		sample  4
 		countedLoopEnd
 		stereo 40h
-		sample  6
-		sample  6
-		sample  6
-		sample  6
+		sample  5
+		sample  5
+		sample  5
+		sample  5
 		stereo 0C0h
-		sample  7
-		sample  7
+		sample  6
+		sample  6
 		stereo 80h
-		sample  8
-		sample  8
+		sample  7
+		sample  7
 		mainLoopEnd
 Music_23_Channel_9:
 		channel_end

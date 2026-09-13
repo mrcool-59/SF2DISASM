@@ -2812,206 +2812,206 @@ Music_40_Channel_4:
 Music_40_Channel_5:
 		waitL 199
 		setRelease 0
-		sampleL 13,12
+		sampleL 12,12
 		mainLoopStart
 		waitL 12
 		setRelease 0
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		wait
 		countedLoopStart 1
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
-		sampleL 14,19
+		sampleL 13,19
 		waitL 5
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
 		countedLoopEnd
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		wait
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 14,12
-		sampleL 14,13
-		sampleL 14,6
-		sample  14
-		sample  14
-		sampleL 14,7
 		sampleL 13,12
+		sampleL 13,13
+		sampleL 13,6
+		sample  13
+		sample  13
+		sampleL 13,7
+		sampleL 12,12
 		wait
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
-		sampleL 14,19
+		sampleL 13,19
 		waitL 5
 		countedLoopStart 1
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		wait
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
 		countedLoopEnd
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
-		sampleL 14,12
-		sampleL 14,6
-		sample  14
-		sample  14
-		sampleL 14,7
 		sampleL 13,12
-		sampleL 14,19
+		sampleL 13,6
+		sample  13
+		sample  13
+		sampleL 13,7
+		sampleL 12,12
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		wait
-		sampleL 14,13
-		sampleL 13,12
-		sample  13
+		sampleL 13,13
+		sampleL 12,12
+		sample  12
 		waitL 13
-		sampleL 14,12
-		sample  13
+		sampleL 13,12
+		sample  12
 		waitL 1
-		sampleL 13,12
+		sampleL 12,12
 		wait
-		sampleL 14,13
+		sampleL 13,13
+		sampleL 12,12
+		sample  12
+		waitL 13
 		sampleL 13,12
-		sample  13
+		sample  12
+		sample  12
 		waitL 13
-		sampleL 14,12
-		sample  13
-		sample  13
-		waitL 13
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		wait
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 14,5
-		sampleL 14,7
-		sampleL 14,12
-		sampleL 14,13
-		sampleL 14,6
-		sample  14
+		sampleL 13,5
+		sampleL 13,7
 		sampleL 13,12
+		sampleL 13,13
+		sampleL 13,6
+		sample  13
+		sampleL 12,12
 		waitL 13
-		sampleL 14,12
-		sample  13
-		sample  13
+		sampleL 13,12
+		sample  12
+		sample  12
 		waitL 13
-		sampleL 14,12
-		sample  13
+		sampleL 13,12
+		sample  12
 		waitL 1
-		sampleL 13,12
+		sampleL 12,12
 		wait
-		sampleL 14,13
-		sampleL 13,12
-		sample  13
+		sampleL 13,13
+		sampleL 12,12
+		sample  12
 		waitL 13
-		sampleL 14,12
-		sample  13
-		waitL 1
 		sampleL 13,12
+		sample  12
+		waitL 1
+		sampleL 12,12
 		wait
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
-		sampleL 14,12
-		sample  13
-		sample  13
+		sampleL 13,12
+		sample  12
+		sample  12
 		waitL 1
-		sampleL 14,6
-		sample  14
+		sampleL 13,6
+		sample  13
 		countedLoopStart 1
-		sampleL 13,12
-		sampleL 14,6
-		sampleL 14,7
+		sampleL 12,12
+		sampleL 13,6
+		sampleL 13,7
 		countedLoopEnd
-		sampleL 13,12
-		sampleL 14,6
-		sample  14
-		sampleL 13,12
-		waitL 13
-		sampleL 14,12
+		sampleL 12,12
+		sampleL 13,6
 		sample  13
-		waitL 1
+		sampleL 12,12
+		waitL 13
 		sampleL 13,12
+		sample  12
+		waitL 1
+		sampleL 12,12
 		wait
 		countedLoopStart 1
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
-		sampleL 14,12
-		sample  13
-		sample  13
+		sampleL 13,12
+		sample  12
+		sample  12
 		waitL 13
 		countedLoopEnd
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		wait
-		sampleL 14,13
-		sampleL 13,12
-		sample  13
+		sampleL 13,13
+		sampleL 12,12
+		sample  12
 		waitL 13
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 13,12
+		sampleL 12,12
 		wait
-		sample  14
 		sample  13
+		sample  12
 		waitL 1
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
-		sampleL 14,19
+		sampleL 13,19
 		waitL 5
-		sampleL 13,12
+		sampleL 12,12
 		waitL 13
-		sampleL 14,12
-		sample  13
-		waitL 1
 		sampleL 13,12
+		sample  12
+		waitL 1
+		sampleL 12,12
 		wait
-		sampleL 14,19
+		sampleL 13,19
 		waitL 6
-		sampleL 14,12
-		sample  13
-		waitL 1
 		sampleL 13,12
-		sample  14
-		sample  13
+		sample  12
 		waitL 1
-		sampleL 13,12
+		sampleL 12,12
+		sample  13
+		sample  12
+		waitL 1
+		sampleL 12,12
 		waitL 13
-		sampleL 13,12
-		sample  14
+		sampleL 12,12
 		sample  13
+		sample  12
 		waitL 1
-		sampleL 14,12
-		sample  14
-		sampleL 14,6
-		sampleL 14,7
-		sampleL 14,6
-		sample  14
-		sample  14
-		sample  14
-		sample  14
-		sampleL 14,7
-		sampleL 13,11
+		sampleL 13,12
+		sample  13
+		sampleL 13,6
+		sampleL 13,7
+		sampleL 13,6
+		sample  13
+		sample  13
+		sample  13
+		sample  13
+		sampleL 13,7
+		sampleL 12,11
 		waitL 2
 		mainLoopEnd
 Music_40_Channel_6:
