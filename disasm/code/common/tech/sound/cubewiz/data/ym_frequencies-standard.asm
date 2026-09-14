@@ -84,5 +84,5 @@ YM_FREQUENCIES:
     dw 3BCEh
     dw 3C09h
     dw 3C46h
-    dw 03A4h
-    dw 0497h
+    dw 3C87h
+    dw 3CCBh

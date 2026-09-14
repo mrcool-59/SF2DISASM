@@ -38,14 +38,14 @@
 		dw Music_32
 		dw Music_32
 		dw Music_32
-		include "music01.asm"	; [CUSTOM] Test Silence / Legend of Light
-		include "music02.asm"	; [CUSTOM] Test Note Length / The Young Men of Granseal
-		include "music03.asm"	; [CUSTOM] Test Basic / Fight, with the Ancient Light
-		include "music04.asm"	; [CUSTOM] Test Tricky Loop / MUSIC_PROMOTED_ATTACK_LOOP
-		include "music05.asm"	; [CUSTOM] Test Illegal Volume Ramp / Dark Force
-		include "music06.asm"	; [CUSTOM] Test Sample / Footsteps of Ruin
-		include "music07.asm"	; [CUSTOM] Test Effects / Roar of the King of Devils
-		include "music08.asm"	; [CUSTOM] Test PSG / A Peaceful Moment
+		include "music01.asm"
+		include "music02.asm"
+		include "music03.asm"
+		include "music04.asm"
+		include "music05.asm"
+		include "music06.asm"
+		include "music07.asm"
+		include "music08.asm"
 		include "music09.asm"
 		include "music10.asm"
 		include "music11.asm"
@@ -58,11 +58,11 @@
 		include "music18.asm"
 		include "music19.asm"
 		include "music20.asm"
-		include "music21.asm"	; [CUSTOM] Choose your Path / Save
-		include "music22.asm"	; [CUSTOM] Maker's Ruin / Antidote
-		include "music23.asm"	; [CUSTOM] L1 Battle / Revival, Long Version
-		include "music24.asm"	; [CUSTOM] SF1 Attack / Revival
-		include "music25.asm"	; [CUSTOM] First Area / Promotion
+		include "music21.asm"
+		include "music22.asm"
+		include "music23.asm"
+		include "music24.asm"
+		include "music25.asm"
 		include "music26.asm"
 		include "music27.asm"
 		include "music28.asm"
