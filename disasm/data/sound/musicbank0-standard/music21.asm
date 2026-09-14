@@ -46,8 +46,8 @@ Music_21_Channel_0:
 		note  F2
 		note  D2
 		note  C2
-		note  C2
-		note  C2
+		note  As8
+		note  As8
 		wait
 		setRelease 0
 		noteL As3,74
@@ -263,8 +263,8 @@ Music_21_Channel_1:
 		noteL Ds2,2
 		noteL Cs2,1
 		note  C2
-		note  C2
-		note  C2
+		note  B8
+		note  B8
 		stereo 0C0h
 		vol 12
 		setRelease 0
@@ -740,12 +740,12 @@ Music_21_Channel_2:
 		note  Ds2
 		note  Cs2
 		note  C2
-		note  C2
-		note  C2
-		note  C2
-		note  C2
-		note  C2
-		noteL C2,3
+		note  B8
+		note  B8
+		note  As8
+		note  As8
+		note  As8
+		noteL As8,3
 		waitL 2
 		inst 8
 		vol 9

@@ -1504,29 +1504,29 @@ Music_39_Channel_4:
 		vol 15
 		vibrato 00h
 		setRelease 0
-		noteL C2,11
+		noteL As8,11
 		inst 63
 		vol 15
 		noteL Ds3,10
 		inst 62
 		vol 15
-		note  C2
+		note  As8
 		inst 63
 		vol 15
 		note  Ds3
 		inst 62
 		vol 12
-		noteL C2,6
-		noteL C2,5
+		noteL As8,6
+		noteL As8,5
 		vol 13
-		note  C2
-		note  C2
+		note  As8
+		note  As8
 		vol 14
-		note  C2
-		note  C2
+		note  As8
+		note  As8
 		vol 15
-		note  C2
-		note  C2
+		note  As8
+		note  As8
 		inst 63
 		vol 15
 		noteL Ds3,11
@@ -1539,7 +1539,7 @@ Music_39_Channel_4:
 		inst 62
 		vol 15
 		setRelease 0
-		noteL C2,10
+		noteL As8,10
 		stereo 40h
 		inst 53
 		vol 15
@@ -1555,7 +1555,7 @@ Music_39_Channel_4:
 		stereo 0C0h
 		inst 62
 		vol 15
-		note  C2
+		note  As8
 		inst 63
 		vol 15
 		note  Ds3
@@ -1569,7 +1569,7 @@ Music_39_Channel_4:
 		noteL Ds3,10
 		inst 62
 		vol 15
-		note  C2
+		note  As8
 		stereo 80h
 		inst 53
 		vol 15
@@ -1585,7 +1585,7 @@ Music_39_Channel_4:
 		stereo 0C0h
 		inst 62
 		vol 15
-		note  C2
+		note  As8
 		inst 63
 		vol 15
 		note  Ds3
@@ -1599,7 +1599,7 @@ Music_39_Channel_4:
 		noteL Ds3,11
 		inst 62
 		vol 15
-		noteL C2,10
+		noteL As8,10
 		stereo 40h
 		inst 53
 		vol 15
@@ -1615,7 +1615,7 @@ Music_39_Channel_4:
 		stereo 0C0h
 		inst 62
 		vol 15
-		noteL C2,10
+		noteL As8,10
 		inst 63
 		vol 15
 		note  Ds3
@@ -1629,7 +1629,7 @@ Music_39_Channel_4:
 		noteL Ds3,11
 		inst 62
 		vol 15
-		noteL C2,10
+		noteL As8,10
 		stereo 80h
 		inst 53
 		vol 15
@@ -1645,7 +1645,7 @@ Music_39_Channel_4:
 		stereo 0C0h
 		inst 62
 		vol 15
-		noteL C2,10
+		noteL As8,10
 		inst 63
 		vol 15
 		note  Ds3
@@ -1659,7 +1659,7 @@ Music_39_Channel_4:
 		noteL Ds3,11
 		inst 62
 		vol 15
-		noteL C2,10
+		noteL As8,10
 		stereo 40h
 		inst 53
 		vol 15
@@ -1675,7 +1675,7 @@ Music_39_Channel_4:
 		stereo 0C0h
 		inst 62
 		vol 15
-		noteL C2,10
+		noteL As8,10
 		inst 63
 		vol 15
 		note  Ds3
@@ -1689,7 +1689,7 @@ Music_39_Channel_4:
 		note  Ds3
 		inst 62
 		vol 15
-		noteL C2,11
+		noteL As8,11
 		stereo 80h
 		inst 53
 		vol 15
@@ -1705,7 +1705,7 @@ Music_39_Channel_4:
 		stereo 0C0h
 		inst 62
 		vol 15
-		noteL C2,11
+		noteL As8,11
 		inst 63
 		vol 15
 		noteL Ds3,10
@@ -1795,9 +1795,9 @@ Music_39_Channel_4:
 		inst 62
 		vol 15
 		setRelease 0
-		noteL C2,11
-		noteL C2,10
-		note  C2
+		noteL As8,11
+		noteL As8,10
+		note  As8
 		inst 63
 		vol 15
 		note  Ds3
