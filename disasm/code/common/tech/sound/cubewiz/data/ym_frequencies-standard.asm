@@ -34,24 +34,24 @@ YM_FREQUENCIES:
     dw 1B64h
     dw 1B98h
     dw 1BCEh
-    dw 0497h
+    dw 1C09h
     dw 1C46h
     dw 1C87h
     dw 2266h
     dw 228Ah
-    dw 0455h
+    dw 22B1h
     dw 22DAh
-    dw 04DDh
+    dw 2306h
     dw 2333h
-    dw 0417h
+    dw 2364h
     dw 2398h
     dw 23CEh
-    dw 03DCh
+    dw 2409h
     dw 2446h
-    dw 0370h
+    dw 2487h
     dw 2A66h
     dw 2A8Ah
-    dw 033Fh
+    dw 2AB1h
     dw 2ADAh
     dw 2B06h
     dw 2B33h
@@ -65,8 +65,8 @@ YM_FREQUENCIES:
     dw 328Ah
     dw 32B1h
     dw 32DAh
-    dw 02E4h
-    dw 0293h
+    dw 3306h
+    dw 3333h
     dw 3364h
     dw 3398h
     dw 33CEh
@@ -84,5 +84,5 @@ YM_FREQUENCIES:
     dw 3BCEh
     dw 3C09h
     dw 3C46h
-    dw 3C87h
-    dw 3CCBh
+    dw 03A4h
+    dw 0497h
