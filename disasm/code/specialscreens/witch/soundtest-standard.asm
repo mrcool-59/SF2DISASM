@@ -22,7 +22,7 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
                 
 @Right:         btst    #INPUT_BIT_RIGHT,((PLAYER_1_INPUT-$1000000)).w
                 beq.s   @Left
-                cmpi.w  #92,d7      ; check we're not trying to go beyond final track
+                cmpi.w  #91,d7      ; check we're not trying to go beyond final track
                 bge.s   @First      ; if we are, go to first track (circular navigation)
                 addq.w  #1,d7
                 bra.s   @UpdateTrack
@@ -37,7 +37,7 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
 @First:         move.b  #0,d7       ; go to first track
                 bra.s   @UpdateTrack
 
-@Last:          move.b  #92,d7      ; go to last track
+@Last:          move.b  #91,d7      ; go to last track
                 bra.s   @UpdateTrack
 
 @A:             btst    #INPUT_BIT_A,((PLAYER_1_INPUT-$1000000)).w
@@ -67,25 +67,14 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
 ; ---------------------------------------------------------------------------
 
 table_Soundtracks:
+                dc.b MUSIC_BATTLE_THEME_3
                 dc.b MUSIC_MAIN_THEME
                 dc.b MUSIC_ATTACK
                 dc.b MUSIC_PROMOTED_ATTACK
-                dc.b MUSIC_PROMOTED_ATTACK_LOOP
                 dc.b MUSIC_ENEMY_ATTACK
                 dc.b MUSIC_BOSS_ATTACK
                 dc.b MUSIC_ZEON_ATTACK
                 dc.b MUSIC_TOWN
-                dc.b MUSIC_SAVE
-                dc.b MUSIC_CURE
-                dc.b MUSIC_UNUSED_REVIVE
-                dc.b MUSIC_REVIVE
-                dc.b MUSIC_PROMOTION
-                dc.b MUSIC_BATTLE_THEME_3
-                dc.b MUSIC_BATTLE_THEME_1
-                dc.b MUSIC_MITHRIL_DIGGERS
-                dc.b MUSIC_CASTLE
-                dc.b MUSIC_HEADQUARTERS
-                dc.b MUSIC_MITULA_SHRINE
                 dc.b MUSIC_INTRO
                 dc.b MUSIC_WITCH
                 dc.b MUSIC_SUSPEND
@@ -98,11 +87,21 @@ table_Soundtracks:
                 dc.b MUSIC_CORRUPTED_SAVE
                 dc.b MUSIC_JOIN
                 dc.b MUSIC_SAD_JOIN
+                dc.b MUSIC_SAVE
+                dc.b MUSIC_CURE
+                dc.b MUSIC_UNUSED_REVIVE
+                dc.b MUSIC_REVIVE
+                dc.b MUSIC_PROMOTION
                 dc.b MUSIC_CURSED_ITEM
                 dc.b MUSIC_ITEM
                 dc.b MUSIC_TITLE
+                dc.b MUSIC_BATTLE_THEME_1
                 dc.b MUSIC_SHRINE
                 dc.b MUSIC_FINAL_BATTLE
+                dc.b MUSIC_MITHRIL_DIGGERS
+                dc.b MUSIC_CASTLE
+                dc.b MUSIC_HEADQUARTERS
+                dc.b MUSIC_MITULA_SHRINE
                 dc.b MUSIC_ENDING
                 dc.b SFX_MENU_SWITCH
                 dc.b SFX_MENU_SELECTION
@@ -166,14 +165,14 @@ table_Soundtracks:
 
 table_SoundtrackTitles:
                 defineName ""
-                defineName "Test Silence / Legend of Light"
-                defineName "Test Note Length / The Young Men of Granseal"
-                defineName "Test Basic / Fight, with the Ancient Light"
-                defineName "Test Tricky Loop / MUSIC_PROMOTED_ATTACK_LOOP"
-                defineName "Test Illegal Volume Ramp / Dark Force"
-                defineName "Test Sample / Footsteps of Ruin"
-                defineName "Test Effects / Roar of the King of Devils"
-                defineName "Test PSG / A Peaceful Moment"
+                defineName "Legend of Light (NUKED)"
+                defineName "The Young Men of Granseal (NUKED)"
+                defineName "Fight, with the Ancient Light (NUKED)"
+                defineName ""
+                defineName "Dark Force (NUKED)"
+                defineName "Footsteps of Ruin (NUKED)"
+                defineName "Roar of the King of Devils (NUKED)"
+                defineName "A Peaceful Moment (NUKED)"
                 defineName "Lurking in the Darkness (NUKED)"
                 defineName "Witch in the Forest of Illusion (NUKED)"
                 defineName "Midnight in the Forest of Illusion (NUKED)"
@@ -186,11 +185,11 @@ table_SoundtrackTitles:
                 defineName "Oh, Damnit (NUKED)"
                 defineName "Joined the Party (NUKED)"
                 defineName "Sadly Joined the Party (NUKED)"
-                defineName "Choose your Path / Save"
-                defineName "Maker's Ruin / Antidote"
-                defineName "L1 Battle / Revival, Long Version"
-                defineName "SF1 Attack / Revival"
-                defineName "First Area / Promotion"
+                defineName "Save (NUKED)"
+                defineName "Antidote (NUKED)"
+                defineName "Revival, Long Version (NUKED)"
+                defineName "Revival (NUKED)"
+                defineName "Promotion (NUKED)"
                 defineName "You've Been Cursed! (NUKED)"
                 defineName "It's a Treasure Chest! (NUKED)"
                 defineName "Shining Force II (NUKED)"
@@ -198,14 +197,14 @@ table_SoundtrackTitles:
                 defineName ""
                 defineName ""
                 defineName ""
-                defineName "The First Battle / The Call of a Long Journey"
-                defineName "Silence / Entrance to the Demon World"
+                defineName "Choose your Path / The Call of a Long Journey"
+                defineName "Entrance to the Demon World (NUKED)"
                 defineName "A Message from Ancient Times (NUKED)"
                 defineName "The King of Devils has Appeared (NUKED)"
-                defineName "Self Discipline / Dwarf Dwarf Dwarf"
-                defineName "Final / The Bloodline of Ground Seal"
-                defineName "Last Area (Abridged) / The Caravan Proceeds"
-                defineName "Shop / Ancient Wings"
+                defineName "Dwarf Dwarf Dwarf (NUKED)"
+                defineName "The Bloodline of Ground Seal (NUKED)"
+                defineName "The Caravan Proceeds (NUKED)"
+                defineName "Ancient Wings (NUKED)"
                 defineName "Chosen Heroes (NUKED)"
                 defineName ""
                 defineName ""
