@@ -1889,8 +1889,8 @@ Music_40_Channel_3:
 		stereo 0C0h
 		inst 67
 		vol 12
-		noteL A5,1
 		sustain
+		noteL A5,1
 		noteL A3,10
 		waitL 1
 		mainLoopStart
@@ -2133,8 +2133,8 @@ Music_40_Channel_3:
 		waitL 1
 		noteL C5,11
 		waitL 1
-		note  C5
 		sustain
+		note  C5
 		noteL C4,11
 		waitL 1
 		setRelease 0
@@ -2166,8 +2166,8 @@ Music_40_Channel_3:
 		waitL 1
 		noteL E4,11
 		waitL 1
-		note  E4
 		sustain
+		note  E4
 		noteL E3,11
 		waitL 1
 		setRelease 0
