@@ -22,7 +22,7 @@ Music_7_Channel_0:
 		inst 4
 		vol 15
 		vibrato 00h
-		setRelease 0
+		sustain
 		noteL Cs4,18
 		setSlide 05h
 		noteL Ds5,39
