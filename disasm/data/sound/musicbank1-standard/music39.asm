@@ -20,7 +20,7 @@ Music_39:		; [CUSTOM] Last Area (Abridged)
 
 Music_39_Channel_0:
 		waitL 1
-		inst 55
+		inst 63
 		vol 15
 		vibrato 00h
 		setRelease 0
@@ -51,7 +51,7 @@ Music_39_Channel_0:
 		waitL 21
 		mainLoopStart
 		stereo 0C0h
-		inst 56
+		inst 64
 		vol 15
 		setRelease 0
 		noteL B5,10
@@ -90,7 +90,7 @@ Music_39_Channel_0:
 		noteL A5,41
 		vol 13
 		waitL 56
-		inst 57
+		inst 65
 		vol 14
 		noteL G6,4
 		vol 13
@@ -121,7 +121,7 @@ Music_39_Channel_0:
 		vol 6
 		waitL 6
 		stereo 0C0h
-		inst 58
+		inst 66
 		vol 13
 		noteL G6,11
 		noteL Fs6,20
@@ -144,7 +144,7 @@ Music_39_Channel_0:
 		note  As6
 		noteL A6,52
 		noteL C7,40
-		inst 59
+		inst 67
 		vol 13
 		noteL B5,11
 		noteL D5,9
@@ -233,7 +233,7 @@ Music_39_Channel_0:
 		noteL A5,20
 		noteL G5,10
 		noteL G5,52
-		inst 55
+		inst 63
 		vol 15
 		noteL G5,4
 		sustain
@@ -277,7 +277,7 @@ Music_39_Channel_0:
 		mainLoopEnd
 Music_39_Channel_1:
 		waitL 83
-		inst 60
+		inst 68
 		vol 15
 		vibrato 00h
 		setRelease 0
@@ -806,7 +806,7 @@ Music_39_Channel_1:
 Music_39_Channel_2:
 		waitL 83
 		stereo 80h
-		inst 61
+		inst 69
 		vol 14
 		vibrato 00h
 		setRelease 0
@@ -932,7 +932,7 @@ Music_39_Channel_2:
 		countedLoopEnd
 		vol 10
 		waitL 11
-		inst 58
+		inst 66
 		vol 12
 		noteL E7,10
 		vol 13
@@ -1145,14 +1145,14 @@ Music_39_Channel_2:
 		noteL Cs7,1
 		setRelease 0
 		noteL D7,82
-		inst 61
+		inst 69
 		vol 14
 		noteL G6,20
 		mainLoopEnd
 Music_39_Channel_3:
 		waitL 82
 		stereo 40h
-		inst 61
+		inst 69
 		vol 14
 		vibrato 00h
 		sustain
@@ -1269,7 +1269,7 @@ Music_39_Channel_3:
 		countedLoopEnd
 		vol 10
 		waitL 10
-		inst 58
+		inst 66
 		vol 13
 		sustain
 		noteL B5,1
@@ -1486,7 +1486,7 @@ Music_39_Channel_3:
 		noteL Fs6,1
 		setRelease 0
 		noteL G6,81
-		inst 61
+		inst 69
 		vol 14
 		sustain
 		noteL Ds6,1
@@ -1494,21 +1494,21 @@ Music_39_Channel_3:
 		noteL E6,20
 		mainLoopEnd
 Music_39_Channel_4:
-		inst 62
+		inst 70
 		vol 15
 		vibrato 00h
 		setRelease 0
 		noteL As8,11
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
-		inst 62
+		inst 70
 		vol 15
 		note  As8
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
-		inst 62
+		inst 70
 		vol 12
 		noteL As8,6
 		noteL As8,5
@@ -1521,197 +1521,197 @@ Music_39_Channel_4:
 		vol 15
 		note  As8
 		note  As8
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		mainLoopStart
 		stereo 0C0h
-		inst 62
+		inst 70
 		vol 15
 		setRelease 0
 		noteL As8,10
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 62
+		inst 70
 		vol 15
 		note  As8
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
-		inst 62
+		inst 70
 		vol 15
 		note  As8
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 62
+		inst 70
 		vol 15
 		note  As8
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
-		inst 62
+		inst 70
 		vol 15
 		noteL As8,10
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 62
+		inst 70
 		vol 15
 		noteL As8,10
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
-		inst 62
+		inst 70
 		vol 15
 		noteL As8,10
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 62
+		inst 70
 		vol 15
 		noteL As8,10
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
-		inst 62
+		inst 70
 		vol 15
 		noteL As8,10
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 62
+		inst 70
 		vol 15
 		noteL As8,10
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
-		inst 62
+		inst 70
 		vol 15
 		noteL As8,11
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 62
+		inst 70
 		vol 15
 		noteL As8,11
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1746,16 +1746,16 @@ Music_39_Channel_4:
 		noteL A4,1
 		waitL 15
 		waitL 21
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		note  Ds3
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1787,20 +1787,20 @@ Music_39_Channel_4:
 		noteL As4,2
 		setRelease 0
 		noteL A4,1
-		inst 62
+		inst 70
 		vol 15
 		noteL As8,11
 		noteL As8,10
 		note  As8
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1814,19 +1814,19 @@ Music_39_Channel_4:
 		setRelease 0
 		note  F5
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1839,18 +1839,18 @@ Music_39_Channel_4:
 		note  Fs5
 		setRelease 0
 		note  F5
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1865,19 +1865,19 @@ Music_39_Channel_4:
 		note  F5
 		countedLoopStart 2
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1892,19 +1892,19 @@ Music_39_Channel_4:
 		setRelease 0
 		note  E5
 		countedLoopEnd
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		countedLoopStart 2
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1919,20 +1919,20 @@ Music_39_Channel_4:
 		setRelease 0
 		note  E5
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
 		countedLoopEnd
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1945,19 +1945,19 @@ Music_39_Channel_4:
 		note  Fs5
 		setRelease 0
 		note  F5
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		countedLoopStart 2
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1971,20 +1971,20 @@ Music_39_Channel_4:
 		setRelease 0
 		note  F5
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
 		countedLoopEnd
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -1997,18 +1997,18 @@ Music_39_Channel_4:
 		note  Fs5
 		setRelease 0
 		note  F5
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2022,11 +2022,11 @@ Music_39_Channel_4:
 		setRelease 0
 		note  F5
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 51
+		inst 59
 		vol 15
 		noteL Cs6,1
 		countedLoopStart 1
@@ -2060,7 +2060,7 @@ Music_39_Channel_4:
 		noteL B5,2
 		setRelease 0
 		noteL As5,1
-		inst 63
+		inst 71
 		vol 15
 		countedLoopStart 1
 		noteL Ds3,41
@@ -2072,7 +2072,7 @@ Music_39_Channel_4:
 		noteL Ds3,20
 		noteL Ds3,11
 		noteL Ds3,41
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2093,15 +2093,15 @@ Music_39_Channel_4:
 		noteL As4,2
 		setRelease 0
 		noteL A4,1
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2115,19 +2115,19 @@ Music_39_Channel_4:
 		setRelease 0
 		note  F5
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2140,18 +2140,18 @@ Music_39_Channel_4:
 		note  Fs5
 		setRelease 0
 		note  F5
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2164,18 +2164,18 @@ Music_39_Channel_4:
 		note  Fs5
 		setRelease 0
 		note  F5
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2190,19 +2190,19 @@ Music_39_Channel_4:
 		note  F5
 		countedLoopStart 1
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2217,19 +2217,19 @@ Music_39_Channel_4:
 		setRelease 0
 		note  E5
 		countedLoopEnd
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		countedLoopStart 3
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2244,21 +2244,21 @@ Music_39_Channel_4:
 		setRelease 0
 		note  E5
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,10
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		note  Ds3
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
 		countedLoopEnd
 		countedLoopStart 2
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2272,20 +2272,20 @@ Music_39_Channel_4:
 		setRelease 0
 		note  F5
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 40h
-		inst 53
+		inst 61
 		vol 15
 		note  Ds2
 		stereo 0C0h
 		countedLoopEnd
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2299,11 +2299,11 @@ Music_39_Channel_4:
 		setRelease 0
 		note  F5
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		stereo 0C0h
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2316,10 +2316,10 @@ Music_39_Channel_4:
 		note  Fs5
 		setRelease 0
 		note  F5
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
-		inst 51
+		inst 59
 		vol 15
 		sustain
 		noteL Cs6,1
@@ -2332,11 +2332,11 @@ Music_39_Channel_4:
 		note  Fs5
 		setRelease 0
 		note  F5
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,11
 		stereo 80h
-		inst 51
+		inst 59
 		vol 15
 		noteL D6,1
 		countedLoopStart 1
@@ -2379,17 +2379,17 @@ Music_39_Channel_4:
 		setRelease 0
 		note  As4
 		stereo 0C0h
-		inst 63
+		inst 71
 		vol 15
 		noteL Ds3,10
 		stereo 80h
-		inst 53
+		inst 61
 		vol 15
 		noteL Ds2,11
 		mainLoopEnd
 Music_39_Channel_5:
 		waitL 11
-		inst 55
+		inst 63
 		vol 13
 		vibrato 00h
 		setRelease 0
@@ -2415,7 +2415,7 @@ Music_39_Channel_5:
 		waitL 19
 		mainLoopStart
 		stereo 0C0h
-		inst 56
+		inst 64
 		vol 13
 		sustain
 		noteL As5,1
@@ -2510,7 +2510,7 @@ Music_39_Channel_5:
 		noteL A5,40
 		vol 11
 		waitL 56
-		inst 57
+		inst 65
 		vol 13
 		sustain
 		noteL Fs6,1
@@ -2560,7 +2560,7 @@ Music_39_Channel_5:
 		vol 4
 		wait
 		stereo 0C0h
-		inst 58
+		inst 66
 		vol 11
 		sustain
 		noteL Fs6,1
@@ -2646,7 +2646,7 @@ Music_39_Channel_5:
 		noteL B6,1
 		setRelease 0
 		noteL C7,40
-		inst 59
+		inst 67
 		vol 11
 		noteL B5,10
 		note  D5
@@ -2701,7 +2701,7 @@ Music_39_Channel_5:
 		noteL A5,20
 		noteL G5,11
 		noteL G5,51
-		inst 55
+		inst 63
 		vol 13
 		sustain
 		noteL Fs5,1

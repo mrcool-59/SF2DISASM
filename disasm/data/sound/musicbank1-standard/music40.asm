@@ -21,7 +21,7 @@ Music_40:		; [CUSTOM] Shop
 Music_40_Channel_0:
 		waitL 210
 		mainLoopStart
-		inst 64
+		inst 72
 		vol 11
 		vibrato 00h
 		setRelease 0
@@ -322,7 +322,7 @@ Music_40_Channel_0:
 		mainLoopEnd
 Music_40_Channel_1:
 		stereo 80h
-		inst 65
+		inst 73
 		vol 11
 		vibrato 00h
 		setRelease 0
@@ -1541,7 +1541,7 @@ Music_40_Channel_1:
 		mainLoopEnd
 Music_40_Channel_2:
 		waitL 198
-		inst 66
+		inst 74
 		vol 10
 		vibrato 00h
 		setRelease 0
@@ -1796,7 +1796,7 @@ Music_40_Channel_2:
 		mainLoopEnd
 Music_40_Channel_3:
 		waitL 6
-		inst 65
+		inst 73
 		vol 8
 		vibrato 00h
 		setRelease 0
@@ -1887,7 +1887,7 @@ Music_40_Channel_3:
 		noteL A5,1
 		waitL 10
 		stereo 0C0h
-		inst 67
+		inst 75
 		vol 12
 		sustain
 		noteL A5,1
@@ -2241,7 +2241,7 @@ Music_40_Channel_3:
 		mainLoopEnd
 Music_40_Channel_4:
 		waitL 100
-		inst 68
+		inst 76
 		vol 12
 		vibrato 00h
 		setRelease 0

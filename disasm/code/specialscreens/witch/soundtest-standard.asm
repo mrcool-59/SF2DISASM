@@ -75,6 +75,8 @@ table_Soundtracks:
                 dc.b MUSIC_BOSS_ATTACK
                 dc.b MUSIC_ZEON_ATTACK
                 dc.b MUSIC_TOWN
+                dc.b MUSIC_JOIN
+                dc.b MUSIC_SAD_JOIN
                 dc.b MUSIC_SAVE
                 dc.b MUSIC_CURE
                 dc.b MUSIC_UNUSED_REVIVE
@@ -96,8 +98,6 @@ table_Soundtracks:
                 dc.b MUSIC_SAD_THEME_1
                 dc.b MUSIC_PIANO_THEME
                 dc.b MUSIC_CORRUPTED_SAVE
-                dc.b MUSIC_JOIN
-                dc.b MUSIC_SAD_JOIN
                 dc.b MUSIC_CURSED_ITEM
                 dc.b MUSIC_ITEM
                 dc.b MUSIC_TITLE
@@ -184,9 +184,9 @@ table_SoundtrackTitles:
                 defineName "Heartbreak (NUKED)"
                 defineName "Twilight of the Warriors (NUKED)"
                 defineName "Oh, Damnit (NUKED)"
-                defineName "Joined the Party (NUKED)"
-                defineName "Sadly Joined the Party (NUKED)"
-                defineName "Choose your Path / Save"
+                defineName "Airship / Joined the Party"
+                defineName "Obviously Town Theme / Sadly Joined the Party"
+                defineName "Choose a path / Save"
                 defineName "Maker's Ruin / Antidote"
                 defineName "L1 Battle / Revival, Long Version"
                 defineName "SF1 Attack / Revival"

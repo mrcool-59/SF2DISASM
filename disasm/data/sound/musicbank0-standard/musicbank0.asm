@@ -56,9 +56,9 @@
 		include "music16.asm"
 		include "music17.asm"
 		include "music18.asm"
-		include "music19.asm"
-		include "music20.asm"
-		include "music21.asm"	; [CUSTOM] Choose your Path / Save
+		include "music19.asm"	; [CUSTOM] Airship / Joined the Party
+		include "music20.asm"	; [CUSTOM] Obviously Town Theme / Sadly Joined the Party
+		include "music21.asm"	; [CUSTOM] Choose a path / Save
 		include "music22.asm"	; [CUSTOM] Maker's Ruin / Antidote
 		include "music23.asm"	; [CUSTOM] L1 Battle / Revival, Long Version
 		include "music24.asm"	; [CUSTOM] SF1 Attack / Revival

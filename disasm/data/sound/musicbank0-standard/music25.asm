@@ -20,7 +20,7 @@ Music_25:		; [CUSTOM] First Area
 
 Music_25_Channel_0:
 		waitL 9
-		inst 29
+		inst 37
 		vol 11
 		vibrato 00h
 		setRelease 0
@@ -51,7 +51,7 @@ Music_25_Channel_0:
 		setRelease 0
 		noteL G3,99
 		mainLoopStart
-		inst 30
+		inst 38
 		vol 13
 		setRelease 0
 		noteL G3,64
@@ -113,7 +113,7 @@ Music_25_Channel_0:
 		noteL G3,255
 		setRelease 0
 		noteL G3,109
-		inst 31
+		inst 39
 		vol 8
 		noteL F3,11
 		noteL As3,21
@@ -200,7 +200,7 @@ Music_25_Channel_0:
 		noteL C4,22
 		noteL G3,10
 		noteL A3,22
-		inst 29
+		inst 37
 		vol 12
 		noteL G3,8
 		waitL 2
@@ -239,7 +239,7 @@ Music_25_Channel_0:
 		waitL 2
 		noteL F4,11
 		note  F4
-		inst 32
+		inst 40
 		vol 12
 		sustain
 		noteL F2,6
@@ -252,22 +252,22 @@ Music_25_Channel_0:
 		noteL Cs3,6
 		setRelease 0
 		noteL D3,9
-		inst 33
+		inst 41
 		vol 12
 		noteL G3,11
 		noteL D3,10
 		noteL C3,6
 		vol 9
 		noteL C3,5
-		inst 32
+		inst 40
 		vol 12
 		noteL As3,11
-		inst 33
+		inst 41
 		vol 12
 		noteL A3,10
 		vol 9
 		noteL A3,11
-		inst 32
+		inst 40
 		vol 12
 		sustain
 		noteL Ds3,3
@@ -277,43 +277,43 @@ Music_25_Channel_0:
 		sustain
 		noteL Gs3,5
 		noteL A3,6
-		inst 34
+		inst 42
 		vol 12
 		setRelease 0
 		noteL A3,1
-		inst 33
+		inst 41
 		vol 12
 		sustain
 		noteL F3,10
-		inst 35
+		inst 43
 		vol 12
 		setRelease 0
 		noteL F3,1
-		inst 32
+		inst 40
 		vol 12
 		noteL G2,178
 		vol 9
 		waitL 100
 		vol 12
 		noteL C3,11
-		inst 33
+		inst 41
 		vol 12
 		sustain
 		noteL C3,4
 		noteL Cs3,2
 		setRelease 0
 		noteL D3,4
-		inst 32
+		inst 40
 		vol 12
 		noteL C3,6
 		waitL 5
 		noteL D3,11
 		note  F3
-		inst 33
+		inst 41
 		vol 12
 		noteL As3,10
 		noteL C4,11
-		inst 32
+		inst 40
 		vol 12
 		sustain
 		noteL F2,6
@@ -326,22 +326,22 @@ Music_25_Channel_0:
 		noteL Cs3,7
 		setRelease 0
 		noteL D3,8
-		inst 33
+		inst 41
 		vol 12
 		noteL G3,11
 		note  D3
 		noteL C3,5
 		vol 9
 		note  C3
-		inst 32
+		inst 40
 		vol 12
 		noteL As3,11
-		inst 33
+		inst 41
 		vol 12
 		note  A3
 		vol 9
 		noteL A3,10
-		inst 32
+		inst 40
 		vol 12
 		sustain
 		noteL Ds3,4
@@ -352,10 +352,10 @@ Music_25_Channel_0:
 		noteL Gs3,4
 		setRelease 0
 		noteL A3,6
-		inst 33
+		inst 41
 		vol 12
 		noteL F3,11
-		inst 32
+		inst 40
 		vol 12
 		noteL G3,194
 		vol 11
@@ -387,7 +387,7 @@ Music_25_Channel_0:
 		noteL A2,2
 		waitL 19
 		stereo 40h
-		inst 31
+		inst 39
 		vol 12
 		noteL F3,11
 		noteL As3,21
@@ -479,7 +479,7 @@ Music_25_Channel_0:
 		setRelease 0
 		noteL A3,15
 		stereo 0C0h
-		inst 29
+		inst 37
 		vol 11
 		noteL G3,2
 		waitL 9
@@ -531,7 +531,7 @@ Music_25_Channel_0:
 		sustain
 		noteL G3,255
 		noteL G3,98
-		inst 36
+		inst 44
 		vol 12
 		noteL G3,1
 		mainLoopEnd
@@ -541,7 +541,7 @@ Music_25_Channel_1:
 		waitL 34
 		mainLoopStart
 		stereo 80h
-		inst 30
+		inst 38
 		vol 11
 		vibrato 00h
 		setRelease 0
@@ -707,7 +707,7 @@ Music_25_Channel_1:
 		noteL Gs3,1
 		setRelease 0
 		noteL G3,17
-		inst 31
+		inst 39
 		vol 10
 		noteL F3,11
 		stereo 40h
@@ -825,7 +825,7 @@ Music_25_Channel_1:
 		waitL 255
 		waitL 23
 		stereo 40h
-		inst 32
+		inst 40
 		vol 10
 		sustain
 		noteL F2,5
@@ -843,7 +843,7 @@ Music_25_Channel_1:
 		setRelease 0
 		note  D3
 		stereo 80h
-		inst 33
+		inst 41
 		vol 10
 		noteL G3,11
 		stereo 40h
@@ -853,18 +853,18 @@ Music_25_Channel_1:
 		vol 7
 		note  C3
 		stereo 40h
-		inst 32
+		inst 40
 		vol 10
 		noteL As3,11
 		stereo 80h
-		inst 33
+		inst 41
 		vol 10
 		note  A3
 		stereo 40h
 		vol 7
 		note  A3
 		stereo 80h
-		inst 32
+		inst 40
 		vol 10
 		sustain
 		noteL Ds3,2
@@ -892,16 +892,16 @@ Music_25_Channel_1:
 		sustain
 		noteL Gs3,2
 		noteL A3,7
-		inst 37
+		inst 45
 		vol 10
 		setRelease 0
 		noteL A3,1
 		stereo 40h
-		inst 33
+		inst 41
 		vol 10
 		noteL F3,11
 		stereo 80h
-		inst 32
+		inst 40
 		vol 10
 		sustain
 		noteL G2,68
@@ -921,7 +921,7 @@ Music_25_Channel_1:
 		vol 10
 		noteL C3,11
 		stereo 40h
-		inst 33
+		inst 41
 		vol 10
 		sustain
 		noteL C3,3
@@ -929,7 +929,7 @@ Music_25_Channel_1:
 		setRelease 0
 		note  D3
 		stereo 80h
-		inst 32
+		inst 40
 		vol 10
 		noteL C3,5
 		waitL 6
@@ -938,13 +938,13 @@ Music_25_Channel_1:
 		stereo 80h
 		noteL F3,11
 		stereo 40h
-		inst 33
+		inst 41
 		vol 10
 		note  As3
 		stereo 80h
 		noteL C4,10
 		stereo 40h
-		inst 32
+		inst 40
 		vol 10
 		sustain
 		noteL F2,6
@@ -962,7 +962,7 @@ Music_25_Channel_1:
 		setRelease 0
 		noteL D3,9
 		stereo 80h
-		inst 33
+		inst 41
 		vol 10
 		noteL G3,10
 		stereo 40h
@@ -972,18 +972,18 @@ Music_25_Channel_1:
 		vol 7
 		noteL C3,6
 		stereo 40h
-		inst 32
+		inst 40
 		vol 10
 		noteL As3,10
 		stereo 80h
-		inst 33
+		inst 41
 		vol 10
 		noteL A3,11
 		stereo 40h
 		vol 7
 		note  A3
 		stereo 80h
-		inst 32
+		inst 40
 		vol 10
 		sustain
 		noteL Ds3,2
@@ -1013,11 +1013,11 @@ Music_25_Channel_1:
 		setRelease 0
 		noteL A3,8
 		stereo 40h
-		inst 33
+		inst 41
 		vol 10
 		noteL F3,10
 		stereo 80h
-		inst 32
+		inst 40
 		vol 10
 		sustain
 		noteL G3,67
@@ -1093,7 +1093,7 @@ Music_25_Channel_1:
 		stereo 80h
 		noteL C3,2
 		waitL 40
-		inst 31
+		inst 39
 		vol 10
 		noteL F3,11
 		noteL As3,22
@@ -1184,7 +1184,7 @@ Music_25_Channel_1:
 Music_25_Channel_2:
 		waitL 9
 		stereo 80h
-		inst 38
+		inst 46
 		vol 11
 		vibrato 00h
 		setRelease 0
@@ -1354,11 +1354,11 @@ Music_25_Channel_2:
 		vol 5
 		waitL 108
 		stereo 0C0h
-		inst 39
+		inst 47
 		vol 11
 		sustain
 		noteL F3,10
-		inst 40
+		inst 48
 		vol 11
 		noteL F3,21
 		vol 8
@@ -1366,7 +1366,7 @@ Music_25_Channel_2:
 		noteL C3,107
 		vol 9
 		waitL 226
-		inst 41
+		inst 49
 		vol 9
 		sustain
 		noteL As5,32
@@ -1376,7 +1376,7 @@ Music_25_Channel_2:
 		setRelease 0
 		noteL C5,21
 		waitL 11
-		inst 42
+		inst 50
 		vol 9
 		sustain
 		noteL As5,64
@@ -1419,7 +1419,7 @@ Music_25_Channel_2:
 		setRelease 0
 		noteL G6,7
 		waitL 150
-		inst 43
+		inst 51
 		vol 4
 		sustain
 		noteL F4,255
@@ -1447,7 +1447,7 @@ Music_25_Channel_2:
 		note  Gs3
 		noteL G3,25
 		stereo 80h
-		inst 38
+		inst 46
 		vol 11
 		setRelease 0
 		noteL G2,2
@@ -1509,7 +1509,7 @@ Music_25_Channel_2:
 		mainLoopEnd
 Music_25_Channel_3:
 		waitL 10
-		inst 29
+		inst 37
 		vol 12
 		vibrato 00h
 		setRelease 0
@@ -2190,7 +2190,7 @@ Music_25_Channel_3:
 		mainLoopEnd
 Music_25_Channel_4:
 		waitL 10
-		inst 44
+		inst 52
 		vol 13
 		vibrato 00h
 		setRelease 0
@@ -2216,7 +2216,7 @@ Music_25_Channel_4:
 		noteL F3,11
 		note  F3
 		noteL F3,10
-		inst 45
+		inst 53
 		vol 12
 		sustain
 		noteL G3,255
@@ -2237,32 +2237,32 @@ Music_25_Channel_4:
 		noteL F3,173
 		sustain
 		noteL G3,85
-		inst 46
+		inst 54
 		vol 10
 		noteL G3,2
-		inst 45
+		inst 53
 		vol 10
 		noteL G3,22
-		inst 46
+		inst 54
 		vol 9
 		noteL G3,3
-		inst 45
+		inst 53
 		vol 9
 		noteL G3,21
-		inst 46
+		inst 54
 		vol 8
 		noteL G3,3
-		inst 45
+		inst 53
 		vol 8
 		noteL G3,16
-		inst 46
+		inst 54
 		vol 7
 		noteL G3,8
-		inst 45
+		inst 53
 		vol 6
 		setRelease 0
 		noteL G3,11
-		inst 44
+		inst 52
 		vol 13
 		noteL G2,2
 		waitL 9
@@ -2752,7 +2752,7 @@ Music_25_Channel_4:
 		noteL G3,10
 		noteL Fs3,11
 		note  F3
-		inst 45
+		inst 53
 		vol 12
 		sustain
 		noteL G3,255
