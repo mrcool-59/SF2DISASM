@@ -178,8 +178,10 @@ EXPANDED_CLASSES:           equ 1       ; Enable support for 64 classes.
 EXPANDED_FORCE_MEMBERS:     equ 1       ; Enable all 32 force members supported by the engine instead of 30.
 EXPANDED_ITEMS_AND_SPELLS:  equ 1       ; Expand number of items from 127 to 255, and number of spells from 44 to 63. Forces build of a >= 4MB ROM with 32KB SRAM.
 EXPANDED_MAPSPRITES:        equ 1       ; Store mapsprite index in word-sized structure allowing 65k+ unique sprites.
-EXPANDED_MUSIC_BANKS:		equ 0		; Introduce 2 extra music banks in which you can fit new musics or relocate existing musics (tricky) to make room in banks 1/2.
-
+EXPANDED_MUSIC_BANKS:		equ 0		; Introduce 2 extra music banks in which you can fit new musics or relocate existing musics to make room in banks 1/2.
+EXPANDED_PCM_BANKS:			equ 0		; Introduce 4 extra PCM banks in which you can fit new samples.
+EXPANDED_PCM_ENTRIES:		equ 60		; Set to 60 because Wizcube sound driver layout was changed to support extra sample entries (60, up from vanilla 17). This value is used by SF2 Music Cooker tool to know it may use more entries.
+EXPANDED_YM_FREQUENCIES:	equ 88		; Set to 88 because there is room for 4 extra YM frequencies in the sound driver (88, up from vanilla 84). This value is used by SF2 Music Cooker tool to know it may use more frequencies.
 
 ; Hardware expansions
 ROM_EXPANSION:              equ 1       ; 0 = 2 MB ROM, 1 = 4 MB ROM (default), 2 = 6 MB ROM
@@ -195,6 +197,10 @@ expandedRom = 1
         endif
 		; Also expand ROM is mandatory if using extra music banks
         if (EXPANDED_MUSIC_BANKS>=1)
+expandedRom = 1
+        endif
+		; Also expand ROM is mandatory if using extra PCM banks
+        if (EXPANDED_PCM_BANKS>=1)
 expandedRom = 1
         endif
     endif

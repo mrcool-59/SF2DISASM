@@ -39,13 +39,14 @@
     include "code\ym\set_timer.asm"
     include "code\music_resuming.asm"
     include "code\dac\send_dac_byte.asm"
-  align 1400h, 0
-  align 1500h, 0
+  align 13E0h, 0										 ; MrCool: there is now about 50h bytes left for code changes
+  ; align 1400h, 0										 ; MrCool: consumed 20h bytes here to expand sample entries list by 4
+  ; align 1500h, 0										 ; MrCool: consumed 100h bytes here to expand sample entries list by 32
     ; include "data\ym_frequencies.asm"
-    include "data\ym_frequencies-standard.asm"
+    include "data\ym_frequencies-standard.asm"			 ; MrCool: we can now customize YM frequencies, also there is room for 4 extra frequencies
   align 10h, 0
     ; include "data\psg_frequencies.asm"
-    include "data\psg_frequencies-standard.asm"
+    include "data\psg_frequencies-standard.asm"			 ; MrCool: we can now customize PSG frequencies
   align 10h, 0
     include "data\ym_levels.asm"
   align 10h, 0
@@ -56,8 +57,9 @@
     include "data\psg_instruments.asm"
   align 10h, 0
     ; include "data\pcm_samples.asm"
-	include "data\pcm_samples-standard.asm"
-    align 1800h, 0
+	include "data\pcm_samples-standard.asm"				 ; MrCool: sample entries list can now hold 60 entries (18 baseline + 32 + 6 + 4) before overflowing to RAM (vanilla SF2 has 17 sample entries)
+    ; align 1800h, 0									 ; MrCool: consumed 30h bytes here to expand sample entries list by 6
+    align 1830h, 0
     include "data\channel_data.asm"
     align 1FC0h, 0
 
