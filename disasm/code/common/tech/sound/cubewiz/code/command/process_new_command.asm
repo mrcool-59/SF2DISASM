@@ -64,13 +64,15 @@ $$loadNewMusic:
     ld  (SAVED_MUSIC_BANK), a  
     pop  af
     push  af
+	cp  3Dh
+    jr  nc, $$loadMusicFromBankExt3
 	cp  39h
     jr  nc, $$loadMusicFromBankExt2
 	cp  31h
     jr  nc, $$loadMusicFromBankExt1
     cp  21h
     jr  nc, $$loadMusicFromBank2
-    ; id from 1 to $20
+    ; id from 1 to $20 (bank 1 range is the first half)
     ld  a, MUSIC_BANK_1
     ld  (MUSIC_BANK), a
     call  LoadBank
@@ -82,7 +84,7 @@ $$loadNewMusic:
     jp  $$loadMusicEntry
 
 $$loadMusicFromBank2:
-    ; id from $21 to $30 (bank 2 range is first half compared to vanilla)
+    ; id from $21 to $30 (bank 2 range is the third quarter, in vanilla it would have been the second half)
     ld  a, MUSIC_BANK_2  
     ld  (MUSIC_BANK), a
     call  LoadBank
@@ -95,7 +97,7 @@ $$loadMusicFromBank2:
     jp  $$loadMusicEntry
 
 $$loadMusicFromBankExt1:
-    ; id from $31 to $38 (bank ext 1 range is the third quarter)
+    ; id from $31 to $38 (bank ext 1 range is 1/2 of the fourth quarter)
     ld  a, MUSIC_BANK_EXT_1  
     ld  (MUSIC_BANK), a
     call  LoadBank
@@ -108,7 +110,7 @@ $$loadMusicFromBankExt1:
     jp  $$loadMusicEntry
 
 $$loadMusicFromBankExt2:
-    ; id from $39 to $40 (bank ext 2 range is the fourth quarter)
+    ; id from $39 to $3C (bank ext 2 range is 1/4 of the fourth quarter)
     ld  a, MUSIC_BANK_EXT_2 
     ld  (MUSIC_BANK), a
     call  LoadBank
@@ -118,6 +120,18 @@ $$loadMusicFromBankExt2:
     ld  (CURRENT_MUSIC), a
     ld  de, 8000h
     sub  38h
+
+$$loadMusicFromBankExt3:
+    ; id from $3D to $40 (bank ext 3 range is the final 1/4 of the fourth quarter)
+    ld  a, MUSIC_BANK_EXT_3
+    ld  (MUSIC_BANK), a
+    call  LoadBank
+    ld  a, (CURRENT_MUSIC)  
+    ld  (PREVIOUS_MUSIC), a
+    pop  af
+    ld  (CURRENT_MUSIC), a
+    ld  de, 8000h
+    sub  3Ch
 
 $$loadMusicEntry:
     dec  a    ; decrement music/sound index (no $00 entry)
