@@ -1,13 +1,16 @@
 
 ; GAME SECTION 19 : ROM EXPANSION.
 
-		if (EXPANDED_MUSIC_BANKS=1)											; We must be exactly at $200000
+		; Skipping $200000-20FFFF region to reduce risks of problems since SRAM and ROM overlap here (even with proper SRAM bank-switching)
+		
+		if (EXPANDED_MUSIC_BANKS=1)
+			align $210000													; We must be exactly at $210000
 			incbin "data\sound\musicbankext0.bin"							; Extra Music Banks 0, 1 and 2
 			incbin "data\sound\musicbankext1.bin"
 			incbin "data\sound\musicbankext2.bin"
 		endif
 		if (EXPANDED_PCM_BANKS=1)
-			align $220000													; We must be exactly at $220000
+			align $230000													; We must be exactly at $230000
 			incbin "data\sound\pcmbankext0-standard.bin"					; Extra PCM Banks 0, 1, 2 and 3
 			incbin "data\sound\pcmbankext1-standard.bin"
 			incbin "data\sound\pcmbankext2-standard.bin"
