@@ -7,62 +7,62 @@
    org 08000h+6000h
     
 pt_SFX:         
-    dw Sfx_1
-    dw Sfx_2                
-    dw Sfx_3                
-    dw Sfx_4                
-    dw Sfx_5                
-    dw Sfx_6                
-    dw Sfx_7                
-    dw Sfx_8                
-    dw Sfx_9                
-    dw Sfx_10               
-    dw Sfx_11               
-    dw Sfx_12               
-    dw Sfx_13               
-    dw Sfx_14               
-    dw Sfx_15               
-    dw Sfx_16               
-    dw Sfx_17               
-    dw Sfx_18               
-    dw Sfx_19               
-    dw Sfx_20               
-    dw Sfx_21               
-    dw Sfx_22               
-    dw Sfx_23               
-    dw Sfx_24               
-    dw Sfx_25               
-    dw Sfx_26               
-    dw Sfx_27
-    dw Sfx_28
-    dw Sfx_29
-    dw Sfx_30
-    dw Sfx_31
-    dw Sfx_32
-    dw Sfx_33
-    dw Sfx_34
-    dw Sfx_35
-    dw Sfx_36
-    dw Sfx_37
-    dw Sfx_38
-    dw Sfx_39
-    dw Sfx_40
-    dw Sfx_41
-    dw Sfx_42
-    dw Sfx_43
-    dw Sfx_44
-    dw Sfx_45
-    dw Sfx_46
-    dw Sfx_47
-    dw Sfx_48
-    dw Sfx_49
-    dw Sfx_50
-    dw Sfx_51
-    dw Sfx_52
-    dw Sfx_53
-    dw Sfx_54
-    dw Sfx_55
-    dw Sfx_56               ; end of SFX pointer table
+    dw Sfx_1	; #65 - SFX_MENU_SWITCH
+    dw Sfx_2	; #66 - SFX_MENU_SELECTION
+    dw Sfx_3	; #67 - SFX_VALIDATION
+    dw Sfx_4	; #68 - SFX_REFUSAL
+    dw Sfx_5	; #69 - SFX_DIALOG_BLEEP_1
+    dw Sfx_6	; #70 - SFX_DIALOG_BLEEP_2
+    dw Sfx_7	; #71 - SFX_DIALOG_BLEEP_3
+    dw Sfx_8	; #72 - SFX_DIALOG_BLEEP_4
+    dw Sfx_9	; #73 - SFX_DIALOG_BLEEP_5
+    dw Sfx_10	; #74 - SFX_DIALOG_BLEEP_6
+    dw Sfx_11	; #75 - SFX_DIALOG_BLEEP_7
+    dw Sfx_12	; #76 - SFX_DIALOG_BLEEP_8
+    dw Sfx_13	; #77 - SFX_SPELL_CAST
+    dw Sfx_14	; #78 - SFX_DOOR_OPEN_HIGH_PITCH
+    dw Sfx_15	; #79 - SFX_WALKING
+    dw Sfx_16	; #80 - SFX_UNUSED_FROM_LANDSTALKER
+    dw Sfx_17	; #81 - SFX_LIGHTNING_1
+    dw Sfx_18	; #82 - SFX_LIGHTNING_2
+    dw Sfx_19	; #83 - SFX_HIT_1
+    dw Sfx_20	; #84 - SFX_HIT_2
+    dw Sfx_21	; #85 - SFX_BLAST
+    dw Sfx_22	; #86 - SFX_SWORDS_HIT
+    dw Sfx_23	; #87 - SFX_JUMP
+    dw Sfx_24	; #88 - SFX_FALLING
+    dw Sfx_25	; #89 - SFX_WARP
+    dw Sfx_26	; #90 - SFX_CHIRRUP_SANDALS
+    dw Sfx_27	; #91 - SFX_MONSTER_DIALOG_BLEEP
+    dw Sfx_28	; #92 - SFX_DOOR_OPEN
+    dw Sfx_29	; #93 - SFX_BIG_DOOR_RUMBLE
+    dw Sfx_30	; #94 - SFX_MONSTER_SCREAM
+    dw Sfx_31	; #95 - SFX_BUUBOBI
+    dw Sfx_32	; #96 - SFX_SECRET_PATH_ROCK
+    dw Sfx_33	; #97 - SFX_PSH
+    dw Sfx_34	; #98 - SFX_PSHHH
+    dw Sfx_35	; #99 - SFX_BLOAB
+    dw Sfx_36	; #100 - SFX_BLO
+    dw Sfx_37	; #101 - SFX_LANDSTALKER_ITEM
+    dw Sfx_38	; #102 - SFX_LEVEL_UP
+    dw Sfx_39	; #103 - SFX_PRISM_LASER_LOADING
+    dw Sfx_40	; #104 - SFX_SPAWN
+    dw Sfx_41	; #105 - SFX_SFCD_STATUES
+    dw Sfx_42	; #106 - SFX_DESOUL
+    dw Sfx_43	; #107 - SFX_SITD_HOWL
+    dw Sfx_44	; #108 - SFX_PRISM_LASER_FIRING
+    dw Sfx_45	; #109 - SFX_BOOST
+    dw Sfx_46	; #110 - SFX_DESOUL_HOVERING
+    dw Sfx_47	; #111 - SFX_PRISM_LASER_CUTSCENE_FIRING
+    dw Sfx_48	; #112 - SFX_TAROS_DIALOG_BLEEP
+    dw Sfx_49	; #113 - SFX_HEALING
+    dw Sfx_50	; #114 - SFX_BLAST_SPELL
+    dw Sfx_51	; #115 - SFX_WING_FLAP
+    dw Sfx_52	; #116 - SFX_BATTLEFIELD_DEATH
+    dw Sfx_53	; #117 - SFX_DEMON_BREATH
+    dw Sfx_54	; #118 - SFX_INTRO_LIGHTNING
+    dw Sfx_55	; #119 - SFX_BOLT_SPELL
+    dw Sfx_56	; #120 - SFX_TINKLING
 Sfx_1:          db 2                    ; sound 1 data
     dw Sfx_1_Channel_5
     dw Sfx_1_Channel_4
@@ -305,6 +305,115 @@ Sfx_13_Channel_3:
             noteL E6,48
 Sfx_13_Channel_5:
     channel_end
+Sfx_14:         db 2                    ; sound E
+    dw Sfx_14_Channel_3
+    dw Sfx_14_Channel_4
+    dw Sfx_14_Channel_5
+Sfx_14_Channel_3:
+      inst 74
+      vol 0Fh
+      setRelease 00h
+      vibrato 0F0h
+            noteL A2,6
+    channel_end
+Sfx_14_Channel_4:
+      inst 70
+      vol 0Bh
+      setRelease 00h
+      vibrato 0F0h
+            noteL A2,6
+    channel_end
+Sfx_14_Channel_5:
+    channel_end
+Sfx_15:         db 1                    ; sound F
+    dw Sfx_15_Channel_9
+    dw Sfx_15_Channel_9
+    dw Sfx_15_Channel_9
+    dw Sfx_15_Channel_9
+    dw Sfx_15_Channel_9
+    dw Sfx_15_Channel_9
+    dw Sfx_15_Channel_9
+    dw Sfx_15_Channel_9
+    dw Sfx_15_Channel_8
+    dw Sfx_15_Channel_9
+Sfx_15_Channel_8:
+      psgInst 02Fh
+      setRelease 04h
+      vibrato 00h
+            psgNoteL D2,5
+            psgNote  D3
+      psgInst 02Bh
+            psgNote  D2
+            psgNote  D3
+      psgInst 028h
+            psgNote  D2
+            psgNote  D3
+Sfx_15_Channel_9:
+    channel_end
+Sfx_16:         db 1                    ; sound 10
+    dw Sfx_16_Channel_9
+    dw Sfx_16_Channel_9
+    dw Sfx_16_Channel_9
+    dw Sfx_16_Channel_9
+    dw Sfx_16_Channel_9
+    dw Sfx_16_Channel_9
+    dw Sfx_16_Channel_9
+    dw Sfx_16_Channel_9
+    dw Sfx_16_Channel_8
+    dw Sfx_16_Channel_9
+Sfx_16_Channel_8:
+      vibrato 00h
+      psgInst 0Eh
+      setRelease 00h
+            psgNoteL Ds5,3
+            psgNote  G5
+            psgNoteL As5,5
+      psgInst 0Ch
+            psgNoteL Ds5,3
+            psgNote  G5
+            psgNoteL As5,5
+      psgInst 09h
+            psgNoteL Ds5,3
+            psgNote  G5
+            psgNoteL As5,5
+      psgInst 07h
+            psgNoteL Ds5,3
+            psgNote  G5
+            psgNoteL As5,5
+      psgInst 05h
+            psgNoteL Ds5,3
+            psgNote  G5
+            psgNote  As5
+Sfx_16_Channel_9:
+    channel_end
+Sfx_17:         db 2                    ; sound 11
+    dw Sfx_52_Channel_4
+    dw Sfx_52_Channel_4
+    dw Sfx_17_Channel_5
+Sfx_17_Channel_5:
+            sampleL 6,22
+    channel_end
+Sfx_18:         db 2                    ; sound 12
+    dw Sfx_52_Channel_4
+    dw Sfx_52_Channel_4
+    dw Sfx_18_Channel_5
+Sfx_18_Channel_5:
+            sampleL 7,27
+    channel_end
+Sfx_19:         db 2                    ; sound 13
+    dw Sfx_52_Channel_4
+    dw Sfx_52_Channel_4
+    dw Sfx_19_Channel_5
+Sfx_19_Channel_5:
+            sampleL 8,19
+    channel_end
+Sfx_20:         db 2                    ; sound 14
+    dw Sfx_52_Channel_4
+    dw Sfx_52_Channel_4
+    dw Sfx_20_Channel_5
+Sfx_20_Channel_5:
+            sampleL 9,20
+    channel_end
 Sfx_21:         db 1                    ; sound 15
     dw Sfx_21_Channel_7
     dw Sfx_21_Channel_7
@@ -418,29 +527,6 @@ Sfx_26_Channel_8:
             psgNote  D4
 Sfx_26_Channel_9:
     channel_end
-Sfx_35:         db 1
-    dw Sfx_35_Channel_9
-    dw Sfx_35_Channel_9
-    dw Sfx_35_Channel_9
-    dw Sfx_35_Channel_9
-    dw Sfx_35_Channel_9
-    dw Sfx_35_Channel_9
-    dw Sfx_35_Channel_9
-    dw Sfx_35_Channel_9
-    dw Sfx_35_Channel_8
-    dw Sfx_35_Channel_9
-Sfx_35_Channel_8:
-      psgInst 02Fh
-      setRelease 04h
-      vibrato 00h
-            psgNoteL F3,1
-            psgNote  A3
-      psgInst 02Eh
-            psgNote  B3
-            psgNote  D4
-            psgNote  F4
-Sfx_35_Channel_9:
-    channel_end
 Sfx_27:         db 1
     dw Sfx_27_Channel_7
     dw Sfx_27_Channel_7
@@ -485,42 +571,6 @@ Sfx_28_Channel_4:
             noteL D2,2
             noteL D2,6
 Sfx_28_Channel_5:
-    channel_end
-Sfx_16:         db 1                    ; sound 10
-    dw Sfx_16_Channel_9
-    dw Sfx_16_Channel_9
-    dw Sfx_16_Channel_9
-    dw Sfx_16_Channel_9
-    dw Sfx_16_Channel_9
-    dw Sfx_16_Channel_9
-    dw Sfx_16_Channel_9
-    dw Sfx_16_Channel_9
-    dw Sfx_16_Channel_8
-    dw Sfx_16_Channel_9
-Sfx_16_Channel_8:
-      vibrato 00h
-      psgInst 0Eh
-      setRelease 00h
-            psgNoteL Ds5,3
-            psgNote  G5
-            psgNoteL As5,5
-      psgInst 0Ch
-            psgNoteL Ds5,3
-            psgNote  G5
-            psgNoteL As5,5
-      psgInst 09h
-            psgNoteL Ds5,3
-            psgNote  G5
-            psgNoteL As5,5
-      psgInst 07h
-            psgNoteL Ds5,3
-            psgNote  G5
-            psgNoteL As5,5
-      psgInst 05h
-            psgNoteL Ds5,3
-            psgNote  G5
-            psgNote  As5
-Sfx_16_Channel_9:
     channel_end
 Sfx_29:         db 2
     dw Sfx_29_Channel_3
@@ -572,18 +622,6 @@ Sfx_30_Channel_4:
     channel_end
 Sfx_30_Channel_5:
     channel_end
-Sfx_33:         db 2
-    dw Sfx_33_Channel_5
-    dw Sfx_33_Channel_4
-    dw Sfx_33_Channel_5
-Sfx_33_Channel_4:
-      inst 61
-      vol 0Fh
-      setRelease 00h
-      vibrato 00h
-            noteL A5,4
-Sfx_33_Channel_5:
-    channel_end
 Sfx_31:         db 1
     dw Sfx_31_Channel_9
     dw Sfx_31_Channel_9
@@ -610,6 +648,81 @@ Sfx_31_Channel_8:
             psgNoteL B3,4
 Sfx_31_Channel_9:
     channel_end
+Sfx_32:         db 2
+    dw Sfx_32_Channel_3
+    dw Sfx_32_Channel_4
+    dw Sfx_32_Channel_5
+Sfx_32_Channel_4:
+      inst 33
+      setRelease 00h
+      vibrato 00h
+      vol 0Fh
+            noteL C2,1
+      vol 0Ch
+            note  C3
+      vol 0Fh
+            note  C3
+      vol 0Ch
+            note  C4
+      vol 08h
+            note  C5
+      vol 0Fh
+            note  E2
+      vol 0Ch
+            note  E3
+      vol 0Fh
+            note  E3
+      vol 0Ch
+            note  E4
+      vol 08h
+            note  E5
+      vol 07h
+            note  E6
+      vol 05h
+            noteL E7,6
+    channel_end
+Sfx_32_Channel_3:
+      inst 33
+      setRelease 00h
+      vibrato 00h
+      vol 0Fh
+            noteL Cs2,1
+      vol 0Ch
+            note  Cs3
+      vol 0Fh
+            note  Cs3
+      vol 0Ch
+            note  Cs4
+      vol 08h
+            note  Cs5
+      vol 0Fh
+            note  F2
+      vol 0Ch
+            note  F3
+      vol 0Fh
+            note  F3
+      vol 0Ch
+            note  F4
+      vol 08h
+            note  F5
+      vol 07h
+            note  F6
+      vol 05h
+            noteL F7,6
+Sfx_32_Channel_5:
+    channel_end
+Sfx_33:         db 2
+    dw Sfx_33_Channel_5
+    dw Sfx_33_Channel_4
+    dw Sfx_33_Channel_5
+Sfx_33_Channel_4:
+      inst 61
+      vol 0Fh
+      setRelease 00h
+      vibrato 00h
+            noteL A5,4
+Sfx_33_Channel_5:
+    channel_end
 Sfx_34:         db 2
     dw Sfx_34_Channel_5
     dw Sfx_34_Channel_4
@@ -622,6 +735,29 @@ Sfx_34_Channel_4:
             noteL A5,4
             noteL A5,6
 Sfx_34_Channel_5:
+    channel_end
+Sfx_35:         db 1
+    dw Sfx_35_Channel_9
+    dw Sfx_35_Channel_9
+    dw Sfx_35_Channel_9
+    dw Sfx_35_Channel_9
+    dw Sfx_35_Channel_9
+    dw Sfx_35_Channel_9
+    dw Sfx_35_Channel_9
+    dw Sfx_35_Channel_9
+    dw Sfx_35_Channel_8
+    dw Sfx_35_Channel_9
+Sfx_35_Channel_8:
+      psgInst 02Fh
+      setRelease 04h
+      vibrato 00h
+            psgNoteL F3,1
+            psgNote  A3
+      psgInst 02Eh
+            psgNote  B3
+            psgNote  D4
+            psgNote  F4
+Sfx_35_Channel_9:
     channel_end
 Sfx_36:         db 1
     dw Sfx_36_Channel_9
@@ -641,31 +777,6 @@ Sfx_36_Channel_8:
             psgNoteL F2,1
             psgNote  A2
 Sfx_36_Channel_9:
-    channel_end
-Sfx_15:         db 1                    ; sound F
-    dw Sfx_15_Channel_9
-    dw Sfx_15_Channel_9
-    dw Sfx_15_Channel_9
-    dw Sfx_15_Channel_9
-    dw Sfx_15_Channel_9
-    dw Sfx_15_Channel_9
-    dw Sfx_15_Channel_9
-    dw Sfx_15_Channel_9
-    dw Sfx_15_Channel_8
-    dw Sfx_15_Channel_9
-Sfx_15_Channel_8:
-      psgInst 02Fh
-      setRelease 04h
-      vibrato 00h
-            psgNoteL D2,5
-            psgNote  D3
-      psgInst 02Bh
-            psgNote  D2
-            psgNote  D3
-      psgInst 028h
-            psgNote  D2
-            psgNote  D3
-Sfx_15_Channel_9:
     channel_end
 Sfx_37:         db 1
     dw Sfx_37_Channel_9
@@ -866,105 +977,24 @@ Sfx_42_Channel_5:
     db 0FFh
     db  0
     db  0
-Sfx_49:         db 2
-    dw Sfx_49_Channel_3
-    dw Sfx_49_Channel_4
-    dw Sfx_49_Channel_5
-Sfx_49_Channel_3:
-      inst 55
-      vol 0Fh
+Sfx_43:         db 2
+    dw Sfx_43_Channel_5
+    dw Sfx_43_Channel_4
+    dw Sfx_43_Channel_5
+Sfx_43_Channel_4:
+      inst 27
+      vol 0Ch
+      sustain
+      vibrato 010h
+      noSlide
+            noteL Cs4,0
+      setSlide 020h
+            noteL Gs4,36
+            noteL G4,6
+            note  Fs4
       setRelease 01h
-      vibrato 00h
-            noteL F6,4
-            note  G6
-            note  A6
-            note  B6
-            note  C7
-            note  D7
-            note  E7
-            noteL F7,10
-            waitL 12
-    channel_end
-Sfx_49_Channel_4:
-      shifting 020h
-            waitL 6
-      inst 55
-      vol 0Dh
-      setRelease 01h
-      vibrato 00h
-            noteL F6,4
-            note  G6
-            note  A6
-            note  B6
-            note  C7
-            note  D7
-            note  E7
-            noteL F7,10
-            waitL 12
-Sfx_49_Channel_5:
-    channel_end
-Sfx_32:         db 2
-    dw Sfx_32_Channel_3
-    dw Sfx_32_Channel_4
-    dw Sfx_32_Channel_5
-Sfx_32_Channel_4:
-      inst 33
-      setRelease 00h
-      vibrato 00h
-      vol 0Fh
-            noteL C2,1
-      vol 0Ch
-            note  C3
-      vol 0Fh
-            note  C3
-      vol 0Ch
-            note  C4
-      vol 08h
-            note  C5
-      vol 0Fh
-            note  E2
-      vol 0Ch
-            note  E3
-      vol 0Fh
-            note  E3
-      vol 0Ch
-            note  E4
-      vol 08h
-            note  E5
-      vol 07h
-            note  E6
-      vol 05h
-            noteL E7,6
-    channel_end
-Sfx_32_Channel_3:
-      inst 33
-      setRelease 00h
-      vibrato 00h
-      vol 0Fh
-            noteL Cs2,1
-      vol 0Ch
-            note  Cs3
-      vol 0Fh
-            note  Cs3
-      vol 0Ch
-            note  Cs4
-      vol 08h
-            note  Cs5
-      vol 0Fh
-            note  F2
-      vol 0Ch
-            note  F3
-      vol 0Fh
-            note  F3
-      vol 0Ch
-            note  F4
-      vol 08h
-            note  F5
-      vol 07h
-            note  F6
-      vol 05h
-            noteL F7,6
-Sfx_32_Channel_5:
+            noteL Gs3,5
+Sfx_43_Channel_5:
     channel_end
 Sfx_44:         db 2
     dw Sfx_44_Channel_3
@@ -1055,119 +1085,6 @@ Sfx_44_Channel_4:
             noteL E7,5
             wait
 Sfx_44_Channel_5:
-    channel_end
-Sfx_51:         db 1
-    dw Sfx_51_Channel_7
-    dw Sfx_51_Channel_7
-    dw Sfx_51_Channel_7
-    dw Sfx_51_Channel_7
-    dw Sfx_51_Channel_7
-    dw Sfx_51_Channel_7
-    dw Sfx_51_Channel_7
-    dw Sfx_51_Channel_7
-    dw Sfx_51_Channel_8
-    dw Sfx_51_Channel_9
-Sfx_51_Channel_8:
-      psgInst 00h
-      setRelease 00h
-      vibrato 063h
-            psgNoteL C7,19
-    channel_end
-Sfx_51_Channel_9:
-      setRelease 00h
-      psgInst 07Bh
-            psgNoteL G0,4
-      psgInst 07Dh
-            psgNoteL G0,4
-      psgInst 07Fh
-            psgNoteL G0,5
-      psgInst 01Fh
-            psgNote  G0
-Sfx_51_Channel_7:
-    channel_end
-Sfx_50:         db 1
-    dw Sfx_50_Channel_7
-    dw Sfx_50_Channel_7
-    dw Sfx_50_Channel_7
-    dw Sfx_50_Channel_7
-    dw Sfx_50_Channel_7
-    dw Sfx_50_Channel_7
-    dw Sfx_50_Channel_7
-    dw Sfx_50_Channel_7
-    dw Sfx_50_Channel_8
-    dw Sfx_50_Channel_9
-Sfx_50_Channel_8:
-      psgInst 00h
-      setRelease 00h
-      vibrato 060h
-            psgNoteL B6,5
-            psgNoteL G6,5
-    channel_end
-Sfx_50_Channel_9:
-      psgInst 07Fh
-      setRelease 03h
-            psgNoteL G0,6
-      psgInst 01Fh
-      setRelease 00h
-            psgNoteL G0,6
-Sfx_50_Channel_7:
-    channel_end
-Sfx_55:         db 2
-    dw Sfx_55_Channel_3
-    dw Sfx_55_Channel_4
-    dw Sfx_55_Channel_5
-Sfx_55_Channel_3:
-    channel_end
-Sfx_55_Channel_4:
-      inst 68
-      vol 0Fh
-      setRelease 00h
-      vibrato 02h
-    countedLoopStart 0
-            noteL B3,2
-            note  Ds3
-            note  G3
-            note  D3
-            note  F3
-            note  C3
-            note  Fs3
-    countedLoopEnd
-      vol 0Eh
-            noteL B3,2
-      vol 0Dh
-            note  Ds3
-      vol 0Ch
-            note  G3
-      vol 0Bh
-            note  D3
-      vol 0Ah
-            note  F3
-      vol 09h
-            note  C3
-      vol 08h
-            note  Fs3
-    channel_end
-Sfx_55_Channel_5:
-    channel_end
-Sfx_14:         db 2                    ; sound E
-    dw Sfx_14_Channel_3
-    dw Sfx_14_Channel_4
-    dw Sfx_14_Channel_5
-Sfx_14_Channel_3:
-      inst 74
-      vol 0Fh
-      setRelease 00h
-      vibrato 0F0h
-            noteL A2,6
-    channel_end
-Sfx_14_Channel_4:
-      inst 70
-      vol 0Bh
-      setRelease 00h
-      vibrato 0F0h
-            noteL A2,6
-    channel_end
-Sfx_14_Channel_5:
     channel_end
 Sfx_45:         db 2
     dw Sfx_45_Channel_5
@@ -1297,29 +1214,114 @@ Sfx_48_Channel_3:
             noteL F6,1
 Sfx_48_Channel_5:
     channel_end
-Sfx_43:         db 2
-    dw Sfx_43_Channel_5
-    dw Sfx_43_Channel_4
-    dw Sfx_43_Channel_5
-Sfx_43_Channel_4:
-      inst 27
-      vol 0Ch
-      sustain
-      vibrato 010h
-      noSlide
-            noteL Cs4,0
-      setSlide 020h
-            noteL Gs4,36
-            noteL G4,6
-            note  Fs4
+Sfx_49:         db 2
+    dw Sfx_49_Channel_3
+    dw Sfx_49_Channel_4
+    dw Sfx_49_Channel_5
+Sfx_49_Channel_3:
+      inst 55
+      vol 0Fh
       setRelease 01h
-            noteL Gs3,5
-Sfx_43_Channel_5:
+      vibrato 00h
+            noteL F6,4
+            note  G6
+            note  A6
+            note  B6
+            note  C7
+            note  D7
+            note  E7
+            noteL F7,10
+            waitL 12
     channel_end
-Sfx_54:         db 2
-    dw Sfx_54_Channel_4
-    dw Sfx_54_Channel_4
-    dw Sfx_54_Channel_5
+Sfx_49_Channel_4:
+      shifting 020h
+            waitL 6
+      inst 55
+      vol 0Dh
+      setRelease 01h
+      vibrato 00h
+            noteL F6,4
+            note  G6
+            note  A6
+            note  B6
+            note  C7
+            note  D7
+            note  E7
+            noteL F7,10
+            waitL 12
+Sfx_49_Channel_5:
+    channel_end
+Sfx_50:         db 1
+    dw Sfx_50_Channel_7
+    dw Sfx_50_Channel_7
+    dw Sfx_50_Channel_7
+    dw Sfx_50_Channel_7
+    dw Sfx_50_Channel_7
+    dw Sfx_50_Channel_7
+    dw Sfx_50_Channel_7
+    dw Sfx_50_Channel_7
+    dw Sfx_50_Channel_8
+    dw Sfx_50_Channel_9
+Sfx_50_Channel_8:
+      psgInst 00h
+      setRelease 00h
+      vibrato 060h
+            psgNoteL B6,5
+            psgNoteL G6,5
+    channel_end
+Sfx_50_Channel_9:
+      psgInst 07Fh
+      setRelease 03h
+            psgNoteL G0,6
+      psgInst 01Fh
+      setRelease 00h
+            psgNoteL G0,6
+Sfx_50_Channel_7:
+    channel_end
+Sfx_51:         db 1
+    dw Sfx_51_Channel_7
+    dw Sfx_51_Channel_7
+    dw Sfx_51_Channel_7
+    dw Sfx_51_Channel_7
+    dw Sfx_51_Channel_7
+    dw Sfx_51_Channel_7
+    dw Sfx_51_Channel_7
+    dw Sfx_51_Channel_7
+    dw Sfx_51_Channel_8
+    dw Sfx_51_Channel_9
+Sfx_51_Channel_8:
+      psgInst 00h
+      setRelease 00h
+      vibrato 063h
+            psgNoteL C7,19
+    channel_end
+Sfx_51_Channel_9:
+      setRelease 00h
+      psgInst 07Bh
+            psgNoteL G0,4
+      psgInst 07Dh
+            psgNoteL G0,4
+      psgInst 07Fh
+            psgNoteL G0,5
+      psgInst 01Fh
+            psgNote  G0
+Sfx_51_Channel_7:
+    channel_end
+Sfx_52:         db 2
+    dw Sfx_52_Channel_4
+    dw Sfx_52_Channel_4
+    dw Sfx_52_Channel_5
+Sfx_52_Channel_5:
+            sampleL 10,37
+    channel_end
+byte_1F1D:      db 0F0h
+    db  0
+Sfx_52_Channel_4:
+    channel_end
+    db 2
+    dw byte_1F1D
+    dw byte_1F1D
+    dw byte_1F1D
 Sfx_53:         db 2
     dw Sfx_54_Channel_4
     dw Sfx_54_Channel_4
@@ -1337,6 +1339,47 @@ Sfx_53_Channel_5:
             sampleL 15,21
             sampleL 16,25
 Sfx_54_Channel_4:
+    channel_end
+Sfx_54:         db 2
+    dw Sfx_54_Channel_4
+    dw Sfx_54_Channel_4
+    dw Sfx_54_Channel_5
+Sfx_55:         db 2
+    dw Sfx_55_Channel_3
+    dw Sfx_55_Channel_4
+    dw Sfx_55_Channel_5
+Sfx_55_Channel_3:
+    channel_end
+Sfx_55_Channel_4:
+      inst 68
+      vol 0Fh
+      setRelease 00h
+      vibrato 02h
+    countedLoopStart 0
+            noteL B3,2
+            note  Ds3
+            note  G3
+            note  D3
+            note  F3
+            note  C3
+            note  Fs3
+    countedLoopEnd
+      vol 0Eh
+            noteL B3,2
+      vol 0Dh
+            note  Ds3
+      vol 0Ch
+            note  G3
+      vol 0Bh
+            note  D3
+      vol 0Ah
+            note  F3
+      vol 09h
+            note  C3
+      vol 08h
+            note  Fs3
+    channel_end
+Sfx_55_Channel_5:
     channel_end
 Sfx_56:         db 1
     dw Sfx_56_Channel_9
@@ -1370,46 +1413,3 @@ Sfx_56_Channel_8:
             psgNoteL B6,3
 Sfx_56_Channel_9:
     channel_end
-Sfx_17:         db 2                    ; sound 11
-    dw Sfx_52_Channel_4
-    dw Sfx_52_Channel_4
-    dw Sfx_17_Channel_5
-Sfx_17_Channel_5:
-            sampleL 6,22
-    channel_end
-Sfx_18:         db 2                    ; sound 12
-    dw Sfx_52_Channel_4
-    dw Sfx_52_Channel_4
-    dw Sfx_18_Channel_5
-Sfx_18_Channel_5:
-            sampleL 7,27
-    channel_end
-Sfx_19:         db 2                    ; sound 13
-    dw Sfx_52_Channel_4
-    dw Sfx_52_Channel_4
-    dw Sfx_19_Channel_5
-Sfx_19_Channel_5:
-            sampleL 8,19
-    channel_end
-Sfx_20:         db 2                    ; sound 14
-    dw Sfx_52_Channel_4
-    dw Sfx_52_Channel_4
-    dw Sfx_20_Channel_5
-Sfx_20_Channel_5:
-            sampleL 9,20
-    channel_end
-Sfx_52:         db 2
-    dw Sfx_52_Channel_4
-    dw Sfx_52_Channel_4
-    dw Sfx_52_Channel_5
-Sfx_52_Channel_5:
-            sampleL 10,37
-    channel_end
-byte_1F1D:      db 0F0h
-    db  0
-Sfx_52_Channel_4:
-    channel_end
-    db 2
-    dw byte_1F1D
-    dw byte_1F1D
-    dw byte_1F1D
