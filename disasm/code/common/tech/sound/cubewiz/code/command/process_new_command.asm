@@ -64,6 +64,11 @@ $$loadNewMusic:
     ld  (SAVED_MUSIC_BANK), a  
     pop  af
     push  af
+    ld  a, (CURRENT_MUSIC)  
+    ld  (PREVIOUS_MUSIC), a
+	pop af
+    push  af
+    ld  (CURRENT_MUSIC), a
 	cp  61
     jr  nc, $$loadMusicFromBankExt3
 	cp  57
@@ -76,11 +81,7 @@ $$loadNewMusic:
     ld  a, MUSIC_BANK_1
     ld  (MUSIC_BANK), a
     call  LoadBank
-    ld  a, (CURRENT_MUSIC)  
-    ld  (PREVIOUS_MUSIC), a
     pop  af
-    ld  (CURRENT_MUSIC), a
-    ld  de, 8000h
     jp  $$loadMusicEntry
 
 $$loadMusicFromBank2:
@@ -88,11 +89,7 @@ $$loadMusicFromBank2:
     ld  a, MUSIC_BANK_2  
     ld  (MUSIC_BANK), a
     call  LoadBank
-    ld  a, (CURRENT_MUSIC)  
-    ld  (PREVIOUS_MUSIC), a
     pop  af
-    ld  (CURRENT_MUSIC), a
-    ld  de, 8000h
     sub  32
     jp  $$loadMusicEntry
 
@@ -101,11 +98,7 @@ $$loadMusicFromBankExt1:
     ld  a, MUSIC_BANK_EXT_1  
     ld  (MUSIC_BANK), a
     call  LoadBank
-    ld  a, (CURRENT_MUSIC)  
-    ld  (PREVIOUS_MUSIC), a
     pop  af
-    ld  (CURRENT_MUSIC), a
-    ld  de, 8000h
     sub  48
     jp  $$loadMusicEntry
 
@@ -114,11 +107,7 @@ $$loadMusicFromBankExt2:
     ld  a, MUSIC_BANK_EXT_2 
     ld  (MUSIC_BANK), a
     call  LoadBank
-    ld  a, (CURRENT_MUSIC)  
-    ld  (PREVIOUS_MUSIC), a
     pop  af
-    ld  (CURRENT_MUSIC), a
-    ld  de, 8000h
     sub  56
     jp  $$loadMusicEntry
 
@@ -127,11 +116,7 @@ $$loadMusicFromBankExt3:
     ld  a, MUSIC_BANK_EXT_3
     ld  (MUSIC_BANK), a
     call  LoadBank
-    ld  a, (CURRENT_MUSIC)  
-    ld  (PREVIOUS_MUSIC), a
     pop  af
-    ld  (CURRENT_MUSIC), a
-    ld  de, 8000h
     sub  60
 
 $$loadMusicEntry:
@@ -139,6 +124,7 @@ $$loadMusicEntry:
     add  a, a
     ld  h, 0
     ld  l, a
+    ld  de, 8000h
     add  hl, de
     ld  a, (hl)
     inc  hl
