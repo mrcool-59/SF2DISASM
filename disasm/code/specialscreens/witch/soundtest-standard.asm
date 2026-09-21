@@ -68,15 +68,6 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
 
 table_Soundtracks:
                 dc.b MUSIC_MAIN_THEME
-                dc.b MUSIC_ATTACK
-                dc.b MUSIC_PROMOTED_ATTACK
-                dc.b MUSIC_ENEMY_ATTACK
-                dc.b MUSIC_BOSS_ATTACK
-                dc.b MUSIC_ZEON_ATTACK
-                dc.b MUSIC_TOWN
-                dc.b MUSIC_INTRO
-                dc.b MUSIC_WITCH
-                dc.b MUSIC_SUSPEND
                 dc.b MUSIC_SAD_THEME_2
                 dc.b MUSIC_ELVEN_TOWN
                 dc.b MUSIC_MITULA
@@ -88,6 +79,15 @@ table_Soundtracks:
                 dc.b MUSIC_SAD_JOIN
                 dc.b MUSIC_SAVE
                 dc.b MUSIC_CURE
+                dc.b MUSIC_ATTACK
+                dc.b MUSIC_PROMOTED_ATTACK
+                dc.b MUSIC_ENEMY_ATTACK
+                dc.b MUSIC_BOSS_ATTACK
+                dc.b MUSIC_ZEON_ATTACK
+                dc.b MUSIC_TOWN
+                dc.b MUSIC_INTRO
+                dc.b MUSIC_WITCH
+                dc.b MUSIC_SUSPEND
                 dc.b MUSIC_UNUSED_REVIVE
                 dc.b MUSIC_REVIVE
                 dc.b MUSIC_PROMOTION
@@ -103,7 +103,6 @@ table_Soundtracks:
                 dc.b MUSIC_HEADQUARTERS
                 dc.b MUSIC_MITULA_SHRINE
                 dc.b MUSIC_ENDING
-                dc.b SFX_MENU_SWITCH
                 dc.b SFX_MENU_SELECTION
                 dc.b SFX_VALIDATION
                 dc.b SFX_REFUSAL
@@ -159,55 +158,54 @@ table_Soundtracks:
                 dc.b SFX_INTRO_LIGHTNING
                 dc.b SFX_BOLT_SPELL
                 dc.b SFX_TINKLING
+                dc.b SFX_MENU_SWITCH
 
 
 ; ---------------------------------------------------------------------------
 
 table_SoundtrackTitles:
                 defineName ""
-                defineName "Legend of Light"
-                defineName "The Young Men of Granseal"
-                defineName "Fight, with the Ancient Light"
+                defineName "Test DAC / Legend of Light"
+                defineName "The Young Men of Granseal (NUKED)"
+                defineName "Fight, with the Ancient Light (NUKED)"
                 defineName ""
-                defineName "Dark Force"
-                defineName "Footsteps of Ruin"
-                defineName "Roar of the King of Devils"
-                defineName "A Peaceful Moment"
-                defineName "Lurking in the Darkness"
-                defineName "Witch in the Forest of Illusion"
-                defineName "Midnight in the Forest of Illusion"
-                defineName "Time of Trials"
-                defineName "Fairy Woods"
-                defineName "Dreaming Elis"
-                defineName "Reminiscence"
-                defineName "Heartbreak"
-                defineName "Twilight of the Warriors"
-                defineName "Oh, Damnit"
-                defineName "Joined the Party"
-                defineName "Sadly Joined the Party"
-                defineName "Save"
-                defineName "Antidote"
-                defineName "Revival, Long Version"
-                defineName "Revival"
-                defineName "Promotion"
-                defineName "You've Been Cursed!"
-                defineName "It's a Treasure Chest!"
-                defineName "Shining Force II"
-                defineName ""
-                defineName ""
+                defineName "Dark Force (NUKED)"
+                defineName "Footsteps of Ruin (NUKED)"
+                defineName "Roar of the King of Devils (NUKED)"
+                defineName "A Peaceful Moment (NUKED)"
+                defineName "Lurking in the Darkness (NUKED)"
+                defineName "Witch in the Forest of Illusion (NUKED)"
+                defineName "Midnight in the Forest of Illusion (NUKED)"
+                defineName "(Crusader of Centy) Desert City / Time of Trials"
+                defineName "(Crusader of Centy) Inn / Fairy Woods"
+                defineName "(Crusader of Centy) Travel / Dreaming Elis"
+                defineName "(Crusader of Centy) Horror / Reminiscence"
+                defineName "(Crusader of Centy) Mysterious / Heartbreak"
+                defineName "(Crusader of Centy) Battlefield / Twilight of the Warriors"
+                defineName "(Crusader of Centy) Optimistic / Oh, Damnit"
+                defineName "(Crusader of Centy) Temple / Joined the Party"
+                defineName "(Crusader of Centy) Seaside / Sadly Joined the Party"
+                defineName "(Crusader of Centy) Chill Room / Save"
+                defineName "(Crusader of Centy) Chill City / Antidote"
+                defineName "Revival, Long Version (NUKED)"
+                defineName "Revival (NUKED)"
+                defineName "Promotion (NUKED)"
+                defineName "You've Been Cursed! (NUKED)"
+                defineName "It's a Treasure Chest! (NUKED)"
+                defineName "Shining Force II (NUKED)"
                 defineName ""
                 defineName ""
-                defineName "The Call of a Long Journey"
-                defineName "Entrance to the Demon World"
-                defineName "A Message from Ancient Times"
-                defineName "The King of Devils has Appeared"
-                defineName "Dwarf Dwarf Dwarf"
-                defineName "The Bloodline of Ground Seal"
-                defineName "The Caravan Proceeds"
-                defineName "Ancient Wings"
-                defineName "Chosen Heroes"
                 defineName ""
                 defineName ""
+                defineName "The Call of a Long Journey (NUKED)"
+                defineName "Entrance to the Demon World (NUKED)"
+                defineName "A Message from Ancient Times (NUKED)"
+                defineName "The King of Devils has Appeared (NUKED)"
+                defineName "Dwarf Dwarf Dwarf (NUKED)"
+                defineName "The Bloodline of Ground Seal (NUKED)"
+                defineName "The Caravan Proceeds (NUKED)"
+                defineName "Ancient Wings (NUKED)"
+                defineName "Chosen Heroes (NUKED)"
                 defineName ""
                 defineName ""
                 defineName ""
@@ -229,59 +227,61 @@ table_SoundtrackTitles:
                 defineName ""
                 defineName ""
                 defineName ""
-                defineName "SFX: MENU_SWITCH"
-                defineName "SFX: MENU_SELECTION"
-                defineName "SFX: VALIDATION"
-                defineName "SFX: REFUSAL"
-                defineName "SFX: DIALOG_BLEEP_1"
-                defineName "SFX: DIALOG_BLEEP_2"
-                defineName "SFX: DIALOG_BLEEP_3"
-                defineName "SFX: DIALOG_BLEEP_4"
-                defineName "SFX: DIALOG_BLEEP_5"
-                defineName "SFX: DIALOG_BLEEP_6"
-                defineName "SFX: DIALOG_BLEEP_7"
-                defineName "SFX: DIALOG_BLEEP_8"
-                defineName "SFX: SPELL_CAST"
-                defineName "SFX: DOOR_OPEN_HIGH_PITCH"
-                defineName "SFX: WALKING"
-                defineName "SFX: UNUSED_FROM_LANDSTALKER"
-                defineName "SFX: LIGHTNING_1"
-                defineName "SFX: LIGHTNING_2"
-                defineName "SFX: HIT_1"
-                defineName "SFX: HIT_2"
-                defineName "SFX: BLAST"
-                defineName "SFX: SWORDS_HIT"
-                defineName "SFX: JUMP"
-                defineName "SFX: FALLING"
-                defineName "SFX: WARP"
-                defineName "SFX: CHIRRUP_SANDALS"
-                defineName "SFX: MONSTER_DIALOG_BLEEP"
-                defineName "SFX: DOOR_OPEN"
-                defineName "SFX: BIG_DOOR_RUMBLE"
-                defineName "SFX: MONSTER_SCREAM"
-                defineName "SFX: BUUBOBI"
-                defineName "SFX: SECRET_PATH_ROCK"
-                defineName "SFX: PSH"
-                defineName "SFX: PSHHH"
-                defineName "SFX: BLOAB"
-                defineName "SFX: BLO"
-                defineName "SFX: LANDSTALKER_ITEM"
-                defineName "SFX: LEVEL_UP"
-                defineName "SFX: PRISM_LASER_LOADING"
-                defineName "SFX: SPAWN"
-                defineName "SFX: SFCD_STATUES"
-                defineName "SFX: DESOUL"
-                defineName "SFX: SITD_HOWL"
-                defineName "SFX: PRISM_LASER_FIRING"
-                defineName "SFX: BOOST"
-                defineName "SFX: DESOUL_HOVERING"
-                defineName "SFX: PRISM_LASER_CUTSCENE_FIRING"
-                defineName "SFX: TAROS_DIALOG_BLEEP"
-                defineName "SFX: HEALING"
-                defineName "SFX: BLAST_SPELL"
-                defineName "SFX: WING_FLAP"
-                defineName "SFX: BATTLEFIELD_DEATH"
-                defineName "SFX: DEMON_BREATH"
-                defineName "SFX: INTRO_LIGHTNING"
-                defineName "SFX: BOLT_SPELL"
-                defineName "SFX: TINKLING"
+                defineName ""
+                defineName ""
+                defineName "SFX: (Crusader of Centy) Confirm / MENU_SWITCH"
+                defineName "SFX: MENU_SELECTION (NUKED)"
+                defineName "SFX: VALIDATION (NUKED)"
+                defineName "SFX: REFUSAL (NUKED)"
+                defineName "SFX: DIALOG_BLEEP_1 (NUKED)"
+                defineName "SFX: DIALOG_BLEEP_2 (NUKED)"
+                defineName "SFX: DIALOG_BLEEP_3 (NUKED)"
+                defineName "SFX: DIALOG_BLEEP_4 (NUKED)"
+                defineName "SFX: DIALOG_BLEEP_5 (NUKED)"
+                defineName "SFX: DIALOG_BLEEP_6 (NUKED)"
+                defineName "SFX: DIALOG_BLEEP_7 (NUKED)"
+                defineName "SFX: DIALOG_BLEEP_8 (NUKED)"
+                defineName "SFX: SPELL_CAST (NUKED)"
+                defineName "SFX: DOOR_OPEN_HIGH_PITCH (NUKED)"
+                defineName "SFX: WALKING (NUKED)"
+                defineName "SFX: UNUSED_FROM_LANDSTALKER (NUKED)"
+                defineName "SFX: LIGHTNING_1 (NUKED)"
+                defineName "SFX: LIGHTNING_2 (NUKED)"
+                defineName "SFX: HIT_1 (NUKED)"
+                defineName "SFX: HIT_2 (NUKED)"
+                defineName "SFX: BLAST (NUKED)"
+                defineName "SFX: SWORDS_HIT (NUKED)"
+                defineName "SFX: JUMP (NUKED)"
+                defineName "SFX: FALLING (NUKED)"
+                defineName "SFX: WARP (NUKED)"
+                defineName "SFX: CHIRRUP_SANDALS (NUKED)"
+                defineName "SFX: MONSTER_DIALOG_BLEEP (NUKED)"
+                defineName "SFX: DOOR_OPEN (NUKED)"
+                defineName "SFX: BIG_DOOR_RUMBLE (NUKED)"
+                defineName "SFX: MONSTER_SCREAM (NUKED)"
+                defineName "SFX: BUUBOBI (NUKED)"
+                defineName "SFX: SECRET_PATH_ROCK (NUKED)"
+                defineName "SFX: PSH (NUKED)"
+                defineName "SFX: PSHHH (NUKED)"
+                defineName "SFX: BLOAB (NUKED)"
+                defineName "SFX: BLO (NUKED)"
+                defineName "SFX: LANDSTALKER_ITEM (NUKED)"
+                defineName "SFX: LEVEL_UP (NUKED)"
+                defineName "SFX: PRISM_LASER_LOADING (NUKED)"
+                defineName "SFX: SPAWN (NUKED)"
+                defineName "SFX: SFCD_STATUES (NUKED)"
+                defineName "SFX: DESOUL (NUKED)"
+                defineName "SFX: SITD_HOWL (NUKED)"
+                defineName "SFX: PRISM_LASER_FIRING (NUKED)"
+                defineName "SFX: BOOST (NUKED)"
+                defineName "SFX: DESOUL_HOVERING (NUKED)"
+                defineName "SFX: PRISM_LASER_CUTSCENE_FIRING (NUKED)"
+                defineName "SFX: TAROS_DIALOG_BLEEP (NUKED)"
+                defineName "SFX: HEALING (NUKED)"
+                defineName "SFX: BLAST_SPELL (NUKED)"
+                defineName "SFX: WING_FLAP (NUKED)"
+                defineName "SFX: BATTLEFIELD_DEATH (NUKED)"
+                defineName "SFX: DEMON_BREATH (NUKED)"
+                defineName "SFX: INTRO_LIGHTNING (NUKED)"
+                defineName "SFX: BOLT_SPELL (NUKED)"
+                defineName "SFX: TINKLING (NUKED)"
