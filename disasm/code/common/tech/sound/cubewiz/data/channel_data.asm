@@ -158,3 +158,5 @@ TMPCPY_MUSIC_DOESNT_USE_SAMPLES:
     db  0    
 TMPCPY_YM_TIMER_VALUE:
     db  0
+
+; MrCool: at this point, there's 13 bytes left available for use
