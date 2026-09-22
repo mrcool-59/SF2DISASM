@@ -48,7 +48,7 @@ Z80_Memory: equ $A00000
 
 z80Channel1NotInUse = $A01383
     if (STANDARD_BUILD=1)
-z80Channel1NotInUse = $A01813
+z80Channel1NotInUse = $A01843 ; Adjusted because of cubewiz layout change: "; MrCool: consumed 30h bytes here to expand sample entries list by 6"
     endif
 Z80_CHANNEL_1_NOT_IN_USE: equ z80Channel1NotInUse
 
