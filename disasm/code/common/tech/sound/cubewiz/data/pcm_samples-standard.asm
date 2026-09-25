@@ -49,14 +49,14 @@ PCM_SAMPLE_ENTRIES:
     dw  3, DAC_BANK_5,  1423h, 0C9ECh
     dw  3, DAC_BANK_5,  1423h, 0DE0Fh
     dw  3, DAC_BANK_4,  28A8h, 8000h
-    dw  1, DAC_BANK_4,  1E70h, 0A8A8h
-    dw  1, DAC_BANK_4,  140Eh, 0C718h
-    dw  1, DAC_BANK_4,  14FFh, 0DB26h
-    dw  1, DAC_BANK_5,  0974h, 0F232h
-    dw  1, DAC_BANK_4,  06F5h, 0F025h
-    dw  1, DAC_BANK_4,  0891h, 0F71Ah
-    dw  6, DAC_BANK_5,  0391h, 0FBA6h
-    dw  1, DAC_BANK_3,  1528h, 8000h
+    dw  0, DAC_BANK_6,  0000h, 8000h
+    dw  0, DAC_BANK_6,  0000h, 8000h
+    dw  0, DAC_BANK_6,  0000h, 8000h
+    dw  0, DAC_BANK_6,  0000h, 8000h
+    dw  0, DAC_BANK_6,  0000h, 8000h
+    dw  0, DAC_BANK_6,  0000h, 8000h
+    dw  0, DAC_BANK_6,  0000h, 8000h
+    dw  0, DAC_BANK_6,  0000h, 8000h
     dw  0, DAC_BANK_6,  0000h, 8000h
     dw  0, DAC_BANK_6,  0000h, 8000h
     dw  0, DAC_BANK_6,  0000h, 8000h
