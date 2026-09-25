@@ -2658,10 +2658,10 @@ Music_57_Channel_5:
 		sample  23
 		countedLoopEnd
 		sampleL 23,10
-		sample  28
-		sample  28
-		sample  28
-		sample  28
+		sample  25
+		sample  25
+		sample  25
+		sample  25
 		sample  24
 		sample  24
 		sample  24
@@ -2709,14 +2709,14 @@ Music_57_Channel_5:
 		sampleL 23,20
 		sampleL 23,10
 		stereo 80h
-		sample  25
-		stereo 0C0h
-		sampleL 26,5
 		sample  26
-		sampleL 26,10
-		stereo 40h
+		stereo 0C0h
 		sampleL 27,5
 		sample  27
+		sampleL 27,10
+		stereo 40h
+		sampleL 28,5
+		sample  28
 		stereo 0C0h
 		countedLoopStart 5
 		sampleL 24,20
@@ -2781,15 +2781,15 @@ Music_57_Channel_5:
 		sampleL 24,10
 		sampleL 23,20
 		sampleL 24,10
-		sample  26
-		stereo 40h
 		sample  27
+		stereo 40h
+		sample  28
 		stereo 80h
-		sample  25
-		stereo 0C0h
 		sample  26
-		stereo 40h
+		stereo 0C0h
 		sample  27
+		stereo 40h
+		sample  28
 		stereo 0C0h
 		sample  24
 		sampleL 23,20
@@ -2821,18 +2821,18 @@ Music_57_Channel_5:
 		sample  23
 		sample  24
 		stereo 40h
-		sample  27
+		sample  28
 		stereo 0C0h
 		sample  23
 		sample  24
 		sample  23
 		stereo 40h
-		sample  27
-		sample  27
+		sample  28
+		sample  28
 		stereo 0C0h
 		sample  23
 		stereo 40h
-		sample  27
+		sample  28
 		stereo 0C0h
 		sample  24
 		sampleL 23,20

@@ -19,43 +19,43 @@ PCM_SAMPLE_ENTRIES:
     dw  9, DAC_BANK_1,  1DA3h, 0D68Eh
     dw 15, DAC_BANK_1,  1DA3h, 0D68Eh
     dw 20, DAC_BANK_1,  1DA3h, 0D68Eh
-    dw 26, DAC_BANK_6,  0695h, 8000h
-    dw 26, DAC_BANK_6,  047Ch, 8695h
-    dw 16, DAC_BANK_6,  05DEh, 8B11h
-    dw 26, DAC_BANK_6,  05DEh, 8B11h
-    dw 36, DAC_BANK_6,  05DEh, 8B11h
+    dw 16, DAC_BANK_6,  05DEh, 8000h
+    dw 26, DAC_BANK_6,  05DEh, 8000h
+    dw 36, DAC_BANK_6,  05DEh, 8000h
+    dw 26, DAC_BANK_6,  047Ch, 85DEh
+    dw 26, DAC_BANK_6,  0695h, 8A5Ah
     dw 26, DAC_BANK_6,  0695h, 90EFh
     dw  1, DAC_BANK_6,  089Fh, 9784h
     dw  1, DAC_BANK_6,  1534h, 0A023h
-    dw  1, DAC_BANK_6,  08ECh, 0B557h
-    dw  5, DAC_BANK_6,  08ECh, 0B557h
-    dw 12, DAC_BANK_6,  08ECh, 0B557h
-    dw  1, DAC_BANK_6,  0EFDh, 0BE43h
-    dw  8, DAC_BANK_6,  06C1h, 0CD40h
-    dw  8, DAC_BANK_6,  0C33h, 0D401h
-    dw  3, DAC_BANK_6,  0FF2h, 0E034h
-    dw  8, DAC_BANK_6,  0FF2h, 0E034h
-    dw 18, DAC_BANK_6,  0FF2h, 0E034h
-    dw  6, DAC_BANK_5,  1BCAh, 8000h
-    dw  1, DAC_BANK_6,  0665h, 0F026h
-    dw  1, DAC_BANK_5,  1096h, 9BCAh
-    dw  1, DAC_BANK_5,  0BFBh, 0AC60h
-    dw  8, DAC_BANK_5,  09FBh, 0AC60h
-    dw 15, DAC_BANK_5,  07FBh, 0AC60h
-    dw  3, DAC_BANK_6,  086Bh, 0F68Bh
-    dw  3, DAC_BANK_5,  1423h, 0B85Bh
-    dw  7, DAC_BANK_5,  1258h, 0CC7Eh
-    dw 15, DAC_BANK_5,  1258h, 0CC7Eh
-    dw 21, DAC_BANK_5,  1258h, 0CC7Eh
-    dw  3, DAC_BANK_5,  1423h, 0DED6h
+    dw  1, DAC_BANK_6,  0EFDh, 0B557h
+    dw  1, DAC_BANK_6,  08ECh, 0C454h
+    dw  5, DAC_BANK_6,  08ECh, 0C454h
+    dw 12, DAC_BANK_6,  08ECh, 0C454h
+    dw  6, DAC_BANK_6,  1BCAh, 0CD40h
+    dw  3, DAC_BANK_6,  0FF2h, 0E90Ah
+    dw  8, DAC_BANK_6,  0FF2h, 0E90Ah
+    dw 18, DAC_BANK_6,  0FF2h, 0E90Ah
+    dw  8, DAC_BANK_6,  06C1h, 0F8FCh
+    dw  8, DAC_BANK_5,  0C33h, 8000h
+    dw  1, DAC_BANK_5,  0665h, 8C33h
+    dw  1, DAC_BANK_5,  1096h, 9298h
+    dw  1, DAC_BANK_5,  0BFBh, 0A32Eh
+    dw  8, DAC_BANK_5,  09FBh, 0A32Eh
+    dw 15, DAC_BANK_5,  07FBh, 0A32Eh
+    dw  7, DAC_BANK_5,  1258h, 0AF29h
+    dw 15, DAC_BANK_5,  1258h, 0AF29h
+    dw 21, DAC_BANK_5,  1258h, 0AF29h
+    dw  3, DAC_BANK_5,  086Bh, 0C181h
+    dw  3, DAC_BANK_5,  1423h, 0C9ECh
+    dw  3, DAC_BANK_5,  1423h, 0DE0Fh
     dw  3, DAC_BANK_4,  28A8h, 8000h
     dw  1, DAC_BANK_4,  1E70h, 0A8A8h
     dw  1, DAC_BANK_4,  140Eh, 0C718h
-    dw  1, DAC_BANK_5,  0974h, 0F2F9h
     dw  1, DAC_BANK_4,  14FFh, 0DB26h
+    dw  1, DAC_BANK_5,  0974h, 0F232h
     dw  1, DAC_BANK_4,  06F5h, 0F025h
     dw  1, DAC_BANK_4,  0891h, 0F71Ah
-    dw  6, DAC_BANK_5,  0391h, 0FC6Dh
+    dw  6, DAC_BANK_5,  0391h, 0FBA6h
     dw  1, DAC_BANK_3,  1528h, 8000h
     dw  0, DAC_BANK_6,  0000h, 8000h
     dw  0, DAC_BANK_6,  0000h, 8000h

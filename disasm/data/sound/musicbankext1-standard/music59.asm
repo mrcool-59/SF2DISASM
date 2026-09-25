@@ -21,7 +21,7 @@ Music_59:		; [CUSTOM] Obviously Town Theme
 Music_59_Channel_0:
 		mainLoopStart
 		inst 80
-		vol 15
+		vol 11
 		vibrato 00h
 		setRelease 5
 		noteL A2,10
@@ -594,7 +594,7 @@ Music_59_Channel_0:
 Music_59_Channel_1:
 		mainLoopStart
 		inst 72
-		vol 15
+		vol 13
 		vibrato 00h
 		setRelease 5
 		countedLoopStart 1
@@ -616,7 +616,7 @@ Music_59_Channel_1:
 		noteL E5,160
 		countedLoopEnd
 		inst 81
-		vol 15
+		vol 13
 		noteL Fs5,20
 		noteL Gs5,10
 		noteL A5,50
@@ -694,7 +694,7 @@ Music_59_Channel_1:
 		note  Gs5
 		note  A5
 		inst 72
-		vol 15
+		vol 13
 		countedLoopStart 1
 		noteL E5,60
 		noteL Cs5,10
@@ -714,7 +714,7 @@ Music_59_Channel_1:
 		noteL E5,160
 		countedLoopEnd
 		inst 81
-		vol 15
+		vol 13
 		noteL Fs5,20
 		noteL Gs5,10
 		noteL A5,50
@@ -796,7 +796,7 @@ Music_59_Channel_2:
 		mainLoopStart
 		stereo 80h
 		inst 77
-		vol 15
+		vol 13
 		vibrato 00h
 		setRelease 5
 		countedLoopStart 1
@@ -820,7 +820,7 @@ Music_59_Channel_2:
 		note  Gs5
 		countedLoopEnd
 		inst 82
-		vol 15
+		vol 13
 		noteL Fs5,20
 		noteL Gs5,10
 		noteL A5,50
@@ -898,7 +898,7 @@ Music_59_Channel_2:
 		note  Gs5
 		note  A5
 		inst 77
-		vol 15
+		vol 13
 		countedLoopStart 1
 		noteL E5,60
 		noteL Cs5,10
@@ -920,7 +920,7 @@ Music_59_Channel_2:
 		note  Gs5
 		countedLoopEnd
 		inst 82
-		vol 15
+		vol 13
 		noteL Fs5,20
 		noteL Gs5,10
 		noteL A5,50
@@ -1002,7 +1002,7 @@ Music_59_Channel_3:
 		mainLoopStart
 		stereo 40h
 		inst 77
-		vol 15
+		vol 13
 		vibrato 00h
 		setRelease 5
 		countedLoopStart 1
@@ -1113,7 +1113,7 @@ Music_59_Channel_3:
 		note  B4
 		note  E5
 		inst 78
-		vol 15
+		vol 13
 		countedLoopStart 1
 		note  E5
 		noteL Cs5,20
@@ -1141,7 +1141,7 @@ Music_59_Channel_3:
 		note  E5
 		countedLoopEnd
 		inst 77
-		vol 15
+		vol 13
 		countedLoopStart 1
 		noteL A5,60
 		noteL A5,10
@@ -1250,7 +1250,7 @@ Music_59_Channel_3:
 		note  B4
 		note  E5
 		inst 78
-		vol 15
+		vol 13
 		countedLoopStart 1
 		note  E5
 		noteL Cs5,20
@@ -1281,7 +1281,7 @@ Music_59_Channel_3:
 Music_59_Channel_4:
 		mainLoopStart
 		inst 78
-		vol 15
+		vol 11
 		vibrato 00h
 		setRelease 5
 		noteL E4,10
@@ -1370,7 +1370,7 @@ Music_59_Channel_4:
 		note  D5
 		note  E5
 		inst 77
-		vol 15
+		vol 11
 		countedLoopStart 1
 		note  E5
 		note  Cs5
@@ -1382,7 +1382,7 @@ Music_59_Channel_4:
 		note  Gs4
 		countedLoopEnd
 		inst 78
-		vol 15
+		vol 11
 		noteL E4,10
 		note  A4
 		note  B4
@@ -1469,7 +1469,7 @@ Music_59_Channel_4:
 		note  D5
 		note  E5
 		inst 77
-		vol 15
+		vol 11
 		countedLoopStart 1
 		note  E5
 		note  Cs5
@@ -1484,7 +1484,7 @@ Music_59_Channel_4:
 Music_59_Channel_5:
 		mainLoopStart
 		inst 79
-		vol 15
+		vol 11
 		vibrato 00h
 		setRelease 5
 		countedLoopStart 1
@@ -1618,7 +1618,7 @@ Music_59_Channel_5:
 		setRelease 45
 		noteL E5,50
 		inst 78
-		vol 15
+		vol 11
 		setRelease 5
 		noteL Fs5,20
 		noteL Gs5,10
@@ -1649,7 +1649,7 @@ Music_59_Channel_5:
 		note  Fs5
 		note  Gs5
 		inst 79
-		vol 15
+		vol 11
 		noteL A4,60
 		noteL A6,20
 		noteL A4,60
@@ -1670,7 +1670,7 @@ Music_59_Channel_5:
 		mainLoopEnd
 Music_59_Channel_6:
 		mainLoopStart
-		psgInst 44
+		psgInst 43
 		vibrato 00h
 		countedLoopStart 1
 		setRelease 5
@@ -1693,7 +1693,7 @@ Music_59_Channel_6:
 		psgNoteL E5,55
 		psgInst 0
 		waitL 105
-		psgInst 44
+		psgInst 43
 		countedLoopEnd
 		setRelease 5
 		psgNoteL Fs5,20
@@ -1725,7 +1725,7 @@ Music_59_Channel_6:
 		psgNote  Fs5
 		setRelease 0
 		psgNote  Gs5
-		psgInst 47
+		psgInst 45
 		setRelease 5
 		psgNoteL A5,10
 		psgNoteL E5,20
@@ -1775,7 +1775,7 @@ Music_59_Channel_6:
 		psgNoteL A5,10
 		psgNote  Gs5
 		psgNote  A5
-		psgInst 44
+		psgInst 43
 		countedLoopStart 1
 		psgNoteL E5,60
 		psgNoteL Cs5,10
@@ -1796,7 +1796,7 @@ Music_59_Channel_6:
 		psgNoteL E5,55
 		psgInst 0
 		waitL 105
-		psgInst 44
+		psgInst 43
 		setRelease 5
 		countedLoopEnd
 		psgNoteL Fs5,20
@@ -1827,7 +1827,7 @@ Music_59_Channel_6:
 		psgNote  Gs5
 		psgNote  Fs5
 		psgNote  Gs5
-		psgInst 47
+		psgInst 45
 		psgNoteL A5,10
 		psgNoteL E5,20
 		psgNote  Cs5
@@ -1888,17 +1888,17 @@ Music_59_Channel_7:
 		wait
 		waitL 215
 		mainLoopStart
-		psgInst 44
+		psgInst 43
 		vibrato 00h
 		setRelease 5
 		countedLoopStart 6
 		psgNoteL A3,60
-		psgInst 47
+		psgInst 45
 		psgNoteL A5,20
-		psgInst 44
+		psgInst 43
 		countedLoopEnd
 		psgNoteL A3,60
-		psgInst 47
+		psgInst 45
 		psgNoteL A5,20
 		psgInst 0
 		waitL 255
@@ -1910,14 +1910,14 @@ Music_59_Channel_7:
 		wait
 		waitL 215
 		countedLoopStart 6
-		psgInst 44
+		psgInst 43
 		psgNoteL A3,60
-		psgInst 47
+		psgInst 45
 		psgNoteL A5,20
 		countedLoopEnd
-		psgInst 44
+		psgInst 43
 		psgNoteL A3,60
-		psgInst 47
+		psgInst 45
 		setRelease 0
 		psgNoteL A5,15
 		psgInst 0

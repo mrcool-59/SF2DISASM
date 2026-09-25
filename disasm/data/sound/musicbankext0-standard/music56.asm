@@ -1211,191 +1211,199 @@ Music_56_Channel_4:
 		mainLoopEnd
 Music_56_Channel_5:
 		setRelease 0
-		sampleL 17,6
-		sample  17
-		sample  17
-		sampleL 17,90
-		sampleL 18,2
-		sampleL 18,34
-		sampleL 17,6
-		sample  17
-		sample  17
-		sampleL 17,54
-		countedLoopStart 1
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 17,6
-		sample  17
-		countedLoopEnd
-		sampleL 19,3
-		sample  19
-		sample  20
-		sample  20
 		sampleL 21,6
 		sample  21
 		sample  21
+		sampleL 21,90
+		sampleL 20,2
+		sampleL 20,34
+		sampleL 21,6
 		sample  21
+		sample  21
+		sampleL 21,54
+		countedLoopStart 1
+		sampleL 20,2
+		sampleL 20,4
+		sampleL 21,6
+		sample  21
+		countedLoopEnd
+		sampleL 17,3
+		sample  17
+		sample  18
+		sample  18
+		sampleL 19,6
+		sample  19
+		sample  19
+		sample  19
 		mainLoopStart
 		setRelease 0
 		countedLoopStart 2
-		sampleL 17,12
-		sampleL 17,6
-		sampleL 18,18
-		sampleL 17,12
-		sampleL 17,6
-		sample  18
-		sample  17
-		sample  18
+		sampleL 21,12
+		sampleL 21,6
+		sampleL 20,18
+		sampleL 21,12
+		sampleL 21,6
+		sample  20
+		sample  21
+		sample  20
 		countedLoopEnd
 		countedLoopStart 1
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 17,6
-		sample  17
+		sampleL 20,2
+		sampleL 20,4
+		sampleL 21,6
+		sample  21
 		countedLoopEnd
-		sampleL 19,3
-		sample  19
-		sample  20
-		sample  20
-		sampleL 18,6
+		sampleL 17,3
+		sample  17
 		sample  18
 		sample  18
+		sampleL 20,6
+		sample  20
+		sample  20
 		countedLoopStart 3
-		sample  18
-		sampleL 17,12
-		sampleL 17,6
-		sampleL 18,18
-		sampleL 17,12
-		sampleL 17,6
-		sample  18
-		sample  17
-		countedLoopEnd
-		sample  18
-		countedLoopStart 2
-		sampleL 17,12
-		sampleL 19,6
-		sample  18
-		sampleL 20,12
-		sample  17
-		sampleL 17,6
-		sample  18
+		sample  20
+		sampleL 21,12
+		sampleL 21,6
+		sampleL 20,18
+		sampleL 21,12
+		sampleL 21,6
 		sample  20
 		sample  21
 		countedLoopEnd
-		countedLoopStart 1
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 18,6
-		sample  18
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 18,6
-		sample  18
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 18,6
-		sample  18
-		sample  18
-		sample  18
-		sample  18
-		sampleL 17,12
-		sampleL 17,6
-		sampleL 18,18
-		sampleL 17,12
-		sampleL 17,6
-		sample  18
-		sample  17
-		sample  18
-		sampleL 17,12
-		sampleL 17,6
-		sampleL 18,18
-		sampleL 17,12
-		sampleL 17,6
-		sample  18
-		sample  17
-		sample  18
-		sampleL 17,12
-		sampleL 17,6
-		sampleL 18,18
-		sampleL 17,12
-		sampleL 17,6
-		sample  18
-		sample  17
-		sample  18
-		countedLoopEnd
-		countedLoopStart 1
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 17,6
-		sample  17
-		countedLoopEnd
-		sampleL 19,3
-		sample  19
 		sample  20
-		sample  20
-		sampleL 18,6
-		sample  18
-		sample  18
-		countedLoopStart 3
-		sample  18
-		sampleL 17,12
-		sampleL 17,6
-		sampleL 18,18
-		sampleL 17,12
-		sampleL 17,6
-		sample  18
-		sample  17
-		countedLoopEnd
-		sample  18
 		countedLoopStart 2
-		sampleL 17,12
-		sampleL 19,6
-		sample  18
-		sampleL 20,12
-		sample  17
+		sampleL 21,12
 		sampleL 17,6
+		sample  20
+		sampleL 18,12
+		sample  21
+		sampleL 21,6
+		sample  20
 		sample  18
+		sample  19
+		countedLoopEnd
+		countedLoopStart 1
+		sampleL 20,2
+		sampleL 20,4
+		sampleL 20,6
+		sample  20
+		sampleL 20,2
+		sampleL 20,4
+		sampleL 20,6
+		sample  20
+		sampleL 20,2
+		sampleL 20,4
+		sampleL 20,6
+		sample  20
+		sample  20
+		sample  20
+		sample  20
+		sampleL 21,12
+		sampleL 21,6
+		sampleL 20,18
+		sampleL 21,12
+		sampleL 21,6
+		sample  20
+		sample  21
+		sample  20
+		sampleL 21,12
+		sampleL 21,6
+		sampleL 20,18
+		sampleL 21,12
+		sampleL 21,6
+		sample  20
+		sample  21
+		sample  20
+		sampleL 21,12
+		sampleL 21,6
+		sampleL 20,18
+		sampleL 21,12
+		sampleL 21,6
+		sample  20
+		sample  21
+		sample  20
+		countedLoopEnd
+		countedLoopStart 1
+		sampleL 20,2
+		sampleL 20,4
+		sampleL 21,6
+		sample  21
+		countedLoopEnd
+		sampleL 17,3
+		sample  17
+		sample  18
+		sample  18
+		sampleL 20,6
+		sample  20
+		sample  20
+		countedLoopStart 3
+		sample  20
+		sampleL 21,12
+		sampleL 21,6
+		sampleL 20,18
+		sampleL 21,12
+		sampleL 21,6
 		sample  20
 		sample  21
 		countedLoopEnd
+		sample  20
 		countedLoopStart 2
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 18,6
-		sample  18
-		countedLoopEnd
-		sample  18
-		sample  18
-		countedLoopStart 2
-		sample  18
-		sampleL 17,12
+		sampleL 21,12
 		sampleL 17,6
-		sampleL 18,18
-		sampleL 17,12
-		sampleL 17,6
+		sample  20
+		sampleL 18,12
+		sample  21
+		sampleL 21,6
+		sample  20
 		sample  18
-		sample  17
-		countedLoopEnd
-		sample  18
-		countedLoopStart 1
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 17,6
-		sample  17
-		countedLoopEnd
-		sampleL 19,3
 		sample  19
+		countedLoopEnd
+		countedLoopStart 2
+		sampleL 20,2
+		sampleL 20,4
+		sampleL 20,6
+		sample  20
+		countedLoopEnd
 		sample  20
 		sample  20
-		sampleL 18,6
+		countedLoopStart 2
+		sample  20
+		sampleL 21,12
+		sampleL 21,6
+		sampleL 20,18
+		sampleL 21,12
+		sampleL 21,6
+		sample  20
+		sample  21
+		countedLoopEnd
+		sample  20
+		countedLoopStart 1
+		sampleL 20,2
+		sampleL 20,4
+		sampleL 21,6
+		sample  21
+		countedLoopEnd
+		sampleL 17,3
+		sample  17
 		sample  18
 		sample  18
-		sample  18
+		sampleL 20,6
+		sample  20
+		sample  20
+		sample  20
 		countedLoopStart 11
 		sample  22
-		sample  17
-		sample  17
+		sample  21
+		sample  21
 		countedLoopEnd
+		sampleL 17,2
+		sampleL 17,4
+		sampleL 17,6
+		sample  17
+		sampleL 18,2
+		sampleL 18,4
+		sampleL 18,6
+		sample  18
 		sampleL 19,2
 		sampleL 19,4
 		sampleL 19,6
@@ -1404,28 +1412,20 @@ Music_56_Channel_5:
 		sampleL 20,4
 		sampleL 20,6
 		sample  20
-		sampleL 21,2
-		sampleL 21,4
-		sampleL 21,6
-		sample  21
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 18,6
-		sample  18
 		countedLoopStart 11
 		sample  22
-		sample  17
-		sample  17
+		sample  21
+		sample  21
 		countedLoopEnd
 		countedLoopStart 2
-		sampleL 18,2
-		sampleL 18,4
-		sampleL 18,6
-		sample  18
+		sampleL 20,2
+		sampleL 20,4
+		sampleL 20,6
+		sample  20
 		countedLoopEnd
-		sample  18
-		sample  18
-		sample  18
+		sample  20
+		sample  20
+		sample  20
 		mainLoopEnd
 Music_56_Channel_9:
 		channel_end

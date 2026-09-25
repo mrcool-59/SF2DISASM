@@ -524,11 +524,11 @@ Music_62_Channel_5:
 		mainLoopStart
 		stereo 80h
 		setRelease 0
-		sampleL 25,12
+		sampleL 26,12
 		stereo 0C0h
-		sample  26
-		stereo 40h
 		sample  27
+		stereo 40h
+		sample  28
 		stereo 0C0h
 		sampleL 23,24
 		countedLoopStart 5
@@ -541,15 +541,15 @@ Music_62_Channel_5:
 		sampleL 23,12
 		sampleL 24,24
 		stereo 80h
-		sampleL 25,6
-		sampleL 25,12
-		stereo 0C0h
 		sampleL 26,6
 		sampleL 26,12
-		stereo 40h
-		countedLoopStart 1
+		stereo 0C0h
 		sampleL 27,6
 		sampleL 27,12
+		stereo 40h
+		countedLoopStart 1
+		sampleL 28,6
+		sampleL 28,12
 		countedLoopEnd
 		stereo 0C0h
 		sampleL 24,6
@@ -564,25 +564,25 @@ Music_62_Channel_5:
 		countedLoopEnd
 		sample  24
 		stereo 80h
-		sampleL 25,6
-		sampleL 25,3
-		sample  25
-		stereo 0C0h
 		sampleL 26,6
-		sample  26
 		sampleL 26,3
 		sample  26
-		sampleL 26,6
-		stereo 40h
+		stereo 0C0h
+		sampleL 27,6
 		sample  27
 		sampleL 27,3
 		sample  27
 		sampleL 27,6
+		stereo 40h
+		sample  28
+		sampleL 28,3
+		sample  28
+		sampleL 28,6
 		stereo 0C0h
 		sample  24
 		stereo 40h
-		sample  27
-		sample  27
+		sample  28
+		sample  28
 		stereo 0C0h
 		sample  24
 		sample  23
@@ -602,7 +602,7 @@ Music_62_Channel_5:
 		sampleL 23,6
 		sample  23
 		stereo 80h
-		sampleL 25,24
+		sampleL 26,24
 		stereo 0C0h
 		countedLoopStart 1
 		sampleL 24,6

@@ -611,114 +611,114 @@ Music_58_Channel_4:
 		mainLoopEnd
 Music_58_Channel_5:
 		setRelease 0
-		sampleL 34,42
+		sampleL 29,42
 		stereo 80h
-		sampleL 31,2
-		sample  31
-		sample  31
-		sampleL 31,6
-		sampleL 31,12
+		sampleL 30,2
+		sample  30
+		sample  30
+		sampleL 30,6
+		sampleL 30,12
 		stereo 0C0h
-		sample  32
+		sample  31
 		stereo 40h
-		sampleL 33,6
-		sampleL 33,12
+		sampleL 32,6
+		sampleL 32,12
 		mainLoopStart
 		stereo 0C0h
 		setRelease 0
-		sampleL 29,42
-		sampleL 29,6
-		sampleL 30,24
-		sampleL 29,12
-		sample  30
-		sampleL 29,42
-		sampleL 29,6
-		sampleL 30,48
-		sampleL 29,42
-		sampleL 29,6
-		sampleL 30,18
-		sampleL 29,6
-		sample  30
-		sample  30
-		sampleL 30,12
-		countedLoopStart 2
-		sampleL 29,42
-		sampleL 29,6
-		sampleL 30,36
-		sampleL 29,6
-		sample  29
-		sample  30
-		sample  30
-		sampleL 30,30
-		sampleL 29,6
-		sampleL 30,36
-		sampleL 29,12
-		countedLoopEnd
-		sampleL 29,42
-		sampleL 29,6
-		sampleL 30,36
-		sampleL 29,6
-		sample  29
-		sample  30
-		sample  30
-		sampleL 30,30
-		sampleL 29,6
-		sampleL 30,18
-		sampleL 29,6
-		sample  30
-		sample  30
-		countedLoopStart 1
-		sample  30
-		sample  30
-		sampleL 29,42
-		sampleL 29,6
-		sampleL 30,12
-		stereo 80h
-		sampleL 31,6
-		stereo 0C0h
-		sampleL 32,12
-		sampleL 32,6
-		stereo 40h
-		sampleL 33,12
-		stereo 0C0h
-		sample  29
-		sampleL 34,24
-		sampleL 30,6
-		sample  30
-		sampleL 29,12
-		sampleL 34,18
-		sampleL 30,6
-		countedLoopEnd
-		sample  30
-		sample  30
-		countedLoopStart 1
-		sampleL 29,42
-		sampleL 29,6
-		sampleL 30,42
-		sampleL 29,6
-		countedLoopEnd
-		sampleL 29,42
-		sampleL 29,6
-		sampleL 30,18
-		sampleL 29,6
-		sample  30
-		sampleL 30,18
-		sampleL 29,42
-		stereo 80h
-		sampleL 31,2
-		sample  31
-		sample  31
-		sampleL 31,6
-		sampleL 31,12
-		stereo 0C0h
-		sample  32
-		stereo 40h
+		sampleL 33,42
 		sampleL 33,6
+		sampleL 34,24
 		sampleL 33,12
+		sample  34
+		sampleL 33,42
+		sampleL 33,6
+		sampleL 34,48
+		sampleL 33,42
+		sampleL 33,6
+		sampleL 34,18
+		sampleL 33,6
+		sample  34
+		sample  34
+		sampleL 34,12
+		countedLoopStart 2
+		sampleL 33,42
+		sampleL 33,6
+		sampleL 34,36
+		sampleL 33,6
+		sample  33
+		sample  34
+		sample  34
+		sampleL 34,30
+		sampleL 33,6
+		sampleL 34,36
+		sampleL 33,12
+		countedLoopEnd
+		sampleL 33,42
+		sampleL 33,6
+		sampleL 34,36
+		sampleL 33,6
+		sample  33
+		sample  34
+		sample  34
+		sampleL 34,30
+		sampleL 33,6
+		sampleL 34,18
+		sampleL 33,6
+		sample  34
+		sample  34
+		countedLoopStart 1
+		sample  34
+		sample  34
+		sampleL 33,42
+		sampleL 33,6
+		sampleL 34,12
+		stereo 80h
+		sampleL 30,6
 		stereo 0C0h
-		sampleL 29,42
-		sampleL 29,6
-		sampleL 30,48
+		sampleL 31,12
+		sampleL 31,6
+		stereo 40h
+		sampleL 32,12
+		stereo 0C0h
+		sample  33
+		sampleL 29,24
+		sampleL 34,6
+		sample  34
+		sampleL 33,12
+		sampleL 29,18
+		sampleL 34,6
+		countedLoopEnd
+		sample  34
+		sample  34
+		countedLoopStart 1
+		sampleL 33,42
+		sampleL 33,6
+		sampleL 34,42
+		sampleL 33,6
+		countedLoopEnd
+		sampleL 33,42
+		sampleL 33,6
+		sampleL 34,18
+		sampleL 33,6
+		sample  34
+		sampleL 34,18
+		sampleL 33,42
+		stereo 80h
+		sampleL 30,2
+		sample  30
+		sample  30
+		sampleL 30,6
+		sampleL 30,12
+		stereo 0C0h
+		sample  31
+		stereo 40h
+		sampleL 32,6
+		sampleL 32,12
+		stereo 0C0h
+		sampleL 33,42
+		sampleL 33,6
+		sampleL 34,48
 		mainLoopEnd
 Music_58_Channel_6:
 		psgInst 0
