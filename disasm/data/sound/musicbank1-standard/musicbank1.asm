@@ -6,9 +6,9 @@
    include "..\enums.asm"
    org 08000h
 
-		dw Music_33
-		dw Music_34
-		dw Music_35
+		dw Music_48
+		dw Music_48
+		dw Music_48
 		dw Music_36
 		dw Music_37
 		dw Music_38
@@ -22,9 +22,6 @@
 		dw Music_48
 		dw Music_48
 		dw Music_48
-		include "music33.asm"
-		include "music34.asm"
-		include "music35.asm"
 		include "music36.asm"
 		include "music37.asm"
 		include "music38.asm"

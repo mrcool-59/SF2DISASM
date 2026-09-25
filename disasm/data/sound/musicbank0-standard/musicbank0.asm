@@ -6,15 +6,15 @@
    include "..\enums.asm"
    org 08000h
 
-		dw Music_1
-		dw Music_2
+		dw Music_32
+		dw Music_32
 		dw Music_3
 		dw Music_4
-		dw Music_5
+		dw Music_32
 		dw Music_6
-		dw Music_7
-		dw Music_8
-		dw Music_9
+		dw Music_32
+		dw Music_32
+		dw Music_32
 		dw Music_10
 		dw Music_11
 		dw Music_12
@@ -38,28 +38,20 @@
 		dw Music_32
 		dw Music_32
 		dw Music_32
-		include "music01.asm"	; [CUSTOM] Test DAC / Legend of Light
-		include "music02.asm"
 		include "music03.asm"
-		include "music04.asm"
-		include "music05.asm"
 		include "music06.asm"
-		include "music07.asm"
-		include "music08.asm"
-		include "music09.asm"
 		include "music10.asm"
 		include "music11.asm"
-		include "music12.asm"	; [CUSTOM] (Crusader of Centy) Desert City / Time of Trials
-		include "music13.asm"	; [CUSTOM] (Crusader of Centy) Inn / Fairy Woods
-		include "music14.asm"	; [CUSTOM] (Crusader of Centy) Travel / Dreaming Elis
-		include "music15.asm"	; [CUSTOM] (Crusader of Centy) Horror / Reminiscence
-		include "music16.asm"	; [CUSTOM] (Crusader of Centy) Mysterious / Heartbreak
-		include "music17.asm"	; [CUSTOM] (Crusader of Centy) Battlefield / Twilight of the Warriors
-		include "music18.asm"	; [CUSTOM] (Crusader of Centy) Optimistic / Oh, Damnit
-		include "music19.asm"	; [CUSTOM] (Crusader of Centy) Temple / Joined the Party
-		include "music20.asm"	; [CUSTOM] (Crusader of Centy) Seaside / Sadly Joined the Party
-		include "music21.asm"	; [CUSTOM] (Crusader of Centy) Chill Room / Save
-		include "music22.asm"	; [CUSTOM] (Crusader of Centy) Chill City / Antidote
+		include "music12.asm"
+		include "music13.asm"
+		include "music15.asm"
+		include "music16.asm"
+		include "music17.asm"
+		include "music18.asm"
+		include "music19.asm"
+		include "music20.asm"
+		include "music21.asm"
+		include "music22.asm"
 		include "music23.asm"
 		include "music24.asm"
 		include "music25.asm"
