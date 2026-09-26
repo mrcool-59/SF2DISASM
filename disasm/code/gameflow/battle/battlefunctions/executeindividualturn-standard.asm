@@ -347,6 +347,11 @@ LoadBattlesceneMusicIndex:
 @SpecialMusicDisabled:
 				endif
                 if (ENABLE_ALLY_SUPPORT_MUSIC=1)
+					; Fix for ranged attacks that trigger support music incorrectly (because no target is visible at the start of the scene)
+					move.w  ((CURRENT_BATTLEACTION-$1000000)).w,d2
+                    cmpi.w  #BATTLEACTION_ATTACK,d2
+                    beq.s   @SupportMusicDisabled
+					
                     ; Ignore muddled Force members for support music check
                     jsr     GetStatusEffects
                     move.w  d1,statusEffects(a6)
@@ -403,6 +408,11 @@ LoadBattlesceneMusicIndex:
                 bra.s   @LoadIndex ; Load the special music
 @EnemyNotSpecial:
                 if (ENABLE_ENEMY_SUPPORT_MUSIC=1)
+					; Fix for ranged attacks that trigger support music incorrectly (because no target is visible at the start of the scene)
+					move.w  ((CURRENT_BATTLEACTION-$1000000)).w,d2
+                    cmpi.w  #BATTLEACTION_ATTACK,d2
+                    beq.s   @EnemySupportMusicDisabled
+					
                     ; Ignore muddled monsters for support music check
                     jsr     GetStatusEffects
                     move.w  d1,statusEffects(a6)
