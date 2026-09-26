@@ -2,8 +2,8 @@
 ; 0 = OFF, 1 = ON
 
 ; Initial configuration settings
-ALL_ALLIES_JOINED:          equ 0       ; All allies join from the beginning at level 1.
-INITIAL_SPECIAL_TURBO:      equ 0       ; -1 = toggle ON
+ALL_ALLIES_JOINED:          equ 0       ; All allies join from the beginning at level 1 (keep in mind this will affect story event flow, Sarah will be excluded to avoid "Astral missing in school basement" softlock)
+INITIAL_SPECIAL_TURBO:      equ -1      ; -1 = toggle ON
 INITIAL_DEBUG_MODE:         equ 0       ; -1 = toggle ON
 INITIAL_CONTROL_OPPONENT:   equ 0       ; -1 = toggle ON
 INITIAL_AUTO_BATTLE:        equ 0       ; -1 = toggle ON
@@ -17,7 +17,7 @@ INITIAL_NO_BATTLE_MESSAGES: equ 0       ; 1 = no battle messages display ON
 ;   This is determined by whether standard.bat or standard-test.bat is used when building.
 
 ; Test build configuration settings
-TEST_BUILD_ALL_ALLIES_JOINED:           equ 1
+TEST_BUILD_ALL_ALLIES_JOINED:           equ 1		; All allies join from the beginning (keep in mind this will affect story event flow, Sarah will be excluded to avoid "Astral missing in school basement" softlock)
 TEST_BUILD_ALLIES_START_LEVEL:          equ 40      ; Starting level for all characters if TEST_BUILD_ALL_ALLIES_JOINED is ON
 TEST_BUILD_INITIAL_SPECIAL_TURBO:       equ -1      ; -1 = toggle ON
 TEST_BUILD_INITIAL_DEBUG_MODE:          equ -1      ; -1 = toggle ON
@@ -115,24 +115,6 @@ TRADEABLE_ITEMS:                    equ 0       ; Allow trading items in battle 
 TRAP_DAMAGE_RAISES_WITH_DIFFICULTY: equ 0       ; Increase Laser/Burst Rock damage with difficulty.   Normal:100%  Hard:125%  Super: 150%  Ouch: 175%
 
 
-; Music features
-ENABLE_ALLY_SPECIAL_MUSIC:			equ 1		; Enable specific battlescene music to play for specific characters (behave like boss music, but doesn't play when using items), defined in 'allybattlescenemusics-standard.asm' file, has highest priority
-ENABLE_ALLY_SUPPORT_MUSIC:			equ 1		; Enable specific battlescene music to play when ally unit uses a spell/item on self or other ally units (e.g: healing and buff spells), doesn't apply if affected by Muddle
-ENABLE_ALLY_SPELL_MUSIC:			equ 1		; Enable specific battlescene music to play when ally unit uses a spell/item (restricted to damage and debuff spells if support music patch is also enabled)
-ENABLE_ENEMY_SUPPORT_MUSIC:			equ 1		; Enable specific battlescene music to play when enemy unit uses a spell/item on self or other enemy units (e.g: healing and buff spells), doesn't apply if affected by Muddle
-ENABLE_ENEMY_SPELL_MUSIC:			equ 1		; Enable specific battlescene music to play when enemy unit uses a spell/item (restricted to damage and debuff spells if support music patch is also enabled)
-ENABLE_UNINTERRUPTIBLE_MUSIC:		equ 0       ; Keep playing battle map music in battlescenes if the battle map music is present in 'uninterruptiblemusics-standard.asm' list
-
-
-; Support/spell patch music selector (note: this patch works best if you add new custom musics)
-ALLY_SUPPORT_MUSIC:   				equ MUSIC_CUSTOM_HEALING				; Requires ENABLE_ALLY_SUPPORT_MUSIC patch to be enabled
-ALLY_SUPPORT_PROMOTED_MUSIC:   		equ MUSIC_CUSTOM_HEALING				; Requires ENABLE_ALLY_SUPPORT_MUSIC patch to be enabled
-ALLY_SPELL_MUSIC:   				equ MUSIC_CUSTOM_LAST_AREA_ABRIDGED		; Requires ENABLE_ALLY_SPELL_MUSIC patch to be enabled
-ALLY_SPELL_PROMOTED_MUSIC:   		equ MUSIC_CUSTOM_LAST_AREA_ABRIDGED		; Requires ENABLE_ALLY_SPELL_MUSIC patch to be enabled
-ENEMY_SUPPORT_MUSIC:   				equ MUSIC_CUSTOM_ENEMY_HEALING			; Requires ENABLE_ENEMY_SUPPORT_MUSIC patch to be enabled
-ENEMY_SPELL_MUSIC:   				equ MUSIC_BOSS_ATTACK					; Requires ENABLE_ENEMY_SPELL_MUSIC patch to be enabled
-
-
 ; Special screens
 CHAPTER_SCREEN:                     equ 0       ; Patch implementation with template SFCD screen as applicable example.
 CONFIGURATION_SCREEN:               equ 1       ; Re-implements the configuration screen featured in Final Conflict.
@@ -180,8 +162,15 @@ SECOND_MEMBERS_LIST_PAGE: equ secondMembersListPage
 
 
 ; Sound driver
-MUSIC_RESUMING:                     equ 1       ; Enable music resuming (musics only resume in battlescenes if they are added to 'resumingbattlescenemusics-standard.asm' list)
+MUSIC_RESUMING:                     equ 1       ; 
+RESUME_BATTLEFIELD_MUSIC_ONLY:      equ 1       ; Do not resume battlescene music.
 RESUME_MUSIC_AFTER_JOIN_JINGLE:     equ 1       ; Resume background music after playing a "Joined the Force" jingle.
+
+resumeBattlesceneMusic = 1
+    if (RESUME_BATTLEFIELD_MUSIC_ONLY=1)
+resumeBattlesceneMusic = 0
+    endif
+RESUME_BATTLESCENE_MUSIC: equ resumeBattlesceneMusic
 
 
 ; Data expansions
@@ -189,10 +178,7 @@ EXPANDED_CLASSES:           equ 1       ; Enable support for 64 classes.
 EXPANDED_FORCE_MEMBERS:     equ 1       ; Enable all 32 force members supported by the engine instead of 30.
 EXPANDED_ITEMS_AND_SPELLS:  equ 1       ; Expand number of items from 127 to 255, and number of spells from 44 to 63. Forces build of a >= 4MB ROM with 32KB SRAM.
 EXPANDED_MAPSPRITES:        equ 1       ; Store mapsprite index in word-sized structure allowing 65k+ unique sprites.
-EXPANDED_MUSIC_BANKS:		equ 1		; Introduce 3 extra music banks in which you can fit new musics or relocate existing musics to make room in original banks 1/2.
-EXPANDED_PCM_BANKS:			equ 1		; Introduce 4 extra PCM banks in which you can fit new samples.
-EXPANDED_PCM_ENTRIES:		equ 60		; Set to 60 because Wizcube sound driver layout was changed to support extra sample entries (60, up from vanilla 17). This value is used by SF2 Music Cooker tool to know it may use more entries.
-EXPANDED_YM_FREQUENCIES:	equ 88		; Set to 88 because there is room for 4 extra YM frequencies in the sound driver (88, up from vanilla 84). This value is used by SF2 Music Cooker tool to know it may use more frequencies.
+
 
 ; Hardware expansions
 ROM_EXPANSION:              equ 1       ; 0 = 2 MB ROM, 1 = 4 MB ROM (default), 2 = 6 MB ROM
@@ -204,14 +190,6 @@ expandedRom = 0
     ;if (STANDARD_BUILD&(ROM_EXPANSION!EXPANDED_ITEMS_AND_SPELLS)=1)
     if (STANDARD_BUILD=1)
         if (ROM_EXPANSION!EXPANDED_ITEMS_AND_SPELLS>=1)
-expandedRom = 1
-        endif
-		; Also expand ROM is mandatory if using extra music banks
-        if (EXPANDED_MUSIC_BANKS>=1)
-expandedRom = 1
-        endif
-		; Also expand ROM is mandatory if using extra PCM banks
-        if (EXPANDED_PCM_BANKS>=1)
 expandedRom = 1
         endif
     endif
