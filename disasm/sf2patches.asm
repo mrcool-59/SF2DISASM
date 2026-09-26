@@ -3,7 +3,7 @@
 
 ; Initial configuration settings
 ALL_ALLIES_JOINED:          equ 0       ; All allies join from the beginning at level 1.
-INITIAL_SPECIAL_TURBO:      equ -1      ; -1 = toggle ON
+INITIAL_SPECIAL_TURBO:      equ 0       ; -1 = toggle ON
 INITIAL_DEBUG_MODE:         equ 0       ; -1 = toggle ON
 INITIAL_CONTROL_OPPONENT:   equ 0       ; -1 = toggle ON
 INITIAL_AUTO_BATTLE:        equ 0       ; -1 = toggle ON
