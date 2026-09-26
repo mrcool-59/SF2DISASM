@@ -698,11 +698,11 @@ Music_62_Channel_6:
 		waitL 60
 		mainLoopEnd
 Music_62_Channel_7:
-		psgInst 0
-		waitL 6
 		mainLoopStart
-		psgInst 6
+		psgInst 0
 		vibrato 00h
+		waitL 6
+		psgInst 6
 		setRelease 1
 		countedLoopStart 8
 		psgNoteL D5,4

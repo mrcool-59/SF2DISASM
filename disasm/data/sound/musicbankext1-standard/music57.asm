@@ -2977,10 +2977,10 @@ Music_57_Channel_6:
 		mainLoopEnd
 Music_57_Channel_7:
 		psgInst 0
+		vibrato 00h
 		waitL 13
 		mainLoopStart
 		psgInst 7
-		vibrato 00h
 		setRelease 1
 		psgNoteL Fs3,80
 		countedLoopStart 2

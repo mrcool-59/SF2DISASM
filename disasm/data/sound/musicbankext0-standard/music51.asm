@@ -609,9 +609,9 @@ Music_51_Channel_6:
 		mainLoopEnd
 Music_51_Channel_7:
 		psgInst 0
+		vibrato 00h
 		waitL 8
 		psgInst 4
-		vibrato 00h
 		setRelease 0
 		psgNoteL G4,6
 		psgNote  C5
