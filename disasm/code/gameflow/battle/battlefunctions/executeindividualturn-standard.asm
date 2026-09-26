@@ -377,7 +377,7 @@ LoadBattlesceneMusicIndex:
 
                 move.b  #MUSIC_ATTACK,d3
                 jsr     GetClassType
-                beq.s   @LoadIndex
+                beq     @LoadIndex
                 move.b  #MUSIC_PROMOTED_ATTACK,d3
                 bra.s   @LoadIndex
 
