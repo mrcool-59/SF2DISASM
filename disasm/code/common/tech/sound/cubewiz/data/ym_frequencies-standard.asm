@@ -72,7 +72,7 @@ YM_FREQUENCIES:
     dw 33CEh
     dw 3409h
     dw 3446h
-    dw 3487h
+    dw 03A4h
     dw 3A66h
     dw 3A8Ah
     dw 3AB1h

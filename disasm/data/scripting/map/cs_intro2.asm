@@ -3,6 +3,7 @@
 ; 0x48380..0x48540 : Intro cutscene 2
 IntroCutscene2: textCursor 4202
                 mapLoad MAP_GRANSEAL_CASTLE,7,2
+				playSound MUSIC_INTRO
                 loadMapEntities ce_48510
                 setActscriptWait ALLY_BOWIE,eas_Init
                 cloneEntity 132,131

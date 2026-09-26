@@ -22,7 +22,7 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
                 
 @Right:         btst    #INPUT_BIT_RIGHT,((PLAYER_1_INPUT-$1000000)).w
                 beq.s   @Left
-                cmpi.w  #91,d7      ; check we're not trying to go beyond final track
+                cmpi.w  #95,d7      ; check we're not trying to go beyond final track
                 bge.s   @First      ; if we are, go to first track (circular navigation)
                 addq.w  #1,d7
                 bra.s   @UpdateTrack
@@ -37,7 +37,7 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
 @First:         move.b  #0,d7       ; go to first track
                 bra.s   @UpdateTrack
 
-@Last:          move.b  #91,d7      ; go to last track
+@Last:          move.b  #95,d7      ; go to last track
                 bra.s   @UpdateTrack
 
 @A:             btst    #INPUT_BIT_A,((PLAYER_1_INPUT-$1000000)).w
@@ -67,6 +67,13 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
 ; ---------------------------------------------------------------------------
 
 table_Soundtracks:
+                dc.b MUSIC_JOIN
+                dc.b MUSIC_ITEM
+                dc.b MUSIC_CASTLE
+                dc.b MUSIC_SHRINE
+                dc.b MUSIC_CUSTOM_ENEMY_HEALING
+                dc.b MUSIC_CUSTOM_HEALING
+                dc.b MUSIC_CUSTOM_LAST_AREA_ABRIDGED
                 dc.b MUSIC_ENEMY_ATTACK
                 dc.b MUSIC_ATTACK
                 dc.b MUSIC_BATTLE_THEME_3
@@ -74,20 +81,19 @@ table_Soundtracks:
                 dc.b MUSIC_TOWN
                 dc.b MUSIC_ZEON_ATTACK
                 dc.b MUSIC_MAIN_THEME
-                dc.b MUSIC_SHRINE
-                dc.b MUSIC_INTRO
+                dc.b MUSIC_MITULA
+                dc.b MUSIC_CUSTOM_VAPOR_TRAIL
                 dc.b MUSIC_PROMOTED_ATTACK
                 dc.b MUSIC_BOSS_ATTACK
+                dc.b MUSIC_INTRO
                 dc.b MUSIC_WITCH
                 dc.b MUSIC_SUSPEND
                 dc.b MUSIC_SAD_THEME_2
                 dc.b MUSIC_ELVEN_TOWN
-                dc.b MUSIC_MITULA
                 dc.b MUSIC_SAD_THEME_3
                 dc.b MUSIC_SAD_THEME_1
                 dc.b MUSIC_PIANO_THEME
                 dc.b MUSIC_CORRUPTED_SAVE
-                dc.b MUSIC_JOIN
                 dc.b MUSIC_SAD_JOIN
                 dc.b MUSIC_SAVE
                 dc.b MUSIC_CURE
@@ -95,11 +101,9 @@ table_Soundtracks:
                 dc.b MUSIC_REVIVE
                 dc.b MUSIC_PROMOTION
                 dc.b MUSIC_CURSED_ITEM
-                dc.b MUSIC_ITEM
                 dc.b MUSIC_TITLE
                 dc.b MUSIC_FINAL_BATTLE
                 dc.b MUSIC_MITHRIL_DIGGERS
-                dc.b MUSIC_CASTLE
                 dc.b MUSIC_HEADQUARTERS
                 dc.b MUSIC_MITULA_SHRINE
                 dc.b MUSIC_ENDING
@@ -173,17 +177,17 @@ table_SoundtrackTitles:
                 defineName "Footsteps of Ruin"
                 defineName ""
                 defineName ""
-                defineName ""
+                defineName "Lurking in the Darkness"
                 defineName "Witch in the Forest of Illusion"
                 defineName "Midnight in the Forest of Illusion"
                 defineName "Time of Trials"
                 defineName "Fairy Woods"
-                defineName "Dreaming Elis"
+                defineName ""
                 defineName "Reminiscence"
                 defineName "Heartbreak"
                 defineName "Twilight of the Warriors"
                 defineName "Oh, Damnit"
-                defineName "Joined the Party"
+                defineName "(Dial Q o Mawase!) Jingle / Joined the Party"
                 defineName "Sadly Joined the Party"
                 defineName "Save"
                 defineName "Antidote"
@@ -191,7 +195,7 @@ table_SoundtrackTitles:
                 defineName "Revival"
                 defineName "Promotion"
                 defineName "You've Been Cursed!"
-                defineName "It's a Treasure Chest!"
+                defineName "(Dial Q o Mawase!) Jingle 2 / It's a Treasure Chest!"
                 defineName "Shining Force II"
                 defineName ""
                 defineName ""
@@ -202,7 +206,7 @@ table_SoundtrackTitles:
                 defineName ""
                 defineName "The King of Devils has Appeared"
                 defineName "Dwarf Dwarf Dwarf"
-                defineName "The Bloodline of Ground Seal"
+                defineName ""
                 defineName "The Caravan Proceeds"
                 defineName "Ancient Wings"
                 defineName "Chosen Heroes"
@@ -214,11 +218,11 @@ table_SoundtrackTitles:
                 defineName ""
                 defineName ""
                 defineName ""
-                defineName ""
-                defineName ""
-                defineName ""
-                defineName ""
-                defineName ""
+                defineName "Military / The Bloodline of Ground Seal"
+                defineName "Mysterious / A Message from Ancient Times"
+                defineName "Enemy Healing"
+                defineName "Healing"
+                defineName "Last Area (Abridged)"
                 defineName "Battlescene (Enemy) / Dark Force"
                 defineName "Battlescene / The Young Men of Granseal"
                 defineName "Intense Battle / The Call of a Long Journey"
@@ -226,8 +230,8 @@ table_SoundtrackTitles:
                 defineName "Obviously Town Theme / A Peaceful Moment"
                 defineName "Final (Robotnik BM) / Roar of the King of Devils"
                 defineName "Galaxy Force II / Legend of Light"
-                defineName "Shrine (Abridged) / A Message from Ancient Times"
-                defineName "Vapor Trail / Lurking in the Darkness"
+                defineName "Shrine (Abridged) / Dreaming Elis"
+                defineName "Vapor Trail"
                 defineName ""
                 defineName "SFX: MENU_SWITCH"
                 defineName "SFX: MENU_SELECTION"

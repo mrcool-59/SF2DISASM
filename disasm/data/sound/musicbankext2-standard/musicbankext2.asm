@@ -11,6 +11,6 @@
 		dw Music_63
 		dw Music_64
 		include "music61.asm"	; [CUSTOM] Galaxy Force II / Legend of Light
-		include "music62.asm"	; [CUSTOM] Shrine (Abridged) / A Message from Ancient Times
-		include "music63.asm"	; [CUSTOM] Vapor Trail / Lurking in the Darkness
+		include "music62.asm"	; [CUSTOM] Shrine (Abridged) / Dreaming Elis
+		include "music63.asm"	; [CUSTOM] Vapor Trail
 		include "music64.asm"

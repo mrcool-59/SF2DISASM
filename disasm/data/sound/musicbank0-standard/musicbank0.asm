@@ -14,12 +14,12 @@
 		dw Music_6
 		dw Music_32
 		dw Music_32
-		dw Music_32
+		dw Music_9
 		dw Music_10
 		dw Music_11
 		dw Music_12
 		dw Music_13
-		dw Music_14
+		dw Music_32
 		dw Music_15
 		dw Music_16
 		dw Music_17
@@ -40,6 +40,7 @@
 		dw Music_32
 		include "music03.asm"
 		include "music06.asm"
+		include "music09.asm"
 		include "music10.asm"
 		include "music11.asm"
 		include "music12.asm"
@@ -48,7 +49,7 @@
 		include "music16.asm"
 		include "music17.asm"
 		include "music18.asm"
-		include "music19.asm"
+		include "music19.asm"	; [CUSTOM] (Dial Q o Mawase!) Jingle / Joined the Party
 		include "music20.asm"
 		include "music21.asm"
 		include "music22.asm"
@@ -56,6 +57,6 @@
 		include "music24.asm"
 		include "music25.asm"
 		include "music26.asm"
-		include "music27.asm"
+		include "music27.asm"	; [CUSTOM] (Dial Q o Mawase!) Jingle 2 / It's a Treasure Chest!
 		include "music28.asm"
 		include "music32.asm"
