@@ -45,8 +45,8 @@ Music_19_Channel_0:
 		noteL E6,12
 		noteL F6,6
 		vibrato 2Ah
-		noteL G6,100
-		waitL 59
+		setRelease 60
+		noteL G6,159
 		channel_end
 Music_19_Channel_1:
 		stereo 80h
@@ -76,8 +76,8 @@ Music_19_Channel_1:
 		noteL E5,12
 		noteL F5,6
 		vibrato 2Ah
-		noteL G5,100
-		waitL 59
+		setRelease 60
+		noteL G5,159
 		channel_end
 Music_19_Channel_2:
 		inst 130
@@ -109,9 +109,8 @@ Music_19_Channel_2:
 		setRelease 4
 		noteL C3,6
 		vibrato 2Ah
-		setRelease 1
-		noteL C4,100
-		waitL 59
+		setRelease 60
+		noteL C4,159
 		channel_end
 Music_19_Channel_3:
 		stereo 40h
@@ -136,8 +135,8 @@ Music_19_Channel_3:
 		noteL D5,18
 		note  E5
 		vibrato 2Ah
-		noteL E5,100
-		waitL 59
+		setRelease 60
+		noteL E5,159
 		channel_end
 Music_19_Channel_4:
 		waitL 14
@@ -167,8 +166,8 @@ Music_19_Channel_4:
 		noteL E6,12
 		noteL F6,6
 		vibrato 2Ah
-		noteL G6,100
-		waitL 45
+		setRelease 46
+		noteL G6,145
 		channel_end
 Music_19_Channel_5:
 		setRelease 0
@@ -191,8 +190,9 @@ Music_19_Channel_5:
 		sampleL 49,18
 		sampleL 50,12
 		sampleL 49,6
-		sampleL 49,30
-		waitL 129
+		setRelease 127
+		sampleL 49,157
+		waitL 2
 		channel_end
 Music_19_Channel_6:
 		psgInst 11

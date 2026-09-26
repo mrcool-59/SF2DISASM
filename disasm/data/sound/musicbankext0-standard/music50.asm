@@ -1524,8 +1524,8 @@ Music_50_Channel_6:
 		psgNote  A4
 		psgNote  A4
 		psgInst 0
-		waitL 255
-		waitL 137
+		waitL 168
+		waitL 224
 		psgInst 11
 		countedLoopStart 1
 		psgNoteL A5,14

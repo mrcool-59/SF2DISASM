@@ -32,8 +32,8 @@ Music_27_Channel_0:
 		note  Cs6
 		noteL D6,12
 		vibrato 2Ah
-		noteL E6,48
-		waitL 49
+		setRelease 50
+		noteL E6,97
 		channel_end
 Music_27_Channel_1:
 		stereo 40h
@@ -50,8 +50,8 @@ Music_27_Channel_1:
 		note  E5
 		noteL Fs5,12
 		vibrato 2Ah
-		noteL A5,48
-		waitL 49
+		setRelease 50
+		noteL A5,97
 		channel_end
 Music_27_Channel_2:
 		inst 132
@@ -70,9 +70,8 @@ Music_27_Channel_2:
 		setRelease 9
 		noteL Gs2,12
 		vibrato 2Ah
-		setRelease 1
-		noteL A2,48
-		waitL 49
+		setRelease 50
+		noteL A2,97
 		channel_end
 Music_27_Channel_3:
 		stereo 80h
@@ -83,8 +82,8 @@ Music_27_Channel_3:
 		noteL Gs4,48
 		vibrato 00h
 		note  B4
-		note  Cs5
-		waitL 49
+		setRelease 50
+		noteL Cs5,97
 		channel_end
 Music_27_Channel_4:
 		waitL 15
@@ -101,8 +100,8 @@ Music_27_Channel_4:
 		note  Cs6
 		noteL D6,12
 		vibrato 2Ah
-		noteL E6,48
-		waitL 34
+		setRelease 35
+		noteL E6,82
 		channel_end
 Music_27_Channel_5:
 		setRelease 0
@@ -114,8 +113,8 @@ Music_27_Channel_5:
 		sample  49
 		sample  50
 		sampleL 49,48
-		sample  49
-		waitL 1
+		setRelease 1
+		sampleL 49,49
 		channel_end
 Music_27_Channel_9:
 		channel_end
