@@ -32,7 +32,7 @@ rjt_SpellEffects:
                 dc.w spellEffect_Muddle-rjt_SpellEffects ; MUDDLE
                 dc.w spellEffect_Desoul-rjt_SpellEffects ; DESOUL
                 dc.w spellEffect_Sleep-rjt_SpellEffects ; SLEEP
-                dc.w spellEffect_None-rjt_SpellEffects ; EGRESS
+                dc.w spellEffect_Bolt-rjt_SpellEffects ; EGRESS
                 dc.w spellEffect_Blaze-rjt_SpellEffects ; BLAZE
                 dc.w spellEffect_Freeze-rjt_SpellEffects ; FREEZE
                 dc.w spellEffect_Bolt-rjt_SpellEffects ; BOLT

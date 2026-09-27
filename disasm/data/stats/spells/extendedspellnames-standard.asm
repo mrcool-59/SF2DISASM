@@ -13,7 +13,7 @@ table_SpellNames:
                 spellName "Muddle"
                 spellName "Desoul"
                 spellName "Sleep"
-                spellName "Egress"
+                spellName "Skip", 13, "Battle"
                 spellName "Blaze"
                 spellName "Freeze"
                 spellName "Bolt"
