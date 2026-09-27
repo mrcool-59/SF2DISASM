@@ -14,7 +14,7 @@ table_EgressItems:
 ;
 table_EgressSpells:
                 
-                dc.b SPELL_EGRESS
+                ;dc.b SPELL_EGRESS
                 
                 tableEnd.b
 
