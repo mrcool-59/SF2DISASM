@@ -38,7 +38,8 @@ PlayIntroOrEndCutscene:
                 jsr     (InitializeExplorationSpritesFrameCounter).w    
                 move.w  (sp)+,d0
                 bne.s   byte_47F72
-                sndCom  MUSIC_INTRO
+                sndCom  MUSIC_STOP
+                sndCom  MUSIC_CUSTOM_VAPOR_TRAIL
                 script  IntroCutscene1
                 script  IntroCutscene2
                 script  IntroCutscene3

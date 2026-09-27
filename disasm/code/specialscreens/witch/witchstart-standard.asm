@@ -141,7 +141,7 @@ rjt_WitchMenuActions:dc.w witchMenuAction_New-rjt_WitchMenuActions
 
 witchMenuAction_New:
                 
-                 
+
                 txt     222             ; "What should I call you?{W2}"
                 move.b  (SAVE_FLAGS).l,d2
                 andi.w  #3,d2
@@ -160,6 +160,7 @@ witchMenuAction_New:
                 tst.w   d0
                 bmi.s   @DisplayText
                 
+                sndCom  MUSIC_CUSTOM_CHOOSE_A_PATH
                 subq.w  #1,d0
                 setCurrentSaveSlot d0
                 jsr     NewGame
@@ -205,6 +206,7 @@ witchMenuAction_New:
                 setFlg  79              ; Difficulty bit 1
                 
 @loc_15:        addi.w  #233,d0 ; HARDCODED text index for difficulty choice reactions
+				sndCom  SOUND_COMMAND_FADE_OUT
                 jsr     (DisplayText).w
                 txt     224             ; "Now, good luck!{N}You have no time to waste!{W1}"
                 

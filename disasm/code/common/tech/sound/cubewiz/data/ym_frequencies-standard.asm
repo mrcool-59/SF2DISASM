@@ -75,18 +75,18 @@ YM_FREQUENCIES:
     dw 03A4h
     dw 3A66h
     dw 3A8Ah
-    dw 3AB1h
+    dw 0497h
     dw 3ADAh
     dw 3B06h
     dw 3B33h
-    dw 3B64h
-    dw 3B98h
-    dw 3BCEh
-    dw 3C09h
+    dw 0455h
+    dw 04DDh
+    dw 0417h
+    dw 03DCh
     dw 3C46h
-    dw 3C87h
+    dw 0370h
     dw 3CCBh
-    dw 0000h
-    dw 0000h
-    dw 0000h
+    dw 033Fh
+    dw 02E4h
+    dw 0293h
     dw 0000h

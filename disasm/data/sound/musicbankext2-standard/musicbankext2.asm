@@ -13,4 +13,4 @@
 		include "music61.asm"	; [CUSTOM] Galaxy Force II / Legend of Light
 		include "music62.asm"	; [CUSTOM] Shrine (Abridged) / Dreaming Elis
 		include "music63.asm"	; [CUSTOM] Vapor Trail
-		include "music64.asm"
+		include "music64.asm"	; [CUSTOM] Choose a Path

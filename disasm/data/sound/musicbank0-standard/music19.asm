@@ -19,7 +19,7 @@ Music_19:		; [CUSTOM] (Dial Q o Mawase!) Jingle
 		dw Music_19_Channel_9
 
 Music_19_Channel_0:
-		inst 129
+		inst 135
 		vol 11
 		vibrato 00h
 		setRelease 1
@@ -50,7 +50,7 @@ Music_19_Channel_0:
 		channel_end
 Music_19_Channel_1:
 		stereo 80h
-		inst 129
+		inst 135
 		vol 10
 		vibrato 00h
 		setRelease 1
@@ -80,7 +80,7 @@ Music_19_Channel_1:
 		noteL G5,159
 		channel_end
 Music_19_Channel_2:
-		inst 130
+		inst 136
 		vol 12
 		vibrato 00h
 		setRelease 1
@@ -114,7 +114,7 @@ Music_19_Channel_2:
 		channel_end
 Music_19_Channel_3:
 		stereo 40h
-		inst 129
+		inst 135
 		vol 11
 		vibrato 00h
 		setRelease 1
@@ -140,7 +140,7 @@ Music_19_Channel_3:
 		channel_end
 Music_19_Channel_4:
 		waitL 14
-		inst 129
+		inst 135
 		vol 9
 		vibrato 00h
 		setRelease 1

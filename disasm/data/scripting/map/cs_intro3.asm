@@ -3,6 +3,7 @@
 ; 0x48540..0x48A78 : Intro cutscene 3
 IntroCutscene3: textCursor 4215
                 mapLoad MAP_FORCE_SWORD_SHRINE,21,1
+				playSound MUSIC_STOP
 				playSound MUSIC_CUSTOM_VAPOR_TRAIL
                 loadMapEntities ce_48A50
                 setActscriptWait ALLY_BOWIE,eas_Init
@@ -218,8 +219,10 @@ IntroCutscene3: textCursor 4215
                 setActscriptWait ALLY_SLADE,eas_Jump
                 setActscript ALLY_SLADE,eas_Jump
                 setQuake 1
+				playSound SFX_INTRO_LIGHTNING
+				csWait 20
 				playSound MUSIC_INTRO
-                csWait 40
+				csWait 20
                 setQuake 0
                 csWait 60
                 setQuake 2

@@ -15,7 +15,6 @@ IntroCutscene1: textCursor 4186
                 setActscript 130,eas_Transparent
                 fadeInFromBlackHalf
                 csWait 30
-				playSound MUSIC_CUSTOM_VAPOR_TRAIL
                 setPos ALLY_SLADE,7,15,UP
                 setPos 128,7,16,UP
                 setPos 129,7,17,UP

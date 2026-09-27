@@ -19,7 +19,7 @@ Music_27:		; [CUSTOM] (Dial Q o Mawase!) Jingle 2
 		dw Music_27_Channel_9
 
 Music_27_Channel_0:
-		inst 131
+		inst 137
 		vol 13
 		vibrato 2Ah
 		setRelease 1
@@ -37,7 +37,7 @@ Music_27_Channel_0:
 		channel_end
 Music_27_Channel_1:
 		stereo 40h
-		inst 131
+		inst 137
 		vol 12
 		vibrato 2Ah
 		setRelease 1
@@ -54,7 +54,7 @@ Music_27_Channel_1:
 		noteL A5,97
 		channel_end
 Music_27_Channel_2:
-		inst 132
+		inst 138
 		vol 13
 		vibrato 2Ah
 		setRelease 1
@@ -75,7 +75,7 @@ Music_27_Channel_2:
 		channel_end
 Music_27_Channel_3:
 		stereo 80h
-		inst 131
+		inst 137
 		vol 12
 		vibrato 2Ah
 		setRelease 1
@@ -87,7 +87,7 @@ Music_27_Channel_3:
 		channel_end
 Music_27_Channel_4:
 		waitL 15
-		inst 131
+		inst 137
 		vol 9
 		vibrato 2Ah
 		setRelease 1
