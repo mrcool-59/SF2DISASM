@@ -9,7 +9,7 @@ INITIAL_CONTROL_OPPONENT:   equ 0       ; -1 = toggle ON
 INITIAL_AUTO_BATTLE:        equ 0       ; -1 = toggle ON
 INITIAL_CONFIGURATION_MODE: equ 0       ; -1 = toggle ON
 INITIAL_GAME_COMPLETED:     equ 0
-INITIAL_MESSAGE_SPEED:      equ 3       ; [0, 3]
+INITIAL_MESSAGE_SPEED:      equ 2       ; [0, 3]
 INITIAL_NO_BATTLE_MESSAGES: equ 0       ; 1 = no battle messages display ON
 
 
@@ -74,7 +74,7 @@ FIX_USABLE_ITEM_VALIDATION:          equ 1   ; Compares an item's Use Spell inde
 
 
 ; Quality of life features
-AUTO_CONFIGURATION_MODE:            equ 1       ; Hold Start when leaving the witch screen to execute the Configuration sequence without having to enter the input sequence.
+AUTO_CONFIGURATION_MODE:            equ 0       ; Hold Start when leaving the witch screen to execute the Configuration sequence without having to enter the input sequence.
 AUTO_DEBUG_MODE:                    equ 0       ; Hold Start when starting the game to enable debug mode and execute the Configuration sequence without having to enter the input sequence.
 CAPITALIZED_CHARACTER_NAMES:        equ 1       ; Capitalize allies and enemies names, as well as change "JAR" and the Chess Army's "DARK BISHOP" to "Jaro" and "Bishop".
 CARAVAN_IN_TOWER:                   equ 1       ; Add access to Caravan before tower climb battle.
@@ -82,8 +82,8 @@ CUTSCENE_PROTECTION:                equ 1       ; Prevent game from freezing if 
 LEADER_CAN_LEAVE_BATTLE_PARTY:      equ 0       ; Player is required to leave at least one member in the party. Message #20 should be edited to reflect this new rule.
 MINIATURES_SHOP:                    equ 1       ; Place a shopworker on the desktop and floor of the Miniatures Room.
 MODIFY_MOV_STAT_ON_PROMOTION:       equ 1       ; Modify a character's MOV stat when promoting based on the difference between the current and the new class data instead of overwriting it (and losing increases from the Running Pimento in the process.)
-NO_AI_JARO:                         equ 0       ; 
-NO_AI_PETER:                        equ 0       ; 
+NO_AI_JARO:                         equ 1       ; 
+NO_AI_PETER:                        equ 1       ; 
 NO_DARKNESS_IN_CAVES:               equ 0       ; The darkness gimmick in caves is disabled.
 NO_DEFEAT_ON_LEADER_DEATH:          equ 0       ; Death of the Force Leader character does not cause defeat.
 NO_RANDOM_BATTLES:                  equ 1       ; 0 = Battles    1 = No Battles
@@ -93,7 +93,7 @@ SKIP_SEGA_LOGO:                     equ 0
 SKIP_GAME_INTRO:                    equ 0
 SKIP_TITLE_SCREEN:                  equ 0
 SKIP_WITCH_DIALOGUE:                equ 0
-UNLOCK_RENAME_CHARACTERS:           equ 1       ; Hold Start while confirming the leader's name to rename all characters when starting a new game.
+UNLOCK_RENAME_CHARACTERS:           equ 0       ; Hold Start while confirming the leader's name to rename all characters when starting a new game.
 UNLOCK_SOUND_TEST:                  equ 1       ; Hold Up while entering Configuration Mode; there is no need to have set Game Completed save flag.
 
 
@@ -105,9 +105,9 @@ EXPANDED_RANGES:                    equ 1       ; Weapons/spells can have ranges
 LEARN_SPELL_AT_PROMOTION:           equ 0       ; Allow learning 1 spell immediately upon promotion.
 MUSCLE_MAGIC:                       equ 0       ; 0 = OFF, 1-256 = spell power increased by (muscleMagicStat * n) / 256
 MUSCLE_MAGIC_STAT:                  equ 5       ; 0 = Max HP, 1 = Current HP, 2 = Max MP, 3 = Current MP, 4 = Base ATT, 5 = Current ATT, 6 = Base DEF, 7 = Current DEF, 8 = Base AGI, 9 = Current AGI
-ORIGINAL_TAROS_INVULNERABILITY:     equ 0       ; 0 = OFF, 1 = Japanese version behavior (i.e, Bowie must continually attack to keep invulnerability off), 2 = SFCD behavior (invulnerability stays off for the remainder of the battle)
-PER_LEVEL_CHURCH_COST:              equ 0       ; Raise/Cure cost based on ally level (double cost per promo level.)
-PERCENT_POISON_DAMAGE:              equ 0       ; 1-100 = n% of max HP
+ORIGINAL_TAROS_INVULNERABILITY:     equ 2       ; 0 = OFF, 1 = Japanese version behavior (i.e, Bowie must continually attack to keep invulnerability off), 2 = SFCD behavior (invulnerability stays off for the remainder of the battle)
+PER_LEVEL_CHURCH_COST:              equ 1       ; Raise/Cure cost based on ally level (double cost per promo level.)
+PERCENT_POISON_DAMAGE:              equ 17      ; 1-100 = n% of max HP
 PLAYER_DEFEAT_IS_GAME_OVER:         equ 0       ; On player defeat, rather than halve the gold and return to town, reset the game.
 SEND_DESTROYED_ITEMS_TO_DEALS:      equ 1       ; Add item that was destroyed upon usage to shop deals if rare and if not a consumable.
 SEND_DROPPED_ITEMS_TO_CARAVAN:      equ 1       ; If character inventory is full, add dropped item to the Caravan instead of shop deals, regardless of rarity. If the Caravan itself is full, then drops follow the usual routine: go to deals if rare, or become lost completely if not rare.
