@@ -14,7 +14,7 @@ table_ClassTypes:
                 classType BASE          ; 6: BDMN
                 classType BASE          ; 7: WFMN
                 classType BASE          ; 8: RNGR
-                classType BASE          ; 9: PHNK
+                classType BASE          ; 9: BRDK
                 classType BASE          ; 10: THIF
                 classType BASE          ; 11: TORT
                 classType PROMO         ; 12: HERO
@@ -31,7 +31,7 @@ table_ClassTypes:
                 classType PROMO         ; 23: BDBT
                 classType PROMO         ; 24: WFBR
                 classType PROMO         ; 25: BWNT
-                classType PROMO         ; 26: PHNX
+                classType PROMO         ; 26: BRDR
                 classType PROMO         ; 27: NINJ
                 classType PROMO         ; 28: MNST
                 classType PROMO         ; 29: RBT

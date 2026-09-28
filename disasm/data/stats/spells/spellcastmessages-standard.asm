@@ -14,7 +14,8 @@ table_SpellcastMessagesForIndexes:
                 dc.w SPELL_APOLLO, MESSAGE_SPELLCAST_SUMMONED               ; {NAME} summoned{N}{SPELL}!{D1}
                 dc.w SPELL_NEPTUN, MESSAGE_SPELLCAST_SUMMONED               ; {NAME} summoned{N}{SPELL}!{D1}
                 dc.w SPELL_ATLAS, MESSAGE_SPELLCAST_SUMMONED                ; {NAME} summoned{N}{SPELL}!{D1}
-                
+                dc.w SPELL_DRAGON_BREATH, MESSAGE_SPELLCAST_BELCHED_OUT_FLAMES       ; {NAME} belched{N}out flames!
+				
                 tableEnd
 
 

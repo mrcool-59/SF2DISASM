@@ -47,7 +47,7 @@ table_SpellNames:
                 spellName "SHINE"
                 spellName "ODDEYE"
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
-                spellName "spell44"
+                spellName "BREATH"
                 spellName "spell45"
                 spellName "spell46"
                 spellName "spell47"

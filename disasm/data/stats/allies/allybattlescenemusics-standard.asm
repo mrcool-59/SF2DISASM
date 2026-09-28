@@ -3,14 +3,14 @@
 ; Per-character music override has the highest priority if you also use support/spell music patches.
 
 table_AllyBattlesceneMusics_Unpromoted:
-	dc.b	MUSIC_TOWN	; Ally 0 - BOWIE
+	dc.b	0	; Ally 0 - BOWIE
 	dc.b	0	; Ally 1 - SARAH
 	dc.b	0	; Ally 2 - CHESTER
 	dc.b	0	; Ally 3 - JAHA
 	dc.b	0	; Ally 4 - KAZIN
 	dc.b	0	; Ally 5 - SLADE
 	dc.b	0	; Ally 6 - KIWI
-	dc.b	MUSIC_BOSS_ATTACK	; Ally 7 - PETER	(I'm sure you understand the joke here ;))
+	dc.b	0	; Ally 7 - PETER (Ixen)		; TODO = Ixen deserves his own music
 	dc.b	0	; Ally 8 - MAY
 	dc.b	0	; Ally 9 - GERHALT
 	dc.b	0	; Ally 10 - LUKE
@@ -37,14 +37,14 @@ table_AllyBattlesceneMusics_Unpromoted:
 	dc.b	0	; Ally 31
 
 table_AllyBattlesceneMusics_Promoted:
-	dc.b	MUSIC_CASTLE	; Ally 0 - BOWIE
+	dc.b	0	; Ally 0 - BOWIE
 	dc.b	0	; Ally 1 - SARAH
 	dc.b	0	; Ally 2 - CHESTER
 	dc.b	0	; Ally 3 - JAHA
 	dc.b	0	; Ally 4 - KAZIN
 	dc.b	0	; Ally 5 - SLADE
 	dc.b	0	; Ally 6 - KIWI
-	dc.b	MUSIC_BOSS_ATTACK	; Ally 7 - PETER
+	dc.b	0	; Ally 7 - PETER (Ixen)		; TODO = Ixen deserves his own music
 	dc.b	0	; Ally 8 - MAY
 	dc.b	0	; Ally 9 - GERHALT
 	dc.b	0	; Ally 10 - LUKE

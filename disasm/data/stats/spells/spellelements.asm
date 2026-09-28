@@ -50,7 +50,7 @@ table_SpellElements:
                 spellElement NEUTRAL    ; 42: SHINE
                 spellElement LIGHTNING  ; 43: ODDEYE
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
-                spellElement NEUTRAL    ; 44: 
+                spellElement FIRE    	; 44: DRAGON_BREATH
                 spellElement NEUTRAL    ; 45: 
                 spellElement NEUTRAL    ; 46: 
                 spellElement NEUTRAL    ; 47: 

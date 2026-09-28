@@ -2031,6 +2031,7 @@ SPELL_AQUA: equ $28 ; Bubble/Aqua Breath
 SPELL_KIWI: equ $29 ; Kiwi's Flame Breath
 SPELL_SHINE: equ $2A ; map wide MP restore (Right of Hope)
 SPELL_ODDEYE: equ $2B ; Odd-eye beam!
+SPELL_DRAGON_BREATH: equ $2C ; Ixen Dragon Breath
 SPELL_NOTHING: equ $3F
 SPELL_LV2: equ $40
 SPELL_LV3: equ $80

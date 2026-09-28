@@ -50,10 +50,10 @@ table_AllyDialogueProperties:
                 allyPortraitAndSfx KIWI_PROMO, DIALOG_BLEEP_7
                 allyPortraitAndSfx KIWI_PROMO, DIALOG_BLEEP_7
                 
-; 7: Peter
-                allyPortraitAndSfx PETER_BASE,  DIALOG_BLEEP_4
-                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_5
-                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_5
+; 7: Peter (Ixen)
+                allyPortraitAndSfx PETER_BASE,  DIALOG_BLEEP_5
+                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_7
+                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_7
                 
 ; 8: May
                 allyPortraitAndSfx MAY, DIALOG_BLEEP_3
