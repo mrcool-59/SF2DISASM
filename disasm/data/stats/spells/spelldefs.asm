@@ -737,38 +737,38 @@ table_SpellDefinitions:
                 
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
                 
-                entry      44
-                mpCost     0
-                animation  NONE
+				entry      DRAGON_BREATH
+                mpCost     3
+                animation  FLAME_BREATH
                 properties TYPE_ATTACK
-                range      0, 0
+                range      1, 1
                 radius     0
-                power      0
+                power      15
                 
-                entry      45
-                mpCost     0
-                animation  NONE
+                entry      DRAGON_BREATH|LV2
+                mpCost     5
+                animation  FLAME_BREATH|VARIATION2
                 properties TYPE_ATTACK
-                range      0, 0
+                range      1, 2
                 radius     0
-                power      0
+                power      20
                 
-                entry      46
-                mpCost     0
-                animation  NONE
+                entry      DRAGON_BREATH|LV3
+                mpCost     9
+                animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
-                range      0, 0
-                radius     0
-                power      0
-                
-                entry      47
-                mpCost     0
-                animation  NONE
+                range      1, 2
+                radius     1
+                power      30
+				
+                entry      DRAGON_BREATH|LV4
+                mpCost     13
+                animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
-                range      0, 0
-                radius     0
-                power      0
-                
+                range      1, 2
+                radius     1
+                power      45
+				
                 entry      48
                 mpCost     0
                 animation  NONE

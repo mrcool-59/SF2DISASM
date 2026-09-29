@@ -67,7 +67,7 @@ rjt_SpellEffects:
                 dc.w spellEffect_FairyTear-rjt_SpellEffects ; SHINE
                 dc.w spellEffect_Bolt-rjt_SpellEffects ; ODDEYE
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell44
+                dc.w spellEffect_FlameBreath-rjt_SpellEffects       ; DRAGON_BREATH
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell45
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell46
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell47

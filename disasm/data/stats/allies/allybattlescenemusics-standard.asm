@@ -10,7 +10,7 @@ table_AllyBattlesceneMusics_Unpromoted:
 	dc.b	0	; Ally 4 - KAZIN
 	dc.b	MUSIC_CUSTOM_VAPOR_TRAIL	; Ally 5 - SLADE
 	dc.b	0	; Ally 6 - KIWI
-	dc.b	0	; Ally 7 - PETER
+	dc.b	MUSIC_CUSTOM_LAST_AREA_ABRIDGED		; Ally 7 - PETER (Ixen)		; TODO = Ixen deserves his own music
 	dc.b	0	; Ally 8 - MAY
 	dc.b	0	; Ally 9 - GERHALT
 	dc.b	0	; Ally 10 - LUKE
@@ -44,7 +44,7 @@ table_AllyBattlesceneMusics_Promoted:
 	dc.b	0	; Ally 4 - KAZIN
 	dc.b	MUSIC_CUSTOM_VAPOR_TRAIL	; Ally 5 - SLADE
 	dc.b	0	; Ally 6 - KIWI
-	dc.b	0	; Ally 7 - PETER
+	dc.b	MUSIC_CUSTOM_LAST_AREA_ABRIDGED		; Ally 7 - PETER (Ixen)		; TODO = Ixen deserves his own music
 	dc.b	0	; Ally 8 - MAY
 	dc.b	0	; Ally 9 - GERHALT
 	dc.b	0	; Ally 10 - LUKE

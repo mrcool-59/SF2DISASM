@@ -52,9 +52,9 @@ table_ClassDefinitions:
                 moveType   CENTAUR_ARCHER
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 
-                mov 6                   ; 9: PHNK
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
-                moveType   HOVERING
+                mov 6                   ; 9: PHNK (BRDK)
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_WEAKNESS|FIRE_MINOR|NEUTRAL_NONE|STATUS_MINOR
+                moveType   FLYING
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 
                 mov 7                   ; 10: THIF
@@ -137,8 +137,8 @@ table_ClassDefinitions:
                 moveType   CENTAUR_ARCHER
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                 
-                mov 7                   ; 26: PHNX
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_MAJOR|NEUTRAL_NONE|STATUS_MAJOR
+                mov 7                   ; 26: PHNX (BRDR)
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_WEAKNESS|FIRE_MAJOR|NEUTRAL_NONE|STATUS_MAJOR
                 moveType   FLYING
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                 

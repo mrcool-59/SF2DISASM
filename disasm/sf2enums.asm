@@ -1927,6 +1927,7 @@ SPELL_AQUA: equ $28 ; Bubble/Aqua Breath
 SPELL_KIWI: equ $29 ; Kiwi's Flame Breath
 SPELL_SHINE: equ $2A ; map wide MP restore (Right of Hope)
 SPELL_ODDEYE: equ $2B ; Odd-eye beam!
+SPELL_DRAGON_BREATH: equ $2C ; Ixen Dragon Breath
 SPELL_NOTHING: equ $3F
 SPELL_LV2: equ $40
 SPELL_LV3: equ $80
@@ -2538,6 +2539,7 @@ MESSAGE_BATTLE_USED_ITEM_MISS_AND_DESTROYED_START: equ 387
 MESSAGE_BATTLE_FOUND_GOLD_COINS: equ 393
 MESSAGE_BATTLE_RECEIVED_ITEM: equ 395
 MESSAGE_BATTLE_DROPPED_ITEM: equ 396
+MESSAGE_SPELLCAST_BREATHED_FIRE: equ 407
 MESSAGE_END: equ 65535
 
 ; ---------------------------------------------------------------------------
@@ -3124,6 +3126,7 @@ ALLYBATTLEANIMATION_SPECIAL_MMNK: equ 83 ; special crit
 ALLYBATTLEANIMATION_SPECIAL_MNST: equ 84 ; flame breath
 ALLYBATTLEANIMATION_SPECIAL_RBT: equ 85 ; laser attack
 ALLYBATTLEANIMATION_SPECIAL_BRGN: equ 86 ; unarmed attack
+ALLYBATTLEANIMATION_SPECIAL_IXEN: equ 87 ; Ixen (dragon breath / has specific cast animation for unpromoted)
 
 ; ---------------------------------------------------------------------------
 

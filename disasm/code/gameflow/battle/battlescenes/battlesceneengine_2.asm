@@ -14,6 +14,10 @@ GetBattlesceneGround:
                 tst.b   d0
                 bmi.s   @Skip           ; skip if enemy
                 
+                jsr     GetClass
+				cmp  	#CLASS_PHNX,d1		; Ixen promoted is flying, but his battle sprite is on the ground! (HARDCODED)
+				beq  	GetBattlesceneBackground
+				
                 jsr     IsAirborneMoveType
                 bcc.s   @Skip           ; skip if ally is flying or hovering
                 

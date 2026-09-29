@@ -49,7 +49,7 @@ AllyBattlesprite05:
 AllyBattlesprite06:
                 incbin "data/graphics/battles/battlesprites/allies/allybattlesprite06.bin"
 AllyBattlesprite07:
-                incbin "data/graphics/battles/battlesprites/allies/allybattlesprite07.bin"
+                incbin "data/graphics/battles/battlesprites/allies/allybattlespriteIxen-standard.bin" ; Ixen (Unpromoted)
 AllyBattlesprite08:
                 incbin "data/graphics/battles/battlesprites/allies/allybattlesprite08.bin"
 AllyBattlesprite09:
@@ -91,7 +91,7 @@ AllyBattlesprite26:
 AllyBattlesprite27:
                 incbin "data/graphics/battles/battlesprites/allies/allybattlesprite27.bin"
 AllyBattlesprite28:
-                incbin "data/graphics/battles/battlesprites/allies/allybattlesprite28.bin"
+                incbin "data/graphics/battles/battlesprites/allies/allybattlespriteIxenPro-standard.bin" ; Ixen (Promoted)
 AllyBattlesprite29:
                 incbin "data/graphics/battles/battlesprites/allies/allybattlesprite29.bin"
 AllyBattlesprite30:

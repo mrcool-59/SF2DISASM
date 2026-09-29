@@ -89,6 +89,7 @@ pt_AllyAnimations:
                 dc.l AllyAnimation084
                 dc.l AllyAnimation085
                 dc.l AllyAnimation086
+				dc.l AllyAnimation087
 AllyAnimation000:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation000.bin"
 AllyAnimation001:
@@ -104,7 +105,7 @@ AllyAnimation005:
 AllyAnimation006:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation006.bin"
 AllyAnimation007:
-                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation007.bin"
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenAtt-standard.bin" ; Ixen
 AllyAnimation008:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation008.bin"
 AllyAnimation009:
@@ -146,7 +147,7 @@ AllyAnimation026:
 AllyAnimation027:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation027.bin"
 AllyAnimation028:
-                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation028.bin"
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenProAttImproved-standard.bin" ; Ixen Promoted
 AllyAnimation029:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation029.bin"
 AllyAnimation030:
@@ -184,7 +185,7 @@ AllyAnimation045:
 AllyAnimation046:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation046.bin"
 AllyAnimation047:
-                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation047.bin"
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenDodgeImproved-standard.bin" ; Ixen [Dodge]
 AllyAnimation048:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation048.bin"
 AllyAnimation049:
@@ -226,7 +227,7 @@ AllyAnimation066:
 AllyAnimation067:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation067.bin"
 AllyAnimation068:
-                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation068.bin"
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenProDodgeImproved-standard.bin" ; Ixen Promoted [Dodge]
 AllyAnimation069:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation069.bin"
 AllyAnimation070:
@@ -263,3 +264,5 @@ AllyAnimation085:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation085.bin"
 AllyAnimation086:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation086.bin"
+AllyAnimation087:
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenCastImproved-standard.bin" ; Ixen [Cast]
