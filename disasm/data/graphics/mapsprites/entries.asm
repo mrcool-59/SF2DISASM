@@ -775,12 +775,12 @@ Mapsprite016_2: incbin "data/graphics/mapsprites/mapsprite016-2.bin"
 Mapsprite017_0: incbin "data/graphics/mapsprites/mapsprite017-0.bin"
 Mapsprite017_1: incbin "data/graphics/mapsprites/mapsprite017-1.bin"
 Mapsprite017_2: incbin "data/graphics/mapsprites/mapsprite017-2.bin"
-Mapsprite018_0: incbin "data/graphics/mapsprites/mapspriteIxen-0-standard.bin" ; ###
-Mapsprite018_1: incbin "data/graphics/mapsprites/mapspriteIxen-1-standard.bin" ; Ixen (Unpromoted)
-Mapsprite018_2: incbin "data/graphics/mapsprites/mapspriteIxen-2-standard.bin" ; ###
-Mapsprite019_0: incbin "data/graphics/mapsprites/mapspriteIxenPro-0-standard.bin" ; ###
-Mapsprite019_1: incbin "data/graphics/mapsprites/mapspriteIxenPro-1-standard.bin" ; Ixen (Promoted)
-Mapsprite019_2: incbin "data/graphics/mapsprites/mapspriteIxenPro-2-standard.bin" ; ###
+Mapsprite018_0: incbin "data/graphics/mapsprites/mapsprite018-0-standard.bin" ; ###
+Mapsprite018_1: incbin "data/graphics/mapsprites/mapsprite018-1-standard.bin" ; Ixen (Unpromoted)
+Mapsprite018_2: incbin "data/graphics/mapsprites/mapsprite018-2-standard.bin" ; ###
+Mapsprite019_0: incbin "data/graphics/mapsprites/mapsprite019-0-standard.bin" ; ###
+Mapsprite019_1: incbin "data/graphics/mapsprites/mapsprite019-1-standard.bin" ; Ixen (Promoted)
+Mapsprite019_2: incbin "data/graphics/mapsprites/mapsprite019-2-standard.bin" ; ###
 Mapsprite020_0: incbin "data/graphics/mapsprites/mapsprite020-0.bin"
 Mapsprite020_1: incbin "data/graphics/mapsprites/mapsprite020-1.bin"
 Mapsprite020_2: incbin "data/graphics/mapsprites/mapsprite020-2.bin"
