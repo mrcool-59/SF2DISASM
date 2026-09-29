@@ -208,12 +208,12 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      EGRESS       ; EGRESS 1
-                mpCost     0
-                animation  DESOUL|VARIATION2
-                properties TYPE_ATTACK|TARGET_TEAMMATES
+                mpCost     8
+                animation  NONE
+                properties TYPE_SPECIAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 0
                 radius     0
-                power      250
+                power      0
                 
                 entry      BLAZE        ; BLAZE 1
                 mpCost     2

@@ -12,7 +12,7 @@ table_SpellNames:
                 spellName "MUDDLE"
                 spellName "DESOUL"
                 spellName "SLEEP"
-                spellName "SKIP"
+                spellName "EGRESS"
                 spellName "BLAZE"
                 spellName "FREEZE"
                 spellName "BOLT"
