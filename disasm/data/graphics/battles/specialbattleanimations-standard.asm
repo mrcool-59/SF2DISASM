@@ -39,7 +39,8 @@ table_UnarmedAttackAnimationsForEnemies:
 table_SpellcastAnimationsForClasses:
                 
                 dc.w CLASS_MNST, ALLYBATTLEANIMATION_SPECIAL_MNST
-                
+				dc.w CLASS_PHNK, ALLYBATTLEANIMATION_SPECIAL_IXEN
+
                 tableEnd
 
 

@@ -3229,6 +3229,7 @@ ALLYBATTLEANIMATION_SPECIAL_MMNK: equ 83 ; special crit
 ALLYBATTLEANIMATION_SPECIAL_MNST: equ 84 ; flame breath
 ALLYBATTLEANIMATION_SPECIAL_RBT: equ 85 ; laser attack
 ALLYBATTLEANIMATION_SPECIAL_BRGN: equ 86 ; unarmed attack
+ALLYBATTLEANIMATION_SPECIAL_IXEN: equ 87 ; Ixen (dragon breath / has specific cast animation for unpromoted)
 
 ; ---------------------------------------------------------------------------
 
