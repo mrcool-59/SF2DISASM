@@ -21,6 +21,14 @@ loc_1D2F6:
                 cmpi.w  #2,(a5)
                 bne.w   loc_1D348
                 lea     graphic_FlameBreathParticle(pc), a0
+                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
+                cmpi.w  #ALLYBATTLESPRITE_PHNK,d2							; HARDCODED: position change if PHNK class (unpromoted Ixen)
+                beq.w   loc_1D33C
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
+                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2		; HARDCODED: another position change if PHNX class (promoted Ixen)
+                cmpi.w  #ALLYBATTLESPRITE_PHNX,d2
+                beq.w   loc_1D33C
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 btst    #SPELLANIMATION_BIT_MIRRORED,((SPELLANIMATION_VARIATION_AND_MIRRORED_BIT-$1000000)).w
                 beq.w   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
@@ -37,7 +45,7 @@ loc_1D2F6:
 loc_1D33C:
                 
                 bsr.w   ConstructSimpleGraphic
-                sndCom  SFX_DOOR_OPEN
+                sndCom  SFX_DOOR_OPEN 				; <= if limited to using vanilla SFXs, then SFX_DOOR_OPEN_HIGH_PITCH, SFX_BIG_DOOR_RUMBLE, SFX_BATTLEFIELD_DEATH, SFX_DEMON_BREATH are decent too
                 bra.w   loc_1D424
 loc_1D348:
                 
@@ -64,11 +72,11 @@ loc_1D368:
 loc_1D376:
                 
                 move.w  d0,4(a5)
-                add.w   d1,VDPSPRITE_OFFSET_X(a4)
+                add.w   d1,VDPSPRITE_OFFSET_X(a4)		; <= this d1 is the X offset applied to the current particle!
                 swap    d1
                 move.w  d1,d0
                 asl.w   #1,d1
-                add.w   d0,d1
+                add.w   d0,d1				; [replacing by sub.w gives an interesting result, but the horizontal limit of sprites kills this effect]
                 add.w   6(a5),d1
                 tst.w   d1
                 bmi.s   loc_1D398
@@ -83,10 +91,19 @@ loc_1D398:
                 andi.w  #BYTE_MASK,d0
                 neg.w   d0
                 asr.w   #BYTE_SHIFT_COUNT,d1
-                neg.w   d1
+                neg.w   d1					; <= this d1 is the Y offset applied to the current particle!
 loc_1D3A6:
                 
                 move.w  d0,6(a5)
+				
+				; HARDCODED: let's mess with the Y displacement to make it look better! (unpromoted Ixen)
+                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
+                cmpi.w  #ALLYBATTLESPRITE_PHNK,d2
+                bne.w   loc_flamebreath_Ixen_hack
+				ror.w   d1 			; Divide by 2
+				neg.w   d1 			; Reverse trajectory
+				sub.w   #1,d1 		; Apply bias to really mess UP ↑ the trajectory
+loc_flamebreath_Ixen_hack:
                 add.w   d1,(a4)
                 cmpi.w  #6,(a5)
                 bne.w   loc_1D402
@@ -95,7 +112,7 @@ loc_1D3A6:
                 move.w  2(a5),d1
                 move.b  8(a5),d2
                 bne.s   loc_1D3D8
-                addq.w  #4,d1
+                addq.w  #4,d1		; [this changes the path of the particles by altering the counterclockwise (for allies) cone speed, higher makes it quicker]
                 andi.w  #$FC,d1 
                 cmp.w   2(a3),d1
                 bne.s   loc_1D3D6
@@ -105,7 +122,7 @@ loc_1D3D6:
                 bra.s   loc_1D3E4
 loc_1D3D8:
                 
-                subq.w  #4,d1
+                subq.w  #4,d1		; [this changes the path of the particles by altering the clockwise cone (for allies) speed, higher makes it quicker]
                 andi.w  #$FC,d1 
                 cmp.w   (a3),d1
                 bne.s   loc_1D3E4
@@ -186,13 +203,15 @@ AnimateBreath:
     ; End of function spellanimationUpdate_FlameBreath
 
 graphic_FlameBreathParticle:
-                vdpSpell 284, 222, SPELLTILE1, V1|H1|32  ; ally
+				vdpSpell 298, 238, SPELLTILE1, V1|H1|VALUE1  ; Ixen (unpromoted) [VALUE1 = behind actor but in front of target]
+                vdpSpell 276, 258, SPELLTILE1, V1|H1|VALUE1  ; Ixen (promoted)
+				vdpSpell 284, 222, SPELLTILE1, V1|H1|32  ; DEFAULT (basically, Kiwi)
                 vdpSpell 210, 236, SPELLTILE1, V1|H1|32  ; cerberus
                 vdpSpell 223, 214, SPELLTILE1, V1|H1|32  ; hydra
                 vdpSpell 208, 216, SPELLTILE1, V1|H1|32  ; wyvern
                 vdpSpell 212, 204, SPELLTILE1, V1|H1|32  ; dragon
                 
-table_1D4C8:    ; dc.w [yet unknown][location offset?]
+table_1D4C8:    ; dc.w [yet unknown][location offset?]     <= this is probably the tick count until the particle advances to the next frame
                 ; dc.w [spell graphic dimensions]
                 ; dc.w [graphic tile-offset]
                 
