@@ -405,7 +405,7 @@
 0194={NAME} investigated{N}the vase.{W2}{CLEAR}
 0195={NAME} looked in{N}the barrel.{W2}{CLEAR}
 0196={NAME} is already{N}holding a {ITEM}.{N}Do you want to sell it first?{W2}
-0197=x
+0197={NAME} breathed fire!
 0198=But, it was empty.{W1}
 0199=It was dark inside.{W1}
 019A=It was empty.{W1}
@@ -413,7 +413,7 @@
 019C=Nothing was there.{W1}
 019D={NAME} found{N}{ITEM}.{W2}{CLEAR}
 019E={NAME} found {#} gold{N}coins.
-019F={NAME} recieved{N}{ITEM}.
+019F={NAME} received{N}{ITEM}.
 01A0={NAME} passed the{N}{ITEM} to {NAME}.
 01A1=But, everyone's hands are{N}full.{W1}
 01A2={NAME} is distributing{N}items from the open chest.{W1}
