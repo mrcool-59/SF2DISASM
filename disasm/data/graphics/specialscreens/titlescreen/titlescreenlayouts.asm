@@ -519,27 +519,29 @@ layout_TitleScreenA:
                 vdpTile 
                 vdpTile 
                 vdpTile 
+				; >>> MUSIC SHOWCASE DELUXE
+                vdpTile MENUTILE14|PALETTE3
+                vdpTile MENUTILE22|PALETTE3
+                vdpTile MENUTILE20|PALETTE3
+                vdpTile MENUTILE10|PALETTE3
+                vdpTile MENUTILE4|PALETTE3
                 vdpTile 
+                vdpTile MENUTILE20|PALETTE3
+                vdpTile MENUTILE9|PALETTE3
+                vdpTile MENUTILE16|PALETTE3
+                vdpTile MENUTILE24|PALETTE3
+                vdpTile MENUTILE4|PALETTE3
+                vdpTile MENUTILE2|PALETTE3
+                vdpTile MENUTILE20|PALETTE3
+                vdpTile MENUTILE6|PALETTE3
                 vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
-                vdpTile 
+                vdpTile MENUTILE5|PALETTE3
+                vdpTile MENUTILE6|PALETTE3
+                vdpTile MENUTILE13|PALETTE3
+                vdpTile MENUTILE22|PALETTE3
+                vdpTile MENUTILE25|PALETTE3
+                vdpTile MENUTILE6|PALETTE3
+				; <<< MUSIC SHOWCASE DELUXE
                 vdpTile 
                 vdpTile 
                 vdpTile 
