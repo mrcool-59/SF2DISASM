@@ -7,14 +7,14 @@ YM_INSTRUMENTS_BANK_ROM_OFFSET equ 01EB000h
 MUSIC_BANK_2_ROM_OFFSET        equ 01F0000h
 MUSIC_BANK_1_ROM_OFFSET        equ 01F8000h
 
-; 68K ROM offsets, valid only when ROM is expanded
-MUSIC_BANK_EXT_1_ROM_OFFSET    equ 0210000h
-MUSIC_BANK_EXT_2_ROM_OFFSET    equ 0218000h
-MUSIC_BANK_EXT_3_ROM_OFFSET    equ 0220000h
-DAC_BANK_EXT_1_ROM_OFFSET      equ 0230000h
-DAC_BANK_EXT_2_ROM_OFFSET      equ 0238000h
-DAC_BANK_EXT_3_ROM_OFFSET      equ 0240000h
-DAC_BANK_EXT_4_ROM_OFFSET      equ 0248000h
+; 68K ROM offsets, valid only when ROM is expanded [we need to include music/PCM banks in the first 2 MB of the ROM, otherwise it doesn't work on real hardware with Everdrive (thanks Wiz for your unpaid work as tester!)]
+MUSIC_BANK_EXT_1_ROM_OFFSET    equ 01A8000h
+MUSIC_BANK_EXT_2_ROM_OFFSET    equ 01B0000h
+MUSIC_BANK_EXT_3_ROM_OFFSET    equ 01B8000h
+DAC_BANK_EXT_1_ROM_OFFSET      equ 01C0000h
+DAC_BANK_EXT_2_ROM_OFFSET      equ 01C8000h
+DAC_BANK_EXT_3_ROM_OFFSET      equ 01D0000h
+DAC_BANK_EXT_4_ROM_OFFSET      equ 01D8000h
 
 ; Banks defined by 32kB slot position in ROM, 
 ; and then pointers to mapped range 0x8000..0xFFFF when needed
