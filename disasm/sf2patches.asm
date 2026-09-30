@@ -190,13 +190,6 @@ EXPANDED_PCM_ENTRIES:		equ 60		; Set to 60 because Cubewiz sound driver layout w
 EXPANDED_YM_FREQUENCIES:	equ 88		; Set to 88 because Cubewiz has room for 4 extra YM frequencies (88, up from vanilla 84).
 EXPANDED_YM_INSTRUMENTS:	equ 1		; Set to 1 because Cubewiz was changed to support maximal size for yminst.bin (8192, up from vanilla 4096).
 
-
-resumeBattlesceneMusic = 1
-    if (RESUME_BATTLEFIELD_MUSIC_ONLY=1)
-resumeBattlesceneMusic = 0
-    endif
-RESUME_BATTLESCENE_MUSIC: equ resumeBattlesceneMusic
-
 ; Data expansions
 EXPANDED_CLASSES:           equ 1       ; Enable support for 64 classes.
 EXPANDED_FORCE_MEMBERS:     equ 1       ; Enable all 32 force members supported by the engine instead of 30.
