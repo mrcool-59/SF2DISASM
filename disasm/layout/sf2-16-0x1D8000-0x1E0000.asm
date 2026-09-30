@@ -89,6 +89,21 @@
             if (EXPANDED_ROM=0)
                 alignIfStandard
                 includeIfStandard "layout\sf2-expanded-19.asm"
+			else
+				; We need to include music/PCM banks in the first 2 MB of the ROM, otherwise it doesn't work on real hardware with Everdrive (thanks Wiz for your unpaid work as tester!)
+				if (EXPANDED_MUSIC_BANKS=1)
+					alignIfStandard $1A8000
+					incbinIfStandard "data\sound\musicbankext0.bin"							; Extra Music Banks 0, 1 and 2
+					incbinIfStandard "data\sound\musicbankext1.bin"
+					incbinIfStandard "data\sound\musicbankext2.bin"
+				endif
+				if (EXPANDED_PCM_BANKS=1)
+					alignIfStandard $1C0000
+					incbinIfStandard "data\sound\pcmbankext0-standard.bin"					; Extra PCM Banks 0, 1, 2 and 3
+					incbinIfStandard "data\sound\pcmbankext1-standard.bin"
+					incbinIfStandard "data\sound\pcmbankext2-standard.bin"
+					incbinIfStandard "data\sound\pcmbankext3-standard.bin"
+				endif
             endif
                 
                 align $1E0000

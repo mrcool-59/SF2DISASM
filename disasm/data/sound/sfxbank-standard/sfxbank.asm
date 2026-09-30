@@ -4,7 +4,7 @@
    phase    0
    include "..\macros.asm"
    include "..\enums.asm"
-   org 08000h+6000h
+   org 08000h+7000h
     
 pt_SFX:         
     dw Sfx_1	; #65 - SFX_MENU_SWITCH
