@@ -1,6 +1,6 @@
 
 ; 68K ROM offsets
-SFX_ROM_OFFSET                 equ 01EE000h
+SFX_ROM_OFFSET                 equ 01EF000h ; MrCool: moved 1000h down to make room for double-size YM instrument bank (2000h)
 DAC_BANK_1_ROM_OFFSET          equ 01E0000h
 DAC_BANK_2_ROM_OFFSET          equ 01E8000h
 YM_INSTRUMENTS_BANK_ROM_OFFSET equ 01EB000h

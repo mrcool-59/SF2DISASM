@@ -167,6 +167,12 @@ MUSIC_RESUMING:                     equ 1       ;
 RESUME_BATTLEFIELD_MUSIC_ONLY:      equ 1       ; Do not resume battlescene music.
 RESUME_MUSIC_AFTER_JOIN_JINGLE:     equ 1       ; Resume background music after playing a "Joined the Force" jingle.
 
+; Sound driver facts [DO NOT CHANGE THESE VALUES WITHOUT UPDATING THE CUBEWIZ SOUND DRIVER CODE FIRST, these values are used by SF2 Music Cooker tool to know what it is allowed to do]
+EXPANDED_PCM_ENTRIES:		equ 60		; Set to 60 because Cubewiz sound driver layout was changed to support extra sample entries (60, up from vanilla 17).
+EXPANDED_YM_FREQUENCIES:	equ 88		; Set to 88 because Cubewiz has room for 4 extra YM frequencies (88, up from vanilla 84).
+EXPANDED_YM_INSTRUMENTS:	equ 1		; Set to 1 because Cubewiz was changed to support maximal size for yminst.bin (8192, up from vanilla 4096).
+
+
 resumeBattlesceneMusic = 1
     if (RESUME_BATTLEFIELD_MUSIC_ONLY=1)
 resumeBattlesceneMusic = 0
@@ -181,8 +187,6 @@ EXPANDED_ITEMS_AND_SPELLS:  equ 1       ; Expand number of items from 127 to 255
 EXPANDED_MAPSPRITES:        equ 1       ; Store mapsprite index in word-sized structure allowing 65k+ unique sprites.
 EXPANDED_MUSIC_BANKS:		equ 1		; Introduce 3 extra music banks in which you can fit new musics or relocate existing musics to make room in original banks 1/2.
 EXPANDED_PCM_BANKS:			equ 1		; Introduce 4 extra PCM banks in which you can fit new samples.
-EXPANDED_PCM_ENTRIES:		equ 60		; Set to 60 because Wizcube sound driver layout was changed to support extra sample entries (60, up from vanilla 17). This value is used by SF2 Music Cooker tool to know it may use more entries.
-EXPANDED_YM_FREQUENCIES:	equ 88		; Set to 88 because there is room for 4 extra YM frequencies in the sound driver (88, up from vanilla 84). This value is used by SF2 Music Cooker tool to know it may use more frequencies.
 
 ; Hardware expansions
 ROM_EXPANSION:              equ 1       ; 0 = 2 MB ROM, 1 = 4 MB ROM (default), 2 = 6 MB ROM
