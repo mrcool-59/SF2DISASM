@@ -8,7 +8,7 @@ AllyStats07:    forClass  PHNK ; BRDK
                 defGrowth 8, 33, LINEAR
                 agiGrowth 4, 30, LINEAR
                 spellList &
-                    1, DRAGON_BREATH, &
+                    10, DRAGON_BREATH, &
                     15, DRAGON_BREATH|LV2, &
                     25, DRAGON_BREATH|LV3, &
                     40, DRAGON_BREATH|LV4

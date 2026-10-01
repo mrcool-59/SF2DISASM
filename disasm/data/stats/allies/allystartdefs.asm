@@ -70,7 +70,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass PHNK         ; 7: PETER (IXEN)
-                startLevel 9
+                startLevel 8
                 startItems &
                     NOTHING, &
                     NOTHING, &
