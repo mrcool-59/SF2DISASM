@@ -11,7 +11,7 @@
                     mainLayerAutoscroll 0, 0
                     scndLayerAutoscroll 1, 0
                     mainLayerType    255
-                    areaDefaultMusic MUSIC_MAIN_THEME
+                    areaDefaultMusic MUSIC_CUSTOM_NEW_CONTINENT_TO_DISCOVER
                 
                     mainLayerStart      0, 0
                     mainLayerEnd        63, 63
@@ -22,5 +22,5 @@
                     mainLayerAutoscroll 0, 0
                     scndLayerAutoscroll 0, 0
                     mainLayerType    254
-                    areaDefaultMusic MUSIC_MAIN_THEME
+                    areaDefaultMusic MUSIC_CUSTOM_NEW_CONTINENT_TO_DISCOVER
                 endWord

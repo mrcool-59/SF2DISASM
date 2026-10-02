@@ -10,7 +10,7 @@ bbcs_28:        textCursor 2661
                 setActscriptWait FOLLOWER_B,eas_Init
                 setPos FOLLOWER_B,0,7,RIGHT
                 stopEntity 129
-                playSound MUSIC_BATTLE_THEME_3
+                playSound MUSIC_CUSTOM_IXEN_UNPROMOTED
                 fadeInB
                 cameraSpeed $30
                 entityActions ALLY_BOWIE

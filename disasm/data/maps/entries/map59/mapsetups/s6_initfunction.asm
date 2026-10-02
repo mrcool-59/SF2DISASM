@@ -168,7 +168,7 @@ cs_5ED06:       textCursor 3729
                 loadMapEntities ce_5F1BE
                 setActscriptWait ALLY_BOWIE,eas_Init
                 executeSubroutine sub_5F31E
-                playSound MUSIC_MITULA_SHRINE
+                playSound MUSIC_CUSTOM_AIRSHIP
                 setBlocks 0,10,22,10,42,10
                 fadeInB
                 executeSubroutine sub_5FD92
@@ -189,7 +189,7 @@ cs_5ED06:       textCursor 3729
                 loadMapEntities ce_5F1BE
                 setActscriptWait ALLY_BOWIE,eas_Init
                 executeSubroutine sub_5F31E
-                playSound MUSIC_MITULA_SHRINE
+                playSound MUSIC_CUSTOM_AIRSHIP
                 setBlocks 0,10,22,10,42,10
                 fadeInB
                 executeSubroutine sub_5FD92
