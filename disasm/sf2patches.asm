@@ -168,7 +168,7 @@ RESUME_BATTLEFIELD_MUSIC_ONLY:      equ 1       ; Do not resume battlescene musi
 RESUME_MUSIC_AFTER_JOIN_JINGLE:     equ 1       ; Resume background music after playing a "Joined the Force" jingle.
 
 ; Sound driver facts [DO NOT CHANGE THESE VALUES WITHOUT UPDATING THE CUBEWIZ SOUND DRIVER CODE FIRST, these values are used by SF2 Music Cooker tool to know what it is allowed to do]
-EXPANDED_PCM_ENTRIES:		equ 60		; Set to 60 because Cubewiz sound driver layout was changed to support extra sample entries (60, up from vanilla 17).
+EXPANDED_PCM_ENTRIES:		equ 72		; Set to 72 because Cubewiz sound driver layout was changed to support extra sample entries (72, up from vanilla 17).
 EXPANDED_YM_FREQUENCIES:	equ 88		; Set to 88 because Cubewiz has room for 4 extra YM frequencies (88, up from vanilla 84).
 EXPANDED_YM_INSTRUMENTS:	equ 1		; Set to 1 because Cubewiz was changed to support maximal size for yminst.bin (8192, up from vanilla 4096).
 
