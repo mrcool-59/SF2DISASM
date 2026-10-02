@@ -7,6 +7,7 @@ cs_5D04E:       textCursor 2006
                 setFacing ALLY_PETER,RIGHT
                 setPos ALLY_SKREECH,31,33,UP
                 csWait 1
+				playSound MUSIC_CUSTOM_AIRSHIP
                 setCamDest 26,22
                 setActscriptWait ALLY_BOWIE,eas_Init
                 setActscriptWait ALLY_PETER,eas_Init
