@@ -11,7 +11,7 @@
                     mainLayerAutoscroll 0, 0
                     scndLayerAutoscroll 0, 0
                     mainLayerType    0
-                    areaDefaultMusic MUSIC_CASTLE
+                    areaDefaultMusic MUSIC_CUSTOM_DESERT_CITY
                 
                     mainLayerStart      50, 0
                     mainLayerEnd        61, 15
@@ -22,5 +22,5 @@
                     mainLayerAutoscroll 0, 0
                     scndLayerAutoscroll 0, 0
                     mainLayerType    255
-                    areaDefaultMusic MUSIC_CASTLE
+                    areaDefaultMusic MUSIC_CUSTOM_DESERT_CITY
                 endWord
