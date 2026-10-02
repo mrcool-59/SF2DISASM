@@ -46,6 +46,7 @@ loc_1D33C:
                 
                 bsr.w   ConstructSimpleGraphic
                 sndCom  SFX_DOOR_OPEN 				; <= if limited to using vanilla SFXs, then SFX_DOOR_OPEN_HIGH_PITCH, SFX_BIG_DOOR_RUMBLE, SFX_BATTLEFIELD_DEATH, SFX_DEMON_BREATH are decent too
+				sndCom  SFX_CUSTOM_FIRE
                 bra.w   loc_1D424
 loc_1D348:
                 
