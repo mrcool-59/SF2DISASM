@@ -11,6 +11,7 @@ ms_map37_InitFunction:
                 chkFlg  836             ; Set after the scene where Zynk stops you as you leave the Moun underground
                 beq.s   @Return
                 script  cs_5FA9C
+				playSound MUSIC_HEADQUARTERS
 @Return:
                 
                 rts

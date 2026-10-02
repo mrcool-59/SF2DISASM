@@ -44,7 +44,7 @@ cs_5FB6A:       textCursor 3377
                 setQuake 3
                 csWait 20
                 setQuake 1
-                playSound MUSIC_MITULA_SHRINE
+                playSound MUSIC_CUSTOM_AIRSHIP
                 executeSubroutine csub_5FD3A
                 setQuake 0
                 entityActions 128

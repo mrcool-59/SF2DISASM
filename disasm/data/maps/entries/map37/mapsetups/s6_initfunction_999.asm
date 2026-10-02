@@ -12,6 +12,7 @@ ms_map37_flag999_InitFunction:
                 bne.s   @Return
                 script  cs_5FABC
                 setFlg  256             ; TEMP FLAG #00
+				playSound MUSIC_CUSTOM_AIRSHIP
 @Return:
                 
                 rts
@@ -25,7 +26,6 @@ cs_5FABC:       textCursor 3359
                 setPos ALLY_ZYNK,10,10,DOWN
                 setPos 128,10,11,UP
                 stopEntity 128
-                playSound MUSIC_STOP
                 fadeInB
                 nextText $80,ALLY_PETER ; "Ouch!  Hey, {NAME;26}!{N}I like your wild driving!{W2}"
                 nextSingleText $80,ALLY_PETER ; "Where's Sir Astral?{W1}"
