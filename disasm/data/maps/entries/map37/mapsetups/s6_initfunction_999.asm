@@ -12,9 +12,9 @@ ms_map37_flag999_InitFunction:
                 bne.s   @Return
                 script  cs_5FABC
                 setFlg  256             ; TEMP FLAG #00
-				playSound MUSIC_CUSTOM_AIRSHIP
+				
 @Return:
-                
+				script	@cs_SetMusicB
                 rts
 
     ; End of function ms_map37_flag999_InitFunction
@@ -48,3 +48,6 @@ cs_5FABC:       textCursor 3359
                 setFacing ALLY_PETER,LEFT
                 nextSingleText $80,ALLY_PETER ; "{LEADER}, come on!{W1}"
                 csc_end
+
+@cs_SetMusicB:	playSound MUSIC_CUSTOM_AIRSHIP
+				csc_end

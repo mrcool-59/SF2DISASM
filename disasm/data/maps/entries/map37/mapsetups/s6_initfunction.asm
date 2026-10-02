@@ -11,12 +11,15 @@ ms_map37_InitFunction:
                 chkFlg  836             ; Set after the scene where Zynk stops you as you leave the Moun underground
                 beq.s   @Return
                 script  cs_5FA9C
-				playSound MUSIC_HEADQUARTERS
+
 @Return:
-                
+				script  @cs_SetMusicA
                 rts
 
     ; End of function ms_map37_InitFunction
 
 cs_5FA9C:       setPos ALLY_ZYNK,8,10,RIGHT
                 csc_end
+
+@cs_SetMusicA:	playSound MUSIC_HEADQUARTERS
+				csc_end
