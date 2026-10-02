@@ -123,16 +123,16 @@ ENABLE_ALLY_SUPPORT_MUSIC:			equ 1		; Enable specific battlescene music to play 
 ENABLE_ALLY_SPELL_MUSIC:			equ 1		; Enable specific battlescene music to play when ally unit uses a spell/item (restricted to damage and debuff spells if support music patch is also enabled)
 ENABLE_ENEMY_SUPPORT_MUSIC:			equ 1		; Enable specific battlescene music to play when enemy unit uses a spell/item on self or other enemy units (e.g: healing and buff spells), doesn't apply if affected by Muddle
 ENABLE_ENEMY_SPELL_MUSIC:			equ 1		; Enable specific battlescene music to play when enemy unit uses a spell/item (restricted to damage and debuff spells if support music patch is also enabled)
-ENABLE_UNINTERRUPTIBLE_MUSIC:		equ 0       ; Keep playing battle map music in battlescenes if the battle map music is present in 'uninterruptiblemusics-standard.asm' list
+ENABLE_UNINTERRUPTIBLE_MUSIC:		equ 1       ; Keep playing battle map music in battlescenes if the battle map music is present in 'uninterruptiblemusics-standard.asm' list
 
 
 ; Support/spell patch music selector (note: this patch works best if you add new custom musics)
-ALLY_SUPPORT_MUSIC:   				equ MUSIC_CUSTOM_HEALING				; Requires ENABLE_ALLY_SUPPORT_MUSIC patch to be enabled
-ALLY_SUPPORT_PROMOTED_MUSIC:   		equ MUSIC_CUSTOM_HEALING				; Requires ENABLE_ALLY_SUPPORT_MUSIC patch to be enabled
-ALLY_SPELL_MUSIC:   				equ MUSIC_CUSTOM_LAST_AREA_ABRIDGED		; Requires ENABLE_ALLY_SPELL_MUSIC patch to be enabled
-ALLY_SPELL_PROMOTED_MUSIC:   		equ MUSIC_CUSTOM_LAST_AREA_ABRIDGED		; Requires ENABLE_ALLY_SPELL_MUSIC patch to be enabled
+ALLY_SUPPORT_MUSIC:   				equ MUSIC_CUSTOM_UNPROMOTED_HEALING		; Requires ENABLE_ALLY_SUPPORT_MUSIC patch to be enabled
+ALLY_SUPPORT_PROMOTED_MUSIC:   		equ MUSIC_CUSTOM_PROMOTED_HEALING		; Requires ENABLE_ALLY_SUPPORT_MUSIC patch to be enabled
+ALLY_SPELL_MUSIC:   				equ MUSIC_CUSTOM_UNPROMOTED_SPELL		; Requires ENABLE_ALLY_SPELL_MUSIC patch to be enabled
+ALLY_SPELL_PROMOTED_MUSIC:   		equ MUSIC_CUSTOM_PROMOTED_SPELL			; Requires ENABLE_ALLY_SPELL_MUSIC patch to be enabled
 ENEMY_SUPPORT_MUSIC:   				equ MUSIC_CUSTOM_ENEMY_HEALING			; Requires ENABLE_ENEMY_SUPPORT_MUSIC patch to be enabled
-ENEMY_SPELL_MUSIC:   				equ MUSIC_BOSS_ATTACK					; Requires ENABLE_ENEMY_SPELL_MUSIC patch to be enabled
+ENEMY_SPELL_MUSIC:   				equ MUSIC_CUSTOM_ENEMY_SPELL			; Requires ENABLE_ENEMY_SPELL_MUSIC patch to be enabled
 
 
 ; Special screens

@@ -4,10 +4,10 @@
 
 table_AllyBattlesceneMusics_Unpromoted:
                 dc.b ALLY_SLADE, MUSIC_CUSTOM_VAPOR_TRAIL
-                dc.b ALLY_PETER, MUSIC_CUSTOM_LAST_AREA_ABRIDGED ; Ixen
+                dc.b ALLY_PETER, MUSIC_CUSTOM_IXEN_UNPROMOTED ; Ixen
                 tableEnd.b
 
 table_AllyBattlesceneMusics_Promoted:
                 dc.b ALLY_SLADE, MUSIC_CUSTOM_VAPOR_TRAIL
-                dc.b ALLY_PETER, MUSIC_CUSTOM_LAST_AREA_ABRIDGED ; Ixen
+                dc.b ALLY_PETER, MUSIC_CUSTOM_IXEN_PROMOTED ; Ixen
                 tableEnd.b

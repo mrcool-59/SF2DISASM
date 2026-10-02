@@ -69,6 +69,7 @@ cs_54F26:       textCursor 1074
                 setCameraEntity 136
                 setFacing 136,LEFT
                 nextSingleText $0,136   ; "Oooo...it's big!{N}I want to touch him!{W1}"
+				playSound MUSIC_CUSTOM_IXEN_UNPROMOTED
                 setFacing 136,RIGHT
                 csWait 30
                 entityActions 136
@@ -231,9 +232,11 @@ cs_54F26:       textCursor 1074
                 entityActionsWait 144
                  moveDown 4
                 endActions
+				playSound SOUND_COMMAND_FADE_OUT
                 nextText $0,144         ; "I'm sorry.  I must apologize{N}for their actions.{W2}"
                 nextText $0,144         ; "Welcome to Granseal.{N}I am the Minister.{W2}"
                 nextSingleText $0,144   ; "We just settled here.{N}We're strangers here.{W1}"
+				playSound MUSIC_TOWN
                 nextText $0,ALLY_PETER  ; "Ha, ha!  You're right.{W2}"
                 nextSingleText $0,ALLY_PETER ; "But, I'm very happy to meet{N}a man like you!{W1}"
                 nextText $0,144         ; "Please stay here as long{N}as you like.{W2}"
@@ -241,10 +244,20 @@ cs_54F26:       textCursor 1074
                 csWait 40
                 setCameraEntity ALLY_PETER
                 entityActions 144
-                 moveUp 8
+                 moveUp 4
                 endActions
                 entityActionsWait ALLY_PETER
-                 moveUp 8
+                 moveUp 4
+                endActions
+				textCursor 4271
+                nextSingleText $0,ALLY_PETER   	; [CUSTOM] "Oh, by the way...{W2}{N}I'm still practicing my{N}fire-breathing...{W1}"
+                nextText $0,ALLY_PETER   		; [CUSTOM] "...but don't worry, I will cause{N}no accident!{W1}"
+                nextText $0,144   				; [CUSTOM] "...{W2}That's a relief!...{N}Ahah-ah...{W1}"
+                entityActions 144
+                 moveUp 4
+                endActions
+                entityActionsWait ALLY_PETER
+                 moveUp 4
                 endActions
                 setFacing 145,RIGHT
                 setFacing 146,LEFT

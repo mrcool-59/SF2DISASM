@@ -6,4 +6,7 @@
 
 table_ResumingBattlesceneMusics:
 	dc.b	MUSIC_ENEMY_ATTACK
+	dc.b	MUSIC_PROMOTED_ATTACK
+	dc.b	MUSIC_CUSTOM_UNPROMOTED_HEALING
+	dc.b	MUSIC_CUSTOM_UNPROMOTED_SPELL
 	dc.b	0	; End

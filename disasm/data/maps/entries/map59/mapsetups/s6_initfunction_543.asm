@@ -248,6 +248,7 @@ cs_615E6:       textCursor 3760
                 setFacing ALLY_PETER,LEFT
                 setFacing ALLY_BOWIE,RIGHT
                 csWait 20
+                playSound MUSIC_CUSTOM_IXEN_PROMOTED 		; TODO: maybe revert if it feels odd
                 entityActionsWait ALLY_BOWIE
                  moveRight 1
                 endActions

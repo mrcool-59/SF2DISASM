@@ -248,6 +248,8 @@ cs_528CA:       entityActionsWait ALLY_BOWIE
                 csc_end
 cs_528D4:       textCursor 947
                 nextSingleText $0,ALLY_SLADE ; "Wait!{W1}"
+				playSound MUSIC_STOP
+				playSound MUSIC_CUSTOM_VAPOR_TRAIL
                 setCamDest 50,3
                 csWait 30
                 setActscriptWait ALLY_SLADE,eas_Init
