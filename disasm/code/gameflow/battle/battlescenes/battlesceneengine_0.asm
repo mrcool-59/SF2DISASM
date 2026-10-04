@@ -1624,18 +1624,6 @@ loc_191AC:
                 bne.s   loc_191D0
                 move.w  ((BATTLESCENE_ALLY-$1000000)).w,((DIALOGUE_NAME_INDEX_1-$1000000)).w
                 move.w  d0,((DIALOGUE_NAME_INDEX_2-$1000000)).w
-
-			if (STANDARD_BUILD=1&SPELL_LEARNING_CUSTOM_MESSAGES=1)
-				lea		table_LearnMessageSpells(pc),a0
-				move.w  d0,d1
-				moveq   #1,d2
-				jsr     (FindSpecialPropertyBytesAddressForObject).w
-				bcs.s   @DefaultText
-				move.w  (a0),d0
-                jsr     (DisplayText).l 
-				bra.s	return_191DE
-			endif
-@DefaultText:
                 txt     271             ; "{D1}{NAME} learned the new{N}magic spell {SPELL}!"
                 bra.s   return_191DE
 loc_191D0:

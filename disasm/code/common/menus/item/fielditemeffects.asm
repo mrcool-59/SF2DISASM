@@ -331,14 +331,6 @@ loc_22C2E:
 			if (STANDARD_BUILD=1&SPELL_LEARNING_CUSTOM_MESSAGES=1)
 				lea		table_LearnMessageSpells(pc),a0
 				move.w  d0,d1
-				moveq   #1,d2
-				jsr     (FindSpecialPropertyBytesAddressForObject).w
-				bcs.s   @DefaultText
-				move.w  (a0),d0
-                jsr     (DisplayText).l 
-				bra.s	return_191DE
-			endif
-@DefaultText:
                 txt     271             ; "{D1}{NAME} learned the new{N}magic spell {SPELL}!"
                 bra.s   byte_22C5A      
 loc_22C4C:
