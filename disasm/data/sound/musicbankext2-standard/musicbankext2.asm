@@ -9,8 +9,8 @@
 		dw Music_61
 		dw Music_62
 		dw Music_63
-		dw Music_64
-		include "music61.asm"	; [CUSTOM] Galaxy Force II / Legend of Light
-		include "music62.asm"	; [CUSTOM] Shrine (Abridged) / Dreaming Elis
+		dw Music_41
+		include "music61.asm"	; [CUSTOM] Doomed Continent / Legend of Light
+		include "music62.asm"	; [CUSTOM] Boss Battle
 		include "music63.asm"	; [CUSTOM] Vapor Trail
-		include "music64.asm"	; [CUSTOM] Choose a Path
+		include "music64.asm"	; [CUSTOM] Chosen Heroes

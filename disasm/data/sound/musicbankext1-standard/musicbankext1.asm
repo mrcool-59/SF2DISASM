@@ -10,7 +10,7 @@
 		dw Music_58
 		dw Music_59
 		dw Music_60
-		include "music57.asm"	; [CUSTOM] Intense Battle / The Call of a Long Journey
-		include "music58.asm"	; [CUSTOM] Evil Lair / Entrance to the Demon World
-		include "music59.asm"	; [CUSTOM] Obviously Town Theme / A Peaceful Moment
-		include "music60.asm"	; [CUSTOM] Final (Robotnik BM) / Roar of the King of Devils
+		include "music57.asm"	; [CUSTOM] BIG TROUBLE / Footsteps of Ruin
+		include "music58.asm"	; [CUSTOM] Important Battle / The Call of a Long Journey
+		include "music59.asm"	; [CUSTOM] Final Battle / The King of Devils has Appeared
+		include "music60.asm"	; [CUSTOM] Town Theme Deluxe / A Peaceful Moment

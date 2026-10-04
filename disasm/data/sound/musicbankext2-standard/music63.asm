@@ -21,7 +21,7 @@ Music_63:		; [CUSTOM] Vapor Trail
 Music_63_Channel_0:
 		waitL 4
 		stereo 40h
-		inst 123
+		inst 182
 		vol 9
 		vibrato 00h
 		setRelease 3
@@ -383,115 +383,115 @@ Music_63_Channel_0:
 		noteL Fs5,10
 		sustain
 		noteL As4,8
-		inst 123
+		inst 182
 		vol 9
 		setRelease 13
 		noteL As4,74
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs4,10
-		inst 123
+		inst 182
 		vol 9
 		setRelease 6
 		noteL Fs4,22
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As4,7
-		inst 123
+		inst 182
 		vol 9
 		setRelease 6
 		noteL As4,25
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL C5,7
-		inst 123
+		inst 182
 		vol 9
 		setRelease 6
 		noteL C5,14
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs4,10
-		inst 123
+		inst 182
 		vol 9
 		setRelease 6
 		noteL Gs4,22
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds4,7
-		inst 123
+		inst 182
 		vol 9
 		setRelease 6
 		noteL Ds4,25
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs4,7
-		inst 123
+		inst 182
 		vol 9
 		setRelease 12
 		noteL Fs4,102
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As4,7
-		inst 123
+		inst 182
 		vol 9
 		setRelease 13
 		noteL As4,75
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs4,10
-		inst 123
+		inst 182
 		vol 9
 		setRelease 5
 		noteL Fs4,21
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As4,8
-		inst 123
+		inst 182
 		vol 9
 		setRelease 5
 		noteL As4,24
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL C5,7
-		inst 123
+		inst 182
 		vol 9
 		setRelease 6
 		noteL C5,15
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs4,10
-		inst 123
+		inst 182
 		vol 9
 		setRelease 5
 		noteL Gs4,21
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds4,7
-		inst 123
+		inst 182
 		vol 9
 		setRelease 5
 		noteL Ds4,25
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs4,7
-		inst 123
+		inst 182
 		vol 9
 		setRelease 12
 		noteL Fs4,103
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL As4,11
@@ -503,11 +503,11 @@ Music_63_Channel_0:
 		noteL Gs4,32
 		sustain
 		noteL D5,7
-		inst 124
+		inst 183
 		vol 11
 		setRelease 26
 		noteL D5,35
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL As4,11
@@ -526,11 +526,11 @@ Music_63_Channel_0:
 		noteL Gs4,32
 		sustain
 		noteL D5,7
-		inst 124
+		inst 183
 		vol 11
 		setRelease 26
 		noteL D5,35
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL As4,11
@@ -594,7 +594,7 @@ Music_63_Channel_0:
 		setRelease 4
 		noteL B3,11
 		note  B3
-		inst 125
+		inst 184
 		vol 12
 		setRelease 3
 		noteL Fs5,10
@@ -822,7 +822,7 @@ Music_63_Channel_0:
 		setRelease 4
 		noteL Fs4,11
 		note  A4
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,10
@@ -943,650 +943,650 @@ Music_63_Channel_0:
 Music_63_Channel_1:
 		waitL 3
 		stereo 80h
-		inst 123
+		inst 182
 		vol 9
 		vibrato 00h
 		sustain
 		noteL Ds6,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 127
 		noteL Fs5,133
 		waitL 4
 		mainLoopStart
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds3,5
@@ -1604,899 +1604,899 @@ Music_63_Channel_1:
 		noteL As5,5
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 126
+		inst 185
 		vol 12
 		setRelease 4
 		noteL Fs5,6
@@ -2705,1949 +2705,1949 @@ Music_63_Channel_1:
 		note  Fs5
 		setRelease 4
 		noteL Cs6,6
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Gs2,8
 		countedLoopStart 1
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Gs2,9
 		countedLoopEnd
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Gs2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Gs2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Gs2,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		countedLoopStart 1
 		noteL Gs2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Gs2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Gs2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		countedLoopEnd
 		noteL Gs2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Gs2,8
 		countedLoopStart 1
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Gs2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Gs2,9
 		countedLoopEnd
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,1
 		countedLoopStart 1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL As2,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,2
 		countedLoopEnd
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL As2,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		countedLoopStart 1
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL As2,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		countedLoopEnd
 		noteL As2,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL B2,1
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL B2,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL B2,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL B2,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL B2,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL B2,8
 		countedLoopStart 1
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL B2,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL B2,9
 		countedLoopEnd
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL B2,1
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL B2,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL B2,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL B2,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL B2,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL B2,8
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL Cs3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		countedLoopStart 1
 		noteL Cs3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL Cs3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL Cs3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL Cs3,1
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL Cs3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL Cs3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		countedLoopEnd
 		noteL Cs3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL Cs3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL Cs3,8
 		countedLoopStart 1
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL D3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL D3,9
 		countedLoopEnd
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL D3,1
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL D3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL D3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL D3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL D3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL D3,8
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL D3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL D3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL D3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL D3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL D3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL D3,8
 		countedLoopStart 1
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL E3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL E3,9
 		countedLoopEnd
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL E3,1
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL E3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL E3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL E3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL E3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL E3,8
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL E3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL E3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL E3,2
-		inst 124
+		inst 183
 		vol 11
 		setRelease 4
 		noteL E3,9
-		inst 124
+		inst 183
 		vol 11
 		sustain
 		noteL E3,1
-		inst 124
+		inst 183
 		vol 11
 		setRelease 3
 		noteL E3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs4,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs4,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL Cs4,8
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Cs4,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Cs4,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL A3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL B3,1
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL B3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL Fs3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 4
 		noteL Fs3,9
-		inst 124
+		inst 183
 		vol 9
 		sustain
 		noteL A3,2
-		inst 124
+		inst 183
 		vol 9
 		setRelease 3
 		noteL A3,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds6,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds6,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL As5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL As5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL As5,8
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Fs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Gs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 4
 		noteL Gs5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Ds5,1
-		inst 123
+		inst 182
 		vol 9
 		setRelease 3
 		noteL Ds5,9
-		inst 123
+		inst 182
 		vol 9
 		sustain
 		noteL Fs5,2
-		inst 123
+		inst 182
 		vol 9
 		setRelease 127
 		noteL Fs5,132
@@ -4655,7 +4655,7 @@ Music_63_Channel_1:
 		mainLoopEnd
 Music_63_Channel_2:
 		waitL 64
-		inst 127
+		inst 186
 		vol 12
 		vibrato 00h
 		setRelease 3
@@ -5289,7 +5289,7 @@ Music_63_Channel_2:
 		mainLoopEnd
 Music_63_Channel_3:
 		waitL 2
-		inst 123
+		inst 182
 		vol 9
 		vibrato 00h
 		setRelease 4
@@ -5435,17 +5435,17 @@ Music_63_Channel_3:
 		setRelease 3
 		noteL Fs5,10
 		mainLoopStart
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL Gs4,2
 		noteL A4,5
 		noteL As4,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 6
 		noteL As4,82
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D4,5
@@ -5463,11 +5463,11 @@ Music_63_Channel_3:
 		sustain
 		noteL A4,5
 		noteL As4,23
-		inst 128
+		inst 187
 		vol 11
 		setRelease 8
 		noteL As4,35
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D5,6
@@ -5479,21 +5479,21 @@ Music_63_Channel_3:
 		noteL As4,9
 		sustain
 		noteL Gs4,28
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL Gs4,67
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL Gs4,2
 		noteL A4,5
 		noteL As4,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL As4,81
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D4,6
@@ -5506,11 +5506,11 @@ Music_63_Channel_3:
 		noteL Cs5,21
 		sustain
 		noteL As4,29
-		inst 128
+		inst 187
 		vol 11
 		setRelease 9
 		noteL As4,35
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL C5,5
@@ -5520,21 +5520,21 @@ Music_63_Channel_3:
 		noteL Ds5,10
 		sustain
 		noteL F5,29
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL F5,67
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL Gs4,2
 		noteL A4,5
 		noteL As4,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL As4,81
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D4,5
@@ -5552,11 +5552,11 @@ Music_63_Channel_3:
 		sustain
 		noteL A4,6
 		noteL As4,23
-		inst 128
+		inst 187
 		vol 11
 		setRelease 9
 		noteL As4,35
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D5,5
@@ -5568,21 +5568,21 @@ Music_63_Channel_3:
 		noteL As4,9
 		sustain
 		noteL Gs4,28
-		inst 128
+		inst 187
 		vol 11
 		setRelease 13
 		noteL Gs4,68
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL Gs4,1
 		noteL A4,6
 		noteL As4,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL As4,82
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D4,5
@@ -5595,11 +5595,11 @@ Music_63_Channel_3:
 		noteL Cs5,21
 		sustain
 		noteL As4,28
-		inst 128
+		inst 187
 		vol 11
 		setRelease 9
 		noteL As4,36
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL C5,5
@@ -5609,38 +5609,38 @@ Music_63_Channel_3:
 		noteL Ds5,11
 		sustain
 		noteL F5,28
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL F5,67
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL C5,9
 		noteL Cs5,20
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL Cs5,56
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL A4,6
 		noteL As4,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL As4,9
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL C5,6
 		noteL Cs5,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL Cs5,9
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D5,5
@@ -5650,56 +5650,56 @@ Music_63_Channel_3:
 		noteL As4,2
 		noteL B4,4
 		noteL C5,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL C5,9
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL G4,6
 		noteL Gs4,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL Gs4,9
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL A4,5
 		noteL As4,34
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL As4,67
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL C5,9
 		noteL Cs5,20
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL Cs5,56
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL A4,5
 		noteL As4,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL As4,9
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL C5,5
 		noteL Cs5,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL Cs5,9
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D5,5
@@ -5709,29 +5709,29 @@ Music_63_Channel_3:
 		noteL As4,2
 		noteL B4,3
 		noteL C5,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL C5,9
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL G4,5
 		noteL Gs4,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 5
 		noteL Gs4,9
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL A4,5
 		noteL As4,34
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL As4,67
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL A4,5
@@ -5786,11 +5786,11 @@ Music_63_Channel_3:
 		noteL Ds5,6
 		sustain
 		noteL Ds5,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL Ds5,57
-		inst 128
+		inst 187
 		vol 11
 		setRelease 3
 		noteL F5,5
@@ -5798,11 +5798,11 @@ Music_63_Channel_3:
 		noteL F5,6
 		sustain
 		noteL F5,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL F5,57
-		inst 128
+		inst 187
 		vol 11
 		setRelease 3
 		noteL Fs5,5
@@ -5810,11 +5810,11 @@ Music_63_Channel_3:
 		noteL Fs5,6
 		sustain
 		noteL Fs5,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL Fs5,57
-		inst 128
+		inst 187
 		vol 11
 		setRelease 3
 		noteL Gs5,5
@@ -5822,11 +5822,11 @@ Music_63_Channel_3:
 		noteL Gs5,6
 		sustain
 		noteL Gs5,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 13
 		noteL Gs5,68
-		inst 128
+		inst 187
 		vol 11
 		setRelease 3
 		noteL Fs4,10
@@ -5886,11 +5886,11 @@ Music_63_Channel_3:
 		noteL D4,32
 		sustain
 		noteL D4,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL D4,88
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL C5,4
@@ -5955,11 +5955,11 @@ Music_63_Channel_3:
 		note  A4
 		sustain
 		noteL Fs4,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 7
 		noteL Fs4,14
-		inst 128
+		inst 187
 		vol 11
 		setRelease 4
 		noteL Cs5,11
@@ -5987,20 +5987,20 @@ Music_63_Channel_3:
 		sustain
 		noteL G5,2
 		noteL Gs5,23
-		inst 128
+		inst 187
 		vol 11
 		setRelease 6
 		noteL Gs5,7
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL G5,1
 		noteL Gs5,23
-		inst 128
+		inst 187
 		vol 11
 		setRelease 6
 		noteL Gs5,8
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL G5,1
@@ -6008,11 +6008,11 @@ Music_63_Channel_3:
 		noteL Gs5,30
 		sustain
 		noteL Gs5,22
-		inst 128
+		inst 187
 		vol 11
 		setRelease 7
 		noteL Gs5,24
-		inst 128
+		inst 187
 		vol 11
 		setRelease 4
 		noteL A5,15
@@ -6020,20 +6020,20 @@ Music_63_Channel_3:
 		sustain
 		noteL C6,1
 		noteL Cs6,22
-		inst 128
+		inst 187
 		vol 11
 		setRelease 13
 		noteL Cs6,147
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D5,8
 		noteL Ds5,20
-		inst 128
+		inst 187
 		vol 11
 		setRelease 23
 		noteL Ds5,67
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL D5,5
@@ -6064,11 +6064,11 @@ Music_63_Channel_3:
 		sustain
 		noteL F4,6
 		noteL Fs4,17
-		inst 128
+		inst 187
 		vol 11
 		setRelease 17
 		noteL Fs4,83
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL G4,6
@@ -6088,11 +6088,11 @@ Music_63_Channel_3:
 		noteL Ds5,11
 		sustain
 		noteL As4,28
-		inst 128
+		inst 187
 		vol 11
 		setRelease 8
 		noteL As4,35
-		inst 128
+		inst 187
 		vol 11
 		sustain
 		noteL F5,6
@@ -6107,14 +6107,14 @@ Music_63_Channel_3:
 		noteL Ds5,5
 		sustain
 		noteL As5,18
-		inst 128
+		inst 187
 		vol 11
 		setRelease 12
 		noteL As5,141
 		mainLoopEnd
 Music_63_Channel_4:
 		waitL 18
-		inst 123
+		inst 182
 		vol 8
 		vibrato 00h
 		setRelease 3
@@ -6260,7 +6260,7 @@ Music_63_Channel_4:
 		mainLoopStart
 		setRelease 3
 		noteL Fs5,11
-		inst 128
+		inst 187
 		vol 10
 		sustain
 		noteL Gs4,4
@@ -6765,7 +6765,7 @@ Music_63_Channel_4:
 		noteL Ds5,6
 		setRelease 3
 		noteL As5,148
-		inst 123
+		inst 182
 		vol 8
 		mainLoopEnd
 Music_63_Channel_9:
