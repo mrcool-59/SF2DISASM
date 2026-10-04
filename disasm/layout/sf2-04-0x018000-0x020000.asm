@@ -11,6 +11,9 @@
                 include "code\gameflow\battle\battlescenes\battlesceneengine_0.asm"    ; Battlescene engine
                 includeIfStandard "code\gameflow\battle\battlescenes\getallyanimation-standard.asm"
                 includeIfStandard "data\graphics\battles\battlesprites\spearthrowanimations-standard.asm"
+			if (SPELL_LEARNING_CUSTOM_MESSAGES=1)
+				includeIfStandard "data\stats\spells\learnmessagespells-standard.asm"
+			endif
                 alignIfStandard
                 includeIfVanilla "code\gameflow\battle\battlescenes\getallyanimation.asm"    ; Get ally battlescene animation function
                 include "code\gameflow\battle\battlescenes\battlesceneengine_1.asm"    ; Battlescene engine

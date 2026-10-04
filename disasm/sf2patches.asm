@@ -113,6 +113,8 @@ SEND_DROPPED_ITEMS_TO_CARAVAN:      equ 1       ; If character inventory is full
 SPELLS_REFRESH_STATUS_COUNTERS:     equ 1       ; Boost, Slow, and Attack spells refresh status counters instead of failing, as long as the counter is increased by at least 1. Battle messages display the actual regained stats values.
 TRADEABLE_ITEMS:                    equ 0       ; Allow trading items in battle without full inventory.
 TRAP_DAMAGE_RAISES_WITH_DIFFICULTY: equ 0       ; Increase Laser/Burst Rock damage with difficulty.   Normal:100%  Hard:125%  Super: 150%  Ouch: 175%
+SPELL_LEARNING_CUSTOM_MESSAGES:		equ 0		; 0 = 0FF, 1 = Add a new table where spells can be added to have a special text when a character learns the first level of the spell.
+SPELL_LEARNING_SOUND_EFFECT:		equ 0		; 0 = 0FF, xxx = Play xxx SFX when a character learns a new spell or upgrades a spell.
 
 
 ; Special screens

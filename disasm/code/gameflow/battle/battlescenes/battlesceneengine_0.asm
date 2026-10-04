@@ -1614,12 +1614,28 @@ loc_191AC:
                 cmpi.b  #-1,d0
                 beq.s   return_191DE
                 
+			if (STANDARD_BUILD=1&SPELL_LEARNING_SOUND_EFFECT>0)
+				sndCom	SPELL_LEARNING_SOUND_EFFECT
+			endif
+			
                 move.l  d0,d1
                 andi.w  #SPELLENTRY_MASK_INDEX,d0
                 lsr.w   #SPELLENTRY_OFFSET_LV,d1
                 bne.s   loc_191D0
                 move.w  ((BATTLESCENE_ALLY-$1000000)).w,((DIALOGUE_NAME_INDEX_1-$1000000)).w
                 move.w  d0,((DIALOGUE_NAME_INDEX_2-$1000000)).w
+
+			if (STANDARD_BUILD=1&SPELL_LEARNING_CUSTOM_MESSAGES=1)
+				lea		table_LearnMessageSpells(pc),a0
+				move.w  d0,d1
+				moveq   #1,d2
+				jsr     (FindSpecialPropertyBytesAddressForObject).w
+				bcs.s   @DefaultText
+				move.w  (a0),d0
+                jsr     (DisplayText).l 
+				bra.s	return_191DE
+			endif
+@DefaultText:
                 txt     271             ; "{D1}{NAME} learned the new{N}magic spell {SPELL}!"
                 bra.s   return_191DE
 loc_191D0:

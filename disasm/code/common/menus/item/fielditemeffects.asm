@@ -318,11 +318,27 @@ loc_22C2E:
                 cmpi.b  #-1,d1
                 beq.w   byte_22C5A      
                 
+			if (STANDARD_BUILD=1&SPELL_LEARNING_SOUND_EFFECT>0)
+				sndCom	SPELL_LEARNING_SOUND_EFFECT
+			endif
+
                 move.l  d1,d2
                 andi.w  #SPELLENTRY_MASK_INDEX,d2
                 lsr.w   #SPELLENTRY_OFFSET_LV,d1
                 bne.s   loc_22C4C
                 move.w  d2,((DIALOGUE_NAME_INDEX_2-$1000000)).w
+
+			if (STANDARD_BUILD=1&SPELL_LEARNING_CUSTOM_MESSAGES=1)
+				lea		table_LearnMessageSpells(pc),a0
+				move.w  d0,d1
+				moveq   #1,d2
+				jsr     (FindSpecialPropertyBytesAddressForObject).w
+				bcs.s   @DefaultText
+				move.w  (a0),d0
+                jsr     (DisplayText).l 
+				bra.s	return_191DE
+			endif
+@DefaultText:
                 txt     271             ; "{D1}{NAME} learned the new{N}magic spell {SPELL}!"
                 bra.s   byte_22C5A      
 loc_22C4C:
