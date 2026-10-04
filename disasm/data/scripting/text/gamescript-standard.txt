@@ -270,7 +270,7 @@
 0268=010C={D1}Attack increased by {#}!
 0269=010D={D1}Defense increased by {#}!
 0270=010E={D1}Agility increased by {#}!
-0271=010F={D1}{NAME} learned the new{N}magic spell {SPELL}!
+0271=010F={D1}{NAME} learned {SPELL}!
 0272=0110={D1}{SPELL} increased to{N}level {#}!
 0273=0111={NAME}'s attack!
 0274=0112={NAME} cast{N}{SPELL} level {#}!
