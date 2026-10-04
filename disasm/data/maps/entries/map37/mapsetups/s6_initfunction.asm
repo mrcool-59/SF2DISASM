@@ -13,7 +13,7 @@ ms_map37_InitFunction:
                 script  cs_5FA9C
 
 @Return:
-				script  @cs_SetMusicA
+				script  cs_map37_SetMusicA
                 rts
 
     ; End of function ms_map37_InitFunction
@@ -21,5 +21,5 @@ ms_map37_InitFunction:
 cs_5FA9C:       setPos ALLY_ZYNK,8,10,RIGHT
                 csc_end
 
-@cs_SetMusicA:	playSound MUSIC_HEADQUARTERS
-				csc_end
+cs_map37_SetMusicA:	playSound MUSIC_HEADQUARTERS
+					csc_end
