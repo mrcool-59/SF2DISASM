@@ -1448,7 +1448,7 @@
 05A7=Who are you?{N}Excuse me, but...{N}I'm blind.{W1}
 05A8=Pl...please...take that boy{N}with you!{W2}{N}(I hope they'll just go away{N}and won't TALK TO ME again...!){W1}
 05A9=Ddddd...don't kill me!{W2}{N}(argh...please go away!{N} Stop TALKING TO ME...!){W1}
-05AA=Please, take him!{W2}{N}(I don't know what to do if they{N} TALK TO ME once more...!){W1}
+05AA=Please, take him!{W2}{N}(If they try to TALK TO ME one{N} more time, I will... I will...){W1}
 05AB=Do I have to ask you to{N}take him with you again?{W1}
 05AC=Oh!{W1}
 05AD=The beastman checks the boy.{W1}
