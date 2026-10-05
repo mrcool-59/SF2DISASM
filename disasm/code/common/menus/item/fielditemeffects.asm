@@ -314,6 +314,10 @@ loc_22C22:
                 txt     270             ; "{D1}Agility increased by {#}!"
 loc_22C2E:
                 
+			if (STANDARD_BUILD=1)
+                txt     MESSAGE_DELAY   ; Shows "{D1}" so the last stat up message has a little time to breathe! 
+			endif
+				
                 move.b  (a5)+,d1
                 cmpi.b  #-1,d1
                 beq.w   byte_22C5A      

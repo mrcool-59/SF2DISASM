@@ -269,8 +269,8 @@
 010C={D1}Attack increased by {#}!
 010D={D1}Defense increased by {#}!
 010E={D1}Agility increased by {#}!
-010F={D1}{NAME} learned the new{N}magic spell {SPELL}!
-0110={D1}{SPELL} increased to{N}level {#}!
+010F={NAME} learned the new{N}magic spell {SPELL}!{W2}
+0110={SPELL} increased to{N}level {#}!{W2}
 0111={NAME}'s attack!
 0112={NAME} cast{N}{SPELL} level {#}!
 0113={NAME} used{N}{ITEM}!
@@ -405,7 +405,7 @@
 0194={NAME} investigated{N}the vase.{W2}{CLEAR}
 0195={NAME} looked in{N}the barrel.{W2}{CLEAR}
 0196=x
-0197=x
+0197={D1}
 0198=But, it was empty.{W1}
 0199=It was dark inside.{W1}
 019A=It was empty.{W1}
