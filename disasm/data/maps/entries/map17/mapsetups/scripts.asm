@@ -119,6 +119,8 @@ cs_52530:       textCursor 901
                 entityActionsWait ALLY_SLADE
                  moveRight 1
                 endActions
+				playSound MUSIC_STOP
+				playSound MUSIC_CUSTOM_VAPOR_TRAIL
                 nextSingleText $0,ALLY_SLADE ; "I'll open the door for you!{W1}"
                 setCameraEntity ALLY_SLADE
                 entityActionsWait 133
@@ -169,6 +171,7 @@ cs_52530:       textCursor 901
                 shiver ALLY_SLADE
                 csWait 5
                 setActscript ALLY_SLADE,eas_2xRightLeft
+				playSound SOUND_COMMAND_FADE_OUT
                 nextSingleText $C0,ALLY_SLADE ; "Ah, that's because...{N}well...{W1}"
                 csWait 20
                 setFacing ALLY_SLADE,UP
