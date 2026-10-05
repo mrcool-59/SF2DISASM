@@ -3167,7 +3167,7 @@
 0C5E=I can't forgive them for{N}this!{W1}
 0C5F=Volcanon, please calm down!{W2}
 0C60={LEADER} is not the person{N}who did it!{W1}
-0C61=Everybody who lives on the{N}ground is responsibile.{W2}
+0C61=Everybody who lives on the{N}ground is responsible.{W2}
 0C62=They have to solve this by{N}themselves.{W1}
 0C63=What should {LEADER} do?{W1}
 0C64=My protection ceases now!{W2}
