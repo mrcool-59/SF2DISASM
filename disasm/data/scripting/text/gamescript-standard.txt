@@ -1446,9 +1446,9 @@
 05A5=Clank!  Clank!{W2}{N}I heard that blacksmiths in{N}ancient times made special{N}weapons from a rare metal.{W1}
 05A6=I need more hair and more{N}courage!{W2}{N}I couldn't move when I{N}saw the devils....{W1}
 05A7=Who are you?{N}Excuse me, but...{N}I'm blind.{W1}
-05A8=Pl...please...take that boy{N}with you!{W1}{N}(I hope they'll just go away{N}and won't TALK TO ME{W2} again...!){W1}
-05A9=Ddddd...don't kill me!{W1}(I don't know what to do if they{N}TALK TO ME{W2} once more...!){W1}
-05AA=Please, take him!{W1}
+05A8=Pl...please...take that boy{N}with you!{W2}{N}(I hope they'll just go away{N}and won't TALK TO ME again...!){W1}
+05A9=Ddddd...don't kill me!{W2}{N}(argh...please go away!{N} Stop TALKING TO ME...!){W1}
+05AA=Please, take him!{W2}{N}(I don't know what to do if they{N} TALK TO ME once more...!){W1}
 05AB=Do I have to ask you to{N}take him with you again?{W1}
 05AC=Oh!{W1}
 05AD=The beastman checks the boy.{W1}
