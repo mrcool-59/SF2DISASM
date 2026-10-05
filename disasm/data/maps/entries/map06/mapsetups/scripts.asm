@@ -249,10 +249,10 @@ cs_54F26:       textCursor 1074
                 entityActionsWait ALLY_PETER
                  moveUp 4
                 endActions
-				textCursor 4271
-                nextSingleText $0,ALLY_PETER   	; [CUSTOM] "Oh, by the way...{W2}{N}I'm still practicing my{N}fire-breathing...{W1}"
-                nextText $0,ALLY_PETER   		; [CUSTOM] "...but don't worry, I will cause{N}no accident!{W1}"
-                nextText $0,144   				; [CUSTOM] "...{W2}That's a relief!...{N}Ahah-ah...{W1}"
+				textCursor 4269
+                nextText $0,ALLY_PETER   	; [CUSTOM] "Oh, by the way...{W2}{N}I'm still practicing my{N}fire-breathing...{W1}"
+                nextText $0,ALLY_PETER   	; [CUSTOM] "...but don't worry, I will cause{N}no accident!{W1}"
+                nextSingleText $0,144   	; [CUSTOM] "...{W2}That's a relief!...{N}Ahah-ah...{W1}"
                 entityActions 144
                  moveUp 4
                 endActions
