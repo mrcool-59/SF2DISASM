@@ -3154,7 +3154,7 @@
 0C51=Yes, I am!  This trip{N}was very interesting.{W1}
 0C52=That's good.{W2}
 0C53=What made it interesting?{W1}
-0C54=I met a lot people that live{N}on the ground.{W2}
+0C54=I met a lot of people that live{N}on the ground.{W2}
 0C55=They help each other.{N}I made some friends.{W1}
 0C56=Wonderful.  It must've been{N}a good experience for you.{W1}
 0C57=I've brought a friend.{W1}
