@@ -2977,7 +2977,7 @@ TEXT_CODE_TOGGLEFONTCOLOR: equ $5C
 
 ; enum Gold
 GOLD_STARTING_AMOUNT: equ $3C
-GOLD_GIFT: equ $64
+GOLD_GIFT: equ 1000
 
 ; ---------------------------------------------------------------------------
 

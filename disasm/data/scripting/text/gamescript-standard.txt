@@ -1233,9 +1233,9 @@
 1231=04CF=Minister, bring the gift!{W1}
 1232=04D0=Yes, sir.{W1}
 1233=04D1=A parting gift.  Take it.{W1}
-1234=04D2={LEADER} receives 100{N}gold coins.{W1}
+1234=04D2={LEADER} receives 1000 gold{N}coins and...{D1} a map?{N}It looks very incomplete.{W1}
 1235=04D3=Good luck, {LEADER}.{W2}
-1236=04D4=Find as many friends as you{N}can on your journey with{N}{NAME;7}.{W1}
+1236=04D4=Find as many friends as you{N}can on your journey with{N}{NAME;7}.{W2}{N}Oh!...And if you can, please take{N}some time to fill the map we{N}gave you, OK?{D1} Hehehe...{W1}
 1237=04D5={LEADER}, please find{N}the Princess.{W1}
 1238=04D6=The King is unaware of{N}Sir Astral's idea.{W2}
 1239=04D7=The most important thing is{N}to defeat the devils!{W1}
