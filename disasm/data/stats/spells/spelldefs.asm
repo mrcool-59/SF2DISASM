@@ -37,7 +37,7 @@ table_SpellDefinitions:
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 2
                 radius     0
-                power      15
+                power      20
                 
                 entry      HEAL|LV3     ; HEAL 3
                 mpCost     10
@@ -80,7 +80,7 @@ table_SpellDefinitions:
                 power      30
                 
                 entry      AURA|LV4     ; AURA 4
-                mpCost     20
+                mpCost     25
                 animation  HEALING_FAIRY|VARIATION4
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 0
@@ -88,7 +88,7 @@ table_SpellDefinitions:
                 power      255
                 
                 entry      DETOX        ; DETOX 1
-                mpCost     3
+                mpCost     2
                 animation  DETOX
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 1
@@ -96,7 +96,7 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      DETOX|LV2    ; DETOX 2
-                mpCost     6
+                mpCost     5
                 animation  DETOX|VARIATION2
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 2
@@ -104,15 +104,15 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      DETOX|LV3    ; DETOX 3
-                mpCost     10
+                mpCost     9
                 animation  DETOX|VARIATION3
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 2
-                radius     0
+                radius     1
                 power      0
                 
                 entry      DETOX|LV4    ; DETOX 4
-                mpCost     16
+                mpCost     15
                 animation  DETOX|VARIATION4
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 3
@@ -221,7 +221,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      6
+                power      8
                 
                 entry      BLAZE|LV2    ; BLAZE 2
                 mpCost     6
@@ -229,7 +229,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      10
+                power      12
                 
                 entry      BLAZE|LV3    ; BLAZE 3
                 mpCost     10
@@ -237,7 +237,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      15
+                power      18
                 
                 entry      BLAZE|LV4    ; BLAZE 4
                 mpCost     10
@@ -245,7 +245,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      40
+                power      45
                 
                 entry      FREEZE       ; FREEZE 1
                 mpCost     3
@@ -253,7 +253,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      10
+                power      12
                 
                 entry      FREEZE|LV2   ; FREEZE 2
                 mpCost     7
@@ -261,7 +261,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      12
+                power      14
                 
                 entry      FREEZE|LV3   ; FREEZE 3
                 mpCost     12
@@ -269,7 +269,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     1
-                power      18
+                power      21
                 
                 entry      FREEZE|LV4   ; FREEZE 4
                 mpCost     12
@@ -277,7 +277,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     0
-                power      50
+                power      55
                 
                 entry      BOLT         ; BOLT 1
                 mpCost     8
@@ -285,7 +285,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      14
+                power      16
                 
                 entry      BOLT|LV2     ; BOLT 2
                 mpCost     15
@@ -293,7 +293,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     2
-                power      16
+                power      18
                 
                 entry      BOLT|LV3     ; BOLT 3
                 mpCost     20
@@ -301,7 +301,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     2
-                power      25
+                power      28
                 
                 entry      BOLT|LV4     ; BOLT 4
                 mpCost     20
@@ -309,7 +309,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     0
-                power      60
+                power      65
                 
                 entry      BLAST        ; BLAST 1
                 mpCost     2
@@ -317,7 +317,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 1
                 radius     0
-                power      6
+                power      8
                 
                 entry      BLAST|LV2    ; BLAST 2
                 mpCost     5
@@ -325,7 +325,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      8
+                power      10
                 
                 entry      BLAST|LV3    ; BLAST 3
                 mpCost     8
@@ -333,7 +333,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      12
+                power      15
                 
                 entry      BLAST|LV4    ; BLAST 4
                 mpCost     8
@@ -341,7 +341,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      30
+                power      35
                 
                 entry      SPOIT        ; SPOIT 1
                 mpCost     0
@@ -485,7 +485,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      0, 0
                 radius     2
-                power      18
+                power      20
                 
                 entry      LASER        ; LASER 1
                 mpCost     0
@@ -493,7 +493,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      0, 0
                 radius     3
-                power      16
+                power      20
                 
                 entry      KATON        ; KATON 1
                 mpCost     6
@@ -501,7 +501,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      12
+                power      14
                 
                 entry      KATON|LV2    ; KATON 2
                 mpCost     10
@@ -509,7 +509,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      16
+                power      19
                 
                 entry      KATON|LV3    ; KATON 3
                 mpCost     12
@@ -517,7 +517,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      42
+                power      47
                 
                 entry      RAIJIN       ; RAIJIN 1
                 mpCost     15
@@ -525,7 +525,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     2
-                power      18
+                power      20
                 
                 entry      RAIJIN|LV2   ; RAIJIN 2
                 mpCost     18
@@ -533,7 +533,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     2
-                power      26
+                power      29
                 
                 entry      RAIJIN|LV3   ; RAIJIN 3
                 mpCost     20
@@ -541,7 +541,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     0
-                power      58
+                power      63
                 
                 entry      DAO          ; DAO 1
                 mpCost     8
@@ -549,7 +549,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      18
+                power      20
                 
                 entry      DAO|LV2      ; DAO 2
                 mpCost     15
@@ -557,7 +557,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      40
+                power      43
                 
                 entry      APOLLO       ; APOLLO 1
                 mpCost     10
@@ -565,7 +565,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      23
+                power      25
                 
                 entry      APOLLO|LV2   ; APOLLO 2
                 mpCost     17
@@ -573,7 +573,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      50
+                power      53
                 
                 entry      NEPTUN       ; NEPTUN 1
                 mpCost     12
@@ -581,7 +581,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      30
+                power      32
                 
                 entry      NEPTUN|LV2   ; NEPTUN 2
                 mpCost     19
@@ -589,7 +589,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      61
+                power      64
                 
                 entry      ATLAS        ; ATLAS 1
                 mpCost     14
@@ -605,7 +605,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     1
-                power      73
+                power      75
                 
                 entry      POWDER       ; POWDER 1
                 mpCost     0
