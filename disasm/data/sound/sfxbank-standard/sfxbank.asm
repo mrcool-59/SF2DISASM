@@ -64,6 +64,7 @@ pt_SFX:
     dw Sfx_55	; #119 - SFX_BOLT_SPELL
     dw Sfx_56	; #120 - SFX_TINKLING
     dw CSFX_0	; #121 - SFX_CUSTOM_FIRE [Custom]
+    dw CSFX_1	; #122 - SFX_CUSTOM_LEARN_SPELL [Custom]
 CSFX_0:		; [CUSTOM] Fire
 		db 1	; SFX type
 		dw CSFX_0_Channel_7
@@ -95,6 +96,43 @@ CSFX_0_Channel_9:
 		psgInst 5
 		psgNote  5
 		waitL 3
+		channel_end
+CSFX_1:		; [CUSTOM] Learn Spell
+		db 1	; SFX type
+		dw CSFX_1_Channel_9
+		dw CSFX_1_Channel_9
+		dw CSFX_1_Channel_9
+		dw CSFX_1_Channel_9
+		dw CSFX_1_Channel_9
+		dw CSFX_1_Channel_9
+		dw CSFX_1_Channel_9
+		dw CSFX_1_Channel_9
+		dw CSFX_1_Channel_8
+		dw CSFX_1_Channel_9
+
+CSFX_1_Channel_8:
+		psgInst 111
+		vibrato 00h
+		setRelease 1
+		psgNoteL F5,4
+		psgNote  G5
+		psgNote  A5
+		psgNoteL C6,6
+		psgInst 103
+		psgNote  C6
+		psgInst 102
+		psgNote  C6
+		psgInst 101
+		psgNote  C6
+		psgInst 100
+		psgNote  C6
+		psgInst 99
+		psgNote  C6
+		psgInst 98
+		psgNote  C6
+		wait
+		channel_end
+CSFX_1_Channel_9:
 		channel_end
 Sfx_1:          db 2                    ; sound 1 data
     dw Sfx_1_Channel_5

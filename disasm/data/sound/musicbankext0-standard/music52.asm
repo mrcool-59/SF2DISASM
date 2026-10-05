@@ -22,7 +22,7 @@ Music_52_Channel_0:
 		waitL 24
 		stereo 40h
 		inst 113
-		vol 12
+		vol 11
 		vibrato 00h
 		setRelease 1
 		noteL G4,12
@@ -178,7 +178,7 @@ Music_52_Channel_0:
 		note  G4
 		mainLoopStart
 		inst 83
-		vol 13
+		vol 12
 		vibrato 2Ah
 		setRelease 25
 		noteL C6,48
@@ -361,7 +361,7 @@ Music_52_Channel_0:
 		note  As6
 		note  G6
 		inst 32
-		vol 12
+		vol 11
 		noteL C7,36
 		noteL Ds7,24
 		noteL D7,12
@@ -495,7 +495,7 @@ Music_52_Channel_0:
 		note  D7
 		stereo 40h
 		inst 113
-		vol 12
+		vol 11
 		setRelease 1
 		noteL G4,12
 		note  G4
@@ -653,7 +653,7 @@ Music_52_Channel_1:
 		waitL 24
 		stereo 80h
 		inst 113
-		vol 12
+		vol 11
 		vibrato 00h
 		setRelease 1
 		noteL Ds4,12
@@ -731,7 +731,7 @@ Music_52_Channel_1:
 		note  D4
 		note  Ds4
 		inst 32
-		vol 13
+		vol 12
 		setRelease 7
 		note  C5
 		note  C5
@@ -970,7 +970,7 @@ Music_52_Channel_1:
 		noteL G5,36
 		countedLoopEnd
 		inst 32
-		vol 14
+		vol 13
 		setRelease 1
 		countedLoopStart 2
 		noteL C5,12
@@ -1110,7 +1110,7 @@ Music_52_Channel_1:
 		setRelease 13
 		noteL As3,18
 		inst 113
-		vol 12
+		vol 11
 		setRelease 1
 		noteL Ds4,12
 		note  Ds4
@@ -1187,7 +1187,7 @@ Music_52_Channel_1:
 		note  D4
 		note  Ds4
 		inst 32
-		vol 13
+		vol 12
 		setRelease 7
 		note  C5
 		note  C5
@@ -1282,7 +1282,7 @@ Music_52_Channel_1:
 Music_52_Channel_2:
 		waitL 12
 		inst 74
-		vol 14
+		vol 13
 		vibrato 00h
 		setRelease 1
 		countedLoopStart 1
@@ -1396,7 +1396,7 @@ Music_52_Channel_2:
 		note  G2
 		countedLoopEnd
 		inst 80
-		vol 14
+		vol 13
 		countedLoopStart 1
 		note  C4
 		note  C4
@@ -1611,12 +1611,12 @@ Music_52_Channel_2:
 		note  As2
 		countedLoopEnd
 		inst 74
-		vol 14
+		vol 13
 		mainLoopEnd
 Music_52_Channel_3:
 		stereo 40h
 		inst 70
-		vol 12
+		vol 11
 		vibrato 00h
 		setRelease 0
 		noteL C5,6
@@ -1637,7 +1637,7 @@ Music_52_Channel_3:
 		note  C7
 		stereo 40h
 		inst 32
-		vol 11
+		vol 10
 		setRelease 7
 		noteL G4,12
 		note  G4
@@ -1901,7 +1901,7 @@ Music_52_Channel_3:
 		note  G3
 		note  G3
 		inst 32
-		vol 14
+		vol 13
 		shifting 00h
 		note  G5
 		countedLoopStart 2
@@ -2091,7 +2091,7 @@ Music_52_Channel_3:
 		setRelease 1
 		note  C7
 		stereo 40h
-		vol 11
+		vol 10
 		setRelease 7
 		noteL G4,12
 		note  G4
@@ -2337,7 +2337,7 @@ Music_52_Channel_4:
 		note  G4
 		mainLoopStart
 		inst 83
-		vol 11
+		vol 10
 		vibrato 2Ah
 		setRelease 25
 		noteL C6,48
@@ -2467,7 +2467,7 @@ Music_52_Channel_4:
 		note  G5
 		note  D5
 		inst 114
-		vol 11
+		vol 10
 		vibrato 2Ah
 		noteL C6,48
 		vibrato 00h
@@ -2514,7 +2514,7 @@ Music_52_Channel_4:
 		note  As6
 		note  G6
 		inst 32
-		vol 10
+		vol 9
 		noteL C7,36
 		noteL Ds7,24
 		noteL D7,12
