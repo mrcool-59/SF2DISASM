@@ -1614,8 +1614,10 @@ loc_191AC:
                 cmpi.b  #-1,d0
                 beq.s   return_191DE
                 
-			if (STANDARD_BUILD=1&SPELL_LEARNING_SOUND_EFFECT>0)
+			if (STANDARD_BUILD=1)
+			if (SPELL_LEARNING_SOUND_EFFECT>=1)
 				sndCom	SPELL_LEARNING_SOUND_EFFECT
+			endif
 			endif
 			
                 move.l  d0,d1

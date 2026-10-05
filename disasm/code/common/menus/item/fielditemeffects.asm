@@ -318,8 +318,10 @@ loc_22C2E:
                 cmpi.b  #-1,d1
                 beq.w   byte_22C5A      
                 
-			if (STANDARD_BUILD=1&SPELL_LEARNING_SOUND_EFFECT>0)
+			if (STANDARD_BUILD=1)
+			if (SPELL_LEARNING_SOUND_EFFECT>=1)
 				sndCom	SPELL_LEARNING_SOUND_EFFECT
+			endif
 			endif
 
                 move.l  d1,d2

@@ -930,8 +930,10 @@ byte_B93A:
                 cmpi.b  #-1,d1
                 beq.s   @Return
                 
-			if (STANDARD_BUILD=1&SPELL_LEARNING_SOUND_EFFECT>0)
+			if (STANDARD_BUILD=1)
+			if (SPELL_LEARNING_SOUND_EFFECT>=1)
 				sndCom	SPELL_LEARNING_SOUND_EFFECT
+			endif
 			endif
 
                 move.w  d1,d2
