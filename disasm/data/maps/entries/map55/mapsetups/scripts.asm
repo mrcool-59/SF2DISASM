@@ -40,7 +40,7 @@ eas_5E2C4:       ac_entityUncollidable OFF
 cs_5E320:       mapLoad MAP_OVERWORLD_NAZCA_REGION,8,14
                 loadMapEntities ce_5E33E
                 setActscriptWait ALLY_BOWIE,eas_Init
-                playSound MUSIC_MAIN_THEME
+                playSound MUSIC_CUSTOM_AIRSHIP
                 fadeInB
                 csc_end
 ce_5E33E:       mainEntity 12,19,DOWN

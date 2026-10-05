@@ -35,7 +35,7 @@ cs_4FF5A:       textCursor 1556
                 setPos ALLY_PETER,44,47,DOWN
                 setPos ALLY_LUKE,43,47,DOWN
                 setPos FOLLOWER_B,45,48,LEFT
-                playSound MUSIC_MAIN_THEME
+                playSound MUSIC_CUSTOM_NEW_CONTINENT_TO_DISCOVER
                 fadeInB
                 csWait 40
                 nextSingleText $0,ALLY_LUKE ; "Now, let's go to Devil's Tail{N}to see Creed!{W1}"
