@@ -519,7 +519,13 @@ CheckRandomBattle:
                 move.w  #BATTLE_COMPLETED_FLAGS_START,d1
                 add.w   d0,d1
                 jsr     j_CheckFlag
+				
+			if ((STANDARD_BUILD=1)&(NO_RANDOM_BATTLES=2))
+				; Only once
+                bne.s   loc_478C0
+			else
                 bne.s   loc_4786E
+			endif
                 moveq   #-1,d1
                 bra.w   loc_47896
 loc_4786E:
@@ -553,8 +559,12 @@ loc_47896:
                 move.l  #MAP_EVENT_RELOADMAP,((MAP_EVENT_TYPE-$1000000)).w
                 move.w  #30000,((STEP_COUNTER-$1000000)).w
                 jsr     (WaitForViewScrollEnd).w
+			if ((STANDARD_BUILD=1)&(NO_RANDOM_BATTLES=2))
+				; Only once = flash removed, should feel like a regular battle now
+			else
                 sndCom  SFX_BOOST
                 bsr.w   ExecuteFlashScreenScript
+			endif
 loc_478C0:
                 
                 movem.l (sp)+,d1/d6-d7
