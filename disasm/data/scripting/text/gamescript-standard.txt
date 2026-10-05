@@ -3170,8 +3170,8 @@
 0C61=Everybody who lives on the{N}ground is responsible.{W2}
 0C62=They have to solve this by{N}themselves.{W1}
 0C63=What should {LEADER} do?{W1}
-0C64=My protection ceases now!{W2}
-0C65=He must face the devils on{N}his own.{W1}
+0C64=My protection ceases now!{W2}{N}Except for yours, Ixen.{W2}{N}I'll continue to safeguard you{N}if you fall in battle.{W2}
+0C65={LEADER} must face the devils{N}on his own.{W1}
 0C66=But...{W2}
 0C67=Even the greater devils{N}are as strong as you!{W1}
 0C68=If all the humans are{N}annihilated, that's OK.{N}It's their destiny.{W2}
