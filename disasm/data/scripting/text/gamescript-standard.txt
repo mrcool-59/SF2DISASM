@@ -1031,7 +1031,7 @@
 0406=Wow!  It's very big!{N}He doesn't wear anything!{W2}
 0407=I've seen many animal-like{N}races here, but they all{N}wore clothes!{W1}
 0408=Mmm! It has shiny scales!{N}Is this a god?{W1}
-0409=Hey, why don't you touch it?{N}It may be a stuffed animal!{W1}
+0409=Hey, why don't you touch it?{N}Its scales must be pretty hard!{W1}
 040A=I can't see!{N}I can't see!{W1}
 040B=This is boring!{W1}
 040C=I'll miss you, {LEADER}.{N}I must find another customer.{W1}
