@@ -188,13 +188,19 @@ FindNextLearnableSpell:
                 
                 move.b  (a0)+,d2            ; d2 = level which spell is learned at
                 move.b  (a0)+,d1            ; d1 = spell index
-                cmp.b   d2,d5
-                bhs.s   LearnSpell
                 
                 cmpi.b  #ALLYSTATS_CODE_USE_FIRST_SPELL_LIST,d2
                 beq.s   @GetFirstSpellList
                 
+                cmp.b   d2,d5
+                blo.s   @Stop
+											; BUGFIX: the instruction to call LearnSpell should have been bsr instead of conditional branch!
+                bsr.s   LearnSpell			; This one was very nasty to notice.
+				tst.w   d2					; Does LearnSpell report a success? (= 0)
+				beq.s	@Done				; We successfully learned a spell, our job is done, d1 = spell learned
+@Stop:
                 moveq   #-1,d2
+@Done:
                 rts
                 
                 modend
