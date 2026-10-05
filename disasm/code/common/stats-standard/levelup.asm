@@ -134,12 +134,13 @@ FastLevelUp:
                 
                 ; Find next learnable spell
                 st      6(a1)
-                bsr.w   CalculateEffectiveLevel
+                bsr.w   CalculateEffectiveLevel		; d1 = effective level
                 move.w  d1,d5
-                bsr.w   FindNextLearnableSpell  
+				bsr.w	GetAllySpellListFirstEntry	; a0 = pointer to first spell entry
+                bsr.w   FindNextLearnableSpell		; d1 = learned spell if successful, d2 = success if 0
                 tst.w   d2
                 bne.s   @Done
-                move.b  d1,6(a1)
+                move.b  d1,6(a1)					; inform the presentation layer spell d1 has been learned
 @Done:          movem.l (sp)+,d0-a1
                 rts
 

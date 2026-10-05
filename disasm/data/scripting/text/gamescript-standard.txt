@@ -270,8 +270,8 @@
 0268=010C={D1}Attack increased by {#}!
 0269=010D={D1}Defense increased by {#}!
 0270=010E={D1}Agility increased by {#}!
-0271=010F={D1}{NAME} learned {SPELL}!
-0272=0110={D1}{SPELL} increased to{N}level {#}!
+0271=010F={NAME} learned {SPELL}!{W2}
+0272=0110={SPELL} increased to{N}level {#}!{W2}
 0273=0111={NAME}'s attack!
 0274=0112={NAME} cast{N}{SPELL} level {#}!
 0275=0113={NAME} used{N}{ITEM}!
@@ -410,7 +410,7 @@
 0408=0198=But, it was empty.{W1}
 0409=0199=It was dark inside.{W1}
 0410=019A=It was empty.{W1}
-0411=019B=x
+0411=019B={D1}
 0412=019C=Nothing was there.{W1}
 0413=019D={NAME} found{N}{ITEM}.{W2}{CLEAR}
 0414=019E={NAME} found {#} gold{N}coins.
