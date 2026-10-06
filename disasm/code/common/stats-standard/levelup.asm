@@ -290,8 +290,6 @@ InitializeAllyStats:
                 bsr.w   GetClass
                 bsr.s   FindRegularPromoClass ; Out: d1.w = new class, d2.w = current class
                 bsr.w   Promote
-                moveq   #1,d1
-                bsr.w   SetLevel
                 
 @Next:          dbf     d4,@LevelUp_Loop
                 
