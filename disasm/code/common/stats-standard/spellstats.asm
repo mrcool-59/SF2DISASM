@@ -115,9 +115,11 @@ CalculateTotalLevel:
                 move.w  d1,d2
                 bsr.w   GetLevel
                 add.w   d2,d1
-                bra.s   @Done
+				subq.w  #1,d1		; This fixes an issue where promotion gave 1 extra level for the purpose of learning spells from the base class spell list
+                bra.s   @Done		; Say, if character promotes at level 24 and is set-up to learn a spell at level 25, he must level up to promoted level 2 to learn the level 25 spell
                 
                 ; Pre-promoted characters are assumed to have been promoted at level 20
+				; Note that this case doesn't matter anyway since pre-promoted characters don't have a base class spell list in the first place
 @Skip:          bsr.w   CalculateEffectiveLevel
 @Done:          movem.l (sp)+,d0/d2/a0
                 rts
