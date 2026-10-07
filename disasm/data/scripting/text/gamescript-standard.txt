@@ -446,7 +446,7 @@
 0444=01BC=You have nothing to equip.{W1}
 0445=01BD=I'm {NAME}, the {CLASS}.{D1}
 0446=01BE={NAME} the {CLASS} {N}has joined the force.
-0447=01BF={NAME;1} the PRST and{N}{NAME;2} the KNTE{N}have joined the force.
+0447=01BF={NAME;1} the Priest and{N}{NAME;2} the Knight{N}have joined the force.
 0448=01C0=Configuration....{D3}
 0449=01C1={CLEAR}CHEAT MODE
 0450=01C2={CLEAR}Special Turbo
@@ -3279,7 +3279,7 @@
 3277=0CCD=No more questions...{N}...without Evil Spirit....{W1}
 3278=0CCE=Creed?  Creed!{W2}
 3279=0CCF=Hey, don't leave me here!{N}Wait for me!{W1}
-3280=0CD0={NAME;19} the paladin{N}has joined the force.{W1}
+3280=0CD0={NAME;19} the Paladin{N}has joined the force.{W1}
 3281=0CD1=Are you from South Parmecia?{N}Oh, great!{W1}
 3282=0CD2=It's been dry here since the{N}devils appeared.{W2}
 3283=0CD3=They must have done something{N}to Goddess Mitula!{W1}
