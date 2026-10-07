@@ -5,13 +5,18 @@
 ; =============== S U B R O U T I N E =======================================
 
 
-battlesceneScript_CalculateHealingExp:
+battlesceneScript_CalculateHealingExp:	; d6 = healing done
                 
                 movem.l d0-d3/a0,-(sp)
                 move.b  (a4),d0
                 btst    #COMBATANT_BIT_ENEMY,d0
                 bne.w   @Skip           ; skip if enemy
                 
+			if (STANDARD_BUILD&HEALING_EXP_MUST_HEAL_ONE_HP=1)
+				tst.w	d6
+				beq.s	@Skip
+			endif
+				
                 ; Check if healer class
             if (STANDARD_BUILD=1)
                 lea     table_HealerClasses(pc),a0
@@ -37,10 +42,20 @@ battlesceneScript_CalculateHealingExp:
                 beq.w   @Skip           ; safety measure to prevent division by 0
                 move.w  #HEALING_SPELL_EXP_MAX,d5
                 mulu.w  d6,d5
-                divu.w  d1,d5
+                divu.w  d1,d5			; healing EXP = MAX( min_EXP, max_EXP * healing done / max HP )
                 cmpi.w  #HEALING_SPELL_EXP_MIN,d5
                 bcc.s   @Add
                 moveq   #HEALING_SPELL_EXP_MIN,d5
+				
+			if ((STANDARD_BUILD=1)&(HEALING_EXP_AURA_FLAT_PENALTY<>0))
+                move.w  ((BATTLESCENE_SPELL_INDEX-$1000000)).w,d1
+				cmpi.w	#SPELL_AURA,d1	; Check spell is AURA
+				bne.s	@Add
+				sub.w	#HEALING_EXP_AURA_FLAT_PENALTY,d5
+				tst.w	d5
+				bmi.s	@Skip
+			endif
+				
 @Add:
                 
                 bsr.w   battlesceneScript_AddExpAndApplyHealingCap
@@ -55,7 +70,7 @@ battlesceneScript_CalculateHealingExp:
 ; =============== S U B R O U T I N E =======================================
 
 
-battlesceneScript_CalculateDamageExp:
+battlesceneScript_CalculateDamageExp:	; d6 = damage dealt
                 
                 movem.l d0-d3/a0,-(sp)
                 btst    #COMBATANT_BIT_ENEMY,(a4)
@@ -66,7 +81,22 @@ battlesceneScript_CalculateDamageExp:
                 beq.w   @Skip           ; skip function to prevent division by zero error
                 bsr.w   battlesceneScript_GetKillExp
                 mulu.w  d6,d5
-                divu.w  d1,d5
+                divu.w  d1,d5			; damage EXP = kill EXP * damage dealt / max HP
+				
+			if (STANDARD_BUILD=1&DAMAGE_EXP_GUARANTEED_HP_PERCENT<>0)
+			    movem.l d5,-(sp)
+				bsr.w   battlesceneScript_GetKillExp	
+                mulu.w  #DAMAGE_EXP_GUARANTEED_HP_PERCENT,d5
+                divu.w  #100,d5			; minimum damage EXP = kill EXP * DAMAGE_EXP_GUARANTEED_HP_PERCENT / 100
+				move.w	d5,d1
+				movem.l (sp)+,d5
+				
+                cmp.w   d5,d1			
+                bge.w   @NoAdjust		; damage EXP >= minimum damage EXP
+				move.w  d1,d5
+@NoAdjust:
+			endif
+			
                 bsr.w   battlesceneScript_AddExpAndApplyPerActionCap
 @Skip:
                 
@@ -90,6 +120,25 @@ battlesceneScript_AddStatusEffectSpellExp:
                 
                 movem.l (sp)+,d0-d3/a0
                 rts
+
+    ; End of function battlesceneScript_AddStatusEffectSpellExp
+
+
+; =============== S U B R O U T I N E =======================================
+
+
+battlesceneScript_AddStatusEffectBuffSpellExp:
+	if (STANDARD_BUILD=1)
+                movem.l d0-d3/a0,-(sp)
+                btst    #COMBATANT_BIT_ENEMY,(a4)
+                bne.w   @Done
+                moveq   #STATUS_BUFF_EXP,d5
+                bsr.w   battlesceneScript_AddExpAndApplyPerActionCap
+@Done:
+                
+                movem.l (sp)+,d0-d3/a0
+                rts
+	endif
 
     ; End of function battlesceneScript_AddStatusEffectSpellExp
 
@@ -184,6 +233,9 @@ battlesceneScript_GetKillExp:
 @Continue:
                 
                 sub.w   d2,d1
+			if ((STANDARD_BUILD=1)&(DAMAGE_EXP_LEVEL_OFFSET<>0))
+				subi.w	#DAMAGE_EXP_LEVEL_OFFSET,d1
+			endif
                 moveq   #50,d5          ; HARDCODED EXP amounts
                 cmpi.b  #3,d1
                 bmi.w   @Done

@@ -528,9 +528,13 @@ ChurchMenu:
 				; No need to reset level to 1, it is already done by Promote
 			else
                 jsr     j_SetLevel
+            if (STANDARD_BUILD&KEEP_EXP_ON_PROMOTION=1)
+                ; Exp is retained
+            else
                 clr.w   d1
 			endif
                 jsr     j_SetCurrentExp
+            endif
 @RestartPromo:
                 
                 bra.w   @StartPromo     
