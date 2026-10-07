@@ -144,8 +144,8 @@ SCROLLING_TEXT_INTRODUCTION:        equ 0       ; An example for adding a scroll
 
 
 ; AI enhancements (experimental)
-HEALER_AI_ENHANCEMENTS:             equ 0       ; See SF2_AI_Healing_Rewrite.txt for more details.
-SUPPORT_AI_ENHANCEMENTS:            equ 0       ; Increase support spell options enemies can use.
+HEALER_AI_ENHANCEMENTS:             equ 1       ; See SF2_AI_Healing_Rewrite.txt for more details.
+SUPPORT_AI_ENHANCEMENTS:            equ 1       ; Increase support spell options enemies can use.
 
 
 ; Turn order modifications
