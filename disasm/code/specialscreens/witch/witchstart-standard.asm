@@ -183,10 +183,22 @@ witchMenuAction_New:
 @SkipNaming:    addq.w  #1,d0
                 cmpi.w  #ALLY_KIWI,d0
                 beq.s   @SkipNaming
+                cmpi.w  #ALLY_PETER,d0	; Skip Ixen renaming, he is handled after this!
+                beq.s   @SkipNaming
                 dbf     d7,@NameAlly_Loop
                 
+				; Ixen special-case
 @Configuration: txt     223             ; "{NAME;0}....{N}Nice name, huh?{W2}"
+				txt     371             ; "{CLEAR}Oooh I almost forgot.{N}There is another important{N}character in this story.{W2}{CLEAR}You can rename him...{D1}{N}but this is a spoiler.{N}It is your choice, hee, hee, hee...{W2}{CLEAR}Do you want to rename the{N}new character?"
+                jsr     YesNoPrompt
+                tst.w   d0
+                bne.w   @NoIxenRename
+                clsTxt
+				moveq   #ALLY_PETER,d0
+				jsr     NameAlly
+@NoIxenRename:
                 bsr.w   CheatModeConfiguration
+                clsTxt
                 txt     232             ; "I'll let you decide the{N}difficulty level at this time."
                 clr.w   d0
                 moveq   #3,d1

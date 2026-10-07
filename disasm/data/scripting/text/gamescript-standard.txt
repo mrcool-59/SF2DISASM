@@ -363,14 +363,14 @@
 0361=0169={NAME} is stunned.{N}And can't move.
 0362=016A={DICT}{W2}
 0363=016B={LEADER} is exhausted.{W1}
-0364=016C={NAME}'s level increased!{N}{NAME} became level {#}.{W2}
-0365=016D=Attack increased by {#}.{W2}
-0366=016E=Defense increased by {#}.{W2}
-0367=016F=Agility increased by {#}.{W2}
-0368=0170=Max. HP increased by {#}.{W2}
-0369=0171=Max. MP increased by {#}.{W2}
-0370=0172=And learned a{N}new magic spell, {SPELL}.{W2}
-0371=0173=And {SPELL} became{N}level {#}.{W2}
+0364=016C=x
+0365=016D=x
+0366=016E=x
+0367=016F=x
+0368=0170=x
+0369=0171=x
+0370=0172=x
+0371=0173={CLEAR}Oooh I almost forgot.{N}There is another important{N}character in this story.{W2}{CLEAR}You can rename him...{D1}{N}but this is a spoiler.{N}It is your choice, hee, hee, hee.{W2}{CLEAR}Do you want to rename the{N}new character? (spoiler)
 0372=0174=But smoke rose from{N}the {ITEM}.{D1}
 0373=0175=But a crack appears in the{N}{ITEM}.{D1}
 0374=0176=But, the {ITEM} has{N}a big crack.{D1}
