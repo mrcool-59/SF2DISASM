@@ -556,6 +556,34 @@ loc_47896:
                 move.w  #BATTLE_UNLOCKED_FLAGS_START,d1
                 add.w   d0,d1
                 jsr     j_SetFlag
+
+			if ((STANDARD_BUILD=1)&(NO_RANDOM_BATTLES=3))
+                ; This variant will give choice to the player!
+                jsr     (WaitForViewScrollEnd).w
+                sndCom  SFX_BOOST
+                bsr.w   ExecuteFlashScreenScript
+
+                ; Show message
+                txt     364        ; "There are monsters ahead!{N}Will you sneak past them?"
+                move.w  d0,-(sp)
+                jsr     YesNoPrompt
+                tst.w   d0
+                movem.w (sp)+,d0
+                beq.w   @SkipBattle
+
+                ; Play battle
+                move.l  #MAP_EVENT_RELOADMAP,((MAP_EVENT_TYPE-$1000000)).w
+                move.w  #30000,((STEP_COUNTER-$1000000)).w
+				bra.s   loc_478C0
+@SkipBattle:
+                ; Flag the battle as completed
+                move.w  #BATTLE_COMPLETED_FLAGS_START,d1
+                add.w   d0,d1
+                jsr     j_SetFlag
+
+                ; Final text and exit
+                txt     365        ; "{LEADER} and his companions{N}sneaked past the monsters!{W2}{CLEAR}Monsters might come back later...{W1}"
+            else
                 move.l  #MAP_EVENT_RELOADMAP,((MAP_EVENT_TYPE-$1000000)).w
                 move.w  #30000,((STEP_COUNTER-$1000000)).w
                 jsr     (WaitForViewScrollEnd).w
@@ -565,6 +593,7 @@ loc_47896:
                 sndCom  SFX_BOOST
                 bsr.w   ExecuteFlashScreenScript
 			endif
+            endif
 loc_478C0:
                 
                 movem.l (sp)+,d1/d6-d7
