@@ -2238,7 +2238,7 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 88: TAROS
                 spellPower REGULAR
                 level    20
-                maxHp    49
+                maxHp    99
                 maxMp    0
                 baseAtt  9
                 baseDef  32
