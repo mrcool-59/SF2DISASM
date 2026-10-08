@@ -559,6 +559,7 @@ loc_47896:
 
 			if ((STANDARD_BUILD=1)&(NO_RANDOM_BATTLES=3))
                 ; This variant will give choice to the player!
+                move.w  #30000,((STEP_COUNTER-$1000000)).w
                 jsr     (WaitForViewScrollEnd).w
                 sndCom  SFX_BOOST
                 bsr.w   ExecuteFlashScreenScript
@@ -573,7 +574,6 @@ loc_47896:
 
                 ; Play battle
                 move.l  #MAP_EVENT_RELOADMAP,((MAP_EVENT_TYPE-$1000000)).w
-                move.w  #30000,((STEP_COUNTER-$1000000)).w
 				bra.s   loc_478C0
 @SkipBattle:
                 ; Flag the battle as completed
