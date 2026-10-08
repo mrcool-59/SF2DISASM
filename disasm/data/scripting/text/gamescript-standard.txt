@@ -363,7 +363,7 @@
 016A={DICT}{W2}
 016B={LEADER} is exhausted.{W1}
 016C=There are monsters ahead!{N}Will you sneak past them?
-016D={LEADER} and his companions{N}sneaked past the monsters!{W2}{CLEAR}Monsters might come back later...{W1}
+016D={LEADER} and his companions{N}avoided the monsters!{W2}{CLEAR}Monsters might come back{N}later...{W1}
 016E=x
 016F=x
 0170=x
