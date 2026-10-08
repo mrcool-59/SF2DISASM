@@ -364,7 +364,7 @@
 0362=016A={DICT}{W2}
 0363=016B={LEADER} is exhausted.{W1}
 0364=016C=There are monsters ahead!{N}Will you sneak past them?
-0365=016D={LEADER} and his companions{N}sneaked past the monsters!{W2}{CLEAR}Monsters might come back later...{W1}
+0365=016D={LEADER} and his companions{N}avoided the monsters!{W2}{CLEAR}Monsters might come back{N}later...{W1}
 0366=016E={NAME} received {#}{N}bonus EXP. points!{D1}{D1}
 0367=016F=x
 0368=0170=x
