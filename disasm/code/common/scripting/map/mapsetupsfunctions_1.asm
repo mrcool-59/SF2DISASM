@@ -553,13 +553,9 @@ loc_47896:
                 
                 tst.w   d1
                 beq.s   loc_478C0
-                move.w  #BATTLE_UNLOCKED_FLAGS_START,d1
-                add.w   d0,d1
-                jsr     j_SetFlag
 
 			if ((STANDARD_BUILD=1)&(NO_RANDOM_BATTLES=3))
                 ; This variant will give choice to the player!
-                move.w  #30000,((STEP_COUNTER-$1000000)).w
                 jsr     (WaitForViewScrollEnd).w
                 sndCom  SFX_BOOST
                 bsr.w   ExecuteFlashScreenScript
@@ -573,7 +569,11 @@ loc_47896:
                 beq.w   @SkipBattle
 
                 ; Play battle
+                move.w  #BATTLE_UNLOCKED_FLAGS_START,d1
+                add.w   d0,d1
+                jsr     j_SetFlag
                 move.l  #MAP_EVENT_RELOADMAP,((MAP_EVENT_TYPE-$1000000)).w
+                move.w  #30000,((STEP_COUNTER-$1000000)).w
 				bra.s   loc_478C0
 @SkipBattle:
                 ; Flag the battle as completed
@@ -584,6 +584,9 @@ loc_47896:
                 ; Final text and exit
                 txt     365        ; "{LEADER} and his companions{N}sneaked past the monsters!{W2}{CLEAR}Monsters might come back later...{W1}"
             else
+                move.w  #BATTLE_UNLOCKED_FLAGS_START,d1
+                add.w   d0,d1
+                jsr     j_SetFlag
                 move.l  #MAP_EVENT_RELOADMAP,((MAP_EVENT_TYPE-$1000000)).w
                 move.w  #30000,((STEP_COUNTER-$1000000)).w
                 jsr     (WaitForViewScrollEnd).w
