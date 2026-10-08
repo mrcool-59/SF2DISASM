@@ -176,7 +176,7 @@ ENABLE_BONUS_EXPERIENCE:			equ 1		; [NOT IMPLEMENTED] 0 = OFF, 1 = ON    If enab
 SF1_LEVELUP:                        equ 0       ; Reproduces the stat gain calculations from SF1 using SF2 ally stat blocks and growthcurves, with modified parameters to better suit SF2's higher growth values.
 SF1_LEVELUP_RNG_SCALE_RATE:         equ 8       ; Determines the rate at which the randomization range scales relative to stat value. Higher value = slower rate (minimum = 1.) Starting at stat target value ± 1, range increases by ± 1 for every n points in a stat. Vanilla SF1 default = 4
 SF1_LEVELUP_RNG_CAP:                equ 8       ; Caps the randomization range to stat target value ± n. Vanilla SF1 default = 4
-LEARN_SPELLS_BASED_ON_TOTAL_LEVEL:  equ 1       ; Considers promoted at level when learning spells from the first list (i.e., the base class's.)
+LEARN_SPELLS_BASED_ON_TOTAL_LEVEL:  equ 1       ; If enabled, consider level = (promoted at level + current level - 1) when a promoted character is set-up to learn spells from its base class spell list.
 
 
 ; Menu enhancements
