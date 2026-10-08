@@ -165,10 +165,6 @@ FastLevelUp:
 
 CalculateStatGain:
                 
-            if (LEARN_SPELL_AT_PROMOTION=1)
-                tst.b   d5
-                beq.s   @Exit           ; exit if level = 0
-            endif
                 tst.b   d2
                 bne.s   @CheckProjectionLevel ; keep going if curve type other than None
                 
@@ -272,6 +268,9 @@ InitializeAllyStats:
                 addq.l  #ALLYSTATS_OFFSET_NEXT_STAT,a0
                 move.b  (a0)+,d1
                 bsr.w   SetBaseAgi
+                
+				moveq   #0,d1
+                bsr.w   SetCurrentExp
                 
                 moveq   #1,d1
                 bsr.w   SetLevel

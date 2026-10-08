@@ -57,7 +57,9 @@ battlesceneScript_CalculateHealingExp:	; d6 = healing done
 			endif
 				
 @Add:
-                
+            if ((STANDARD_BUILD=1)&(EXP_DAMPENING<>0))
+                bsr.w   battlesceneScript_DampenExp
+			endif
                 bsr.w   battlesceneScript_AddExpAndApplyHealingCap
 @Skip:
                 
@@ -81,19 +83,19 @@ battlesceneScript_CalculateDamageExp:	; d6 = damage dealt
                 beq.w   @Skip           ; skip function to prevent division by zero error
                 bsr.w   battlesceneScript_GetKillExp
                 mulu.w  d6,d5
-                divu.w  d1,d5			; damage EXP = kill EXP * damage dealt / max HP
+                divu.w  d1,d5			; d5 = damage EXP = kill EXP * damage dealt / max HP
 				
-			if (STANDARD_BUILD=1&DAMAGE_EXP_GUARANTEED_HP_PERCENT<>0)
+			if ((STANDARD_BUILD=1)&(DAMAGE_EXP_GUARANTEED_HP_PERCENT<>0))
 			    movem.l d5,-(sp)
-				bsr.w   battlesceneScript_GetKillExp	
-                mulu.w  #DAMAGE_EXP_GUARANTEED_HP_PERCENT,d5
-                divu.w  #100,d5			; minimum damage EXP = kill EXP * DAMAGE_EXP_GUARANTEED_HP_PERCENT / 100
-				move.w	d5,d1
+					bsr.w   battlesceneScript_GetKillExp	
+					mulu.w  #DAMAGE_EXP_GUARANTEED_HP_PERCENT,d5
+					divu.w  #100,d5
+					move.w	d5,d1		; d1 = minimum damage EXP = kill EXP * DAMAGE_EXP_GUARANTEED_HP_PERCENT / 100
 				movem.l (sp)+,d5
 				
-                cmp.w   d5,d1			
-                bge.w   @NoAdjust		; damage EXP >= minimum damage EXP
-				move.w  d1,d5
+                cmp.w   d1,d5
+                bge.w   @NoAdjust		; no adjust if damage EXP >= minimum damage EXP
+				move.w  d1,d5			; set damage EXP to minimum damage EXP
 @NoAdjust:
 			endif
 			
@@ -115,6 +117,9 @@ battlesceneScript_AddStatusEffectSpellExp:
                 btst    #COMBATANT_BIT_ENEMY,(a4)
                 bne.w   @Done
                 moveq   #STATUSEFFECT_SPELL_EXP,d5
+			if ((STANDARD_BUILD=1)&(EXP_DAMPENING<>0))
+				bsr.w	battlesceneScript_DampenExp
+			endif
                 bsr.w   battlesceneScript_AddExpAndApplyPerActionCap
 @Done:
                 
@@ -128,17 +133,20 @@ battlesceneScript_AddStatusEffectSpellExp:
 
 
 battlesceneScript_AddStatusEffectBuffSpellExp:
-	if (STANDARD_BUILD=1)
+			if (STANDARD_BUILD=1)
                 movem.l d0-d3/a0,-(sp)
                 btst    #COMBATANT_BIT_ENEMY,(a4)
                 bne.w   @Done
                 moveq   #STATUS_BUFF_EXP,d5
+			if (EXP_DAMPENING<>0)
+				bsr.w	battlesceneScript_DampenExp
+			endif
                 bsr.w   battlesceneScript_AddExpAndApplyPerActionCap
 @Done:
                 
                 movem.l (sp)+,d0-d3/a0
                 rts
-	endif
+			endif
 
     ; End of function battlesceneScript_AddStatusEffectSpellExp
 
@@ -258,4 +266,84 @@ battlesceneScript_GetKillExp:
                 rts
 
     ; End of function battlesceneScript_GetKillExp
+
+
+; =============== S U B R O U T I N E =======================================
+
+; Apply EXP dampening mechanic (less EXP if way above expected current battle level).
+; 
+;   In: d5 = EXP amount, a4 = pointer to actor index
+;   Out: d5 = EXP amount dampened
+
+
+battlesceneScript_DampenExp:
+            if ((STANDARD_BUILD=1)&(EXP_DAMPENING<>0))
+                movem.l d0-d2/a0,-(sp)
+				clr		d2
+				
+                move.b  (a4),d0
+                jsr     CalculateEffectiveLevel		; d1 = actor effective level
+				getSavedByte CURRENT_BATTLE, d2		; d2 = current battle
+				
+                lea     table_ExpectedLevelForBattles(pc), a0
+                adda.w  d2,a0
+				move.b  (a0),d2						; d2 = expected current battle level
+				addi.w	#EXP_DAMPENING,d2
+				
+			@Loop:
+				sub.w	d2,d1						; d2 now contains how many levels above the cap the character is
+				bmi.s	@Done
+				lsr.w	d2,d5						; divide d5 by 2^d2
+				
+			@Done:
+                movem.l (sp)+,d0-d2/a0
+                rts
+			endif
+
+    ; End of function battlesceneScript_DampenExp
+
+
+; =============== S U B R O U T I N E =======================================
+
+; Determine amount of bonus EXP.
+; 
+;   In: d0 = combatant index
+;   Out: d1 = bonus EXP amount
+
+
+CalculateBonusExp:
+            if (STANDARD_BUILD&ENABLE_BONUS_EXPERIENCE=1)
+                movem.l d2/a0,-(sp)
+				clr		d2
+				
+                jsr     CalculateTotalLevel			; d1 = actor total levels
+				getSavedByte CURRENT_BATTLE, d2		; d2 = current battle
+				
+                lea     table_ExpectedLevelForBattles(pc), a0
+                adda.w  d2,a0
+				move.b  (a0),d2						; d2 = expected current battle level
+
+				sub.w   d1,d2						; d2 = how far behind in levels
+				bmi.s	@NoBonus					; actor is above expected current battle level
+
+				cmp.w   #table_BonusExp_Length,d2
+				bmi.s	@Read
+				move.w  #(table_BonusExp_Length-1),d2	; d2 capped to avoid going out of bounds of table_BonusExp
+
+			@Read:
+                lea     table_BonusExp(pc), a0
+                adda.w  d2,a0
+				clr		d1
+				move.b  (a0),d1						; d1 = bonus EXP
+				bra.s   @Done
+				
+			@NoBonus:
+				clr		d1
+				
+			@Done:
+                movem.l (sp)+,d2/a0
+                rts
+			endif
+
+    ; End of function CalculateBonusExp
 
