@@ -512,7 +512,7 @@ GetRhodeFacing:
 
 CheckRandomBattle:
                 
-            if (STANDARD_BUILD&NO_RANDOM_BATTLES=1)
+            if ((STANDARD_BUILD=1)&(NO_RANDOM_BATTLES=1))
                 ; Do nothing
             else
                 movem.l d1/d6-d7,-(sp)
