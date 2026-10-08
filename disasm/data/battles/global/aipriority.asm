@@ -191,7 +191,7 @@ pt_AttackPriorityAdjustmentsForMovetype:
                 dc.l table_PriorityAdjustments_Regular
                 
 table_PriorityAdjustments_Regular:
-                dc.b 4                  ; SDMN
+                dc.b 2                  ; SDMN
                 dc.b 1                  ; KNTE
                 dc.b 0                  ; WARR
                 dc.b 4                  ; MAGE
@@ -201,9 +201,9 @@ table_PriorityAdjustments_Regular:
                 dc.b 1                  ; WFMN
                 dc.b 2                  ; RNGR
                 dc.b 2                  ; PHNK
-                dc.b 2                  ; THIF
+                dc.b 0                  ; THIF
                 dc.b 0                  ; TORT
-                dc.b 4                  ; HERO
+                dc.b 2                  ; HERO
                 dc.b 1                  ; PLDN
                 dc.b 2                  ; PGNT
                 dc.b 0                  ; GLDT
@@ -218,7 +218,7 @@ table_PriorityAdjustments_Regular:
                 dc.b 1                  ; WFBR
                 dc.b 2                  ; BWNT
                 dc.b 2                  ; PHNX
-                dc.b 2                  ; NINJ
+                dc.b 0                  ; NINJ
                 dc.b 0                  ; MNST
                 dc.b 1                  ; RBT
                 dc.b 0                  ; GLM
@@ -234,8 +234,8 @@ table_PriorityAdjustments_Mage:
                 dc.b 0                  ; BDMN
                 dc.b 1                  ; WFMN
                 dc.b 1                  ; RNGR
-                dc.b 0                  ; PHNK
-                dc.b 1                  ; THIF
+                dc.b 1                  ; PHNK
+                dc.b 0                  ; THIF
                 dc.b 3                  ; TORT
                 dc.b 3                  ; HERO
                 dc.b 2                  ; PLDN
@@ -251,15 +251,15 @@ table_PriorityAdjustments_Mage:
                 dc.b 0                  ; BDBT
                 dc.b 1                  ; WFBR
                 dc.b 1                  ; BWNT
-                dc.b 0                  ; PHNX
-                dc.b 1                  ; NINJ
+                dc.b 1                  ; PHNX
+                dc.b 0                  ; NINJ
                 dc.b 3                  ; MNST
                 dc.b 2                  ; RBT
                 dc.b 3                  ; GLM
                 dc.b 3                  ; RDBN
                 
 table_PriorityAdjustments_Archer:
-                dc.b 3                  ; SDMN
+                dc.b 2                  ; SDMN
                 dc.b 1                  ; KNTE
                 dc.b 0                  ; WARR
                 dc.b 3                  ; MAGE
@@ -269,7 +269,7 @@ table_PriorityAdjustments_Archer:
                 dc.b 2                  ; WFMN
                 dc.b 2                  ; RNGR
                 dc.b 4                  ; PHNK
-                dc.b 2                  ; THIF
+                dc.b 0                  ; THIF
                 dc.b 0                  ; TORT
                 dc.b 3                  ; HERO
                 dc.b 1                  ; PLDN
@@ -286,14 +286,14 @@ table_PriorityAdjustments_Archer:
                 dc.b 2                  ; WFBR
                 dc.b 2                  ; BWNT
                 dc.b 4                  ; PHNX
-                dc.b 2                  ; NINJ
+                dc.b 0                  ; NINJ
                 dc.b 0                  ; MNST
                 dc.b 1                  ; RBT
                 dc.b 0                  ; GLM
                 dc.b 0                  ; RDBN
                 
 table_PriorityAdjustments_Flying:
-                dc.b 3                  ; SDMN
+                dc.b 2                  ; SDMN
                 dc.b 2                  ; KNTE
                 dc.b 2                  ; WARR
                 dc.b 3                  ; MAGE
@@ -305,7 +305,7 @@ table_PriorityAdjustments_Flying:
                 dc.b 1                  ; PHNK
                 dc.b 0                  ; THIF
                 dc.b 1                  ; TORT
-                dc.b 3                  ; HERO
+                dc.b 2                  ; HERO
                 dc.b 2                  ; PLDN
                 dc.b 1                  ; PGNT
                 dc.b 2                  ; GLDT

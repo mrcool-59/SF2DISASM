@@ -37,7 +37,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 0           ; 0: OOZE
                 spellPower REGULAR
-                level    0
+                level    1
                 maxHp    9
                 maxMp    0
                 baseAtt  9
@@ -62,7 +62,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 1           ; 1: HUGE RAT
                 spellPower REGULAR
-                level    0
+                level    1
                 maxHp    10
                 maxMp    0
                 baseAtt  10
@@ -1012,7 +1012,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 39          ; 39: GIZMO
                 spellPower REGULAR
-                level    0
+                level    1
                 maxHp    5
                 maxMp    0
                 baseAtt  7
@@ -1037,7 +1037,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 40          ; 40: HUGE BAT
                 spellPower REGULAR
-                level    0
+                level    1
                 maxHp    11
                 maxMp    0
                 baseAtt  12

@@ -158,7 +158,7 @@ table_ItemDefinitions:
                 equipFlags   NONE
                 equipFlags2  NONE
                 range        0, 1
-                price        10
+                price        20
                 itemType     CONSUMABLE
                 useSpell     HEALIN
                 equipEffects NONE, 0, &
@@ -172,7 +172,7 @@ table_ItemDefinitions:
                 equipFlags   NONE
                 equipFlags2  NONE
                 range        0, 1
-                price        200
+                price        300
                 itemType     CONSUMABLE
                 useSpell     HEALIN|LV2
                 equipEffects NONE, 0, &
@@ -186,7 +186,7 @@ table_ItemDefinitions:
                 equipFlags   NONE
                 equipFlags2  NONE
                 range        0, 1
-                price        300
+                price        500
                 itemType     CONSUMABLE
                 useSpell     HEALIN|LV3
                 equipEffects NONE, 0, &
@@ -200,7 +200,7 @@ table_ItemDefinitions:
                 equipFlags   NONE
                 equipFlags2  NONE
                 range        0, 1
-                price        20
+                price        50
                 itemType     CONSUMABLE
                 useSpell     DETOX
                 equipEffects NONE, 0, &
@@ -214,7 +214,7 @@ table_ItemDefinitions:
                 equipFlags   NONE
                 equipFlags2  NONE
                 range        0, 0
-                price        40
+                price        50
                 itemType     CONSUMABLE
                 useSpell     EGRESS
                 equipEffects NONE, 0, &
@@ -228,7 +228,7 @@ table_ItemDefinitions:
                 equipFlags   NONE
                 equipFlags2  NONE
                 range        0, 1
-                price        100
+                price        200
                 itemType     CONSUMABLE
                 useSpell     POWDER  ; should be POWDER|LV2
                 equipEffects NONE, 0, &
@@ -242,7 +242,7 @@ table_ItemDefinitions:
                 equipFlags   NONE
                 equipFlags2  NONE
                 range        0, 1
-                price        400
+                price        1000
                 itemType     CONSUMABLE
                 useSpell     HEAL|LV4
                 equipEffects NONE, 0, &
@@ -256,7 +256,7 @@ table_ItemDefinitions:
                 equipFlags   NONE
                 equipFlags2  NONE
                 range        0, 1
-                price        300
+                price        2000
                 itemType     CONSUMABLE
                 useSpell     G_TEAR|LV2
                 equipEffects NONE, 0, &

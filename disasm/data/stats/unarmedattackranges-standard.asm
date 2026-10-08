@@ -6,7 +6,9 @@ table_UnarmedAttackRangesForClasses:
                 
                 ; Class index, min range, max range
                 dc.b CLASS_BRGN, 1, 2
-                
+                dc.b CLASS_TORT, 1, 2
+				dc.b CLASS_MNST, 1, 2
+				
                 tableEnd.b
 
 
