@@ -4,14 +4,14 @@
 table_BonusExp:
                
 	dc.b   0 ;  0 : Character is at expected current battle level
-	dc.b   5 ; -1
-	dc.b  10 ; -2
-	dc.b  15 ; -3
+	dc.b   0 ; -1
+	dc.b   5 ; -2
+	dc.b  10 ; -3
 	dc.b  20 ; -4
 	dc.b  30 ; -5
 	dc.b  40 ; -6
 	dc.b  50 ; -7
-	dc.b  60 ; -8
+	dc.b  65 ; -8
 	dc.b  80 ; -9
 	dc.b  99 ; -10 : Character is way behind (-10 levels)
 	

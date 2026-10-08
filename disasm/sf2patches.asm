@@ -101,7 +101,7 @@ BATTLE_CURSOR_SPEED:				equ 2		; 0 = Normal    1 = 25% Faster    2 = 50% Faster 
 
 
 ; Misc. features
-AGILITY_AFFECTS_CHANCE_TO_DODGE:    equ 0       ; Adjust chance to dodge proportionally to the difference between the attacker's and the target's current AGI.
+AGILITY_AFFECTS_CHANCE_TO_DODGE:    equ 1       ; Adjust chance to dodge proportionally to the difference between the attacker's and the target's current AGI.
 DIAGONAL_LASERS:                    equ 0       ; Allows laser based enemies to fire in 8 directions (Up, Up-Left, Left, Down-Left, etc).
 DIFFICULTY_FACTORS:                 equ 0       ; Allows 4 distinct difficulties.
 EXPANDED_RANGES:                    equ 1       ; Weapons/spells can have ranges up to 7 and spell radii up to 4.
