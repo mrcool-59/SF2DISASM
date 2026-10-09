@@ -145,6 +145,9 @@ RESISTANCE_MINOR_PERCENT:			equ 25		; Minor resistance will adjust spell damage 
 RESISTANCE_MAJOR_PERCENT:			equ 50		; Major resistance will adjust spell damage by -x% (50 in the base game).
 RESISTANCE_WEAKNESS_PERCENT:		equ 25		; Weakness will adjust spell damage by +x% (25 in the base game).
 RESISTANCE_CRITICAL_PERCENT:		equ 25		; Critical hit will adjust spell damage by +x% (25 in the base game). This stacks ADDITIVELY with resistance %.
+ATTACK_DIVIDER						equ 8		; Modify this value to adjust the power of Attack (8 in the base game). As a reminder, first turn Attack increases ATT stat by [3 * (100 / DIVIDER)]%.
+BOOST_DIVIDER						equ 8		; Modify this value to adjust the power of Boost (8 in the base game). As a reminder, first turn Boost increases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
+SLOW_DIVIDER						equ 8		; Modify this value to adjust the power of Slow (8 in the base game). As a reminder, first turn Slow decreases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
 
 
 ; Menu enhancements
