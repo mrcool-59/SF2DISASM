@@ -366,7 +366,7 @@ table_EnemyDefinitions:
                 maxHp    36
                 maxMp    0
                 baseAtt  26
-                baseDef  37
+                baseDef  34
                 baseAgi  25
                 baseMov  2
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
@@ -391,7 +391,7 @@ table_EnemyDefinitions:
                 maxHp    48
                 maxMp    0
                 baseAtt  25
-                baseDef  34
+                baseDef  31
                 baseAgi  29
                 baseMov  9
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
@@ -1566,7 +1566,7 @@ table_EnemyDefinitions:
                 maxHp    40
                 maxMp    0
                 baseAtt  22
-                baseDef  31
+                baseDef  28
                 baseAgi  27
                 baseMov  4
                 baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
@@ -1816,7 +1816,7 @@ table_EnemyDefinitions:
                 maxHp    30
                 maxMp    26
                 baseAtt  25
-                baseDef  36
+                baseDef  33
                 baseAgi  35
                 baseMov  6
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_MINOR|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
@@ -2041,7 +2041,7 @@ table_EnemyDefinitions:
                 maxHp    33
                 maxMp    36
                 baseAtt  26
-                baseDef  37
+                baseDef  34
                 baseAgi  25
                 baseMov  3
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
@@ -2266,7 +2266,7 @@ table_EnemyDefinitions:
                 level    27
                 maxMp    28
                 baseAtt  29
-                baseDef  40
+                baseDef  37
                 baseAgi  161
                 baseMov  1
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
