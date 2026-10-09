@@ -614,6 +614,14 @@ table_SpellDefinitions:
                 range      0, 1
                 radius     0
                 power      0
+
+                ; entry      POWDER|LV2   ; POWDER 2
+                ; mpCost     0
+                ; animation  NONE
+                ; properties TYPE_HEAL|TARGET_TEAMMATES
+                ; range      0, 1
+                ; radius     0
+                ; power      0
                 
                 entry      G_TEAR       ; G.TEAR 1
                 mpCost     0
