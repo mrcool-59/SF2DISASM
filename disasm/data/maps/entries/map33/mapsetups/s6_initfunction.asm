@@ -6,10 +6,9 @@
 
 
 ms_map33_InitFunction:
-                
-                 
                 chkFlg  523             ; Battle 23 completed - BATTLE_VERSUS_WILLARD              
-                beq.s   byte_5AB98      
+                beq.s   byte_5AB98   
+				sndCom  MUSIC_TOWN		; Change music to be a lighter mood	
                 chkFlg  783             ; Set after the scene where Creed restores the Force and heads down the basement
                 bne.s   byte_5AB98      
                 script  cs_5B016

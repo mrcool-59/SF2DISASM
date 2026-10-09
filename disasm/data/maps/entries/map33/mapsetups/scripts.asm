@@ -190,6 +190,7 @@ cs_5AC58:       textCursor 1804
                 followEntity FOLLOWER_B,ALLY_PETER,2
                 csc_end
 cs_5AF36:       textCursor 1834
+				playSound SOUND_COMMAND_FADE_OUT
                 setActscriptWait 128,eas_Init
                 setActscriptWait 128,eas_Jump
                 customActscriptWait 128
@@ -202,6 +203,7 @@ cs_5AF36:       textCursor 1834
                 endActions
                 setCameraEntity 128
                 nextSingleText $0,128   ; "No, don't go in there!{N}That door is...!{W1}"
+				playSound MUSIC_CUSTOM_ENEMY_SPELL
                 flashScreenWhite 4
                 csWait 40
                 flashScreenWhite 4
