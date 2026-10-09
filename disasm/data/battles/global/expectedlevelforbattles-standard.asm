@@ -24,12 +24,12 @@ table_ExpectedLevelForBattles:
 	dc.b  17 ; BATTLE_VERSUS_KRAKEN: equ 16
 	dc.b  18 ; BATTLE_TO_TAROS_SHRINE: equ 17
 	dc.b  19 ; BATTLE_VERSUS_TAROS: equ 18
-	dc.b  19 ; BATTLE_OUTSIDE_ELVEN_VILLAGE: equ 19
-	dc.b  20 ; BATTLE_HARPIES_POND: equ 20
-	dc.b  21 ; BATTLE_DEVIL_TAIL: equ 21
-	dc.b  23 ; BATTLE_CHESSBOARD: equ 22
-	dc.b  23 ; BATTLE_VERSUS_WILLARD: equ 23
-	dc.b  24 ; BATTLE_TO_NORTH_PARMECIA: equ 24
+	dc.b  20 ; BATTLE_OUTSIDE_ELVEN_VILLAGE: equ 19
+	dc.b  21 ; BATTLE_HARPIES_POND: equ 20
+	dc.b  23 ; BATTLE_DEVIL_TAIL: equ 21
+	dc.b  25 ; BATTLE_CHESSBOARD: equ 22
+	dc.b  25 ; BATTLE_VERSUS_WILLARD: equ 23
+	dc.b  25 ; BATTLE_TO_NORTH_PARMECIA: equ 24
 	dc.b  25 ; BATTLE_NORTH_CAVE: equ 25
 	dc.b  26 ; BATTLE_OUTSIDE_KETTO: equ 26
 	dc.b  27 ; BATTLE_TO_TRISTAN: equ 27
@@ -49,7 +49,7 @@ table_ExpectedLevelForBattles:
 	dc.b  42 ; BATTLE_OUTSIDE_ANCIENT_TOWER: equ 41
 	dc.b  44 ; BATTLE_VERSUS_GALAM: equ 42
 	dc.b  45 ; BATTLE_VERSUS_ZEON: equ 43
-	dc.b  22 ; BATTLE_FAIRY_WOODS: equ 44
+	dc.b  25 ; BATTLE_FAIRY_WOODS: equ 44
 
 	; If you create new battles, don't forget to add entries in this file!
 	; Otherwise random data will be read instead and you would get unpredictable bonus experience...
