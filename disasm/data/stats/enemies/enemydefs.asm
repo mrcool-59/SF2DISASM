@@ -412,7 +412,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 15          ; 15: RAT
                 spellPower REGULAR
-                level    22
+                level    24
                 maxHp    41
                 maxMp    0
                 baseAtt  45
@@ -437,7 +437,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 16          ; 16: BUBBLING OOZE
                 spellPower REGULAR
-                level    21
+                level    23
                 maxHp    32
                 maxMp    0
                 baseAtt  38
@@ -2287,11 +2287,11 @@ table_EnemyDefinitions:
                 
                 unknownByte 0           ; 90: WILLARD
                 spellPower ENHANCED
-                level    25
-                maxHp    50
+                level    27
+                maxHp    75
                 maxMp    0
                 baseAtt  50
-                baseDef  36
+                baseDef  35
                 baseAgi  165
                 baseMov  6
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MAJOR
