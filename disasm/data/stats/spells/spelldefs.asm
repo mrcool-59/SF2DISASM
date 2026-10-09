@@ -659,7 +659,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  BLAZE|VARIATION3
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      20
                 
@@ -667,7 +667,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  FREEZE|VARIATION3
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      33
                 
@@ -675,7 +675,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  BOLT|VARIATION3
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      50
                 
