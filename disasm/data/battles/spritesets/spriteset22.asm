@@ -97,7 +97,7 @@ BattleSpriteset22:
                 combatantAiAndItem SWARM, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant QUEEN, 17, 6
+                enemyCombatant PAWN, 17, 6
                 combatantAiAndItem SWARM, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 

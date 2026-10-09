@@ -24,7 +24,7 @@ ms_map22_EntityEvents:
                 msEntityEvent 144, RIGHT, Map22_EntityEvent17-ms_map22_EntityEvents
                 msEntityEvent 145, RIGHT, Map22_EntityEvent17-ms_map22_EntityEvents
                 msEntityEvent 146, RIGHT, Map22_EntityEvent12-ms_map22_EntityEvents
-                msEntityEvent 147, RIGHT, Map22_EntityEvent12-ms_map22_EntityEvents
+                msEntityEvent 147, RIGHT, Map22_EntityEvent21-ms_map22_EntityEvents
                 msEntityEvent 148, RIGHT, Map22_EntityEvent21-ms_map22_EntityEvents
                 msEntityEvent 149, RIGHT, Map22_EntityEvent21-ms_map22_EntityEvents
                 msEntityEvent 150, RIGHT, Map22_EntityEvent21-ms_map22_EntityEvents
@@ -41,7 +41,7 @@ ms_map22_EntityEvents:
                 msEntityEvent 143, RIGHT, Map22_EntityEvent17-ms_map22_EntityEvents
                 msEntityEvent 144, RIGHT, Map22_EntityEvent17-ms_map22_EntityEvents
                 msEntityEvent 145, RIGHT, Map22_EntityEvent12-ms_map22_EntityEvents
-                msEntityEvent 146, RIGHT, Map22_EntityEvent12-ms_map22_EntityEvents
+                msEntityEvent 146, RIGHT, Map22_EntityEvent21-ms_map22_EntityEvents
                 msEntityEvent 147, RIGHT, Map22_EntityEvent21-ms_map22_EntityEvents
                 msEntityEvent 148, RIGHT, Map22_EntityEvent21-ms_map22_EntityEvents
                 msEntityEvent 149, RIGHT, Map22_EntityEvent21-ms_map22_EntityEvents
