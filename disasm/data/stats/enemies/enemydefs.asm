@@ -362,7 +362,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 13          ; 13: PAWN
                 spellPower ENHANCED
-                level    19
+                level    22
                 maxHp    36
                 maxMp    0
                 baseAtt  26
@@ -387,7 +387,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 14          ; 14: KNIGHT
                 spellPower ENHANCED
-                level    20
+                level    23
                 maxHp    48
                 maxMp    0
                 baseAtt  25
@@ -1562,7 +1562,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 61          ; 61: ROOK
                 spellPower REGULAR
-                level    19
+                level    22
                 maxHp    40
                 maxMp    0
                 baseAtt  22
@@ -1812,7 +1812,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 71          ; 71: QUEEN
                 spellPower ENHANCED
-                level    20
+                level    23
                 maxHp    30
                 maxMp    26
                 baseAtt  25
@@ -2037,7 +2037,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 80          ; 80: EVIL BISHOP
                 spellPower ENHANCED
-                level    19
+                level    22
                 maxHp    33
                 maxMp    36
                 baseAtt  26
@@ -2262,8 +2262,8 @@ table_EnemyDefinitions:
                 
                 unknownByte 0           ; 89: KING
                 spellPower ENHANCED
-                level    24
                 maxHp    55
+                level    27
                 maxMp    28
                 baseAtt  29
                 baseDef  40
