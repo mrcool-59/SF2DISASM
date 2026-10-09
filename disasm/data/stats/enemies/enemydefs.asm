@@ -370,7 +370,7 @@ table_EnemyDefinitions:
                 baseAgi  25
                 baseMov  2
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL150_1IN8|DOUBLE_1IN32|COUNTER_1IN16
+                baseProwess    CRITICAL150_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 items &
                     BATTLE_AXE|EQUIPPED, &
                     NOTHING, &
@@ -395,7 +395,7 @@ table_EnemyDefinitions:
                 baseAgi  29
                 baseMov  9
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL150_1IN4|DOUBLE_1IN16|COUNTER_1IN16
+                baseProwess    CRITICAL150_1IN8|DOUBLE_1IN16|COUNTER_1IN16
                 items &
                     POWER_SPEAR|EQUIPPED, &
                     NOTHING, &
@@ -1570,7 +1570,7 @@ table_EnemyDefinitions:
                 baseAgi  27
                 baseMov  4
                 baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL150_1IN32|DOUBLE_1IN16|COUNTER_1IN32
+                baseProwess    CRITICAL150_1IN32|DOUBLE_1IN32|COUNTER_1IN32
                 items &
                     ROBIN_ARROW|EQUIPPED, &
                     NOTHING, &
@@ -2270,7 +2270,7 @@ table_EnemyDefinitions:
                 baseAgi  161
                 baseMov  1
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL125_1IN4|DOUBLE_1IN8|COUNTER_1IN16
+                baseProwess    CRITICAL125_1IN8|DOUBLE_1IN16|COUNTER_1IN32
                 items &
                     FLAIL|EQUIPPED, &
                     NOTHING, &
