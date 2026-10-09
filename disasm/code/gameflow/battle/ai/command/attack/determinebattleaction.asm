@@ -83,12 +83,19 @@ DetermineBattleactionForAttackAiCommand:
                 beq.s   @loc_11
                 lea     ((ATTACK_COMMAND_SPELL-$1000000)).w,a1
                 move.w  (a1),d1
-                cmpi.w  #SPELL_AQUA,d1
+                cmpi.w  #SPELL_AQUA,d1	; Kraken always use AQUA
                 bne.s   @loc_6
                 bra.w   @loc_18
 @loc_6:
                 
-                move.b  #6,d6
+			if (STANDARD_BUILD&MAGES_CAST_MORE=1)
+                move.b  #5,d6			; 0..4 => that gives 80% chance of taking the spell usage branch
+                jsr     GetMovetype     
+                cmpi.w  #MOVETYPE_MAGE,d1
+				beq.s   @Roll
+			endif
+                move.b  #6,d6			; 0..5 => that gives 60% chance of taking the spell usage branch
+			@Roll:
                 jsr     (GenerateRandomNumber).w
                 cmpi.b  #2,d7
                 bne.s   @loc_7          ; if d7 = 0,2,4 then go to loc_EEFA

@@ -124,6 +124,7 @@ SCROLLING_TEXT_INTRODUCTION:        equ 0       ; An example for adding a scroll
 ; AI enhancements (experimental)
 HEALER_AI_ENHANCEMENTS:             equ 0       ; See SF2_AI_Healing_Rewrite.txt for more details.
 SUPPORT_AI_ENHANCEMENTS:            equ 0       ; Increase support spell options enemies can use.
+MAGES_CAST_MORE:					equ 1		; Change the probability that Mage-type enemies use spells from roughly 60% to 80%.
 
 
 ; Turn order modifications
