@@ -368,7 +368,7 @@ table_EnemyDefinitions:
                 baseAtt  26
                 baseDef  37
                 baseAgi  25
-                baseMov  6
+                baseMov  2
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL150_1IN8|DOUBLE_1IN32|COUNTER_1IN16
                 items &
@@ -393,7 +393,7 @@ table_EnemyDefinitions:
                 baseAtt  25
                 baseDef  34
                 baseAgi  29
-                baseMov  7
+                baseMov  9
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL150_1IN4|DOUBLE_1IN16|COUNTER_1IN16
                 items &
@@ -2043,7 +2043,7 @@ table_EnemyDefinitions:
                 baseAtt  26
                 baseDef  37
                 baseAgi  25
-                baseMov  5
+                baseMov  3
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 baseProwess    CRITICAL150_1IN32|DOUBLE_1IN32|COUNTER_1IN32
                 items &
@@ -2268,7 +2268,7 @@ table_EnemyDefinitions:
                 baseAtt  29
                 baseDef  40
                 baseAgi  161
-                baseMov  6
+                baseMov  1
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL125_1IN4|DOUBLE_1IN8|COUNTER_1IN16
                 items &
