@@ -337,7 +337,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 12          ; 12: ORC
                 spellPower REGULAR
-                level    17
+                level    18
                 maxHp    30
                 maxMp    0
                 baseAtt  22
@@ -462,7 +462,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 17          ; 17: SKELETON
                 spellPower ENHANCED
-                level    21
+                level    22
                 maxHp    30
                 maxMp    0
                 baseAtt  26
@@ -1137,7 +1137,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 44          ; 44: HARPY
                 spellPower REGULAR
-                level    17
+                level    19
                 maxHp    32
                 maxMp    10
                 baseAtt  39
@@ -1787,7 +1787,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 70          ; 70: DARK MADAM
                 spellPower REGULAR
-                level    17
+                level    18
                 maxHp    29
                 maxMp    17
                 baseAtt  19
@@ -2012,7 +2012,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 79          ; 79: HIGH PRIEST
                 spellPower REGULAR
-                level    17
+                level    18
                 maxHp    30
                 maxMp    29
                 baseAtt  20
