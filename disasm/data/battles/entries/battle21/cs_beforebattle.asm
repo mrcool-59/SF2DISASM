@@ -18,7 +18,7 @@ bbcs_21:        textCursor 2576
                 setFacing 129,RIGHT
                 setFacing 130,RIGHT
                 csWait 30
-                setCamDest 23,18
+                setCamDest 21,18		; Slight shift to the left to avoid showing garbage tiles on the right side of the screen.
                 nextSingleText $0,128   ; "Go away!{W1}"
                 entityActionsWait ALLY_PETER
                  moveLeft 2
