@@ -18,6 +18,7 @@ return_5C3D6:
     ; End of function ms_map51_InitFunction
 
 cs_5C3D8:       textCursor 2550
+				playSound MUSIC_MAIN_THEME
                 setActscriptWait FOLLOWER_B,eas_Init
                 setActscriptWait ALLY_PETER,eas_Init
                 setPos ALLY_BOWIE,11,22,UP

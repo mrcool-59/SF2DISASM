@@ -58,6 +58,7 @@ cs_5C312:       textCursor 2555
                 csWait 120
                 nextSingleText $0,ALLY_PETER ; "Who said that?{W1}"
                 setCamDest 3,12
+				playSound MUSIC_ENEMY_ATTACK
                 nextText $C0,128        ; "That pond catches my food.{N}Hey elf boy, good trap, huh?{W2}"
                 nextSingleText $C0,128  ; "Those who get stuck in the{N}pond are mine.  It's my{N}rule.{W1}"
                 nextSingleText $0,ALLY_ELRIC ; "Then, all the missing people{N}were eaten by you?{W1}"
@@ -70,6 +71,7 @@ cs_5C312:       textCursor 2555
                 nextSingleText $C0,128  ; "Did you guys bring the{N}ketchup? No? Oh, well.{W1}"
                 setActscript 129,eas_Jump
                 setActscriptWait 130,eas_Jump
+				playSound MUSIC_MAIN_THEME
                 setStoryFlag 20         ; Battle 20 unlocked - BATTLE_HARPIES_POND              
                 warp MAP_HARPIES_POND,0,0,RIGHT
                 csc_end
