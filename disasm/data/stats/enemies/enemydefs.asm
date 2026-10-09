@@ -290,8 +290,8 @@ table_EnemyDefinitions:
                 level    14
                 maxHp    24
                 maxMp    0
-                baseAtt  31
-                baseDef  26
+                baseAtt  29
+                baseDef  24
                 baseAgi  19
                 baseMov  6
                 baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_WEAKNESS|FIRE_MINOR|NEUTRAL_NONE|STATUS_NONE
@@ -1515,10 +1515,10 @@ table_EnemyDefinitions:
                 level    16
                 maxHp    30
                 maxMp    0
-                baseAtt  34
-                baseDef  28
+                baseAtt  32
+                baseDef  26
                 baseAgi  22
-                baseMov  6
+                baseMov  5
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 baseProwess    CRITICAL150_1IN8|DOUBLE_1IN32|COUNTER_1IN32
                 items &
@@ -2213,12 +2213,12 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 87: KRAKEN HEAD
                 spellPower REGULAR
                 level    18
-                maxHp    35
+                maxHp    80
                 maxMp    0
-                baseAtt  40
-                baseDef  29
+                baseAtt  38
+                baseDef  27
                 baseAgi  153
-                baseMov  5
+                baseMov  4
                 baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_WEAKNESS|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
                 baseProwess    CRITICAL150_1IN4|DOUBLE_1IN8|COUNTER_1IN8
                 items &
