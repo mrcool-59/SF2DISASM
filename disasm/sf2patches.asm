@@ -172,7 +172,7 @@ STATUS_EXP:							equ 15		; Amount of EXP given when applying or curing a status
 STATUS_BUFF_EXP:					equ 5		; Amount of EXP given when applying a positive status effect on a target (5 in the base game).
 EXP_CAP:							equ 49		; Maximum total amount of EXP earnable (49 in the base game) by performing a non-healing action (+/- 1 with randomness).
 EXP_CAP_HEALING:					equ 49		; Maximum total amount of EXP earnable (25 in the base game) by performing a healing action (+/- 1 with randomness).
-EXP_DAMPENING:						equ 4		; 0 = OFF, x = ON    If enabled, healing and status effect EXP (damage EXP is NOT affected) will be halved for each level above (x + current battle expected level).
+EXP_DAMPENING:						equ 3		; 0 = OFF, x = ON    If enabled, healing and status effect EXP (damage EXP is NOT affected) will be halved for each level above (x + current battle expected level).
 ENABLE_BONUS_EXPERIENCE:			equ 1		; 0 = OFF, 1 = ON    If enabled, underleveled characters (compared to current battle expected level) receive bonus experience points in battlescenes.
 												; Please also take a look at "expectedlevelforbattles-standard.asm", "bonusexp-standard.asm" and "halvedexpearnedbattles.asm" files.
 
