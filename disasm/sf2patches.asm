@@ -86,7 +86,7 @@ NO_AI_JARO:                         equ 0       ;
 NO_AI_PETER:                        equ 0       ; 
 NO_DARKNESS_IN_CAVES:               equ 0       ; The darkness gimmick in caves is disabled.
 NO_DEFEAT_ON_LEADER_DEATH:          equ 0       ; Death of the Force Leader character does not cause defeat.
-NO_RANDOM_BATTLES:                  equ 0       ; 0 = Battles    1 = No Battles    2 = Only the First Time (with flash effect removed to make it look like a regular battle)    3 = Let the player decide with YES/NO prompt
+NO_RANDOM_BATTLES:                  equ 0       ; 0 = Battles    1 = No Battles    2 = Only Once (with flash effect removed to make it look like a regular battle)    3 = Let the player decide with YES/NO prompt
 RECRUIT_ALL_CREED_CHARACTERS:       equ 1       ; lets you recruit all four of them at any time after leaving Floor World.
 SKIP_SEGA_LOGO:                     equ 0
 SKIP_GAME_INTRO:                    equ 0

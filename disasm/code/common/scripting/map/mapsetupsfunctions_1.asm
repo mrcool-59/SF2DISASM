@@ -560,14 +560,29 @@ loc_47896:
                 sndCom  SFX_BOOST
                 bsr.w   ExecuteFlashScreenScript
 
+				; If the battle has already been completed: player has the choice, no questions asked.
+				move.w  #BATTLE_COMPLETED_FLAGS_START,d1
+                add.w   d0,d1
+                jsr     j_CheckFlag
+				bne.s	@AskPlayer
+				
+				; Otherwise, check if the battle is flagged as mandatory...
+                movem.l d0-d2/a0,-(sp)
+                lea     table_MandatoryRandomBattles(pc), a0
+                moveq   #0,d2
+                jsr     (FindSpecialPropertyBytesAddressForObject).w
+                movem.l (sp)+,d0-d2/a0
+                bcc.s   @PlayBattle	; Battle is mandatory
+@AskPlayer:
                 ; Show message
+				clr.w   ((CURRENT_SPEECH_SFX-$1000000)).w
                 txt     364        ; "There are monsters ahead!{N}Will you sneak past them?"
                 move.w  d0,-(sp)
                 jsr     YesNoPrompt
                 tst.w   d0
                 movem.w (sp)+,d0
-                beq.w   @SkipBattle
-
+                beq.s   @SkipBattle
+@PlayBattle:
                 ; Play battle
                 move.w  #BATTLE_UNLOCKED_FLAGS_START,d1
                 add.w   d0,d1
@@ -580,6 +595,7 @@ loc_47896:
                 move.w  #BATTLE_COMPLETED_FLAGS_START,d1
                 add.w   d0,d1
                 jsr     j_SetFlag
+                move.w  #15000,((STEP_COUNTER-$1000000)).w
 
                 ; Final text and exit
                 txt     365        ; "{LEADER} and his companions{N}sneaked past the monsters!{W2}{CLEAR}Monsters might come back later...{W1}"
