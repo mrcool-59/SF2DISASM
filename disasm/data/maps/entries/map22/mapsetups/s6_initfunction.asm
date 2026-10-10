@@ -135,6 +135,7 @@ cs_59656:       textCursor 1748
                 setFacing ALLY_PETER,UP
                 setFacing ALLY_BOWIE,DOWN
                 setFacing FOLLOWER_B,DOWN
+				playSound SOUND_COMMAND_FADE_OUT
                 nextSingleText $0,ALLY_PETER ; "Let's see...now we're on a{N}desk...and it's very large,{N}like a village.{W1}"
                 nextSingleText $0,128   ; "Exactly.{W1}"
                 entityActions ALLY_BOWIE
@@ -168,6 +169,7 @@ cs_59656:       textCursor 1748
                 endActions
                 setActscriptWait ALLY_BOWIE,eas_Init
                 setActscriptWait ALLY_PETER,eas_Init
+				playSound MUSIC_MAIN_THEME
                 nextText $0,ALLY_PETER  ; "Goliath!{W2}"
                 setActscriptWait ALLY_PETER,eas_Jump
                 setActscriptWait ALLY_PETER,eas_Jump
