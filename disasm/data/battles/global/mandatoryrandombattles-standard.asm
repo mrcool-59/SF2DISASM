@@ -3,5 +3,6 @@
 table_MandatoryRandomBattles:
                 
                 dc.b BATTLE_DEVIL_TAIL
+				dc.b BATTLE_TO_NORTH_PARMECIA
 				
                 tableEnd.b
