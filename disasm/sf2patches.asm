@@ -146,7 +146,6 @@ SCROLLING_TEXT_INTRODUCTION:        equ 0       ; An example for adding a scroll
 ; AI enhancements (experimental)
 HEALER_AI_ENHANCEMENTS:             equ 0       ; See SF2_AI_Healing_Rewrite.txt for more details.
 SUPPORT_AI_ENHANCEMENTS:            equ 0       ; Increase support spell options enemies can use.
-MAGES_CAST_MORE:					equ 1		; Change the probability that Mage-type enemies use spells from roughly 60% to 80%.
 
 
 ; Turn order modifications
@@ -183,6 +182,18 @@ SF1_LEVELUP:                        equ 0       ; Reproduces the stat gain calcu
 SF1_LEVELUP_RNG_SCALE_RATE:         equ 8       ; Determines the rate at which the randomization range scales relative to stat value. Higher value = slower rate (minimum = 1.) Starting at stat target value ± 1, range increases by ± 1 for every n points in a stat. Vanilla SF1 default = 4
 SF1_LEVELUP_RNG_CAP:                equ 8       ; Caps the randomization range to stat target value ± n. Vanilla SF1 default = 4
 LEARN_SPELLS_BASED_ON_TOTAL_LEVEL:  equ 1       ; If enabled, consider level = (promoted at level + current level - 1) when a promoted character is set-up to learn spells from its base class spell list.
+
+
+; Combat mechanics
+RESISTANCE_MINOR_PERCENT:			equ 25		; Minor resistance will adjust spell damage by -x% (25 in the base game).
+RESISTANCE_MAJOR_PERCENT:			equ 50		; Major resistance will adjust spell damage by -x% (50 in the base game).
+RESISTANCE_WEAKNESS_PERCENT:		equ 25		; Weakness will adjust spell damage by +x% (25 in the base game).
+RESISTANCE_CRITICAL_PERCENT:		equ 25		; Critical hit will adjust spell damage by +x% (25 in the base game). This stacks ADDITIVELY with resistance %.
+ATTACK_DIVIDER						equ 8		; Modify this value to adjust the power of Attack (8 in the base game). As a reminder, first turn Attack increases ATT stat by [3 * (100 / DIVIDER)]%.
+BOOST_DIVIDER						equ 8		; Modify this value to adjust the power of Boost (8 in the base game). As a reminder, first turn Boost increases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
+SLOW_DIVIDER						equ 8		; Modify this value to adjust the power of Slow (8 in the base game). As a reminder, first turn Slow decreases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
+MAGES_CAST_MORE:					equ 0		; 0 = OFF, 1 = ON   Change the probability that Mage-type enemies use spells from roughly 60% to 80%.
+ARCHER_DAMAGE_BONUS_IGNORE_DEF:		equ 0		; 0 = OFF, 1 = ON   Change the Archer 25% damage bonus against Flying/Hovering characters to ignore DEF.
 
 
 ; Menu enhancements
