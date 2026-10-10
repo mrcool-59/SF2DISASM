@@ -124,7 +124,6 @@ SCROLLING_TEXT_INTRODUCTION:        equ 0       ; An example for adding a scroll
 ; AI enhancements (experimental)
 HEALER_AI_ENHANCEMENTS:             equ 0       ; See SF2_AI_Healing_Rewrite.txt for more details.
 SUPPORT_AI_ENHANCEMENTS:            equ 0       ; Increase support spell options enemies can use.
-MAGES_CAST_MORE:					equ 1		; Change the probability that Mage-type enemies use spells from roughly 60% to 80%.
 
 
 ; Turn order modifications
@@ -148,6 +147,7 @@ RESISTANCE_CRITICAL_PERCENT:		equ 25		; Critical hit will adjust spell damage by
 ATTACK_DIVIDER						equ 8		; Modify this value to adjust the power of Attack (8 in the base game). As a reminder, first turn Attack increases ATT stat by [3 * (100 / DIVIDER)]%.
 BOOST_DIVIDER						equ 8		; Modify this value to adjust the power of Boost (8 in the base game). As a reminder, first turn Boost increases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
 SLOW_DIVIDER						equ 8		; Modify this value to adjust the power of Slow (8 in the base game). As a reminder, first turn Slow decreases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
+MAGES_CAST_MORE:					equ 1		; Change the probability that Mage-type enemies use spells from roughly 60% to 80%.
 
 
 ; Menu enhancements
