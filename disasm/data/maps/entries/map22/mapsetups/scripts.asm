@@ -16,7 +16,7 @@ cs_5996E:       textCursor 1794
                 setPos ALLY_PETER,24,13,UP
                 setPos FOLLOWER_B,25,13,UP
                 fadeInB
-				playSound	MUSIC_JOIN_FORCE
+				playSound	MUSIC_JOIN
                 nextSingleText $0,134   ; "Checkmate!{N}This is for you.{W1}"
                 setCamDest 20,7
                 nextText $0,134         ; "A Cotton Balloon is inside.{W2}"
