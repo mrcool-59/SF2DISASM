@@ -1895,7 +1895,7 @@ table_ItemDefinitions:
                              NONE, 0
                 
                 ; 124: Life Ring
-                equipFlags   HERO|PLDN|PGNT|GLDT|BRN|WIZ|SORC|VICR|MMNK|SNIP|BRGN|BDBT|WFBR|BWNT|PHNX|NINJ|MNST|RBT|GLM|RDBN
+                equipFlags   ALL
                 equipFlags2  NONE
                 range        0, 0
                 price        5000
