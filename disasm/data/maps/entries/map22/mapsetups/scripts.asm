@@ -17,11 +17,11 @@ cs_5996E:       textCursor 1794
                 setPos FOLLOWER_B,25,13,UP
                 fadeInB
 				playSound	MUSIC_JOIN
-                nextSingleText $0,134   ; "Checkmate!{N}This is for you.{W1}"
+                nextSingleText $0,134   ; "Checkmate!{D2}{D2}{N}This is for you.{W1}"
                 setCamDest 20,7
                 nextText $0,134         ; "A Cotton Balloon is inside.{W2}"
                 nextSingleText $0,134   ; "With it you can leave{N}Desktop Kingdom safely.{N}Good luck!{W1}"
-				playSound	SOUND_COMMAND_PLAY_PREVIOUS_MUSIC
+				playSound	MUSIC_MAIN_THEME
                 csc_end
 cs_599A4:       entityActionsWait 136
                  moveUp 1

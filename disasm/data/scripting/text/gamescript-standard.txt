@@ -1793,7 +1793,7 @@
 1791=06FF=If it is King Ponpei's wish,{N}we will accept your{N}challenge!{W1}
 1792=0700=Are you ready?{W2}
 1793=0701=Now, start the battle!{N}Do your best!{W1}
-1794=0702=Checkmate!{N}This is for you.{W1}
+1794=0702=Checkmate!{D2}{D2}{N}This is for you.{W1}
 1795=0703=A Cotton Balloon is inside.{W2}
 1796=0704=With it you can leave{N}Desktop Kingdom safely.{N}Good luck!{W1}
 1797=0705=Bravo!  I'd give you an army{N}if you'd stay here.{W1}
