@@ -1780,7 +1780,7 @@
 1778=06F2=So, you were not able to see{N}Creed?{W2}
 1779=06F3=Somewhere in Floor World,{N}there's a tunnel that leads{N}to Creed.{W2}
 1780=06F4=OK, I'll let you go if you{N}win a game against my army.{W2}
-1781=06F5=You may go to the chessboard{N}now.{W2}{CLEAR}I will give you a hint: check{N}carefully the movement range of{N}the different Chess Army pieces.{W2}{CLEAR}With good moves, I'm sure you{N}can win on the first try!{W1}
+1781=06F5=You may go to the chessboard{N}now.{W2}{CLEAR}I will give you a hint: check{N}carefully the movement range of{N}Chess Army pieces!{W2}{CLEAR}With good moves, I'm sure you{N}can win on the first try!{W1}
 1782=06F6=The army won't attack until{N}you reach the center of the{N}board.{W1}
 1783=06F7=The Chess Army is very{N}strong. Keep in mind the King{N}will act twice per turn!{W2}
 1784=06F8=It will be good training for{N}you.{W2}{CLEAR}If you don't win on the first{N}attempt, don't give up!{N}You will grow stronger quickly.{W1}
