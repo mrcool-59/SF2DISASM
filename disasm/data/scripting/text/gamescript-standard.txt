@@ -3529,7 +3529,7 @@
 3527=0DC7=Sir Hawel's teachings are{N}very helpful.  Strategy was{N}his cup o' tea.{W1}
 3528=0DC8=I'm like a shadow of the{N}night.  Silent and deadly!{W1}
 3529=0DC9=Speaking...tires me.{N}Fighting...tires me.{N}I'm tired.{W1}
-3530=0DCA=I hate frost magic!{N}Please keep me away from it.{W1}
+3530=0DCA=I hate frost magic and arrows!{N}Please keep me away from them.{W1}
 3531=0DCB=I'm a centaur, but I can use{N}a bow and arrows!{W1}
 3532=0DCC=Those who are truly strong,{N}like me, don't need weapons!{W1}
 3533=0DCD=I love swooping in for the{N}kill!{W1}
