@@ -157,7 +157,7 @@ EXTENDED_BATTLE_TURN_UPDATE:        equ 1       ; Trigger regions, activate AI, 
 GOLD_MULTIPLIER_PERCENT:			equ -50		; 0 = OFF, x = ON    Modify gold earned in battle from defeated monsters by +x% (x can be positive or negative, up to -100).
 ITEM_REPAIR_PERCENT:				equ 40		; Set the cost to repair items to x% of item buy value (25 in the base game).
 ITEM_DECURSE_PERCENT:				equ 25		; Set the cost to unequip a cursed item to x% of item buy value (25 in the base game).
-PROMOTION_FLAG_LOCK:				equ 0		; 0 = OFF, x = ON    Disallow promotion until the specified story flag x is set (hint: flag 802 is set after the event in the basement of Creed's Mansion...).
+PROMOTION_FLAG_LOCK:				equ 805		; 0 = OFF, x = ON    Disallow promotion until the specified story flag x is set (hint: flag 805 is set when Astral joins the party for the second half of the game).
 MIN_LEVEL_FOR_PROMOTION:			equ 21		; Minimum level required on unpromoted class before promotion is allowed (20 in the base game).
 MAX_UNPROMOTED_LEVEL:				equ 30		; Maximum level for unpromoted classes (40 in the base game, 30 is suggested if enabling SF1-style leveling patch).
 MAX_PROMOTED_LEVEL:                 equ 79      ; Maximum level after promotion (99 in the base game). You may consider lowering it to 79 if you display the effective level (+20) in the status screen.
