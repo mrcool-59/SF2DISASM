@@ -569,7 +569,8 @@ loc_47896:
 				; Otherwise, check if the battle is flagged as mandatory...
                 movem.l d0-d2/a0,-(sp)
                 lea     table_MandatoryRandomBattles(pc), a0
-                moveq   #0,d2
+				move.w  d0,d1		; looking for the battle index...
+                moveq   #0,d2		; no extra properties attached
                 jsr     (FindSpecialPropertyBytesAddressForObject).w
                 movem.l (sp)+,d0-d2/a0
                 bcc.s   @PlayBattle	; Battle is mandatory
