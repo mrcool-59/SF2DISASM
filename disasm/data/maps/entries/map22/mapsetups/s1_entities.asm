@@ -25,7 +25,7 @@ ms_map22_Entities:
                 msFixedEntity 18, 5, DOWN, MAPSPRITE_ROOK, eas_Init
                 msFixedEntity 32, 5, DOWN, MAPSPRITE_ROOK, eas_Init
                 msFixedEntity 24, 6, DOWN, MAPSPRITE_QUEEN, eas_Init
-                msFixedEntity 26, 6, DOWN, MAPSPRITE_PAWN, eas_Init
+                msFixedEntity 26, 6, DOWN, MAPSPRITE_QUEEN, eas_Init
                 msFixedEntity 22, 6, DOWN, MAPSPRITE_PAWN, eas_Init
                 msFixedEntity 28, 6, DOWN, MAPSPRITE_PAWN, eas_Init
                 msFixedEntity 20, 6, DOWN, MAPSPRITE_PAWN, eas_Init
