@@ -368,8 +368,8 @@ table_EnemyDefinitions:
                 baseAtt  20
                 baseDef  34
                 baseAgi  25
-                baseMov  2
-                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
+                baseMov  4
+                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 baseProwess    CRITICAL150_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 items &
                     BATTLE_AXE|EQUIPPED, &
@@ -390,11 +390,11 @@ table_EnemyDefinitions:
                 level    23
                 maxHp    48
                 maxMp    0
-                baseAtt  19
+                baseAtt  21
                 baseDef  31
                 baseAgi  29
-                baseMov  9
-                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
+                baseMov  8
+                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 baseProwess    CRITICAL150_1IN8|DOUBLE_1IN16|COUNTER_1IN16
                 items &
                     POWER_SPEAR|EQUIPPED, &
@@ -1565,11 +1565,11 @@ table_EnemyDefinitions:
                 level    22
                 maxHp    55
                 maxMp    0
-                baseAtt  16
+                baseAtt  18
                 baseDef  28
                 baseAgi  27
                 baseMov  4
-                baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
+                baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 baseProwess    CRITICAL150_1IN32|DOUBLE_1IN32|COUNTER_1IN32
                 items &
                     ROBIN_ARROW|EQUIPPED, &
@@ -1813,13 +1813,13 @@ table_EnemyDefinitions:
                 unknownByte 71          ; 71: QUEEN
                 spellPower ENHANCED
                 level    23
-                maxHp    32
+                maxHp    25
                 maxMp    26
                 baseAtt  19
                 baseDef  33
                 baseAgi  35
                 baseMov  6
-                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_MINOR|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
+                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_MINOR|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
                 baseProwess    CRITICAL150_1IN32|DOUBLE_1IN32|COUNTER_1IN32
                 items &
                     POWER_STICK|EQUIPPED, &
@@ -2263,12 +2263,12 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 89: KING
                 spellPower ENHANCED
                 level    27
-                maxHp    90
-                maxMp    28
+                maxHp    99
+                maxMp    15
                 baseAtt  23
-                baseDef  37
+                baseDef  36
                 baseAgi  161
-                baseMov  1
+                baseMov  2
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL125_1IN8|DOUBLE_1IN16|COUNTER_1IN32
                 items &
