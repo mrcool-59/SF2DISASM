@@ -314,7 +314,12 @@ cs_55BEE:       textCursor 1249
                 playSound MUSIC_JOIN
                 nextText $FF,255        ; "Adviser Astral has joined the{N}force."
                 executeSubroutine j_FadeOut_WaitForP1Input
+				; ------------------------------------------
+				textCursor 4272
+				nextText $FF,255        ; "(Promotion has been unlocked!{N}Don't forget to visit the priest{N}before heading out!){W2}"
                 hideText
+				; ------------------------------------------
+				textCursor 1289
                 nextSingleText $0,139   ; "We have to remove the rocks{N}blocking the passageway{N}leading to North Parmecia.{W2}{N}Maybe we can use an{N}explosive!{W1}"
                 nod ALLY_BOWIE
                 followEntity ALLY_PETER,ALLY_BOWIE,2

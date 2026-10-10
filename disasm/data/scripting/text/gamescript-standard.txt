@@ -4271,3 +4271,4 @@
 4269=10AD=Oh, by the way...{W2}{N}I'm still practicing my{N}fire-breathing...{W1}
 4270=10AE=...but don't worry, I will cause{N}no accident!{W1}
 4271=10AF=...{W2}That's a relief!...{N}Ahah-ah...{W1}
+4272=10B0=(Promotion has been unlocked!{N}Don't forget to visit the priest{N}before heading out!){W2}
