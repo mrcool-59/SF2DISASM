@@ -353,7 +353,7 @@ table_SpellDefinitions:
                 
                 entry      HEALIN       ; HEALIN 1
                 mpCost     0
-                animation  HEALING_FAIRY
+                animation  DETOX
                 properties TYPE_HEAL|TARGET_TEAMMATES
                 range      0, 1
                 radius     0
@@ -361,7 +361,7 @@ table_SpellDefinitions:
                 
                 entry      HEALIN|LV2   ; HEALIN 2
                 mpCost     0
-                animation  HEALING_FAIRY|VARIATION2
+                animation  DETOX|VARIATION2
                 properties TYPE_HEAL|TARGET_TEAMMATES
                 range      0, 1
                 radius     0
@@ -369,7 +369,7 @@ table_SpellDefinitions:
                 
                 entry      HEALIN|LV3   ; HEALIN 3
                 mpCost     0
-                animation  HEALING_FAIRY|VARIATION3
+                animation  DETOX|VARIATION3
                 properties TYPE_HEAL|TARGET_TEAMMATES
                 range      0, 1
                 radius     0
@@ -609,7 +609,7 @@ table_SpellDefinitions:
                 
                 entry      POWDER       ; POWDER 1
                 mpCost     0
-                animation  NONE
+                animation  DETOX|VARIATION2
                 properties TYPE_HEAL|TARGET_TEAMMATES
                 range      0, 1
                 radius     0
@@ -617,7 +617,7 @@ table_SpellDefinitions:
 
                 ; entry      POWDER|LV2   ; POWDER 2
                 ; mpCost     0
-                ; animation  NONE
+                ; animation  DETOX|VARIATION2
                 ; properties TYPE_HEAL|TARGET_TEAMMATES
                 ; range      0, 1
                 ; radius     0
@@ -625,7 +625,7 @@ table_SpellDefinitions:
                 
                 entry      G_TEAR       ; G.TEAR 1
                 mpCost     0
-                animation  NONE
+                animation  DETOX|VARIATION3
                 properties TYPE_HEAL|TARGET_TEAMMATES
                 range      0, 1
                 radius     0
@@ -633,7 +633,7 @@ table_SpellDefinitions:
                 
                 entry      G_TEAR|LV2   ; G.TEAR 2
                 mpCost     0
-                animation  NONE
+                animation  DETOX|VARIATION4
                 properties TYPE_HEAL|TARGET_TEAMMATES
                 range      0, 1
                 radius     0
