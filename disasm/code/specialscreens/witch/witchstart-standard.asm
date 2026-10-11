@@ -177,15 +177,14 @@ witchMenuAction_New:
                 beq.w   @Configuration
                 
                 moveq   #1,d0
-                moveq   #COMBATANT_ALLIES_MINUS_PLAYER_AND_CREATURE_COUNTER,d7
-                
 @NameAlly_Loop: jsr     NameAlly
 @SkipNaming:    addq.w  #1,d0
                 cmpi.w  #ALLY_KIWI,d0
                 beq.s   @SkipNaming
                 cmpi.w  #ALLY_PETER,d0	; Skip Ixen renaming, he is handled after this!
                 beq.s   @SkipNaming
-                dbf     d7,@NameAlly_Loop
+				cmpi.b	#30,d0			; Stop at dummy ally 1
+				bne.s   @NameAlly_Loop
                 
 				; Ixen special-case
 @Configuration: txt     223             ; "{NAME;0}....{N}Nice name, huh?{W2}"
