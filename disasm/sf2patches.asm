@@ -192,11 +192,11 @@ RESISTANCE_MINOR_PERCENT:			equ 25		; Minor resistance will adjust spell damage 
 RESISTANCE_MAJOR_PERCENT:			equ 50		; Major resistance will adjust spell damage by -x% (50 in the base game).
 RESISTANCE_WEAKNESS_PERCENT:		equ 35		; Weakness will adjust spell damage by +x% (25 in the base game).
 RESISTANCE_CRITICAL_PERCENT:		equ 25		; Critical hit will adjust spell damage by +x% (25 in the base game). This stacks ADDITIVELY with resistance %.
-ATTACK_DIVIDER						equ 10		; Modify this value to adjust the power of Attack (8 in the base game). As a reminder, first turn Attack increases ATT stat by [3 * (100 / DIVIDER)]%.
-BOOST_DIVIDER						equ 10		; Modify this value to adjust the power of Boost (8 in the base game). As a reminder, first turn Boost increases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
-SLOW_DIVIDER						equ 10		; Modify this value to adjust the power of Slow (8 in the base game). As a reminder, first turn Slow decreases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
-MAGES_CAST_MORE:					equ 1		; 0 = OFF, 1 = ON   Change the probability that Mage-type enemies use spells from roughly 60% to 80%.
+ATTACK_DIVIDER:						equ 10		; Modify this value to adjust the power of Attack (8 in the base game). As a reminder, first turn Attack increases ATT stat by [3 * (100 / DIVIDER)]%.
+BOOST_DIVIDER:						equ 10		; Modify this value to adjust the power of Boost (8 in the base game). As a reminder, first turn Boost increases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
+SLOW_DIVIDER:						equ 10		; Modify this value to adjust the power of Slow (8 in the base game). As a reminder, first turn Slow decreases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
 ARCHER_DAMAGE_BONUS_IGNORE_DEF:		equ 1		; 0 = OFF, 1 = ON   Change the Archer 25% damage bonus against Flying/Hovering characters to ignore DEF.
+ENABLE_CUSTOM_AI_PROBABILITY:		equ 1		; 0 = OFF, 1 = ON   Enable per enemy type and per move type custom probability for the AI to attack/cast spell/use item. See aiprobability-standard.asm file!
 
 
 ; Menu enhancements
