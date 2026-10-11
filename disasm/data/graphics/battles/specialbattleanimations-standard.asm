@@ -57,6 +57,9 @@ table_SpellcastAnimationsForEnemies:
 ; Classes that use a special animation when using items.
 table_UseItemAnimationsForClasses:
                 
+				dc.w CLASS_PHNK, ALLYBATTLEANIMATION_SPECIAL_IXEN_ITEM
+				dc.w CLASS_PHNX, ALLYBATTLEANIMATION_SPECIAL_IXEN_PROMOTED_ITEM
+
                 tableEnd
 
 

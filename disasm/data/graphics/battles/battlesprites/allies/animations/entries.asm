@@ -90,6 +90,8 @@ pt_AllyAnimations:
                 dc.l AllyAnimation085
                 dc.l AllyAnimation086
 				dc.l AllyAnimation087
+				dc.l AllyAnimation088
+				dc.l AllyAnimation089
 AllyAnimation000:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation000.bin"
 AllyAnimation001:
@@ -266,3 +268,7 @@ AllyAnimation086:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation086.bin"
 AllyAnimation087:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenCastImproved-standard.bin" ; Ixen [Cast]
+AllyAnimation088:
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenItem-standard.bin" ; Ixen [Item]
+AllyAnimation089:
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenProItem-standard.bin" ; Ixen Promoted [Item]
