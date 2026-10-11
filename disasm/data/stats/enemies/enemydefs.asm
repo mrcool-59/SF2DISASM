@@ -368,7 +368,7 @@ table_EnemyDefinitions:
                 baseAtt  20
                 baseDef  34
                 baseAgi  25
-                baseMov  4
+                baseMov  3
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 baseProwess    CRITICAL150_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 items &
@@ -2043,7 +2043,7 @@ table_EnemyDefinitions:
                 baseAtt  20
                 baseDef  34
                 baseAgi  25
-                baseMov  3
+                baseMov  5
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 baseProwess    CRITICAL150_1IN32|DOUBLE_1IN32|COUNTER_1IN32
                 items &
