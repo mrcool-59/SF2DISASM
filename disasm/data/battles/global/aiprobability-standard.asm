@@ -45,18 +45,20 @@
 table_AIProbabilityPerMoveType:
 				;                                A/S      |      A/I      |      A/S/I
 				;                             A       S   |   A       I   |   A    S    I
-                dc.b MOVETYPE_MAGE,          13,     39,     13,     39,      0,  32,  64
-                dc.b MOVETYPE_HEALER,        13,     39,     13,     39,      0,  32,  64
+                dc.b MOVETYPE_MAGE,           6,     58,      6,     58,      6,  40,  64
+                dc.b MOVETYPE_HEALER,        13,     58,     13,     58,     13,  40,  64
                 tableEnd.b
 				
 table_AIProbabilityPerEnemyType:
 				;                                A/S      |      A/I      |      A/S/I
 				;                             A       S   |   A       I   |   A    S    I
 				dc.b ENEMY_KRAKEN_HEAD,       0,     64,      0,     64,      0,  64,  64
+                dc.b ENEMY_KING,              0,     32,      0,     32,      0,  32,  64
+				dc.b ENEMY_ZALBARD,           0,     48,      0,     48,      0,  48,  64
                 tableEnd.b
 				
 table_AIProbabilityDefault:
 				;                                A/S      |      A/I      |      A/S/I
 				;                             A       S   |   A       I   |   A    S    I
-				dc.b 					     13,     39,     13,     39,      0,  32,  64
+				dc.b 					     13,     39,     13,     39,     10,  48,  64
                 tableEnd.b
