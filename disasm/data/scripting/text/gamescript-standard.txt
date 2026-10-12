@@ -1785,7 +1785,7 @@
 1783=06F7=The Chess Army is very{N}strong. Keep in mind the King{N}will act twice per turn!{W2}
 1784=06F8=It will be good training for{N}you.{W2}{CLEAR}If you don't win on the first{N}attempt, don't give up!{N}You will grow stronger quickly.{W1}
 1785=06F9=Mr. Creed gave me this solid,{N}armored body!{W1}
-1786=06FA=My attack power is the best{N}in the army!{W2}{CLEAR}But if you stand on black tiles,{N}I won't be able to damage{N}you as much as I'd like!...
+1786=06FA=My attack power is the best{N}in the army!{W2}{CLEAR}But if you stand on black tiles,{N}I won't be able to damage{N}you as much as I'd like!...{W2}
 1787=06FB=We knights are always ready{N}to fight!{W1}
 1788=06FC=Is healing is my only ability?{N}Ha, ha!  You have a lot to{N}learn!{W1}
 1789=06FD=I lead the army with the King.{W1}
@@ -1793,7 +1793,7 @@
 1791=06FF=If it is King Ponpei's wish,{N}we will accept your{N}challenge!{W1}
 1792=0700=Are you ready?{W2}
 1793=0701=Now, start the battle!{N}Do your best!{W1}
-1794=0702=Checkmate!{D2}{D2}{N}This is for you.{W1}
+1794=0702=Checkmate!{D2}{D2}{D2}{N}This is for you.{W1}
 1795=0703=A Cotton Balloon is inside.{W2}
 1796=0704=With it you can leave{N}Desktop Kingdom safely.{N}Good luck!{W1}
 1797=0705=Bravo!  I'd give you an army{N}if you'd stay here.{W1}
