@@ -363,10 +363,10 @@ table_EnemyDefinitions:
                 unknownByte 13          ; 13: PAWN
                 spellPower ENHANCED
                 level    22
-                maxHp    32
+                maxHp    33
                 maxMp    0
-                baseAtt  20
-                baseDef  34
+                baseAtt  23
+                baseDef  36
                 baseAgi  25
                 baseMov  3
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
@@ -388,13 +388,13 @@ table_EnemyDefinitions:
                 unknownByte 14          ; 14: KNIGHT
                 spellPower ENHANCED
                 level    23
-                maxHp    48
+                maxHp    50
                 maxMp    0
-                baseAtt  21
+                baseAtt  22
                 baseDef  31
                 baseAgi  29
                 baseMov  8
-                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
                 baseProwess    CRITICAL150_1IN8|DOUBLE_1IN16|COUNTER_1IN16
                 items &
                     POWER_SPEAR|EQUIPPED, &
@@ -1565,11 +1565,11 @@ table_EnemyDefinitions:
                 level    22
                 maxHp    55
                 maxMp    0
-                baseAtt  18
-                baseDef  28
+                baseAtt  20
+                baseDef  30
                 baseAgi  27
                 baseMov  4
-                baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
                 baseProwess    CRITICAL150_1IN32|DOUBLE_1IN32|COUNTER_1IN32
                 items &
                     ROBIN_ARROW|EQUIPPED, &
@@ -1813,13 +1813,13 @@ table_EnemyDefinitions:
                 unknownByte 71          ; 71: QUEEN
                 spellPower ENHANCED
                 level    23
-                maxHp    25
-                maxMp    26
+                maxHp    35
+                maxMp    30
                 baseAtt  19
-                baseDef  33
+                baseDef  34
                 baseAgi  35
                 baseMov  6
-                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_MINOR|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
+                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_MINOR
                 baseProwess    CRITICAL150_1IN32|DOUBLE_1IN32|COUNTER_1IN32
                 items &
                     POWER_STICK|EQUIPPED, &
@@ -2038,13 +2038,13 @@ table_EnemyDefinitions:
                 unknownByte 80          ; 80: EVIL BISHOP
                 spellPower ENHANCED
                 level    22
-                maxHp    35
-                maxMp    36
+                maxHp    45
+                maxMp    30
                 baseAtt  20
-                baseDef  34
+                baseDef  32
                 baseAgi  25
                 baseMov  5
-                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
                 baseProwess    CRITICAL150_1IN32|DOUBLE_1IN32|COUNTER_1IN32
                 items &
                     POWER_STICK|EQUIPPED, &
