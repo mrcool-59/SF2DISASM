@@ -5,6 +5,6 @@ table_MandatoryRandomBattles:
                 dc.b BATTLE_DEVIL_TAIL			; Has an important cutscene
 				dc.b BATTLE_TO_NORTH_PARMECIA	; Could be made skippable, but I kept it for pacing
 				dc.b BATTLE_OUTSIDE_KETTO		; Geshp entrance
-				dc.b TO_ROFT					; Geshp appears again
+				dc.b BATTLE_TO_ROFT				; Geshp appears again
 				
                 tableEnd.b
