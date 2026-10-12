@@ -108,25 +108,25 @@ table_EnemyItemDrops:
                 item        HEALING_RAIN
                 droppedFlag 19
                 
-                battle      TO_NORTH_PARMECIA
-                enemyEntity 5
-                item        MEDICAL_HERB
-                droppedFlag 20
+                ; battle      TO_NORTH_PARMECIA
+                ; enemyEntity 5
+                ; item        MEDICAL_HERB
+                ; droppedFlag 20
                 
-                battle      TO_NORTH_PARMECIA
-                enemyEntity 12
-                item        MEDICAL_HERB
-                droppedFlag 21
+                ; battle      TO_NORTH_PARMECIA
+                ; enemyEntity 12
+                ; item        MEDICAL_HERB
+                ; droppedFlag 21
                 
-                battle      NORTH_CAVE
-                enemyEntity 5
-                item        MEDICAL_HERB
-                droppedFlag 22
+                ; battle      NORTH_CAVE
+                ; enemyEntity 5
+                ; item        MEDICAL_HERB
+                ; droppedFlag 22
                 
-                battle      NORTH_CAVE
-                enemyEntity 14
-                item        MEDICAL_HERB
-                droppedFlag 23
+                ; battle      NORTH_CAVE
+                ; enemyEntity 14
+                ; item        MEDICAL_HERB
+                ; droppedFlag 23
                 
                 battle      VERSUS_TAROS
                 enemyEntity 0
