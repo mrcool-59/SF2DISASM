@@ -477,7 +477,7 @@ table_ItemDefinitions:
                              NONE, 0
                 
                 ; 23: White Ring
-                equipFlags   HERO|VICR
+                equipFlags   HERO|VICR|MMNK
                 equipFlags2  NONE
                 range        0, 0
                 price        5000
@@ -505,7 +505,7 @@ table_ItemDefinitions:
                              NONE, 0
                 
                 ; 25: Evil Ring
-                equipFlags   WIZ|SORC|VICR
+                equipFlags   WIZ|SORC|VICR|MMNK
                 equipFlags2  NONE
                 range        0, 0
                 price        5000
@@ -687,7 +687,7 @@ table_ItemDefinitions:
                              NONE, 0
                 
                 ; 38: Large Axe
-                equipFlags   GLDT|BRN|RDBN
+                equipFlags   WARR|GLDT|BRN|RDBN
                 equipFlags2  NONE
                 range        1, 1
                 price        2250
@@ -827,7 +827,7 @@ table_ItemDefinitions:
                              NONE, 0
                 
                 ; 48: Robin Arrow
-                equipFlags   SNIP|BRGN|BWNT
+                equipFlags   ACHR|RNGR|SNIP|BRGN|BWNT
                 equipFlags2  NONE
                 range        2, 3
                 price        1480
@@ -1027,7 +1027,7 @@ table_ItemDefinitions:
                              NONE, 0
                 
                 ; 62: Broad Sword
-                equipFlags   HERO|BRN|BDBT|NINJ|RDBN
+                equipFlags   SDMN|BDMN|HERO|BRN|BDBT|NINJ|RDBN
                 equipFlags2  NONE
                 range        1, 1
                 price        1600
@@ -1419,7 +1419,7 @@ table_ItemDefinitions:
                              NONE, 0
                 
                 ; 90: Flail
-                equipFlags   WIZ|SORC|VICR
+                equipFlags   MAGE|PRST|WIZ|SORC|VICR
                 equipFlags2  NONE
                 range        1, 1
                 price        1490

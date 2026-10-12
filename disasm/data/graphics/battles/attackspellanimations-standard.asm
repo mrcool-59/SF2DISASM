@@ -31,7 +31,7 @@ table_AttackSpellAnimationsForWeapon:
                 dc.b ITEM_IRON_ARROW,    @arrow1
                 dc.b ITEM_STEEL_ARROW,   @arrow1
                 dc.b ITEM_ROBIN_ARROW,   @arrow2
-                dc.b ITEM_ASSAULT_SHELL, @arrow2
+                dc.b ITEM_ASSAULT_SHELL, @cannon
                 dc.b ITEM_NAZCA_CANNON,  @cannon
                 dc.b ITEM_HYPER_CANNON,  @cannon
                 dc.b ITEM_GRAND_CANNON,  @cannon
