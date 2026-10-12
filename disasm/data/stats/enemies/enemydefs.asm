@@ -1138,10 +1138,10 @@ table_EnemyDefinitions:
                 unknownByte 44          ; 44: HARPY
                 spellPower REGULAR
                 level    19
-                maxHp    32
+                maxHp    34
                 maxMp    10
-                baseAtt  39
-                baseDef  38
+                baseAtt  37
+                baseDef  37
                 baseAgi  29
                 baseMov  7
                 baseresistance WIND_WEAKNESS|LIGHTNING_NONE|ICE_NONE|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_NONE
