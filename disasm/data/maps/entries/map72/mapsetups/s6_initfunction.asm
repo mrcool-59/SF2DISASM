@@ -9,12 +9,17 @@ ms_map72_InitFunction:
                 
                  
                 chkFlg  716             ; Set after your raft-giving conversation with the mayor in Polca
-                beq.s   return_4FF40
+                beq.s   @CheckMusicChange
                 chkFlg  10              ; Luke joined
-                bne.s   return_4FF40
+                bne.s   @CheckMusicChange
                 script  cs_4FF5A
-return_4FF40:
-                
+
+@CheckMusicChange:
+                chkFlg  525				; [CUSTOM] Check the North Cave battle has been completed
+				beq.s   @return_4FF40
+				script  cs_map72_MusicSwap
+				
+@return_4FF40:
                 rts
 
     ; End of function ms_map72_InitFunction
@@ -28,6 +33,10 @@ return_4FF40:
                 nextSingleText $0,ALLY_BOWIE ; "That's it for today?{W2}{N}Yes, you had better take a{N}rest now.{N}Come back again.{W1}"
                 csc_end
                 
+cs_map72_MusicSwap:
+				playSound MUSIC_CUSTOM_ENTERING_NORTH_PARMECIA
+				csc_end
+				
 cs_4FF5A:       textCursor 1556
                 newEntity ALLY_LUKE,43,47,DOWN,NOTHING_BYTE
                 csWait 1

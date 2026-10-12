@@ -11,6 +11,7 @@ bbcs_26:        textCursor 2596
                 setPos FOLLOWER_B,6,24,RIGHT
                 setPos FOLLOWER_A,6,25,RIGHT
                 fadeInB
+				playSound MUSIC_ENEMY_ATTACK
                 cameraSpeed $30
                 nextSingleText $0,128   ; "Answer me!{N}Where are you going?{W1}"
                 setCamDest 13,9
@@ -144,6 +145,7 @@ bbcs_26:        textCursor 2596
                  ac_updateSprite        ;   
                  ac_jump eas_Idle       ;   
                 ac_end
+				playSound SOUND_COMMAND_CUT_OUT
                 nextSingleText $C0,FOLLOWER_B ; "Stop!!!{W1}"
                 customActscriptWait 129
                  ac_setSpeed 32,32      ;   
@@ -162,6 +164,7 @@ bbcs_26:        textCursor 2596
                  moveLeft 1
                 endActions
                 nextSingleText $0,128   ; "Who said that?{W1}"
+				playSound MUSIC_CUSTOM_ENTERING_NORTH_PARMECIA
                 setCamDest 2,20
                 csWait 60
                 setCamDest 13,15
