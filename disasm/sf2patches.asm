@@ -168,7 +168,7 @@ RANDOM_BATTLE_UPGRADE_LEVEL_OFFSET: equ 0		; 0 = OFF, x = ON    Adjust Bowie lev
 DAMAGE_EXP_LEVEL_OFFSET:			equ -1		; 0 = OFF, x = ON    Negative value x = monsters will start giving 1 EXP x levels sooner (discourage grinding), positive value x = 1 EXP x levels later (favor grinding).
 DAMAGE_EXP_GUARANTEED_HP_PERCENT:	equ 20		; 0 = OFF, x = ON    Guarantees that at least [ x% of kill EXP ] will be given to a character, even if the character deals less than [ x% of max HP ] damage to the monster.
 HEALING_EXP_MUST_HEAL_ONE_HP:		equ 1		; 0 = OFF, 1 = ON    If enabled, healers will only get 1 EXP if healing full health targets.
-HEALING_EXP_PROMOTED_PENALTY:		equ 35		; 0 = OFF, x = ON    Reduce EXP gains from healing for promoted healers by x%.
+HEALING_EXP_PROMOTED_PENALTY:		equ 25		; 0 = OFF, x = ON    Reduce EXP gains from healing for promoted healers by x%.
 HEALING_EXP_AURA_FLAT_PENALTY:		equ 7		; 0 = OFF, x = ON    Subtract x EXP if the healing spell being cast is AURA (this penalty is applied on each target).
 HEALING_EXP_MIN:            		equ 10      ; Guaranteed amount of EXP given to a healer (10 in the base game), regardless of HP amount recovered (except if MUST_HEAL_ONE_HP patch is enabled).
 HEALING_EXP_MAX:            		equ 51      ; Amount of EXP given to a healer (25 in the base game) if the target recovered 100% HP (max value can never happen because you can't heal 0% HP targets).
