@@ -20,18 +20,22 @@ loc_1D2F6:
                 addq.w  #1,(a5)
                 cmpi.w  #2,(a5)
                 bne.w   loc_1D348
-                lea     graphic_FlameBreathParticle(pc), a0
-                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
-                cmpi.w  #ALLYBATTLESPRITE_PHNK,d2							; HARDCODED: position change if PHNK class (unpromoted Ixen)
-                beq.w   loc_1D33C
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
-                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2		; HARDCODED: another position change if PHNX class (promoted Ixen)
-                cmpi.w  #ALLYBATTLESPRITE_PHNX,d2
-                beq.w   loc_1D33C
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
+                lea     graphic_FlameBreathParticle(pc), a0					; Start at Ixen Unpromoted
+				
                 btst    #SPELLANIMATION_BIT_MIRRORED,((SPELLANIMATION_VARIATION_AND_MIRRORED_BIT-$1000000)).w
+                bne.s   @IsEnemy
+                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
+                cmpi.w  #ALLYBATTLESPRITE_PHNK,d2							; HARDCODED: we're done if PHNK class (unpromoted Ixen)
                 beq.w   loc_1D33C
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto Ixen Promoted
+                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
+                cmpi.w  #ALLYBATTLESPRITE_PHNX,d2							; HARDCODED: we're done if PHNX class (promoted Ixen)
+                beq.w   loc_1D33C
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto DEFAULT
+@IsEnemy:
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Start at Cerberus
                 move.w  ((BATTLESCENE_ENEMYBATTLESPRITE-$1000000)).w,d2
                 cmpi.w  #ENEMYBATTLESPRITE_CERBERUS,d2
                 beq.w   loc_1D33C
@@ -41,11 +45,12 @@ loc_1D2F6:
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 cmpi.w  #ENEMYBATTLESPRITE_WYVERN,d2
                 beq.w   loc_1D33C
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Final position: Dragon
 loc_1D33C:
                 
                 bsr.w   ConstructSimpleGraphic
                 sndCom  SFX_DOOR_OPEN 				; <= if limited to using vanilla SFXs, then SFX_DOOR_OPEN_HIGH_PITCH, SFX_BIG_DOOR_RUMBLE, SFX_BATTLEFIELD_DEATH, SFX_DEMON_BREATH are decent too
+				sndCom  SFX_CUSTOM_FIRE
                 bra.w   loc_1D424
 loc_1D348:
                 
@@ -97,13 +102,16 @@ loc_1D3A6:
                 move.w  d0,6(a5)
 				
 				; HARDCODED: let's mess with the Y displacement to make it look better! (unpromoted Ixen)
+                btst    #SPELLANIMATION_BIT_MIRRORED,((SPELLANIMATION_VARIATION_AND_MIRRORED_BIT-$1000000)).w
+                bne.s   loc_flamebreath_SkipIxenHack
                 move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
                 cmpi.w  #ALLYBATTLESPRITE_PHNK,d2
-                bne.w   loc_flamebreath_Ixen_hack
+                bne.w   loc_flamebreath_SkipIxenHack
+
 				ror.w   d1 			; Divide by 2
 				neg.w   d1 			; Reverse trajectory
 				sub.w   #1,d1 		; Apply bias to really mess UP ↑ the trajectory
-loc_flamebreath_Ixen_hack:
+loc_flamebreath_SkipIxenHack:
                 add.w   d1,(a4)
                 cmpi.w  #6,(a5)
                 bne.w   loc_1D402
