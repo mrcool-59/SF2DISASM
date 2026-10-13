@@ -26,25 +26,26 @@ loc_1D2F6:
                 bne.s   @IsEnemy
                 move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
                 cmpi.w  #ALLYBATTLESPRITE_PHNK,d2							; HARDCODED: we're done if PHNK class (unpromoted Ixen)
-                beq.w   loc_1D33C
+                beq.s   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto Ixen Promoted
                 move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
                 cmpi.w  #ALLYBATTLESPRITE_PHNX,d2							; HARDCODED: we're done if PHNX class (promoted Ixen)
-                beq.w   loc_1D33C
+                beq.s   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto DEFAULT
+				bra.s   loc_1D33C
 @IsEnemy:
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Start at Cerberus
                 move.w  ((BATTLESCENE_ENEMYBATTLESPRITE-$1000000)).w,d2
                 cmpi.w  #ENEMYBATTLESPRITE_CERBERUS,d2
-                beq.w   loc_1D33C
+                beq.s   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 cmpi.w  #ENEMYBATTLESPRITE_HYDRA,d2
-                beq.w   loc_1D33C
+                beq.s   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 cmpi.w  #ENEMYBATTLESPRITE_WYVERN,d2
-                beq.w   loc_1D33C
+                beq.s   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Final position: Dragon
 loc_1D33C:
                 
