@@ -4,5 +4,5 @@
                 mapItem 3, 15, 180, CRITICAL_SWORD
                 mapItem 19, 15, 204, MITHRIL
                 mapItem 32, 34, 181, POWER_WATER
-                mapItem 34, 34, 182, HEALING_SEED
+                mapItem 34, 34, 182, HEALING_RAIN
                 endWord

@@ -10,7 +10,7 @@ cs_5DA28:       textCursor 3323
                 nextSingleText $0,FOLLOWER_B ; "What are you going to do{N}there?{W1}"
                 nextText $0,ALLY_FRAYJA ; "I believe there are{N}survivors in Moun.{W2}"
                 nextSingleText $0,ALLY_FRAYJA ; "I would like to save them.{W1}"
-                nextText $0,ALLY_PETER  ; "We have to go through Moun{N}to get to Nazka, right?{W2}"
+                nextText $0,ALLY_PETER  ; "We have to go through Moun{N}to get to Nazca, right?{W2}"
                 nextSingleText $0,ALLY_PETER ; "{LEADER}, let's go{N}together.{W1}"
                 nextSingleText $0,ALLY_FRAYJA ; "Alright.{W1}"
                 nextSingleText $FF,ENTITY_NONE  ; "{LEADER} decides to take{N}{NAME;22} with him.{W1}"

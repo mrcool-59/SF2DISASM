@@ -73,9 +73,9 @@ BattleSpriteset30:
                 combatantAiAndItem ATTACKER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|0, 3, NONE, 3, 0, STARTING
                 
-                enemyCombatant GARGOYLE, 8, 7
-                combatantAiAndItem ATTACKER3, NOTHING
-                combatantBehavior FOLLOW_ENEMY|4, 3, NONE, 15, 0, STARTING
+                enemyCombatant MASTER_MONK, 8, 7
+                combatantAiAndItem HEALER3, NOTHING
+                combatantBehavior FOLLOW_ENEMY|0, 3, NONE, 15, 0, STARTING
                 
                 enemyCombatant DARK_KNIGHT, 9, 10
                 combatantAiAndItem ATTACKER3, NOTHING

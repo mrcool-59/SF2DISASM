@@ -3328,7 +3328,7 @@
 3326=0CFE=What are you going to do{N}there?{W1}
 3327=0CFF=I believe there are{N}survivors in Moun.{W2}
 3328=0D00=I would like to save them.{W1}
-3329=0D01=We have to go through Moun{N}to get to Nazka, right?{W2}
+3329=0D01=We have to go through Moun{N}to get to Nazca, right?{W2}
 3330=0D02={LEADER}, let's go{N}together.{W1}
 3331=0D03=Alright.{W1}
 3332=0D04={LEADER} decides to take{N}{NAME;22} with him.{W1}

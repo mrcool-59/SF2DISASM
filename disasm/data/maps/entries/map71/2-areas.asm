@@ -11,5 +11,5 @@
                     mainLayerAutoscroll 0, 0
                     scndLayerAutoscroll 0, 0
                     mainLayerType    254
-                    areaDefaultMusic MUSIC_CUSTOM_NEW_CONTINENT_TO_DISCOVER
+                    areaDefaultMusic MUSIC_CUSTOM_ENTERING_NORTH_PARMECIA
                 endWord

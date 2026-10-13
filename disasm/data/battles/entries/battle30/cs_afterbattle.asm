@@ -48,6 +48,7 @@ abcs_battle30:  textCursor 2765
                 setFacing 128,DOWN
                 shiver 128
                 nextSingleText $0,128   ; "I can't endure the light....{N}Ohhh....{W1}"
+				playSound SOUND_COMMAND_FADE_OUT
                 customActscriptWait 128
                  ac_motion OFF          ;   
                  ac_orientUp            ;   
@@ -64,6 +65,7 @@ abcs_battle30:  textCursor 2765
                  moveUp 2
                 endActions
                 nextSingleText $0,ALLY_PETER ; "Hey, look over there!{W1}"
+				playSound MUSIC_MITULA_SHRINE
                 setCamDest 5,0
                 setPos 129,11,3,DOWN
                 entityFlashWhite 129,60
