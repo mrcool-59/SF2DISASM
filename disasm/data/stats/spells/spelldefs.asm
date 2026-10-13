@@ -741,7 +741,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 3
                 radius     1
-                power      20
+                power      25
                 
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
                 

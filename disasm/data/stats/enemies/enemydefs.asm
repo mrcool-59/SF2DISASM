@@ -2313,14 +2313,14 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 91: ZALBARD
                 spellPower ENHANCED
                 level    40
-                maxHp    80
-                maxMp    65
-                baseAtt  73
+                maxHp    150
+                maxMp    99
+                baseAtt  70
                 baseDef  50
                 baseAgi  180
                 baseMov  5
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_NONE|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL125_1IN4|DOUBLE_1IN8|COUNTER_1IN4
+                baseProwess    CRITICAL125_1IN8|DOUBLE_1IN16|COUNTER_1IN8
                 items &
                     NOTHING, &
                     NOTHING, &
@@ -2338,14 +2338,14 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 92: CAMEELA
                 spellPower ENHANCED
                 level    50
-                maxHp    99
+                maxHp    200
                 maxMp    0
-                baseAtt  42
-                baseDef  52
+                baseAtt  46
+                baseDef  55
                 baseAgi  186
                 baseMov  6
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL125_1IN4|DOUBLE_1IN4|COUNTER_1IN4
+                baseProwess    CRITICAL_POISON|DOUBLE_1IN8|COUNTER_1IN4
                 items &
                     IRON_BALL|EQUIPPED, &
                     NOTHING, &
@@ -2391,7 +2391,7 @@ table_EnemyDefinitions:
                 maxHp    150
                 maxMp    0
                 baseAtt  42
-                baseDef  59
+                baseDef  65
                 baseAgi  190
                 baseMov  6
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
@@ -2414,16 +2414,16 @@ table_EnemyDefinitions:
                 spellPower ENHANCED
                 level    70
                 maxHp    180
-                maxMp    120
-                baseAtt  78
-                baseDef  51
+                maxMp    150
+                baseAtt  61
+                baseDef  53
                 baseAgi  191
                 baseMov  6
                 baseresistance WIND_MAJOR|LIGHTNING_MAJOR|ICE_MAJOR|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL125_1IN4|DOUBLE_1IN8|COUNTER_1IN8
+                baseProwess    CRITICAL_SLEEP|DOUBLE_1IN8|COUNTER_1IN8
                 items &
                     FLAIL|EQUIPPED, &
-                    NOTHING, &
+                    PROTECT_RING|EQUIPPED, &
                     NOTHING, &
                     NOTHING
                 spells &
@@ -2438,14 +2438,14 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 96: ODD EYE
                 spellPower ENHANCED
                 level    80
-                maxHp    200
-                maxMp    160
-                baseAtt  64
-                baseDef  54
+                maxHp    300
+                maxMp    100
+                baseAtt  61
+                baseDef  60
                 baseAgi  195
                 baseMov  6
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL_SLEEP|DOUBLE_1IN8|COUNTER_1IN4
+                baseProwess    CRITICAL_STUN|DOUBLE_1IN4|COUNTER_1IN4
                 items &
                     COUNTER_SWORD|EQUIPPED, &
                     NOTHING, &
@@ -2463,17 +2463,17 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 97: GALAM
                 spellPower ENHANCED
                 level    99
-                maxHp    240
-                maxMp    180
-                baseAtt  49
-                baseDef  50
+                maxHp    250
+                maxMp    200
+                baseAtt  45
+                baseDef  55
                 baseAgi  208
                 baseMov  6
                 baseresistance WIND_MAJOR|LIGHTNING_MAJOR|ICE_MAJOR|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL125_1IN4|DOUBLE_1IN8|COUNTER_1IN4
+                baseProwess    CRITICAL125_1IN8|DOUBLE_1IN8|COUNTER_1IN4
                 items &
                     DEMON_ROD|EQUIPPED, &
-                    NOTHING, &
+                    PROTECT_RING|EQUIPPED, &
                     NOTHING, &
                     NOTHING
                 spells &
@@ -2488,10 +2488,10 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 98: ZEON
                 spellPower ENHANCED
                 level    99
-                maxHp    500
-                maxMp    180
-                baseAtt  102
-                baseDef  50
+                maxHp    777
+                maxMp    666
+                baseAtt  105
+                baseDef  40
                 baseAgi  203
                 baseMov  0
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
