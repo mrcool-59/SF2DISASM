@@ -2488,8 +2488,8 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 98: ZEON
                 spellPower ENHANCED
                 level    99
-                maxHp    777
-                maxMp    666
+                maxHp    666
+                maxMp    200
                 baseAtt  105
                 baseDef  40
                 baseAgi  203
