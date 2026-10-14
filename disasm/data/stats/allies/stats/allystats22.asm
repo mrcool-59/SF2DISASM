@@ -12,6 +12,7 @@ AllyStats22:    forClass  VICR
                     5, DETOX, &
                     13, HEAL|LV2, &
                     17, DETOX|LV2, &
+                    27, HEAL|LV3, &
                     34, AURA, &
                     37, DETOX|LV3, &
                     40, AURA|LV2, &
@@ -19,6 +20,5 @@ AllyStats22:    forClass  VICR
                     46, AURA|LV3, &
                     49, ATTACK, &
                     52, AURA|LV4, &
-                    56, HEAL|LV3, &
                     60, HEAL|LV4
                 
