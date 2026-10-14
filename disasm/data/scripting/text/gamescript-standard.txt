@@ -270,8 +270,8 @@
 0268=010C={D1}Attack increased by {#}!
 0269=010D={D1}Defense increased by {#}!
 0270=010E={D1}Agility increased by {#}!
-0271=010F={NAME} learned {SPELL}!{W2}
-0272=0110={SPELL} increased to{N}level {#}!{W2}
+0271=010F={NAME} learned {SPELL}!{D2}
+0272=0110={SPELL} increased to{N}level {#}!{D2}
 0273=0111={NAME}'s attack!
 0274=0112={NAME} cast{N}{SPELL} level {#}!
 0275=0113={NAME} used{N}{ITEM}!
@@ -368,7 +368,7 @@
 0366=016E={NAME} received {#}{N}bonus EXP. points!{D1}{D1}
 0367=016F={CLEAR}Hmmm... The light has deemed{N}you are not worthy yet.{N}(Progress the story more!){W2}
 0368=0170=x
-0369=0171={NAME} can't carry{N}the {ITEM}.{D2}{N}It will be sent to the Caravan.{W2}
+0369=0171={NAME} can't carry{N}the {ITEM}.{D2}{N}It will be sent to the Caravan.{D2}
 0370=0172=x
 0371=0173={CLEAR}Oooh I almost forgot.{N}There is another important{N}character in this story.{W2}{CLEAR}You can rename him...{D1}{N}but this is a spoiler.{N}It is your choice, hee, hee, hee.{W2}{CLEAR}Do you want to rename the{N}new character? (spoiler)
 0372=0174=But smoke rose from{N}the {ITEM}.{D1}
@@ -394,7 +394,7 @@
 0392=0188={NAME} earned {#}{N}experience points.
 0393=0189=Found {#} gold coins.
 0394=018A={NAME} found{N}the {ITEM}.{D1}
-0395=018B={NAME} received{N}the {ITEM}.{W2}
+0395=018B={NAME} received{N}the {ITEM}.{D2}
 0396=018C={NAME} dropped{N}a {ITEM}.{D1}
 0397=018D={CLEAR}{NAME} appeared!{D3}
 0398=018E={NAME}'s attack{N}increased by {#}.
@@ -2860,7 +2860,7 @@
 2858=0B2A=Please let me join you!{N}I could be a great help to{N}you.{W2}
 2859=0B2B=You need a professional{N}soldier like me.{W1}
 2860=0B2C=Oh, we welcome you.{W1}
-2861=0B2D=But, he was on the other{N}side just an minute ago.{W1}
+2861=0B2D=But, he was on the other{N}side just a minute ago.{W1}
 2862=0B2E=I don't care, {NAME;7}.{N}He has seen the error of his{N}ways.{W1}
 2863=0B2F={LEADER}, don't you want{N}{NAME;23} to join our{N}force?{W1}
 2864=0B30=Oh, thank you!{W2}
