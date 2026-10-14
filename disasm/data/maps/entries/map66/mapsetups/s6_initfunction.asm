@@ -6,14 +6,15 @@
 
 
 ms_map66_InitFunction:
-                chkFlg  ALLY_KAZIN             ; [CUSTOM] Set after Hawel's house events
-                beq.s   @NoMusicChange
+                chkFlg  ALLY_KAZIN             ; [CUSTOM] Set after Kazin joins
+                bne.s   @NoMusicChange
                 script  cs_map66_UseNewbieMusic
 				
 @NoMusicChange:				
                 rts
 
-cs_map66_UseNewbieMusic:	playSound MUSIC_CUSTOM_NEWBIE_BATTLE		; Play newbie music for the very first part of the overworld, while Bowie's quest is to simply go fetch the old man
+cs_map66_UseNewbieMusic:	csWait 1 	; Play newbie music for the very first part of the overworld, while Bowie's quest is to simply go fetch the old man
+							playSound MUSIC_CUSTOM_NEWBIE_BATTLE
 							csc_end
 
 

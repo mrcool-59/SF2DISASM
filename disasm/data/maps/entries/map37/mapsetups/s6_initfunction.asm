@@ -21,5 +21,6 @@ ms_map37_InitFunction:
 cs_5FA9C:       setPos ALLY_ZYNK,8,10,RIGHT
                 csc_end
 
-cs_map37_SetMusicA:	playSound MUSIC_HEADQUARTERS
+cs_map37_SetMusicA:	csWait 1
+					playSound MUSIC_HEADQUARTERS
 					csc_end
