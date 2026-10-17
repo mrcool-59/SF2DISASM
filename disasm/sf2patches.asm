@@ -165,10 +165,10 @@ KEEP_EXP_ON_PROMOTION:				equ 1		; 0 = OFF, 1 = ON    Keep current experience po
 KEEP_EXP_ON_APPLE:					equ 1		; 0 = OFF, 1 = ON    Keep current experience points when leveling a character with a Brave Apple instead of doing a reset to zero.
 KEEP_EXP_ON_OVERFLOW:				equ 1		; 0 = OFF, 1 = ON	 Keep 99 experience points when a character triggers a level up that would cause the character to go over the level cap.
 RANDOM_BATTLE_UPGRADE_LEVEL_OFFSET: equ 0		; 0 = OFF, x = ON    Adjust Bowie level by x levels (positive or negative) when figuring out if random battle enemies should be upgraded.
-DAMAGE_EXP_LEVEL_OFFSET:			equ -1		; 0 = OFF, x = ON    Negative value x = monsters will start giving 1 EXP x levels sooner (discourage grinding), positive value x = 1 EXP x levels later (favor grinding).
+DAMAGE_EXP_LEVEL_OFFSET:			equ -2		; 0 = OFF, x = ON    Negative value x = monsters will start giving 1 EXP x levels sooner (discourage grinding), positive value x = 1 EXP x levels later (favor grinding).
 DAMAGE_EXP_GUARANTEED_HP_PERCENT:	equ 20		; 0 = OFF, x = ON    Guarantees that at least [ x% of kill EXP ] will be given to a character, even if the character deals less than [ x% of max HP ] damage to the monster.
 HEALING_EXP_MUST_HEAL_ONE_HP:		equ 1		; 0 = OFF, 1 = ON    If enabled, healers will only get 1 EXP if healing full health targets.
-HEALING_EXP_PROMOTED_PENALTY:		equ 25		; 0 = OFF, x = ON    Reduce EXP gains from healing for promoted healers by x%.
+HEALING_EXP_PROMOTED_PENALTY:		equ 20		; 0 = OFF, x = ON    Reduce EXP gains from healing for promoted healers by x%.
 HEALING_EXP_AURA_FLAT_PENALTY:		equ 7		; 0 = OFF, x = ON    Subtract x EXP if the healing spell being cast is AURA (this penalty is applied on each target).
 HEALING_EXP_MIN:            		equ 10      ; Guaranteed amount of EXP given to a healer (10 in the base game), regardless of HP amount recovered (except if MUST_HEAL_ONE_HP patch is enabled).
 HEALING_EXP_MAX:            		equ 51      ; Amount of EXP given to a healer (25 in the base game) if the target recovered 100% HP (max value can never happen because you can't heal 0% HP targets).
@@ -197,7 +197,7 @@ BOOST_DIVIDER:						equ 10		; Modify this value to adjust the power of Boost (8 
 SLOW_DIVIDER:						equ 10		; Modify this value to adjust the power of Slow (8 in the base game). As a reminder, first turn Slow decreases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
 ARCHER_DAMAGE_BONUS_IGNORE_DEF:		equ 1		; 0 = OFF, 1 = ON   Change the Archer 25% damage bonus against Flying/Hovering characters to ignore DEF.
 PLAY_CONSUMABLE_ITEM_ANIMATION:		equ 1		; 0 = OFF, 1 = ON   If enabled, play spell animation attached to a consumable item.
-ENABLE_CUSTOM_AI_PROBABILITY:		equ 1		; 0 = OFF, 1 = ON   Enable per enemy type and per move type custom probability for the AI to attack/cast spell/use item. See aiprobability-standard.asm file!
+ENABLE_CUSTOM_AI_PROBABILITY:		equ 0		; 0 = OFF, 1 = ON   Enable per enemy type and per move type custom probability for the AI to attack/cast spell/use item. See aiprobability-standard.asm file!
 
 
 ; Menu enhancements
