@@ -4266,8 +4266,8 @@
 4264=10A8=Somebody...HELP!{D2}
 4265=10A9=Aughhhh!!!{D2}
 4266=10AA=(Groan)....{D2}
-4267=10AB=We're almost there everyone!{W1}
-4268=10AC=This is the final ascent before{N}facing Zeon!{W1}
+4267=10AB=... {D1}{D1}Zeon will pay for every life{N}he took.{W1}
+4268=10AC=We're almost there everyone!{D1}{N}This is the final battle before{N}facing Zeon!{W1}
 4269=10AD=Oh, by the way...{W2}{N}I'm still practicing my{N}fire-breathing...{W1}
 4270=10AE=...but don't worry, I will cause{N}no accident!{W1}
 4271=10AF=...{W2}That's a relief!...{N}Ahah-ah...{W1}
