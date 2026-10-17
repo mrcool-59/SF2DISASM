@@ -754,20 +754,20 @@ table_SpellDefinitions:
                 power      20
                 
                 entry      DRAGON_BREATH|LV3
-                mpCost     9
+                mpCost     10
                 animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     1
-                power      30
+                power      25
 				
                 entry      DRAGON_BREATH|LV4
-                mpCost     13
+                mpCost     15
                 animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     1
-                power      45
+                power      40
 				
                 entry      48
                 mpCost     0
