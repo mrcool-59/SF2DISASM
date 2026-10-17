@@ -9,7 +9,7 @@ table_ExpectedLevelForBattles:
 	; TODO: it could also be used in the configuration mode to set-up a level appropriate party for battle testing, instead of using battle number with nasty number 0 hardcode.
 	; TODO: random battle enemy upgrades should also be modified to use this table instead of battle number.
 	
-	dc.b  45 ; BATTLE_VERSUS_ALL_BOSSES: equ 0
+	dc.b  50 ; BATTLE_VERSUS_ALL_BOSSES: equ 0
 	dc.b   1 ; BATTLE_INSIDE_ANCIENT_TOWER: equ 1
 	dc.b   2 ; BATTLE_TO_YEEL: equ 2
 	dc.b   3 ; BATTLE_TO_HAWEL_HOUSE: equ 3
@@ -39,20 +39,20 @@ table_ExpectedLevelForBattles:
 	dc.b  27 ; BATTLE_TO_TRISTAN: equ 27
 	dc.b  28 ; BATTLE_PANGOAT_VALLEY_BRIDGE: equ 28
 	dc.b  29 ; BATTLE_OUTSIDE_MITULA_SHRINE: equ 29
-	dc.b  30 ; BATTLE_VERSUS_ZALBARD: equ 30
-	dc.b  31 ; BATTLE_PACALON: equ 31
-	dc.b  32 ; BATTLE_TO_MOUN: equ 32
-	dc.b  33 ; BATTLE_INSIDE_MOUN: equ 33
-	dc.b  34 ; BATTLE_VERSUS_CAMEELA: equ 34
-	dc.b  35 ; BATTLE_TO_ROFT: equ 35
-	dc.b  36 ; BATTLE_VERSUS_PRISM_FLOWERS: equ 36
-	dc.b  37 ; BATTLE_VERSUS_RED_BARON: equ 37
-	dc.b  38 ; BATTLE_VERSUS_GESHP: equ 38
-	dc.b  39 ; BATTLE_TO_ANCIENT_SHRINE: equ 39
-	dc.b  41 ; BATTLE_VERSUS_ODD_EYE: equ 40
-	dc.b  42 ; BATTLE_OUTSIDE_ANCIENT_TOWER: equ 41
-	dc.b  44 ; BATTLE_VERSUS_GALAM: equ 42
-	dc.b  45 ; BATTLE_VERSUS_ZEON: equ 43
+	dc.b  31 ; BATTLE_VERSUS_ZALBARD: equ 30
+	dc.b  32 ; BATTLE_PACALON: equ 31
+	dc.b  33 ; BATTLE_TO_MOUN: equ 32
+	dc.b  34 ; BATTLE_INSIDE_MOUN: equ 33
+	dc.b  35 ; BATTLE_VERSUS_CAMEELA: equ 34
+	dc.b  36 ; BATTLE_TO_ROFT: equ 35
+	dc.b  37 ; BATTLE_VERSUS_PRISM_FLOWERS: equ 36
+	dc.b  38 ; BATTLE_VERSUS_RED_BARON: equ 37
+	dc.b  40 ; BATTLE_VERSUS_GESHP: equ 38
+	dc.b  41 ; BATTLE_TO_ANCIENT_SHRINE: equ 39
+	dc.b  43 ; BATTLE_VERSUS_ODD_EYE: equ 40
+	dc.b  44 ; BATTLE_OUTSIDE_ANCIENT_TOWER: equ 41
+	dc.b  46 ; BATTLE_VERSUS_GALAM: equ 42
+	dc.b  48 ; BATTLE_VERSUS_ZEON: equ 43
 	dc.b  25 ; BATTLE_FAIRY_WOODS: equ 44
 
 	align
