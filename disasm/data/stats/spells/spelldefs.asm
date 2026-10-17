@@ -45,7 +45,7 @@ table_SpellDefinitions:
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 3
                 radius     0
-                power      30
+                power      40
                 
                 entry      HEAL|LV4     ; HEAL 4
                 mpCost     20
@@ -69,7 +69,7 @@ table_SpellDefinitions:
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 3
                 radius     2
-                power      15
+                power      20
                 
                 entry      AURA|LV3     ; AURA 3
                 mpCost     15
@@ -124,19 +124,19 @@ table_SpellDefinitions:
                 animation  BUFF1
                 properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 1
-                radius     1
+                radius     0
                 power      15
                 
                 entry      BOOST|LV2    ; BOOST 2
-                mpCost     5
+                mpCost     7
                 animation  BUFF1|VARIATION2
                 properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 2
-                radius     2
+                radius     1
                 power      15
                 
                 entry      SLOW         ; SLOW 1
-                mpCost     3
+                mpCost     5
                 animation  DEBUFF1
                 properties TYPE_SUPPORT|AFFECTEDBYSILENCE
                 range      1, 1
@@ -144,7 +144,7 @@ table_SpellDefinitions:
                 power      15
                 
                 entry      SLOW|LV2     ; SLOW 2
-                mpCost     6
+                mpCost     9
                 animation  DEBUFF1|VARIATION2
                 properties TYPE_SUPPORT|AFFECTEDBYSILENCE
                 range      1, 2
@@ -152,7 +152,7 @@ table_SpellDefinitions:
                 power      15
                 
                 entry      ATTACK       ; ATTACK 1
-                mpCost     7
+                mpCost     5
                 animation  BUFF1
                 properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      1, 3
@@ -184,7 +184,7 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      DESOUL       ; DESOUL 1
-                mpCost     8
+                mpCost     9
                 animation  DESOUL
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
@@ -192,7 +192,7 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      DESOUL|LV2   ; DESOUL 2
-                mpCost     13
+                mpCost     15
                 animation  DESOUL|VARIATION2
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
@@ -200,7 +200,7 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      SLEEP        ; SLEEP 1
-                mpCost     4
+                mpCost     6
                 animation  DEBUFF1
                 properties TYPE_SUPPORT|AFFECTEDBYSILENCE
                 range      1, 2
@@ -381,7 +381,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 1
                 radius     0
-                power      16
+                power      20
                 
                 entry      FLAME|LV2    ; FLAME 2
                 mpCost     0
@@ -389,7 +389,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 1
                 radius     0
-                power      24
+                power      30
                 
                 entry      FLAME|LV3    ; FLAME 3
                 mpCost     0
@@ -397,7 +397,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 1
                 radius     0
-                power      34
+                power      42
                 
                 entry      SNOW         ; SNOW 1
                 mpCost     0
@@ -405,7 +405,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 1
                 radius     0
-                power      20
+                power      24
                 
                 entry      SNOW|LV2     ; SNOW 2
                 mpCost     0
@@ -413,7 +413,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 1
                 radius     0
-                power      28
+                power      34
                 
                 entry      SNOW|LV3     ; SNOW 3
                 mpCost     0
@@ -421,7 +421,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 1
                 radius     0
-                power      35
+                power      44
                 
                 entry      DEMON        ; DEMON 1
                 mpCost     0
@@ -429,7 +429,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     1
-                power      34
+                power      35
                 
                 entry      DEMON|LV2    ; DEMON 2
                 mpCost     0
@@ -437,7 +437,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 3
                 radius     2
-                power      38
+                power      40
                 
                 entry      POWER        ; POWER 1
                 mpCost     0
@@ -629,7 +629,7 @@ table_SpellDefinitions:
                 properties TYPE_HEAL|TARGET_TEAMMATES
                 range      0, 1
                 radius     0
-                power      10
+                power      15
                 
                 entry      G_TEAR|LV2   ; G.TEAR 2
                 mpCost     0
@@ -637,7 +637,7 @@ table_SpellDefinitions:
                 properties TYPE_HEAL|TARGET_TEAMMATES
                 range      0, 1
                 radius     0
-                power      20
+                power      30
                 
                 entry      HANNY        ; HANNY 1
                 mpCost     0
@@ -762,20 +762,20 @@ table_SpellDefinitions:
                 power      20
                 
                 entry      DRAGON_BREATH|LV3
-                mpCost     9
+                mpCost     10
                 animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     1
-                power      30
+                power      25
 				
                 entry      DRAGON_BREATH|LV4
-                mpCost     13
+                mpCost     15
                 animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     1
-                power      45
+                power      40
 				
                 entry      48
                 mpCost     0
