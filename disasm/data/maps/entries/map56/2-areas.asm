@@ -11,7 +11,7 @@
                     mainLayerAutoscroll 0, 0
                     scndLayerAutoscroll 0, 0
                     mainLayerType    255
-                    areaDefaultMusic MUSIC_BATTLE_THEME_3
+                    areaDefaultMusic MUSIC_BATTLE_THEME_1
                 
                     mainLayerStart      34, 30
                     mainLayerEnd        51, 44
