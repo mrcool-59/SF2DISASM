@@ -7,7 +7,7 @@ table_ClassDefinitions:
 ;               moveType   [MOVETYPE_UPPER_]enum (or index)
 ;               prowess    [PROWESS_]bitfield
                 
-                mov 6                   ; 0: SDMN
+                mov 13                   ; 0: SDMN
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 moveType   REGULAR
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
