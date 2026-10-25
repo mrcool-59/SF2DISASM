@@ -39,37 +39,26 @@
     include "code\ym\set_timer.asm"
     include "code\music_resuming.asm"
     include "code\dac\send_dac_byte.asm"
-  align 1380h, 0										 ; MrCool: there is now less than 16 bytes left for code changes!...
-  ; align 1400h, 0										 ; MrCool: consumed 80h bytes here to expand sample entries list by 16
-  ; align 1500h, 0										 ; MrCool: consumed 100h bytes here to expand sample entries list by 32
-    ; include "data\ym_frequencies.asm"
-    include "data\ym_frequencies-standard.asm"			 ; MrCool: we can now customize YM frequencies, also there is room for 4 extra frequencies
-  align 10h, 0
-    ; include "data\psg_frequencies.asm"
-    include "data\psg_frequencies-standard.asm"			 ; MrCool: we can now customize PSG frequencies
-  align 10h, 0
-    include "data\ym_levels.asm"
   align 10h, 0
     include "data\algo_slots.asm"
+    include "data\ym_frequencies.asm"
+    include "data\psg_frequencies.asm"
   align 10h, 0
+    include "data\ym_levels.asm"
+    include "data\psg_instruments.asm"
     include "data\pitch_effects.asm"
   align 10h, 0
-    include "data\psg_instruments.asm"
-  align 10h, 0
-    ; include "data\pcm_samples.asm"
-	include "data\pcm_samples-standard.asm"				 ; MrCool: sample entries list can now hold 72 entries (18 baseline + 32 + 6 + 16) before overflowing to RAM (vanilla SF2 has 17 sample entries)
-    ; align 1800h, 0									 ; MrCool: consumed 30h bytes here to expand sample entries list by 6
-    align 1830h, 0
+    include "data\pcm_samples.asm"
+    align 1800h
     include "data\channel_data.asm"
-    align 1FC0h, 0
+  align 10h, 0
+    include "bankdefs.asm"
 
 END_OF_DRIVER:
   if MOMPASS==2
-    if $ > 1FC0h
-      fatal "Driver too big to fit in Z80 Ram ; the last offset must be < 1FC0h. It is currently \{END_OF_DRIVER}h"
+    if $ > 1FC8h
+      fatal "Driver too big to fit in Z80 Ram ; the last offset must be < 1FC8h. It is currently \{END_OF_DRIVER}h"
     else
       message "Last offset: \{END_OF_DRIVER}h"
     endif
   endif
-
-    end
