@@ -49,7 +49,7 @@
     include "data\pitch_effects.asm"
   align 10h, 0
     include "data\pcm_samples.asm"
-    align 1800h	; TODO: consume 30h here?
+    align 1830h	; Consumed 30h here to get 6 extra sample entries
     include "data\channel_data.asm"
   align 10h, 0
     include "bankdefs.asm"
