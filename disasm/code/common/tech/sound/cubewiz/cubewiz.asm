@@ -40,6 +40,8 @@
     include "code\music_resuming.asm"
     include "code\dac\send_dac_byte.asm"
   align 10h, 0
+    include "bankdefs.asm"
+  align 10h, 0
     include "data\algo_slots.asm"
     include "data\ym_frequencies-standard.asm"
     include "data\psg_frequencies-standard.asm"
@@ -51,8 +53,6 @@
     include "data\pcm_samples.asm"
     align 1830h	; Consumed 30h here to get 6 extra sample entries
     include "data\channel_data.asm"
-  align 10h, 0
-    include "bankdefs.asm"
 
 END_OF_DRIVER:
   if MOMPASS==2
