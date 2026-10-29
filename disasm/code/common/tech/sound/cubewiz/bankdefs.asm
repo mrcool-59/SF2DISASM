@@ -4,7 +4,7 @@ PCM_BANK_0_ROM_OFFSET                  equ 01E0000h
 PCM_BANK_1_ROM_OFFSET                  equ 01E8000h
 MUSIC_BANK_0_POINTER_TABLE_ROM_OFFSET  equ 01F8000h
 MUSIC_BANK_1_POINTER_TABLE_ROM_OFFSET  equ 01F0000h
-SFX_POINTER_TABLE_ROM_OFFSET           equ 01EE000h
+SFX_POINTER_TABLE_ROM_OFFSET           equ 01EF000h
 ; Additional ROM Offsets can be added for new assets
 PCM_BANK_2_ROM_OFFSET                  equ 01B8000h
 PCM_BANK_3_ROM_OFFSET                  equ 01C0000h
