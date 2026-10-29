@@ -1,9 +1,9 @@
 
     include "enums\vdp.asm"
-	includeIfVanilla  "enums\musics.asm"
-	includeIfStandard "enums\musics-standard.asm"
-	includeIfVanilla  "enums\sfxs.asm"
-	includeIfStandard "enums\sfxs-standard.asm"
+	includeIfVanilla  "enums\music.asm"
+	includeIfStandard "enums\music-standard.asm"
+	includeIfVanilla  "enums\sfx.asm"
+	includeIfStandard "enums\sfx-standard.asm"
 
 savedDataByteSize = 1
     if (STANDARD_BUILD&RELOCATED_SAVED_DATA_TO_SRAM=1)
