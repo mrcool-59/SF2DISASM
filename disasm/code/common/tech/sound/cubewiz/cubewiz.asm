@@ -50,7 +50,7 @@
     include "data\psg_instruments.asm"
     include "data\pitch_effects.asm"
   align 10h, 0
-    include "data\pcm_samples.asm"
+    include "data\pcm_samples-standard.asm"
     align 1830h	; Consumed 30h here to get 6 extra sample entries
     include "data\channel_data.asm"
 
