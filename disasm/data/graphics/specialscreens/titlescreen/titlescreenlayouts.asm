@@ -541,8 +541,8 @@ layout_TitleScreenA:
                 vdpTile MENUTILE22|PALETTE3
                 vdpTile MENUTILE25|PALETTE3
                 vdpTile MENUTILE6|PALETTE3
+                vdpTile 43|PALETTE3
 				; <<< MUSIC SHOWCASE DELUXE
-                vdpTile 
                 vdpTile 
                 vdpTile 
                 vdpTile 
