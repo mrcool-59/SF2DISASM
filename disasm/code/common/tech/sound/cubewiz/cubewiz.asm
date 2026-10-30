@@ -51,7 +51,7 @@
     include "data\pitch_effects.asm"
   align 10h, 0
     include "data\pcm_samples-standard.asm"
-    align 1830h	; Consumed 30h here to get 6 extra sample entries
+    align 1A90h
     include "data\channel_data.asm"
 
 END_OF_DRIVER:
