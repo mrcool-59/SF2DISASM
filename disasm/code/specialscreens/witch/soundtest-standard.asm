@@ -22,7 +22,7 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
                 
 @Right:         btst    #INPUT_BIT_RIGHT,((PLAYER_1_INPUT-$1000000)).w
                 beq.s   @Left
-                cmpi.w  #109,d7      ; check we're not trying to go beyond final track
+                cmpi.w  #114,d7      ; check we're not trying to go beyond final track
                 bge.s   @First      ; if we are, go to first track (circular navigation)
                 addq.w  #1,d7
                 bra.s   @UpdateTrack
@@ -37,7 +37,7 @@ SoundTest:      txt     464                         ; "Oh! I have a good idea.{N
 @First:         move.b  #0,d7       ; go to first track
                 bra.s   @UpdateTrack
 
-@Last:          move.b  #109,d7      ; go to last track
+@Last:          move.b  #114,d7      ; go to last track
                 bra.s   @UpdateTrack
 
 @A:             btst    #INPUT_BIT_A,((PLAYER_1_INPUT-$1000000)).w
@@ -73,35 +73,43 @@ table_Soundtracks:
                 dc.b MUSIC_ATTACK
                 dc.b MUSIC_PROMOTED_ATTACK
                 dc.b MUSIC_ENEMY_ATTACK
+                dc.b MUSIC_TOWN
+                dc.b MUSIC_SAD_THEME_2
                 dc.b MUSIC_MITULA
+                dc.b MUSIC_SAD_THEME_3
                 dc.b MUSIC_JOIN
                 dc.b MUSIC_SAVE
                 dc.b MUSIC_CURE
+                dc.b MUSIC_UNUSED_REVIVE
                 dc.b MUSIC_REVIVE
                 dc.b MUSIC_PROMOTION
                 dc.b MUSIC_ITEM
                 dc.b MUSIC_CUSTOM_NEWBIE_BATTLE
                 dc.b MUSIC_CUSTOM_ENTERING_NORTH_PARMECIA
+                dc.b MUSIC_CUSTOM_MILITARY
+                dc.b MUSIC_CUSTOM_CHOOSE_A_PATH
+                dc.b MUSIC_BATTLE_THEME_3
+                dc.b MUSIC_BATTLE_THEME_1
+                dc.b MUSIC_SHRINE
+                dc.b MUSIC_MITHRIL_DIGGERS
+                dc.b MUSIC_CASTLE
+                dc.b MUSIC_HEADQUARTERS
+                dc.b MUSIC_MITULA_SHRINE
                 dc.b MUSIC_CUSTOM_IXEN_UNPROMOTED
                 dc.b MUSIC_CUSTOM_IXEN_PROMOTED
                 dc.b MUSIC_CUSTOM_AIRSHIP
-                dc.b MUSIC_CASTLE
-                dc.b MUSIC_CUSTOM_CHOOSE_A_PATH
-                dc.b MUSIC_BATTLE_THEME_1
-                dc.b MUSIC_MITHRIL_DIGGERS
-                dc.b MUSIC_HEADQUARTERS
-                dc.b MUSIC_MITULA_SHRINE
-                dc.b MUSIC_SHRINE
+                dc.b MUSIC_CUSTOM_CHALA
                 dc.b MUSIC_CUSTOM_UNPROMOTED_HEALING
                 dc.b MUSIC_CUSTOM_ENEMY_HEALING
                 dc.b MUSIC_CUSTOM_UNPROMOTED_SPELL
                 dc.b MUSIC_CUSTOM_PROMOTED_SPELL
                 dc.b MUSIC_CUSTOM_ENEMY_SPELL
+                dc.b MUSIC_CUSTOM_SUNNY
                 dc.b MUSIC_CUSTOM_NEW_CONTINENT_TO_DISCOVER
                 dc.b MUSIC_BOSS_ATTACK
-                dc.b MUSIC_BATTLE_THEME_3
+                dc.b MUSIC_CUSTOM_LEMON
                 dc.b MUSIC_FINAL_BATTLE
-                dc.b MUSIC_TOWN
+                dc.b MUSIC_CUSTOM_COZY_CAVE
                 dc.b MUSIC_MAIN_THEME
                 dc.b MUSIC_CUSTOM_BOSS_BATTLE
                 dc.b MUSIC_CUSTOM_VAPOR_TRAIL
@@ -110,13 +118,10 @@ table_Soundtracks:
                 dc.b MUSIC_INTRO
                 dc.b MUSIC_WITCH
                 dc.b MUSIC_SUSPEND
-                dc.b MUSIC_SAD_THEME_2
-                dc.b MUSIC_SAD_THEME_3
                 dc.b MUSIC_SAD_THEME_1
                 dc.b MUSIC_PIANO_THEME
                 dc.b MUSIC_CORRUPTED_SAVE
                 dc.b MUSIC_SAD_JOIN
-                dc.b MUSIC_UNUSED_REVIVE
                 dc.b MUSIC_CURSED_ITEM
                 dc.b MUSIC_TITLE
                 dc.b SFX_MENU_SWITCH
@@ -176,7 +181,7 @@ table_Soundtracks:
                 dc.b SFX_BOLT_SPELL
                 dc.b SFX_TINKLING
                 dc.b SFX_CUSTOM_FIRE
-                dc.b SFX_CUSTOM_LEARN_SPELL
+                dc.b SFX_CUSTOM_ITEM_DROP
 
 
 ; ---------------------------------------------------------------------------
@@ -184,66 +189,66 @@ table_Soundtracks:
 table_SoundtrackTitles:
                 defineName ""
                 defineName ""
-                defineName "Unpromoted Attack / The Young Men of Granseal"
-                defineName "Promoted Attack / Fight, with the Ancient Light"
-                defineName "Promoted Attack / MUSIC_PROMOTED_ATTACK_LOOP"
-                defineName "Enemy Attack / Dark Force"
+                defineName "Unpromoted Attack"
+                defineName "Promoted Attack"
+                defineName "Promoted Attack"
+                defineName "Enemy Attack"
                 defineName ""
                 defineName "Roar of the King of Devils"
-                defineName ""
+                defineName "Town Theme Deluxe"
                 defineName "Lurking in the Darkness"
                 defineName "Witch in the Forest of Illusion"
                 defineName "Midnight in the Forest of Illusion"
-                defineName "Time of Trials"
-                defineName "Goddess / Fairy Woods"
-                defineName "Goddess / Dreaming Elis"
-                defineName "Reminiscence"
+                defineName "Sadness and Hope"
+                defineName "Goddess"
+                defineName "Goddess"
+                defineName "Sadness"
                 defineName "Heartbreak"
                 defineName "Twilight of the Warriors"
                 defineName "Oh, Damnit"
-                defineName "Jingle Join / Joined the Party"
+                defineName "Jingle Join"
                 defineName "Sadly Joined the Party"
-                defineName "Jingle Save / Save"
-                defineName "Jingle Cure / Antidote"
-                defineName "Revival, Long Version"
-                defineName "Jingle Revive / Revival"
-                defineName "Jingle Promotion / Promotion"
+                defineName "Jingle Save"
+                defineName "Jingle Cure"
+                defineName "Sunny (Abridged)"
+                defineName "Jingle Revive"
+                defineName "Jingle Promotion"
                 defineName "You've Been Cursed!"
-                defineName "Jingle Item / It's a Treasure Chest!"
+                defineName "Jingle Item"
                 defineName "Shining Force II"
                 defineName "Desert City"
                 defineName "Seaside City"
                 defineName "Promoted Healing"
                 defineName ""
+                defineName "Important Battle"
+                defineName "Dungeon"
+                defineName "Mysterious"
                 defineName ""
-                defineName "Dungeon / Entrance to the Demon World"
-                defineName ""
-                defineName ""
-                defineName "Funny Dwarfs / Dwarf Dwarf Dwarf"
-                defineName ""
-                defineName "HQ / The Caravan Proceeds"
-                defineName "Paradise City / Ancient Wings"
+                defineName "Funny Dwarfs"
+                defineName "Guardia(na) Castle"
+                defineName "HQ"
+                defineName "Paradise City"
                 defineName "Choose a Path"
                 defineName "Newbie Battle"
                 defineName "Entering North Parmecia"
-                defineName ""
+                defineName "Military"
                 defineName "Ixen Unpromoted"
                 defineName "Ixen Promoted"
                 defineName "Airship"
-                defineName "Military / The Bloodline of Ground Seal"
-                defineName "Mysterious / A Message from Ancient Times"
+                defineName ""
+                defineName "Cha-La"
                 defineName "Unpromoted Healing"
                 defineName "Enemy Healing"
                 defineName "Unpromoted Spell"
                 defineName "Promoted Spell"
                 defineName "Enemy Spell"
-                defineName ""
+                defineName "Sunny"
                 defineName "New Continent To Discover"
-                defineName "BIG TROUBLE / Footsteps of Ruin"
-                defineName "Important Battle / The Call of a Long Journey"
-                defineName "Final Battle / The King of Devils has Appeared"
-                defineName "Town Theme Deluxe / A Peaceful Moment"
-                defineName "Doomed Continent / Legend of Light"
+                defineName "BIG TROUBLE"
+                defineName "Lemon"
+                defineName "Final Battle"
+                defineName "Cozy Cave"
+                defineName "Doomed Continent"
                 defineName "Boss Battle"
                 defineName "Vapor Trail"
                 defineName "Chosen Heroes"
@@ -304,4 +309,4 @@ table_SoundtrackTitles:
                 defineName "SFX: BOLT_SPELL"
                 defineName "SFX: TINKLING"
                 defineName "SFX: Fire"
-                defineName "SFX: Learn Spell"
+                defineName "SFX: Item Drop"

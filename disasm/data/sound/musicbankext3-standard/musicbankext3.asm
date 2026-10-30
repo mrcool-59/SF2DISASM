@@ -6,8 +6,11 @@
    include "..\enums.asm"
    org 08000h
 
-		dw Music_64
-		dw Music_64
-		dw Music_64
-		dw Music_64
-		include "music64.asm"
+		dw Music_61
+		dw Music_62
+		dw Music_63
+		dw Music_41
+		include "music61.asm"	; [CUSTOM] Doomed Continent
+		include "music62.asm"	; [CUSTOM] Boss Battle
+		include "music63.asm"	; [CUSTOM] Vapor Trail
+		include "music64.asm"	; [CUSTOM] Chosen Heroes

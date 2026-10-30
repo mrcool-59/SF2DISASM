@@ -13,7 +13,7 @@
 		dw Music_5
 		dw Music_32
 		dw Music_7
-		dw Music_32
+		dw Music_8
 		dw Music_9
 		dw Music_10
 		dw Music_11
@@ -38,28 +38,29 @@
 		dw Music_30
 		dw Music_31
 		dw Music_32
-		include "music02.asm"	; [CUSTOM] Unpromoted Attack / The Young Men of Granseal
-		include "music03.asm"	; [CUSTOM] Promoted Attack / Fight, with the Ancient Light
-		include "music05.asm"	; [CUSTOM] Enemy Attack / Dark Force
+		include "music02.asm"	; [CUSTOM] Unpromoted Attack
+		include "music03.asm"	; [CUSTOM] Promoted Attack
+		include "music05.asm"	; [CUSTOM] Enemy Attack
 		include "music07.asm"
+		include "music08.asm"	; [CUSTOM] Town Theme Deluxe
 		include "music09.asm"
 		include "music10.asm"
 		include "music11.asm"
-		include "music12.asm"
-		include "music14.asm"	; [CUSTOM] Goddess / Dreaming Elis
-		include "music15.asm"
+		include "music12.asm"	; [CUSTOM] Sadness and Hope
+		include "music14.asm"	; [CUSTOM] Goddess
+		include "music15.asm"	; [CUSTOM] Sadness
 		include "music16.asm"
 		include "music17.asm"
 		include "music18.asm"
-		include "music19.asm"	; [CUSTOM] Jingle Join / Joined the Party
+		include "music19.asm"	; [CUSTOM] Jingle Join
 		include "music20.asm"
-		include "music21.asm"	; [CUSTOM] Jingle Save / Save
-		include "music22.asm"	; [CUSTOM] Jingle Cure / Antidote
-		include "music23.asm"
-		include "music24.asm"	; [CUSTOM] Jingle Revive / Revival
-		include "music25.asm"	; [CUSTOM] Jingle Promotion / Promotion
+		include "music21.asm"	; [CUSTOM] Jingle Save
+		include "music22.asm"	; [CUSTOM] Jingle Cure
+		include "music23.asm"	; [CUSTOM] Sunny (Abridged)
+		include "music24.asm"	; [CUSTOM] Jingle Revive
+		include "music25.asm"	; [CUSTOM] Jingle Promotion
 		include "music26.asm"
-		include "music27.asm"	; [CUSTOM] Jingle Item / It's a Treasure Chest!
+		include "music27.asm"	; [CUSTOM] Jingle Item
 		include "music28.asm"
 		include "music29.asm"	; [CUSTOM] Desert City
 		include "music30.asm"	; [CUSTOM] Seaside City

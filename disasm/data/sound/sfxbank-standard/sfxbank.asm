@@ -63,6 +63,8 @@ pt_SFX:
     dw Sfx_054	; #118 - SFX_INTRO_LIGHTNING
     dw Sfx_055	; #119 - SFX_BOLT_SPELL
     dw Sfx_056	; #120 - SFX_TINKLING
+    dw CSFX_0	; #121 - SFX_CUSTOM_FIRE [Custom]
+    dw CSFX_1	; #122 - SFX_CUSTOM_ITEM_DROP [Custom]
 		include "001.asm"
 		include "002.asm"
 		include "003.asm"
@@ -119,3 +121,5 @@ pt_SFX:
 		include "054.asm"
 		include "055.asm"
 		include "056.asm"
+		include "057.asm"	; [CUSTOM] Fire
+		include "058.asm"	; [CUSTOM] Item Drop
