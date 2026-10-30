@@ -1,3 +1,5 @@
+; enum Sfx
+
 SFX_MENU_SWITCH: equ 65
 SFX_MENU_SELECTION: equ 66
 SFX_VALIDATION: equ 67
@@ -56,3 +58,5 @@ SFX_BOLT_SPELL: equ 119
 SFX_TINKLING: equ 120
 
 SFX_NONE: equ 127
+
+; ----------------------------------------------

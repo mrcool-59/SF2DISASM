@@ -1,3 +1,5 @@
+; enum Music
+
 MUSIC_NOTHING: equ 0
 MUSIC_MAIN_THEME: equ 1
 MUSIC_ATTACK: equ 2
@@ -37,3 +39,5 @@ MUSIC_CASTLE: equ 38
 MUSIC_HEADQUARTERS: equ 39
 MUSIC_MITULA_SHRINE: equ 40
 MUSIC_ENDING: equ 41
+
+; ----------------------------------------------
