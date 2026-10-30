@@ -108,7 +108,7 @@ table_ClassDefinitions:
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                 
                 mov 5                   ; 20: MMNK
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
                 moveType   REGULAR
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN16|COUNTER_1IN8
                 
