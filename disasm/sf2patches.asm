@@ -185,8 +185,8 @@ EXPANDED_CLASSES:           equ 1       ; Enable support for 64 classes.
 EXPANDED_FORCE_MEMBERS:     equ 1       ; Enable all 32 force members supported by the engine instead of 30.
 EXPANDED_ITEMS_AND_SPELLS:  equ 1       ; Expand number of items from 127 to 255, and number of spells from 44 to 63. Forces build of a >= 4MB ROM with 32KB SRAM.
 EXPANDED_MAPSPRITES:        equ 1       ; Store mapsprite index in word-sized structure allowing 65k+ unique sprites.
-EXPANDED_MUSIC_BANKS:		equ 1		; Introduce 3 extra music banks in which you can fit new musics or relocate existing musics to make room in original banks 1/2.
-EXPANDED_PCM_BANKS:			equ 1		; Introduce 4 extra PCM banks in which you can fit new samples.
+EXPANDED_MUSIC_BANKS:		equ 1		; Introduce 4 extra music banks in which you can fit new musics or relocate existing musics to make room in original banks 1/2.
+EXPANDED_PCM_BANKS:			equ 1		; Introduce 8 extra PCM banks in which you can fit new samples.
 
 ; Hardware expansions
 ROM_EXPANSION:              equ 1       ; 0 = 2 MB ROM, 1 = 4 MB ROM (default), 2 = 6 MB ROM
