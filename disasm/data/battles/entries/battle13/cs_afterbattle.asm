@@ -33,7 +33,7 @@ abcs_battle13:  textCursor 2495
                 nextText $C0,ALLY_LUKE  ; "He'll learn.{W2}"
                 nextSingleText $C0,ALLY_LUKE ; "Let's go see the mayor and{N}get a raft!{W1}"
                 setFacing ALLY_LUKE,UP
-                nextSingleText $FF,ENTITY_NONE  ; "{CLEAR}{LEADER} decides to take{N}{NAME;10} the BDMN with him.{W1}{CLEAR}"
+                nextSingleText $FF,ENTITY_NONE  ; "{CLEAR}{LEADER} decides to take{N}{NAME;10} with him.{W1}{CLEAR}"
                 setF 75                 ; Luke is a follower
                 warp MAP_POLCA,16,12,DOWN
                 csc_end

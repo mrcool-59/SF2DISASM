@@ -2501,7 +2501,7 @@
 2499=09C3=He's a great fighter.{N}Volcanon doesn't know how{N}good he is!{W1}
 2500=09C4=He'll learn.{W2}
 2501=09C5=Let's go see the mayor and{N}get a raft!{W1}
-2502=09C6={CLEAR}{LEADER} decides to take{N}{NAME;10} the BDMN with him.{W1}{CLEAR}
+2502=09C6={CLEAR}{LEADER} decides to take{N}{NAME;10} with him.{W1}{CLEAR}
 2503=09C7=This is the Ancient Hall{N}that leads to the Ancient{N}Tunnel...{W1}
 2504=09C8=There are more monsters here!{W2}
 2505=09C9={LEADER}, take 'em out!{W1}
