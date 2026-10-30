@@ -15,13 +15,9 @@
 		dw Music_39
 		dw Music_40
 		dw Music_41
-		dw Music_48
-		dw Music_48
-		dw Music_48
-		dw Music_48
-		dw Music_48
-		dw Music_48
-		dw Music_48
+		dw Music_44
+		dw Music_44
+		dw Music_44
 		include "music33.asm"
 		include "music34.asm"
 		include "music35.asm"
@@ -31,4 +27,4 @@
 		include "music39.asm"
 		include "music40.asm"
 		include "music41.asm"
-		include "music48.asm"
+		include "music44.asm"

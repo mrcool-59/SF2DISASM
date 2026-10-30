@@ -10,4 +10,8 @@
 		dw Music_60
 		dw Music_60
 		dw Music_60
+		dw Music_60
+		dw Music_60
+		dw Music_60
+		dw Music_60
 		include "music60.asm"
