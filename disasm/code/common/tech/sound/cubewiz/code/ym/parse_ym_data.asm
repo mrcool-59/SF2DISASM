@@ -9,9 +9,7 @@ ParseYm1ChannelData:
     add  a, a
     add  a, a
     add  a, a
-    ld  d, a
-    add  a, a
-    add  a, d    ; a = 30h * a
+    add  a, a	 ; a = 20h * a (this code is valid as long as CHANNEL_DATA_SIZE = 20h)
     ld  d, 0
     ld  e, a
     add  ix, de    ; channel data base address
@@ -379,9 +377,7 @@ ParseYm2ChannelData:
     add  a, a
     add  a, a
     add  a, a
-    ld  d, a
-    add  a, a
-    add  a, d    ; a = 30h * a
+    add  a, a	 ; a = 20h * a (this code is valid as long as CHANNEL_DATA_SIZE = 20h)
     ld  d, 0
     ld  e, a
     add  ix, de    ; channel data base address
@@ -541,7 +537,7 @@ $$checkSilence:
     ld  b, 0
     ld  c, (ix+FREQUENCY_SHIFT)
     add  hl, bc
-    ld  a, (LoadYm1FrequencyRegister2+1)
+    ld  a, (LoadYm2FrequencyRegister2+1)
     ld  b, a
     ld  c, h
     ld  (ix+YM_TARGET_FREQUENCY+1), c
@@ -554,7 +550,7 @@ $$checkSilence:
 
 $$applyFrequency2:
     call  ApplyYm2ConditionalInput
-    ld  a, (LoadYm1FrequencyRegister1+1)  ; dynamically changed :  1st frequency register to use corresponding to current channel
+    ld  a, (LoadYm2FrequencyRegister1+1)  ; dynamically changed :  1st frequency register to use corresponding to current channel
     ld  b, a
     ld  c, l
     ld  (ix+YM_TARGET_FREQUENCY), c

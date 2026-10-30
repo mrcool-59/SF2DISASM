@@ -1,9 +1,12 @@
 echo off
+REM For linux compatibility
+    SETLOCAL EnableDelayedExpansion
 cls
-rem WMIC has been removed in the latest Win11 releases, using Powershell now to get a nice timestamp
+REM WMIC has been removed in the latest Win11 releases, using Powershell now to get a nice timestamp
 for /f "usebackq delims=" %%i in (`powershell -noprofile -c "(Get-Date -Format 'yyyyMMdd-HHmmss')"`) do set timestamp=%%i
 echo -------------------------------------------------------------
 echo Start of assembly
+REM Build music banks
 echo Checking sound binaries ...
 cd ../disasm/code/common/tech/sound/cubewiz/
 echo Assembling CUBEWIZ driver ...
@@ -29,10 +32,30 @@ cd ../musicbankext2-standard/
 echo Assembling music bank ext 2 ...
     ..\..\..\..\tools\asw\asw.exe .\musicbankext2.asm
     ..\..\..\..\tools\asw\p2bin.exe .\musicbankext2.p ..\musicbankext2.bin -k -r $8000-$ffff
+cd ../musicbankext3-standard/
+echo Assembling music bank ext 3 ...
+    ..\..\..\..\tools\asw\asw.exe .\musicbankext3.asm
+    ..\..\..\..\tools\asw\p2bin.exe .\musicbankext3.p ..\musicbankext3.bin -k -r $8000-$ffff
 cd ../sfxbank-standard/
 echo Assembling SFX bank ...
     ..\..\..\..\tools\asw\asw.exe .\sfxbank.asm
     ..\..\..\..\tools\asw\p2bin.exe .\sfxbank.p ..\sfxbank.bin -k -r $F000-$ffff
+REM Build text banks
+echo Checking text banks ...
+cd ../../scripting/text/
+for /f "tokens=*" %%i in ('java -version 2^>^&1') do (
+    set "JAVA_VERSION=%%i"
+    goto :endJavaCheck
+)
+:endJavaCheck
+set "NO_JAVA=Can't recognize"
+if /i "!JAVA_VERSION:~0,15!"=="!NO_JAVA!" (
+    echo Warning: Java not installed so text banks will not be rebuilt. See https://github.com/ShiningForceCentral/SF2DISASM#editor-tool-requirements-
+) ELSE (
+    echo Assembling text banks ...
+    java -XX:+IgnoreUnrecognizedVMOptions -jar SF2TextEditor.jar --headless -i ./gamescript.txt -e ./
+)
+REM Assemble rom
 cd ../../../
 echo Assembling game ...
 SET "buildname=sf2standard-test-%timestamp%"
