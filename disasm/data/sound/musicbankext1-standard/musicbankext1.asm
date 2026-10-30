@@ -6,12 +6,10 @@
    include "..\enums.asm"
    org 08000h
 
-		dw Music_60
-		dw Music_60
-		dw Music_60
-		dw Music_60
-		dw Music_60
-		dw Music_60
-		dw Music_60
-		dw Music_60
-		include "music60.asm"
+		dw Music_56
+		dw Music_56
+		dw Music_56
+		dw Music_56
+		dw Music_56
+		dw Music_56
+		include "music56.asm"
