@@ -13,9 +13,17 @@ ms_map7_flag805_EntityEvents:
                 msEntityEvent 136, DOWN, Map7_EntityEvent8-ms_map7_flag805_EntityEvents
                 msEntityEvent 137, DOWN, Map7_EntityEvent9-ms_map7_flag805_EntityEvents
                 msEntityEvent 138, DOWN, Map7_EntityEvent10-ms_map7_flag805_EntityEvents
+				msEntityEvent ALLY_31, DOWN, Map7_EntityEvent12-ms_map7_flag805_EntityEvents
                 msDefaultEntityEvent Map7_DefaultEntityEvent-ms_map7_flag805_EntityEvents
 
 ; =============== S U B R O U T I N E =======================================
+
+
+Map7_EntityEvent12:
+                txt     4280            ; "It's way too noisy inside!{N}I'd rather stay here.{W1}"
+				clsTxt
+                moveq   #ALLY_31,d0
+                jmp     DisplayTacticalBaseQuote
 
 
 Map7_EntityEvent11:

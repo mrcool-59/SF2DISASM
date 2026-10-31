@@ -8,6 +8,7 @@
 ms_map37_InitFunction:
                 
                 jsr     InitializeNazcaShipForceMembers
+				script  cs_map37_SetUpExtraCharacters
                 chkFlg  836             ; Set after the scene where Zynk stops you as you leave the Moun underground
                 beq.s   @Return
                 script  cs_5FA9C
@@ -23,4 +24,13 @@ cs_5FA9C:       setPos ALLY_ZYNK,8,10,RIGHT
 
 cs_map37_SetMusicA:	csWait 1
 					playSound MUSIC_HEADQUARTERS
+					csc_end
+					
+cs_map37_SetUpExtraCharacters:
+					jumpIfFlagSet 30,@PeterJoined
+					hide ALLY_30
+@PeterJoined:
+					jumpIfFlagSet 31,@SunnyJoined
+					hide ALLY_31
+@SunnyJoined:
 					csc_end

@@ -13,4 +13,5 @@ ms_map7_flag805_Entities:
                 msFixedEntity 13, 20, DOWN, MAPSPRITE_SOLDIER, eas_LeftRightMoveLoop
                 msFixedEntity 8, 7, RIGHT, MAPSPRITE_MAID, eas_InitSlow
                 msFixedEntity 14, 7, LEFT, MAPSPRITE_MAID, eas_InitSlow
+                msFixedEntity 20, 3, DOWN, ALLY_31, eas_Init
                 msEntitiesEnd

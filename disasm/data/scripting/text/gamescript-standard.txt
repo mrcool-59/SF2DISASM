@@ -397,11 +397,11 @@
 0395=018B={NAME} received{N}the {ITEM}.{D2}
 0396=018C={NAME} dropped{N}a {ITEM}.{D1}
 0397=018D={CLEAR}{NAME} appeared!{D3}
-0398=018E={NAME}'s attack{N}increased by {#}.
-0399=018F={NAME}'s defense{N}increased by{#}.
-0400=0190={NAME}'s agility{N}increased by {#}.
-0401=0191={NAME}'s movement{N}range increased by {#}.
 0402=0192={NAME}'s max. HP{N}increased by {#}.
+0398=018E=It is a wonderful feeling,{N}flying around the world!{W1}
+0399=018F=I don't like getting my claws{N}dirty. I prefer slaying my foes{N}from range with magic.{W1}
+0400=0190=Call if you need my help, OK?{W1}
+0401=0191=Do you think {NAME;7} likes me?{W1}
 0403=0193={NAME} opened the chest.{W2}{CLEAR}
 0404=0194={NAME} investigated{N}the vase.{W2}{CLEAR}
 0405=0195={NAME} looked in{N}the barrel.{W2}{CLEAR}
@@ -4278,3 +4278,6 @@
 4276=10B4={LEADER}, listen carefully.{N}This big dude may look{N}impressive...{W2}{CLEAR}...But one hit from the{N}Achille Sword should do{N}the trick.{W2}{CLEAR}Then your companions can{N}finish him off!{W1}
 4277=10B5=Oh, {LEADER}!{D1}{N}I almost forgot... {D1}Did you take{N}some time to fill my map?{W1}
 4278=10B6=What?! You completely forgot{N}about it?!{N}{W2}Hmph... Give it back to me,{N}I'll fill it myself!{N}(Mumble, mumble){W2}
+4280=10B8=It's way too noisy inside!{N}I'd rather stay here.{W1}
+4281=10B9=For some reason, I had{N}a nightmare a few days ago{N}of this happening...{W1}
+4282=10BA=Aww... come on!{N}It wasn't that bad of a landing!{W1}

@@ -8,6 +8,7 @@
 ms_map37_flag999_InitFunction:
                 
                 jsr     InitializeNazcaShipForceMembers
+				script  cs_map37_SetUpExtraCharacters
                 chkFlg  256             ; TEMP FLAG #00
                 bne.s   @Return
                 script  cs_5FABC

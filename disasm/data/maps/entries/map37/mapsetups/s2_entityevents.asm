@@ -27,7 +27,8 @@ ms_map37_EntityEvents:
                 msEntityEvent ALLY_JARO, DOWN, Map37_EntityEvent22-ms_map37_EntityEvents
                 msEntityEvent ALLY_GYAN, DOWN, Map37_EntityEvent23-ms_map37_EntityEvents
                 msEntityEvent ALLY_ZYNK, UP, Map37_EntityEvent24-ms_map37_EntityEvents
-                msEntityEvent ALLY_CLAUDE, DOWN, Map37_EntityEvent25-ms_map37_EntityEvents
+                msEntityEvent ALLY_30, DOWN, sub_5F9B6-ms_map37_EntityEvents
+                msEntityEvent ALLY_31, DOWN, Map37_EntityEvent25-ms_map37_EntityEvents
                 msEntityEvent 128, DOWN, Map37_EntityEvent26-ms_map37_EntityEvents
                 msEntityEvent 129, RIGHT, Map37_EntityEvent27-ms_map37_EntityEvents
                 msDefaultEntityEvent Map37_DefaultEntityEvent-ms_map37_EntityEvents
@@ -334,7 +335,7 @@ sub_5F9AE:
 
 sub_5F9B6:
                 
-                moveq   #ALLY_LEMON,d0
+                moveq   #ALLY_30,d0
                 jmp     DisplayTacticalBaseQuote
 
     ; End of function sub_5F9B6
@@ -345,7 +346,7 @@ sub_5F9B6:
 
 Map37_EntityEvent25:
                 
-                moveq   #ALLY_CLAUDE,d0
+                moveq   #ALLY_31,d0
                 jmp     DisplayTacticalBaseQuote
 
     ; End of function Map37_EntityEvent25

@@ -6,6 +6,8 @@ ms_map37_flag999_EntityEvents:
 byte_5F9D6:     msEntityEvent 128, UP, Map37_3E7_EntityEvent1-ms_map37_flag999_EntityEvents
                 msEntityEvent 129, RIGHT, Map37_3E7_EntityEvent2-ms_map37_flag999_EntityEvents
                 msEntityEvent ALLY_PETER, UP, Map37_3E7_EntityEvent3-ms_map37_flag999_EntityEvents
+				msEntityEvent ALLY_30, UP, Map37_3E7_EntityEvent4-ms_map37_flag999_EntityEvents
+				msEntityEvent ALLY_31, UP, Map37_3E7_EntityEvent5-ms_map37_flag999_EntityEvents
                 msDefaultEntityEvent Map37_DefaultEntityEvent-ms_map37_flag999_EntityEvents
 
 ; =============== S U B R O U T I N E =======================================
@@ -76,3 +78,14 @@ return_5FA20:
 
     ; End of function Map37_3E7_EntityEvent3
 
+
+; -----------------------------------
+
+
+Map37_3E7_EntityEvent4:
+                txt     4281            ; "For some reason, I had{N}a nightmare a few days ago{N}of this happening...{W1}"
+                rts
+				
+Map37_3E7_EntityEvent5:
+                txt     4282            ; "Aww... come on!{N}It wasn't that bad of a landing!{W1}"
+                rts

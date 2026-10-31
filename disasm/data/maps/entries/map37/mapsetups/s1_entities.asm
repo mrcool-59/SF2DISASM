@@ -29,8 +29,8 @@ ms_map37_Entities:
                 msFixedEntity 63, 9, DOWN, ALLY_SHEELA, eas_Init
                 msFixedEntity 16, 9, DOWN, ALLY_ZYNK, eas_Init
                 msFixedEntity 63, 5, UP, ALLY_CHAZ, eas_Init
-                msFixedEntity 63, 5, UP, ALLY_LEMON, eas_Init
-                msFixedEntity 15, 6, DOWN, ALLY_CLAUDE, eas_Init
+                msFixedEntity 24, 12, UP, ALLY_30, eas_Init ; Peter replaces Lemon here
+                msFixedEntity 15, 15, UP, ALLY_31, eas_Init ; Sunny replaces Claude here
                 msFixedEntity 16, 12, UP, MAPSPRITE_ASTRAL, eas_Init
                 msFixedEntity 23, 12, UP, MAPSPRITE_CARAVAN, eas_Init
                 msEntitiesEnd

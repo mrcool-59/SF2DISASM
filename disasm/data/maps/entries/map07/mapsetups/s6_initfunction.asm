@@ -7,7 +7,10 @@
 
 ms_map7_InitFunction:
                 
-                 
+                chkFlg  31
+                bne.s	@SunnyJoined
+                script  cs_map7_HideSunny
+@SunnyJoined:
                 chkFlg  707             ; Set after the "one year has passed" text, after New Granseal is built
                 bne.s   return_55830
                 setSavedByte #MAP_NEW_GRANSEAL, EGRESS_MAP
@@ -20,6 +23,10 @@ return_55830:
 
     ; End of function ms_map7_InitFunction
 
+cs_map7_HideSunny:
+				hide ALLY_31
+				csc_end
+                
 cs_55832:       textCursor 1290
                 mapLoad MAP_NEW_GRANSEAL_CASTLE,6,2
                 loadMapEntities ce_559AE

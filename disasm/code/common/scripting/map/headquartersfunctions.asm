@@ -22,10 +22,20 @@ DisplayTacticalBaseQuote:
                 beq.s   @InReserve      
                 
                 ; In battle party
+				cmp.b   #ALLY_30,d0
+				bmi.s  	@StandardMember
+                addi.w  #($18E-ALLY_30),d0
+                bra.s   @DisplayQuote   ; start of headquarters 'in party' quotes for allies 30 and 31
+@StandardMember:
                 addi.w  #$DC3,d0        ; 0DC3={W1}
                 bra.s   @DisplayQuote   ; start of headquarters 'in party' quotes
 @InReserve:
                 
+				cmp.b   #ALLY_30,d0
+				bmi.s  	@InReserveStandardMember
+                addi.w  #($190-ALLY_30),d0
+                bra.s   @DisplayQuote   ; start of headquarters 'outside of party' quotes for allies 30 and 31
+@InReserveStandardMember:
                 addi.w  #$DE1,d0        ; 0DE1={W1}
 @DisplayQuote:
                 
@@ -43,11 +53,12 @@ InitializeNazcaShipForceMembers:
                 
                 movem.l d0-a2,-(sp)
                 moveq   #1,d0
-                moveq   #COMBATANT_ALLIES_TACTICAL_BASE_COUNTER,d7
+                moveq   #COMBATANT_ALLIES_NAZCA_SHIP_COUNTER,d7
                 lea     ((OTHER_ENTITIES_DATA-$1000000)).w,a0
                 lea     table_TacticalBaseBattlePartyPositions(pc), a2
 @PositionMember_Loop:
                 
+				; Members that have not joined are put off-screen in the ship and that's about it
                 move.w  d0,d1
                 jsr     j_CheckFlag
                 bne.s   @Next

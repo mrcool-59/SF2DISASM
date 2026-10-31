@@ -31,6 +31,7 @@ ms_map46_EntityEvents:
                 msEntityEvent ALLY_CHAZ, UP, Map46_EntityEvent26-ms_map46_EntityEvents
                 msEntityEvent ALLY_LEMON, UP, Map46_EntityEvent27-ms_map46_EntityEvents
                 msEntityEvent ALLY_CLAUDE, UP, Map46_EntityEvent28-ms_map46_EntityEvents
+                msEntityEvent ALLY_30, UP, Map46_EntityEvent30-ms_map46_EntityEvents
                 msEntityEvent 128, UP, Map46_EntityEvent29-ms_map46_EntityEvents
                 msDefaultEntityEvent Map46_DefaultEntityEvent-ms_map46_EntityEvents
 
@@ -362,6 +363,17 @@ Map46_EntityEvent29:
                 rts
 
     ; End of function Map46_EntityEvent29
+
+
+; =============== S U B R O U T I N E =======================================
+
+
+Map46_EntityEvent30:
+                
+                moveq   #ALLY_30,d0
+                jmp     DisplayTacticalBaseQuote
+
+    ; End of function Map46_EntityEvent30
 
 
 ; =============== S U B R O U T I N E =======================================
