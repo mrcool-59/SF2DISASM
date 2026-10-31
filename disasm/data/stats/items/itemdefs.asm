@@ -1592,7 +1592,7 @@ table_ItemDefinitions:
                 range        1, 1
                 price        3800
                 itemType     WEAPON|RARE|CURSED|BREAKABLE
-                useSpell     BLAZE|LV3
+                useSpell     KATON|LV4
                 equipEffects INCREASE_ATT, 44, &
                              NONE, 0, &
                              NONE, 0, &

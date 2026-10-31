@@ -518,6 +518,14 @@ table_SpellDefinitions:
                 range      1, 2
                 radius     0
                 power      47
+
+                entry      KATON|LV4    ; KATON 4
+                mpCost     20
+                animation  BLAZE|VARIATION4
+                properties TYPE_ATTACK|AFFECTEDBYSILENCE
+                range      1, 2
+                radius     2
+                power      32
                 
                 entry      RAIJIN       ; RAIJIN 1
                 mpCost     15
