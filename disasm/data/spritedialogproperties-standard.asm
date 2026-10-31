@@ -251,4 +251,8 @@ table_MapspriteDialogueProperties:
                 portrait NONE
                 speechSfx DIALOG_BLEEP_8
                 
+                mapsprite LEMON_SPECIAL	; For Galam Ambush version of enemy Lemon
+                portrait LEMON
+                speechSfx DIALOG_BLEEP_6
+                
                 tableEnd

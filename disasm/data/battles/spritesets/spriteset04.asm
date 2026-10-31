@@ -5,7 +5,7 @@ BattleSpriteset04:
                 ; # Allies
                 dc.b 5
                 ; # Enemies
-                dc.b 8
+                dc.b 9
                 ; # AI Regions
                 dc.b 3
                 ; # AI Points
@@ -33,7 +33,7 @@ BattleSpriteset04:
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
                 ; Enemies
-                enemyCombatant GALAM_ARCHER, 17, 21
+                enemyCombatant LEMON, 17, 21
                 combatantAiAndItem LEADER, NOTHING
                 combatantBehavior MOVE_TO|0, 2, NONE, 15, 0, STARTING
                 
@@ -64,6 +64,10 @@ BattleSpriteset04:
                 enemyCombatant HUGE_BAT, 15, 20
                 combatantAiAndItem ATTACKER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|0, 0, NONE, 1, 0, STARTING
+                
+                enemyCombatant GALAM_ARCHER, 16, 19
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 0, NONE, 2, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

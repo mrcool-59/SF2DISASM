@@ -105,3 +105,4 @@ table_EnemyNames:
                 enemyName "MASTER MAGE"
                 enemyName "NECROMANCER"
                 enemyName "BLUE SHAMAN"
+				enemyName "LEMON"

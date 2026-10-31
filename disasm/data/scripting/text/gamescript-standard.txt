@@ -2317,8 +2317,8 @@
 2315=090B=Ummm....{W1}
 2316=090C=Answer me!{W1}
 2317=090D={LEADER}, we must{N}defeat them so we can learn{N}the truth!{W1}
-2318=090E=Capture them alive!{W1}
-2319=090F=Your battle strategy was{N}wonderful!  I praise you.{W1}
+2318=090E=Capture them alive!{N}I want to test their resolve.{W1}
+2319=090F=Your battle strategy was{N}wonderful!  I praise you.{N}{D2}You even managed to wound me!{W1}
 2320=0910=But, I can't let you escape.{W1}
 2321=0911=That lad is their leader.{N}Take him!{W1}
 2322=0912=Don't worry.  He has only{N}fainted.  Take them to Galam!{W1}

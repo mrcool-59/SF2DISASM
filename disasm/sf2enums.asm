@@ -716,6 +716,7 @@ ENEMY_JAR: equ 99
 ENEMY_MASTER_MAGE_0: equ 100
 ENEMY_NECROMANCER_0: equ 101
 ENEMY_BLUE_SHAMAN_0: equ 102
+ENEMY_LEMON: equ 103
 
 ; ---------------------------------------------------------------------------
 

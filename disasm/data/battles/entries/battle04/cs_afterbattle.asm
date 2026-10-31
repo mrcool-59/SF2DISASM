@@ -9,9 +9,10 @@ abcs_battle04:  textCursor 2319
                 setPos ALLY_CHESTER,12,21,DOWN
                 setPos ALLY_JAHA,13,22,DOWN
                 setPos ALLY_KAZIN,11,22,DOWN
+                setPos ALLY_LEMON,18,20,LEFT
                 fadeInB
                 nod ALLY_BOWIE
-                nextSingleText $0,ALLY_LEMON ; "Your battle strategy was{N}wonderful!  I praise you.{W1}"
+                nextSingleText $0,ALLY_LEMON ; "Your battle strategy was{N}wonderful!  I praise you.{N}{D2}You even managed to wound me!{W1}"
                 csWait 5
                 setActscript ALLY_JAHA,eas_2xRightLeft
                 csWait 5
@@ -21,11 +22,6 @@ abcs_battle04:  textCursor 2319
                 setActscript ALLY_SARAH,eas_Jump
                 setActscriptWait ALLY_CHESTER,eas_Jump
                 csWait 80
-                setPos ALLY_LEMON,18,22,UP
-                entityActionsWait ALLY_LEMON
-                 moveUp 2
-                endActions
-                setFacing ALLY_LEMON,LEFT
                 setFacing ALLY_BOWIE,RIGHT
                 setFacing ALLY_SARAH,RIGHT
                 setFacing ALLY_CHESTER,RIGHT

@@ -2388,13 +2388,13 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 94: RED BARON
                 spellPower ENHANCED
                 level    60
-                maxHp    150
+                maxHp    200
                 maxMp    0
                 baseAtt  42
                 baseDef  65
                 baseAgi  190
                 baseMov  6
-                baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
+                baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL125_1IN4|DOUBLE_1IN4|COUNTER_1IN4
                 items &
                     DARK_SWORD|EQUIPPED, &
@@ -2610,3 +2610,27 @@ table_EnemyDefinitions:
                 movetype      HEALER
                 aiBitfield    PRIORITYMOD_3
                 
+                unknownByte 0           ; 103: LEMON
+                spellPower REGULAR
+                level    10
+                maxHp    50
+                maxMp    0
+                baseAtt  10
+                baseDef  12
+                baseAgi  (128+12)
+                baseMov  4
+                baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_IMMUNITY
+                baseProwess    CRITICAL125_1IN16|DOUBLE_1IN16|COUNTER_1IN16
+                items &
+                    MIDDLE_SWORD|EQUIPPED, &
+                    NOTHING, &
+                    NOTHING, &
+                    NOTHING
+                spells &
+                    NOTHING, &
+                    NOTHING, &
+                    NOTHING, &
+                    NOTHING
+                initialStatus NONE
+                movetype      REGULAR
+                aiBitfield    PRIORITYMOD_1

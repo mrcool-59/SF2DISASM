@@ -21,7 +21,7 @@ bbcs_04:        textCursor 2311
                 setFacing ALLY_LEMON,RIGHT
                 setFacing 128,LEFT
                 csWait 20
-                nextSingleText $C0,ALLY_LEMON ; "Capture them alive!{W1}"
+                nextSingleText $C0,ALLY_LEMON ; "Capture them alive!{N}I want to test their resolve.{W1}"
                 nod 128
                 entityActionsWait ALLY_LEMON
                  moveDown 1

@@ -9,4 +9,5 @@ table_UninterruptibleMusics:
 	dc.b	MUSIC_FINAL_BATTLE
 	dc.b	MUSIC_CUSTOM_VAPOR_TRAIL
 	dc.b    MUSIC_CUSTOM_IXEN_PROMOTED
+	dc.b    MUSIC_CUSTOM_LEMON
 	dc.b	0	; End

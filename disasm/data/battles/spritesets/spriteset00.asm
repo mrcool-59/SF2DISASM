@@ -5,7 +5,7 @@ BattleSpriteset00:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 12
+                dc.b 13
                 ; # AI Regions
                 dc.b 2
                 ; # AI Points
@@ -107,6 +107,10 @@ BattleSpriteset00:
                 
                 enemyCombatant PRISM_FLOWER, 27, 13
                 combatantAiAndItem SENTRY, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant LEMON, 15, 17
+                combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
                 ; AI Regions

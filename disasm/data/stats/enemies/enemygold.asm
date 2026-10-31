@@ -104,6 +104,7 @@ table_EnemyGold:dc.w 10                 ; OOZE
                 dc.w 220                ; MASTER MAGE
                 dc.w 520                ; NECROMANCER
                 dc.w 860                ; BLUE SHAMAN
+                dc.w 0               	; LEMON
                 
             if (VANILLA_BUILD=1)
                 ; unused
