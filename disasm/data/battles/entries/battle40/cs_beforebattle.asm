@@ -60,7 +60,7 @@ cs_4E544:       setBlocks 11,6,11,29,44,0
                 endActions
                 csWait 30
                 setCamDest 11,2
-                playSound MUSIC_INTRO
+                playSound MUSIC_SAD_THEME_2
                 nextSingleText $0,ALLY_PETER ; "Is that...?{W1}"
                 nextSingleText $C0,129  ; "Did you forget about me,{N}{LEADER} and {NAME;7}!{W1}"
                 nextSingleText $0,ALLY_PETER ; "Oddler, are you Odd Eye?{N}Zalbard said...{W1}"

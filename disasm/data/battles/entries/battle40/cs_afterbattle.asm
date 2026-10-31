@@ -29,7 +29,7 @@ cs_4EAEE:       setBlocks 11,6,11,29,44,0
                 setActscript 128,eas_AnimSpeedx2
                 setActscript 129,eas_AnimSpeedx2
                 setActscript 130,eas_AnimSpeedx2
-                playSound MUSIC_SAD_THEME_1
+                playSound MUSIC_SAD_THEME_3
                 fadeInB
                 csWait 60
                 nextText $0,131         ; "{LEADER}, you won?{N}You've become so strong.{W2}"
@@ -107,9 +107,9 @@ cs_4EAEE:       setBlocks 11,6,11,29,44,0
                 hide 130
                 entityFlashWhite 131,120
                 hide 131
-                playSound SOUND_COMMAND_FADE_OUT
+                ;playSound SOUND_COMMAND_FADE_OUT
                 csWait 120
-                playSound MUSIC_SAD_THEME_3
+                ;playSound MUSIC_SAD_THEME_3
                 shiver ALLY_PETER
                 setFacing ALLY_PETER,UP
                 nextSingleText $0,ALLY_PETER ; "(Sob, sob)...how sad.{N}{LEADER}, Sir Astral...{W1}"

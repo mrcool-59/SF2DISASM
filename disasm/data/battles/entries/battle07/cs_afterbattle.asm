@@ -546,7 +546,7 @@ abcs_battle07:  textCursor 2385
                 playSound SOUND_COMMAND_FADE_OUT
                 csWait 60
                 setCamDest 8,17
-                playSound MUSIC_SAD_THEME_1
+                playSound MUSIC_SAD_THEME_3
                 csWait 60
                 nextSingleText $0,133   ; "She's gone....{N}Elis!{W1}"
                 nextSingleText $0,131   ; "We couldn't help the{N}Princess.{W1}"

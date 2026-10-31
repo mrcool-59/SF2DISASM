@@ -149,7 +149,7 @@ BattleLoop:
                 clr.w   ((DIALOGUE_NAME_INDEX_1-$1000000)).w
                 
                 ; HARDCODED music index
-                sndCom  MUSIC_SAD_THEME_2
+                sndCom  MUSIC_SAD_THEME_1
                 txt     363             ; "{LEADER} is exhausted.{W1}"
                 clsTxt
             if (PLAYER_DEFEAT_IS_GAME_OVER=1)

@@ -134,14 +134,14 @@ cs_540C0:       textCursor 811
                 entityActionsWait ALLY_KAZIN
                  moveRight 1
                 endActions
-                playSound SOUND_COMMAND_FADE_OUT
+				; playSound SOUND_COMMAND_FADE_OUT
                 nextSingleText $0,128   ; "Ohhh...{NAME;4}....{W1}"
                 entityActionsWait ALLY_KAZIN
                  moveLeft 1
                 endActions
                 setFacing ALLY_KAZIN,UP
                 nextSingleText $0,ALLY_KAZIN ; "Sir...you're alive!{W1}"
-                playSound MUSIC_SAD_THEME_1
+				; playSound MUSIC_SAD_THEME_1
                 nextSingleText $0,128   ; "...It's no use running after{N}them....{W1}"
                 entityActionsWait ALLY_KAZIN
                  moveLeft 1
@@ -169,9 +169,10 @@ cs_540C0:       textCursor 811
                 shiver 128
                 stopEntity 128
                 nextSingleText $0,ALLY_KAZIN ; "Stop talking, or you'll die.{W1}"
+                playSound SOUND_COMMAND_FADE_OUT
                 nextText $0,128         ; "I'm almost dead anyway...{N}(cough)...(cough)....{W2}"
                 nextSingleText $0,128   ; "{NAME;4}, look for the jewels...{N}to seal...ancient...{W1}"
-                playSound SOUND_COMMAND_FADE_OUT
+                playSound MUSIC_SAD_THEME_3
                 shiver 128
                 stopEntity 128
                 setPosFlash 128,63,63,DOWN

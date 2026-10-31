@@ -4,8 +4,11 @@
 cs_5DE2E:       textCursor 2154
                 stopEntity 142
                 playSound SOUND_COMMAND_FADE_OUT
+				csWait 60
                 setCamDest 8,0
+				csWait 60
                 shiver 137
+				csWait 60
                 playSound MUSIC_SAD_THEME_3
                 nextSingleText $0,137   ; "Sir Petro, don't leave me{N}alone!{W1}"
                 nextSingleText $0,142   ; "Paseran...I'm sorry.{W1}"
@@ -15,9 +18,9 @@ cs_5DE2E:       textCursor 2154
                 nextText $0,142         ; "I'd fly home...to see my{N}family....{W2}"
                 nextSingleText $0,142   ; "To show them how wonderful{N}the ancients were....{W1}"
                 shiver 137
-                playSound SOUND_COMMAND_FADE_OUT
+                ; playSound SOUND_COMMAND_FADE_OUT
                 nextSingleText $0,137   ; "Petro!  No!{W1}"
-                playSound SOUND_COMMAND_PLAY_PREVIOUS_MUSIC
+                ; playSound SOUND_COMMAND_PLAY_PREVIOUS_MUSIC
                 csc_end
 cs_5DE76:       textCursor 2169
                 setActscriptWait ALLY_PETER,eas_Init
@@ -77,7 +80,7 @@ cs_5DE76:       textCursor 2169
                 nextSingleText $0,ALLY_ZYNK ; "I cannot forgive the{N}devils!{W2}"
                 nextSingleText $0,ALLY_ZYNK ; "I have overridden my{N}restrictions on fighting.{W2}"
                 nextSingleText $0,ALLY_ZYNK ; "I am joining your force as{N}a soldier!{W1}"
-                join ALLY_ZYNK
+                join ALLY_ZYNK|ALLY_SADJOIN
                 clearF 76               ; Zynk is a follower
                 nextSingleText $0,ALLY_ZYNK ; "Let us go defeat the Devil{N}Army!{W1}"
                 followEntity ALLY_PETER,ALLY_BOWIE,2
