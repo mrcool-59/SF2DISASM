@@ -158,6 +158,7 @@ loc_28B26:
                 bra.s   sub_28B12
 loc_28B64:
                 
+                sndCom  SFX_MONSTER_SCREAM ; Yogurt sound will play twice with a small delay
                 addq.w  #1,a0
                 rts
 loc_28B68:
