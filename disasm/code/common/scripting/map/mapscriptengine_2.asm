@@ -370,14 +370,15 @@ csc08_joinForce:
                 activateMusicResuming
             endif
                 jsr     (WaitForViewScrollEnd).w
-                move.w  (a6)+,d0
+                move.w  (a6),d0
                 bclr    #15,d0
                 bne.s   byte_473B0
                 sndCom  MUSIC_JOIN
                 bra.s   loc_473B4       
 byte_473B0:
                 
-                sndCom  MUSIC_SAD_JOIN
+                ; sndCom  MUSIC_SAD_JOIN
+                nop
 loc_473B4:
                 
                 cmpi.w  #128,d0         ; HARDCODED use case
@@ -397,7 +398,19 @@ loc_473D4:
                 txt     446             ; "{NAME} the {CLASS} {N}has joined the force."
 loc_473EC:
                 
+                ; Check for sad join
+                move.w  (a6)+,d0
+                bclr    #15,d0
+                beq.s   @WaitForJingle
+				
+				; Sad join: hardcoded wait then bail out
+                move.w  #240,d0
+                jsr     (Sleep).w     
+				bra.s	@AfterWait
+				
+@WaitForJingle:
                 jsr     j_FadeOut_WaitForP1Input
+@AfterWait:
                 clsTxt
             if (MUSIC_RESUMING&RESUME_MUSIC_AFTER_JOIN_JINGLE=1)
                 deactivateMusicResuming
