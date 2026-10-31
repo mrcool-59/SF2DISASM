@@ -5,9 +5,13 @@
 table_AllyBattlesceneMusics_Unpromoted:
                 dc.b ALLY_SLADE, MUSIC_CUSTOM_VAPOR_TRAIL
                 dc.b ALLY_PETER, MUSIC_CUSTOM_IXEN_UNPROMOTED ; Ixen
+				dc.b ALLY_CHAZ, MUSIC_CUSTOM_NEWBIE_BATTLE
+				dc.b ALLY_LEMON, MUSIC_CUSTOM_LEMON
                 tableEnd.b
 
 table_AllyBattlesceneMusics_Promoted:
                 dc.b ALLY_SLADE, MUSIC_CUSTOM_VAPOR_TRAIL
                 dc.b ALLY_PETER, MUSIC_CUSTOM_IXEN_PROMOTED ; Ixen
+				dc.b ALLY_CHAZ, MUSIC_CUSTOM_NEWBIE_BATTLE
+				dc.b ALLY_LEMON, MUSIC_CUSTOM_LEMON
                 tableEnd.b
