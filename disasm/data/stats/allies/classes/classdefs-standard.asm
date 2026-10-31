@@ -152,15 +152,15 @@ table_ClassDefinitions:
                 moveType   HOVERING
                 prowess    CRITICAL125_1IN8|DOUBLE_1IN32|COUNTER_1IN16
                 
-                mov 4                   ; 29: RBT
+                mov 5                   ; 29: RBT
                 resistance WIND_MINOR|LIGHTNING_WEAKNESS|ICE_MINOR|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 moveType   REGULAR
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                 
-                mov 4                   ; 30: GLM
+                mov 5                   ; 30: GLM
                 resistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
                 moveType   REGULAR
-                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
+                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN4
                 
                 mov 6                   ; 31: RDBN
                 resistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_IMMUNITY

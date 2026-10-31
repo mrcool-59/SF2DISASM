@@ -785,6 +785,22 @@ table_SpellDefinitions:
                 radius     1
                 power      40
 				
+                entry      46
+                mpCost     0
+                animation  NONE
+                properties TYPE_ATTACK
+                range      0, 0
+                radius     0
+                power      0
+                
+                entry      47
+                mpCost     0
+                animation  NONE
+                properties TYPE_ATTACK
+                range      0, 0
+                radius     0
+                power      0
+                
                 entry      48
                 mpCost     0
                 animation  NONE
