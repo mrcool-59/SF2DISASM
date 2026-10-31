@@ -163,9 +163,9 @@ table_ClassDefinitions:
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                 
                 mov 6                   ; 31: RDBN
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                resistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_IMMUNITY
                 moveType   REGULAR
-                prowess    CRITICAL150_1IN8|DOUBLE_1IN32|COUNTER_1IN8
+                prowess    CRITICAL150_1IN16|DOUBLE_1IN16|COUNTER_1IN8
                 
             if (EXPANDED_CLASSES=1)
                     
