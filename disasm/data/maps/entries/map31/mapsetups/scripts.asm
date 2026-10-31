@@ -64,6 +64,13 @@ cs_5D724:       textCursor 2030
 cs_5D732:       executeSubroutine sub_5D73E
                 csWait 180
                 hideText
+                shiver ALLY_PETER
+				csWait 30
+				textCursor 4274
+                nextSingleText $0,ALLY_PETER   ; "Pffft!... {D1}(snort){D1}{D1}{N}You look FA- {D1}BU- {D1}LOUS,{N}{LEADER}!{W1}"
+                shiver ALLY_BOWIE
+				csWait 30
+				nextSingleText $0,ALLY_BOWIE   ; "(Sigh)... ...{W1}"
                 csc_end
 
 ; =============== S U B R O U T I N E =======================================

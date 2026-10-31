@@ -112,7 +112,7 @@ cs_4EAEE:       setBlocks 11,6,11,29,44,0
                 ;playSound MUSIC_SAD_THEME_3
                 shiver ALLY_PETER
                 setFacing ALLY_PETER,UP
-                nextSingleText $0,ALLY_PETER ; "(Sob, sob)...how sad.{N}{LEADER}, Sir Astral...{W1}"
+                nextSingleText $0,ALLY_PETER ; "(Sob, sob)...{N}{LEADER}, Sir Astral...{W1}"
                 setFacing ALLY_LEMON,DOWN
                 nextSingleText $0,ALLY_LEMON ; "Oddler had a pure spirit...{N}I'll miss him.{W1}"
                 setFacing FOLLOWER_B,UP

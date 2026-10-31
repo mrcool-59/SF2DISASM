@@ -54,6 +54,7 @@ bbcs_16:        textCursor 2513
                  moveUp 2
                 endActions
                 nextSingleText $C0,ALLY_PETER ; "{LEADER}, look there!{W1}"
+				playSound SOUND_COMMAND_FADE_OUT
                 setCamDest 9,0
                 playSound SFX_BIG_DOOR_RUMBLE
                 setQuake $8002
@@ -83,6 +84,7 @@ bbcs_16:        textCursor 2513
                 setPos 138,14,6,DOWN
                 animEntityFX 131,SLIDE_IN
                 setQuake $4002
+				playSound MUSIC_CUSTOM_BOSS_BATTLE
                 nextSingleText $C0,ALLY_PETER ; "M...{D1}monster!{N}It appeared from the river!{W1}"
                 nextText $0,FOLLOWER_B  ; "It must be the monster they{N}mentioned in Polca.{W2}"
                 nextSingleText $0,FOLLOWER_B ; "Watch out!{W1}"

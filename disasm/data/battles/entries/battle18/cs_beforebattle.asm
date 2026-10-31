@@ -63,6 +63,14 @@ bbcs_18:        textCursor 2520
                 setFacing ALLY_PETER,UP
                 setFacing ALLY_ROHDE,UP
                 nextSingleText $0,128   ; "Time's up!  Now we battle.{W1}"
+				; --------------------------------------------------------
+				textCursor 4276
+				shiver ALLY_ROHDE
+				csWait 30
+                nextSingleText $0,ALLY_ROHDE ; "{LEADER}, listen carefully.{N}This big dude may look{N}impressive...{W2}{CLEAR}...But one hit from the{N}Achille Sword should do{N}the trick.{W2}{CLEAR}Then your companions can{N}finish him off!{W1}"
+				nod ALLY_BOWIE
+				csWait 30
+				; --------------------------------------------------------
                 csc_end
 ce_4B2DA:       mainEntity 12,32,UP
                 entity 12,8,DOWN,MAPSPRITE_TAROS,eas_Init

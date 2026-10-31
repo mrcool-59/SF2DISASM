@@ -80,10 +80,10 @@ cs_55A36:       textCursor 1198
                 nextText $C0,ALLY_PETER ; "I'm {NAME;7}.{W2}"
                 nextText $C0,ALLY_PETER ; "I really appreciate your{N}kindness.{W2}"
                 nextSingleText $C0,ALLY_PETER ; "Mt. Volcano is in the east....{N}It's very far away.{W1}"
-                nextSingleText $FF,ENTITY_NONE  ; "{CLEAR}{LEADER} decides to take{N}{NAME;7} with him.{W1}{CLEAR}"
             if (STANDARD_BUILD&NO_AI_PETER=1)
                 join ALLY_PETER
             else
+                nextSingleText $FF,ENTITY_NONE  ; "{CLEAR}{LEADER} decides to take{N}{NAME;7} with him.{W1}{CLEAR}"
                 joinForceAI ALLY_PETER,$FFFF ; 0054 JOIN FORCE WITH AI
             endif
                 entityActionsWait ALLY_PETER
@@ -322,6 +322,16 @@ cs_55BEE:       textCursor 1249
 				textCursor 1289
                 nextSingleText $0,139   ; "We have to remove the rocks{N}blocking the passageway{N}leading to North Parmecia.{W2}{N}Maybe we can use an{N}explosive!{W1}"
                 nod ALLY_BOWIE
+				; ------------------------------------------
+				textCursor 4277
+				nextSingleText $0,139   ; "Oh, {LEADER}!{D1}{N}I almost forgot... {D1}Did you take{N}some time to fill my map?{W1}"
+                shiver ALLY_BOWIE
+				csWait 30
+				shiver 139
+				csWait 30
+				nextSingleText $0,139   ; "What?! You completely forgot{N}about it?!{N}{W2}Hmph... Give it back to me,{N}I'll fill it myself!{N}(Mumble, mumble){W2}"
+                nod ALLY_BOWIE
+				; ------------------------------------------
                 followEntity ALLY_PETER,ALLY_BOWIE,2
                 addNewFollower 139
                 setF 70                 ; Astral is a follower

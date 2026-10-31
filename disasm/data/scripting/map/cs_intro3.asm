@@ -210,6 +210,7 @@ IntroCutscene3: textCursor 4215
                 setActscriptWait ALLY_SLADE,eas_Init
                 nextSingleText $80,ALLY_SLADE ; "I did?{D2}"
                 csWait 30
+				playSound SOUND_COMMAND_FADE_OUT
                 setSprite ALLY_SLADE,ALLY_SLADE
                 headshake ALLY_SLADE
                 nextSingleText $80,ALLY_SLADE ; "Oh, I got them!{N}I have the legendary{N}jewels!  Bravo!{D2}"

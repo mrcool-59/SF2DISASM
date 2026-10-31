@@ -1667,7 +1667,7 @@
 1665=0681=Sorry to interrupt, but is{N}he that strong?{W1}
 1666=0682=Zeon is King of the Devils.{W1}
 1667=0683={NAME;7}, you had better{N}go see Volcanon.{W2}
-1668=0684=It may calm him down to see{N}{NAME;7}.{W1}
+1668=0684=It may calm him down.{W1}
 1669=0685=Oh, is he angry?{N}Maybe later...{W1}
 1670=0686=Never mind later.{N}He has been waiting for you.{W1}
 1671=0687=Oh, yeah?  OK, I'm going.{W2}
@@ -3078,7 +3078,7 @@
 3076=0C04=Thank you, {NAME;7}.{N}I learned a lot from you.{W2}
 3077=0C05=Oh, the pain!{N}Let me say good-bye.{W1}
 3078=0C06=If possible, I want to{N}relive my life...not as{N}a devil...next time....{W1}
-3079=0C07=(Sob, sob)...how sad.{N}{LEADER}, Sir Astral...{W1}
+3079=0C07=(Sob, sob)...{N}{LEADER}, Sir Astral...{W1}
 3080=0C08=Oddler had a pure spirit...{N}I'll miss him.{W1}
 3081=0C09=Don't cry for him now.{N}This is Zeon's doing.{W1}
 3082=0C0A=We shall go onward and{N}remember Oddler in our{N}hearts.{W1}
@@ -4272,3 +4272,9 @@
 4270=10AE=...but don't worry, I will cause{N}no accident!{W1}
 4271=10AF=...{W2}That's a relief!...{N}Ahah-ah...{W1}
 4272=10B0=(Promotion has been unlocked!{N}Don't forget to visit the priest{N}before heading out!){W2}
+4273=10B1={NAME;7} the Brass Drake{N}has joined the force... {D1}{D1}again!
+4274=10B2=Pffft!... {D1}(snort){D1}{D1}{N}You look FA- {D1}BU- {D1}LOUS,{N}{LEADER}!{W1}
+4275=10B3=(Sigh)... ...{W1}
+4276=10B4={LEADER}, listen carefully.{N}This big dude may look{N}impressive...{W2}{CLEAR}...But one hit from the{N}Achille Sword should do{N}the trick.{W2}{CLEAR}Then your companions can{N}finish him off!{W1}
+4277=10B5=Oh, {LEADER}!{D1}{N}I almost forgot... {D1}Did you take{N}some time to fill my map?{W1}
+4278=10B6=What?! You completely forgot{N}about it?!{N}{W2}Hmph... Give it back to me,{N}I'll fill it myself!{N}(Mumble, mumble){W2}
