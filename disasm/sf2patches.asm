@@ -17,7 +17,7 @@ INITIAL_NO_BATTLE_MESSAGES: equ 0       ; 1 = no battle messages display ON
 ;   This is determined by whether standard.bat or standard-test.bat is used when building.
 
 ; Test build configuration settings
-TEST_BUILD_ALL_ALLIES_JOINED:           equ 1		; All allies join from the beginning, this will BREAK story events flow, starting with Astral missing from school basement
+TEST_BUILD_ALL_ALLIES_JOINED:           equ 0		; All allies join from the beginning, this will BREAK story events flow, starting with Astral missing from school basement
 TEST_BUILD_ALLIES_START_LEVEL:          equ 40      ; Starting level for all characters if TEST_BUILD_ALL_ALLIES_JOINED is ON
 TEST_BUILD_FILL_BATTLE_PARTY:			equ 0		;  0 = Bowie is the only character in the battle party		1 = Battle party is filled from top to bottom
 TEST_BUILD_INITIAL_SPECIAL_TURBO:       equ -1      ; -1 = toggle ON
@@ -25,7 +25,7 @@ TEST_BUILD_INITIAL_DEBUG_MODE:          equ -1      ; -1 = toggle ON
 TEST_BUILD_INITIAL_CONTROL_OPPONENT:    equ 0       ; -1 = toggle ON
 TEST_BUILD_INITIAL_AUTO_BATTLE:         equ 0       ; -1 = toggle ON
 TEST_BUILD_INITIAL_CONFIGURATION_MODE:  equ 0       ; -1 = toggle ON
-TEST_BUILD_INITIAL_GAME_COMPLETED:      equ 1
+TEST_BUILD_INITIAL_GAME_COMPLETED:      equ 0
 TEST_BUILD_INITIAL_MESSAGE_SPEED:       equ 3       ; [0, 3]
 TEST_BUILD_INITIAL_NO_BATTLE_MESSAGES:  equ 1       ; 1 = no battle messages display ON
 
