@@ -242,8 +242,8 @@ table_EnemyDefinitions:
                 maxMp    0
                 baseAtt  26
                 baseDef  20
-                baseAgi  18
-                baseMov  5
+                baseAgi  16
+                baseMov  4
                 baseresistance WIND_WEAKNESS|LIGHTNING_NONE|ICE_MAJOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL_POISON|DOUBLE_1IN32|COUNTER_1IN32
                 items &
@@ -2634,3 +2634,28 @@ table_EnemyDefinitions:
                 initialStatus NONE
                 movetype      REGULAR
                 aiBitfield    PRIORITYMOD_1
+
+                unknownByte 0           ; 104: LESSER MINOTAUR
+                spellPower REGULAR
+                level    11
+                maxHp    33
+                maxMp    0
+                baseAtt  17
+                baseDef  17
+                baseAgi  17
+                baseMov  5
+                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                baseProwess    CRITICAL125_1IN8|DOUBLE_1IN32|COUNTER_1IN16
+                items &
+                    MIDDLE_AXE|EQUIPPED, &
+                    NOTHING, &
+                    NOTHING, &
+                    NOTHING
+                spells &
+                    NOTHING, &
+                    NOTHING, &
+                    NOTHING, &
+                    NOTHING
+                initialStatus NONE
+                movetype      REGULAR
+                aiBitfield    PRIORITYMOD_2|BIT5

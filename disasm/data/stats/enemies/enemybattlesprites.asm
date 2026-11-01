@@ -112,3 +112,4 @@ table_EnemyBattlesprites:
                 enemyBattleSprAndPlt NECROMANCER, 0 ; 101: NECROMANCER
                 enemyBattleSprAndPlt SHAMAN, 1 ; 102: BLUE SHAMAN
                 enemyBattleSprAndPlt RED_BARON, 0 ; 103: LEMON
+                enemyBattleSprAndPlt MINOTAUR, 0 ; 104: LESSER MINOTAUR

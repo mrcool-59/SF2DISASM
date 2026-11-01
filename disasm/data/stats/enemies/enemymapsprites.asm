@@ -109,8 +109,9 @@ table_EnemyMapsprites:
                 mapsprite NECROMANCER   ; 101: NECROMANCER
                 mapsprite BLUE_SHAMAN   ; 102: BLUE SHAMAN
 				mapsprite LEMON_SPECIAL ; 103: RED BARON
+				mapsprite MINOTAUR      ; 104: LESSER_MINOTAUR
                 ; mapsprite FILLER7	(taken by enemy Lemon)
-                mapsprite FILLER8
+                ; mapsprite FILLER8 (taken by lesser minotaur)
                 mapsprite FILLER9
                 mapsprite NPC_ROHDE
                 mapsprite FLAME1

@@ -106,3 +106,4 @@ table_EnemyNames:
                 enemyName "NECROMANCER"
                 enemyName "BLUE SHAMAN"
 				enemyName "LEMON"
+				enemyName "LESSER MINOTAUR"

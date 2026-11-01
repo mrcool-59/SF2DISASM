@@ -5,7 +5,7 @@ BattleSpriteset13:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 16
+                dc.b 18
                 ; # AI Regions
                 dc.b 3
                 ; # AI Points
@@ -125,6 +125,14 @@ BattleSpriteset13:
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
+                enemyCombatant LESSER_MINOTAUR, 15, 14
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+				
+                enemyCombatant LESSER_MINOTAUR, 26, 20
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+				
                 ; AI Regions
                 dc.b 4
                 dc.b 0
