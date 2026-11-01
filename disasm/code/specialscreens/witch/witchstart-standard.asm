@@ -182,8 +182,13 @@ witchMenuAction_New:
                 cmpi.w  #ALLY_KIWI,d0
                 beq.s   @SkipNaming
                 cmpi.w  #ALLY_PETER,d0	; Skip Ixen renaming, he is handled after this!
-                beq.s   @SkipNaming
-				cmpi.b	#30,d0			; Stop at dummy ally 1
+                bne.s   @NotIxen
+				move.b  #ALLY_30,d0		; Confuse the player by renaming Peter here!
+				jsr     NameAlly
+				move.b  #ALLY_PETER,d0	; Then proceed like nothing happened!
+				bra.s   @SkipNaming
+@NotIxen:
+				cmpi.b	#ALLY_30,d0		; Stop upon reaching Peter
 				bne.s   @NameAlly_Loop
                 
 				; Ixen special-case
