@@ -310,8 +310,8 @@ SpellIcon040:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon041:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon042:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon043:   incbin "data/graphics/icons/spell/icon015.bin"
-SpellIcon044:   incbin "data/graphics/icons/spell/icon011.bin" ; DRAGON_BREATH
-SpellIcon045:   incbin "data/graphics/icons/spell/icon015.bin"
+SpellIcon044:   incbin "data/graphics/icons/spell/icon027.bin" ; DRAGON_BREATH
+SpellIcon045:   incbin "data/graphics/icons/spell/icon028.bin" ; THUNDER_BREATH
 SpellIcon046:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon047:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon048:   incbin "data/graphics/icons/spell/icon015.bin"

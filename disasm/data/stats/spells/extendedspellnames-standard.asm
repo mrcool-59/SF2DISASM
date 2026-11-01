@@ -49,7 +49,7 @@ table_SpellNames:
                 spellName "Odd Eye"
             if (EXPANDED_ITEMS_AND_SPELLS=1)
                 spellName "Dragon", 13, "Breath"
-                spellName "spell45"
+                spellName "Thunder", 13, "Breath"
                 spellName "spell46"
                 spellName "spell47"
                 spellName "spell48"

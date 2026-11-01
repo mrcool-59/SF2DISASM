@@ -67,8 +67,8 @@ rjt_SpellEffects:
                 dc.w spellEffect_FairyTear-rjt_SpellEffects ; SHINE
                 dc.w spellEffect_Bolt-rjt_SpellEffects ; ODDEYE
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
-                dc.w spellEffect_FlameBreath-rjt_SpellEffects       ; DRAGON_BREATH
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell45
+                dc.w spellEffect_FlameBreath-rjt_SpellEffects   ; DRAGON_BREATH
+                dc.w spellEffect_ThunderBreath-rjt_SpellEffects ; THUNDER_BREATH
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell46
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell47
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell48
@@ -1090,6 +1090,17 @@ spellEffect_FlameBreath:
                 bra.w   battlesceneScript_CalculateSpellDamage
 
     ; End of function spellEffect_FlameBreath
+
+
+; =============== S U B R O U T I N E =======================================
+
+
+spellEffect_ThunderBreath:
+                
+                moveq   #CHANCE_TO_CRITICAL_THUNDER_BREATH,d3 ; 1/8 chance to critical hit
+                bra.w   battlesceneScript_CalculateSpellDamage
+
+    ; End of function spellEffect_ThunderBreath
 
 
 ; =============== S U B R O U T I N E =======================================

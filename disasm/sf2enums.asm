@@ -1930,6 +1930,7 @@ SPELL_KIWI: equ $29 ; Kiwi's Flame Breath
 SPELL_SHINE: equ $2A ; map wide MP restore (Right of Hope)
 SPELL_ODDEYE: equ $2B ; Odd-eye beam!
 SPELL_DRAGON_BREATH: equ $2C ; Ixen Dragon Breath
+SPELL_THUNDER_BREATH: equ $2D ; Sunny Thunder Breath
 SPELL_NOTHING: equ $3F
 SPELL_LV2: equ $40
 SPELL_LV3: equ $80
@@ -2016,6 +2017,7 @@ CHANCE_TO_INFLICT_SLEEP: equ 5 ; 3/8 base chance to inflict sleep
 CHANCE_TO_CRITICAL_BUBBLE_BREATH: equ 8 ; 1/8 chance to critical hit
 CHANCE_TO_CRITICAL_BOLT: equ 8 ; 1/8 chance to critical hit (Bolt, Raijin, Atlas, Holy Thunder, Odd-eye beam)
 CHANCE_TO_CRITICAL_FLAME_BREATH: equ 16 ; 1/16 chance to critical hit (Flame Breath, Kiwi's Flame Breath)
+CHANCE_TO_CRITICAL_THUNDER_BREATH: equ 8 ; 1/8 chance to critical hit
 CHANCE_TO_CRITICAL_NEPTUN: equ 16 ; 1/16 chance to critical hit
 CHANCE_TO_CRITICAL_BLAZE: equ 32 ; 1/32 chance to critical hit (Blaze, Katon, Apollo, Shining Ball)
 CHANCE_TO_CRITICAL_FREEZE: equ 32 ; 1/32 chance to critical hit (Freeze, Snow Breath, Blizzard)
@@ -2556,6 +2558,7 @@ MESSAGE_BATTLE_FOUND_GOLD_COINS: equ 393
 MESSAGE_BATTLE_RECEIVED_ITEM: equ 395
 MESSAGE_BATTLE_DROPPED_ITEM: equ 396
 MESSAGE_BATTLE_STORED_ITEM: equ 369
+MESSAGE_SPELLCAST_THUNDER_BREATH: equ 402
 MESSAGE_SPELLCAST_BREATHED_FIRE: equ 407
 MESSAGE_DELAY: equ 411
 MESSAGE_END: equ 65535
