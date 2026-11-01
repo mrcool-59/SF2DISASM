@@ -38,7 +38,7 @@ table_ClassNames:
             if (STANDARD_BUILD&EXPANDED_CLASSES=1)
                 className "32"
                 className "33"
-                className "34"
+                className "GDRG"
                 className "35"
                 className "36"
                 className "37"

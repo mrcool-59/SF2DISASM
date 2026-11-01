@@ -549,7 +549,7 @@ CLASS_RDBN: equ 31
     if (STANDARD_BUILD&EXPANDED_CLASSES=1)
 CLASS_32: equ 32
 CLASS_33: equ 33
-CLASS_34: equ 34
+CLASS_34: equ 34	; Gold Dragon
 CLASS_35: equ 35
 CLASS_36: equ 36
 CLASS_37: equ 37
@@ -3150,6 +3150,7 @@ ALLYBATTLEANIMATION_SPECIAL_BRGN: equ 86 ; unarmed attack
 ALLYBATTLEANIMATION_SPECIAL_IXEN: equ 87 ; Ixen (dragon breath / has specific cast animation for unpromoted)
 ALLYBATTLEANIMATION_SPECIAL_IXEN_ITEM: equ 88 ; Ixen (use item)
 ALLYBATTLEANIMATION_SPECIAL_IXEN_PROMOTED_ITEM: equ 89 ; Ixen (promoted, use item)
+ALLYBATTLEANIMATION_SPECIAL_SUNNY: equ 90 ; Sunny (thunder breath / spell cast)
 
 ; ---------------------------------------------------------------------------
 

@@ -41,7 +41,7 @@ table_ClassTypes:
             if (STANDARD_BUILD&EXPANDED_CLASSES=1)
                 classType PROMO         ; 32: 
                 classType PROMO         ; 33: 
-                classType PROMO         ; 34: 
+                classType PROMO         ; 34: GDRG
                 classType PROMO         ; 35: 
                 classType PROMO         ; 36: 
                 classType PROMO         ; 37: 

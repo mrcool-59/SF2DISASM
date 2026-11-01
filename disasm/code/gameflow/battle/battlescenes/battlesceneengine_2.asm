@@ -17,6 +17,8 @@ GetBattlesceneGround:
                 jsr     GetClass
 				cmp  	#CLASS_PHNX,d1		; Ixen promoted is flying, but his battle sprite is on the ground! (HARDCODED)
 				beq  	GetBattlesceneBackground
+				cmp  	#CLASS_34,d1		; Sunny is flying, but her battle sprite is on the ground! (HARDCODED)
+				beq  	GetBattlesceneBackground
 				
                 jsr     IsAirborneMoveType
                 bcc.s   @Skip           ; skip if ally is flying or hovering

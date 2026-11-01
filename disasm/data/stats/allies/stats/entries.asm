@@ -32,7 +32,7 @@ pt_AllyStats:   dc.l AllyStats00        ; BOWIE
                 dc.l AllyStats28        ; LEMON
                 dc.l AllyStats29        ; CLAUDE
                 dc.l AllyStats29
-                dc.l AllyStats29
+                dc.l AllyStats31		; SUNNY
                 include "data\stats\allies\stats\allystats00.asm"    ; Ally stats 00
                 include "data\stats\allies\stats\allystats01.asm"    ; Ally stats 01
                 include "data\stats\allies\stats\allystats02.asm"    ; Ally stats 02
@@ -63,3 +63,4 @@ pt_AllyStats:   dc.l AllyStats00        ; BOWIE
                 include "data\stats\allies\stats\allystats27.asm"    ; Ally stats 27
                 include "data\stats\allies\stats\allystats28.asm"    ; Ally stats 28
                 include "data\stats\allies\stats\allystats29.asm"    ; Ally stats 29
+				include "data\stats\allies\stats\allystats31.asm"    ; Ally stats 31 (Sunny)

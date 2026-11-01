@@ -7,6 +7,7 @@ table_AllyBattlesceneMusics_Unpromoted:
                 dc.b ALLY_PETER, MUSIC_CUSTOM_IXEN_UNPROMOTED ; Ixen
 				dc.b ALLY_CHAZ, MUSIC_CUSTOM_NEWBIE_BATTLE
 				dc.b ALLY_LEMON, MUSIC_CUSTOM_LEMON
+				dc.b ALLY_31, MUSIC_UNUSED_REVIVE ; Sunny (it's actually the abridged version of her theme)
                 tableEnd.b
 
 table_AllyBattlesceneMusics_Promoted:
@@ -14,4 +15,5 @@ table_AllyBattlesceneMusics_Promoted:
                 dc.b ALLY_PETER, MUSIC_CUSTOM_IXEN_PROMOTED ; Ixen
 				dc.b ALLY_CHAZ, MUSIC_CUSTOM_NEWBIE_BATTLE
 				dc.b ALLY_LEMON, MUSIC_CUSTOM_LEMON
+				dc.b ALLY_31, MUSIC_UNUSED_REVIVE ; Sunny (it's actually the abridged version of her theme)
                 tableEnd.b

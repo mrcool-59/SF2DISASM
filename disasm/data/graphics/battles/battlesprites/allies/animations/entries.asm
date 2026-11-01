@@ -92,6 +92,7 @@ pt_AllyAnimations:
 				dc.l AllyAnimation087
 				dc.l AllyAnimation088
 				dc.l AllyAnimation089
+				dc.l AllyAnimation090
 AllyAnimation000:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation000.bin"
 AllyAnimation001:
@@ -155,7 +156,7 @@ AllyAnimation029:
 AllyAnimation030:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation030.bin"
 AllyAnimation031:
-                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation031.bin"
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenProAttImproved-standard.bin" ; Sunny Promoted - TODO: coming soon
 AllyAnimation032:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation032.bin"
 AllyAnimation033:
@@ -235,7 +236,7 @@ AllyAnimation069:
 AllyAnimation070:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation070.bin"
 AllyAnimation071:
-                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation071.bin"
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenProAttImproved-standard.bin" ; Sunny Promoted [Dodge] - TODO: coming soon
 AllyAnimation072:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation072.bin"
 AllyAnimation073:
@@ -272,3 +273,5 @@ AllyAnimation088:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenItem-standard.bin" ; Ixen [Item]
 AllyAnimation089:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenProItem-standard.bin" ; Ixen Promoted [Item]
+AllyAnimation090:
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenProItem-standard.bin" ; Sunny Promoted [Cast]

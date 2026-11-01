@@ -165,9 +165,9 @@ table_AllyMapsprites:
                 mapsprite DEFAULT
                 mapsprite DEFAULT
                 
-; 31: 
+; 31: Sunny
                 mapsprite DEFAULT
-                mapsprite DEFAULT
+                mapsprite PETER_PROMO	; TODO: coming soon
                 mapsprite DEFAULT
                 
             endif

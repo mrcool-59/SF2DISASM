@@ -171,9 +171,9 @@ table_AllyDialogueProperties:
                 allyPortraitAndSfx BOWIE_BASE, DIALOG_BLEEP_5
                 allyPortraitAndSfx BOWIE_BASE, DIALOG_BLEEP_5
                 
-; 31: 
-                allyPortraitAndSfx BOWIE_BASE, DIALOG_BLEEP_5
-                allyPortraitAndSfx BOWIE_BASE, DIALOG_BLEEP_5
-                allyPortraitAndSfx BOWIE_BASE, DIALOG_BLEEP_5
+; 31: Sunny
+                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_3	; TODO: coming soon
+                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_3
+                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_3
                 
             endif

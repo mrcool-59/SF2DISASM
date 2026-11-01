@@ -166,8 +166,8 @@ table_AllyBattlesprites:
                 allyBattleSprAndPlt NONE, NONE, 0
                 allyBattleSprAndPlt NONE, NONE, 0
                 
-; 31: 
-                allyBattleSprAndPlt RDBN, SDMN, 0
+; 31: SUNNY
+                allyBattleSprAndPlt CLASS_34, PHNX, 0	; TODO: coming soon
                 allyBattleSprAndPlt NONE, NONE, 0
                 allyBattleSprAndPlt NONE, NONE, 0
                 

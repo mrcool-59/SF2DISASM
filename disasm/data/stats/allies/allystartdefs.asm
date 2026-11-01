@@ -261,11 +261,11 @@ table_AllyStartDefinitions:
                     NOTHING, &
                     NOTHING
                 
-                startClass RDBN         ; 31: 
-                startLevel 1
+                startClass CLASS_34         ; 31: SUNNY
+                startLevel 10
                 startItems &
-                    NOTHING, &
-                    NOTHING, &
+                    PROTECT_RING|EQUIPPED, &
+                    FAIRY_TEAR, &
                     NOTHING, &
                     NOTHING
                 

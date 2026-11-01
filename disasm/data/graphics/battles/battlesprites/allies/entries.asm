@@ -97,4 +97,4 @@ AllyBattlesprite29:
 AllyBattlesprite30:
                 incbin "data/graphics/battles/battlesprites/allies/allybattlesprite30.bin"
 AllyBattlesprite31:
-                incbin "data/graphics/battles/battlesprites/allies/allybattlesprite31.bin"
+                incbin "data/graphics/battles/battlesprites/allies/allybattlespriteIxenPro-standard.bin" ; Sunny (Promoted) - TODO: coming soon
