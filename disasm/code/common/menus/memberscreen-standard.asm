@@ -1200,7 +1200,7 @@ WriteResistanceIndicatorsAndMovetypeName:
                 movea.l windowTilesAddress(a6),a1
                 adda.w  #WINDOW_MEMBERSTATUS_OFFSET_WIND,a1
                 moveq   #SPELLELEMENT_WIND,d2
-                bsr.s   WriteResistanceIndicatorTiles
+                bsr.w   WriteResistanceIndicatorTiles
                 
                 ; Lightning
                 move.w  currentResistance(a6),d1
@@ -1237,20 +1237,30 @@ WriteResistanceIndicatorsAndMovetypeName:
                 moveq   #SPELLELEMENT_UNUSED2,d2
                 bsr.s   WriteResistanceIndicatorTiles
                 
-                ; Write move type name
+				; Check for boss
                 move.w  member(a6),d0
-                jsr     GetMoveType
+                jsr     GetCurrentAgi
+				cmpi.w  #TWO_TURN_THRESHOLD,d1
+                bmi.s   @CheckMoveType
+				
+				; Combatant is a boss
+				lea     table_BossName(pc),a0
+				clr.w   d1
+				bra.s   @WriteMoveTypeOrBoss
+				
+                ; Write move type name
+@CheckMoveType: jsr     GetMoveType
                 subq.w  #1,d1
                 bmi.s   @Return
+				lea     table_MoveTypeNames(pc),a0
                 
+@WriteMoveTypeOrBoss:
                 movea.l windowTilesAddress(a6),a1
                 adda.w  #WINDOW_MEMBERSTATUS_OFFSET_MOVETYPE_NAME,a1
                 tst.b   d0
-                bmi.s   @WriteMoveType
-                
+                bmi.s   @IsEnemy
                 adda.w  #WINDOW_MEMBERSTATUS_OFFSET_NEXT_LINE,a1 ; write stat on next line if ally
-@WriteMoveType: lea     table_MoveTypeNames(pc),a0
-                jsr     FindName
+@IsEnemy:       jsr     FindName
                 moveq   #-42,d1
                 bra.w   WriteTilesFromAsciiWithRegularFont
 
@@ -1384,6 +1394,9 @@ aNothing_1:     dc.b '\Nothing',0
 aJewel:         dc.b 'JEWEL',0
 
                 ; EXTENDED_STATUS
+table_BossName:
+                defineName "-BOSS-"
+				
 table_ResistanceIndicators:
                 defineName "*" ; immunity
                 defineName " " ; no resistance
