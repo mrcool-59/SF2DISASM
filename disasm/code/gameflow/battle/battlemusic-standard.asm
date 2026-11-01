@@ -45,6 +45,22 @@ GetMapMusic:	; This routine computes the current map music (depending on whether
                 move.b  (a0),d0
                 
 @Continue:      
+				; Hardcode 1: Odd Eye battle => if Sunny hasn't joined, it would be a shame to waste such a great music!
+				cmpi.b   #MUSIC_CUSTOM_SUNNY,d0
+				bne.s   @AdjustAscendTower			; Not playing the Odd Eye battle
+				chkFlg  31
+				beq.s   @AdjustAscendTower 			; Sunny has not joined
+				move.b  #MUSIC_BOSS_ATTACK,d0		; Sunny has joined
+				
+@AdjustAscendTower:
+				; Hardcode 2: Ascent Tower battle => if Sunny has joined, play her theme to be consistent with the pre-battle cutscene!
+				cmpi.b   #MUSIC_CUSTOM_IXEN_PROMOTED,d0
+				bne.s   @Return						; Not playing the Ascent Tower battle
+				chkFlg  31
+				beq.s   @Return 					; Sunny has not joined
+				move.b  #MUSIC_CUSTOM_SUNNY,d0		; Sunny has joined
+
+@Return:
                 movem.l (sp)+,d1-d3/a0
                 rts						; d0 = current map music
 

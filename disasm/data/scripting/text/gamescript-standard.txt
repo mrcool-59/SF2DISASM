@@ -4278,6 +4278,7 @@
 4276=10B4={LEADER}, listen carefully.{N}This big dude may look{N}impressive...{W2}{CLEAR}...But one hit from the{N}Achille Sword should do{N}the trick.{W2}{CLEAR}Then your companions can{N}finish him off!{W1}
 4277=10B5=Oh, {LEADER}!{D1}{N}I almost forgot... {D1}Did you take{N}some time to fill my map?{W1}
 4278=10B6=What?! You completely forgot{N}about it?!{N}{W2}Hmph... Give it back to me,{N}I'll fill it myself!{N}(Mumble, mumble){W2}
+4279=10B7=Let's make him pay, {D1}{D1}together!{N}Zeon stole a friend away from{N}you I couldn't get to know.{W1}
 4280=10B8=It's way too noisy inside!{N}I'd rather stay here.{W1}
 4281=10B9=For some reason, I had{N}a nightmare a few days ago{N}of this happening...{W1}
 4282=10BA=Aww... come on!{N}It wasn't that bad of a landing!{W1}

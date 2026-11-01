@@ -10,4 +10,5 @@ table_UninterruptibleMusics:
 	dc.b	MUSIC_CUSTOM_VAPOR_TRAIL
 	dc.b    MUSIC_CUSTOM_IXEN_PROMOTED
 	dc.b    MUSIC_CUSTOM_LEMON
+	dc.b	MUSIC_CUSTOM_SUNNY
 	dc.b	0	; End
