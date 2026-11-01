@@ -53,7 +53,7 @@ cs_5249E:       playSound SOUND_COMMAND_FADE_OUT
                 nextSingleText $C0,132  ; "I just know that something{N}is being concealed.{W1}"
                 loadMapFadeIn MAP_GALAM_INTERIORS,52,1
                 csWait 1
-                playSound MUSIC_CASTLE
+                playSound MUSIC_CUSTOM_MILITARY
                 fadeInB
                 csWait 30
                 setDest ALLY_BOWIE,59,5

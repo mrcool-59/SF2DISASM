@@ -11,5 +11,5 @@
                     mainLayerAutoscroll 0, 0
                     scndLayerAutoscroll 0, 0
                     mainLayerType    0
-                    areaDefaultMusic MUSIC_CASTLE
+                    areaDefaultMusic MUSIC_CUSTOM_MILITARY
                 endWord
