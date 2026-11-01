@@ -12,6 +12,13 @@ bbcs_40:        textCursor 3036
                 setActscriptWait ALLY_LEMON,eas_Init
                 setPos ALLY_LEMON,15,41,UP
                 setActscriptWait 128,eas_Init
+                setPos ALLY_PETER,15,40,UP
+				; ----------------------------------
+				jumpIfFlagSet 31,@SunnyJoined
+				setPos ALLY_31,63,63,UP
+@SunnyJoined:
+				; ----------------------------------
+                setActscriptWait FOLLOWER_B,eas_Init
                 setPos 128,16,41,UP
                 jumpIfFlagClear 76,cs_4E544 ; Zynk is a follower
                 setActscriptWait ALLY_ZYNK,eas_Init
@@ -198,12 +205,23 @@ cs_4E544:       setBlocks 11,6,11,29,44,0
                 setCamDest 11,31
                 setFacing ALLY_PETER,RIGHT
                 setFacing ALLY_BOWIE,LEFT
+                setFacing ALLY_31,LEFT
                 nextSingleText $0,ALLY_PETER ; "{LEADER}, are we really{N}going to fight Oddler?{W1}"
+				; ----------------------------------
+				jumpIfFlagClear 31,@SunnyNotJoined
+				textCursor 4288
+				shiver ALLY_31
+				csWait 30
+                nextSingleText $0,ALLY_31 ; "{NAME;7}...{W1}"
+@SunnyNotJoined:
+				; ----------------------------------
+				playSound SOUND_COMMAND_FADE_OUT
                 entityActionsWait FOLLOWER_B
                  moveLeft 1
                 endActions
                 setFacing FOLLOWER_B,UP
                 setFacing ALLY_LEMON,RIGHT
+				textCursor 3063
                 nextSingleText $0,FOLLOWER_B ; "That's enough out of you!{W1}"
                 entityActionsWait FOLLOWER_B
                  moveRight 1
@@ -213,10 +231,12 @@ cs_4E544:       setBlocks 11,6,11,29,44,0
                 nextSingleText $0,FOLLOWER_B ; "{LEADER}, let's do it!{W1}"
                 setActscript ALLY_PETER,eas_Jump
                 nod ALLY_BOWIE
+				csWait 60
                 csc_end
 ce_4E878:       mainEntity 16,39,UP
                 entity 15,40,UP,ALLY_PETER,eas_Init
                 entity 15,41,UP,ALLY_LEMON,eas_Init
+				entity 20,32,UP,ALLY_31,eas_Init
                 entity 16,41,UP,MAPSPRITE_CARAVAN,eas_Init
                 entity 16,4,DOWN,MAPSPRITE_ODD_EYE,eas_Init
                 entity 63,63,UP,MAPSPRITE_EFFECT3,eas_Init

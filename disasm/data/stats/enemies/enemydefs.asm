@@ -2438,7 +2438,7 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 96: ODD EYE
                 spellPower ENHANCED
                 level    80
-                maxHp    300
+                maxHp    3
                 maxMp    100
                 baseAtt  61
                 baseDef  60

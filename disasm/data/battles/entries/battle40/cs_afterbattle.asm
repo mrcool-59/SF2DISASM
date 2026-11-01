@@ -11,6 +11,11 @@ abcs_battle40:  textCursor 3065
                 setPos FOLLOWER_B,15,6,DOWN
                 setActscriptWait ALLY_LEMON,eas_Init
                 setPos ALLY_LEMON,17,8,LEFT
+				; ----------------------------
+				jumpIfFlagSet 31,@SunnyJoined
+                setPos ALLY_31,63,63,RIGHT
+@SunnyJoined:
+				; ----------------------------
                 jumpIfFlagClear 76,cs_4EAEE ; Zynk is a follower
                 setActscriptWait ALLY_ZYNK,eas_Init
                 setPos ALLY_ZYNK,63,62,DOWN
@@ -116,9 +121,11 @@ cs_4EAEE:       setBlocks 11,6,11,29,44,0
                 setFacing ALLY_LEMON,DOWN
                 nextSingleText $0,ALLY_LEMON ; "Oddler had a pure spirit...{N}I'll miss him.{W1}"
                 setFacing FOLLOWER_B,UP
+				setFacing ALLY_31,UP
                 nextSingleText $0,FOLLOWER_B ; "Don't cry for him now.{N}This is Zeon's doing.{W1}"
                 setFacing FOLLOWER_B,DOWN
                 nextSingleText $0,FOLLOWER_B ; "We shall go onward and{N}remember Oddler in our{N}hearts.{W1}"
+                setFacing ALLY_31,RIGHT
                 entityActionsWait ALLY_LEMON
                  moveLeft 1
                  moveDown 1
@@ -146,6 +153,7 @@ cs_4EAEE:       setBlocks 11,6,11,29,44,0
 ce_4ECD6:       mainEntity 15,10,UP
                 entity 13,8,RIGHT,ALLY_PETER,eas_Init
                 entity 17,8,LEFT,ALLY_LEMON,eas_Init
+                entity 11,9,RIGHT,ALLY_31,eas_Init
                 entity 63,63,DOWN,MAPSPRITE_OBJECT1,eas_Init
                 entity 63,63,DOWN,MAPSPRITE_OBJECT1,eas_Init
                 entity 63,63,DOWN,MAPSPRITE_OBJECT1,eas_Init
