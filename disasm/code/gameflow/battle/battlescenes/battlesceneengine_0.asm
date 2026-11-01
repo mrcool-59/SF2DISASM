@@ -1700,8 +1700,22 @@ bsc10_displayMessage:
                 move.w  (a6)+,((DIALOGUE_NAME_INDEX_2-$1000000)).w
                 move.l  (a6)+,((DIALOGUE_NUMBER-$1000000)).w
                 clr.w   (CURRENT_SPEECH_SFX).l
+			if (STANDARD_BUILD=1)
+				cmpi.w  #MESSAGE_BATTLE_RECEIVED_ITEM,d0
+				beq.s	@ForceDisplay
+				cmpi.w  #MESSAGE_BATTLE_STORED_ITEM,d0
+				beq.s	@ForceDisplay
+				cmpi.w  #MESSAGE_BATTLE_DROPPED_ITEM,d0
+				bne.s	@NotItemDrop
+			if (ITEM_DROP_SOUND_EFFECT<>0)
+				sndCom	ITEM_DROP_SOUND_EFFECT
+				bra.s	@ForceDisplay
+			endif
+			endif
+		@NotItemDrop:
                 testSavedByte NO_BATTLE_MESSAGES_TOGGLE
                 bne.s   loc_1920C
+		@ForceDisplay:
                 jsr     (DisplayText).l 
                 testSavedByte MESSAGE_SPEED
                 bne.s   loc_1920C

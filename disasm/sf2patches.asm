@@ -116,6 +116,7 @@ SPELLS_REFRESH_STATUS_COUNTERS:     equ 1       ; Boost, Slow, and Attack spells
 TRADEABLE_ITEMS:                    equ 0       ; Allow trading items in battle without full inventory.
 TRAP_DAMAGE_RAISES_WITH_DIFFICULTY: equ 0       ; Increase Laser/Burst Rock damage with difficulty.   Normal:100%  Hard:125%  Super: 150%  Ouch: 175%
 SPELL_LEARNING_SOUND_EFFECT:		equ 101		; 0 = 0FF, xxx = Play xxx SFX when a character learns a new spell or upgrades a spell.
+ITEM_DROP_SOUND_EFFECT:				equ 122		; 0 = 0FF, xxx = Play xxx SFX when a character gets an item drop.
 
 
 ; Music features
