@@ -13,6 +13,8 @@ ms_map19_flag982_EntityEvents:
                 msEntityEvent ALLY_SHEELA, UP, Map19_3D6_EntityEvent8-ms_map19_flag982_EntityEvents
                 msEntityEvent ALLY_CHAZ, UP, Map19_3D6_EntityEvent9-ms_map19_flag982_EntityEvents
                 msEntityEvent ALLY_ZYNK, UP, Map19_3D6_EntityEvent10-ms_map19_flag982_EntityEvents
+                msEntityEvent ALLY_30, UP, Map19_3D6_EntityEvent0_Extra-ms_map19_flag982_EntityEvents
+				msEntityEvent ALLY_31, UP, Map19_3D6_EntityEvent1_Extra-ms_map19_flag982_EntityEvents
                 msEntityEvent 128, DOWN, Map19_3D6_EntityEvent11-ms_map19_flag982_EntityEvents
                 msEntityEvent 129, UP, Map19_3D6_EntityEvent12-ms_map19_flag982_EntityEvents
                 msEntityEvent 130, DOWN, (Map19_21F_EntityEvent10-ms_map19_flag982_EntityEvents) & $FFFF
@@ -61,6 +63,18 @@ Map19_3D6_EntityEvent0:
 ; =============== S U B R O U T I N E =======================================
 
 
+Map19_3D6_EntityEvent0_Extra:
+                
+                 
+                txt     4287            ; "Love triangles? I knew this{N}party was gonna be fun!{W1}"
+                rts
+
+    ; End of function Map19_3D6_EntityEvent0_Extra
+
+
+; =============== S U B R O U T I N E =======================================
+
+
 Map19_3D6_EntityEvent1:
                 
                  
@@ -68,6 +82,18 @@ Map19_3D6_EntityEvent1:
                 rts
 
     ; End of function Map19_3D6_EntityEvent1
+
+
+; =============== S U B R O U T I N E =======================================
+
+
+Map19_3D6_EntityEvent1_Extra:
+                
+                 
+                txt     4286            ; "Please come visit us in{N}Bedoe soon!{W1}"
+                rts
+
+    ; End of function Map19_3D6_EntityEvent1_Extra
 
 
 ; =============== S U B R O U T I N E =======================================

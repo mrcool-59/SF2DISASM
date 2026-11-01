@@ -3980,7 +3980,7 @@
 3978=0F8A=I always thought {LEADER}{N}was the best choice!{W1}
 3979=0F8B=Are you sure?{N}Anybody disagree?{W1}
 3980=0F8C=Nobody?{W1}
-3981=0F8D=I understand what my friends{N}are saying, but...I love{N}her.{W2}
+3981=0F8D=I understand what my friends{N}are saying, but...{N}I love her.{W2}
 3982=0F8E=May I kiss her?{N}Somebody, say yes!{W1}
 3983=0F8F=Sorry, but...I don't think{N}{NAME;3} is the right{N}choice.{W1}
 3984=0F90=I understand {NAME;3}, but{N}she is a human.{W2}
@@ -4004,7 +4004,7 @@
 4002=0FA2={NAME;4} will take care{N}of {NAME;1}.{W2}
 4003=0FA3=Everything went as you{N}expected, huh?{W1}
 4004=0FA4=You knew that?{N}{NAME;10}, you're smart.{W2}
-4005=0FA5=But I didn't know what{N}{NAME;1} or {NAME;3} would do.{W2}I didn't want to hurt their{N}feelings.{W1}
+4005=0FA5=But I didn't know what{N}{NAME;1} or {NAME;3} would do.{W2}{N}I didn't want to hurt their{N}feelings.{W1}
 4006=0FA6={LEADER}, I choose you.{W1}
 4007=0FA7=Now, {LEADER}.{N}Please go awaken her.{W1}
 4008=0FA8=The Minister is waiting{N}for you.{W1}
@@ -4281,3 +4281,8 @@
 4280=10B8=It's way too noisy inside!{N}I'd rather stay here.{W1}
 4281=10B9=For some reason, I had{N}a nightmare a few days ago{N}of this happening...{W1}
 4282=10BA=Aww... come on!{N}It wasn't that bad of a landing!{W1}
+4283=10BB=Hi, {LEADER}! I moved to Bedoe,{N}next to {NAME;7}'s home.{D1}{N}We enjoy each other's company.{W1}
+4284=10BC={NAME;31} came too!{D1} And she is{N}my awesome new neighbor now!{W1}
+4285=10BD=Hi, {LEADER}!{N}I hope you're well! I learned{N}there is a wedding today.{W2}{N}What a fun way to end my{N}vacations!{W1}
+4286=10BE=Please come visit us in{N}Bedoe soon!{W1}
+4287=10BF=Love triangles? I knew this{N}party was gonna be fun!{W1}

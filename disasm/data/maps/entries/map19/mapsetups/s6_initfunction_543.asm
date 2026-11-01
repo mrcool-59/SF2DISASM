@@ -7,7 +7,18 @@
 
 ms_map19_flag543_InitFunction:
                 
-                 
+                chkFlg  30              ; Peter joined
+                bne.s   @PeterJoined      
+                move.w  #ALLY_30,d0
+                jsr     MoveEntityOutOfMap
+				 
+@PeterJoined:
+                chkFlg  31              ; Sunny joined
+                bne.s   @SunnyJoined      
+                move.w  #ALLY_31,d0
+                jsr     MoveEntityOutOfMap
+				 
+@SunnyJoined:
                 chkFlg  25              ; Shiela joined
                 bne.s   byte_62CAE      
                 move.w  #ALLY_SHEELA,d0
@@ -110,6 +121,7 @@ cs_62D0E:       textCursor 3967
                 setFacing ALLY_CHESTER,UP
                 setFacing ALLY_KAZIN,UP
                 setFacing ALLY_SLADE,UP
+				setFacing ALLY_30,UP
                 setFacing ALLY_PETER,UP
                 setFacing ALLY_LUKE,UP
                 setFacing ALLY_SHEELA,UP
@@ -118,12 +130,14 @@ cs_62D0E:       textCursor 3967
                 setFacing ALLY_ROHDE,UP
                 setFacing ALLY_ZYNK,UP
                 setFacing ALLY_CHAZ,UP
+				setFacing ALLY_31,UP
                 csWait 10
                 nextText $0,129         ; "Listen up!{W2}"
                 nextText $0,129         ; "It took two years, but the{N}Princess finally recovered{N}from the poison.{W2}"
                 nextSingleText $0,129   ; "But she's still sleeping.{N}We've decided to take{N}Mitula's advice.{W1}"
                 setActscriptWait ALLY_PETER,eas_Jump
                 setActscriptWait ALLY_PETER,eas_Jump
+				setFacing ALLY_31,LEFT
                 nextSingleText $80,ALLY_PETER ; "Mitula...you mean, somebody{N}gets to kiss her?{W1}"
                 csWait 10
                 shiver ALLY_SARAH
@@ -152,6 +166,7 @@ cs_62D0E:       textCursor 3967
                 endActions
                 setFacing ALLY_PETER,UP
                 setFacing ALLY_LUKE,UP
+				setFacing ALLY_31,UP
                 nextSingleText $0,129   ; "Are you sure?{N}Anybody disagree?{W1}"
                 setFacing ALLY_PETER,DOWN
                 csWait 60
@@ -167,6 +182,7 @@ cs_62D0E:       textCursor 3967
                  faceDown 1
                 endActions
                 setFacing ALLY_PETER,DOWN
+				setFacing ALLY_31,DOWN
                 setFacing ALLY_KAZIN,RIGHT
                 setFacing ALLY_LUKE,UP
                 setFacing ALLY_SHEELA,DOWN
@@ -188,6 +204,8 @@ cs_62D0E:       textCursor 3967
                 setFacing ALLY_CHESTER,DOWN
                 setFacing ALLY_KAZIN,DOWN
                 setFacing ALLY_SLADE,RIGHT
+				setFacing ALLY_30,RIGHT
+				setFacing ALLY_31,LEFT
                 setFacing ALLY_LUKE,LEFT
                 setFacing ALLY_SHEELA,RIGHT
                 setFacing ALLY_MAY,RIGHT
@@ -256,6 +274,7 @@ cs_62FB0:       textCursor 3987
                 setFacing ALLY_CHESTER,UP
                 setFacing ALLY_KAZIN,UP
                 setFacing ALLY_PETER,UP
+				setFacing ALLY_31,LEFT
                 setFacing ALLY_HIGINS,UP
                 setFacing ALLY_BOWIE,UP
                 nextText $80,ALLY_SARAH ; "M...me?  Well...{W2}"
@@ -285,6 +304,8 @@ cs_62FB0:       textCursor 3987
                 setFacing ALLY_KAZIN,DOWN
                 setFacing ALLY_JAHA,DOWN
                 setFacing ALLY_PETER,DOWN
+				setFacing ALLY_31,DOWN
+				setFacing ALLY_30,DOWN
                 setFacing ALLY_HIGINS,DOWN
                 entityActionsWait ALLY_SARAH
                  moveDown 8
@@ -353,6 +374,8 @@ cs_62FB0:       textCursor 3987
                 endActions
                 setFacing ALLY_JAHA,UP
                 setFacing ALLY_PETER,UP
+				setFacing ALLY_31,LEFT
+				setFacing ALLY_30,RIGHT
                 setFacing ALLY_CHESTER,UP
                 setFacing ALLY_LUKE,UP
                 setFacing ALLY_ROHDE,UP
@@ -369,6 +392,8 @@ cs_62FB0:       textCursor 3987
                 nextText $0,129         ; "You knew that?{N}{NAME;10}, you're smart.{W2}"
                 nextText $0,129         ; "But I didn't know what{N}{NAME;1} or {NAME;3} would do.{W2}I didn't want to hurt their{N}feelings.{W1}"
                 nextSingleText $0,129   ; "{LEADER}, I choose you.{W1}"
+				setFacing ALLY_31,UP
+				setFacing ALLY_30,UP
                 customActscriptWait 128
                  ac_setSpeed 16,16      ;   
                  ac_jump eas_Idle       ;   
@@ -380,6 +405,12 @@ cs_62FB0:       textCursor 3987
                 endActions
                 setFacing 129,UP
                 nextSingleText $80,128  ; "Now, {LEADER}.{N}Please go awaken her.{W1}"
+				jumpIfFlagClear 30,@PeterAbsent ; Otherwise infinite wait if Peter is out of the map!
+                entityActionsWait ALLY_30
+                 moveUp 1
+				 faceRight 1
+                endActions
+@PeterAbsent:
                 entityActionsWait 128
                  moveLeft 1
                  moveDown 1

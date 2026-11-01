@@ -11,6 +11,8 @@ ms_map19_flag543_Entities:
                 msFixedEntity 26, 12, RIGHT, ALLY_SHEELA, eas_Init
                 msFixedEntity 32, 13, LEFT, ALLY_CHAZ, eas_Init
                 msFixedEntity 25, 13, RIGHT, ALLY_ZYNK, eas_Init
+                msFixedEntity 25, 10, RIGHT, ALLY_30, eas_Init
+                msFixedEntity 33, 10, LEFT, ALLY_31, eas_Init
                 msFixedEntity 63, 63, RIGHT, ALLY_SARAH, eas_Init
                 msFixedEntity 63, 63, LEFT, ALLY_CHESTER, eas_Init
                 msFixedEntity 63, 63, UP, ALLY_JAHA, eas_Init

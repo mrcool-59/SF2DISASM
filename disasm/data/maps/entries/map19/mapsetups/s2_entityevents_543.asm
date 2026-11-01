@@ -11,6 +11,8 @@ ms_map19_flag543_EntityEvents:
                 msEntityEvent ALLY_SHEELA, UP, Map19_21F_EntityEvent6-ms_map19_flag543_EntityEvents
                 msEntityEvent ALLY_CHAZ, UP, Map19_21F_EntityEvent7-ms_map19_flag543_EntityEvents
                 msEntityEvent ALLY_ZYNK, UP, Map19_21F_EntityEvent8-ms_map19_flag543_EntityEvents
+                msEntityEvent ALLY_30, UP, Map19_21F_EntityEvent0_Extra-ms_map19_flag543_EntityEvents
+                msEntityEvent ALLY_31, UP, Map19_21F_EntityEvent1_Extra-ms_map19_flag543_EntityEvents
                 msEntityEvent 128, DOWN, Map19_21F_EntityEvent9-ms_map19_flag543_EntityEvents
                 msEntityEvent 130, DOWN, Map19_21F_EntityEvent10-ms_map19_flag543_EntityEvents
                 msEntityEvent 131, UP, Map19_21F_EntityEvent11-ms_map19_flag543_EntityEvents
@@ -59,11 +61,41 @@ Map19_21F_EntityEvent0:
 ; =============== S U B R O U T I N E =======================================
 
 
+Map19_21F_EntityEvent0_Extra:
+                
+                 
+				txt     4285			; "Hi, {LEADER}!{N}I hope you're well! I learned{N}there is a wedding today.{W2}{N}What a fun way to end my{N}vacations!{W1}"
+                rts
+
+    ; End of function Map19_21F_EntityEvent1
+
+
+; =============== S U B R O U T I N E =======================================
+
+
 Map19_21F_EntityEvent1:
                 
                  
                 txt     3948            ; "Hi, {LEADER}!{N}I'm serving Volcanon again.{W2}"
                 txt     3949            ; "I got an invitation to a{N}wedding party.{N}Who's getting married?{W1}"
+				
+				chkFlg  31
+				beq.s   @NoSunny
+				txt     4284			; "{NAME;31} came too! And she is{N}my awesome new neighbor now!{W1}"
+			@NoSunny:
+				
+                rts
+
+    ; End of function Map19_21F_EntityEvent1
+
+
+; =============== S U B R O U T I N E =======================================
+
+
+Map19_21F_EntityEvent1_Extra:
+                
+                 
+				txt     4283			; "Hi, {LEADER}! I moved to Bedoe,{N}next to {NAME;7}'s home.{N}We enjoy each other's company.{W1}"
                 rts
 
     ; End of function Map19_21F_EntityEvent1
