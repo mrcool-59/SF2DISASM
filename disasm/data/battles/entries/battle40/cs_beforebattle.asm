@@ -25,6 +25,7 @@ bbcs_40:        textCursor 3036
                 setPos ALLY_ZYNK,63,62,DOWN
 cs_4E544:       setBlocks 11,6,11,29,44,0
                 setBlocks 32,0,11,29,11,6
+                setBlocks (44+8),(0+26),(11-8),(29-26),(11+8),(6+26) ; Restore the cliff for cutscene (a 3x3 square is erroneously cut)
                 playSound MUSIC_STOP
                 fadeInB
                 cameraSpeed $30
