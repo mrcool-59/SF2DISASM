@@ -2192,7 +2192,7 @@ table_EnemyDefinitions:
                 maxMp    20
                 baseAtt  17
                 baseDef  12
-                baseAgi  (13+128)
+                baseAgi  (11+128)
                 baseMov  6
                 baseresistance WIND_WEAKNESS|LIGHTNING_NONE|ICE_MAJOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_MAJOR
                 baseProwess    CRITICAL_SILENCE|DOUBLE_1IN16|COUNTER_1IN16
@@ -2217,7 +2217,7 @@ table_EnemyDefinitions:
                 maxMp    0
                 baseAtt  38
                 baseDef  27
-                baseAgi  (25+128)
+                baseAgi  (20+128)
                 baseMov  4
                 baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_WEAKNESS|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
                 baseProwess    CRITICAL150_1IN4|DOUBLE_1IN8|COUNTER_1IN8
@@ -2242,7 +2242,7 @@ table_EnemyDefinitions:
                 maxMp    0
                 baseAtt  9
                 baseDef  32
-                baseAgi  (23+128)
+                baseAgi  (18+128)
                 baseMov  0
                 baseresistance WIND_MAJOR|LIGHTNING_MAJOR|ICE_MAJOR|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL150_1IN4|DOUBLE_1IN16|COUNTER_1IN8
@@ -2267,7 +2267,7 @@ table_EnemyDefinitions:
                 maxMp    15
                 baseAtt  23
                 baseDef  36
-                baseAgi  (33+128)
+                baseAgi  (26+128)
                 baseMov  2
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL125_1IN8|DOUBLE_1IN16|COUNTER_1IN32
@@ -2292,7 +2292,7 @@ table_EnemyDefinitions:
                 maxMp    0
                 baseAtt  50
                 baseDef  35
-                baseAgi  (37+128)
+                baseAgi  (30+128)
                 baseMov  6
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MAJOR
                 baseProwess    CRITICAL150_1IN4|DOUBLE_1IN16|COUNTER_1IN16
@@ -2317,7 +2317,7 @@ table_EnemyDefinitions:
                 maxMp    99
                 baseAtt  70
                 baseDef  50
-                baseAgi  (52+128)
+                baseAgi  (41+128)
                 baseMov  5
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_NONE|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL125_1IN8|DOUBLE_1IN16|COUNTER_1IN8
@@ -2342,7 +2342,7 @@ table_EnemyDefinitions:
                 maxMp    0
                 baseAtt  46
                 baseDef  55
-                baseAgi  (58+128)
+                baseAgi  (46+128)
                 baseMov  6
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL_POISON|DOUBLE_1IN8|COUNTER_1IN4
@@ -2392,7 +2392,7 @@ table_EnemyDefinitions:
                 maxMp    0
                 baseAtt  42
                 baseDef  65
-                baseAgi  (62+128)
+                baseAgi  (50+128)
                 baseMov  6
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL125_1IN4|DOUBLE_1IN4|COUNTER_1IN4
@@ -2417,7 +2417,7 @@ table_EnemyDefinitions:
                 maxMp    150
                 baseAtt  61
                 baseDef  53
-                baseAgi  (63+128)
+                baseAgi  (51+128)
                 baseMov  6
                 baseresistance WIND_MAJOR|LIGHTNING_MAJOR|ICE_MAJOR|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL_SLEEP|DOUBLE_1IN8|COUNTER_1IN8
@@ -2442,7 +2442,7 @@ table_EnemyDefinitions:
                 maxMp    100
                 baseAtt  61
                 baseDef  60
-                baseAgi  (67+128)
+                baseAgi  (54+128)
                 baseMov  6
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL_STUN|DOUBLE_1IN4|COUNTER_1IN4
@@ -2467,7 +2467,7 @@ table_EnemyDefinitions:
                 maxMp    200
                 baseAtt  45
                 baseDef  55
-                baseAgi  (80+128)
+                baseAgi  (63+128)
                 baseMov  6
                 baseresistance WIND_MAJOR|LIGHTNING_MAJOR|ICE_MAJOR|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL125_1IN8|DOUBLE_1IN8|COUNTER_1IN4
@@ -2492,7 +2492,7 @@ table_EnemyDefinitions:
                 maxMp    200
                 baseAtt  105
                 baseDef  40
-                baseAgi  (75+128)
+                baseAgi  (60+128)
                 baseMov  0
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL125_1IN4|DOUBLE_1IN4|COUNTER_1IN4
@@ -2617,7 +2617,7 @@ table_EnemyDefinitions:
                 maxMp    0
                 baseAtt  10
                 baseDef  12
-                baseAgi  (12+128)
+                baseAgi  (10+128)
                 baseMov  4
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL125_1IN16|DOUBLE_1IN16|COUNTER_1IN16
