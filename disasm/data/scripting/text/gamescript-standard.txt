@@ -223,7 +223,7 @@
 0221=00DD={CLEAR}Whatcha gonna do?
 0222=00DE=What should I call you?{W2}
 0223=00DF={NAME;0}....{N}Nice name, huh?{W2}
-0224=00E0=Now, good luck!{N}You have no time to waste!{W1}
+0224=00E0=Now, good luck!{N}You have no time to waste!{D2}{N}...And please enjoy the ride!{D2}
 0225=00E1=By the way, who are you?
 0226=00E2={NAME;0}, yes!  I knew it!{W2}
 0227=00E3=Copy?  Really?
@@ -233,8 +233,8 @@
 0231=00E7=Hee, hee!  It's gone!{W2}
 0232=00E8=I'll let you decide the{N}difficulty level at this time.
 0233=00E9=Takin' it easy, eh?{W2}
-0234=00EA=Hmm, good choice.{W2}
-0235=00EB=You're a brave person!{W2}
+0234=00EA=Hmm, good choice.{W2}{CLEAR}This is the intended experience{N}for a first playthrough.{W1}
+0235=00EB=You're a brave person!{W2}{CLEAR}This is the intended experience{N}for confirmed players.{W2}{CLEAR}Monsters will have:{N}12.5% higher base ATT and DEF{N}25% more HP and 50% more MP{W2}{N}Bosses don't get HP/MP boosts.{W1}
 0236=00EC=What?  Do you wanna die?!{W2}
 0237=00ED=Ooops!  Record {#} has{N}vanished!{W2}
 0238=00EE=Finally, you've fulfilled my{N}wish!{N}{D2}{D2}Thanks to you, I can{N}escape from this forest!{D2}{N}Are you really that{N}surprised?{D2}{D2}{D2}
@@ -369,7 +369,7 @@
 0367=016F={CLEAR}Hmmm... The light has deemed{N}you are not worthy yet.{N}(Progress the story more!){W2}
 0368=0170=x
 0369=0171={NAME} can't carry{N}the {ITEM}.{D2}{N}It will be sent to the Caravan.{D2}
-0370=0172=x
+0370=0172={CLEAR}You played through this story{N}once, well done!{N}{D1}Here is a little bonus for you...{W2}
 0371=0173={CLEAR}Oooh I almost forgot.{N}There is another important{N}character in this story.{W2}{CLEAR}You can rename him...{D1}{N}but this is a spoiler.{N}It is your choice, hee, hee, hee.{W2}{CLEAR}Do you want to rename the{N}new character? (spoiler)
 0372=0174=But smoke rose from{N}the {ITEM}.{D1}
 0373=0175=But a crack appears in the{N}{ITEM}.{D1}

@@ -211,10 +211,10 @@ table_PartySelectNames:
 
 ;
 table_DifficultyNames:
-                defineName "Normal"
-                defineName "Hard"
-                defineName "Super"
-                defineName "Ouch!!"
+                defineName "Normal (UNUSED)"
+                defineName "Chill (Hard)"
+                defineName "Spicy (Super)"
+                defineName "Ouch!! (UNUSED)"
 
 
 ;

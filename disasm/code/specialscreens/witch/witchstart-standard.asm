@@ -201,12 +201,20 @@ witchMenuAction_New:
 				moveq   #ALLY_PETER,d0
 				jsr     NameAlly
 @NoIxenRename:
+                btst    #7,(SAVE_FLAGS).l ; "Game completed" bit
+                beq.w   @NoSunnyRename
+
+				txt     370             ; "{CLEAR}You played through this story{N}once, well done!{N}{D1}Here is a little bonus for you...{W2}"
+                clsTxt
+				moveq   #ALLY_31,d0
+				jsr     NameAlly
+@NoSunnyRename:
                 bsr.w   CheatModeConfiguration
                 clsTxt
                 txt     232             ; "I'll let you decide the{N}difficulty level at this time."
-                clr.w   d0
-                moveq   #3,d1
-                moveq   #%1111,d2
+				moveq   #1,d0
+                moveq   #4,d1
+                moveq   #%0110,d2		; "NORMAL" and "OUCH" are removed
                 jsr     ExecuteWitchMainMenu
                 tst.w   d0
                 bpl.s   @loc_13
@@ -222,9 +230,9 @@ witchMenuAction_New:
                 setFlg  79              ; Difficulty bit 1
                 
 @loc_15:        addi.w  #233,d0 ; HARDCODED text index for difficulty choice reactions
-				sndCom  SOUND_COMMAND_FADE_OUT
                 jsr     (DisplayText).w
-                txt     224             ; "Now, good luck!{N}You have no time to waste!{W1}"
+				sndCom  SOUND_COMMAND_FADE_OUT
+                txt     224             ; "Now, good luck!{N}You have no time to waste!{D2}{N}...And please enjoy the ride!{D2}"
                 getCurrentSaveSlot d0
                 setSavedByte #GAMESTART_MAP, CURRENT_MAP
                 setSavedByte #GAMESTART_MAP, EGRESS_MAP

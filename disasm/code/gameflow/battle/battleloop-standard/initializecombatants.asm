@@ -388,10 +388,47 @@ AdjustEnemyBaseAttForDifficulty:
 @SuperDifficulty:
                 
                 clr.l   d1
-                jsr     j_GetBaseAtt
+                jsr     GetBaseAtt
+                mulu.w  #9,d1
+                lsr.l   #3,d1           ; if SPICY difficulty, multiply base ATT by an extra 1.125
+                jsr     SetBaseAtt
+				
+                clr.l   d1
+                jsr     GetBaseDef
+                mulu.w  #9,d1
+                lsr.l   #3,d1           ; if SPICY difficulty, multiply base DEF by 1.125
+                jsr     SetBaseDef
+
+				; The next adjustments are skipped for bosses
+                clr.l   d1
+                jsr     GetBaseAgi
+                cmpi.w  #TWO_TURN_THRESHOLD,d1
+				bpl.s   @Done
+
+                clr.l   d1
+                jsr     GetMaxHp
                 mulu.w  #5,d1
-                lsr.l   #2,d1           ; if SUPER difficulty, multiply base ATT by 1.25 a second time
-                jsr     j_SetBaseAtt
+                lsr.l   #2,d1           ; if SPICY difficulty, multiply HP by 1.25
+                jsr     SetMaxHp
+
+                clr.l   d1
+                jsr     GetCurrentHp
+                mulu.w  #5,d1
+                lsr.l   #2,d1           ; if SPICY difficulty, multiply HP by 1.25
+                jsr     SetCurrentHp
+
+                clr.l   d1
+                jsr     GetMaxMp
+                mulu.w  #3,d1
+                lsr.l   #1,d1           ; if SPICY difficulty, multiply MP by 1.50
+                jsr     SetMaxMp
+
+                clr.l   d1
+                jsr     GetCurrentMp
+                mulu.w  #3,d1
+                lsr.l   #1,d1           ; if SPICY difficulty, multiply MP by 1.50
+                jsr     SetCurrentMp
+                
 @Done:
                 
                 move.l  (sp)+,d1

@@ -345,8 +345,8 @@ pt_s_DifficultyMenu:
                 dc.l aSuper             
                 dc.l aOuch              
 aNorm_:         dc.b 'NORM.',0
-aHard:          dc.b 'HARD',0
-aSuper:         dc.b 'SUPER',0
+aHard:          dc.b 'CHILL',0,0 ; Careful with word alignment!
+aSuper:         dc.b 'SPICY',0
 aOuch:          dc.b 'OUCH!',0
                 dc.b $FF
 
