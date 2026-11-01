@@ -7,7 +7,7 @@ Music_4:		; Special case, these two musics are paired
 		db 0	; Must be zero
 		db 0	; DAC mode (0=YES, 1=NO)
 		db 0	; Reserved
-		db 0DFh	; YM Timer B (music tempo)
+		db 0BEh	; YM Timer B (music tempo)
 		dw Music_3_Channel_0
 		dw Music_3_Channel_1
 		dw Music_3_Channel_2
@@ -21,13 +21,13 @@ Music_4:		; Special case, these two musics are paired
 
 Music_3_Channel_0:
 		inst 201
-		vol 13
+		vol 15
 		vibrato 00h
 		setRelease 1
-		noteL D3,12
+		noteL D3,6
 		mainLoopStart
 		setRelease 1
-		noteL D3,12
+		noteL D3,6
 		note  D3
 		note  D3
 		note  D3
@@ -40,18 +40,18 @@ Music_3_Channel_0:
 		countedLoopStart 7
 		note  As2
 		countedLoopEnd
-		vibrato 2Ah
-		noteL As2,24
-		vibrato 00h
+		vibrato 25h
 		noteL As2,12
-		setRelease 13
-		noteL C3,24
+		vibrato 00h
+		noteL As2,6
+		setRelease 7
+		noteL C3,12
 		setRelease 1
-		noteL As2,12
-		vibrato 2Ah
-		noteL C3,24
+		noteL As2,6
+		vibrato 25h
+		noteL C3,12
 		vibrato 00h
-		noteL D3,12
+		noteL D3,6
 		countedLoopStart 6
 		note  D3
 		countedLoopEnd
@@ -64,39 +64,39 @@ Music_3_Channel_0:
 		countedLoopStart 7
 		note  As2
 		countedLoopEnd
-		vibrato 2Ah
-		noteL A2,36
+		vibrato 25h
+		noteL A2,18
 		vibrato 00h
-		setRelease 19
-		noteL A3,24
+		setRelease 10
+		noteL A3,12
 		setRelease 1
-		noteL D3,12
+		noteL D3,6
 		note  E3
 		note  A2
-		vibrato 2Ah
-		noteL D3,36
+		vibrato 25h
+		noteL D3,18
 		vibrato 00h
-		setRelease 19
-		noteL D4,24
+		setRelease 10
+		noteL D4,12
 		setRelease 1
-		noteL C3,12
-		vibrato 2Ah
-		noteL D3,24
-		vibrato 00h
-		noteL A2,36
-		setRelease 19
-		noteL A3,24
-		setRelease 1
+		noteL C3,6
+		vibrato 25h
 		noteL D3,12
+		vibrato 00h
+		noteL A2,18
+		setRelease 10
+		noteL A3,12
+		setRelease 1
+		noteL D3,6
 		note  E3
 		note  A2
-		vibrato 2Ah
-		noteL As2,36
+		vibrato 25h
+		noteL As2,18
 		vibrato 00h
-		setRelease 19
-		noteL As3,24
+		setRelease 10
+		noteL As3,12
 		setRelease 1
-		noteL A2,12
+		noteL A2,6
 		note  As2
 		note  D3
 		countedLoopStart 7
@@ -108,75 +108,75 @@ Music_3_Channel_0:
 		note  A2
 		note  A2
 		note  D3
-		vibrato 2Ah
-		noteL E3,24
+		vibrato 25h
+		noteL E3,12
 		vibrato 00h
 		note  G3
-		noteL E3,12
+		noteL E3,6
 		note  A3
 		note  A3
 		note  A3
-		setRelease 13
-		noteL A2,24
+		setRelease 7
+		noteL A2,12
 		setRelease 1
-		noteL A3,12
-		vibrato 2Ah
-		noteL A2,24
+		noteL A3,6
+		vibrato 25h
+		noteL A2,12
 		vibrato 00h
 		note  As2
-		noteL D3,12
+		noteL D3,6
 		note  F3
 		note  G2
-		setRelease 13
-		noteL G3,24
-		vibrato 2Ah
+		setRelease 7
+		noteL G3,12
+		vibrato 25h
 		setRelease 1
 		note  A2
 		vibrato 00h
-		noteL C3,12
+		noteL C3,6
 		note  E3
-		vibrato 2Ah
-		noteL D3,24
+		vibrato 25h
+		noteL D3,12
 		vibrato 00h
-		noteL C3,12
-		vibrato 2Ah
-		noteL D3,24
+		noteL C3,6
+		vibrato 25h
+		noteL D3,12
 		vibrato 00h
-		noteL G2,12
+		noteL G2,6
 		countedLoopStart 6
 		note  G2
 		countedLoopEnd
-		vibrato 2Ah
-		noteL A2,24
+		vibrato 25h
+		noteL A2,12
 		vibrato 00h
-		noteL A3,12
-		vibrato 2Ah
-		noteL E3,24
-		vibrato 00h
+		noteL A3,6
+		vibrato 25h
 		noteL E3,12
-		vibrato 2Ah
-		noteL A2,24
+		vibrato 00h
+		noteL E3,6
+		vibrato 25h
+		noteL A2,12
 		vibrato 00h
 		note  As2
-		noteL D3,12
+		noteL D3,6
 		note  F3
 		note  G2
-		setRelease 13
-		noteL G3,24
-		vibrato 2Ah
+		setRelease 7
+		noteL G3,12
+		vibrato 25h
 		setRelease 1
 		note  A2
 		vibrato 00h
-		noteL C3,12
+		noteL C3,6
 		note  E3
-		vibrato 2Ah
-		noteL D3,24
+		vibrato 25h
+		noteL D3,12
 		vibrato 00h
-		noteL C3,12
-		vibrato 2Ah
-		noteL D3,24
+		noteL C3,6
+		vibrato 25h
+		noteL D3,12
 		vibrato 00h
-		noteL G2,12
+		noteL G2,6
 		countedLoopStart 31
 		note  G2
 		countedLoopEnd
@@ -185,545 +185,545 @@ Music_3_Channel_0:
 		countedLoopEnd
 		note  As2
 		note  C3
-		vibrato 2Ah
-		noteL D3,24
+		vibrato 25h
+		noteL D3,12
 		vibrato 00h
 		note  F3
-		noteL D3,12
+		noteL D3,6
 		countedLoopStart 6
 		note  G3
 		countedLoopEnd
-		vibrato 2Ah
-		noteL Gs3,24
-		vibrato 00h
+		vibrato 25h
 		noteL Gs3,12
+		vibrato 00h
+		noteL Gs3,6
 		note  Gs3
 		note  Gs3
 		note  Gs3
 		note  Gs2
+		setRelease 7
+		noteL As2,12
 		setRelease 13
+		noteL C3,18
+		setRelease 19
 		noteL As2,24
-		setRelease 25
-		noteL C3,36
-		setRelease 37
-		noteL As2,48
-		vibrato 2Ah
+		vibrato 25h
 		setRelease 1
-		noteL F2,24
-		vibrato 00h
 		noteL F2,12
-		note  F2
-		note  F2
-		note  F2
-		vibrato 2Ah
-		noteL G2,36
 		vibrato 00h
-		setRelease 25
+		noteL F2,6
+		note  F2
+		note  F2
+		note  F2
+		vibrato 25h
+		noteL G2,18
+		vibrato 00h
+		setRelease 13
 		note  C3
-		setRelease 37
-		noteL As2,48
-		vibrato 2Ah
+		setRelease 19
+		noteL As2,24
+		vibrato 25h
 		setRelease 1
-		noteL Ds3,24
+		noteL Ds3,12
 		vibrato 00h
-		noteL D3,12
+		noteL D3,6
 		note  C3
-		vibrato 2Ah
-		noteL Fs2,36
+		vibrato 25h
+		noteL Fs2,18
 		vibrato 00h
-		noteL G2,24
-		setRelease 25
-		noteL C3,36
-		setRelease 37
-		noteL As2,48
-		vibrato 2Ah
+		noteL G2,12
+		setRelease 13
+		noteL C3,18
+		setRelease 19
+		noteL As2,24
+		vibrato 25h
 		setRelease 1
-		noteL F2,24
-		vibrato 00h
 		noteL F2,12
-		note  F2
-		note  F2
-		note  F2
-		vibrato 2Ah
-		noteL G2,36
 		vibrato 00h
-		setRelease 25
+		noteL F2,6
+		note  F2
+		note  F2
+		note  F2
+		vibrato 25h
+		noteL G2,18
+		vibrato 00h
+		setRelease 13
 		note  C3
-		setRelease 37
-		noteL As2,48
-		vibrato 2Ah
+		setRelease 19
+		noteL As2,24
+		vibrato 25h
 		setRelease 1
-		noteL Ds3,24
+		noteL Ds3,12
 		vibrato 00h
-		noteL D3,12
+		noteL D3,6
 		note  C3
-		vibrato 2Ah
-		noteL Gs2,60
+		vibrato 25h
+		noteL Gs2,30
 		vibrato 00h
-		setRelease 25
-		noteL C3,36
-		setRelease 37
-		noteL As2,48
-		vibrato 2Ah
+		setRelease 13
+		noteL C3,18
+		setRelease 19
+		noteL As2,24
+		vibrato 25h
 		setRelease 1
-		noteL F2,24
-		vibrato 00h
 		noteL F2,12
-		note  F2
-		note  F2
-		note  F2
-		vibrato 2Ah
-		noteL G2,36
 		vibrato 00h
-		setRelease 25
+		noteL F2,6
+		note  F2
+		note  F2
+		note  F2
+		vibrato 25h
+		noteL G2,18
+		vibrato 00h
+		setRelease 13
 		note  C3
-		setRelease 37
-		noteL As2,48
-		vibrato 2Ah
+		setRelease 19
+		noteL As2,24
+		vibrato 25h
 		setRelease 1
-		noteL Ds3,24
+		noteL Ds3,12
 		vibrato 00h
-		noteL D3,12
+		noteL D3,6
 		note  C3
-		vibrato 2Ah
-		noteL Fs2,36
+		vibrato 25h
+		noteL Fs2,18
 		vibrato 00h
-		noteL G2,24
-		setRelease 25
-		noteL C3,36
-		setRelease 37
-		noteL As2,48
-		vibrato 2Ah
+		noteL G2,12
+		setRelease 13
+		noteL C3,18
+		setRelease 19
+		noteL As2,24
+		vibrato 25h
 		setRelease 1
-		noteL F2,24
-		vibrato 00h
 		noteL F2,12
-		note  F2
-		note  F2
-		note  F2
-		vibrato 2Ah
-		noteL G2,36
 		vibrato 00h
-		setRelease 25
+		noteL F2,6
+		note  F2
+		note  F2
+		note  F2
+		vibrato 25h
+		noteL G2,18
+		vibrato 00h
+		setRelease 13
 		note  C3
-		setRelease 37
-		noteL As2,48
-		vibrato 2Ah
+		setRelease 19
+		noteL As2,24
+		vibrato 25h
 		setRelease 1
-		noteL Ds3,24
+		noteL Ds3,12
 		vibrato 00h
-		noteL D3,12
+		noteL D3,6
 		note  C3
-		vibrato 2Ah
-		noteL Gs2,24
+		vibrato 25h
+		noteL Gs2,12
 		vibrato 00h
-		noteL Fs2,12
+		noteL Fs2,6
 		note  G2
 		note  Gs2
 		note  A2
 		note  A2
 		note  D3
-		vibrato 2Ah
-		noteL E3,24
+		vibrato 25h
+		noteL E3,12
 		vibrato 00h
-		noteL D3,12
+		noteL D3,6
 		note  E3
 		note  G3
 		note  A3
 		note  G3
 		note  D3
-		vibrato 2Ah
-		noteL E3,24
+		vibrato 25h
+		noteL E3,12
 		vibrato 00h
-		noteL C3,12
+		noteL C3,6
 		note  G2
 		note  A2
 		note  As2
 		note  As2
 		note  E3
-		vibrato 2Ah
-		noteL F3,24
+		vibrato 25h
+		noteL F3,12
 		vibrato 00h
-		noteL D3,12
+		noteL D3,6
 		note  F3
 		note  A3
-		vibrato 2Ah
-		noteL As3,24
+		vibrato 25h
+		noteL As3,12
 		vibrato 00h
-		noteL D3,12
-		setRelease 7
+		noteL D3,6
+		setRelease 4
 		note  D4
 		setRelease 1
 		note  C3
-		setRelease 7
+		setRelease 4
 		note  C4
 		setRelease 1
 		note  As2
-		setRelease 7
+		setRelease 4
 		note  As3
 		setRelease 1
 		note  A2
 		note  A2
 		note  D3
-		vibrato 2Ah
-		noteL E3,24
+		vibrato 25h
+		noteL E3,12
 		vibrato 00h
-		noteL D3,12
+		noteL D3,6
 		note  E3
 		note  G3
 		note  A3
 		note  G3
 		note  D3
-		vibrato 2Ah
-		noteL E3,24
+		vibrato 25h
+		noteL E3,12
 		vibrato 00h
-		noteL C3,12
+		noteL C3,6
 		note  G2
 		note  A2
 		note  As2
 		note  As2
 		note  F3
-		vibrato 2Ah
-		noteL A3,24
+		vibrato 25h
+		noteL A3,12
 		vibrato 00h
-		noteL As3,12
+		noteL As3,6
 		note  D4
 		note  F3
 		note  G3
 		note  G3
 		note  G3
-		vibrato 2Ah
-		noteL A3,24
+		vibrato 25h
+		noteL A3,12
 		vibrato 00h
-		setRelease 7
-		noteL E3,12
-		vibrato 2Ah
+		setRelease 4
+		noteL E3,6
+		vibrato 25h
 		setRelease 1
-		noteL A2,24
+		noteL A2,12
 		vibrato 00h
-		noteL D3,12
+		noteL D3,6
 		mainLoopEnd
 Music_3_Channel_1:
 		inst 197
-		vol 10
+		vol 12
 		vibrato 00h
 		setRelease 1
-		noteL A4,60
+		noteL A4,30
 		mainLoopStart
 		setRelease 1
-		noteL C5,12
+		noteL C5,6
 		note  Cs5
-		vibrato 2Ah
-		noteL D5,24
+		vibrato 25h
+		noteL D5,12
 		vibrato 00h
 		note  C5
 		note  A4
-		noteL G4,12
+		noteL G4,6
 		note  F4
-		vibrato 2Ah
-		noteL E4,36
+		vibrato 25h
+		noteL E4,18
 		vibrato 00h
-		noteL F4,12
-		vibrato 2Ah
-		setRelease 13
-		noteL D4,144
+		noteL F4,6
+		vibrato 25h
+		setRelease 7
+		noteL D4,72
 		vibrato 00h
 		setRelease 1
-		noteL D4,12
-		vibrato 2Ah
-		noteL A4,60
+		noteL D4,6
+		vibrato 25h
+		noteL A4,30
 		vibrato 00h
-		noteL C5,12
+		noteL C5,6
 		note  Cs5
-		vibrato 2Ah
-		noteL D5,48
-		vibrato 00h
-		noteL D5,12
-		note  F5
-		vibrato 2Ah
-		noteL G5,24
-		vibrato 00h
-		noteL A5,36
-		noteL A5,24
-		noteL G5,12
-		note  F5
-		note  D5
-		setRelease 13
-		noteL G5,24
-		vibrato 2Ah
-		noteL F5,96
-		vibrato 00h
-		setRelease 1
-		noteL E5,12
-		note  F5
-		vibrato 2Ah
-		noteL E5,24
-		vibrato 00h
-		noteL C5,12
-		note  A4
-		vibrato 2Ah
+		vibrato 25h
 		noteL D5,24
 		vibrato 00h
-		noteL C5,12
+		noteL D5,6
+		note  F5
+		vibrato 25h
+		noteL G5,12
+		vibrato 00h
+		noteL A5,18
+		noteL A5,12
+		noteL G5,6
+		note  F5
+		note  D5
+		setRelease 7
+		noteL G5,12
+		vibrato 25h
+		noteL F5,48
+		vibrato 00h
+		setRelease 1
+		noteL E5,6
+		note  F5
+		vibrato 25h
+		noteL E5,12
+		vibrato 00h
+		noteL C5,6
 		note  A4
-		vibrato 2Ah
-		noteL C5,24
+		vibrato 25h
+		noteL D5,12
+		vibrato 00h
+		noteL C5,6
+		note  A4
+		vibrato 25h
+		noteL C5,12
 		vibrato 00h
 		note  D5
-		setRelease 13
+		setRelease 7
 		note  C5
 		setRelease 1
+		noteL E5,6
+		note  F5
+		vibrato 25h
 		noteL E5,12
-		note  F5
-		vibrato 2Ah
-		noteL E5,24
 		vibrato 00h
+		noteL F5,6
+		note  G5
+		vibrato 25h
+		noteL A5,12
+		vibrato 00h
+		noteL G5,6
+		note  D5
+		vibrato 25h
 		noteL F5,12
-		note  G5
-		vibrato 2Ah
-		noteL A5,24
 		vibrato 00h
-		noteL G5,12
-		note  D5
-		vibrato 2Ah
-		noteL F5,24
-		vibrato 00h
-		noteL D5,12
+		noteL D5,6
 		note  F5
 		note  D5
-		vibrato 2Ah
-		noteL A5,36
+		vibrato 25h
+		noteL A5,18
 		vibrato 00h
 		note  G5
-		noteL D5,24
-		noteL A5,36
+		noteL D5,12
+		noteL A5,18
 		note  G5
-		noteL D5,24
-		noteL E5,96
+		noteL D5,12
+		noteL E5,48
 		inst 198
-		vol 12
-		noteL B4,12
+		vol 13
+		noteL B4,6
 		note  B4
 		note  B4
-		setRelease 13
-		noteL Cs5,24
+		setRelease 7
+		noteL Cs5,12
 		inst 197
-		vol 11
+		vol 13
 		setRelease 1
-		noteL E5,12
+		noteL E5,6
 		note  F5
 		note  G5
-		vibrato 2Ah
-		noteL A5,24
+		vibrato 25h
+		noteL A5,12
 		vibrato 00h
-		noteL F5,12
+		noteL F5,6
 		note  D5
 		note  G5
-		setRelease 13
-		noteL F5,24
-		vibrato 2Ah
+		setRelease 7
+		noteL F5,12
+		vibrato 25h
 		setRelease 1
 		note  E5
 		vibrato 00h
-		noteL C5,12
+		noteL C5,6
 		note  A4
-		vibrato 2Ah
-		noteL D5,36
+		vibrato 25h
+		noteL D5,18
 		vibrato 00h
-		noteL A4,12
-		vibrato 2Ah
-		noteL G4,72
+		noteL A4,6
+		vibrato 25h
+		noteL G4,36
 		vibrato 00h
-		noteL F4,12
+		noteL F4,6
 		note  G4
-		vibrato 2Ah
-		setRelease 13
-		noteL A4,72
-		vibrato 00h
-		setRelease 1
-		noteL E5,12
-		note  F5
-		note  G5
-		vibrato 2Ah
-		noteL A5,24
-		vibrato 00h
-		noteL F5,12
-		note  D5
-		note  G5
-		setRelease 13
-		noteL F5,24
-		vibrato 2Ah
-		setRelease 1
-		note  E5
-		vibrato 00h
-		noteL C5,12
-		note  A4
-		vibrato 2Ah
-		noteL D5,36
-		vibrato 00h
-		noteL A4,12
-		vibrato 2Ah
-		noteL G4,168
-		vibrato 00h
-		noteL E4,12
-		note  F4
-		note  G4
-		vibrato 2Ah
+		vibrato 25h
+		setRelease 7
 		noteL A4,36
 		vibrato 00h
-		noteL G4,120
-		noteL E5,12
+		setRelease 1
+		noteL E5,6
 		note  F5
 		note  G5
-		vibrato 2Ah
-		noteL A5,36
+		vibrato 25h
+		noteL A5,12
 		vibrato 00h
-		noteL G5,120
-		noteL E5,12
-		note  F5
+		noteL F5,6
+		note  D5
 		note  G5
-		vibrato 2Ah
-		noteL A5,24
-		vibrato 00h
-		noteL G5,12
-		vibrato 2Ah
-		noteL A5,24
-		vibrato 00h
-		noteL As5,12
-		note  A5
 		setRelease 7
-		noteL G5,24
+		noteL F5,12
+		vibrato 25h
+		setRelease 1
+		note  E5
+		vibrato 00h
+		noteL C5,6
+		note  A4
+		vibrato 25h
+		noteL D5,18
+		vibrato 00h
+		noteL A4,6
+		vibrato 25h
+		noteL G4,84
+		vibrato 00h
+		noteL E4,6
+		note  F4
+		note  G4
+		vibrato 25h
+		noteL A4,18
+		vibrato 00h
+		noteL G4,60
+		noteL E5,6
+		note  F5
+		note  G5
+		vibrato 25h
+		noteL A5,18
+		vibrato 00h
+		noteL G5,60
+		noteL E5,6
+		note  F5
+		note  G5
+		vibrato 25h
+		noteL A5,12
+		vibrato 00h
+		noteL G5,6
+		vibrato 25h
+		noteL A5,12
+		vibrato 00h
+		noteL As5,6
+		note  A5
+		setRelease 4
 		noteL G5,12
+		noteL G5,6
 		note  G5
 		note  G5
-		setRelease 43
-		noteL G5,48
+		setRelease 22
+		noteL G5,24
 		inst 198
-		vol 11
-		setRelease 25
-		noteL C5,36
-		setRelease 37
-		noteL As4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F4,24
-		vibrato 00h
-		noteL F4,12
-		note  F4
-		note  F4
-		note  F4
-		vibrato 2Ah
-		noteL G4,36
-		vibrato 00h
-		setRelease 25
-		note  C5
-		setRelease 37
-		noteL As4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL Ds5,24
-		vibrato 00h
-		noteL D5,12
-		note  C5
-		vibrato 2Ah
-		noteL Fs4,36
-		vibrato 00h
-		noteL G4,24
-		setRelease 25
-		noteL C5,36
-		setRelease 37
-		noteL As4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F4,24
-		vibrato 00h
-		noteL F4,12
-		note  F4
-		note  F4
-		note  F4
-		vibrato 2Ah
-		noteL G4,36
-		vibrato 00h
-		setRelease 25
-		note  C5
-		setRelease 37
-		noteL As4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL Ds5,24
-		vibrato 00h
-		noteL D5,12
-		note  C5
+		vol 13
 		setRelease 13
-		noteL Gs4,24
-		vibrato 2Ah
+		noteL C5,18
+		setRelease 19
+		noteL As4,24
+		vibrato 25h
 		setRelease 1
-		noteL Gs5,36
-		vibrato 00h
-		setRelease 25
-		note  C5
-		setRelease 37
-		noteL As4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F4,24
-		vibrato 00h
 		noteL F4,12
+		vibrato 00h
+		noteL F4,6
 		note  F4
 		note  F4
 		note  F4
-		vibrato 2Ah
-		noteL G4,36
+		vibrato 25h
+		noteL G4,18
 		vibrato 00h
-		setRelease 25
-		note  C5
-		setRelease 37
-		noteL As4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL Ds5,24
-		vibrato 00h
-		noteL D5,12
-		note  C5
-		vibrato 2Ah
-		noteL Fs4,36
-		vibrato 00h
-		noteL G4,24
-		setRelease 25
-		noteL C5,36
-		setRelease 37
-		noteL As4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F4,24
-		vibrato 00h
-		noteL F4,12
-		note  F4
-		note  F4
-		note  F4
-		vibrato 2Ah
-		noteL G4,36
-		vibrato 00h
-		setRelease 25
-		note  C5
-		setRelease 37
-		noteL As4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL Ds5,24
-		vibrato 00h
-		noteL D5,12
-		note  C5
 		setRelease 13
-		noteL Gs4,24
-		vibrato 2Ah
+		note  C5
+		setRelease 19
+		noteL As4,24
+		vibrato 25h
 		setRelease 1
-		noteL Gs5,36
+		noteL Ds5,12
+		vibrato 00h
+		noteL D5,6
+		note  C5
+		vibrato 25h
+		noteL Fs4,18
+		vibrato 00h
+		noteL G4,12
+		setRelease 13
+		noteL C5,18
+		setRelease 19
+		noteL As4,24
+		vibrato 25h
+		setRelease 1
+		noteL F4,12
+		vibrato 00h
+		noteL F4,6
+		note  F4
+		note  F4
+		note  F4
+		vibrato 25h
+		noteL G4,18
+		vibrato 00h
+		setRelease 13
+		note  C5
+		setRelease 19
+		noteL As4,24
+		vibrato 25h
+		setRelease 1
+		noteL Ds5,12
+		vibrato 00h
+		noteL D5,6
+		note  C5
+		setRelease 7
+		noteL Gs4,12
+		vibrato 25h
+		setRelease 1
+		noteL Gs5,18
+		vibrato 00h
+		setRelease 13
+		note  C5
+		setRelease 19
+		noteL As4,24
+		vibrato 25h
+		setRelease 1
+		noteL F4,12
+		vibrato 00h
+		noteL F4,6
+		note  F4
+		note  F4
+		note  F4
+		vibrato 25h
+		noteL G4,18
+		vibrato 00h
+		setRelease 13
+		note  C5
+		setRelease 19
+		noteL As4,24
+		vibrato 25h
+		setRelease 1
+		noteL Ds5,12
+		vibrato 00h
+		noteL D5,6
+		note  C5
+		vibrato 25h
+		noteL Fs4,18
+		vibrato 00h
+		noteL G4,12
+		setRelease 13
+		noteL C5,18
+		setRelease 19
+		noteL As4,24
+		vibrato 25h
+		setRelease 1
+		noteL F4,12
+		vibrato 00h
+		noteL F4,6
+		note  F4
+		note  F4
+		note  F4
+		vibrato 25h
+		noteL G4,18
+		vibrato 00h
+		setRelease 13
+		note  C5
+		setRelease 19
+		noteL As4,24
+		vibrato 25h
+		setRelease 1
+		noteL Ds5,12
+		vibrato 00h
+		noteL D5,6
+		note  C5
+		setRelease 7
+		noteL Gs4,12
+		vibrato 25h
+		setRelease 1
+		noteL Gs5,18
 		stereo 80h
 		inst 203
-		vol 9
+		vol 11
 		vibrato 00h
-		noteL A5,6
+		noteL A5,3
 		countedLoopStart 26
 		note  A5
 		stereo 40h
@@ -738,715 +738,715 @@ Music_3_Channel_1:
 		note  A5
 		stereo 0C0h
 		inst 198
-		vol 13
-		vibrato 2Ah
-		noteL As4,36
+		vol 15
+		vibrato 25h
+		noteL As4,18
 		vibrato 00h
-		noteL C5,60
+		noteL C5,30
 		inst 197
-		vol 10
+		vol 12
 		note  A4
 		mainLoopEnd
 Music_3_Channel_2:
-		waitL 24
+		waitL 12
 		mainLoopStart
 		stereo 40h
 		inst 198
-		vol 10
-		vibrato 2Ah
+		vol 12
+		vibrato 25h
 		setRelease 1
-		noteL F5,24
-		vibrato 00h
 		noteL F5,12
-		setRelease 13
-		noteL D5,24
-		setRelease 1
-		noteL C5,12
-		vibrato 2Ah
-		noteL D5,24
 		vibrato 00h
-		noteL C5,12
-		setRelease 13
-		noteL D5,24
+		noteL F5,6
+		setRelease 7
+		noteL D5,12
 		setRelease 1
-		noteL C5,12
-		setRelease 37
-		noteL D5,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F5,24
+		noteL C5,6
+		vibrato 25h
+		noteL D5,12
 		vibrato 00h
+		noteL C5,6
+		setRelease 7
+		noteL D5,12
+		setRelease 1
+		noteL C5,6
+		setRelease 19
+		noteL D5,24
+		vibrato 25h
+		setRelease 1
 		noteL F5,12
-		setRelease 13
-		noteL D5,24
-		setRelease 1
-		noteL C5,12
-		vibrato 2Ah
-		noteL D5,24
 		vibrato 00h
-		noteL As5,12
-		setRelease 13
+		noteL F5,6
+		setRelease 7
+		noteL D5,12
+		setRelease 1
+		noteL C5,6
+		vibrato 25h
+		noteL D5,12
+		vibrato 00h
+		noteL As5,6
+		setRelease 7
+		noteL C6,12
+		setRelease 1
+		noteL As5,6
+		setRelease 19
 		noteL C6,24
+		vibrato 25h
 		setRelease 1
-		noteL As5,12
-		setRelease 37
-		noteL C6,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F5,24
-		vibrato 00h
 		noteL F5,12
-		setRelease 13
-		noteL D5,24
-		setRelease 1
-		noteL C5,12
-		vibrato 2Ah
-		noteL D5,24
 		vibrato 00h
-		noteL C5,12
-		setRelease 13
+		noteL F5,6
+		setRelease 7
+		noteL D5,12
+		setRelease 1
+		noteL C5,6
+		vibrato 25h
+		noteL D5,12
+		vibrato 00h
+		noteL C5,6
+		setRelease 7
+		noteL D5,12
+		setRelease 1
+		noteL C5,6
+		setRelease 19
 		noteL D5,24
+		vibrato 25h
 		setRelease 1
-		noteL C5,12
-		setRelease 37
-		noteL D5,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F5,24
+		noteL F5,12
 		vibrato 00h
 		note  D5
-		noteL C5,12
-		setRelease 13
-		noteL D5,24
-		vibrato 2Ah
+		noteL C5,6
+		setRelease 7
+		noteL D5,12
+		vibrato 25h
 		setRelease 1
 		note  D5
 		vibrato 00h
-		setRelease 13
+		setRelease 7
 		note  F5
 		setRelease 1
-		noteL F5,12
-		vibrato 2Ah
-		noteL As5,24
+		noteL F5,6
+		vibrato 25h
+		noteL As5,12
 		inst 107
-		vol 10
+		vol 12
 		vibrato 00h
-		noteL E4,72
-		noteL E4,24
 		noteL E4,36
-		noteL F4,24
+		noteL E4,12
+		noteL E4,18
+		noteL F4,12
 		inst 198
-		vol 11
-		noteL D6,36
+		vol 13
+		noteL D6,18
 		inst 107
-		vol 10
-		noteL E4,72
-		noteL E4,24
+		vol 12
 		noteL E4,36
-		noteL D4,24
+		noteL E4,12
+		noteL E4,18
+		noteL D4,12
 		inst 198
-		vol 11
-		noteL D6,36
+		vol 13
+		noteL D6,18
 		inst 202
-		vol 11
-		noteL D5,24
-		noteL C5,12
-		vibrato 2Ah
-		noteL D5,24
+		vol 13
+		noteL D5,12
+		noteL C5,6
+		vibrato 25h
+		noteL D5,12
 		vibrato 00h
-		noteL As4,12
-		vibrato 2Ah
-		noteL D5,24
-		vibrato 00h
-		note  D5
-		noteL Cs5,12
-		vibrato 2Ah
-		noteL D5,24
-		vibrato 00h
-		noteL B4,12
-		vibrato 2Ah
-		noteL D5,24
+		noteL As4,6
+		vibrato 25h
+		noteL D5,12
 		vibrato 00h
 		note  D5
-		noteL A4,12
-		setRelease 13
-		noteL D5,24
+		noteL Cs5,6
+		vibrato 25h
+		noteL D5,12
+		vibrato 00h
+		noteL B4,6
+		vibrato 25h
+		noteL D5,12
+		vibrato 00h
+		note  D5
+		noteL A4,6
+		setRelease 7
+		noteL D5,12
 		setRelease 1
-		noteL A4,12
-		vibrato 2Ah
-		noteL D5,24
+		noteL A4,6
+		vibrato 25h
+		noteL D5,12
 		stereo 0C0h
 		inst 198
-		vol 11
+		vol 13
 		vibrato 00h
-		noteL G4,12
+		noteL G4,6
 		note  G4
 		note  G4
-		setRelease 25
-		noteL A4,36
-		vibrato 2Ah
-		setRelease 1
-		noteL Cs5,24
-		stereo 40h
-		inst 200
-		vol 11
-		vibrato 00h
-		noteL F4,48
-		noteL D4,36
-		noteL C4,48
 		setRelease 13
-		noteL D4,72
-		inst 199
-		vol 11
-		setRelease 1
-		noteL As4,12
-		note  C5
-		vibrato 2Ah
-		setRelease 13
-		noteL D5,72
-		vibrato 00h
+		noteL A4,18
+		vibrato 25h
 		setRelease 1
 		noteL Cs5,12
-		note  D5
-		vibrato 2Ah
-		noteL E5,36
+		stereo 40h
 		inst 200
-		vol 10
+		vol 13
 		vibrato 00h
-		noteL A4,24
-		noteL F4,48
+		noteL F4,24
+		noteL D4,18
+		noteL C4,24
+		setRelease 7
 		noteL D4,36
-		noteL C4,48
-		noteL D4,60
-		noteL D6,24
+		inst 199
+		vol 13
+		setRelease 1
+		noteL As4,6
+		note  C5
+		vibrato 25h
+		setRelease 7
+		noteL D5,36
+		vibrato 00h
+		setRelease 1
+		noteL Cs5,6
+		note  D5
+		vibrato 25h
+		noteL E5,18
+		inst 200
+		vol 12
+		vibrato 00h
+		noteL A4,12
+		noteL F4,24
+		noteL D4,18
+		noteL C4,24
+		noteL D4,30
+		noteL D6,12
 		countedLoopStart 22
 		note  D6
 		countedLoopEnd
 		inst 19
-		vol 9
-		note  F5
-		noteL E5,12
-		vibrato 2Ah
-		noteL F5,24
-		vibrato 00h
-		noteL G5,12
-		note  F5
-		setRelease 7
-		noteL Ds5,24
-		noteL Ds5,12
-		note  Ds5
-		note  Ds5
-		setRelease 43
-		noteL Ds5,48
-		inst 198
 		vol 11
-		setRelease 25
-		noteL G4,36
-		setRelease 37
-		noteL F4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL C4,24
+		note  F5
+		noteL E5,6
+		vibrato 25h
+		noteL F5,12
 		vibrato 00h
-		noteL C4,12
-		note  C4
-		note  C4
-		note  C4
-		vibrato 2Ah
-		noteL D4,36
-		vibrato 00h
-		setRelease 25
-		note  G4
-		setRelease 37
-		noteL F4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL As4,24
-		vibrato 00h
-		noteL A4,12
-		note  G4
-		vibrato 2Ah
-		noteL Cs4,36
-		vibrato 00h
-		noteL D4,24
-		setRelease 25
-		noteL G4,36
-		setRelease 37
-		noteL F4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL C4,24
-		vibrato 00h
-		noteL C4,12
-		note  C4
-		note  C4
-		note  C4
-		vibrato 2Ah
-		noteL D4,36
-		vibrato 00h
-		setRelease 25
-		note  G4
-		setRelease 37
-		noteL F4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL As4,24
-		vibrato 00h
-		noteL A4,12
-		note  G4
+		noteL G5,6
+		note  F5
+		setRelease 4
+		noteL Ds5,12
+		noteL Ds5,6
+		note  Ds5
+		note  Ds5
+		setRelease 22
+		noteL Ds5,24
+		inst 198
+		vol 13
 		setRelease 13
-		noteL Ds4,24
-		vibrato 2Ah
+		noteL G4,18
+		setRelease 19
+		noteL F4,24
+		vibrato 25h
 		setRelease 1
-		noteL Ds5,36
-		vibrato 00h
-		setRelease 25
-		note  G4
-		setRelease 37
-		noteL F4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL C4,24
-		vibrato 00h
 		noteL C4,12
+		vibrato 00h
+		noteL C4,6
 		note  C4
 		note  C4
 		note  C4
-		vibrato 2Ah
-		noteL D4,36
+		vibrato 25h
+		noteL D4,18
 		vibrato 00h
-		setRelease 25
-		note  G4
-		setRelease 37
-		noteL F4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL As4,24
-		vibrato 00h
-		noteL A4,12
-		note  G4
-		vibrato 2Ah
-		noteL Cs4,36
-		vibrato 00h
-		noteL D4,24
-		setRelease 25
-		noteL G4,36
-		setRelease 37
-		noteL F4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL C4,24
-		vibrato 00h
-		noteL C4,12
-		note  C4
-		note  C4
-		note  C4
-		vibrato 2Ah
-		noteL D4,36
-		vibrato 00h
-		setRelease 25
-		note  G4
-		setRelease 37
-		noteL F4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL As4,24
-		vibrato 00h
-		noteL A4,12
-		note  G4
 		setRelease 13
-		noteL Ds4,24
-		vibrato 2Ah
+		note  G4
+		setRelease 19
+		noteL F4,24
+		vibrato 25h
 		setRelease 1
-		noteL Ds5,36
+		noteL As4,12
+		vibrato 00h
+		noteL A4,6
+		note  G4
+		vibrato 25h
+		noteL Cs4,18
+		vibrato 00h
+		noteL D4,12
+		setRelease 13
+		noteL G4,18
+		setRelease 19
+		noteL F4,24
+		vibrato 25h
+		setRelease 1
+		noteL C4,12
+		vibrato 00h
+		noteL C4,6
+		note  C4
+		note  C4
+		note  C4
+		vibrato 25h
+		noteL D4,18
+		vibrato 00h
+		setRelease 13
+		note  G4
+		setRelease 19
+		noteL F4,24
+		vibrato 25h
+		setRelease 1
+		noteL As4,12
+		vibrato 00h
+		noteL A4,6
+		note  G4
+		setRelease 7
+		noteL Ds4,12
+		vibrato 25h
+		setRelease 1
+		noteL Ds5,18
+		vibrato 00h
+		setRelease 13
+		note  G4
+		setRelease 19
+		noteL F4,24
+		vibrato 25h
+		setRelease 1
+		noteL C4,12
+		vibrato 00h
+		noteL C4,6
+		note  C4
+		note  C4
+		note  C4
+		vibrato 25h
+		noteL D4,18
+		vibrato 00h
+		setRelease 13
+		note  G4
+		setRelease 19
+		noteL F4,24
+		vibrato 25h
+		setRelease 1
+		noteL As4,12
+		vibrato 00h
+		noteL A4,6
+		note  G4
+		vibrato 25h
+		noteL Cs4,18
+		vibrato 00h
+		noteL D4,12
+		setRelease 13
+		noteL G4,18
+		setRelease 19
+		noteL F4,24
+		vibrato 25h
+		setRelease 1
+		noteL C4,12
+		vibrato 00h
+		noteL C4,6
+		note  C4
+		note  C4
+		note  C4
+		vibrato 25h
+		noteL D4,18
+		vibrato 00h
+		setRelease 13
+		note  G4
+		setRelease 19
+		noteL F4,24
+		vibrato 25h
+		setRelease 1
+		noteL As4,12
+		vibrato 00h
+		noteL A4,6
+		note  G4
+		setRelease 7
+		noteL Ds4,12
+		vibrato 25h
+		setRelease 1
+		noteL Ds5,18
 		stereo 0C0h
 		inst 197
-		vol 11
-		vibrato 00h
-		noteL E4,48
-		noteL G4,12
-		setRelease 13
-		noteL B4,24
-		note  G4
-		vibrato 2Ah
-		setRelease 1
-		noteL E4,36
+		vol 13
 		vibrato 00h
 		noteL E4,24
+		noteL G4,6
+		setRelease 7
+		noteL B4,12
 		note  G4
-		noteL E4,36
-		noteL D4,156
-		noteL E4,48
-		noteL G4,12
-		setRelease 13
-		noteL B4,24
-		note  G4
-		vibrato 2Ah
+		vibrato 25h
 		setRelease 1
-		noteL E4,36
+		noteL E4,18
 		vibrato 00h
-		noteL E4,24
+		noteL E4,12
 		note  G4
-		noteL G4,36
-		noteL A4,60
+		noteL E4,18
+		noteL D4,78
+		noteL E4,24
+		noteL G4,6
+		setRelease 7
+		noteL B4,12
+		note  G4
+		vibrato 25h
+		setRelease 1
+		noteL E4,18
+		vibrato 00h
+		noteL E4,12
+		note  G4
+		noteL G4,18
+		noteL A4,30
 		inst 198
-		vol 12
-		noteL F4,36
-		setRelease 25
-		noteL G4,84
+		vol 13
+		noteL F4,18
+		setRelease 13
+		noteL G4,42
 		mainLoopEnd
 Music_3_Channel_3:
-		waitL 24
+		waitL 12
 		mainLoopStart
 		stereo 80h
 		inst 198
-		vol 10
-		vibrato 2Ah
+		vol 12
+		vibrato 25h
 		setRelease 1
-		noteL C5,24
-		vibrato 00h
 		noteL C5,12
-		setRelease 13
-		noteL A4,24
-		setRelease 1
-		noteL G4,12
-		vibrato 2Ah
-		noteL A4,24
 		vibrato 00h
-		noteL G4,12
-		setRelease 13
-		noteL A4,24
+		noteL C5,6
+		setRelease 7
+		noteL A4,12
 		setRelease 1
-		noteL G4,12
-		setRelease 37
-		noteL A4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL C5,24
+		noteL G4,6
+		vibrato 25h
+		noteL A4,12
 		vibrato 00h
+		noteL G4,6
+		setRelease 7
+		noteL A4,12
+		setRelease 1
+		noteL G4,6
+		setRelease 19
+		noteL A4,24
+		vibrato 25h
+		setRelease 1
 		noteL C5,12
-		setRelease 13
-		noteL A4,24
-		setRelease 1
-		noteL G4,12
-		vibrato 2Ah
-		noteL A4,24
 		vibrato 00h
-		noteL F5,12
-		setRelease 13
+		noteL C5,6
+		setRelease 7
+		noteL A4,12
+		setRelease 1
+		noteL G4,6
+		vibrato 25h
+		noteL A4,12
+		vibrato 00h
+		noteL F5,6
+		setRelease 7
+		noteL E5,12
+		setRelease 1
+		noteL F5,6
+		setRelease 19
 		noteL E5,24
+		vibrato 25h
 		setRelease 1
-		noteL F5,12
-		setRelease 37
-		noteL E5,48
-		vibrato 2Ah
-		setRelease 1
-		noteL C5,24
-		vibrato 00h
 		noteL C5,12
-		setRelease 13
-		noteL A4,24
-		setRelease 1
-		noteL G4,12
-		vibrato 2Ah
-		noteL A4,24
 		vibrato 00h
-		noteL G4,12
-		setRelease 13
-		noteL A4,24
+		noteL C5,6
+		setRelease 7
+		noteL A4,12
 		setRelease 1
-		noteL G4,12
-		setRelease 37
-		noteL A4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL D5,24
+		noteL G4,6
+		vibrato 25h
+		noteL A4,12
 		vibrato 00h
-		note  A4
-		noteL G4,12
-		setRelease 13
-		noteL A4,24
-		vibrato 2Ah
+		noteL G4,6
+		setRelease 7
+		noteL A4,12
 		setRelease 1
-		note  As4
-		vibrato 00h
-		setRelease 13
-		note  D5
+		noteL G4,6
+		setRelease 19
+		noteL A4,24
+		vibrato 25h
 		setRelease 1
 		noteL D5,12
-		vibrato 2Ah
-		noteL D5,24
-		inst 107
-		vol 10
 		vibrato 00h
-		noteL C4,72
-		noteL C4,24
-		noteL C4,60
-		inst 198
-		vol 10
-		noteL F5,36
-		inst 107
-		vol 10
-		noteL C4,72
-		noteL C4,24
-		noteL C4,36
-		noteL As3,24
-		inst 198
-		vol 11
-		noteL F5,36
-		inst 202
-		vol 11
+		note  A4
+		noteL G4,6
+		setRelease 7
+		noteL A4,12
+		vibrato 25h
+		setRelease 1
 		note  As4
-		noteL As4,24
-		noteL G4,12
-		vibrato 2Ah
-		noteL As4,24
 		vibrato 00h
-		noteL B4,36
-		noteL B4,24
-		noteL G4,12
-		vibrato 2Ah
-		noteL B4,24
+		setRelease 7
+		note  D5
+		setRelease 1
+		noteL D5,6
+		vibrato 25h
+		noteL D5,12
+		inst 107
+		vol 12
+		vibrato 00h
+		noteL C4,36
+		noteL C4,12
+		noteL C4,30
+		inst 198
+		vol 12
+		noteL F5,18
+		inst 107
+		vol 12
+		noteL C4,36
+		noteL C4,12
+		noteL C4,18
+		noteL As3,12
+		inst 198
+		vol 13
+		noteL F5,18
+		inst 202
+		vol 13
+		note  As4
+		noteL As4,12
+		noteL G4,6
+		vibrato 25h
+		noteL As4,12
+		vibrato 00h
+		noteL B4,18
+		noteL B4,12
+		noteL G4,6
+		vibrato 25h
+		noteL B4,12
 		vibrato 00h
 		note  G4
-		noteL D4,12
-		setRelease 13
-		noteL G4,24
+		noteL D4,6
+		setRelease 7
+		noteL G4,12
 		setRelease 1
-		noteL D4,12
-		vibrato 2Ah
-		noteL G4,24
+		noteL D4,6
+		vibrato 25h
+		noteL G4,12
 		stereo 0C0h
 		inst 198
-		vol 11
+		vol 13
 		vibrato 00h
-		noteL D4,12
+		noteL D4,6
 		note  D4
 		note  D4
-		setRelease 25
-		noteL E4,36
-		vibrato 2Ah
+		setRelease 13
+		noteL E4,18
+		vibrato 25h
 		setRelease 1
-		noteL A4,24
+		noteL A4,12
 		stereo 80h
 		inst 200
-		vol 11
+		vol 13
 		vibrato 00h
-		noteL D4,48
-		noteL As3,36
-		noteL A3,48
-		noteL F3,60
-		noteL D4,36
-		noteL E4,24
-		noteL D4,12
-		vibrato 2Ah
-		noteL E4,24
+		noteL D4,24
+		noteL As3,18
+		noteL A3,24
+		noteL F3,30
+		noteL D4,18
+		noteL E4,12
+		noteL D4,6
+		vibrato 25h
+		noteL E4,12
 		vibrato 00h
-		noteL F4,12
+		noteL F4,6
 		note  E4
 		note  D4
-		vibrato 2Ah
-		noteL Cs4,60
+		vibrato 25h
+		noteL Cs4,30
 		vibrato 00h
-		noteL D4,48
-		noteL As3,36
-		noteL A3,48
-		noteL F3,60
-		noteL A5,24
+		noteL D4,24
+		noteL As3,18
+		noteL A3,24
+		noteL F3,30
+		noteL A5,12
 		countedLoopStart 10
 		note  A5
 		countedLoopEnd
-		noteL A6,36
-		noteL G6,60
-		noteL A5,24
+		noteL A6,18
+		noteL G6,30
+		noteL A5,12
 		note  A5
 		note  A5
 		note  A5
-		noteL A6,36
-		noteL G6,60
-		noteL D5,36
-		noteL D5,48
-		setRelease 7
-		noteL C5,24
+		noteL A6,18
+		noteL G6,30
+		noteL D5,18
+		noteL D5,24
+		setRelease 4
 		noteL C5,12
+		noteL C5,6
 		note  C5
 		note  C5
-		setRelease 43
-		noteL C5,48
+		setRelease 22
+		noteL C5,24
 		inst 198
-		vol 11
-		setRelease 25
-		noteL D4,36
-		setRelease 37
-		noteL C4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL G3,24
-		vibrato 00h
-		noteL G3,12
-		note  G3
-		note  G3
-		note  G3
-		vibrato 2Ah
-		noteL A3,36
-		vibrato 00h
-		setRelease 25
-		note  D4
-		setRelease 37
-		noteL C4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F4,24
-		vibrato 00h
-		noteL E4,12
-		note  D4
-		vibrato 2Ah
-		noteL Gs3,36
-		vibrato 00h
-		noteL A3,24
-		setRelease 25
-		noteL D4,36
-		setRelease 37
-		noteL C4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL G3,24
-		vibrato 00h
-		noteL G3,12
-		note  G3
-		note  G3
-		note  G3
-		vibrato 2Ah
-		noteL A3,36
-		vibrato 00h
-		setRelease 25
-		note  D4
-		setRelease 37
-		noteL C4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F4,24
-		vibrato 00h
-		noteL E4,12
-		note  D4
+		vol 13
 		setRelease 13
-		noteL As3,24
-		vibrato 2Ah
+		noteL D4,18
+		setRelease 19
+		noteL C4,24
+		vibrato 25h
 		setRelease 1
-		noteL As4,36
-		vibrato 00h
-		setRelease 25
-		note  D4
-		setRelease 37
-		noteL C4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL G3,24
-		vibrato 00h
 		noteL G3,12
+		vibrato 00h
+		noteL G3,6
 		note  G3
 		note  G3
 		note  G3
-		vibrato 2Ah
-		noteL A3,36
+		vibrato 25h
+		noteL A3,18
 		vibrato 00h
-		setRelease 25
-		note  D4
-		setRelease 37
-		noteL C4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F4,24
-		vibrato 00h
-		noteL E4,12
-		note  D4
-		vibrato 2Ah
-		noteL Gs3,36
-		vibrato 00h
-		noteL A3,24
-		setRelease 25
-		noteL D4,36
-		setRelease 37
-		noteL C4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL G3,24
-		vibrato 00h
-		noteL G3,12
-		note  G3
-		note  G3
-		note  G3
-		vibrato 2Ah
-		noteL A3,36
-		vibrato 00h
-		setRelease 25
-		note  D4
-		setRelease 37
-		noteL C4,48
-		vibrato 2Ah
-		setRelease 1
-		noteL F4,24
-		vibrato 00h
-		noteL E4,12
-		note  D4
 		setRelease 13
-		noteL As3,24
-		vibrato 2Ah
+		note  D4
+		setRelease 19
+		noteL C4,24
+		vibrato 25h
 		setRelease 1
-		noteL As4,36
+		noteL F4,12
+		vibrato 00h
+		noteL E4,6
+		note  D4
+		vibrato 25h
+		noteL Gs3,18
+		vibrato 00h
+		noteL A3,12
+		setRelease 13
+		noteL D4,18
+		setRelease 19
+		noteL C4,24
+		vibrato 25h
+		setRelease 1
+		noteL G3,12
+		vibrato 00h
+		noteL G3,6
+		note  G3
+		note  G3
+		note  G3
+		vibrato 25h
+		noteL A3,18
+		vibrato 00h
+		setRelease 13
+		note  D4
+		setRelease 19
+		noteL C4,24
+		vibrato 25h
+		setRelease 1
+		noteL F4,12
+		vibrato 00h
+		noteL E4,6
+		note  D4
+		setRelease 7
+		noteL As3,12
+		vibrato 25h
+		setRelease 1
+		noteL As4,18
+		vibrato 00h
+		setRelease 13
+		note  D4
+		setRelease 19
+		noteL C4,24
+		vibrato 25h
+		setRelease 1
+		noteL G3,12
+		vibrato 00h
+		noteL G3,6
+		note  G3
+		note  G3
+		note  G3
+		vibrato 25h
+		noteL A3,18
+		vibrato 00h
+		setRelease 13
+		note  D4
+		setRelease 19
+		noteL C4,24
+		vibrato 25h
+		setRelease 1
+		noteL F4,12
+		vibrato 00h
+		noteL E4,6
+		note  D4
+		vibrato 25h
+		noteL Gs3,18
+		vibrato 00h
+		noteL A3,12
+		setRelease 13
+		noteL D4,18
+		setRelease 19
+		noteL C4,24
+		vibrato 25h
+		setRelease 1
+		noteL G3,12
+		vibrato 00h
+		noteL G3,6
+		note  G3
+		note  G3
+		note  G3
+		vibrato 25h
+		noteL A3,18
+		vibrato 00h
+		setRelease 13
+		note  D4
+		setRelease 19
+		noteL C4,24
+		vibrato 25h
+		setRelease 1
+		noteL F4,12
+		vibrato 00h
+		noteL E4,6
+		note  D4
+		setRelease 7
+		noteL As3,12
+		vibrato 25h
+		setRelease 1
+		noteL As4,18
 		stereo 0C0h
 		inst 197
-		vol 10
-		vibrato 00h
-		noteL C4,48
-		noteL E4,12
-		setRelease 13
-		noteL G4,24
-		note  E4
-		vibrato 2Ah
-		setRelease 1
-		noteL C4,36
-		vibrato 00h
-		noteL C4,24
-		note  E4
-		noteL C4,36
-		noteL As3,156
-		noteL C4,48
-		noteL E4,12
-		setRelease 13
-		noteL G4,24
-		note  E4
-		vibrato 2Ah
-		setRelease 1
-		noteL C4,36
-		vibrato 00h
-		noteL C4,24
-		note  E4
-		noteL E4,36
-		noteL F4,60
-		inst 198
 		vol 12
-		noteL D4,36
-		setRelease 25
-		noteL E4,84
+		vibrato 00h
+		noteL C4,24
+		noteL E4,6
+		setRelease 7
+		noteL G4,12
+		note  E4
+		vibrato 25h
+		setRelease 1
+		noteL C4,18
+		vibrato 00h
+		noteL C4,12
+		note  E4
+		noteL C4,18
+		noteL As3,78
+		noteL C4,24
+		noteL E4,6
+		setRelease 7
+		noteL G4,12
+		note  E4
+		vibrato 25h
+		setRelease 1
+		noteL C4,18
+		vibrato 00h
+		noteL C4,12
+		note  E4
+		noteL E4,18
+		noteL F4,30
+		inst 198
+		vol 13
+		noteL D4,18
+		setRelease 13
+		noteL E4,42
 		mainLoopEnd
 Music_3_Channel_4:
 		inst 127
-		vol 12
+		vol 13
 		vibrato 00h
 		setRelease 1
-		noteL C3,12
+		noteL C3,6
 		mainLoopStart
 		setRelease 1
-		noteL C3,12
+		noteL C3,6
 		countedLoopStart 28
 		note  C3
 		countedLoopEnd
 		inst 110
-		vol 10
+		vol 12
 		note  C3
 		inst 127
-		vol 12
+		vol 13
 		countedLoopStart 31
 		note  C3
 		countedLoopEnd
@@ -1454,17 +1454,17 @@ Music_3_Channel_4:
 		note  C3
 		countedLoopEnd
 		countedLoopStart 1
-		noteL C3,6
-		vol 10
+		noteL C3,3
+		vol 12
 		note  C3
 		note  C3
 		note  C3
 		inst 110
-		vol 10
-		noteL C3,24
-		inst 127
 		vol 12
 		noteL C3,12
+		inst 127
+		vol 13
+		noteL C3,6
 		note  C3
 		note  C3
 		note  C3
@@ -1481,20 +1481,20 @@ Music_3_Channel_4:
 		note  C3
 		countedLoopEnd
 		inst 110
-		vol 10
+		vol 12
 		note  C3
 		note  C3
 		note  C3
 		note  C3
 		inst 127
-		vol 12
+		vol 13
 		note  C3
 		note  C3
 		inst 110
-		vol 10
+		vol 12
 		note  C3
 		inst 127
-		vol 12
+		vol 13
 		countedLoopStart 31
 		note  C3
 		countedLoopEnd
@@ -1505,308 +1505,308 @@ Music_3_Channel_4:
 		note  C3
 		countedLoopEnd
 		inst 110
-		vol 10
-		noteL C3,24
-		noteL C3,12
-		inst 127
-		vol 12
-		note  C3
-		note  C3
-		inst 110
-		vol 10
-		note  C3
-		inst 127
-		vol 12
-		note  C3
-		note  C3
-		note  C3
-		inst 110
-		vol 10
-		noteL C3,24
-		inst 127
 		vol 12
 		noteL C3,12
-		note  C3
-		note  C3
-		note  C3
 		noteL C3,6
-		vol 10
+		inst 127
+		vol 13
+		note  C3
+		note  C3
+		inst 110
+		vol 12
+		note  C3
+		inst 127
+		vol 13
+		note  C3
+		note  C3
+		note  C3
+		inst 110
+		vol 12
+		noteL C3,12
+		inst 127
+		vol 13
+		noteL C3,6
+		note  C3
+		note  C3
+		note  C3
+		noteL C3,3
+		vol 12
 		note  C3
 		countedLoopStart 3
 		inst 110
-		vol 10
-		noteL C3,24
-		inst 127
 		vol 12
 		noteL C3,12
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		note  C3
-		setRelease 13
-		noteL C3,24
-		setRelease 1
-		noteL C3,12
-		countedLoopEnd
-		inst 110
-		vol 10
-		noteL C3,24
 		inst 127
-		vol 12
+		vol 13
 		noteL C3,6
-		countedLoopStart 29
-		vol 7
 		note  C3
-		vol 9
 		note  C3
-		vol 7
 		note  C3
-		vol 12
 		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		note  C3
+		setRelease 7
+		noteL C3,12
+		setRelease 1
+		noteL C3,6
 		countedLoopEnd
-		vol 7
-		note  C3
-		vol 9
-		note  C3
-		vol 7
-		note  C3
 		inst 110
-		vol 10
-		noteL C3,24
-		inst 127
 		vol 12
 		noteL C3,12
+		inst 127
+		vol 13
+		noteL C3,3
+		countedLoopStart 29
+		vol 8
+		note  C3
+		vol 11
+		note  C3
+		vol 8
+		note  C3
+		vol 13
+		note  C3
+		countedLoopEnd
+		vol 8
+		note  C3
+		vol 11
+		note  C3
+		vol 8
+		note  C3
+		inst 110
+		vol 12
+		noteL C3,12
+		inst 127
+		vol 13
+		noteL C3,6
 		mainLoopEnd
 Music_3_Channel_5:
 		setRelease 0
-		sampleL 41,24
+		sampleL 41,12
 		mainLoopStart
 		setRelease 0
-		sampleL 40,24
+		sampleL 40,12
 		countedLoopStart 1
-		sampleL 41,12
+		sampleL 41,6
 		sample  41
-		sampleL 40,24
+		sampleL 40,12
 		sample  41
 		sample  40
 		countedLoopEnd
-		sampleL 41,12
+		sampleL 41,6
 		sample  41
-		sampleL 40,24
+		sampleL 40,12
 		sample  41
 		stereo 80h
-		sampleL 50,12
+		sampleL 50,6
 		stereo 0C0h
-		sampleL 51,24
 		sampleL 51,12
+		sampleL 51,6
 		stereo 40h
-		sampleL 52,24
+		sampleL 52,12
 		stereo 0C0h
 		countedLoopStart 2
 		sample  41
 		sample  40
-		sampleL 41,12
+		sampleL 41,6
 		sample  41
-		sampleL 40,24
+		sampleL 40,12
 		countedLoopEnd
 		sample  41
-		sampleL 40,12
-		sampleL 41,24
-		sampleL 40,12
+		sampleL 40,6
+		sampleL 41,12
+		sampleL 40,6
 		sample  40
 		sample  40
 		countedLoopStart 1
-		sampleL 41,24
-		sampleL 40,12
-		sampleL 41,24
 		sampleL 41,12
-		sampleL 40,24
+		sampleL 40,6
+		sampleL 41,12
+		sampleL 41,6
+		sampleL 40,12
 		sample  41
-		sampleL 40,12
-		sampleL 41,24
+		sampleL 40,6
 		sampleL 41,12
+		sampleL 41,6
 		sample  51
 		stereo 40h
 		sample  52
 		stereo 0C0h
 		countedLoopEnd
-		sampleL 41,24
-		countedLoopStart 1
-		sample  40
-		sampleL 41,12
-		sample  41
-		sampleL 40,24
-		sample  41
-		countedLoopEnd
-		stereo 80h
-		sampleL 50,12
-		sampleL 50,24
-		stereo 0C0h
-		sampleL 51,12
-		sample  51
-		stereo 40h
-		sample  52
-		stereo 0C0h
-		sample  40
-		sample  40
-		sample  40
-		sampleL 40,24
 		sampleL 41,12
 		countedLoopStart 1
-		sampleL 40,24
-		sample  41
 		sample  40
-		sampleL 41,12
+		sampleL 41,6
 		sample  41
-		sample  40
-		sampleL 41,24
-		sampleL 41,12
-		sample  40
-		sampleL 41,24
-		sampleL 41,12
-		sampleL 40,24
-		sample  41
-		sample  40
-		sampleL 41,12
-		sample  41
-		sampleL 40,24
-		sample  41
-		sample  40
-		sampleL 41,12
+		sampleL 40,12
 		sample  41
 		countedLoopEnd
-		countedLoopStart 2
-		sampleL 40,24
-		sample  41
-		sample  40
-		sampleL 41,12
-		sample  41
-		countedLoopEnd
-		sampleL 40,24
-		sample  41
-		sampleL 40,12
-		sampleL 41,24
-		stereo 80h
-		sampleL 50,12
-		stereo 0C0h
-		sample  51
-		stereo 40h
-		sample  52
-		stereo 0C0h
-		sample  40
-		sample  41
-		sample  40
-		sampleL 40,24
-		sampleL 51,12
-		stereo 40h
-		sample  52
-		stereo 0C0h
-		sampleL 40,24
-		sampleL 40,12
-		sample  40
-		sample  40
-		sample  40
-		sample  41
-		sampleL 40,24
-		countedLoopStart 3
-		sample  41
-		sampleL 40,12
-		sampleL 41,24
-		sampleL 41,12
-		sample  40
-		sampleL 41,24
-		sampleL 41,12
-		sampleL 40,24
-		sampleL 41,12
-		sample  41
-		stereo 80h
-		sampleL 42,24
-		stereo 0C0h
-		sample  41
-		sampleL 40,12
-		sampleL 41,24
-		sampleL 41,12
-		sample  40
-		sampleL 41,24
-		sampleL 41,12
-		sampleL 40,24
-		sampleL 41,12
-		stereo 40h
-		sample  42
-		stereo 80h
-		sampleL 42,24
-		stereo 0C0h
-		countedLoopEnd
-		countedLoopStart 2
-		sample  41
-		sample  40
-		sampleL 41,12
-		sample  41
-		sampleL 40,24
-		countedLoopEnd
-		sample  41
-		countedLoopStart 1
-		sampleL 40,12
-		sampleL 41,24
-		sample  40
-		countedLoopEnd
-		sampleL 41,12
-		sample  41
-		sampleL 40,24
-		sample  41
-		sample  40
-		sampleL 41,12
-		sample  41
-		sampleL 40,24
-		sample  41
-		sampleL 40,12
-		sampleL 41,24
-		sampleL 41,12
-		sampleL 40,24
-		sampleL 41,18
 		stereo 80h
 		sampleL 50,6
 		sampleL 50,12
 		stereo 0C0h
 		sampleL 51,6
-		sampleL 51,12
+		sample  51
 		stereo 40h
-		sampleL 52,6
-		sampleL 52,12
+		sample  52
 		stereo 0C0h
-		sampleL 40,24
+		sample  40
+		sample  40
+		sample  40
+		sampleL 40,12
+		sampleL 41,6
+		countedLoopStart 1
+		sampleL 40,12
+		sample  41
+		sample  40
+		sampleL 41,6
+		sample  41
+		sample  40
+		sampleL 41,12
+		sampleL 41,6
+		sample  40
+		sampleL 41,12
+		sampleL 41,6
+		sampleL 40,12
+		sample  41
+		sample  40
+		sampleL 41,6
+		sample  41
+		sampleL 40,12
+		sample  41
+		sample  40
+		sampleL 41,6
+		sample  41
+		countedLoopEnd
+		countedLoopStart 2
+		sampleL 40,12
+		sample  41
+		sample  40
+		sampleL 41,6
+		sample  41
+		countedLoopEnd
+		sampleL 40,12
+		sample  41
+		sampleL 40,6
+		sampleL 41,12
+		stereo 80h
+		sampleL 50,6
+		stereo 0C0h
+		sample  51
+		stereo 40h
+		sample  52
+		stereo 0C0h
+		sample  40
+		sample  41
+		sample  40
+		sampleL 40,12
+		sampleL 51,6
+		stereo 40h
+		sample  52
+		stereo 0C0h
+		sampleL 40,12
+		sampleL 40,6
+		sample  40
+		sample  40
+		sample  40
+		sample  41
+		sampleL 40,12
+		countedLoopStart 3
+		sample  41
+		sampleL 40,6
+		sampleL 41,12
+		sampleL 41,6
+		sample  40
+		sampleL 41,12
+		sampleL 41,6
+		sampleL 40,12
+		sampleL 41,6
+		sample  41
+		stereo 80h
+		sampleL 42,12
+		stereo 0C0h
+		sample  41
+		sampleL 40,6
+		sampleL 41,12
+		sampleL 41,6
+		sample  40
+		sampleL 41,12
+		sampleL 41,6
+		sampleL 40,12
+		sampleL 41,6
+		stereo 40h
+		sample  42
+		stereo 80h
+		sampleL 42,12
+		stereo 0C0h
+		countedLoopEnd
+		countedLoopStart 2
+		sample  41
+		sample  40
+		sampleL 41,6
+		sample  41
+		sampleL 40,12
+		countedLoopEnd
+		sample  41
+		countedLoopStart 1
+		sampleL 40,6
+		sampleL 41,12
+		sample  40
+		countedLoopEnd
+		sampleL 41,6
+		sample  41
+		sampleL 40,12
+		sample  41
+		sample  40
+		sampleL 41,6
+		sample  41
+		sampleL 40,12
+		sample  41
+		sampleL 40,6
+		sampleL 41,12
+		sampleL 41,6
+		sampleL 40,12
+		sampleL 41,9
+		stereo 80h
+		sampleL 50,3
+		sampleL 50,6
+		stereo 0C0h
+		sampleL 51,3
+		sampleL 51,6
+		stereo 40h
+		sampleL 52,3
+		sampleL 52,6
+		stereo 0C0h
+		sampleL 40,12
 		sample  41
 		mainLoopEnd
 Music_3_Channel_6:
-		psgInst 10
+		psgInst 11
 		vibrato 00h
 		setRelease 1
-		psgNoteL F4,6
+		psgNoteL F4,3
 		mainLoopStart
 		setRelease 1
-		psgNoteL D4,6
+		psgNoteL D4,3
 		countedLoopStart 2
 		psgNote  A3
 		psgNote  D4
@@ -1827,17 +1827,17 @@ Music_3_Channel_6:
 		psgNote  As3
 		psgNote  D4
 		countedLoopEnd
-		vibrato 2Ah
-		psgNoteL F4,24
+		vibrato 25h
+		psgNoteL F4,12
 		psgInst 0
-		waitL 48
-		psgInst 12
+		waitL 24
+		psgInst 13
 		vibrato 00h
-		psgNoteL C6,6
+		psgNoteL C6,3
 		psgNote  G5
 		psgNote  E5
 		psgNote  C5
-		psgInst 10
+		psgInst 11
 		countedLoopStart 3
 		psgNote  F4
 		psgNote  D4
@@ -1856,7 +1856,7 @@ Music_3_Channel_6:
 		psgNote  B3
 		psgNote  D4
 		countedLoopEnd
-		psgInst 12
+		psgInst 13
 		psgNote  F4
 		psgNote  D4
 		psgNote  As3
@@ -1874,26 +1874,26 @@ Music_3_Channel_6:
 		psgNote  As4
 		psgNote  D5
 		psgInst 0
-		waitL 24
-		psgInst 12
-		vibrato 2Ah
-		psgNoteL A4,48
+		waitL 12
+		psgInst 13
+		vibrato 25h
+		psgNoteL A4,24
 		vibrato 00h
-		psgNoteL G4,24
-		psgNoteL F4,96
+		psgNoteL G4,12
+		psgNoteL F4,48
+		psgInst 0
+		waitL 12
+		psgInst 13
+		psgNoteL A4,24
+		psgNoteL G4,12
+		psgNoteL F4,48
+		psgNote  A5
+		psgNote  A5
+		psgNote  A5
 		psgInst 0
 		waitL 24
-		psgInst 12
-		psgNoteL A4,48
-		psgNoteL G4,24
-		psgNoteL F4,96
-		psgNote  A5
-		psgNote  A5
-		psgNote  A5
-		psgInst 0
-		waitL 48
-		psgInst 12
-		psgNoteL A4,6
+		psgInst 13
+		psgNoteL A4,3
 		psgNote  Cs5
 		psgNote  E5
 		psgNote  G5
@@ -1902,14 +1902,14 @@ Music_3_Channel_6:
 		psgNote  E6
 		psgNote  G6
 		psgInst 0
-		waitL 96
+		waitL 48
 		wait
 		wait
 		wait
 		wait
 		wait
-		psgInst 12
-		psgNoteL D5,6
+		psgInst 13
+		psgNoteL D5,3
 		countedLoopStart 1
 		psgNote  A4
 		psgNote  D5
@@ -1963,23 +1963,23 @@ Music_3_Channel_6:
 		psgNote  G5
 		countedLoopEnd
 		psgNote  A4
-		vibrato 2Ah
-		psgNoteL A5,24
+		vibrato 25h
+		psgNoteL A5,12
 		vibrato 00h
-		psgNoteL G5,12
-		vibrato 2Ah
-		psgNoteL A5,24
+		psgNoteL G5,6
+		vibrato 25h
+		psgNoteL A5,12
 		vibrato 00h
-		psgNoteL As5,12
+		psgNoteL As5,6
 		psgNote  A5
-		vibrato 2Ah
-		psgNoteL G5,66
+		vibrato 25h
+		psgNoteL G5,33
 		psgInst 0
-		waitL 42
-		psgInst 11
+		waitL 21
+		psgInst 12
 		vibrato 00h
-		setRelease 6
-		psgNoteL As5,12
+		setRelease 3
+		psgNoteL As5,6
 		countedLoopStart 6
 		psgNote  C6
 		psgNote  C6
@@ -2011,24 +2011,24 @@ Music_3_Channel_6:
 		psgNote  C6
 		psgNote  C6
 		psgInst 0
-		waitL 96
+		waitL 48
 		wait
-		waitL 60
-		psgInst 13
+		waitL 30
+		psgInst 14
 		setRelease 0
-		psgNoteL A4,12
+		psgNoteL A4,6
 		psgNote  C5
 		psgNote  D5
-		vibrato 2Ah
-		psgNoteL E5,36
+		vibrato 25h
+		psgNoteL E5,18
 		vibrato 00h
-		psgNoteL D5,60
+		psgNoteL D5,30
 		psgInst 0
-		waitL 96
+		waitL 48
 		wait
 		wait
-		psgInst 10
-		psgNoteL G4,6
+		psgInst 11
+		psgNoteL G4,3
 		psgNote  As4
 		psgNote  D5
 		psgNote  As4
@@ -2050,11 +2050,11 @@ Music_3_Channel_6:
 Music_3_Channel_7:
 		psgInst 0
 		vibrato 00h
-		waitL 6
+		waitL 3
 		mainLoopStart
-		psgInst 8
+		psgInst 9
 		setRelease 1
-		psgNoteL F4,6
+		psgNoteL F4,3
 		countedLoopStart 3
 		psgNote  D4
 		psgNote  A3
@@ -2076,17 +2076,17 @@ Music_3_Channel_7:
 		psgNote  D4
 		psgNote  As3
 		psgNote  D4
-		vibrato 2Ah
-		psgNoteL F4,24
+		vibrato 25h
+		psgNoteL F4,12
 		psgInst 0
-		waitL 48
-		psgInst 10
+		waitL 24
+		psgInst 11
 		vibrato 00h
-		psgNoteL C6,6
+		psgNoteL C6,3
 		psgNote  G5
 		psgNote  E5
 		psgNote  C5
-		psgInst 8
+		psgInst 9
 		countedLoopStart 3
 		psgNote  F4
 		psgNote  D4
@@ -2105,7 +2105,7 @@ Music_3_Channel_7:
 		psgNote  B3
 		psgNote  D4
 		countedLoopEnd
-		psgInst 10
+		psgInst 11
 		psgNote  F4
 		psgNote  D4
 		psgNote  As3
@@ -2123,26 +2123,26 @@ Music_3_Channel_7:
 		psgNote  As4
 		psgNote  D5
 		psgInst 0
-		waitL 24
-		psgInst 10
-		vibrato 2Ah
-		psgNoteL A4,48
+		waitL 12
+		psgInst 11
+		vibrato 25h
+		psgNoteL A4,24
 		vibrato 00h
-		psgNoteL G4,24
-		psgNoteL F4,96
+		psgNoteL G4,12
+		psgNoteL F4,48
+		psgInst 0
+		waitL 12
+		psgInst 11
+		psgNoteL A4,24
+		psgNoteL G4,12
+		psgNoteL F4,48
+		psgNote  A5
+		psgNote  A5
+		psgNote  A5
 		psgInst 0
 		waitL 24
-		psgInst 10
-		psgNoteL A4,48
-		psgNoteL G4,24
-		psgNoteL F4,96
-		psgNote  A5
-		psgNote  A5
-		psgNote  A5
-		psgInst 0
-		waitL 48
-		psgInst 10
-		psgNoteL A4,6
+		psgInst 11
+		psgNoteL A4,3
 		psgNote  Cs5
 		psgNote  E5
 		psgNote  G5
@@ -2151,14 +2151,14 @@ Music_3_Channel_7:
 		psgNote  E6
 		psgNote  G6
 		psgInst 0
-		waitL 96
+		waitL 48
 		wait
 		wait
 		wait
 		wait
 		wait
-		psgInst 10
-		psgNoteL D5,6
+		psgInst 11
+		psgNoteL D5,3
 		countedLoopStart 1
 		psgNote  A4
 		psgNote  D5
@@ -2212,23 +2212,23 @@ Music_3_Channel_7:
 		psgNote  G5
 		countedLoopEnd
 		psgNote  A4
-		vibrato 2Ah
-		psgNoteL A5,24
+		vibrato 25h
+		psgNoteL A5,12
 		vibrato 00h
-		psgNoteL G5,12
-		vibrato 2Ah
-		psgNoteL A5,24
+		psgNoteL G5,6
+		vibrato 25h
+		psgNoteL A5,12
 		vibrato 00h
-		psgNoteL As5,12
+		psgNoteL As5,6
 		psgNote  A5
-		vibrato 2Ah
-		psgNoteL G5,66
+		vibrato 25h
+		psgNoteL G5,33
 		psgInst 0
-		waitL 42
-		psgInst 9
+		waitL 21
+		psgInst 10
 		vibrato 00h
-		setRelease 6
-		psgNoteL As5,12
+		setRelease 3
+		psgNoteL As5,6
 		countedLoopStart 6
 		psgNote  C6
 		psgNote  C6
@@ -2260,24 +2260,24 @@ Music_3_Channel_7:
 		psgNote  C6
 		psgNote  C6
 		psgInst 0
-		waitL 96
+		waitL 48
 		wait
-		waitL 60
-		psgInst 12
+		waitL 30
+		psgInst 13
 		setRelease 0
-		psgNoteL A4,12
+		psgNoteL A4,6
 		psgNote  C5
 		psgNote  D5
-		vibrato 2Ah
-		psgNoteL E5,36
+		vibrato 25h
+		psgNoteL E5,18
 		vibrato 00h
-		psgNoteL D5,60
+		psgNoteL D5,30
 		psgInst 0
-		waitL 96
+		waitL 48
 		wait
 		wait
-		psgInst 8
-		psgNoteL G4,6
+		psgInst 9
+		psgNoteL G4,3
 		psgNote  As4
 		psgNote  D5
 		psgNote  As4
