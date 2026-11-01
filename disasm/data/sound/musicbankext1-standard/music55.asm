@@ -496,15 +496,10 @@ Music_55_Channel_3:
 		waitL 66
 		mainLoopStart
 		inst 129
-		vol 14
-		vibrato 00h
-		sustain
-		noteL Ds5,6
 		vol 15
-		setSlide 7Fh
+		vibrato 00h
 		setRelease 6
-		noteL Ds6,66
-		noSlide
+		noteL E6,72
 		noteL D6,48
 		noteL C6,24
 		setRelease 0
@@ -621,9 +616,14 @@ Music_55_Channel_3:
 Music_55_Channel_4:
 		waitL 255
 		wait
-		wait
-		waitL 27
+		waitL 66
 		mainLoopStart
+		inst 129
+		vol 14
+		vibrato 00h
+		setRelease 127
+		noteL Ds6,193
+		waitL 23
 		inst 132
 		vol 15
 		vibrato 20h
@@ -671,8 +671,7 @@ Music_55_Channel_4:
 		setRelease 127
 		noteL B5,235
 		waitL 255
-		wait
-		waitL 191
+		waitL 230
 		stereo 0C0h
 		mainLoopEnd
 Music_55_Channel_5:
