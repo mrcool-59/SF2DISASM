@@ -1425,6 +1425,8 @@ ITEM_MITHRIL: equ $7B
 ITEM_LIFE_RING: equ $7C
 ITEM_COTTON_BALLOON: equ $7D
 ITEM_CHIRRUP_SANDALS: equ $7E
+ITEM_DRAGON_RING: equ $80 ; Skipping vanilla empty slot $7F just to be safe
+ITEM_DRAGON_BALL: equ $81
 ITEM_NOTHING: equ itemNothing
 ITEM_EQUIPPED: equ itemEquipped
 ITEM_USABLE_BY_AI: equ $2000

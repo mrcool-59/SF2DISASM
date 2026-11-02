@@ -133,8 +133,8 @@ ItemIcon126:    incbin "data/graphics/icons/item/icon126.bin"
 
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
 ItemIcon127:    incbin "data/graphics/icons/item/icon127.bin"
-ItemIcon128:    incbin "data/graphics/icons/item/icon127.bin"
-ItemIcon129:    incbin "data/graphics/icons/item/icon127.bin"
+ItemIcon128:    incbin "data/graphics/icons/item/icon128-standard.bin" ; Dragon Ring
+ItemIcon129:    incbin "data/graphics/icons/item/icon129-standard.bin" ; Dragon Ball
 ItemIcon130:    incbin "data/graphics/icons/item/icon127.bin"
 ItemIcon131:    incbin "data/graphics/icons/item/icon127.bin"
 ItemIcon132:    incbin "data/graphics/icons/item/icon127.bin"

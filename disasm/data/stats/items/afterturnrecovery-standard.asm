@@ -13,6 +13,7 @@ table_AfterTurnHpRecoveryForWeapons:
 table_AfterTurnHpRecoveryForRings:
                 
                 dc.b ITEM_LIFE_RING, 5
+                dc.b ITEM_DRAGON_RING, 10
                 
                 tableEnd.b
 

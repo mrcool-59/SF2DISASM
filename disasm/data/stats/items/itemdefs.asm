@@ -478,7 +478,7 @@ table_ItemDefinitions:
                 
                 ; 23: White Ring
                 equipFlags   HERO|VICR|MMNK
-                equipFlags2  NONE
+                equipFlags2  EQUIPFLAG2_33|EQUIPFLAG2_34 ; Phoenix, Gold Dragon
                 range        0, 0
                 price        5000
                 itemType     RING|RARE|BREAKABLE
@@ -506,7 +506,7 @@ table_ItemDefinitions:
                 
                 ; 25: Evil Ring
                 equipFlags   WIZ|SORC|VICR|MMNK
-                equipFlags2  NONE
+                equipFlags2  EQUIPFLAG2_33|EQUIPFLAG2_34 ; Phoenix, Gold Dragon
                 range        0, 0
                 price        5000
                 itemType     RING|RARE|CURSED|BREAKABLE
@@ -1952,26 +1952,26 @@ table_ItemDefinitions:
                 
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
                 
-                ; 128: 
-                equipFlags   NONE
-                equipFlags2  NONE
+                ; 128: Dragon Ring
+                equipFlags   PHNK|PHNX					 ; Brass Drake, Brass Dragon
+                equipFlags2  EQUIPFLAG2_34|EQUIPFLAG2_35 ; Gold Dragon, Serpent Dragon
                 range        0, 0
-                price        0
-                itemType     NONE
+                price        5000
+                itemType     RING|RARE
                 useSpell     NOTHING
-                equipEffects NONE, 0, &
-                             NONE, 0, &
+                equipEffects INCREASE_DEF, 5, &
+                             HP_RECOVERY, 10, &
                              NONE, 0, &
                              NONE, 0, &
                              NONE, 0, &
                              NONE, 0
                 
-                ; 129: 
+                ; 129: Dragon Ball
                 equipFlags   NONE
                 equipFlags2  NONE
                 range        0, 0
-                price        0
-                itemType     NONE
+                price        3000
+                itemType     RARE
                 useSpell     NOTHING
                 equipEffects NONE, 0, &
                              NONE, 0, &
