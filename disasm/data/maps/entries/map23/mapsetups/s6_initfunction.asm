@@ -7,7 +7,17 @@
 
 ms_map23_InitFunction:
                 
+				chkFlg 	30
+				beq.s 	@PeterNotJoined
+                script 	cs_map23_HidePeter
+@PeterNotJoined:
                 rts
+
+
+cs_map23_HidePeter:
+				hide 	ALLY_30
+				csc_end
+
 
     ; End of function ms_map23_InitFunction
 

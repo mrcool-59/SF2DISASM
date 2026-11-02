@@ -2,6 +2,7 @@
 ; ASM FILE data\maps\entries\map23\mapsetups\s1_entities.asm :
 ; 0x59AF0..0x59B22 : 
 ms_map23_Entities:
+				msWalkingEntity 56, 6, DOWN, ALLY_30, 56, 6, 1
                 msWalkingEntity 18, 9, DOWN, MAPSPRITE_MAN, 18, 9, 1
                 msFixedEntity 17, 11, RIGHT, MAPSPRITE_DWARF, eas_Init
                 msFixedEntity 18, 11, LEFT, MAPSPRITE_OLD_MAN, eas_Init

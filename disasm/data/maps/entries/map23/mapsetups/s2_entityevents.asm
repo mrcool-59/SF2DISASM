@@ -2,6 +2,7 @@
 ; ASM FILE data\maps\entries\map23\mapsetups\s2_entityevents.asm :
 ; 0x59B44..0x59BA8 : 
 ms_map23_EntityEvents:
+                msEntityEvent ALLY_30, UP, Map23_EntityEvent0_Extra-ms_map23_EntityEvents
                 msEntityEvent 128, UP, Map23_EntityEvent0-ms_map23_EntityEvents
                 msEntityEvent 129, DOWN, Map23_EntityEvent1-ms_map23_EntityEvents
                 msEntityEvent 130, DOWN, Map23_EntityEvent2-ms_map23_EntityEvents
@@ -9,6 +10,47 @@ ms_map23_EntityEvents:
                 msEntityEvent 132, UP, Map23_EntityEvent4-ms_map23_EntityEvents
                 msEntityEvent 133, UP, Map23_EntityEvent5-ms_map23_EntityEvents
                 msDefaultEntityEvent Map23_DefaultEntityEvent-ms_map23_EntityEvents
+
+; =============== S U B R O U T I N E =======================================
+
+
+Map23_EntityEvent0_Extra:
+                
+                chkFlg 	551				; Set when talking to "real" Peter a second time!
+				beq.s	@Banter
+				script	cs_PeterJoin
+				bra.s	@Return
+@Banter:
+                txt     4289            ; "Hello, I'm {NAME;30}.{D1}{N}I'm on vacation, doing a{N}sightseeing tour of the world!{W1}"
+				txt     4290			; "This inn is pretty cozy,{N}don't you think?{W1}"
+				setFlg	551				; Set when talking to "real" Peter a second time!
+@Return:
+                rts
+
+    ; End of function Map23_EntityEvent0
+
+
+cs_PeterJoin:
+				textCursor 	4291
+                setActscript ALLY_30,eas_Idle
+				shiver 		ALLY_BOWIE
+				csWait  30
+				faceEntity	ALLY_30, ALLY_BOWIE
+				nextText 	$0,ALLY_30  		;  "What?{D1} Save the world?{D1}{N}Er...{D1} I guess I could lend{N}you my help.{W1}"
+				nextText 	$0,ALLY_30  		;  "If the world ends,{N}so will my tour...{W1}"
+				shiver 		ALLY_30
+				csWait	30
+				nextSingleText 	$0,ALLY_30  	;  "OK, count me in!{W1}"
+				nod 	ALLY_30
+				csWait 	30
+				nod 	ALLY_BOWIE
+				csWait 	30
+				join 	ALLY_30
+				setDest ALLY_30, 57, 3
+				csWait  15
+				hide	ALLY_30
+				csc_end
+
 
 ; =============== S U B R O U T I N E =======================================
 

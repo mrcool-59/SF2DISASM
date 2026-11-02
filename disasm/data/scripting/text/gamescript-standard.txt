@@ -4284,7 +4284,12 @@
 4282=10BA=Aww... come on!{N}It wasn't that bad of a landing!{W1}
 4283=10BB=Hi, {LEADER}! I moved to Bedoe,{N}next to {NAME;7}'s home.{D1}{N}We enjoy each other's company.{W1}
 4284=10BC={NAME;31} came too!{D1} And she is{N}my awesome new neighbor now!{W1}
-4285=10BD=Hi, {LEADER}!{N}I hope you're well! I learned{N}there is a wedding today.{W2}{N}What a fun way to end my{N}vacations!{W1}
+4285=10BD=Hi, {LEADER}!{N}I hope you're well! I learned{N}there is a wedding today.{W2}{N}What a fun way to end my{N}world tour!{W1}
 4286=10BE=Please come visit us in{N}Bedoe soon!{W1}
 4287=10BF=Love triangles? I knew this{N}party was gonna be fun!{W1}
 4288=1090={NAME;7}...{W1}
+4289=1091=Hello, I'm {NAME;30}.{D1}{N}I'm on vacation, doing a{N}sightseeing tour of the world!{W1}
+4290=1092=This inn is pretty cozy,{N}don't you think?{W1}
+4291=1093=What?{D1} Save the world?{D1}{N}Er...{D1} I guess I could lend{N}you my help.{W1}
+4292=1094=If the world ends,{N}so will my tour...{W1}
+4293=1095=OK, count me in!{W1}

@@ -64,7 +64,7 @@ Map19_21F_EntityEvent0:
 Map19_21F_EntityEvent0_Extra:
                 
                  
-				txt     4285			; "Hi, {LEADER}!{N}I hope you're well! I learned{N}there is a wedding today.{W2}{N}What a fun way to end my{N}vacations!{W1}"
+				txt     4285			; "Hi, {LEADER}!{N}I hope you're well! I learned{N}there is a wedding today.{W2}{N}What a fun way to end my{N}world tour!{W1}"
                 rts
 
     ; End of function Map19_21F_EntityEvent1

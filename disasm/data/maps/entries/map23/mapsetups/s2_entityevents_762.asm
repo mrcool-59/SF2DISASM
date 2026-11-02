@@ -2,6 +2,7 @@
 ; ASM FILE data\maps\entries\map23\mapsetups\s2_entityevents_762.asm :
 ; 0x59BA8..0x59BD2 : 
 ms_map23_flag762_EntityEvents:
+                msEntityEvent ALLY_30, UP, Map23_EntityEvent0_Extra-ms_map23_flag762_EntityEvents
                 msEntityEvent 128, UP, Map23_2FA_EntityEvent0-ms_map23_flag762_EntityEvents
                 msEntityEvent 129, UP, Map23_2FA_EntityEvent1-ms_map23_flag762_EntityEvents
                 msEntityEvent 130, DOWN, Map23_2FA_EntityEvent2-ms_map23_flag762_EntityEvents
