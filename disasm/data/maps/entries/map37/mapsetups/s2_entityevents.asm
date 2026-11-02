@@ -346,8 +346,19 @@ sub_5F9B6:
 
 Map37_EntityEvent25:
                 
+				chkFlg	552				; Set after talking to Sunny once in Nazca Ship
+				beq.s	@FirstTalk
+				
                 moveq   #ALLY_31,d0
                 jmp     DisplayTacticalBaseQuote
+				
+			@FirstTalk:
+				txt		4313			; "Oh {LEADER}!{N}I have a small request...{W1}"
+				txt		4314			; "I am working on a little thing{N}for {NAME;7}.{W2}{CLEAR}I mean, it's not ready yet,{N}but please come see me when{N}we get another chance to rest.{W2}{N}I'll give it to you then!{N}Don't forget it!{W1}"
+				setFlg	552				; Set after talking to Sunny once in Nazca Ship
+				rts
+				
+				
 
     ; End of function Map37_EntityEvent25
 

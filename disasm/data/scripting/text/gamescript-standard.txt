@@ -4293,3 +4293,5 @@
 4291=1093=What?{D1} Save the world?{D1}{N}Er...{D1} I guess I could lend{N}you my help.{W1}
 4292=1094=If the world ends,{N}so will my tour...{W1}
 4293=1095=OK, count me in!{W1}
+4313=10A9=Oh {LEADER}!{N}I have a small request...{W1}
+4314=10AA=I am working on a little thing{N}for {NAME;7}.{W2}{CLEAR}I mean, it's not ready yet,{N}but please come see me when{N}we get another chance to rest.{W2}{N}I'll give it to you then!{N}Don't forget it!{W1}
