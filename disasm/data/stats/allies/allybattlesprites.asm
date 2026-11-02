@@ -161,13 +161,13 @@ table_AllyBattlesprites:
                 
                 ; Additional entries to be defined with force members expansion patch
             if (STANDARD_BUILD&EXPANDED_FORCE_MEMBERS=1)
-; 30: 
-                allyBattleSprAndPlt RDBN, SDMN, 0
-                allyBattleSprAndPlt NONE, NONE, 0
+; 30: PETER
+                allyBattleSprAndPlt CLASS_32, REAL_PHNK, 0
+                allyBattleSprAndPlt CLASS_33, REAL_PHNX, 0
                 allyBattleSprAndPlt NONE, NONE, 0
                 
 ; 31: SUNNY
-                allyBattleSprAndPlt CLASS_34, PHNX, 0	; TODO: coming soon
+                allyBattleSprAndPlt CLASS_34, SUNNY, 0
                 allyBattleSprAndPlt NONE, NONE, 0
                 allyBattleSprAndPlt NONE, NONE, 0
                 

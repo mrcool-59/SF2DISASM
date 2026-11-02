@@ -36,8 +36,8 @@ table_FullClassNames:
                 className "Red Baron"
 
             if (STANDARD_BUILD&EXPANDED_CLASSES=1)
-                className "32"
-                className "33"
+                className "Phoenix", 13, "Kid"
+                className "Phoenix"
                 className "Gold", 13, "Dragon"
                 className "35"
                 className "36"

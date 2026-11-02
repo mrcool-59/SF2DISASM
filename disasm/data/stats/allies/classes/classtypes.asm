@@ -39,8 +39,8 @@ table_ClassTypes:
                 classType REDBARON      ; 31: RDBN
                 
             if (STANDARD_BUILD&EXPANDED_CLASSES=1)
-                classType PROMO         ; 32: 
-                classType PROMO         ; 33: 
+                classType BASE          ; 32: PHNK
+                classType PROMO         ; 33: PHNX
                 classType PROMO         ; 34: GDRG
                 classType PROMO         ; 35: 
                 classType PROMO         ; 36: 

@@ -713,14 +713,14 @@ pt_Mapsprites:  dc.l Mapsprite000_0
                 dc.l Mapsprite236_1
                 dc.l Mapsprite236_2
                 dc.l Mapsprite237_0
-                dc.l Mapsprite237_0
-                dc.l Mapsprite237_0
-                dc.l Mapsprite237_0
-                dc.l Mapsprite237_0
-                dc.l Mapsprite237_0
-                dc.l Mapsprite237_0
-                dc.l Mapsprite237_0
-                dc.l Mapsprite237_0
+                dc.l Mapsprite237_1
+                dc.l Mapsprite237_2
+                dc.l Mapsprite238_0
+                dc.l Mapsprite238_1
+                dc.l Mapsprite238_2
+                dc.l Mapsprite239_0
+                dc.l Mapsprite239_1
+                dc.l Mapsprite239_2
 Mapsprite000_0: incbin "data/graphics/mapsprites/mapsprite000-0.bin"
 Mapsprite000_1: incbin "data/graphics/mapsprites/mapsprite000-1.bin"
 Mapsprite000_2: incbin "data/graphics/mapsprites/mapsprite000-2.bin"
@@ -1390,4 +1390,12 @@ Mapsprite235_2: incbin "data/graphics/mapsprites/mapsprite235-2.bin"
 Mapsprite236_0: incbin "data/graphics/mapsprites/mapsprite236-0.bin"
 Mapsprite236_1: incbin "data/graphics/mapsprites/mapsprite236-1.bin"
 Mapsprite236_2: incbin "data/graphics/mapsprites/mapsprite236-2.bin"
-Mapsprite237_0: incbin "data/graphics/mapsprites/mapsprite237-0.bin"
+Mapsprite237_0: incbin "data/graphics/mapsprites/mapsprite237-0-standard.bin" ; ###
+Mapsprite237_1: incbin "data/graphics/mapsprites/mapsprite237-1-standard.bin" ; Peter (Unpromoted)
+Mapsprite237_2: incbin "data/graphics/mapsprites/mapsprite237-2-standard.bin" ; ###
+Mapsprite238_0: incbin "data/graphics/mapsprites/mapsprite238-0-standard.bin" ; ###
+Mapsprite238_1: incbin "data/graphics/mapsprites/mapsprite238-1-standard.bin" ; Peter (Promoted)
+Mapsprite238_2: incbin "data/graphics/mapsprites/mapsprite238-2-standard.bin" ; ###
+Mapsprite239_0: incbin "data/graphics/mapsprites/mapsprite239-0-standard.bin" ; ###
+Mapsprite239_1: incbin "data/graphics/mapsprites/mapsprite239-1-standard.bin" ; Sunny
+Mapsprite239_2: incbin "data/graphics/mapsprites/mapsprite239-2-standard.bin" ; ###

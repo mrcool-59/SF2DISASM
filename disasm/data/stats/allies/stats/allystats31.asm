@@ -1,8 +1,8 @@
 
-AllyStats31:    forClass  CLASS_34 ; GDRG
+AllyStats31:    forClass  CLASS_34	; Gold Dragon
                 hpGrowth  68, 116, LATE
-                mpGrowth  50, 100, LATE
-                attGrowth 60, 100, LINEAR
+                mpGrowth  40, 80, LATE
+                attGrowth 60, 105, LINEAR
                 defGrowth 47, 71, LINEAR
                 agiGrowth 35, 65, LINEAR
                 spellList &
@@ -18,4 +18,4 @@ AllyStats31:    forClass  CLASS_34 ; GDRG
                     42, AURA|LV3, &
 					45, BOLT|LV4, &
                     48, BLAZE|LV4, &
-                    50, AURA|LV4, &
+                    52, AURA|LV4, &

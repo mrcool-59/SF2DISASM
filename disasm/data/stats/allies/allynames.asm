@@ -33,7 +33,7 @@ table_AllyNames:allyName "BOWIE"
                 allyName "CLAUDE"
                 
             if (STANDARD_BUILD&EXPANDED_FORCE_MEMBERS=1)
-                allyName "ally30"
+                allyName "PETER"
                 allyName "SUNNY"
             endif
                 

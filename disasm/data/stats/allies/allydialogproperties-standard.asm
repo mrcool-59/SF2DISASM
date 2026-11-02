@@ -166,14 +166,14 @@ table_AllyDialogueProperties:
                 allyPortraitAndSfx CLAUDE, DIALOG_BLEEP_7
                 
             if (EXPANDED_FORCE_MEMBERS=1)
-; 30: 
-                allyPortraitAndSfx BOWIE_BASE, DIALOG_BLEEP_5
-                allyPortraitAndSfx BOWIE_BASE, DIALOG_BLEEP_5
-                allyPortraitAndSfx BOWIE_BASE, DIALOG_BLEEP_5
+; 30: Peter
+                allyPortraitAndSfx REAL_PETER_BASE,  DIALOG_BLEEP_4
+                allyPortraitAndSfx REAL_PETER_PROMO, DIALOG_BLEEP_5
+                allyPortraitAndSfx REAL_PETER_PROMO, DIALOG_BLEEP_5
                 
 ; 31: Sunny
-                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_3	; TODO: coming soon
-                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_3
-                allyPortraitAndSfx PETER_PROMO, DIALOG_BLEEP_3
+                allyPortraitAndSfx SUNNY, DIALOG_BLEEP_3
+                allyPortraitAndSfx SUNNY, DIALOG_BLEEP_3
+                allyPortraitAndSfx SUNNY, DIALOG_BLEEP_3
                 
             endif

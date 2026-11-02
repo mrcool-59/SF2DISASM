@@ -168,17 +168,17 @@ table_ClassDefinitions:
                 prowess    CRITICAL150_1IN16|DOUBLE_1IN16|COUNTER_1IN8
                 
             if (EXPANDED_CLASSES=1)
-                    
-                mov 6                   ; 32: 
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
-                moveType   REGULAR
-                prowess    CRITICAL_NONE|DOUBLE_1IN32|COUNTER_1IN32
-                    
-                mov 6                   ; 33: 
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
-                moveType   REGULAR
-                prowess    CRITICAL_NONE|DOUBLE_1IN32|COUNTER_1IN32
-                    
+                
+                mov 6                   ; 32: PHNK
+                resistance WIND_MINOR|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
+                moveType   HOVERING
+                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
+                
+                mov 7                   ; 33: PHNX
+                resistance WIND_MINOR|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_MAJOR|NEUTRAL_NONE|STATUS_MAJOR
+                moveType   FLYING
+                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
+                
                 mov 7                   ; 34: GDRG
                 resistance WIND_WEAKNESS|LIGHTNING_MAJOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
                 moveType   FLYING

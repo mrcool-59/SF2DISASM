@@ -160,14 +160,14 @@ table_AllyMapsprites:
                 mapsprite DEFAULT
                 
             if (EXPANDED_FORCE_MEMBERS=1)
-; 30: 
-                mapsprite DEFAULT
-                mapsprite DEFAULT
+; 30: Peter
+                mapsprite REAL_PETER_BASE
+                mapsprite REAL_PETER_PROMO
                 mapsprite DEFAULT
                 
 ; 31: Sunny
                 mapsprite DEFAULT
-                mapsprite PETER_PROMO	; TODO: coming soon
+                mapsprite SUNNY_PROMO
                 mapsprite DEFAULT
                 
             endif

@@ -81,11 +81,11 @@ table_MapspriteDialogueProperties:
                 
                 mapsprite PETER_BASE
                 portrait  PETER_BASE
-                speechSfx DIALOG_BLEEP_4
+                speechSfx DIALOG_BLEEP_7
                 
                 mapsprite PETER_PROMO
                 portrait  PETER_PROMO
-                speechSfx DIALOG_BLEEP_5
+                speechSfx DIALOG_BLEEP_8
                 
                 mapsprite MAY_BASE
                 portrait  MAY
@@ -242,6 +242,18 @@ table_MapspriteDialogueProperties:
                 mapsprite CLAUDE_PROMO
                 portrait  CLAUDE
                 speechSfx DIALOG_BLEEP_7
+
+                mapsprite REAL_PETER_BASE
+                portrait  REAL_PETER_BASE
+                speechSfx DIALOG_BLEEP_4
+                
+                mapsprite REAL_PETER_PROMO
+                portrait  REAL_PETER_PROMO
+                speechSfx DIALOG_BLEEP_5
+                
+                mapsprite SUNNY_PROMO
+                portrait  SUNNY
+                speechSfx DIALOG_BLEEP_3
                 
                 mapsprite POSE1
                 portrait  NONE

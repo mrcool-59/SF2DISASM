@@ -5,10 +5,10 @@ table_Promotions:
 ; Syntax        promotionSection [CLASS_]enum,..[CLASS_]enum
                 
                 promotionSection &      ; 00: Regular base classes
-                    SDMN, KNTE, WARR, MAGE, PRST, ACHR, BDMN, WFMN, RNGR, PHNK, THIF, TORT
+                    SDMN, KNTE, WARR, MAGE, PRST, ACHR, BDMN, WFMN, RNGR, PHNK, THIF, TORT, CLASS_32
                 
                 promotionSection &      ; 01: Regular promoted classes
-                    HERO, PLDN, GLDT, WIZ, VICR, SNIP, BDBT, WFBR, BWNT, PHNX, NINJ, MNST
+                    HERO, PLDN, GLDT, WIZ, VICR, SNIP, BDBT, WFBR, BWNT, PHNX, NINJ, MNST, CLASS_33
                 
                 promotionSection &      ; 02: Pegasus Wing base classes
                     KNTE
