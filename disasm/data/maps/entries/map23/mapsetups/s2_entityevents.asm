@@ -34,17 +34,17 @@ cs_PeterJoin:
 				textCursor 	4291
                 setActscript ALLY_30,eas_Idle
 				shiver 		ALLY_BOWIE
-				csWait  30
+				csWait  20
 				faceEntity	ALLY_30, ALLY_BOWIE
 				nextText 	$0,ALLY_30  		;  "What?{D1} Save the world?{D1}{N}Er...{D1} I guess I could lend{N}you my help.{W1}"
 				nextText 	$0,ALLY_30  		;  "If the world ends,{N}so will my tour...{W1}"
 				shiver 		ALLY_30
-				csWait	30
+				csWait	20
 				nextSingleText 	$0,ALLY_30  	;  "OK, count me in!{W1}"
 				nod 	ALLY_30
-				csWait 	30
+				csWait 	10
 				nod 	ALLY_BOWIE
-				csWait 	30
+				csWait 	10
 				join 	ALLY_30
 				setDest ALLY_30, 57, 3
 				csWait  15

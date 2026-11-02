@@ -4279,7 +4279,7 @@
 4277=10B5=Oh, {LEADER}!{D1}{N}I almost forgot... {D1}Did you take{N}some time to fill my map?{W1}
 4278=10B6=What?! You completely forgot{N}about it?!{N}{W2}Hmph... Give it back to me,{N}I'll fill it myself!{N}(Mumble, mumble){W2}
 4279=10B7=Let's make him pay, {D1}{D1}together!{N}Zeon stole a friend away from{N}you I couldn't get to know.{W1}
-4280=10B8=It's way too noisy inside!{N}I'd rather stay here.{W1}
+4280=10B8=It's way too noisy inside!{N}I'd rather stay here.{W2}
 4281=10B9=For some reason, I had{N}a nightmare a few days ago{N}of this happening...{W1}
 4282=10BA=Aww... come on!{N}It wasn't that bad of a landing!{W1}
 4283=10BB=Hi, {LEADER}! I moved to Bedoe,{N}next to {NAME;7}'s home.{D1}{N}We enjoy each other's company.{W1}
@@ -4293,5 +4293,9 @@
 4291=1093=What?{D1} Save the world?{D1}{N}Er...{D1} I guess I could lend{N}you my help.{W1}
 4292=1094=If the world ends,{N}so will my tour...{W1}
 4293=1095=OK, count me in!{W1}
-4313=10A9=Oh {LEADER}!{N}I have a small request...{W1}
-4314=10AA=I am working on a little thing{N}for {NAME;7}.{W2}{CLEAR}I mean, it's not ready yet,{N}but please come see me when{N}we get another chance to rest.{W2}{N}I'll give it to you then!{N}Don't forget it!{W1}
+4310=10A6=Oh {LEADER}!...{W2}{N}I enchanted this little trinket...{N}Maybe {NAME;7} would like{N}to have it?{W2}{CLEAR}I mean, if he doesn't I can{N}always make use of it but...{N}{D1}...{D1}{D1}...{D1}{D1}.{W1}
+4311=10A7=You're turning red.{W1}
+4312=10A8=Oh my gosh!...
+4313=10A9=Just take it, OK?{N}And do whatever you think{N}is best with it!{W1}
+4314=10AA=Oh {LEADER}!{N}I have a small request...{W1}
+4315=10AB=I am working on a little thing{N}for {NAME;7}.{W2}{CLEAR}I mean, it's not ready yet,{N}but please come see me when{N}we get another chance to rest.{W2}{N}I'll give it to you then!{N}Don't forget it!{W1}

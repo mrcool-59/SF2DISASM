@@ -20,10 +20,54 @@ ms_map7_flag805_EntityEvents:
 
 
 Map7_EntityEvent12:
-                txt     4280            ; "It's way too noisy inside!{N}I'd rather stay here.{W1}"
-				clsTxt
+
+				chkFlg	554				; Set after Sunny mentions she'd rather stay outside
+				bne.s	@CheckGift
+				txt		4280			; "It's way too noisy inside!{N}I'd rather stay here.{W2}"
+				setFlg	554				; Set after Sunny mentions she'd rather stay outside
+				
+			@CheckGift:
+				chkFlg	999				; Set after the Nazca ship shootdown scene
+				beq.s	@Default
+				
+				chkFlg	553				; Set after Sunny gives her gift
+				bne.s	@Default
+				script	cs_SunnyGift
+				setFlg	553				; Set after Sunny gives her gift
+				rts
+				
+			@Default:
                 moveq   #ALLY_31,d0
                 jmp     DisplayTacticalBaseQuote
+
+cs_SunnyGift:
+				textCursor 	4310
+				shiver 		ALLY_31
+				csWait  	10
+				nextSingleText 	$0,ALLY_31  	; "Oh {LEADER}!...{W2}{N}I enchanted this little trinket...{N}Maybe {NAME;7} would like{N}to have it?{W2}{CLEAR}I mean, if he doesn't I can{N}always make use of it but...{N}{D1}...{D1}{D1}...{D1}{D1}.{W1}"
+				nextSingleText 	$0,ALLY_BOWIE  	; "You're turning red.{W1}"
+				
+				shiver 		ALLY_31
+				csWait 		10
+				nextText 	$0,ALLY_31  		; "Oh my gosh!..."
+				
+				setActscriptWait ALLY_31,eas_Jump
+				setActscriptWait ALLY_31,eas_Jump
+				setActscriptWait ALLY_31,eas_Jump
+				
+				nextSingleText 	$0,ALLY_31  	; "Just take it, OK?{N}And do whatever you think{N}is best with it!{W1}"
+				nod 		ALLY_BOWIE
+				nod 		ALLY_31
+				csWait  30
+				
+				executeSubroutine Map7_SunnyGift_ASM
+				csc_end
+
+Map7_SunnyGift_ASM:
+				move.w  #0,((CURRENT_SPEECH_SFX-$1000000)).w
+                move.w  #ITEM_DRAGON_RING,d0
+                moveq   #1,d1
+                jmp     ReceiveMandatoryItem
 
 
 Map7_EntityEvent11:
