@@ -4,6 +4,9 @@
 !*-standard.bin
 !**/*-standard/*.bin
 
+# Explicitly ignored files
+*.ignore.*
+
 # No symbols or listings files
 *.lst
 *.sym
