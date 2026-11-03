@@ -46,6 +46,8 @@ GetMapMusic:	; This routine computes the current map music (depending on whether
                 
 @Continue:      
 				; Hardcode 1: Odd Eye battle => if Sunny hasn't joined, it would be a shame to waste such a great music!
+				cmpi.b  #BATTLE_INSIDE_SUNNY_CAVE,d3
+				beq.s   @AdjustAscendTower
 				cmpi.b  #MUSIC_CUSTOM_SUNNY,d0
 				bne.s   @AdjustAscendTower			; Not playing the Odd Eye battle
 				chkFlg  31

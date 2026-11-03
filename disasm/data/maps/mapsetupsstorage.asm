@@ -718,3 +718,10 @@
                 include "data\maps\entries\map21\mapsetups\s4_descriptions_543.asm"    ; 
                 include "data\maps\entries\map21\mapsetups\s5_itemevents_543.asm"    ; 
                 include "data\maps\entries\map21\mapsetups\s6_initfunction_543.asm"    ; 
+                include "data\maps\entries\map79-standard\mapsetups\pointertable.asm"    ; 
+                include "data\maps\entries\map79-standard\mapsetups\s1_entities.asm"    ; 
+                include "data\maps\entries\map79-standard\mapsetups\s2_entityevents.asm"    ; 
+                include "data\maps\entries\map79-standard\mapsetups\s3_zoneevents.asm"    ; 
+                include "data\maps\entries\map79-standard\mapsetups\s4_descriptions.asm"    ; 
+                include "data\maps\entries\map79-standard\mapsetups\s5_itemevents.asm"    ; 
+                include "data\maps\entries\map79-standard\mapsetups\s6_initfunction.asm"    ; 

@@ -80,6 +80,7 @@ pt_MapData:     dc.l Map00
                 dc.l Map76
                 dc.l Map77
                 dc.l Map78
+				dc.l Map79
 Map00:          include "data\maps\entries\map00\00-tilesets.asm"    ; 
                 dc.l Map00s0_Blocks
                 dc.l Map00s1_Layout
@@ -1533,11 +1534,11 @@ Map71s2_Areas:  include "data\maps\entries\map71\2-areas.asm"    ;
 Map71s3_FlagEvents:include "data\maps\entries\map71\3-flag-events.asm"    ; 
 Map71s4_StepEvents:include "data\maps\entries\map71\4-step-events.asm"    ; 
 Map71s5_RoofEvents:include "data\maps\entries\map71\5-roof-events.asm"    ; 
-Map71s6_WarpEvents:include "data\maps\entries\map71\6-warp-events.asm"    ; 
+Map71s6_WarpEvents:include "data\maps\entries\map71-standard\6-warp-events.asm"    ; 
 Map71s7_ChestItems:include "data\maps\entries\map71\7-chest-items.asm"    ; 
 Map71s8_OtherItems:include "data\maps\entries\map71\8-other-items.asm"    ; 
-Map71s0_Blocks: incbin "data/maps/entries/map71/0-blocks.bin"
-Map71s1_Layout: incbin "data/maps/entries/map71/1-layout.bin"
+Map71s0_Blocks: incbin "data/maps/entries/map71-standard/0-blocks.bin"
+Map71s1_Layout: incbin "data/maps/entries/map71-standard/1-layout.bin"
 Map71s9_Animations:include "data\maps\entries\map71\9-animations.asm"    ; 
 Map72:          include "data\maps\entries\map72\00-tilesets.asm"    ; 
                 dc.l Map72s0_Blocks
@@ -1680,9 +1681,30 @@ Map78s2_Areas:  include "data\maps\entries\map78\2-areas.asm"    ;
 Map78s3_FlagEvents:include "data\maps\entries\map78\3-flag-events.asm"    ; 
 Map78s4_StepEvents:include "data\maps\entries\map78\4-step-events.asm"    ; 
 Map78s5_RoofEvents:include "data\maps\entries\map78\5-roof-events.asm"    ; 
-Map78s6_WarpEvents:include "data\maps\entries\map78\6-warp-events.asm"    ; 
+Map78s6_WarpEvents:include "data\maps\entries\map78-standard\6-warp-events.asm"    ; 
 Map78s7_ChestItems:include "data\maps\entries\map78\7-chest-items.asm"    ; 
 Map78s8_OtherItems:include "data\maps\entries\map78\8-other-items.asm"    ; 
-Map78s0_Blocks: incbin "data/maps/entries/map78/0-blocks.bin"
-Map78s1_Layout: incbin "data/maps/entries/map78/1-layout.bin"
+Map78s0_Blocks: incbin "data/maps/entries/map78-standard/0-blocks.bin"
+Map78s1_Layout: incbin "data/maps/entries/map78-standard/1-layout.bin"
 Map78s9_Animations:include "data\maps\entries\map78\9-animations.asm"    ; 
+Map79:          include "data\maps\entries\map79-standard\00-tilesets.asm"    ; 
+                dc.l Map79s0_Blocks
+                dc.l Map79s1_Layout
+                dc.l Map79s2_Areas
+                dc.l Map79s3_FlagEvents 
+                dc.l Map79s4_StepEvents
+                dc.l Map79s5_RoofEvents
+                dc.l Map79s6_WarpEvents
+                dc.l Map79s7_ChestItems 
+                dc.l Map79s8_OtherItems
+                dc.l $FFFFFFFF
+Map79s2_Areas:  include "data\maps\entries\map79-standard\2-areas.asm"    ; 
+Map79s3_FlagEvents:include "data\maps\entries\map79-standard\3-flag-events.asm"    ; 
+Map79s4_StepEvents:include "data\maps\entries\map79-standard\4-step-events.asm"    ; 
+Map79s5_RoofEvents:include "data\maps\entries\map79-standard\5-roof-events.asm"    ; 
+Map79s6_WarpEvents:include "data\maps\entries\map79-standard\6-warp-events.asm"    ; 
+Map79s7_ChestItems:include "data\maps\entries\map79-standard\7-chest-items.asm"    ; 
+Map79s8_OtherItems:include "data\maps\entries\map79-standard\8-other-items.asm"    ; 
+Map79s0_Blocks: incbin "data/maps/entries/map79-standard/0-blocks.bin"
+Map79s1_Layout: incbin "data/maps/entries/map79-standard/1-layout.bin"
+

@@ -108,6 +108,7 @@ table_MapNames:
                 defineName "Overworld -- Roft Region"
                 defineName "Overworld -- Galam Kingdom"
                 defineName "Overworld -- Pacalon Kingdom"
+                defineName "Sunny Cave"
 
 
 ;
@@ -157,6 +158,7 @@ table_BattleNames:
                 defineName "Versus Galam"
                 defineName "Versus Zeon"
                 defineName "Fairy Woods"
+                defineName "Inside Sunny Cave"
 
 
 ;

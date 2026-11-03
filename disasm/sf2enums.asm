@@ -2056,7 +2056,7 @@ KIWI_FLAME_BREATH_UPGRADE_LEVEL3: equ 50 ; level as MNST (not effective level)
 ; ---------------------------------------------------------------------------
 
 ; enum MapProperties
-mapsNumber: = 79
+mapsNumber: = 80
 mapsMaxIndex: = mapsNumber-1
 mapsDebugMaxIndex: = 56
 
@@ -2154,13 +2154,14 @@ MAP_OVERWORLD_NAZCA_REGION: equ 75 ; includes the Nazca Ship's crash site and th
 MAP_OVERWORLD_ROFT_REGION: equ 76
 MAP_OVERWORLD_GALAM_KINGDOM: equ 77 ; includes the Dwarven Village
 MAP_OVERWORLD_PACALON_KINGDOM: equ 78 ; includes part of the path leading to the Cave of Darkness
+MAP_SUNNY_CAVE: equ 79
 MAP_CURRENT: equ 255 ; reload current map
 
 ; ---------------------------------------------------------------------------
 
 ; enum BattleProperties
 
-battlesNumber = 45
+battlesNumber = 46
 battlesMaxIndex = battlesNumber-1
 battlesCounter = battlesNumber-1
 battlesDebugMaxIndex = 49
@@ -2222,6 +2223,7 @@ BATTLE_OUTSIDE_ANCIENT_TOWER: equ 41
 BATTLE_VERSUS_GALAM: equ 42
 BATTLE_VERSUS_ZEON: equ 43
 BATTLE_FAIRY_WOODS: equ 44
+BATTLE_INSIDE_SUNNY_CAVE: equ 45
 NOT_CURRENTLY_IN_BATTLE: equ 255
 
 ; ---------------------------------------------------------------------------

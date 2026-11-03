@@ -38,3 +38,37 @@ ResetAiJaro:
 
     ; End of function ResetJaro
 
+
+
+ResetAiSunny:      
+                
+                movem.w d0-d1,-(sp)
+				
+				; Run this hack only while handling battle 45
+                compareToSavedByte #BATTLE_INSIDE_SUNNY_CAVE, CURRENT_BATTLE
+                bne.s   @Done
+                
+				; Disable this once the battle has been completed
+				chkFlg	(BATTLE_COMPLETED_FLAGS_START+BATTLE_INSIDE_SUNNY_CAVE)
+                bne.s   @Done
+                
+				; Always repeat battle 45 cutscene
+				clrFlg  (BATTLE_INTRO_CUTSCENE_FLAGS_START+BATTLE_INSIDE_SUNNY_CAVE)
+				
+                move.w  #ALLY_31,d0
+                clr.w   d1
+                
+                pea     @Done(pc)
+                pea     LeaveForce
+                pea     LeaveBattleParty
+                pea     UpdateCombatantStats
+                pea     SetCurrentMp
+                pea     GetMaxMp
+                pea     SetCurrentHp
+                pea     GetMaxHp
+                jmp     SetStatusEffects
+                
+@Done:          movem.w (sp)+,d0-d1
+                rts
+
+    ; End of function ResetAiSunny

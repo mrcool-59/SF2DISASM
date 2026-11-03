@@ -28,6 +28,7 @@ MainLoop:
             if (FIX_AI_JARO_NOT_LEAVING_THE_FORCE=1)
                 jsr     ResetAiJaro
             endif
+				jsr		ResetAiSunny
 alt_MainLoopEntry:
                 
                 bsr.w   SwitchMap       ; Check table "FlagSwitchedMaps" for possible flag-triggered map switch

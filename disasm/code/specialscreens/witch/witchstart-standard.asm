@@ -283,6 +283,7 @@ witchMenuAction_Load:
                 beq.s   @loc_18
                 
                 pea     (alt_MainLoopEntry).w
+				pea		ResetAiSunny
             if (FIX_AI_JARO_NOT_LEAVING_THE_FORCE=1)
                 pea     ResetAiJaro
             endif

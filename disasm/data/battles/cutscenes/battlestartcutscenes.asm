@@ -48,6 +48,6 @@ rpt_BattleStartCutscenes:
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
-                dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
+                dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF ; Inside Sunny Cave
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF

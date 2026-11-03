@@ -47,7 +47,7 @@ table_AfterBattleJoins:
                 dc.b 0
                 dc.b 0
                 dc.b 0
-                dc.b 0
+                dc.b 0 ; Inside Sunny Cave
                 dc.b 0
                 dc.b 0
                 dc.b 0

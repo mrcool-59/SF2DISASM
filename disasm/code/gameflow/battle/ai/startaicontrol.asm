@@ -17,7 +17,7 @@ StartAiControl:
                 bne.s   @Enemy
                 
                 ; If an ally is AI controlled (e.g., Peter, Jaro) use AI commandset #6
-                move.w  #AICOMMANDSET_ATTACKER1,d5
+                move.w  #AICOMMANDSET_CRITICAL,d5	; Customized since it is only used for Sunny on her introductory battle
                 bra.w   @HandleAiCommandset
 @Enemy:
                 

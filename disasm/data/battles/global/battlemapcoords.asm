@@ -48,3 +48,4 @@ table_BattleMapCoordinates:
                 battleMapCoordinates 59, 0, 0, 28, 38, 255, 255
                 battleMapCoordinates 59, 0, 0, 28, 38, 255, 255
                 battleMapCoordinates 24, 0, 0, 18, 32, 255, 255
+				battleMapCoordinates 79, 32, 1, 20, 20, 255, 255 ; Inside Sunny Cave

@@ -47,6 +47,7 @@ pt_BattleSpritesets:
                 dc.l BattleSpriteset42
                 dc.l BattleSpriteset43
                 dc.l BattleSpriteset44
+				dc.l BattleSpriteset45
                 include "data\battles\spritesets\spriteset00.asm"    ; Battle Spritesets 00
                 include "data\battles\spritesets\spriteset01.asm"    ; Battle Spritesets 01
                 include "data\battles\spritesets\spriteset02.asm"    ; Battle Spritesets 02
@@ -92,3 +93,4 @@ pt_BattleSpritesets:
                 include "data\battles\spritesets\spriteset42.asm"    ; Battle Spritesets 42
                 include "data\battles\spritesets\spriteset43.asm"    ; Battle Spritesets 43
                 include "data\battles\spritesets\spriteset44.asm"    ; Battle Spritesets 44
+				include "data\battles\spritesets\spriteset45-standard.asm"    ; Battle Spritesets 45

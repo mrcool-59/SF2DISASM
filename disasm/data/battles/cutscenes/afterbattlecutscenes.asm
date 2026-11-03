@@ -47,6 +47,6 @@ rpt_AfterBattleCutscenes:
                 dc.w abcs_battle42-rpt_AfterBattleCutscenes
                 dc.w abcs_battle43-rpt_AfterBattleCutscenes
                 dc.w (ms_Empty-rpt_AfterBattleCutscenes) & $FFFF
-                dc.w (ms_Empty-rpt_AfterBattleCutscenes) & $FFFF
+                dc.w abcs_battle45-rpt_AfterBattleCutscenes ; Inside Sunny Cave
                 dc.w (ms_Empty-rpt_AfterBattleCutscenes) & $FFFF
                 dc.w (ms_Empty-rpt_AfterBattleCutscenes) & $FFFF

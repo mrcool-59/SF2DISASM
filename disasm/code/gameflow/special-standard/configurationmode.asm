@@ -265,6 +265,7 @@ ConfigurationScreenEnd:
                 
                 ; Start test battle
 @battleTest     pea     (alt_MainLoopEntry).w   ; push new return address : Main loop (from battle)
+				pea		ResetAiSunny
             if (FIX_AI_JARO_NOT_LEAVING_THE_FORCE=1)
                 pea     ResetAiJaro
             endif
@@ -1500,7 +1501,7 @@ rjt_BattleTestFollowers:
                 dc.w battleTestFollowers00-rjt_BattleTestFollowers
                 dc.w battleTestFollowers00-rjt_BattleTestFollowers
                 dc.w battleTestFollowers00-rjt_BattleTestFollowers
-				dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Unused (slot 45)
+                dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Inside Sunny Cave
 				dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Unused (slot 46)
 				dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Unused (slot 47)
 				dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Unused (slot 48)
@@ -1679,6 +1680,13 @@ SetupBattleTestParty:
                 jsr     rjt_BattleTestParty(pc,d1.w)
                 dbf     d7,@recruit_loop
                 
+				; Hack specific hardcode
+				cmp.w   #BATTLE_INSIDE_SUNNY_CAVE,d2
+				bne.s	@SkipSunnyHack
+				move.b  #ALLY_31,d0
+				jsr     LeaveForce
+			@SkipSunnyHack:
+
                 move.w  (sp)+,d0
                 rts
 
@@ -1692,7 +1700,7 @@ rjt_BattleTestParty:
                 dc.w battleTestParty06-rjt_BattleTestParty ; 06: Slade
                 dc.w battleTestParty07-rjt_BattleTestParty ; 07: Kiwi
                 dc.w battleTestParty00-rjt_BattleTestParty
-                dc.w battleTestParty09-rjt_BattleTestParty ; 09: Peter
+                dc.w battleTestParty09-rjt_BattleTestParty ; 09: Peter (Ixen)
                 dc.w battleTestParty10-rjt_BattleTestParty ; 10: May
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty00-rjt_BattleTestParty
@@ -1702,7 +1710,7 @@ rjt_BattleTestParty:
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty00-rjt_BattleTestParty
-                dc.w battleTestParty19-rjt_BattleTestParty ; 19: Rick
+                dc.w battleTestParty19-rjt_BattleTestParty ; 19: Rick, Peter (Real)
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty21-rjt_BattleTestParty ; 21: Elric
                 dc.w battleTestParty00-rjt_BattleTestParty
@@ -1716,7 +1724,7 @@ rjt_BattleTestParty:
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty31-rjt_BattleTestParty ; 31: Taya, Skreech
                 dc.w battleTestParty00-rjt_BattleTestParty
-                dc.w battleTestParty33-rjt_BattleTestParty ; 33: Jaro, Frayja
+                dc.w battleTestParty33-rjt_BattleTestParty ; 33: Jaro, Frayja, Sunny
                 dc.w battleTestParty34-rjt_BattleTestParty ; 34: Gyan
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty36-rjt_BattleTestParty ; 36: Zynk, Claude
@@ -1728,7 +1736,7 @@ rjt_BattleTestParty:
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty00-rjt_BattleTestParty
-				dc.w battleTestParty00-rjt_BattleTestParty ; Unused (slot 45)
+				dc.w battleTestParty00-rjt_BattleTestParty ; Inside Sunny Cave
 				dc.w battleTestParty00-rjt_BattleTestParty ; Unused (slot 46)
 				dc.w battleTestParty00-rjt_BattleTestParty ; Unused (slot 47)
 				dc.w battleTestParty00-rjt_BattleTestParty ; Unused (slot 48)
@@ -1779,6 +1787,8 @@ battleTestParty14:
                 
 battleTestParty19:
                 moveq   #ALLY_RICK,d0
+                jsr     JoinForce
+                moveq   #ALLY_30,d0
                 jmp     JoinForce
                 
 battleTestParty21:
@@ -1815,6 +1825,8 @@ battleTestParty33:
                 moveq   #ALLY_JARO,d0
                 jsr     JoinForce
                 moveq   #ALLY_FRAYJA,d0
+                jsr     JoinForce
+                moveq   #ALLY_31,d0
                 jmp     JoinForce
                 
 battleTestParty34:

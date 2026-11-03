@@ -9,6 +9,7 @@ abcs_battle30:  textCursor 2765
                 setPos ALLY_PETER,12,13,UP
                 setActscriptWait FOLLOWER_B,eas_Init
                 setPos FOLLOWER_B,11,13,UP
+				setF 445 				; Battle "Inside Sunny Cave" unlocked!
                 stopEntity 128
                 setActscriptWait 130,eas_DeactivateAutoFacing
                 stopEntity 130

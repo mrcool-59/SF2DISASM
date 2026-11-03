@@ -47,6 +47,6 @@ rpt_EnemyDefeatedCutscenes:
                 dc.w (ms_Empty-rpt_EnemyDefeatedCutscenes) & $FFFF
                 dc.w edcs_battle43-rpt_EnemyDefeatedCutscenes
                 dc.w (ms_Empty-rpt_EnemyDefeatedCutscenes) & $FFFF
-                dc.w (ms_Empty-rpt_EnemyDefeatedCutscenes) & $FFFF
+                dc.w (ms_Empty-rpt_EnemyDefeatedCutscenes) & $FFFF ; Inside Sunny Cave
                 dc.w (ms_Empty-rpt_EnemyDefeatedCutscenes) & $FFFF
                 dc.w (ms_Empty-rpt_EnemyDefeatedCutscenes) & $FFFF

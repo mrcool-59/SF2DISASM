@@ -195,4 +195,6 @@ MapSetups:      msMap 3, ms_map3
                 msMapEnd
                 msMap 77, ms_map77
                 msMapEnd
+                msMap 79, ms_map79 ; Sunny Cave
+                msMapEnd
                 msEnd

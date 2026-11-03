@@ -57,3 +57,5 @@
                 include "data\battles\entries\battle43\cs_battleend.asm"    ; Enemy defeated cutscene for battle 43
                 include "data\battles\entries\battle43\cs_afterbattle.asm"    ; Cutscene after battle 43
                 include "data\battles\entries\battle00\cs_afterbattle.asm"    ; Cutscene after battle 0
+				include "data\battles\entries\battle45-standard\cs_beforebattle.asm"   ; Cutscene before battle 45 (Inside Sunny Cave)
+                include "data\battles\entries\battle45-standard\cs_afterbattle.asm"    ; Cutscene after battle 45 (Inside Sunny Cave)

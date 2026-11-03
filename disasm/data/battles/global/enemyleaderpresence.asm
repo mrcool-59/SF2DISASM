@@ -50,4 +50,9 @@ table_EnemyLeaderPresentFlags:
                 dc.b -1                 ; 42: Versus Galam
                 dc.b -1                 ; 43: Versus Zeon
                 dc.b -1                 ; 44: Fairy Woods
+                dc.b 0					; 45: Inside Sunny Cave
+				dc.b 0					; 46: (Unused)
+				dc.b 0					; 47: (Unused)
+				dc.b 0					; 48: (Unused)
+				dc.b 0					; 49: (Unused)
                 

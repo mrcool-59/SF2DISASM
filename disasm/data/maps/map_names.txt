@@ -77,3 +77,4 @@
 76 MAP_OVERWORLD_ROFT_REGION
 77 MAP_OVERWORLD_GALAM_KINGDOM ; includes Dwarven Village
 78 MAP_OVERWORLD_PACALON_KINGDOM ; includes part of the path leading to the Cave of Darkness
+79 MAP_SUNNY_CAVE
