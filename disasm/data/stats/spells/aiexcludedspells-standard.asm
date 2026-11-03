@@ -22,7 +22,8 @@ table_AiExcludedWhenConfusedAttackSpells:
                 dc.b SPELL_ODDEYE
                 dc.b SPELL_DRAGON_BREATH
 				dc.b SPELL_THUNDER_BREATH
-                
+                dc.b SPELL_SKIP_BATTLE
+				
                 tableEnd.b
 
 
@@ -49,5 +50,6 @@ table_AiExcludedWhenConfusedItemUseAttackSpells:
                 dc.b SPELL_ODDEYE
                 dc.b SPELL_DRAGON_BREATH
                 dc.b SPELL_THUNDER_BREATH
-                
+				dc.b SPELL_SKIP_BATTLE
+				
                 tableEnd.b

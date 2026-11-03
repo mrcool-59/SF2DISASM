@@ -52,7 +52,7 @@ table_SpellElements:
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
                 spellElement FIRE    	; 44: DRAGON_BREATH
                 spellElement LIGHTNING  ; 45: THUNDER_BREATH
-                spellElement NEUTRAL    ; 46: 
+                spellElement NEUTRAL    ; 46: SKIP_BATTLE
                 spellElement NEUTRAL    ; 47: 
                 spellElement NEUTRAL    ; 48: 
                 spellElement NEUTRAL    ; 49: 

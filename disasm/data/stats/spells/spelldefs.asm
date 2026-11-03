@@ -817,13 +817,13 @@ table_SpellDefinitions:
                 radius     1
                 power      50
 				
-                entry      46
+                entry      SKIP_BATTLE
                 mpCost     0
-                animation  NONE
-                properties TYPE_ATTACK
+                animation  DESOUL|VARIATION2
+                properties TYPE_ATTACK|TARGET_TEAMMATES
                 range      0, 0
                 radius     0
-                power      0
+                power      250
                 
                 entry      47
                 mpCost     0

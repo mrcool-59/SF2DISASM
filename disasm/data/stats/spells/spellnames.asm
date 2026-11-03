@@ -49,7 +49,7 @@ table_SpellNames:
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
                 spellName "BREATH"
                 spellName "THUNBR"
-                spellName "spell46"
+                spellName "SKIP"
                 spellName "spell47"
                 spellName "spell48"
                 spellName "spell49"

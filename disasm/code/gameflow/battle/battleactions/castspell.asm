@@ -69,7 +69,7 @@ rjt_SpellEffects:
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
                 dc.w spellEffect_FlameBreath-rjt_SpellEffects   ; DRAGON_BREATH
                 dc.w spellEffect_ThunderBreath-rjt_SpellEffects ; THUNDER_BREATH
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell46
+                dc.w spellEffect_Bolt-rjt_SpellEffects          ; SKIP_BATTLE
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell47
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell48
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell49
