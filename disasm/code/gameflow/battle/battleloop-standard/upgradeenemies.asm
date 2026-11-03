@@ -189,6 +189,12 @@ UpgradeRandomBattleEnemies:
                 loadSavedDataAddress CURRENT_BATTLE, a1
                 clr.w   d1
                 move.b  (a1),d1
+				
+				; Read expected level for battle
+                lea     (table_ExpectedLevelForBattles).l, a1
+                adda.w  d1,a1
+				move.b  (a1),d1			; d1 = expected current battle level
+
                 sub.w   d1,d2
                 ble.s   @DefaultEnemy   ; default to original enemy if Bowie's effective level is lower than or equal
                                         ; to the current battle index

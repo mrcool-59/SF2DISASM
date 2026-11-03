@@ -3,13 +3,10 @@ table_ExpectedLevelForBattles:
                
 	; Overall, expected level is in most cases equal to the battle number! (except for boss battles)
 	; This table is currently used for the bonus experience mechanic (if enabled) and the healing experience dampening mechanic (if enabled)
+	; It is also used by configuration mode to set-up a level appropriate party for battle testing
+	; It is also used by random battles as the level against which Bowie's level is compared for enemy upgrades
 	; If you create new battles, don't forget to add entries in this file!
 
-	; FIXME: here a couple of extra implementation ideas to polish this feature even more:
-	; - Create a convenient subroutine to get the current expected level and bound-check it properly.
-	; - It could also be used in the configuration mode to set-up a level appropriate party for battle testing, instead of using battle number with a nasty secret battle hardcoded special case.
-	; - Random battle enemy upgrades should also be modified to use this table instead of battle number.
-	
 	dc.b  50 ; BATTLE_VERSUS_ALL_BOSSES: equ 0
 	dc.b   1 ; BATTLE_INSIDE_ANCIENT_TOWER: equ 1
 	dc.b   2 ; BATTLE_TO_YEEL: equ 2
@@ -56,4 +53,9 @@ table_ExpectedLevelForBattles:
 	dc.b  48 ; BATTLE_VERSUS_ZEON: equ 43
 	dc.b  25 ; BATTLE_FAIRY_WOODS: equ 44
 
+	dc.b   1 ; Unused (45)
+	dc.b   1 ; Unused (46)
+	dc.b   1 ; Unused (47)
+	dc.b   1 ; Unused (48)
+	dc.b   1 ; Unused (49)
 	align

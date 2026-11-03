@@ -1500,6 +1500,11 @@ rjt_BattleTestFollowers:
                 dc.w battleTestFollowers00-rjt_BattleTestFollowers
                 dc.w battleTestFollowers00-rjt_BattleTestFollowers
                 dc.w battleTestFollowers00-rjt_BattleTestFollowers
+				dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Unused (slot 45)
+				dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Unused (slot 46)
+				dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Unused (slot 47)
+				dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Unused (slot 48)
+				dc.w battleTestFollowers00-rjt_BattleTestFollowers ; Unused (slot 49)
 
 battleTestFollowers00:
                 rts
@@ -1592,12 +1597,8 @@ battleTestFollowers39:
 SetupBattleTestParty:
                 
                 move.w  d0,-(sp)
-                move.w  d0,d2           ; new effective level = battle index
-                bne.s   @upgradeShop
-                
-                ; Recruit and level everyone up to max value for the special battle
-                moveq   #BATTLES_MAX_INDEX,d2
-                
+                move.w  d0,d2           ; d2 = battle index
+
                 ; Find matching shop inventory for battle
 @upgradeShop    lea     table_ShopUpgradeBattles(pc), a0
                 moveq   #-1,d1
@@ -1630,11 +1631,18 @@ SetupBattleTestParty:
 @continue       jsr     LeaveForce
                 move.b  d1,COMBATANT_OFFSET_CLASS(a1)
                 jsr     LoadAllyClassData
-                move.w  d2,d4
+				
+				; Read expected level for battle
+				movem.l a0,-(sp)
+                lea     (table_ExpectedLevelForBattles).l, a0
+                adda.w  d2,a0
+				clr.w   d4
+				move.b  (a0),d4		; d4 = expected battle level
+				movem.l (sp)+,a0
+				
+                ; Subtract 20 from new current level if the character starts promoted
                 jsr     GetClassType
                 beq.s   @init
-                
-                ; Subtract 20 from new current level if the character starts promoted
                 sub.w   #CHAR_CLASS_EXTRALEVEL,d4
 				tst.w   d4
 				bgt.w   @init
@@ -1720,6 +1728,11 @@ rjt_BattleTestParty:
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty00-rjt_BattleTestParty
                 dc.w battleTestParty00-rjt_BattleTestParty
+				dc.w battleTestParty00-rjt_BattleTestParty ; Unused (slot 45)
+				dc.w battleTestParty00-rjt_BattleTestParty ; Unused (slot 46)
+				dc.w battleTestParty00-rjt_BattleTestParty ; Unused (slot 47)
+				dc.w battleTestParty00-rjt_BattleTestParty ; Unused (slot 48)
+				dc.w battleTestParty00-rjt_BattleTestParty ; Unused (slot 49)
 
 battleTestParty00:
                 rts
