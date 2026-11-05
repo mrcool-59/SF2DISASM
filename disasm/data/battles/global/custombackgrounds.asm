@@ -52,7 +52,7 @@ table_CustomBackgrounds:
                 background VERSUS_GALAM ; 42: Versus Galam
                 background VERSUS_GALAM ; 43: Versus Zeon
                 background FOREST       ; 44: Fairy Woods
-                background BURROW		; 45: Inside Sunny Cave
+                background HOME			; 45: Inside Sunny Cave
 				background OVERWORLD	; 46: (Unused)
 				background OVERWORLD	; 47: (Unused)
 				background OVERWORLD	; 48: (Unused)

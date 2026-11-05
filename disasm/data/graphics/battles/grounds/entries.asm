@@ -31,6 +31,7 @@ pt_Grounds:     dc.l Ground00
                 dc.l Ground27
                 dc.l Ground28
                 dc.l Ground13
+				dc.l Ground03	; Home background
 Ground00:       incbin "data/graphics/battles/grounds/groundpalette00.bin"
 bsg00_rpbase:   dc.w GroundTiles00-bsg00_rpbase
 Ground01:       incbin "data/graphics/battles/grounds/groundpalette01.bin"

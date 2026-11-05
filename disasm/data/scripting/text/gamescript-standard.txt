@@ -4297,7 +4297,7 @@
 4295=1097=We're adventurers.{N}We were just passing by.{W1}
 4296=1098=...{D1}Wow.{D1} She is beautiful...{D1} ...{W1}
 4297=1099=...Eh {LEADER}.{D1}{N}Are you thinking the same thing{N}I do?{D1} Hehehe...{W1}
-4298=109A=Hi. I'm {NAME;31}.{W2}{N}As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}{N}Can you help me show them{N}the way out?
+4298=109A=Hi. I'm {NAME;31}.{W2}{N}As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}{N}Can you help me show them{N}the way out?{W1}
 4299=109B=Good! That was the last one.{W1}
 4300=109C=Thank you very much.{N}These devils are getting more{N}and more annoying.{W2}{CLEAR}I think I'll pack my things{N}and go live somewhere else...{W1}
 4301=109D=We are on a quest to get rid{N}of them, actually.{W1}
@@ -4325,3 +4325,5 @@
 4323=10B3=Not to mention they ruined{N}my day. I had prepared{N}some Cheerful Bread...{W2}{N}And they stole it!{W1}
 4324=10B4=Oh...{W2}{N}(Pssst... {LEADER}, I hope{N}you'll do something about this!){W1}
 4325=10B5=So, about those pesky devils...{W1}
+4326=10B6={NAME;31} will participate{N}in this battle.{W1}
+4327=10B7={LEADER}!...{D1} I'm curious about{N}the strange cave we found to{N}the east. We should revisit it!{W1}

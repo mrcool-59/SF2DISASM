@@ -1,20 +1,105 @@
 
-bbcs_45:        textCursor 2292 ; TODO
-                loadMapFadeIn MAP_SUNNY_CAVE,36,4
+bbcs_45:        textCursor 4294
+				playSound SOUND_COMMAND_FADE_OUT
+                loadMapFadeIn MAP_SUNNY_CAVE,38,9
                 loadMapEntities @SetupEntities
+
                 setActscriptWait ALLY_BOWIE,eas_Init
+                setPos ALLY_BOWIE,43,15,UP
+                setActscriptWait ALLY_PETER,eas_Init
+                setPos ALLY_PETER,42,15,UP
+                setActscriptWait FOLLOWER_B,eas_Init
+				setPos FOLLOWER_B,44,15,UP
+				; In case they are followers
+                setActscriptWait ALLY_FRAYJA,eas_Init
+                setPos ALLY_FRAYJA,63,63,UP
+                setActscriptWait ALLY_ZYNK,eas_Init
+                setPos ALLY_ZYNK,63,63,UP
+                setActscriptWait ALLY_LEMON,eas_Init
+				setPos ALLY_LEMON,63,63,UP
+				
                 fadeInB
+				csWait 60
+				
+				nextSingleText $0,ALLY_31 ; "Who's there?{W1}"
+
+                entityActionsWait ALLY_31
+                 moveDown 3
+				 moveRight 1
+				 moveDown 1
+				 moveRight 1
+				 moveDown 2
+                endActions
+				
+				shiver FOLLOWER_B
+				nextSingleText $0,FOLLOWER_B ; "We're adventurers.{N}We were just passing by.{W1}"
+
+				shiver ALLY_PETER
+				csWait 20
+				shiver ALLY_PETER
+				nextSingleText $0,ALLY_PETER ; "...{D1}Wow.{D1} She is beautiful...{D1} ...{W1}"
+
+				shiver		FOLLOWER_B
+				setFacing 	FOLLOWER_B,LEFT
+				csWait 30
+				setFacing 	FOLLOWER_B,UP
+				csWait 30
+				setFacing 	FOLLOWER_B,LEFT
+				csWait 30
+				setFacing 	FOLLOWER_B,UP
+				csWait 30
+				setFacing 	FOLLOWER_B,LEFT
+				setActscriptWait FOLLOWER_B,eas_Jump
+				setFacing 	ALLY_BOWIE,RIGHT
+				csWait 	30
+				shiver 	FOLLOWER_B
+				nextSingleText $0,FOLLOWER_B ; "...Eh {LEADER}.{D1}{N}Are you thinking the same thing{N}I do?{D1} Hehehe...{W1}"
+				shiver 	ALLY_BOWIE
+				nod 	ALLY_BOWIE
+				
+                entityActionsWait ALLY_31
+				 moveDown 1
+                endActions
+				
+				setFacing 	ALLY_BOWIE,UP
+				setFacing 	FOLLOWER_B,UP
+				
+				nextSingleText $0,ALLY_31 ; "Hi. I'm {NAME;31}.{W2}{N}As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}{N}Can you help me show them{N}the way out?{W1}"
+				playSound 	MUSIC_CUSTOM_SUNNY
+				csWait 		30
+				
+				setCamDest 38,3
+				csWait	30
+				setActscript 128,eas_Jump
+				setActscript 129,eas_Jump
+				setActscript 130,eas_Jump
+				csWait	60
+				setCamDest 38,9
+				
+				nod 	ALLY_BOWIE
+				setActscriptWait ALLY_PETER,eas_Jump
+				setActscriptWait ALLY_PETER,eas_Jump
+
+				textCursor 4326
+				nextSingleText $FF,ENTITY_NONE	; "{NAME;31} will participate{N}in this battle.{W1}"
 
 				; Force Sunny into the party
 				joinForceAI ALLY_31,$FFFF
                 joinBatParty ALLY_31
                 executeSubroutine csub_4D078
-				
-				; TODO: actual cutscene coming later
-				
-                ;setCamDest 2,8
-                ;csWait 60
+				setF	556		; Disable reminder to visit Sunny Cave
 				
                 csc_end
-@SetupEntities: mainEntity 8,6,UP
+				
+@SetupEntities: mainEntity 43,15,UP
+				entity 41,6,DOWN,ALLY_31,eas_Init
+                entity 42,15,UP,ALLY_PETER,eas_Init
+				; In case they are followers
+                entity 63,63,UP,ALLY_FRAYJA,eas_Init
+                entity 63,63,UP,ALLY_ZYNK,eas_Init
+				entity 63,63,UP,ALLY_LEMON,eas_Init
+				; Uninvited guests
+                entity 40,7,DOWN,MAPSPRITE_DRAGONEWT,eas_Init
+                entity 42,6,DOWN,MAPSPRITE_BOW_MASTER,eas_Init
+                entity 45,6,DOWN,MAPSPRITE_DEVIL_SOLDIER,eas_Init
                 cscEntitiesEnd

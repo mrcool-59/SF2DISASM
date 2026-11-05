@@ -11,10 +11,10 @@ AllyStats31:    forClass  CLASS_34	; Gold Dragon
                      9, BOLT|LV2, &
                     15, BLAZE|LV2, &
                     20, AURA|LV1, &
-                    25, SLEEP|LV1, &
-                    29, BOLT|LV3, &
-                    33, AURA|LV2, &
-                    36, BLAZE|LV3, &
+                    25, BOLT|LV3, &
+					29, AURA|LV2, &
+                    33, BLAZE|LV3, &
+                    37, SLEEP|LV1, &
                     42, AURA|LV3, &
 					45, BOLT|LV4, &
                     48, BLAZE|LV4, &

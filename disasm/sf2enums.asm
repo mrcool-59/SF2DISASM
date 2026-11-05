@@ -3335,12 +3335,13 @@ BATTLEBACKGROUND_VERSUS_GALAM: equ 26
 BATTLEBACKGROUND_VERSUS_ZEON: equ 27
 BATTLEBACKGROUND_BURROW: equ 28
 BATTLEBACKGROUND_UNDERGROUND_SHRINE_0: equ 29
+BATTLEBACKGROUND_HOME: equ 30
 BATTLEBACKGROUND_OVERWORLD: equ 255 ; used by custom backgrounds table
 
 ; ---------------------------------------------------------------------------
 
 ; enum BattleBackground_Properties
-BATTLEBACKGROUNDS_NUMBER: equ 30
+BATTLEBACKGROUNDS_NUMBER: equ 31
 
 ; ---------------------------------------------------------------------------
 
