@@ -916,6 +916,7 @@ ENEMYAI_MIN_MP_AURA3: equ 18
 ENEMYAI_MIN_MP_HEAL4: equ 20
 ENEMYAI_THRESHOLD_HEAL3: equ 28
 ENEMYAI_MIN_MP_AURA4: equ 30
+ENEMYAI_THRESHOLD_HEAL4: equ 42
 
 ; ---------------------------------------------------------------------------
 
