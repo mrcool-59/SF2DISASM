@@ -4293,9 +4293,35 @@
 4291=1093=What?{D1} Save the world?{D1}{N}Er...{D1} I guess I could lend{N}you my help.{W1}
 4292=1094=If the world ends,{N}so will my tour...{W1}
 4293=1095=OK, count me in!{W1}
-4310=10A6=Oh {LEADER}!...{W2}{N}I enchanted this little trinket...{N}Maybe {NAME;7} would like{N}to have it?{W2}{CLEAR}I mean, if he doesn't I can{N}always make use of it but...{N}{D1}...{D1}{D1}...{D1}{D1}.{W1}
+4294=1096=Who's there?{W1}
+4295=1097=We're adventurers.{N}We were just passing by.{W1}
+4296=1098=...{D1}Wow.{D1} She is beautiful...{D1} ...{W1}
+4297=1099=...Eh {LEADER}.{D1}{N}Are you thinking the same thing{N}I do?{D1} Hehehe...{W1}
+4298=109A=Hi. I'm {NAME;31}.{W2}{N}As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}{N}Can you help me show them{N}the way out?
+4299=109B=Good! That was the last one.{W1}
+4300=109C=Thank you very much.{N}These devils are getting more{N}and more annoying.{W2}{CLEAR}I think I'll pack my things{N}and go live somewhere else...{W1}
+4301=109D=We are on a quest to get rid{N}of them, actually.{W1}
+4302=109E=Oooh! A quest!...{D1}{N}Sounds interesting.{N}Mind if I tag along?{W1}
+4303=109F=Sure I would love...{D1}{N}Er...{D1}we would love to{N}have you around!{W1}
+4304=10A0=Hmm?...{W1}
+4305=10A1=Right, sir Astral?{W1}
+4306=10A2=..ahaha...{W1}
+4307=10A3=Sir Astral?{W1}
+4308=10A4=Hm! Of course! Of course!{N}{NAME;31} will be a fierce ally!{W1}
+4309=10A5=It's settled then!{N}Pleased to meet you all!{W1}
+4310=10A6=Oh {LEADER}...{W2} Pssst...{N}Don't let {NAME;7} hear us.{N}I enchanted this little trinket...{W2}{N}Maybe he would like{N}to have it?{W2}{CLEAR}I mean, if he doesn't I can{N}always make use of it but...{N}{D1}...{D1}{D1}...{D1}{D1}.{W1}
 4311=10A7=You're turning red.{W1}
 4312=10A8=Oh my gosh!...
 4313=10A9=Just take it, OK?{N}And do whatever you think{N}is best with it!{W1}
 4314=10AA=Oh {LEADER}!{N}I have a small request...{W1}
 4315=10AB=I am working on a little thing{N}for {NAME;7}.{W2}{CLEAR}I mean, it's not ready yet,{N}but please come see me when{N}we get another chance to rest.{W2}{N}I'll give it to you then!{N}Don't forget it!{W1}
+4316=10AC=A book...{N}HOW TO KEEP YOUR{N}SCALES HEALTHY{W1}
+4317=10AD=A book...{N}THUNDER MAGIC{N}FOR DUMMIES{W1}
+4318=10AE=I'm out, need to refill water{N} - {NAME;31}{W1}
+4319=10AF=I'm out, fighting against devils{N} - {NAME;31}{W1}
+4320=10B0=Wait! It says...{W1}
+4321=10B1=I wonder who lives here.{W1}
+4322=10B2=Let's come back later then.{W1}
+4323=10B3=Not to mention they ruined{N}my day. I had prepared{N}some Cheerful Bread...{W2}{N}And they stole it!{W1}
+4324=10B4=Oh...{W2}{N}(Pssst... {LEADER}, I hope{N}you'll do something about this!){W1}
+4325=10B5=So, about those pesky devils...{W1}

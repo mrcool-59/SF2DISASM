@@ -1,11 +1,12 @@
-
+; ASM FILE data\battles\spritesets\spriteset45-standard.asm :
+; --- : Battle Spritesets 45
 BattleSpriteset45:
 				; # Allies
 				dc.b 12
 				; # Enemies
 				dc.b 14
 				; # AI Regions
-				dc.b 0
+				dc.b 1
 				; # AI Points
 				dc.b 0
 
@@ -62,60 +63,69 @@ BattleSpriteset45:
 				; Enemies
 				enemyCombatant MINOTAUR, 3, 4
 				combatantAiAndItem LEADER, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant BLACK_MONK, 4, 5
+				enemyCombatant MASTER_MONK, 4, 5
 				combatantAiAndItem HEALER3, NOTHING
-				combatantBehavior FOLLOW_ENEMY|0, 0, FOLLOW_ENEMY|0|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_ENEMY|0, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant BLACK_MONK, 16, 5
+				enemyCombatant MASTER_MONK, 16, 5
 				combatantAiAndItem HEALER3, NOTHING
-				combatantBehavior FOLLOW_ENEMY|9, 0, FOLLOW_ENEMY|9|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_ENEMY|9, 0, NONE, 15, 0, STARTING
 
 				enemyCombatant CERBERUS, 4, 12
 				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
 				enemyCombatant BOW_MASTER, 5, 9
 				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant CERBERUS, 15, 4
+				enemyCombatant GRIFFIN, 15, 4
 				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant HOBGOBLIN, 5, 7
+				enemyCombatant EXECUTIONER, 5, 7
 				combatantAiAndItem ATTACKER3, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant MASTER_MAGE, 16, 7
+				enemyCombatant NECROMANCER, 16, 7
 				combatantAiAndItem ATTACKER2, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
 				enemyCombatant DEVIL_SOLDIER, 13, 5
 				combatantAiAndItem ATTACKER3, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant LIZARDMAN, 15, 6
+				enemyCombatant DRAGONEWT, 15, 6
 				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
 				enemyCombatant DEVIL_SOLDIER, 15, 10
 				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant LIZARDMAN, 8, 6
+				enemyCombatant DRAGONEWT, 8, 6
 				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
 				enemyCombatant BOW_MASTER, 10, 5
 				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant MASTER_MAGE, 6, 6
+				enemyCombatant NECROMANCER, 6, 6
 				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_TARGET|11, 0, FOLLOW_TARGET|11|0, 15, 0, STARTING
+				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
 
 				; AI Regions
+				dc.b 4
+				dc.b 0
+				dc.b 0, 0
+				dc.b 0, 15
+				dc.b 19, 15
+				dc.b 19, 0
+				dc.b 0
+				dc.b 0
+
 

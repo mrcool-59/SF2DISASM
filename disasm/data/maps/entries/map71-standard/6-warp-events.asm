@@ -13,7 +13,7 @@
 				mWarp  42,  17
 					warpNoScroll
 					warpMap    MAP_SUNNY_CAVE
-					warpDest   43, 19
+					warpDest   43, 22
 					warpFacing UP
 				mWarp 255,   0
 					warpScroll UP

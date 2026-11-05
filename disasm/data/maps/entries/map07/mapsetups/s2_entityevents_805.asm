@@ -44,7 +44,7 @@ cs_SunnyGift:
 				textCursor 	4310
 				shiver 		ALLY_31
 				csWait  	10
-				nextSingleText 	$0,ALLY_31  	; "Oh {LEADER}!...{W2}{N}I enchanted this little trinket...{N}Maybe {NAME;7} would like{N}to have it?{W2}{CLEAR}I mean, if he doesn't I can{N}always make use of it but...{N}{D1}...{D1}{D1}...{D1}{D1}.{W1}"
+				nextSingleText 	$0,ALLY_31  	; "Oh {LEADER}...{W2} Pssst...{N}Don't let {NAME;7} hear us.{N}I enchanted this little trinket...{W2}{N}Maybe he would like{N}to have it?{W2}{CLEAR}I mean, if he doesn't I can{N}always make use of it but...{N}{D1}...{D1}{D1}...{D1}{D1}.{W1}"
 				nextSingleText 	$0,ALLY_BOWIE  	; "You're turning red.{W1}"
 				
 				shiver 		ALLY_31
