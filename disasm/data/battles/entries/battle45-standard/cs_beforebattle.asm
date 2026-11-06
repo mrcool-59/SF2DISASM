@@ -1,8 +1,8 @@
 
 bbcs_45:        textCursor 4294
-				playSound SOUND_COMMAND_FADE_OUT
                 loadMapFadeIn MAP_SUNNY_CAVE,38,9
                 loadMapEntities @SetupEntities
+				playSound MUSIC_CUSTOM_COZY_CAVE
 
                 setActscriptWait ALLY_BOWIE,eas_Init
                 setPos ALLY_BOWIE,43,15,UP
@@ -40,15 +40,32 @@ bbcs_45:        textCursor 4294
 				nextSingleText $0,ALLY_PETER ; "...{D1}Wow.{D1} She is beautiful...{D1} ...{W1}"
 
 				shiver		FOLLOWER_B
-				setFacing 	FOLLOWER_B,LEFT
+                entityActionsWait FOLLOWER_B
+				 moveUp 1
+				 moveLeft 2
+				 faceDown 1
+                endActions
 				csWait 30
-				setFacing 	FOLLOWER_B,UP
+                entityActionsWait FOLLOWER_B
+				 moveRight 1
+				 faceUp 1
+                endActions
 				csWait 30
-				setFacing 	FOLLOWER_B,LEFT
+                entityActionsWait FOLLOWER_B
+				 moveLeft 1
+				 faceDown 1
+                endActions
 				csWait 30
-				setFacing 	FOLLOWER_B,UP
+                entityActionsWait FOLLOWER_B
+				 moveRight 1
+				 faceUp 1
+                endActions
 				csWait 30
-				setFacing 	FOLLOWER_B,LEFT
+                entityActionsWait FOLLOWER_B
+				 moveRight 1
+				 moveDown 1
+				 faceLeft 1
+                endActions
 				setActscriptWait FOLLOWER_B,eas_Jump
 				setFacing 	ALLY_BOWIE,RIGHT
 				csWait 	30
@@ -64,17 +81,26 @@ bbcs_45:        textCursor 4294
 				setFacing 	ALLY_BOWIE,UP
 				setFacing 	FOLLOWER_B,UP
 				
-				nextSingleText $0,ALLY_31 ; "Hi. I'm {NAME;31}.{W2}{N}As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}{N}Can you help me show them{N}the way out?{W1}"
-				playSound 	MUSIC_CUSTOM_SUNNY
+				playSound SOUND_COMMAND_FADE_OUT
+				shiver		ALLY_31
+				nextSingleText $0,ALLY_31 ; "Hi. I'm {NAME;31}.{W2}{N}As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}"
+				setFacing	ALLY_31,UP
 				csWait 		30
-				
-				setCamDest 38,3
-				csWait	30
+				setCamDest 	38,3
 				setActscript 128,eas_Jump
 				setActscript 129,eas_Jump
 				setActscript 130,eas_Jump
-				csWait	60
-				setCamDest 38,9
+				csWait		60
+				setCamDest 	38,9
+				csWait 		15
+				setFacing	ALLY_31,DOWN
+				csWait 		15
+
+				setActscriptWait ALLY_31,eas_Jump
+				playSound 	MUSIC_CUSTOM_SUNNY
+				
+				textCursor 4328
+				nextSingleText $0,ALLY_31 ; "Can you help me show them{N}the way out?{W1}"
 				
 				nod 	ALLY_BOWIE
 				setActscriptWait ALLY_PETER,eas_Jump
