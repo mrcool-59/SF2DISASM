@@ -4328,3 +4328,4 @@
 4326=10B6={NAME;31} will participate{N}in this battle.{W1}
 4327=10B7={LEADER}!...{D1} I'm curious about{N}the strange cave we found to{N}the east. We should revisit it!{W1}
 4328=10B8=Can you help me show them{N}the way out?{W1}
+4329=10B9=...?{W1}

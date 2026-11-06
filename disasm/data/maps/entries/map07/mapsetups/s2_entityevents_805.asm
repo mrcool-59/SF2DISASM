@@ -60,6 +60,9 @@ cs_SunnyGift:
 				nod 		ALLY_31
 				csWait  30
 				
+				textCursor	4329
+				nextSingleText	$0,ALLY_PETER	; "...?{W1}"
+
 				executeSubroutine Map7_SunnyGift_ASM
 				csc_end
 
