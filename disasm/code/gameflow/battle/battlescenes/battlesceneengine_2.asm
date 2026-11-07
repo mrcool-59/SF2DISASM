@@ -15,6 +15,8 @@ GetBattlesceneGround:
                 bmi.s   @Skip           ; skip if enemy
                 
                 jsr     GetClass
+				cmp  	#CLASS_MNST,d1		; Kiwi is hovering, but his battle sprite is on the ground! (HARDCODED)
+				beq  	GetBattlesceneBackground
 				cmp  	#CLASS_PHNX,d1		; Ixen promoted is flying, but his battle sprite is on the ground! (HARDCODED)
 				beq  	GetBattlesceneBackground
 				cmp  	#CLASS_34,d1		; Sunny is flying, but her battle sprite is on the ground! (HARDCODED)
