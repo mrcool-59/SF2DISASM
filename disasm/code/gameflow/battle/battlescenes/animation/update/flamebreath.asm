@@ -32,8 +32,13 @@ loc_1D2F6:
                 cmpi.w  #ALLYBATTLESPRITE_PHNX,d2							; HARDCODED: we're done if PHNX class (promoted Ixen)
                 beq.s   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto DEFAULT
+                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
+                cmpi.w  #ALLYBATTLESPRITE_SUNNY,d2							; HARDCODED: we're done if not GDRG class (Sunny)
+                bne.s   loc_1D33C
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto Sunny
 				bra.s   loc_1D33C
 @IsEnemy:
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Start at Cerberus
@@ -214,7 +219,8 @@ AnimateBreath:
 graphic_FlameBreathParticle:
 				vdpSpell 298, 238, SPELLTILE1, V1|H1|VALUE1  ; Ixen (unpromoted) [VALUE1 = behind actor but in front of target]
                 vdpSpell 276, 258, SPELLTILE1, V1|H1|VALUE1  ; Ixen (promoted)
-				vdpSpell 284, 222, SPELLTILE1, V1|H1|32  ; DEFAULT (basically, Kiwi)
+				vdpSpell 284, 222, SPELLTILE1, V1|H1|32  	 ; DEFAULT (basically, Kiwi)
+                vdpSpell 282, 253, SPELLTILE1, V1|H1|32  	 ; Sunny
                 vdpSpell 210, 236, SPELLTILE1, V1|H1|32  ; cerberus
                 vdpSpell 223, 214, SPELLTILE1, V1|H1|32  ; hydra
                 vdpSpell 208, 216, SPELLTILE1, V1|H1|32  ; wyvern
