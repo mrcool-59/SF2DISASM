@@ -8,6 +8,7 @@ ms_map59_flag543_Entities:
                 msFixedEntity 63, 63, LEFT, MAPSPRITE_OBJECT1, eas_Init
                 msFixedEntity 11, 15, UP, MAPSPRITE_ELIS, eas_Init
                 msFixedEntity 14, 11, UP, ALLY_PETER, eas_Init
+                msFixedEntity 15, 13, UP, ALLY_31, eas_Init
                 msFixedEntity 11, 10, RIGHT, ALLY_LEMON, eas_Init
                 msFixedEntity 15, 10, LEFT, MAPSPRITE_ASTRAL, eas_Init
                 msFixedEntity 13, 9, LEFT, MAPSPRITE_KING_GALAM, eas_Init
