@@ -1780,6 +1780,7 @@ SPELLANIMATION_SNOW_BREATH: equ $17
 SPELLANIMATION_CUTOFF_AND_DODGE: equ $18    ; used by Gisarme insta-kill
 SPELLANIMATION_BUFF2: equ $19
 SPELLANIMATION_ATTACK_SPELL: equ $1A        ; ATTACK spell animation used in SFCD, but unused in SF2
+SPELLANIMATION_THUNDER_BREATH: equ $1F      ; TODO: use $1A since it is unused
 SPELLANIMATION_DEBUFF2: equ $1B
 SPELLANIMATION_DEBUFF3: equ $1C
 SPELLANIMATION_PHOENIX_ATTACK: equ $1D ; variation 1/3: sound waves
@@ -3160,7 +3161,8 @@ ALLYBATTLEANIMATION_SPECIAL_BRGN: equ 86 ; unarmed attack
 ALLYBATTLEANIMATION_SPECIAL_IXEN: equ 87 ; Ixen (dragon breath / has specific cast animation for unpromoted)
 ALLYBATTLEANIMATION_SPECIAL_IXEN_ITEM: equ 88 ; Ixen (use item)
 ALLYBATTLEANIMATION_SPECIAL_IXEN_PROMOTED_ITEM: equ 89 ; Ixen (promoted, use item)
-ALLYBATTLEANIMATION_SPECIAL_SUNNY: equ 90 ; Sunny (thunder breath / spell cast)
+ALLYBATTLEANIMATION_SPECIAL_SUNNY_CAST: equ 90 ; Sunny (spell cast)
+ALLYBATTLEANIMATION_SPECIAL_SUNNY_BREATH: equ 91 ; Sunny (breath)
 
 ; ---------------------------------------------------------------------------
 

@@ -93,6 +93,7 @@ pt_AllyAnimations:
 				dc.l AllyAnimation088
 				dc.l AllyAnimation089
 				dc.l AllyAnimation090
+				dc.l AllyAnimation091
 AllyAnimation000:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation000.bin"
 AllyAnimation001:
@@ -275,3 +276,5 @@ AllyAnimation089:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationIxenProItem-standard.bin" ; Ixen Promoted [Item]
 AllyAnimation090:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationSunnyCast-standard.bin" ; Sunny [Cast]
+AllyAnimation091:
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationSunnyBreath-standard.bin" ; Sunny [Breath]	

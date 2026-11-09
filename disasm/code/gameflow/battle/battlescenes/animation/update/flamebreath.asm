@@ -107,17 +107,24 @@ loc_1D3A6:
                 
                 move.w  d0,6(a5)
 				
-				; HARDCODED: let's mess with the Y displacement to make it look better! (unpromoted Ixen)
+				; HARDCODED: let's mess with the Y displacement to make it look better! (unpromoted Ixen + Sunny)
                 btst    #SPELLANIMATION_BIT_MIRRORED,((SPELLANIMATION_VARIATION_AND_MIRRORED_BIT-$1000000)).w
-                bne.s   loc_flamebreath_SkipIxenHack
+                bne.s   @Continue
                 move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
-                cmpi.w  #ALLYBATTLESPRITE_PHNK,d2
-                bne.w   loc_flamebreath_SkipIxenHack
-
-				ror.w   d1 			; Divide by 2
+                cmpi.w  #ALLYBATTLESPRITE_SUNNY,d2
+                bne.w   @NotSunny
+				mulu.w  #11,d1	
+				lsr.w   #4,d1 		; Multiply by 0.6875
 				neg.w   d1 			; Reverse trajectory
 				sub.w   #1,d1 		; Apply bias to really mess UP ↑ the trajectory
-loc_flamebreath_SkipIxenHack:
+				bra.s   @Continue
+			@NotSunny:
+                cmpi.w  #ALLYBATTLESPRITE_PHNK,d2
+                bne.w   @Continue
+				ror.w   d1 			; Multiply by 0.5
+				neg.w   d1 			; Reverse trajectory
+				sub.w   #1,d1 		; Apply bias to really mess UP ↑ the trajectory
+			@Continue:
                 add.w   d1,(a4)
                 cmpi.w  #6,(a5)
                 bne.w   loc_1D402
@@ -161,7 +168,7 @@ loc_1D402:
                 move.w  #1,(a4)
                 clr.l   VDPSPRITE_OFFSET_SIZE(a4) ; clear size, link, and tile
                 move.w  #1,VDPSPRITE_OFFSET_X(a4)
-                clr.b   ((byte_FFB588-$1000000)).w
+                clr.b   ((byte_FFB588-$1000000)).w ; [probably used to tell the engine when spell impact occurs]
                 subq.b  #1,((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w
 loc_1D424:
                 
@@ -220,7 +227,7 @@ graphic_FlameBreathParticle:
 				vdpSpell 298, 238, SPELLTILE1, V1|H1|VALUE1  ; Ixen (unpromoted) [VALUE1 = behind actor but in front of target]
                 vdpSpell 276, 258, SPELLTILE1, V1|H1|VALUE1  ; Ixen (promoted)
 				vdpSpell 284, 222, SPELLTILE1, V1|H1|32  	 ; DEFAULT (basically, Kiwi)
-                vdpSpell 282, 253, SPELLTILE1, V1|H1|32  	 ; Sunny
+                vdpSpell 278, 219, SPELLTILE1, V1|H1|VALUE1  ; Sunny
                 vdpSpell 210, 236, SPELLTILE1, V1|H1|32  ; cerberus
                 vdpSpell 223, 214, SPELLTILE1, V1|H1|32  ; hydra
                 vdpSpell 208, 216, SPELLTILE1, V1|H1|32  ; wyvern

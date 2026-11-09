@@ -119,6 +119,7 @@ battlesceneScript_PerformAnimation:
 ; ---------------------------------------------------------------------------
                 
 @CastSpell:     module
+                movem.w d4,-(sp) ; Push spell animation with flags
                 
                 ; Decrease caster's MP
                 move.w  BATTLEACTION_OFFSET_ITEM_OR_SPELL(a3),d1  
@@ -138,13 +139,27 @@ battlesceneScript_PerformAnimation:
                 bmi.s   @Enemy2
                 lea     table_SpellcastAnimationsForClasses(pc), a0
                 bsr.w   GetClass
+				
+				; HARDCODED: if animation is flame breath or thunder breath AND the class is GDRG, then use a specific animation
+				cmpi.w  #CLASS_34,d1
+				bne.s	@Continue2
+				andi.w  #SPELLANIMATION_MASK_INDEX,d4 ; Consider only the spell animation index (i.e: ignore flags)
+				cmpi.w  #SPELLANIMATION_FLAME_BREATH,d4
+				beq.s	@SunnyBreath
+				cmpi.w  #SPELLANIMATION_THUNDER_BREATH,d4
+				beq.s	@SunnyBreath
                 bra.s   @Continue2
+@SunnyBreath:
+				move.w  #ALLYBATTLEANIMATION_SPECIAL_SUNNY_BREATH,d5
+                bra.s   @Return
+				
 @Enemy2:        lea     table_SpellcastAnimationsForEnemies(pc), a0
                 bsr.w   GetEnemy
 @Continue2:     jsr     (FindSpecialPropertyWordsAddressForObject).w
                 bcs.s   @Return
                 move.w  (a0),d5
-@Return:        rts
+@Return:        movem.w (sp)+,d4 ; Pop spell animation with flags
+				rts
                 modend
 ; ---------------------------------------------------------------------------
 

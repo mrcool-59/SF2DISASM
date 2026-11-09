@@ -787,7 +787,7 @@ table_SpellDefinitions:
 				
                 entry      THUNDER_BREATH
                 mpCost     5
-                animation  ODD_EYE_BEAM			; TODO: implement proper animation
+                animation  THUNDER_BREATH
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     0
@@ -795,7 +795,7 @@ table_SpellDefinitions:
                 
                 entry      THUNDER_BREATH|LV2
                 mpCost     9
-                animation  ODD_EYE_BEAM|VARIATION2
+                animation  THUNDER_BREATH|VARIATION2
                 properties TYPE_ATTACK
                 range      1, 3
                 radius     0
@@ -803,7 +803,7 @@ table_SpellDefinitions:
                 
                 entry      THUNDER_BREATH|LV3
                 mpCost     13
-                animation  ODD_EYE_BEAM|VARIATION3
+                animation  THUNDER_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     1
@@ -811,7 +811,7 @@ table_SpellDefinitions:
                 
                 entry      THUNDER_BREATH|LV4
                 mpCost     20
-                animation  ODD_EYE_BEAM|VARIATION4
+                animation  THUNDER_BREATH|VARIATION4
                 properties TYPE_ATTACK
                 range      1, 3
                 radius     1

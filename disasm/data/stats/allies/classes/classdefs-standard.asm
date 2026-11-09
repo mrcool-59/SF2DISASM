@@ -180,7 +180,7 @@ table_ClassDefinitions:
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                 
                 mov 7                   ; 34: GDRG
-                resistance WIND_WEAKNESS|LIGHTNING_MAJOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
+                resistance WIND_WEAKNESS|LIGHTNING_MAJOR|ICE_NONE|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
                 moveType   FLYING
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                     

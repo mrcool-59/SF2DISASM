@@ -34,7 +34,7 @@ spellanimationSetup_FlameBreath:
                 move.w  (a1),2(a0)
                 move.w  #50000,((byte_FFB404-$1000000)).w ; [this is how long particles are emited, but the animation can be interrupted earlier => put a high value so the animation holds vs. multiple targets!]
                 move.b  #SPELLANIMATION_FLAME_BREATH,((CURRENT_SPELLANIMATION-$1000000)).w
-                move.b  #1,((byte_FFB585-$1000000)).w ; [game locks if this is set to 0]
+                move.b  #1,((byte_FFB585-$1000000)).w ; [game locks if this is set to 0, seems to be the animation progress: 0 inactive, 1 playing, 2 stopped, 3 cleaned up]
                 move.b  #1,((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w ; [game locks if this is set to 0]
                 move.b  #1,((byte_FFB588-$1000000)).w ; [animation seems noticeably shorter, with impact happening immediately if this is set to 0]
                 bra.w   StoreBattlespritePalette
