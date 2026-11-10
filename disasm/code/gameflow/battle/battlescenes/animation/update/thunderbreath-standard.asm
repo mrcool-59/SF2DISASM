@@ -24,34 +24,33 @@ spellanimationUpdate_ThunderBreath:
                 clr.w   d2			; ???
                 clr.w   d3			; ???
                 lea     graphic_BlastCyclone_(pc), a0
-                bsr.w   ConstructComplexGraphic       
-                sndCom  SFX_DESOUL_HOVERING
+                bsr.w   ConstructComplexGraphic
+				sndCom  SFX_BOLT_SPELL
+                ;sndCom  SFX_DESOUL_HOVERING
                 addq.w  #1,2(a5)	; move to stage 2
                 bra.w   @UpdateDone
 @Stage2:
                 
-                cmpi.w  #6,(a5)
-                bne.s   @CycloneMoveSprites
-                move.w  #1,(a4)
-                clr.l   VDPSPRITE_OFFSET_SIZE(a4) ; clear size, link, and tile
-                move.w  #1,VDPSPRITE_OFFSET_X(a4)
-@CycloneMoveSprites:
+                ;cmpi.w  #6,(a5)
+                ;bne.s   @CycloneMoveSprites
+                move.w  #1,(a4)		; target sprite 39, probably
+;@CycloneMoveSprites:
                 
-                addq.w  #VDP_SPRITE_ENTRY_SIZE,a4
-                move.w  4(a5),d0
-                subq.w  #2,d0
-                andi.w  #BYTE_MASK,d0
-                move.w  d0,4(a5)
-                move.w  #$3000,d1
-                jsr     (sub_17EC).w  ; Do stuff with d2  
-                addi.w  #216,d2 
-                move.w  d2,VDPSPRITE_OFFSET_X(a4)
-                move.w  d2,NEXTVDPSPRITE_OFFSET_X(a4)
-                swap    d2
-                addi.w  #164,d2 
-                move.w  d2,(a4)
-                addi.w  #32,d2 
-                move.w  d2,NEXTVDPSPRITE_OFFSET_Y(a4)
+                ;addq.w  #VDP_SPRITE_ENTRY_SIZE,a4
+                ;move.w  4(a5),d0
+                ;subq.w  #2,d0
+                ;andi.w  #BYTE_MASK,d0
+                ;move.w  d0,4(a5)
+                ;move.w  #$3000,d1
+                ;jsr     (sub_17EC).w  ; Do stuff with d2  
+                ;addi.w  #216,d2 
+                ;move.w  d2,VDPSPRITE_OFFSET_X(a4)
+                ;move.w  d2,NEXTVDPSPRITE_OFFSET_X(a4)
+                ;swap    d2
+                ;addi.w  #164,d2 
+                ;move.w  d2,(a4)
+                ;;addi.w  #32,d2 
+                ;move.w  d2,NEXTVDPSPRITE_OFFSET_Y(a4)
 				
                 ;btst    #0,1(a5)
                 ;bne.s   @CheckImpact
