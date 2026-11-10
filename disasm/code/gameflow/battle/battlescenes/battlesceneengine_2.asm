@@ -208,6 +208,10 @@ ConstructSimpleGraphic:
 ; =============== S U B R O U T I N E =======================================
 
 ; In: a0 = pointer to spellanimation data
+;	  d0 = first VDP sprite index
+;	  d1 = number of sprites for the complex graphic
+;	  d2 = ???
+;	  d3 = ???
 
 
 ConstructComplexGraphic:

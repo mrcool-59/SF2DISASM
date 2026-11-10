@@ -4,110 +4,86 @@
 spellanimationUpdate_ThunderBreath:
                 
                 lea     ((SPELLANIMATION_PROPERTIES-$1000000)).w,a5
-				; (a5) = frame counter of the animation
-				
                 lea     ((SPRITE_38-$1000000)).w,a4
-                moveq   #38,d0 
-                moveq   #15,d1
-loc_1EBC6_:
                 
-                movem.w d0-d1,-(sp)
                 tst.w   (a5)
-                beq.w   loc_1EC80_
-                addq.w  #1,(a5)
-                cmpi.w  #2,(a5)
-                bne.w   loc_1EC22_
-                moveq   #7,d6
-                jsr     (GenerateRandomNumber).w
-                lea     table_1EC9A_(pc), a0
-                bclr    #0,d7
-                bne.s   loc_1EBF2_
-                move.b  #1,2(a5)
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
-loc_1EBF2_:
+                beq.w   @UpdateDone
+                addq.w  #1,(a5)			; (a5) = Frame counter
+                move.w  2(a5),d0		; 2(a5) = Seems to be animation stage
+                bne.w   @Stage1
+@Stage0:
+                ; lea     graphic_WindWedge_(pc), a0
+                ; moveq   #38,d0 
+                ; bsr.w   ConstructSimpleGraphic
+                addq.w  #1,2(a5)		; move to stage 1
+                bra.w   @UpdateDone
+@Stage1:
+                subq.w  #1,d0
+                bne.w   @Stage2		; we are actually on stage 2
+                cmpi.w  #4,(a5)		; this is a delay probably
+                bcs.w   @UpdateDone
+                moveq   #39,d0		; construct complex graphic starting at VDP sprite 39
+                moveq   #2,d1		; complex graphic has 2 sprites
+                clr.w   d2			; ???
+                clr.w   d3			; ???
+                lea     graphic_BlastCyclone_(pc), a0
+                bsr.w   ConstructComplexGraphic       
+                sndCom  SFX_DESOUL_HOVERING
+                addq.w  #1,2(a5)	; move to stage 2
+                bra.w   @UpdateDone
+@Stage2:
                 
-                bsr.w   ConstructSimpleGraphic
-                lsl.w   #2,d7
-                or.b    d7,VDPSPRITE_OFFSET_TILE(a4)
-                move.w  #192,d6 
-                jsr     (GenerateRandomNumber).w
-                addi.w  #160,d7 
-                move.w  d7,VDPSPRITE_OFFSET_X(a4)
-                move.w  #128,d6 
-                jsr     (GenerateRandomNumber).w
-                addi.w  #160,d7 
-                move.w  d7,(a4)
-                sndCom  SFX_BATTLEFIELD_DEATH
-                bra.w   loc_1EC80_
-loc_1EC22_:
-                
-                cmpi.w  #4,(a5)
-                bne.w   loc_1EC46_
-                tst.w   ((byte_FFB404-$1000000)).w
-                beq.w   loc_1EC46_
-                cmpi.b  #$10,((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w
-                bcc.w   loc_1EC46_
-                moveq   #1,d0
-                bsr.w   sub_1A2F6  ; Write a bunch of spell animation properties... (seems to reset to initial state)
-                addq.b  #1,((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w
-loc_1EC46_:
-                
-                tst.b   2(a5)
-                bne.s   loc_1EC5A_
-                lea     table_1ECAA_(pc), a0
-                moveq   #3,d0
-                bsr.w   sub_1B884	; Manipulate VDPSprite offset and size...
-                moveq   #14,d0
-                bra.s   loc_1EC66_
-loc_1EC5A_:
-                
-                lea     table_1ECBC_(pc), a0
-                moveq   #2,d0
-                bsr.w   sub_1B884	; Manipulate VDPSprite offset and size...
-                moveq   #11,d0
-loc_1EC66_:
-                
-                cmp.w   (a5),d0
-                bhi.w   loc_1EC80_
+                cmpi.w  #6,(a5)
+                bne.s   @CycloneMoveSprites
                 move.w  #1,(a4)
                 clr.l   VDPSPRITE_OFFSET_SIZE(a4) ; clear size, link, and tile
                 move.w  #1,VDPSPRITE_OFFSET_X(a4)
-                clr.l   (a5)
-                subq.b  #1,((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w
-loc_1EC80_:
+@CycloneMoveSprites:
                 
-                movem.w (sp)+,d0-d1
-                lea     12(a5),a5
                 addq.w  #VDP_SPRITE_ENTRY_SIZE,a4
+                move.w  4(a5),d0
+                subq.w  #2,d0
+                andi.w  #BYTE_MASK,d0
+                move.w  d0,4(a5)
+                move.w  #$3000,d1
+                jsr     (sub_17EC).w  ; Do stuff with d2  
+                addi.w  #216,d2 
+                move.w  d2,VDPSPRITE_OFFSET_X(a4)
+                move.w  d2,NEXTVDPSPRITE_OFFSET_X(a4)
+                swap    d2
+                addi.w  #164,d2 
+                move.w  d2,(a4)
+                addi.w  #32,d2 
+                move.w  d2,NEXTVDPSPRITE_OFFSET_Y(a4)
+                btst    #0,1(a5)
+                bne.s   @CheckImpact
+                move.w  6(a5),d0
                 addq.w  #1,d0
-                dbf     d1,loc_1EBC6_
+                cmpi.w  #3,d0
+                bcs.s   @CycloneNextFrame
+                clr.w   d0
+@CycloneNextFrame:
                 
-                tst.b   ((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w
-                beq.w   ReinitializeSceneAfterSpell
+                move.w  d0,6(a5)
+                lsl.w   #5,d0
+                addi.w  #SPELLTILE_START+43|VDPTILE_PALETTE3|VDPTILE_PRIORITY,d0 ; offset to cyclone graphics
+                move.w  d0,VDPSPRITE_OFFSET_TILE(a4)
+                addi.w  #16,d0
+                move.w  d0,NEXTVDPSPRITE_OFFSET_TILE(a4)
+@CheckImpact:
+                cmpi.w  #26,(a5)					; Frame delay condition
+                bne.w   @UpdateDone
+                clr.b   ((byte_FFB588-$1000000)).w	; Impact frame
+@UpdateDone:
+                cmpi.w  #34,(a5) 					; Frame delay condition
+                bcc.w   ReinitializeSceneAfterSpell	; End of spell animation
                 rts
 
-    ; End of function spellanimationUpdate_ThunderBreath
+    ; End of function spellanimationUpdate_PhoenixAttack
 
-table_1EC9A_:    vdpSpell 0, 0, SPELLTILE1, V4|H4|VALUE2
+;graphic_WindWedge_:
+;                vdpSpell 253, 221, SPELLTILE192, V4|H4|VALUE2|MIRRORED|FLIPPED
                 
-                vdpSpell 0, 0, SPELLTILE65, V2|H2|VALUE2
-                
-table_1ECAA_:    dc.w 5
-                dc.w VDPSPELLPROP_V4|VDPSPELLPROP_H4
-                dc.w 16
-                
-                dc.w 8
-                dc.w VDPSPELLPROP_V4|VDPSPELLPROP_H4
-                dc.w 32
-                
-                dc.w 11
-                dc.w VDPSPELLPROP_V4|VDPSPELLPROP_H4
-                dc.w 48
-                
-table_1ECBC_:    dc.w 5
-                dc.w VDPSPELLPROP_V2|VDPSPELLPROP_H2
-                dc.w 68
-                
-                dc.w 8
-                dc.w VDPSPELLPROP_V2|VDPSPELLPROP_H2
-                dc.w 72
+graphic_BlastCyclone_:
+                vdpSpell 110, 78, SPELLTILE44, V4|H4|VALUE2
+                vdpSpell 110, 110, SPELLTILE60, V4|H4|VALUE2
