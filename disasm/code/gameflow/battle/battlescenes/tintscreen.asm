@@ -56,7 +56,11 @@ rjt_TintScreenFunctions:
                 dc.w tint_Greyscale-rjt_TintScreenFunctions ; Snowstorm
                 dc.w tint_None-rjt_TintScreenFunctions ; Cutoff
                 dc.w tint_None-rjt_TintScreenFunctions ; Buff2
+			if (STANDARD_BUILD=1)
+                dc.w tint_Dim-rjt_TintScreenFunctions ; Thunder Breath
+			else
                 dc.w tint_None-rjt_TintScreenFunctions ; SFCD Attack
+			endif
                 dc.w tint_None-rjt_TintScreenFunctions ; Debuff2
                 dc.w tint_None-rjt_TintScreenFunctions ; Debuff3
                 dc.w tint_None-rjt_TintScreenFunctions ; PHNK Attack

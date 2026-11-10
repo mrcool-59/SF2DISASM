@@ -64,8 +64,12 @@ rjt_SpellanimationUpdates:
                 dc.w spellanimationUpdate_SnowBreath-rjt_SpellanimationUpdates
                 dc.w spellanimationUpdate_Absorb-rjt_SpellanimationUpdates
                 dc.w spellanimationUpdate_Buff-rjt_SpellanimationUpdates
+			if (STANDARD_BUILD=1)
+                dc.w spellanimationUpdate_ThunderBreath-rjt_SpellanimationUpdates
+			else
                 dc.w spellanimationUpdate_AttackSpell-rjt_SpellanimationUpdates 
                                                         ; SFCD's ATTACK spell (unused)
+			endif
                 dc.w spellanimationUpdate_Debuff-rjt_SpellanimationUpdates
                 dc.w spellanimationUpdate_Debuff-rjt_SpellanimationUpdates
                 dc.w spellanimationUpdate_PhoenixAttack-rjt_SpellanimationUpdates

@@ -1780,7 +1780,7 @@ SPELLANIMATION_SNOW_BREATH: equ $17
 SPELLANIMATION_CUTOFF_AND_DODGE: equ $18    ; used by Gisarme insta-kill
 SPELLANIMATION_BUFF2: equ $19
 SPELLANIMATION_ATTACK_SPELL: equ $1A        ; ATTACK spell animation used in SFCD, but unused in SF2
-SPELLANIMATION_THUNDER_BREATH: equ $1F      ; TODO: use $1A since it is unused
+SPELLANIMATION_THUNDER_BREATH: equ $1A
 SPELLANIMATION_DEBUFF2: equ $1B
 SPELLANIMATION_DEBUFF3: equ $1C
 SPELLANIMATION_PHOENIX_ATTACK: equ $1D ; variation 1/3: sound waves
@@ -1869,6 +1869,7 @@ SPELLTILESET_APOLLO: equ $13
 SPELLTILESET_SOUND_WAVES: equ $14
 SPELLTILESET_ODD_EYE_BEAM: equ $15
 SPELLTILESET_DEMON_BREATH: equ $16
+SPELLTILESET_THUNDER_BREATH: equ $17
 
 ; ---------------------------------------------------------------------------
 

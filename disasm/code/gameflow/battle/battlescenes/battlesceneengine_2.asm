@@ -154,7 +154,11 @@ rjt_SpellanimationSetups:
                 dc.w spellanimationSetup_SnowBreath-rjt_SpellanimationSetups
                 dc.w spellanimationSetup_CutOffAndDodge-rjt_SpellanimationSetups
                 dc.w spellanimationSetup_Buff2-rjt_SpellanimationSetups
+			if (STANDARD_BUILD=1)
+                dc.w spellanimationSetup_ThunderBreath-rjt_SpellanimationSetups
+			else
                 dc.w spellanimationSetup_AttackSpell-rjt_SpellanimationSetups ; SFCD's ATTACK spell (unused)
+			endif
                 dc.w spellanimationSetup_Debuff2-rjt_SpellanimationSetups
                 dc.w spellanimationSetup_Debuff3-rjt_SpellanimationSetups
                 dc.w spellanimationSetup_PhoenixAttack-rjt_SpellanimationSetups

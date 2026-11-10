@@ -21,7 +21,7 @@ table_RandomAttackSpellsForClasses:
                 dc.b CLASS_MNST, 64, 32, 40, 48, SPELL_KIWI
                 
 				; Sunny thunder breath
-				; dc.b CLASS_34, 128, 35, 41, 47, SPELL_THUNDER_BREATH	; TODO: put on hold for now
+				dc.b CLASS_34, 128, 35, 41, 47, SPELL_THUNDER_BREATH
 				
                 tableEnd.b
 

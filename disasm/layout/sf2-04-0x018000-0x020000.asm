@@ -49,7 +49,8 @@
                 include "code\gameflow\battle\battlescenes\animation\prismlaser.asm"    ; 
                 include "code\gameflow\battle\battlescenes\animation\bubblebreath.asm"    ; 
                 include "code\gameflow\battle\battlescenes\animation\cutoffanddodge.asm"    ; 
-                include "code\gameflow\battle\battlescenes\animation\attackspell.asm"    ; 
+       includeIfVanilla "code\gameflow\battle\battlescenes\animation\attackspell.asm"    ; 
+      includeIfStandard "code\gameflow\battle\battlescenes\animation\thunderbreath-standard.asm"
                 include "code\gameflow\battle\battlescenes\animation\snowbreath.asm"    ; 
                 include "code\gameflow\battle\battlescenes\animation\phoenixattack.asm"    ; 
                 include "code\gameflow\battle\battlescenes\animation\burstrock.asm"    ; 
@@ -77,7 +78,8 @@
                 include "code\gameflow\battle\battlescenes\animation\update\prismlaser.asm"    ; 
                 include "code\gameflow\battle\battlescenes\animation\update\bubblebreath.asm"    ; 
                 include "code\gameflow\battle\battlescenes\animation\update\snowbreath.asm"    ; 
-                include "code\gameflow\battle\battlescenes\animation\update\attackspell.asm"    ; 
+       includeIfVanilla "code\gameflow\battle\battlescenes\animation\update\attackspell.asm"    ; 
+      includeIfStandard "code\gameflow\battle\battlescenes\animation\update\thunderbreath-standard.asm"
                 include "code\gameflow\battle\battlescenes\animation\update\phoenixattack.asm"    ; 
                 include "code\gameflow\battle\battlescenes\animation\update\burstrock.asm"    ; 
                 include "code\gameflow\battle\battlescenes\animation\update\oddeyebeam.asm"    ; 
