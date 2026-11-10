@@ -12,9 +12,6 @@ spellanimationUpdate_ThunderBreath:
                 move.w  2(a5),d0		; 2(a5) = Seems to be animation stage
                 bne.w   @Stage1
 @Stage0:
-                ; lea     graphic_WindWedge_(pc), a0
-                ; moveq   #38,d0 
-                ; bsr.w   ConstructSimpleGraphic
                 addq.w  #1,2(a5)		; move to stage 1
                 bra.w   @UpdateDone
 @Stage1:
@@ -55,21 +52,23 @@ spellanimationUpdate_ThunderBreath:
                 move.w  d2,(a4)
                 addi.w  #32,d2 
                 move.w  d2,NEXTVDPSPRITE_OFFSET_Y(a4)
-                btst    #0,1(a5)
-                bne.s   @CheckImpact
-                move.w  6(a5),d0
-                addq.w  #1,d0
-                cmpi.w  #3,d0
-                bcs.s   @CycloneNextFrame
-                clr.w   d0
-@CycloneNextFrame:
-                
-                move.w  d0,6(a5)
-                lsl.w   #5,d0
-                addi.w  #SPELLTILE_START+43|VDPTILE_PALETTE3|VDPTILE_PRIORITY,d0 ; offset to cyclone graphics
-                move.w  d0,VDPSPRITE_OFFSET_TILE(a4)
-                addi.w  #16,d0
-                move.w  d0,NEXTVDPSPRITE_OFFSET_TILE(a4)
+				
+                ;btst    #0,1(a5)
+                ;bne.s   @CheckImpact
+				
+				; Every 3 frames, update the 2 cyclone sprites
+                ;move.w  6(a5),d0
+                ;addq.w  #1,d0
+                ;cmpi.w  #3,d0
+                ;bcs.s   @CycloneNextFrame
+                ;clr.w   d0
+;@CycloneNextFrame:
+                ;move.w  d0,6(a5)
+                ;lsl.w   #5,d0
+                ;addi.w  #SPELLTILE_START+43|VDPTILE_PALETTE3|VDPTILE_PRIORITY,d0 ; offset to cyclone graphics
+                ;move.w  d0,VDPSPRITE_OFFSET_TILE(a4)
+                ;addi.w  #16,d0
+                ;move.w  d0,NEXTVDPSPRITE_OFFSET_TILE(a4)
 @CheckImpact:
                 cmpi.w  #26,(a5)					; Frame delay condition
                 bne.w   @UpdateDone
@@ -81,9 +80,6 @@ spellanimationUpdate_ThunderBreath:
 
     ; End of function spellanimationUpdate_PhoenixAttack
 
-;graphic_WindWedge_:
-;                vdpSpell 253, 221, SPELLTILE192, V4|H4|VALUE2|MIRRORED|FLIPPED
-                
 graphic_BlastCyclone_:
                 vdpSpell 110, 78, SPELLTILE44, V4|H4|VALUE2
                 vdpSpell 110, 110, SPELLTILE60, V4|H4|VALUE2
