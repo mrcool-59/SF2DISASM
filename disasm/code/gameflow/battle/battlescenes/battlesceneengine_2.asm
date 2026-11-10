@@ -209,9 +209,9 @@ ConstructSimpleGraphic:
 
 ; In: a0 = pointer to spellanimation data
 ;	  d0 = first VDP sprite index
-;	  d1 = number of sprites for the complex graphic
-;	  d2 = ???
-;	  d3 = ???
+;	  d1 = number of sprites making up the complex graphic (i.e: number of elements a0 will read)
+;	  d2 = X offset to apply to the whole complex graphic, 0 = left corner of the visible screen
+;	  d3 = Y offset to apply to the whole complex graphic, 0 = top corner of the visible screen
 
 
 ConstructComplexGraphic:

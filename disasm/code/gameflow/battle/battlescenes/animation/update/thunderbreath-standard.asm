@@ -19,21 +19,20 @@ spellanimationUpdate_ThunderBreath:
                 bne.w   @Stage2		; we are actually on stage 2
                 cmpi.w  #4,(a5)		; this is a delay probably
                 bcs.w   @UpdateDone
-                moveq   #39,d0		; construct complex graphic starting at VDP sprite 39
-                moveq   #2,d1		; complex graphic has 2 sprites
-                clr.w   d2			; ???
-                clr.w   d3			; ???
-                lea     graphic_BlastCyclone_(pc), a0
+                moveq   #38,d0			; construct complex graphic starting at VDP sprite 38
+                moveq   #6,d1			; complex graphic has 6 sprites
+				move	#x_player,d2	; set X position of the complex graphic
+				move    #y_player,d3	; set Y position of the complex graphic
+                lea     graphic_ThunderBreath_RightToLeft(pc), a0
                 bsr.w   ConstructComplexGraphic
 				sndCom  SFX_BOLT_SPELL
-                ;sndCom  SFX_DESOUL_HOVERING
                 addq.w  #1,2(a5)	; move to stage 2
                 bra.w   @UpdateDone
 @Stage2:
                 
                 ;cmpi.w  #6,(a5)
                 ;bne.s   @CycloneMoveSprites
-                move.w  #1,(a4)		; target sprite 39, probably
+                ;move.w  #1,(a4)		; target sprite 39, probably
 ;@CycloneMoveSprites:
                 
                 ;addq.w  #VDP_SPRITE_ENTRY_SIZE,a4
@@ -79,6 +78,59 @@ spellanimationUpdate_ThunderBreath:
 
     ; End of function spellanimationUpdate_PhoenixAttack
 
-graphic_BlastCyclone_:
-                vdpSpell 110, 78, SPELLTILE44, V4|H4|VALUE2
-                vdpSpell 110, 110, SPELLTILE60, V4|H4|VALUE2
+
+; -------------------------------------------------------------------------------
+; Thunder Breath graphic is made up of 6 32x24 VDP sprites, covering a 96x48 area
+; -------------------------------------------------------------------------------
+
+; 144 tiles are loaded in VRAM for this spell animation
+; Tiles have been arranged according to the VDP sprites specifications: https://segaretro.org/Sega_Mega_Drive/Sprites
+
+x_player = 62
+y_player = 72
+
+graphic_ThunderBreath_RightToLeft: ; This version is intended for player characters
+				; Frame A
+                vdpSpell  0,  0,   SPELLTILE1, V3|H4|VALUE1
+                vdpSpell  0, 24,  SPELLTILE13, V3|H4|VALUE1
+                vdpSpell 32,  0,  SPELLTILE25, V3|H4|VALUE1
+                vdpSpell 32, 24,  SPELLTILE37, V3|H4|VALUE1
+                vdpSpell 64,  0,  SPELLTILE49, V3|H4|VALUE1
+                vdpSpell 64, 24,  SPELLTILE61, V3|H4|VALUE1
+				
+				; Frame B
+                vdpSpell  0,  0,  SPELLTILE73, V3|H4|VALUE1
+                vdpSpell  0, 24,  SPELLTILE85, V3|H4|VALUE1
+                vdpSpell 32,  0,  SPELLTILE97, V3|H4|VALUE1
+                vdpSpell 32, 24, SPELLTILE109, V3|H4|VALUE1
+                vdpSpell 64,  0, SPELLTILE121, V3|H4|VALUE1
+                vdpSpell 64, 24, SPELLTILE133, V3|H4|VALUE1
+				
+				; Frame A (flipped)
+                vdpSpell  0, 24,   SPELLTILE1, V3|H4|VALUE1|FLIPPED
+                vdpSpell  0,  0,  SPELLTILE13, V3|H4|VALUE1|FLIPPED
+                vdpSpell 32, 24,  SPELLTILE25, V3|H4|VALUE1|FLIPPED
+                vdpSpell 32,  0,  SPELLTILE37, V3|H4|VALUE1|FLIPPED
+                vdpSpell 64, 24,  SPELLTILE49, V3|H4|VALUE1|FLIPPED
+                vdpSpell 64,  0,  SPELLTILE61, V3|H4|VALUE1|FLIPPED
+				
+				; Frame B (flipped)
+                vdpSpell  0, 24,  SPELLTILE73, V3|H4|VALUE1|FLIPPED
+                vdpSpell  0,  0,  SPELLTILE85, V3|H4|VALUE1|FLIPPED
+                vdpSpell 32, 24,  SPELLTILE97, V3|H4|VALUE1|FLIPPED
+                vdpSpell 32,  0, SPELLTILE109, V3|H4|VALUE1|FLIPPED
+                vdpSpell 64, 24, SPELLTILE121, V3|H4|VALUE1|FLIPPED
+                vdpSpell 64,  0, SPELLTILE133, V3|H4|VALUE1|FLIPPED
+				
+graphic_ThunderBreath_LeftToRight: ; This version is intended for enemy monsters
+				; Frame A
+				; TODO
+				
+				; Frame B
+				; TODO
+
+				; Frame A (flipped)
+				; TODO
+
+				; Frame B (flipped)
+				; TODO

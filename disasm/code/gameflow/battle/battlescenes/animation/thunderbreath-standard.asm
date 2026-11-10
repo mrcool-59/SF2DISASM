@@ -4,12 +4,11 @@
 spellanimationSetup_ThunderBreath:
                 
                 bsr.w   ClearSpellanimationProperties
-                moveq   #SPELLTILESET_BLAST,d0
-				; moveq   #SPELLTILESET_THUNDER_BREATH,d0
+				moveq   #SPELLTILESET_THUNDER_BREATH,d0
                 bsr.w   LoadSpellTileset
                 moveq   #1,d0
                 bsr.w   sub_1A2F6  ; Write a bunch of spell animation properties... (seems to reset to initial state)
-				move.w  #208,4(a0) 	; Initial position written in the appropriate slot of the spell animation properties
+				; move.w  #208,4(a0) 	; Initial opaque data written in a slot of the spell animation properties
                 move.w  #100,((byte_FFB404-$1000000)).w
                 move.b  #SPELLANIMATION_THUNDER_BREATH,((CURRENT_SPELLANIMATION-$1000000)).w
                 move.b  #1,((byte_FFB585-$1000000)).w
