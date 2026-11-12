@@ -80,7 +80,7 @@ table_SpellDefinitions:
                 power      30
                 
                 entry      AURA|LV4     ; AURA 4
-                mpCost     25
+                mpCost     30
                 animation  HEALING_FAIRY|VARIATION4
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 0
