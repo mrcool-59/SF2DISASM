@@ -35,7 +35,14 @@ spellanimationUpdate_ThunderBreath:
 @SkipFlash:
 				move.w	#x_player,d2		; d2 = X position of the complex graphic
 				move.w  #y_player,d3		; d3 = Y position of the complex graphic
+                lea     graphic_ThunderBreath_RightToLeft(pc), a0
 				
+				btst    #SPELLANIMATION_BIT_MIRRORED,((SPELLANIMATION_VARIATION_AND_MIRRORED_BIT-$1000000)).w
+				beq.s   @NotEnemy
+				move.w	#x_enemy,d2
+				move.w  #y_enemy,d3
+                lea     graphic_ThunderBreath_LeftToRight(pc), a0
+@NotEnemy:
 				cmp.w   #5,2(a5)
 				bge.s   @NoHideGraphic
 				move.w	#256,d3				; Hide graphic for a few frames before the next sound effect pulse
@@ -44,7 +51,6 @@ spellanimationUpdate_ThunderBreath:
 				lsr.w	#1,d0				; Change graphic every 2 frames
 				andi.w  #3,d0				; We have 4 frames to cycle through
 
-                lea     graphic_ThunderBreath_RightToLeft(pc), a0
 				mulu.w  #(VDP_SPELL_ENTRY_SIZE*6),d0
 				add.w   d0,a0				; a0 = pointer to the correct frame to display
 				
@@ -75,6 +81,9 @@ spellanimationUpdate_ThunderBreath:
 
 x_player = 62
 y_player = 72
+
+x_enemy = 82
+y_enemy = 77
 
 graphic_ThunderBreath_RightToLeft: ; This version is intended for player characters
 				; Frame A
@@ -111,13 +120,33 @@ graphic_ThunderBreath_RightToLeft: ; This version is intended for player charact
 				
 graphic_ThunderBreath_LeftToRight: ; This version is intended for enemy monsters
 				; Frame A
-				; TODO
+                vdpSpell 64,  0,   SPELLTILE1, V3|H4|VALUE2|MIRRORED
+                vdpSpell 64, 24,  SPELLTILE13, V3|H4|VALUE2|MIRRORED
+                vdpSpell 32,  0,  SPELLTILE25, V3|H4|VALUE2|MIRRORED
+                vdpSpell 32, 24,  SPELLTILE37, V3|H4|VALUE2|MIRRORED
+                vdpSpell  0,  0,  SPELLTILE49, V3|H4|VALUE2|MIRRORED
+                vdpSpell  0, 24,  SPELLTILE61, V3|H4|VALUE2|MIRRORED
 				
 				; Frame B
-				; TODO
-
+                vdpSpell 64,  0,  SPELLTILE73, V3|H4|VALUE2|MIRRORED
+                vdpSpell 64, 24,  SPELLTILE85, V3|H4|VALUE2|MIRRORED
+                vdpSpell 32,  0,  SPELLTILE97, V3|H4|VALUE2|MIRRORED
+                vdpSpell 32, 24, SPELLTILE109, V3|H4|VALUE2|MIRRORED
+                vdpSpell  0,  0, SPELLTILE121, V3|H4|VALUE2|MIRRORED
+                vdpSpell  0, 24, SPELLTILE133, V3|H4|VALUE2|MIRRORED
+				
 				; Frame A (flipped)
-				; TODO
-
+                vdpSpell 64, 24,   SPELLTILE1, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell 64,  0,  SPELLTILE13, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell 32, 24,  SPELLTILE25, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell 32,  0,  SPELLTILE37, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell  0, 24,  SPELLTILE49, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell  0,  0,  SPELLTILE61, V3|H4|VALUE2|FLIPPED|MIRRORED
+				
 				; Frame B (flipped)
-				; TODO
+                vdpSpell 64, 24,  SPELLTILE73, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell 64,  0,  SPELLTILE85, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell 32, 24,  SPELLTILE97, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell 32,  0, SPELLTILE109, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell  0, 24, SPELLTILE121, V3|H4|VALUE2|FLIPPED|MIRRORED
+                vdpSpell  0,  0, SPELLTILE133, V3|H4|VALUE2|FLIPPED|MIRRORED
