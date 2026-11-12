@@ -17,7 +17,7 @@ spellanimationUpdate_ThunderBreath:
 				bne.s	@SkipPulse
 				btst    #0,d2				; Shake with variation 2 and 4
 				beq.s	@SkipShake
-                bsr.w   sub_1B8FE			; Request screen shake
+                bsr.w   ApplySpellScreenShake
 @SkipShake:
 				sndCom  SFX_BOLT_SPELL
 				
@@ -27,14 +27,14 @@ spellanimationUpdate_ThunderBreath:
                 add.w   #10,d7
                 move.w  d7,2(a5)
 @SkipPulse:
-                bsr.w   sub_1B90C			; Update screen shake
-                lea     table_1CFF6(pc), a0 ; Table for palette flash effect
+                bsr.w   UpdateSpellScreenShake
+                lea     table_BoltPaletteFlash(pc), a0
 				btst    #1,d2				; Flash with variation 3 and 4
 				beq.s   @SkipFlash
-                bsr.w   sub_1B8B2			; Execute palette flash effect
+                bsr.w   UpdateSpellPaletteFlash
 @SkipFlash:
-				move.w	#x_player,d2		; set X position of the complex graphic
-				move.w  #y_player,d3		; set Y position of the complex graphic
+				move.w	#x_player,d2		; d2 = X position of the complex graphic
+				move.w  #y_player,d3		; d3 = Y position of the complex graphic
 				
 				cmp.w   #5,2(a5)
 				bge.s   @NoHideGraphic
@@ -48,15 +48,15 @@ spellanimationUpdate_ThunderBreath:
 				mulu.w  #(VDP_SPELL_ENTRY_SIZE*6),d0
 				add.w   d0,a0				; a0 = pointer to the correct frame to display
 				
-                moveq   #38,d0				; construct complex graphic starting at VDP sprite 38
-                moveq   #6,d1				; complex graphic has 6 sprites
+                moveq   #38,d0				; Construct complex graphic starting at VDP sprite 38
+                moveq   #6,d1				; Complex graphic has 6 sprites
                 bsr.w   ConstructComplexGraphic
 
                 cmpi.w  #45,(a5)					; Frame delay condition
                 bne.w   @UpdateDone
-                clr.b   ((byte_FFB588-$1000000)).w	; Hit frame
+                clr.b   ((SPELLANIMATION_HIT_TRIGGER-$1000000)).w	; Hit frame
 @UpdateDone:
-				tst.w	((byte_FFB404-$1000000)).w	; Detect when the engine decides it's time to end the animation
+				tst.w	((SPELLANIMATION_COUNTDOWN-$1000000)).w	; Detect when the engine decides it's time to end the animation
 				bne.s	@NotOver
                 clr.b   ((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w
 				bra.w   ReinitializeSceneAfterSpell
