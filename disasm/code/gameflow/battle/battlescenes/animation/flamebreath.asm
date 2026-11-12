@@ -14,13 +14,20 @@ spellanimationSetup_FlameBreath:
                 move.w  (sp)+,d1
                 lea     ((byte_FFB532-$1000000)).w,a1
                 bclr    #SPELLANIMATION_BIT_MIRRORED,d1
-                bne.s   @loc1
+                bne.s   @IsEnemy
                 
+				; Ally cone limits
                 move.w  #64,(a1) 
                 move.w  #128,2(a1) 
+				
+				; Sunny cone limits
+                cmp.w   #ALLYBATTLESPRITE_SUNNY,((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w
+                bne.s   @Continue
+				move.w  #88,(a1)
+				move.w  #136,2(a1)
                 bra.s   @Continue
-@loc1:
-                
+@IsEnemy:
+                ; Enemy cone limits
                 move.w  #192,(a1) 
                 clr.w   2(a1)
 @Continue:
@@ -32,11 +39,11 @@ spellanimationSetup_FlameBreath:
                 moveq   #1,d0
                 bsr.w   sub_1A2F6       
                 move.w  (a1),2(a0)
-                move.w  #50000,((byte_FFB404-$1000000)).w ; [this is how long particles are emited, but the animation can be interrupted earlier => put a high value so the animation holds vs. multiple targets!]
+                move.w  #-1,((byte_FFB404-$1000000)).w
                 move.b  #SPELLANIMATION_FLAME_BREATH,((CURRENT_SPELLANIMATION-$1000000)).w
-                move.b  #1,((byte_FFB585-$1000000)).w ; [game locks if this is set to 0, seems to be the animation progress: 0 inactive, 1 playing, 2 stopped, 3 cleaned up]
+                move.b  #1,((byte_FFB585-$1000000)).w
                 move.b  #1,((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w ; [game locks if this is set to 0]
-                move.b  #1,((byte_FFB588-$1000000)).w ; [animation seems noticeably shorter, with impact happening immediately if this is set to 0]
+                move.b  #1,((byte_FFB588-$1000000)).w
                 bra.w   StoreBattlespritePalette
 
     ; End of function spellanimationSetup_FlameBreath
