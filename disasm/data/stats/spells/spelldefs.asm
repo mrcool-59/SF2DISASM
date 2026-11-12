@@ -786,36 +786,36 @@ table_SpellDefinitions:
                 power      40
 				
                 entry      THUNDER_BREATH
-                mpCost     5
+                mpCost     6
                 animation  THUNDER_BREATH
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     0
-                power      25
+                power      23
                 
                 entry      THUNDER_BREATH|LV2
-                mpCost     9
+                mpCost     10
                 animation  THUNDER_BREATH|VARIATION2
                 properties TYPE_ATTACK
                 range      1, 3
                 radius     0
-                power      32
+                power      29
                 
                 entry      THUNDER_BREATH|LV3
-                mpCost     13
+                mpCost     17
                 animation  THUNDER_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     1
-                power      40
+                power      35
                 
                 entry      THUNDER_BREATH|LV4
-                mpCost     20
+                mpCost     25
                 animation  THUNDER_BREATH|VARIATION4
                 properties TYPE_ATTACK
                 range      1, 3
                 radius     1
-                power      50
+                power      45
 				
                 entry      SKIP_BATTLE
                 mpCost     0

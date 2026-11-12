@@ -401,7 +401,7 @@
 0399=018F=I don't like getting my claws{N}dirty. I prefer slaying my foes{N}from range with magic.{W1}
 0400=0190=Call if you need my help, OK?{W1}
 0401=0191=Do you think {NAME;7} likes me?{W1}
-0402=0192={NAME} spat lightning!
+0402=0192={NAME} shot lightning breath!
 0403=0193={NAME} opened the chest.{W2}{CLEAR}
 0404=0194={NAME} investigated{N}the vase.{W2}{CLEAR}
 0405=0195={NAME} looked in{N}the barrel.{W2}{CLEAR}
