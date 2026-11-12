@@ -6,39 +6,61 @@ spellanimationUpdate_ThunderBreath:
                 lea     ((SPELLANIMATION_PROPERTIES-$1000000)).w,a5
                 lea     ((SPRITE_38-$1000000)).w,a4
                 
+				move.b  ((SPELLANIMATION_VARIATION_AND_MIRRORED_BIT-$1000000)).w,d2
+				subq.b  #1,d2				; d2 = 0, 1, 2, 3 depending on variation + mirrored bit
+				
                 tst.w   (a5)
                 beq.w   @UpdateDone
-                addq.w  #1,(a5)			; (a5) = Frame counter
-
-				move.w	(a5),d0
-				andi.w	#15,d0			; Play sound every 16 frames
-				cmpi.w  #2,d0			; Play sound when frame counter is 2, 18, ...
-				bne.s	@SkipSound
+                addq.w  #1,(a5)				; (a5) = Frame counter
+@UpdatePulse:
+				subq.w  #1,2(a5)			; 2(a5) = Frame delay for next pulse
+				bne.s	@SkipPulse
+				btst    #0,d2				; Shake with variation 2 and 4
+				beq.s	@SkipShake
+                bsr.w   sub_1B8FE			; Request screen shake
+@SkipShake:
 				sndCom  SFX_BOLT_SPELL
-@SkipSound:
-				move.w	(a5),d0
-				lsr.w	#1,d0			; Change graphic every 2 frames
-				andi.w  #3,d0			; We have 4 frames to cycle through
-				; TODO: play graphic every 1 frame to see if it's better looking
 				
+				; Roll again the pulse frame delay
+                move.w  #8,d6 
+                jsr     (GenerateRandomNumber).w
+                add.w   #10,d7
+                move.w  d7,2(a5)
+@SkipPulse:
+                bsr.w   sub_1B90C			; Update screen shake
+                lea     table_1CFF6(pc), a0 ; Table for palette flash effect
+				btst    #1,d2				; Flash with variation 3 and 4
+				beq.s   @SkipFlash
+                bsr.w   sub_1B8B2			; Execute palette flash effect
+@SkipFlash:
+				move.w	#x_player,d2		; set X position of the complex graphic
+				move.w  #y_player,d3		; set Y position of the complex graphic
+				
+				cmp.w   #5,2(a5)
+				bge.s   @NoHideGraphic
+				move.w	#256,d3				; Hide graphic for a few frames before the next sound effect pulse
+@NoHideGraphic:
+				move.w	(a5),d0
+				lsr.w	#1,d0				; Change graphic every 2 frames
+				andi.w  #3,d0				; We have 4 frames to cycle through
+
                 lea     graphic_ThunderBreath_RightToLeft(pc), a0
 				mulu.w  #(VDP_SPELL_ENTRY_SIZE*6),d0
-				add.w   d0,a0			; a0 = pointer to the correct frame to display
+				add.w   d0,a0				; a0 = pointer to the correct frame to display
 				
-                moveq   #38,d0			; construct complex graphic starting at VDP sprite 38
-                moveq   #6,d1			; complex graphic has 6 sprites
-				move	#x_player,d2	; set X position of the complex graphic
-				move    #y_player,d3	; set Y position of the complex graphic
+                moveq   #38,d0				; construct complex graphic starting at VDP sprite 38
+                moveq   #6,d1				; complex graphic has 6 sprites
                 bsr.w   ConstructComplexGraphic
 
-@CheckImpact:
-                cmpi.w  #60,(a5)					; Frame delay condition
+                cmpi.w  #45,(a5)					; Frame delay condition
                 bne.w   @UpdateDone
-                clr.b   ((byte_FFB588-$1000000)).w	; Impact frame
+                clr.b   ((byte_FFB588-$1000000)).w	; Hit frame
 @UpdateDone:
-				; TODO: remove this for infinite spell?
-                cmpi.w  #80,(a5) 					; Frame delay condition
-                bcc.w   ReinitializeSceneAfterSpell	; End of spell animation
+				tst.w	((byte_FFB404-$1000000)).w	; Detect when the engine decides it's time to end the animation
+				bne.s	@NotOver
+                clr.b   ((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w
+				bra.w   ReinitializeSceneAfterSpell
+@NotOver:
                 rts
 
     ; End of function spellanimationUpdate_PhoenixAttack
