@@ -151,11 +151,17 @@ battlesceneScript_MakeActorIdle:
                 beq.w   @Done           ; skip if actor is dead
                 btst    #COMBATANT_BIT_ENEMY,(a4)
                 bne.s   byte_A7EE       ; @Enemy
+			if (STANDARD_BUILD&FIX_SPELL_ANIMATION_END_LAG=1)
+				endAnimation
+			endif
                 makeAllyIdle
                 bra.s   @Done
 byte_A7EE:
                 
                 @Enemy:
+			if (STANDARD_BUILD&FIX_SPELL_ANIMATION_END_LAG=1)
+				endAnimation
+			endif
                 makeEnemyIdle
 @Done:
                 

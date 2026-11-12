@@ -72,6 +72,7 @@ FIX_SLADE_EXPLODES_AFTER_BATTLE_5:   equ 1   ; Fixes the bug where at the end of
 FIX_SPELL_LEARNING_PROMO_CHECK:      equ 1   ; Correctly determine whether a character is promoted when learning spells.
 FIX_TIMER_WINDOW_POSITION:           equ 1   ; Re-positions the timer window displayed during the Fairy Woods special stage battle to perfectly overlap the gold window when viewing the member status screen.
 FIX_USABLE_ITEM_VALIDATION:          equ 1   ; Compares an item's Use Spell index to the "No spell" index $3F instead of $FF.
+FIX_SPELL_ANIMATION_END_LAG:         equ 1   ; Ensure spell animation finishes at the same time actor reverts to idle animation (i.e: fixes breath animations still playing a little while while actor is idle).
 
 
 ; Quality of life features
