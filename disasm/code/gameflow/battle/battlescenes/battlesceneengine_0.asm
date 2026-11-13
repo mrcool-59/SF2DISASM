@@ -1725,7 +1725,12 @@ loc_1920C:
                 
                 clr.w   d0
                 getSavedByte MESSAGE_SPEED, d0
-                moveq   #8,d1
+				; moveq   #8,d1			; Original game wait time
+                moveq   #7,d1			; Slightly shorter wait when messages are shown
+				testSavedByte NO_BATTLE_MESSAGES_TOGGLE
+				beq.s 	@Continue
+				moveq   #6,d1			; Significantly shorter wait when messages are hidden
+			@Continue:
                 sub.w   d0,d1
                 clr.w   d0
                 bset    d1,d0
