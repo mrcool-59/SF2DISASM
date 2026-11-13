@@ -119,6 +119,7 @@ TRADEABLE_ITEMS:                    equ 0       ; Allow trading items in battle 
 TRAP_DAMAGE_RAISES_WITH_DIFFICULTY: equ 0       ; Increase Laser/Burst Rock damage with difficulty.   Normal:100%  Hard:125%  Super: 150%  Ouch: 175%
 SPELL_LEARNING_SOUND_EFFECT:		equ 101		; 0 = 0FF, xxx = Play xxx SFX when a character learns a new spell or upgrades a spell.
 ITEM_DROP_SOUND_EFFECT:				equ 122		; 0 = 0FF, xxx = Play xxx SFX when a character gets an item drop.
+SCREEN_SHAKE_ON_ENEMY_KILL:			equ 1		; 0 = OFF, 1 = ON (This won't work when a spell animation that does screen shakes play at the same time)
 
 
 ; Music features

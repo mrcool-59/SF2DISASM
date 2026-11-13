@@ -1422,6 +1422,16 @@ loc_18FC6:
                 move.b  ((FADING_COUNTER_MAX-$1000000)).w,((FADING_COUNTER-$1000000)).w
                 move.w  ((BATTLESCENE_ENEMY_X-$1000000)).w,d4
                 move.w  ((BATTLESCENE_ENEMY_Y-$1000000)).w,d5
+			if (STANDARD_BUILD&SCREEN_SHAKE_ON_ENEMY_KILL=1)
+                move.w  d0,-(sp)
+                move.w  ((BATTLESCENE_ENEMY-$1000000)).w,d0
+                jsr     j_GetCurrentHp
+                tst.w   d1
+                bne.s   @NoShake
+				bsr.w	ApplySpellScreenShake
+@NoShake:
+                move.w  (sp)+,d0
+			endif
                 moveq   #$B,d0
 loc_19004:
                 
@@ -1440,6 +1450,16 @@ loc_19004:
                 add.w   d5,d6
                 bsr.w   MoveEnemyBattlespriteVertically
                 jsr     (WaitForVInt).w
+			if (STANDARD_BUILD&SCREEN_SHAKE_ON_ENEMY_KILL=1)
+                move.w  d0,-(sp)
+                move.w  ((BATTLESCENE_ENEMY-$1000000)).w,d0
+                jsr     j_GetCurrentHp
+                tst.w   d1
+                bne.s   @NoShake2
+				bsr.w	UpdateSpellScreenShake
+@NoShake2:
+                move.w  (sp)+,d0
+			endif
                 dbf     d0,loc_19004
                 move.w  d4,d6
                 bsr.w   MoveEnemyBattlespriteHorizontally
