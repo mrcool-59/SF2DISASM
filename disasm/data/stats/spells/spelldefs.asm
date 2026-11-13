@@ -379,7 +379,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  FLAME_BREATH
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      20
                 
@@ -387,7 +387,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  FLAME_BREATH|VARIATION2
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      30
                 
@@ -395,7 +395,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      42
                 
@@ -403,7 +403,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  SNOW_BREATH|VARIATION2
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      24
                 
@@ -411,7 +411,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  SNOW_BREATH|VARIATION3
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      34
                 
@@ -419,7 +419,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  SNOW_BREATH|VARIATION4
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      44
                 
