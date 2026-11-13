@@ -396,7 +396,7 @@ table_SpellDefinitions:
                 animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 2
-                radius     0
+                radius     1
                 power      42
                 
                 entry      SNOW         ; SNOW 1
@@ -420,7 +420,7 @@ table_SpellDefinitions:
                 animation  SNOW_BREATH|VARIATION4
                 properties TYPE_ATTACK
                 range      1, 2
-                radius     0
+                radius     1
                 power      44
                 
                 entry      DEMON        ; DEMON 1
@@ -724,7 +724,7 @@ table_SpellDefinitions:
                 animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 1
-                radius     0
+                radius     1
                 power      45
                 
                 entry      KIWI|LV4     ; KIWI 4
@@ -732,7 +732,7 @@ table_SpellDefinitions:
                 animation  FLAME_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 1
-                radius     0
+                radius     1
                 power      58
                 
                 entry      SHINE        ; SHINE 1
