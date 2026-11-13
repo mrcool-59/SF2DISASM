@@ -27,7 +27,10 @@ spellanimationUpdate_ThunderBreath:
                 add.w   #10,d7
                 move.w  d7,2(a5)
 @SkipPulse:
+				btst    #0,d2				; Shake with variation 2 and 4
+				beq.s   @SkipShake2
                 bsr.w   UpdateSpellScreenShake
+@SkipShake2:
                 lea     table_BoltPaletteFlash(pc), a0
 				btst    #1,d2				; Flash with variation 3 and 4
 				beq.s   @SkipFlash
