@@ -120,12 +120,24 @@ battlesceneScript_PerformAnimation:
                 
 @CastSpell:     module
                 movem.w d4,-(sp) ; Push spell animation with flags
-                
-                ; Decrease caster's MP
+				andi.w  #SPELLANIMATION_MASK_INDEX,d4 ; Consider only the spell animation index (i.e: ignore flags)
+				
+				; HARDCODED: Sunny has free flame breath random attack
+                bsr.w   GetClass
+				cmpi.w  #CLASS_34,d1
+				bne.s	@DoDecreaseMP
+				cmpi.w  #SPELLANIMATION_FLAME_BREATH,d4
+				bne.s	@DoDecreaseMP
+				clr.w   d2
+				bra.s   @SkipDecreaseMP
+
+				; Decrease caster's MP
+			@DoDecreaseMP:
                 move.w  BATTLEACTION_OFFSET_ITEM_OR_SPELL(a3),d1  
                 bsr.w   GetSpellCost
                 move.w  d1,d2
                 neg.w   d2
+			@SkipDecreaseMP:
                 bsr.w   GetStatusEffects
                 tst.b   d0
                 bmi.s   @Enemy1
@@ -143,7 +155,6 @@ battlesceneScript_PerformAnimation:
 				; HARDCODED: if animation is flame breath or thunder breath AND the class is GDRG, then use a specific animation
 				cmpi.w  #CLASS_34,d1
 				bne.s	@Continue2
-				andi.w  #SPELLANIMATION_MASK_INDEX,d4 ; Consider only the spell animation index (i.e: ignore flags)
 				cmpi.w  #SPELLANIMATION_FLAME_BREATH,d4
 				beq.s	@SunnyBreath
 				cmpi.w  #SPELLANIMATION_THUNDER_BREATH,d4
