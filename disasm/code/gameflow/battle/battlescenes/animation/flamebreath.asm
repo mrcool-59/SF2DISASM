@@ -16,10 +16,17 @@ spellanimationSetup_FlameBreath:
                 bclr    #SPELLANIMATION_BIT_MIRRORED,d1
                 bne.s   @IsEnemy
                 
-				; Ally cone limits
+				; Ally (Kiwi + unpromoted Ixen) cone limits
                 move.w  #64,(a1) 
-                move.w  #128,2(a1) 
+                move.w  #128,2(a1)
 				
+				; Ixen (promoted) cone limits
+                cmp.w   #ALLYBATTLESPRITE_PHNX,((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w
+                bne.s   @CheckSunny
+				move.w  #80,(a1)
+				move.w  #136,2(a1)
+                bra.s   @Continue
+@CheckSunny:
 				; Sunny cone limits
                 cmp.w   #ALLYBATTLESPRITE_SUNNY,((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w
                 bne.s   @Continue
