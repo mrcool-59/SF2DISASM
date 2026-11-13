@@ -94,7 +94,13 @@ battlesceneScript_SwitchTargets:
 byte_A75E:
                 
                 @Ally_Wait:
+		if (STANDARD_BUILD=1)
+			if (CHARACTER_SWITCH_WAIT_FRAMES>0)
+                bscWait #CHARACTER_SWITCH_WAIT_FRAMES
+			endif
+		else
                 bscWait #$1E            ; Duration (in frames)
+		endif
                 switchAllies d0,d1      ; Combatant, Direction (0 = Right, 1 = Left)
                 bra.w   @Done
 byte_A772:
@@ -121,7 +127,13 @@ byte_A772:
 byte_A7AA:
                 
                 @Enemy_Wait:
+		if (STANDARD_BUILD=1)
+			if (CHARACTER_SWITCH_WAIT_FRAMES>0)
+                bscWait #CHARACTER_SWITCH_WAIT_FRAMES
+			endif
+		else
                 bscWait #$1E            ; Duration (in frames)
+		endif
                 switchEnemies d0,d1     ; Combatant, Direction (0 = Right, 1 = Left)
                 bra.w   @Done
 byte_A7BE:
