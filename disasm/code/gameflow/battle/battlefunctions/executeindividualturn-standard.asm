@@ -253,7 +253,7 @@ DetermineRandomAttackSpell:
 				; Do not trigger random attack spell if muddled
 				jsr     GetStatusEffects
 				andi.w  #STATUSEFFECT_MUDDLE,d1
-				bne.s   @Done
+				bne.w   @Done
 			endif
                 ; Check equipped weapon
                 jsr     GetEquippedWeapon ; -> d1.w = item entry, d2.w = slot
