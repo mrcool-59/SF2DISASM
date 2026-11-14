@@ -387,11 +387,18 @@ AdjustEnemyBaseAttForDifficulty:
                 bra.w   @Done
 @SuperDifficulty:
                 
+				; Update stats now because we need to use current ATT values and the enemy might be using a weapon
+                jsr     UpdateCombatantStats
+				
+				move.l  d2,-(sp)
                 clr.l   d1
+                jsr     GetCurrentAtt
+				move.w  d1,d2
+                lsr.w   #3,d2           ; if SPICY difficulty, multiply current ATT by 0.125 and add this to base ATT
                 jsr     GetBaseAtt
-                mulu.w  #9,d1
-                lsr.l   #3,d1           ; if SPICY difficulty, multiply base ATT by an extra 1.125
+				add.w   d2,d1
                 jsr     SetBaseAtt
+				move.l  d2,(sp)+
 				
                 clr.l   d1
                 jsr     GetBaseDef
