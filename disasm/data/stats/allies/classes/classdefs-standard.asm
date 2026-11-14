@@ -45,7 +45,7 @@ table_ClassDefinitions:
                 mov 5                   ; 7: WFMN
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 moveType   STEALTH
-                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
+                prowess    CRITICAL125_1IN16|DOUBLE_1IN16|COUNTER_1IN32
                 
                 mov 6                   ; 8: RNGR
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
@@ -130,7 +130,7 @@ table_ClassDefinitions:
                 mov 5                   ; 24: WFBR
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 moveType   STEALTH
-                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN8
+                prowess    CRITICAL125_1IN8|DOUBLE_1IN8|COUNTER_1IN16
                 
                 mov 6                   ; 25: BWNT
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
