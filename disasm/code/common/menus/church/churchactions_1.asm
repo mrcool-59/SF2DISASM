@@ -548,6 +548,16 @@ ChurchMenu:
 			endif
                 jsr     j_SetCurrentExp
             endif
+			
+				; SDRG promotion fun tidbit: close menu and play a cutscene
+                cmp.w   #CLASS_35,newClass(a6)
+				bne.w   @RestartPromo
+                unlk    a6
+                movem.l (sp)+,d0-a5
+				clsTxt
+				script  cs_SDRG_promo
+                rts
+			
 @RestartPromo:
                 
                 bra.w   @StartPromo     
@@ -590,3 +600,16 @@ ChurchMenu:
 
     ; End of function ChurchMenu
 
+
+cs_SDRG_promo:
+	textCursor 		4337
+	playSound 		SOUND_COMMAND_FADE_OUT
+	shiver 			ALLY_PETER
+    nextSingleText 	$0,ALLY_PETER   			; "{LEADER}!{N}Look at {NAME;6}!{W1}"
+	playSound 		MUSIC_CUSTOM_CHALA
+	csWait			90
+    nextSingleText 	$0,ALLY_KIWI    			; "Roaaar!{W1}"
+    nextSingleText 	$0,ALLY_PETER   			; "Oooh!...{D1}This is amazing!{D1}{N}I have a little brother now!{W1}"
+    nextText 		$0,ALLY_KIWI    	   		; "(As a Serpent Dragon,{N}I will now cast random{N}spells when attacking enemies){W2}"
+	nextSingleText 	$0,ALLY_KIWI    			; "{CLEAR}(Variety and power of spells{N}will increase as I gain levels){W1}"
+	csc_end

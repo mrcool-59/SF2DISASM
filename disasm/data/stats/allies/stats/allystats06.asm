@@ -17,3 +17,11 @@ AllyStats06:    forClass  TORT
                 agiGrowth 20, 55, LINEAR
                 spellList 
                 
+                forClass  CLASS_35	; SDRG
+                hpGrowth  30, 125, LATE
+                mpGrowth  0, 0, NONE
+                attGrowth 30, 90, LINEAR
+                defGrowth 30, 80, LINEAR
+                agiGrowth 25, 65, LINEAR
+                spellList 
+                

@@ -42,7 +42,7 @@ table_AllyMapsprites:
 ; 6: Kiwi
                 mapsprite KIWI_BASE
                 mapsprite KIWI_PROMO
-                mapsprite DEFAULT
+                mapsprite KIWI_SPECIAL
                 
 ; 7: Peter
                 mapsprite PETER_BASE

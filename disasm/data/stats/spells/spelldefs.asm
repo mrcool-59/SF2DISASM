@@ -422,6 +422,14 @@ table_SpellDefinitions:
                 range      1, 2
                 radius     1
                 power      44
+
+                entry      SNOW|LV4     ; SNOW 4
+                mpCost     0
+                animation  SNOW_BREATH|VARIATION4
+                properties TYPE_ATTACK
+                range      1, 2
+                radius     1
+                power      56
                 
                 entry      DEMON        ; DEMON 1
                 mpCost     0

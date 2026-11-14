@@ -183,11 +183,11 @@ table_ClassDefinitions:
                 resistance WIND_WEAKNESS|LIGHTNING_MAJOR|ICE_NONE|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
                 moveType   FLYING
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
-                    
-                mov 6                   ; 35: 
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
-                moveType   REGULAR
-                prowess    CRITICAL_NONE|DOUBLE_1IN32|COUNTER_1IN32
+                
+                mov 7                   ; 35: SDRG
+                resistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
+                moveType   FLYING
+                prowess    CRITICAL125_1IN32|DOUBLE_1IN32|COUNTER_1IN16
                     
                 mov 6                   ; 36: 
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE

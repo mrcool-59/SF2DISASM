@@ -4336,3 +4336,8 @@
 4334=10BE=Grrrr...{W1}
 4335=10BF=How cute.{W1}
 4336=10C0=Thank you, {NAME;31}!{W1}
+4337=10C1={LEADER}!{N}Look at {NAME;6}!{W1}
+4338=10C2=Roaaar!{W1}
+4339=10C3=Oooh!...{D1}This is amazing!{D1}{N}I have a little brother now!{W1}
+4340=10C4=(As a Serpent Dragon,{N}I will now cast random{N}spells when attacking enemies){W2}
+4341=10C5={CLEAR}(Variety and power of spells{N}will increase as I gain levels){W1}

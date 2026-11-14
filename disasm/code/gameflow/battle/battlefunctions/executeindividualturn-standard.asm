@@ -246,7 +246,7 @@ ExecuteIndividualTurn:
 
 DetermineRandomAttackSpell:
                 
-                movem.l d1-d2/a0,-(sp)
+                movem.l d1-d3/a0,-(sp)
                 move.w  combatant(a6),d0
                 
 			if (FIX_NO_ATTACK_RANDOM_SPELL_MUDDLED=1)
@@ -270,6 +270,8 @@ DetermineRandomAttackSpell:
                 ; Check ally class
                 lea     table_RandomAttackSpellsForClasses(pc), a0
                 jsr     GetClass
+				cmpi.w	#CLASS_35,d1	; HARDCODED: SDRG special case
+				beq.s	@SpellRoulette
                 bra.s   @Continue
                 
                 ; Check enemy
@@ -278,7 +280,7 @@ DetermineRandomAttackSpell:
                 
                 ; Find object
 @Continue:      jsr     (FindSpecialPropertyBytesAddressForObject).w
-                bcs.s   @Done
+                bcs.w   @Done
                 
                 ; Randomly determine if spell is cast
                 move.w  #256,d6
@@ -288,7 +290,7 @@ DetermineRandomAttackSpell:
                 
                 move.w  d6,d1
 @Compare:       cmp.b   d1,d7             ; d6/256 chance to cast spell
-                bhs.s   @Done
+                bhs.w   @Done
                 
                 ; Determine spell level
                 move.w  ((BATTLEACTION_ITEM_OR_SPELL-$1000000)).w,((BATTLEACTION_ITEM_OR_SPELL_COPY-$1000000)).w
@@ -313,7 +315,53 @@ DetermineRandomAttackSpell:
 @LoadSpell:     lsl.w   #SPELLENTRY_OFFSET_LV,d0
                 or.b    (a0),d0
                 move.w  d0,((BATTLEACTION_ITEM_OR_SPELL-$1000000)).w
-@Done:          movem.l (sp)+,d1-d2/a0
+				bra.s	@Done
+				
+@SpellRoulette:
+                lea     table_SpellRoulette(pc), a0
+                jsr     CalculateEffectiveLevel		; d1 = effective level
+				
+				clr.w   d6
+                move.b  (a0)+,d6					; d6 = number of entries
+                jsr     (GenerateRandomNumber).w
+				
+				clr.w	d2
+				move.b	(a0)+,d2					; d2 = number of rolls
+				
+				clr.w	d3
+				move.b	(a0)+,d3					; d3 = failure spell entry
+													; a0 now points to the first data line (header is done)
+				
+                move.w  ((BATTLEACTION_ITEM_OR_SPELL-$1000000)).w,((BATTLEACTION_ITEM_OR_SPELL_COPY-$1000000)).w
+                move.w  #BATTLEACTION_CAST_SPELL,((CURRENT_BATTLEACTION-$1000000)).w
+				clr.w	d0
+				
+@SpellRoulette_Loop:
+				jsr     (GenerateRandomNumber).w	; d7 = 0..numEntries-1
+				
+				mulu.w	#3,d7						; d7 = min level offset
+                move.b  (a0,d7.w),d0				; d0 = min level
+				cmp.w   d0,d1
+				blt.s	@FailedRoll					; below min level?
+				
+				addq.w  #1,d7						; d7 = max level offset
+                move.b  (a0,d7.w),d0				; d0 = max level
+				cmp.w   d0,d1
+				bgt.s	@FailedRoll					; above max level?
+
+				; Successful roll
+				addq.w  #1,d7						; d7 = spell entry offset
+                move.b  (a0,d7.w),d0				; d0 = spell entry
+                move.w  d0,((BATTLEACTION_ITEM_OR_SPELL-$1000000)).w
+				bra.s	@Done
+@FailedRoll:
+				subq.w	#1,d2
+				bne.s	@SpellRoulette_Loop
+				
+				; No more roll is allowed
+                move.w  d3,((BATTLEACTION_ITEM_OR_SPELL-$1000000)).w
+
+@Done:          movem.l (sp)+,d1-d3/a0
                 rts
 
     ; End of function DetermineRandomAttackSpell
@@ -345,6 +393,13 @@ LoadBattlesceneMusicIndex:
 @SpecialMusicUnpromoted:
 					lea		table_AllyBattlesceneMusics_Unpromoted(pc),a0
 @SpecialMusicTest:
+					; HARDCODED: SDRG class
+					jsr     GetClass
+					cmpi.w  #CLASS_35,d1
+					bne.s   @NoSDRG
+					move.b  #MUSIC_CUSTOM_CHALA,d3
+                    bra	    @LoadIndex ; Submit the hardcoded music
+@NoSDRG:
 					move.w  d0,d1
 					moveq   #1,d2
 					jsr     (FindSpecialPropertyBytesAddressForObject).w

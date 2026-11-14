@@ -25,23 +25,21 @@ loc_1D2F6:
                 btst    #SPELLANIMATION_BIT_MIRRORED,((SPELLANIMATION_VARIATION_AND_MIRRORED_BIT-$1000000)).w
                 bne.s   @IsEnemy
                 move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
-                cmpi.w  #ALLYBATTLESPRITE_PHNK,d2							; HARDCODED: we're done if PHNK class (unpromoted Ixen)
+                cmpi.w  #ALLYBATTLESPRITE_PHNK,d2							; HARDCODED: we're done if PHNK sprite (unpromoted Ixen)
                 beq.s   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto Ixen Promoted
-                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
-                cmpi.w  #ALLYBATTLESPRITE_PHNX,d2							; HARDCODED: we're done if PHNX class (promoted Ixen)
+                cmpi.w  #ALLYBATTLESPRITE_PHNX,d2							; HARDCODED: we're done if PHNX sprite (promoted Ixen)
                 beq.s   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto DEFAULT
-                move.w  ((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w,d2
-                cmpi.w  #ALLYBATTLESPRITE_SUNNY,d2							; HARDCODED: we're done if not GDRG class (Sunny)
-                bne.s   loc_1D33C
+                cmpi.w  #ALLYBATTLESPRITE_MNST,d2							; HARDCODED: we're done if MNST sprite (Kiwi)
+                beq.s   loc_1D33C
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto Sunny
+                cmpi.w  #ALLYBATTLESPRITE_SUNNY,d2							; HARDCODED: we're done if GDRG sprite (Sunny)
+                beq.s   loc_1D33C
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Goto Kiwi Special
 				bra.s   loc_1D33C
 @IsEnemy:
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Start at Cerberus
+                add.w   #5*VDP_SPELL_ENTRY_SIZE,a0							; Start at Cerberus
                 move.w  ((BATTLESCENE_ENEMYBATTLESPRITE-$1000000)).w,d2
                 cmpi.w  #ENEMYBATTLESPRITE_CERBERUS,d2
                 beq.s   loc_1D33C
@@ -224,8 +222,9 @@ AnimateBreath:
 graphic_FlameBreathParticle:
 				vdpSpell 298, 238, SPELLTILE1, V1|H1|VALUE1  ; Ixen (unpromoted) [VALUE1 = behind actor but in front of target]
                 vdpSpell 276, 258, SPELLTILE1, V1|H1|VALUE1  ; Ixen (promoted)
-				vdpSpell 284, 222, SPELLTILE1, V1|H1|32  	 ; DEFAULT (basically, Kiwi)
+				vdpSpell 284, 222, SPELLTILE1, V1|H1|32  	 ; Kiwi (promoted)
                 vdpSpell 278, 219, SPELLTILE1, V1|H1|VALUE1  ; Sunny
+				vdpSpell 274, 226, SPELLTILE1, V1|H1|VALUE1	 ; Kiwi (special)
                 vdpSpell 210, 236, SPELLTILE1, V1|H1|32  ; cerberus
                 vdpSpell 223, 214, SPELLTILE1, V1|H1|32  ; hydra
                 vdpSpell 208, 216, SPELLTILE1, V1|H1|32  ; wyvern

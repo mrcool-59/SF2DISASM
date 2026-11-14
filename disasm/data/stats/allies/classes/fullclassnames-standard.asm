@@ -39,7 +39,7 @@ table_FullClassNames:
                 className "Phoenix", 13, "Kid"
                 className "Phoenix"
                 className "Gold", 13, "Dragon"
-                className "35"
+                className "Serpent", 13, "Dragon"
                 className "36"
                 className "37"
                 className "38"

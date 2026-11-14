@@ -40,6 +40,12 @@ table_Promotions:
                 promotionSection &      ; 11: Silver Tank promoted classes
                     BRGN
                 
+                promotionSection &      ; 12: Dragon Ball base classes
+                    TORT
+                
+                promotionSection &      ; 13: Dragon Ball promoted classes
+                    CLASS_35
+                
                 
 table_PromotionItems:
                 ; Item, base classes section, promoted classes section
@@ -48,6 +54,7 @@ table_PromotionItems:
                 dc.b ITEM_SECRET_BOOK, 6, 7
                 dc.b ITEM_VIGOR_BALL, 8, 9
                 dc.b ITEM_SILVER_TANK, 10, 11
+                dc.b ITEM_DRAGON_BALL, 12, 13
                 
                 tableEnd.b
                 

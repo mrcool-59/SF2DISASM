@@ -42,7 +42,7 @@ table_ClassTypes:
                 classType BASE          ; 32: PHNK
                 classType PROMO         ; 33: PHNX
                 classType PROMO         ; 34: GDRG
-                classType PROMO         ; 35: 
+                classType SPECIAL       ; 35: SDRG
                 classType PROMO         ; 36: 
                 classType PROMO         ; 37: 
                 classType PROMO         ; 38: 

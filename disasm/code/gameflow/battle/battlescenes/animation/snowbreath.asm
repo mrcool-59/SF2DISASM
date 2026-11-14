@@ -13,7 +13,7 @@ spellanimationSetup_SnowBreath:
                 lea     ((byte_FFB532-$1000000)).w,a1
                 btst    #SPELLANIMATION_BIT_MIRRORED,((SPELLANIMATION_VARIATION_AND_MIRRORED_BIT-$1000000)).w
                 bne.s   @Enemy
-                move.w  #80,(a1) 
+                move.w  #108,(a1) 
                 bra.s   @Continue
 @Enemy:
                 

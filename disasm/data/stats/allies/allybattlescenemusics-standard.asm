@@ -16,4 +16,5 @@ table_AllyBattlesceneMusics_Promoted:
 				dc.b ALLY_CHAZ, MUSIC_CUSTOM_NEWBIE_BATTLE
 				dc.b ALLY_LEMON, MUSIC_CUSTOM_LEMON
 				dc.b ALLY_31, MUSIC_UNUSED_REVIVE ; Sunny (it's actually the abridged version of her theme)
+				; NOTE: Kiwi special promotion has an hardcoded music that doesn't appear in this table
                 tableEnd.b

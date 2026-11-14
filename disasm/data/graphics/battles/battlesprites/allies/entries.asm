@@ -37,6 +37,7 @@ pt_AllyBattlesprites:
 				dc.l AllyBattlesprite32
 				dc.l AllyBattlesprite33
 				dc.l AllyBattlesprite34
+				dc.l AllyBattlesprite35
 AllyBattlesprite00:
                 incbin "data/graphics/battles/battlesprites/allies/allybattlesprite00.bin"
 AllyBattlesprite01:
@@ -107,3 +108,5 @@ AllyBattlesprite33:
                 incbin "data/graphics/battles/battlesprites/allies/allybattlespritePeterPro-standard.bin" ; Peter (Promoted)
 AllyBattlesprite34:
                 incbin "data/graphics/battles/battlesprites/allies/allybattlespriteSunny-standard.bin" ; Sunny
+AllyBattlesprite35:
+                incbin "data/graphics/battles/battlesprites/allies/allybattlespriteKiwiSpecial-standard.bin" ; Kiwi (Special)

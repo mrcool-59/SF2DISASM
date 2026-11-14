@@ -39,7 +39,7 @@ table_ClassNames:
                 className "PHNK"
                 className "PHNX"
                 className "GDRG"
-                className "35"
+                className "SDRG"
                 className "36"
                 className "37"
                 className "38"

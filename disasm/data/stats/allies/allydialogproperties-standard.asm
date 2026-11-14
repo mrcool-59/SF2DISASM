@@ -46,9 +46,9 @@ table_AllyDialogueProperties:
                 allyPortraitAndSfx SLADE_PROMO, DIALOG_BLEEP_6
                 
 ; 6: Kiwi
-                allyPortraitAndSfx KIWI_BASE,  DIALOG_BLEEP_1
-                allyPortraitAndSfx KIWI_PROMO, DIALOG_BLEEP_7
-                allyPortraitAndSfx KIWI_PROMO, DIALOG_BLEEP_7
+                allyPortraitAndSfx KIWI_BASE,    DIALOG_BLEEP_1
+                allyPortraitAndSfx KIWI_PROMO,   DIALOG_BLEEP_7
+                allyPortraitAndSfx KIWI_SPECIAL, DIALOG_BLEEP_7
                 
 ; 7: Peter (Ixen)
                 allyPortraitAndSfx PETER_BASE,  DIALOG_BLEEP_7

@@ -94,6 +94,7 @@ pt_AllyAnimations:
 				dc.l AllyAnimation089
 				dc.l AllyAnimation090
 				dc.l AllyAnimation091
+				dc.l AllyAnimation092
 AllyAnimation000:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation000.bin"
 AllyAnimation001:
@@ -165,7 +166,7 @@ AllyAnimation033:
 AllyAnimation034:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationSunnyAtt-standard.bin" ; Sunny
 AllyAnimation035:
-                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation035.bin"
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationKiwiSpecialAtt-standard.bin" ; Kiwi Special
 AllyAnimation036:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation036.bin"
 AllyAnimation037:
@@ -245,7 +246,7 @@ AllyAnimation073:
 AllyAnimation074:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationSunnyDodge-standard.bin" ; Sunny [Dodge]
 AllyAnimation075:
-                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation075.bin"
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationKiwiSpecialDodge-standard.bin" ; Kiwi Special [Dodge]
 AllyAnimation076:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimation076.bin"
 AllyAnimation077:
@@ -277,4 +278,6 @@ AllyAnimation089:
 AllyAnimation090:
                 incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationSunnyCast-standard.bin" ; Sunny [Cast]
 AllyAnimation091:
-                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationSunnyBreath-standard.bin" ; Sunny [Breath]	
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationSunnyBreath-standard.bin" ; Sunny [Breath]
+AllyAnimation092:
+                incbin "data/graphics/battles/battlesprites/allies/animations/allyanimationKiwiSpecialItem-standard.bin" ; Kiwi Special [Item]

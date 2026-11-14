@@ -42,7 +42,7 @@ table_AllyBattlesprites:
 ; 6: KIWI
                 allyBattleSprAndPlt TORT, TORT, 0
                 allyBattleSprAndPlt MNST, MNST, 0
-                allyBattleSprAndPlt NONE, NONE, 0
+                allyBattleSprAndPlt CLASS_35, SDRG, 0
                 
 ; 7: PETER
                 allyBattleSprAndPlt PHNK, PHNK, 0

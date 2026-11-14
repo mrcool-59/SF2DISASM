@@ -125,8 +125,8 @@ loc_1E8D6:
 
     ; End of function spellanimationUpdate_SnowBreath
 
-table_1E8E2:    vdpSpell 284, 222, VDPTILE_SPELLTILE1, V1|H1|VALUE2
-                vdpSpell 224, 223, VDPTILE_SPELLTILE1, V1|H1|VALUE2
+table_1E8E2:    vdpSpell 270, 222, VDPTILE_SPELLTILE1, V1|H1|VALUE1		; Kiwi (special)
+                vdpSpell 224, 223, VDPTILE_SPELLTILE1, V1|H1|VALUE2		; Enemy
                 
 table_1E8F2:    dc.w 2
                 dc.w VDPSPELLPROP_V2|VDPSPELLPROP_H2

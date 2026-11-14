@@ -35,3 +35,34 @@ table_RandomAttackSpellsForEnemies:
                 ;dc.b ENEMY_ODD_EYE, 128, -1, -1, -1, SPELL_ODDEYE
                 
                 tableEnd.b
+
+
+; Spell roulette mechanic (for SDRG class)
+table_SpellRoulette:
+				; (Header) Number of entries, number of rolls before failure, spell in case of failure
+				dc.b 17, 20, SPELL_KIWI|SPELL_LV4
+				
+				; Min level, max level, spell entry
+                dc.b 20, 25, SPELL_SNOW|SPELL_LV1
+                dc.b 20, 29, SPELL_KIWI|SPELL_LV1
+                dc.b 20, 29, SPELL_BOLT|SPELL_LV2
+                dc.b 20, 37, SPELL_BLAST|SPELL_LV3
+                dc.b 22, 39, SPELL_BLAZE|SPELL_LV3
+                dc.b 24, 41, SPELL_FREEZE|SPELL_LV3
+                dc.b 26, 33, SPELL_SNOW|SPELL_LV2
+                dc.b 30, 37, SPELL_KIWI|SPELL_LV2
+                dc.b 30, 47, SPELL_BOLT|SPELL_LV3
+                dc.b 34, 43, SPELL_SNOW|SPELL_LV3
+                dc.b 38, 45, SPELL_KIWI|SPELL_LV3
+                dc.b 38, 99, SPELL_BLAST|SPELL_LV4
+                dc.b 40, 99, SPELL_BLAZE|SPELL_LV4
+                dc.b 42, 99, SPELL_FREEZE|SPELL_LV4
+                dc.b 44, 99, SPELL_SNOW|SPELL_LV4
+                dc.b 46, 99, SPELL_KIWI|SPELL_LV4
+                dc.b 48, 99, SPELL_BOLT|SPELL_LV4
+
+				; I considered adding SPELL_DEMON (LV1 and LV2), but the player side
+				; animation is not implemented and I didn't want to bother :3
+
+                tableEnd.b
+

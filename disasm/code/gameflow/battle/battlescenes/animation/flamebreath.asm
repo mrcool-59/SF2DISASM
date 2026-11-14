@@ -29,9 +29,16 @@ spellanimationSetup_FlameBreath:
 @CheckSunny:
 				; Sunny cone limits
                 cmp.w   #ALLYBATTLESPRITE_SUNNY,((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w
-                bne.s   @Continue
+                bne.s   @CheckKiwiSpecial
 				move.w  #88,(a1)
 				move.w  #136,2(a1)
+                bra.s   @Continue
+@CheckKiwiSpecial:
+				; Kiwi (special) cone limits
+                cmp.w   #ALLYBATTLESPRITE_SDRG,((BATTLESCENE_ALLYBATTLESPRITE-$1000000)).w
+                bne.s   @Continue
+				move.w  #96,(a1)
+				move.w  #144,2(a1)
                 bra.s   @Continue
 @IsEnemy:
                 ; Enemy cone limits

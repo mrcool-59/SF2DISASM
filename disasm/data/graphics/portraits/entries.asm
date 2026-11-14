@@ -57,6 +57,7 @@ pt_Portraits:   dc.l Portrait00
                 dc.l Portrait53
                 dc.l Portrait54
                 dc.l Portrait55
+				dc.l Portrait56
 Portrait00:     incbin "data/graphics/portraits/portrait00.bin"
 Portrait01:     incbin "data/graphics/portraits/portrait01.bin"
 Portrait02:     incbin "data/graphics/portraits/portrait02.bin"
@@ -112,3 +113,4 @@ Portrait52:     incbin "data/graphics/portraits/portrait52.bin"
 Portrait53:     incbin "data/graphics/portraits/portraitPeter-standard.bin"
 Portrait54:     incbin "data/graphics/portraits/portraitPeterPro-standard.bin"
 Portrait55:     incbin "data/graphics/portraits/portraitSunny-standard.bin"
+Portrait56:     incbin "data/graphics/portraits/portraitKiwiSpecial-standard.bin"
