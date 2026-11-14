@@ -17,49 +17,54 @@ table_HealPriorityMovetypes:
                 dc.b MOVETYPE_AQUATIC
                 
 table_AttackPriority_Regular:
-                dc.b CLASS_SDMN
-                dc.b CLASS_HERO
                 dc.b CLASS_MAGE
                 dc.b CLASS_SORC
                 dc.b CLASS_WIZ
                 dc.b CLASS_PRST
                 dc.b CLASS_VICR
                 dc.b CLASS_MMNK
+				dc.b CLASS_32 ; PHNK
+				dc.b CLASS_33 ; PHNX
+                dc.b CLASS_SDMN
+                dc.b CLASS_HERO
+				dc.b CLASS_34 ; GDRG
+				dc.b CLASS_35 ; SDRG
                 dc.b CLASS_BDMN
                 dc.b CLASS_PHNK
                 dc.b CLASS_BDBT
                 dc.b CLASS_PGNT
                 dc.b CLASS_PHNX
+                dc.b CLASS_ACHR
+                dc.b CLASS_RNGR
+                dc.b CLASS_SNIP
+                dc.b CLASS_BWNT
+                dc.b CLASS_BRGN
+                dc.b CLASS_WFMN
+                dc.b CLASS_WFBR
+                dc.b CLASS_KNTE
+                dc.b CLASS_PLDN
+                dc.b CLASS_RBT
+                dc.b CLASS_WARR
+                dc.b CLASS_RDBN
+                dc.b CLASS_BRN
+                dc.b CLASS_GLDT
                 dc.b CLASS_THIF
                 dc.b CLASS_NINJ
-                dc.b CLASS_ACHR
-                dc.b CLASS_RNGR
-                dc.b CLASS_SNIP
-                dc.b CLASS_BWNT
-                dc.b CLASS_BRGN
-                dc.b CLASS_WFMN
-                dc.b CLASS_WFBR
-                dc.b CLASS_KNTE
-                dc.b CLASS_PLDN
-                dc.b CLASS_RBT
-                dc.b CLASS_WARR
-                dc.b CLASS_RDBN
-                dc.b CLASS_BRN
-                dc.b CLASS_GLDT
-                dc.b CLASS_GLM
                 dc.b CLASS_TORT
                 dc.b CLASS_MNST
+                dc.b CLASS_GLM
                 
 table_AttackPriority_Mage:
-                dc.b CLASS_SDMN
-                dc.b CLASS_HERO
                 dc.b CLASS_TORT
-                dc.b CLASS_MNST
-                dc.b CLASS_GLM
                 dc.b CLASS_WARR
                 dc.b CLASS_GLDT
+                dc.b CLASS_PHNK
+                dc.b CLASS_PHNX
+                dc.b CLASS_SDMN
+                dc.b CLASS_HERO
                 dc.b CLASS_BRN
                 dc.b CLASS_RDBN
+                dc.b CLASS_MNST
                 dc.b CLASS_RBT
                 dc.b CLASS_KNTE
                 dc.b CLASS_PLDN
@@ -70,6 +75,11 @@ table_AttackPriority_Mage:
                 dc.b CLASS_BRGN
                 dc.b CLASS_BWNT
                 dc.b CLASS_SNIP
+                dc.b CLASS_GLM
+				dc.b CLASS_32 ; PHNK
+				dc.b CLASS_33 ; PHNX
+				dc.b CLASS_34 ; GDRG
+				dc.b CLASS_35 ; SDRG
                 dc.b CLASS_THIF
                 dc.b CLASS_NINJ
                 dc.b CLASS_MAGE
@@ -78,15 +88,17 @@ table_AttackPriority_Mage:
                 dc.b CLASS_PRST
                 dc.b CLASS_MMNK
                 dc.b CLASS_VICR
-                dc.b CLASS_PHNK
                 dc.b CLASS_BDMN
-                dc.b CLASS_PHNX
                 dc.b CLASS_PGNT
                 dc.b CLASS_BDBT
                 
 table_AttackPriority_Archer:
-                dc.b CLASS_BDMN
+				dc.b CLASS_32 ; PHNK
                 dc.b CLASS_PHNK
+                dc.b CLASS_BDMN
+				dc.b CLASS_34 ; GDRG
+				dc.b CLASS_35 ; SDRG
+				dc.b CLASS_33 ; PHNX
                 dc.b CLASS_BDBT
                 dc.b CLASS_PGNT
                 dc.b CLASS_PHNX
@@ -98,8 +110,6 @@ table_AttackPriority_Archer:
                 dc.b CLASS_MMNK
                 dc.b CLASS_SDMN
                 dc.b CLASS_HERO
-                dc.b CLASS_THIF
-                dc.b CLASS_NINJ
                 dc.b CLASS_ACHR
                 dc.b CLASS_RNGR
                 dc.b CLASS_SNIP
@@ -114,13 +124,13 @@ table_AttackPriority_Archer:
                 dc.b CLASS_RDBN
                 dc.b CLASS_BRN
                 dc.b CLASS_GLDT
-                dc.b CLASS_GLM
+                dc.b CLASS_THIF
+                dc.b CLASS_NINJ
                 dc.b CLASS_TORT
                 dc.b CLASS_MNST
+                dc.b CLASS_GLM
                 
 table_AttackPriority_Flying:
-                dc.b CLASS_SDMN
-                dc.b CLASS_HERO
                 dc.b CLASS_MAGE
                 dc.b CLASS_SORC
                 dc.b CLASS_WIZ
@@ -131,18 +141,24 @@ table_AttackPriority_Flying:
                 dc.b CLASS_RDBN
                 dc.b CLASS_BRN
                 dc.b CLASS_GLDT
-                dc.b CLASS_GLM
                 dc.b CLASS_WFMN
                 dc.b CLASS_WFBR
                 dc.b CLASS_KNTE
                 dc.b CLASS_PLDN
+                dc.b CLASS_SDMN
+                dc.b CLASS_HERO
                 dc.b CLASS_RBT
                 dc.b CLASS_TORT
                 dc.b CLASS_MNST
+                dc.b CLASS_GLM
                 dc.b CLASS_BDMN
+				dc.b CLASS_32 ; PHNK
                 dc.b CLASS_PHNK
                 dc.b CLASS_BDBT
                 dc.b CLASS_PGNT
+				dc.b CLASS_33 ; PHNX
+				dc.b CLASS_34 ; GDRG
+				dc.b CLASS_35 ; SDRG
                 dc.b CLASS_PHNX
                 dc.b CLASS_THIF
                 dc.b CLASS_NINJ
@@ -223,7 +239,12 @@ table_PriorityAdjustments_Regular:
                 dc.b 1                  ; RBT
                 dc.b 0                  ; GLM
                 dc.b 0                  ; RDBN
-                
+				; ----------------------------
+				dc.b 3                  ; PHNK
+				dc.b 3                  ; PHNX
+				dc.b 3                  ; GDRG
+				dc.b 2                  ; SDRG
+				
 table_PriorityAdjustments_Mage:
                 dc.b 3                  ; SDMN
                 dc.b 1                  ; KNTE
@@ -234,7 +255,7 @@ table_PriorityAdjustments_Mage:
                 dc.b 0                  ; BDMN
                 dc.b 1                  ; WFMN
                 dc.b 1                  ; RNGR
-                dc.b 1                  ; PHNK
+                dc.b 2                  ; PHNK
                 dc.b 0                  ; THIF
                 dc.b 3                  ; TORT
                 dc.b 3                  ; HERO
@@ -251,13 +272,18 @@ table_PriorityAdjustments_Mage:
                 dc.b 0                  ; BDBT
                 dc.b 1                  ; WFBR
                 dc.b 1                  ; BWNT
-                dc.b 1                  ; PHNX
+                dc.b 2                  ; PHNX
                 dc.b 0                  ; NINJ
                 dc.b 3                  ; MNST
                 dc.b 2                  ; RBT
                 dc.b 3                  ; GLM
                 dc.b 3                  ; RDBN
-                
+				; ----------------------------
+				dc.b 1                  ; PHNK
+				dc.b 1                  ; PHNX
+				dc.b 0                  ; GDRG
+				dc.b 0                  ; SDRG
+				
 table_PriorityAdjustments_Archer:
                 dc.b 2                  ; SDMN
                 dc.b 1                  ; KNTE
@@ -291,7 +317,12 @@ table_PriorityAdjustments_Archer:
                 dc.b 1                  ; RBT
                 dc.b 0                  ; GLM
                 dc.b 0                  ; RDBN
-                
+				; ----------------------------
+				dc.b 4                  ; PHNK
+				dc.b 4                  ; PHNX
+				dc.b 4                  ; GDRG
+				dc.b 2                  ; SDRG
+				
 table_PriorityAdjustments_Flying:
                 dc.b 2                  ; SDMN
                 dc.b 2                  ; KNTE
@@ -325,3 +356,8 @@ table_PriorityAdjustments_Flying:
                 dc.b 2                  ; RBT
                 dc.b 2                  ; GLM
                 dc.b 2                  ; RDBN
+				; ----------------------------
+				dc.b 2                  ; PHNK
+				dc.b 2                  ; PHNX
+				dc.b 2                  ; GDRG
+				dc.b 1                  ; SDRG
