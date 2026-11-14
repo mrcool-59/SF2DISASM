@@ -249,6 +249,12 @@ DetermineRandomAttackSpell:
                 movem.l d1-d2/a0,-(sp)
                 move.w  combatant(a6),d0
                 
+			if (FIX_NO_ATTACK_RANDOM_SPELL_MUDDLED=1)
+				; Do not trigger random attack spell if muddled
+				jsr     GetStatusEffects
+				andi.w  #STATUSEFFECT_MUDDLE,d1
+				bne.s   @Done
+			endif
                 ; Check equipped weapon
                 jsr     GetEquippedWeapon ; -> d1.w = item entry, d2.w = slot
                 moveq   #5,d2             ; d2.w = object property bytes number
@@ -355,7 +361,6 @@ LoadBattlesceneMusicIndex:
 					
                     ; Ignore muddled Force members for support music check
                     jsr     GetStatusEffects
-                    move.w  d1,statusEffects(a6)
                     andi.w  #STATUSEFFECT_MUDDLE,d1
                     bne.s   @SupportMusicDisabled
 
@@ -416,7 +421,6 @@ LoadBattlesceneMusicIndex:
 					
                     ; Ignore muddled monsters for support music check
                     jsr     GetStatusEffects
-                    move.w  d1,statusEffects(a6)
                     andi.w  #STATUSEFFECT_MUDDLE,d1
                     bne.s   @EnemySupportMusicDisabled
 
