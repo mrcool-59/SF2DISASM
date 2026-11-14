@@ -1,5 +1,10 @@
 ; =============== S U B R O U T I N E =======================================
 
+x_player = 62
+y_player = 72
+
+x_enemy = 82
+y_enemy = 77
 
 spellanimationUpdate_ThunderBreath:
                 
@@ -81,12 +86,6 @@ spellanimationUpdate_ThunderBreath:
 
 ; 144 tiles are loaded in VRAM for this spell animation
 ; Tiles have been arranged according to the VDP sprites specifications: https://segaretro.org/Sega_Mega_Drive/Sprites
-
-x_player = 62
-y_player = 72
-
-x_enemy = 82
-y_enemy = 77
 
 graphic_ThunderBreath_RightToLeft: ; This version is intended for player characters
 				; Frame A
