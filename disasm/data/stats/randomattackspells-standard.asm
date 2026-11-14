@@ -17,10 +17,10 @@ table_RandomAttackSpellsForClasses:
                 
                 ; Class index, n/256 (0 = 256) chance to cast, upgrade levels 1, 2, 3 (effective level), spell index
                 
-                ; Kiwi's flame breath replaces Kiwi's attack with 25% chance, upgrading at promoted levels 12, 20, and 28.
-                dc.b CLASS_MNST, 64, 32, 40, 48, SPELL_KIWI
+                ; Kiwi's flame breath replaces Kiwi's attack with 35% chance, upgrading at promoted levels 12, 20, and 28.
+                dc.b CLASS_MNST, 90, 32, 40, 48, SPELL_KIWI
                 
-				; Sunny fire breath (35% chance)
+				; Sunny's dragon breath (35% chance)
 				dc.b CLASS_34, 90, 25, 34, 46, SPELL_DRAGON_BREATH
 				
                 tableEnd.b
