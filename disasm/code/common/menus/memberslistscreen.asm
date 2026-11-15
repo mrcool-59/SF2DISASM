@@ -879,6 +879,9 @@ BuildMembersListWindow:
                 ; Write AGI
                 move.w  currentMember(a6),d0
                 jsr     j_GetCurrentAgi
+			if (STANDARD_BUILD=1)
+                andi.w  #DISPLAYED_AGI_VALUE_MASK,d1
+			endif
                 moveq   #STATS_DIGITS_NUMBER,d7
                 move.w  d1,d0
                 ext.l   d0
@@ -1246,6 +1249,9 @@ BuildMemberSummaryWindowOnEquipPage:
                 bsr.w   WriteTilesFromAsciiWithRegularFont
                 move.w  combatant(a6),d0
                 jsr     j_GetCurrentAgi
+			if (STANDARD_BUILD=1)
+                andi.w  #DISPLAYED_AGI_VALUE_MASK,d1
+			endif
             if (VANILLA_BUILD=1)
                 move.w  d1,d0
                 ext.l   d0

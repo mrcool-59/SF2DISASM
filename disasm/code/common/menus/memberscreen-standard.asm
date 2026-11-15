@@ -962,7 +962,7 @@ WriteEnemyLvOrExp:
                 ; Agi
                 move.w  member(a6),d0
                 jsr     GetCurrentAgi
-                andi.w  #DISPLAYED_Agi_VALUE_MASK,d1
+                andi.w  #DISPLAYED_AGI_VALUE_MASK,d1
                 movea.l windowTilesAddress(a6),a1
                 adda.w  #WINDOW_MEMBERSTATUS_OFFSET_AGI,a1
                 @writeMemberStatValue

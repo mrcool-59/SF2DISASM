@@ -193,6 +193,7 @@ headerStringOffset = headerStringOffset+2
                 ; Write AGI
                 move.w  currentMember(a6),d0
                 jsr     GetCurrentAGI
+                andi.w  #DISPLAYED_AGI_VALUE_MASK,d1
                 bsr.w   WriteStatValue
                 addq.w  #WINDOW_MEMBERS_LIST_OFFSET_NEXT_STAT,a1
                 
