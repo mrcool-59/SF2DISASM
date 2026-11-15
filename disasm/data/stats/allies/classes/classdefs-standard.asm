@@ -8,7 +8,7 @@ table_ClassDefinitions:
 ;               prowess    [PROWESS_]bitfield
                 
                 mov 6                   ; 0: SDMN
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
                 moveType   REGULAR
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 
@@ -68,7 +68,7 @@ table_ClassDefinitions:
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 
                 mov 6                   ; 12: HERO
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MAJOR
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_IMMUNITY
                 moveType   REGULAR
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN16|COUNTER_1IN8
                 
