@@ -206,7 +206,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass GLDT         ; 24: GYAN
-                startLevel 14
+                startLevel 16
                 startItems &
                     GREAT_AXE|EQUIPPED, &
                     NOTHING, &
@@ -214,7 +214,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass MMNK         ; 25: SHEELA
-                startLevel 15
+                startLevel 17
                 startItems &
                     BRASS_KNUCKLES|EQUIPPED, &
                     NOTHING, &
@@ -222,7 +222,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass RBT          ; 26: ZYNK
-                startLevel 16
+                startLevel 18
                 startItems &
                     NOTHING, &
                     NOTHING, &
@@ -230,7 +230,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass WIZ          ; 27: CHAZ
-                startLevel 19
+                startLevel 21
                 startItems &
                     MAGE_STAFF|EQUIPPED, &
                     NOTHING, &
@@ -238,7 +238,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass RDBN         ; 28: LEMON
-                startLevel 19
+                startLevel 21
                 startItems &
                     DARK_SWORD, &
                     NOTHING, &
@@ -246,7 +246,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass GLM          ; 29: CLAUDE
-                startLevel 14
+                startLevel 19
                 startItems &
                     NOTHING, &
                     NOTHING, &

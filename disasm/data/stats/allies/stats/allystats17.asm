@@ -12,15 +12,16 @@ AllyStats17:    forClass  MAGE
                     5, FREEZE, &
                     11, BLAZE|LV2, &
                     22, FREEZE|LV2, &
-                    25, SLEEP, &
+                    25, DESOUL, &
                     28, BOLT, &
                     31, FREEZE|LV3, &
                     35, BOLT|LV2, &
                     38, FREEZE|LV4, &
-                    51, BLAZE|LV3, &
-                    54, BOLT|LV3, &
-                    56, BLAZE|LV4, &
-                    60, BOLT|LV4
+                    40, DESOUL|LV2, &
+                    45, BLAZE|LV3, &
+                    48, BOLT|LV3, &
+                    51, BLAZE|LV4, &
+                    55, BOLT|LV4
                 
                 forClass  WIZ
                 hpGrowth  21, 69, LINEAR

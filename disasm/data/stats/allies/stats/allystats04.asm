@@ -10,13 +10,15 @@ AllyStats04:    forClass  MAGE
                 spellList &
                     1, BLAZE, &
                     5, BLAZE|LV2, &
-                    9, MUDDLE, &
-                    13, DISPEL, &
-                    18, DESOUL, &
+                    7, FREEZE, &
+                    10, MUDDLE, &
+                    13, FREEZE|LV2, &
+                    20, DISPEL, &
                     22, BLAZE|LV3, &
-                    25, MUDDLE|LV2, &
-                    29, DESOUL|LV2, &
-                    35, BLAZE|LV4
+                    26, FREEZE|LV3, &
+                    30, MUDDLE|LV2, &
+                    35, BLAZE|LV4, &
+					40, FREEZE|LV4
                 
                 forClass  WIZ
                 hpGrowth  26, 77, LATE
