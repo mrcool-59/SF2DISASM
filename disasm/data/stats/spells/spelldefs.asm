@@ -253,15 +253,15 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      12
+                power      11
                 
                 entry      FREEZE|LV2   ; FREEZE 2
                 mpCost     7
                 animation  FREEZE|VARIATION2
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
-                range      1, 2
-                radius     1
-                power      14
+                range      1, 3
+                radius     0
+                power      15
                 
                 entry      FREEZE|LV3   ; FREEZE 3
                 mpCost     12
