@@ -91,6 +91,7 @@ pt_BattleSpritesets:
                 include "data\battles\spritesets\spriteset40.asm"    ; Battle Spritesets 40
                 include "data\battles\spritesets\spriteset41.asm"    ; Battle Spritesets 41
                 include "data\battles\spritesets\spriteset42-standard.asm"    ; Battle Spritesets 42
-                include "data\battles\spritesets\spriteset43-standard.asm"    ; Battle Spritesets 43
+                ; include "data\battles\spritesets\spriteset43-standard.asm"    ; Battle Spritesets 43 [REVERTED because of Zeon graphic glitch]
+				include "data\battles\spritesets\spriteset43.asm"    ; Battle Spritesets 43
                 include "data\battles\spritesets\spriteset44.asm"    ; Battle Spritesets 44
 				include "data\battles\spritesets\spriteset45-standard.asm"    ; Battle Spritesets 45
