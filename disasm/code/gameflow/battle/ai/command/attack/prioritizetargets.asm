@@ -30,13 +30,17 @@ PrioritizeTargetsForAttackAiCommand:
                 move.l  (sp)+,d0
                 
                 ; Check Item Use
+                move.w  d0,-(sp)
                 moveq   #0,d3
                 bsr.w   GetNextUsableAttackItem
+                move.w  (sp)+,d0
                 cmpi.w  #ITEM_NOTHING,d1
                 beq.w   @CheckSpellCast
                 
+                move.w  d0,-(sp)                        ; сохраняем caster
                 bsr.w   BuildTargetsArrayWithAllCombatants
                 bsr.w   GetTargetsReachableByItem
+                move.w  (sp)+,d0                        ; восстанавливаем caster
                 move.w  ((TARGETS_REACHABLE_BY_ITEM_NUMBER-$1000000)).w,d7
                 subq.w  #1,d7
                 bcs.w   @CheckSpellCast ; if no targets are reachable by item, skip ahead to check for targets reachable by spell
@@ -87,63 +91,248 @@ PrioritizeTargetsForAttackAiCommand:
                 bsr.w   CalculateTargetPriorityForAttack
                 move.b  d6,(a2,d7.w)    ; d6 = target priority from using the item (or attacking if the item has no spell to use)
                 dbf     d7,@PopulateItemPrioritiesList_Loop
+
+; ==========================================================================================
+; --- AI SPELL SELECTION PATCH START ---
+; Custom spell selection for enemy/ally AI.
+; Scans all 4 spell slots and picks a random valid attack spell, then picks the
+; highest-priority target for that spell. Valid means:
+;   - the slot is not empty
+;   - the spell is an attack-type spell (SPELLPROPS_MASK_TYPE = 0)
+;   - the caster has enough MP
+;   - at least one target is within spell range
+; ==========================================================================================
 @CheckSpellCast:
-                
-                moveq   #0,d3
-                bsr.w   GetNextUsableAttackSpell
+                link    a6,#-48                     ; allocate local stack frame
+                move.w  d0,-2(a6)                   ; -2(a6)  = caster index
+                clr.w   -4(a6)                      ; -4(a6)  = current slot (0..3)
+                clr.w   -6(a6)                      ; -6(a6)  = chosen spell entry
+                move.w  #-1,-8(a6)                  ; -8(a6)  = best target (-1 = none)
+                move.w  #-1,-10(a6)                 ; -10(a6) = best priority (-1 = none)
+                clr.w   -12(a6)                     ; -12(a6) = movement to best target
+                clr.w   -14(a6)                     ; -14(a6) = number of candidates
+                clr.w   -16(a6)                     ; -16(a6) = scratch: current entry
+
+                ; ---- Determine targeting mode: side + confusion ----
+                ; -42(a6) encodes who this caster should target:
+                ;   0 = ally normal    -> enemies
+                ;   1 = ally confused  -> allies
+                ;   2 = enemy normal   -> allies
+                ;   3 = enemy confused -> enemies
+                move.w  -2(a6),d0
+                btst    #COMBATANT_BIT_ENEMY,d0
+                bne.s   @Mode_EnemyCaster
+                bsr.w   IsCombatantConfused
+                tst.b   d1
+                bne.s   @Mode_AllyConfused
+                move.w  #0,-42(a6)
+                bra.s   @Mode_Done
+@Mode_AllyConfused:
+                move.w  #1,-42(a6)
+                bra.s   @Mode_Done
+@Mode_EnemyCaster:
+                bsr.w   IsCombatantConfused
+                tst.b   d1
+                bne.s   @Mode_EnemyConfused
+                move.w  #2,-42(a6)
+                bra.s   @Mode_Done
+@Mode_EnemyConfused:
+                move.w  #3,-42(a6)
+@Mode_Done:
+
+                ; ================= PHASE 1: Collect valid candidates =================
+@CollectLoop:
+                move.w  -4(a6),d1                   ; d1 = current slot
+                cmpi.w  #4,d1
+                bge.w   @CollectDone                ; all 4 slots checked -> done
+
+                move.w  -2(a6),d0                   ; d0 = caster
+                bsr.w   GetSpellAndNumberOfSpells   ; out: d1 = spell entry (low byte)
+                addq.w  #1,-4(a6)                   ; advance slot for next iteration
+
+                ; GetSpellAndNumberOfSpells writes only the low byte of d1 and leaves
+                ; the high byte untouched (still holding the slot number). Clear d4 and
+                ; load only the low byte so d4 holds a clean spell entry.
+                clr.w   d4
+                move.b  d1,d4                       ; d4 = clean spell entry (index + level)
+
+                ; Skip empty slots
+                andi.w  #SPELLENTRY_MASK_INDEX,d1
                 cmpi.w  #SPELL_NOTHING,d1
-                beq.w   @CheckAttack    ; if no attack spell, skip this step
-                
+                beq.w   @CollectLoop
+
+                ; Check whether the spell is an attack-type spell.
+                ; GetSpellDefinitionAddress compares only the low byte of d1, so mask
+                ; off the level bits before calling it.
+                move.w  d4,-16(a6)                  ; save full entry for later
+                move.w  d4,d1
+                andi.w  #SPELLENTRY_MASK_INDEX,d1   ; keep only the spell index
+                bsr.w   GetSpellDefinitionAddress
+                move.b  SPELLDEF_OFFSET_PROPS(a0),d2
+                andi.b  #SPELLPROPS_MASK_TYPE,d2
+                bne.w   @CollectLoop                ; not an attack spell -> skip slot
+
+                ; --- MP check: cost vs current MP ---
+                move.w  -16(a6),d1
+                andi.w  #SPELLENTRY_MASK_INDEX,d1
+                bsr.w   GetSpellCost                ; out: d1 = MP cost
+                andi.w  #$00FF,d1
+                move.w  d1,-(sp)                    ; push cost
+
+                move.w  -2(a6),d0                   ; d0 = caster
+                bsr.w   GetCurrentMP                ; out: d1 = current MP
+                andi.w  #$00FF,d1
+
+                move.w  (sp)+,d2                    ; d2 = cost
+                cmp.w   d2,d1
+                blt.w   @CollectLoop                ; not enough MP -> skip slot
+
+                ; --- Range check: count targets reachable by this spell ---
+                ; GetTargetsReachableBySpell reads the spell index from d1 (via
+                ; GetSpellDefinitionAddress) to look up the spell's min/max range.
+                ; Pass only the spell index (no level bits), otherwise the definition
+                ; lookup fails and the range is wrong.
+                ; d4 is preserved across BuildTargetsArrayWithAllCombatants.
+                move.w  -2(a6),d0
+                move.w  d4,ATTACK_COMMAND_SPELL     ; set active spell
+                clr.w   ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w
+
+                move.w  d4,-(sp)
                 bsr.w   BuildTargetsArrayWithAllCombatants
+                move.w  (sp)+,d4                    ; restore entry before using it
+
+                move.w  -2(a6),d0                   ; d0 = caster
+                move.w  d4,d1
+                andi.w  #SPELLENTRY_MASK_INDEX,d1   ; keep only the spell index
+                bsr.w   GetTargetsReachableBySpell  ; fills TARGETS_REACHABLE_BY_SPELL_NUMBER
+
+                move.w  ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w,d3
+                tst.w   d3
+                beq.w   @CollectLoop                ; no targets in range -> skip slot
+
+                ; Slot passed every check: store the entry in the candidate list.
+                ; Candidates are words at -40(a6) + candidate_index * 2.
+                move.w  -14(a6),d3
+                add.w   d3,d3                       ; convert to byte offset
+                move.w  d4,-40(a6,d3.w)             ; store spell entry
+                addq.w  #1,-14(a6)                  ; increment candidate count
+                bra.w   @CollectLoop
+
+@CollectDone:
+
+                ; ================= PHASE 2: Pick a random candidate =================
+                move.w  -14(a6),d3
+                tst.w   d3
+                bne.s   @HaveCandidates
+                bra.w   @ChampionDone               ; no candidates -> nothing to cast
+@HaveCandidates:
+                cmpi.w  #1,d3
+                bne.s   @PickRandom
+                clr.w   d0
+                move.w  -40(a6),d0                  ; only one candidate -> take it
+                move.w  d0,-6(a6)
+                bra.s   @ProcessChosen
+
+@PickRandom:
+                move.w  d3,d6                       ; d6 = candidate count
+            if (STANDARD_BUILD=1)
+                jsr     (GenerateRandomNumberUnderD6).w
+            else
+                jsr     j_GenerateRandomNumberUnderD6
+            endif
+                move.w  d7,d3                       ; d7 = random index in [0..count-1]
+                add.w   d3,d3                       ; convert to byte offset
+                clr.w   d0
+                move.w  -40(a6,d3.w),d0             ; read chosen entry
+                move.w  d0,-6(a6)                   ; save as chosen spell
+
+                ; ================= PHASE 3: Pick best target for chosen spell =================
+@ProcessChosen:
+                move.w  -6(a6),d1
+                move.w  d1,ATTACK_COMMAND_SPELL     ; set active spell
+                move.w  -2(a6),d0
+                clr.w   ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w
+
+                ; d1 must survive BuildTargetsArrayWithAllCombatants
+                move.w  d1,-(sp)
+                bsr.w   BuildTargetsArrayWithAllCombatants
+                move.w  (sp)+,d1
+
+                ; GetTargetsReachableBySpell reads the spell index from d1
+                move.w  -2(a6),d0
+                andi.w  #SPELLENTRY_MASK_INDEX,d1   ; keep only the spell index
                 bsr.w   GetTargetsReachableBySpell
+
+                ; ---- Filter reachable list by target side (-42(a6)) ----
+                move.w  -2(a6),d0
+                move.w  -42(a6),d3
+                cmpi.w  #0,d3
+                bne.s   @Filter_NotAllyNormal
+                bsr.w   BuildTargetsArrayWithEnemies
+                bra.s   @FilterDone2
+@Filter_NotAllyNormal:
+                cmpi.w  #1,d3
+                bne.s   @Filter_NotAllyConfused
+                bsr.w   BuildTargetsArrayWithAllies
+                bra.s   @FilterDone2
+@Filter_NotAllyConfused:
+                cmpi.w  #2,d3
+                bne.s   @Filter_EnemyConfused
+                bsr.w   BuildTargetsArrayWithAllies
+                bra.s   @FilterDone2
+@Filter_EnemyConfused:
+                bsr.w   BuildTargetsArrayWithEnemies
+@FilterDone2:
+
+                ; ---- Score each reachable target, keep the highest priority ----
+                move.w  -2(a6),d0
                 move.w  ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w,d7
                 subq.w  #1,d7
-                bcs.w   @CheckAttack    ; if no targets are reachable by spell, skip ahead to check for targets reachable by physical attack
-                
-                move.l  d1,-(sp)        ; store the attack spell
-                btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   @EnemySpellCaster
-                
-                ; Ally spell caster
-                bsr.w   IsCombatantConfused
-                tst.b   d1
-                bne.s   @ConfusedAllySpellCaster
-                
-                bsr.w   BuildTargetsArrayWithEnemies
-                bra.s   @Goto_PopulateSpellPrioritiesList
-@ConfusedAllySpellCaster:
-                
-                bsr.w   BuildTargetsArrayWithAllies
-@Goto_PopulateSpellPrioritiesList:
-                
-                bra.s   @PopulateSpellPrioritiesList
-@EnemySpellCaster:
-                
-                bsr.w   IsCombatantConfused
-                tst.b   d1
-                bne.s   @ConfusedEnemySpellCaster
-                
-                bsr.w   BuildTargetsArrayWithAllies
-                bra.s   @PopulateSpellPrioritiesList
-@ConfusedEnemySpellCaster:
-                
-                bsr.w   BuildTargetsArrayWithEnemies
-@PopulateSpellPrioritiesList:
-                
-                ; At this point (FF5600_LOADING_SPACE) has the list of all opposing combatants that could be selected as a target, if they were in range
-                move.l  (sp)+,d1        ; d1 = spell index
-                lea     (ATTACK_COMMAND_SPELL).l,a0
-                move.w  d1,(a0)
+                bcs.w   @ChampionDone               ; no targets after filtering
                 lea     ((TARGETS_REACHABLE_BY_SPELL_LIST-$1000000)).w,a0
                 lea     ((SPELL_MOVEMENT_TO_REACHABLE_TARGETS-$1000000)).w,a1
                 lea     ((SPELL_TARGET_PRIORITIES_LIST-$1000000)).w,a2
-@PopulateSpellPrioritiesList_Loop:
-                
-                move.b  (a0,d7.w),d2    ; d2 = defender
-                move.b  (a1,d7.w),d5    ; d5 = movement to reach target
+@Proc_PriorityInner:
+                move.b  (a0,d7.w),d2                ; d2 = target
+                move.b  (a1,d7.w),d5                ; d5 = movement cost to target
+                move.w  -6(a6),d1                   ; d1 = chosen spell
+                andi.w  #SPELLENTRY_MASK_INDEX,d1   ; keep only the spell index
                 bsr.w   CalculateTargetPriorityForAttack
-                move.b  d6,(a2,d7.w)    ; d6 = target priority (higher is better)
-                dbf     d7,@PopulateSpellPrioritiesList_Loop
+                move.b  d6,(a2,d7.w)                ; store priority for this target
+
+                cmp.w   -10(a6),d6
+                ble.s   @Proc_Next                  ; not better than current best
+
+                move.w  d6,-10(a6)                  ; new best priority
+                move.b  (a0,d7.w),d3
+                move.w  d3,-8(a6)                   ; new best target
+                move.b  d5,-12(a6)                  ; movement to new best target
+@Proc_Next:
+                dbf     d7,@Proc_PriorityInner
+
+                ; ================= PHASE 4: Write result for DetermineBattleaction =================
+@ChampionDone:
+                move.w  -8(a6),d3
+                cmpi.w  #-1,d3
+                beq.s   @Champion_NoTarget          ; no valid target found
+
+                move.w  #1,((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w
+                move.b  d3,((TARGETS_REACHABLE_BY_SPELL_LIST-$1000000)).w
+                move.b  -12(a6),((SPELL_MOVEMENT_TO_REACHABLE_TARGETS-$1000000)).w
+                move.w  -10(a6),d0
+                move.b  d0,((SPELL_TARGET_PRIORITIES_LIST-$1000000)).w
+                move.w  -6(a6),d1
+                move.w  d1,ATTACK_COMMAND_SPELL
+                bra.s   @Champion_Unlink
+@Champion_NoTarget:
+                clr.w   ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w
+@Champion_Unlink:
+                move.w  -2(a6),d0
+                unlk    a6
+; ==========================================================================================
+; --- AI SPELL SELECTION PATCH END ---
+; ==========================================================================================
+
 @CheckAttack:
                 
                 bsr.w   BuildTargetsArrayWithAllCombatants

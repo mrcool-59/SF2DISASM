@@ -30,11 +30,88 @@ DetermineBattleactionForAttackAiCommand:
                 move.b  d0,attacker(a6)
                 move.b  #0,priority(a6)
                 move.b  #0,battleaction(a6)
+
+; ---------------------------------------------------------------------------
                 clr.w   d3
-                lea     ((FF8804_LOADING_SPACE-$1000000)).w,a0 ; # targets reachable by regular attack
+                lea     ((FF8804_LOADING_SPACE-$1000000)).w,a0 ; number of targets reachable by regular attack
                 tst.w   (a0)
                 beq.s   @CheckSpellViability
-                bset    #0,d3
+
+                ; --- SMART PHYSICAL CHECK ---
+                ; Decide whether a physical attack is worth using, based on whether at
+                ; least one reachable target can be damaged for more than 35% current HP.
+                ; If no target is worth attacking, physical attack is disabled, which
+                ; forces the AI to use a spell or item instead (if available).
+                movem.l d0-d6/a0-a2,-(sp)   ; save all scratch registers, including d3
+
+                ; Read the attacker's current ATT into d5
+                move.b  attacker(a6),d0
+                jsr     GetCurrentAtt
+                move.w  d1,d5               ; d5 = ATT
+
+                ; Prepare the loop over all reachable physical targets
+                lea     ((FF8804_LOADING_SPACE-$1000000)).w,a0
+                move.w  (a0),d4             ; d4 = number of targets
+                subq.w  #1,d4
+                bcs.s   @NoTargetsFound     ; no targets -> skip loop
+
+                lea     ((TARGETS_REACHABLE_BY_ATTACK_LIST-$1000000)).w,a0
+                lea     ((ATTACK_TARGET_PRIORITIES_LIST-$1000000)).w,a2
+                clr.w   d6                  ; d6 = count of targets with damage > 35% current HP
+
+@SmartDamageLoop:
+                ; For each target: compute raw damage = ATT - DEF.
+                ; If damage > 35% current HP, this target is worth attacking physically.
+                clr.w   d0
+                move.b  (a0,d4.w),d0        ; d0 = target index
+
+				jsr		GetCurrentHp
+				move.w	d1,d3
+				mulu.w  #35,d3
+				divu.w  #100,d3				; d3 = HP * 0.35
+                jsr     GetCurrentDef
+                move.w  d5,d2
+                sub.w   d1,d2               ; d2 = ATT - DEF
+                cmp.w   d3,d2
+                bgt.s   @SmartDamageOk
+
+                ; Damage <= 35% current HP: zero out this target's priority so it is not chosen
+                move.b  #0,(a2,d4.w)
+                bra.s   @SmartDamageNext
+
+@SmartDamageOk:
+                addq.w  #1,d6               ; count a target that can be damaged for >1
+
+@SmartDamageNext:
+                dbf     d4,@SmartDamageLoop
+
+@NoTargetsFound:
+                tst.w   d6
+                bne.s   @AllowPhysical      ; at least one target can be damaged -> allow physical
+
+                ; No target can be damaged for >1: check whether a spell or item is available.
+                ; If either is available, disable physical attack so the AI must use it.
+                lea     ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w,a0
+                tst.w   (a0)
+                bne.s   @SkipPhysical       ; spell available -> disable physical
+
+                lea     ((TARGETS_REACHABLE_BY_ITEM_NUMBER-$1000000)).w,a0
+                tst.w   (a0)
+                bne.s   @SkipPhysical       ; item available -> disable physical
+
+@AllowPhysical:
+                movem.l (sp)+,d0-d6/a0-a2   ; restore registers (d3 comes back as 0)
+                bset    #0,d3               ; set "physical attack allowed" flag
+                bra.s   @SmartCheckEnd
+
+@SkipPhysical:
+                movem.l (sp)+,d0-d6/a0-a2   ; restore registers (d3 stays 0)
+
+@SmartCheckEnd:
+                ; --- SMART PHYSICAL CHECK END ---
+
+; ---------------------------------------------------------------------------
+
 @CheckSpellViability:
                 
                 lea     ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w,a0
@@ -73,66 +150,84 @@ DetermineBattleactionForAttackAiCommand:
                 bra.w   @loc_20
                                         ; Targets are in range of either the spell or item for the AI.
                                         ; Remember that if the AI lacks a spell or item, it is replaced with a physical attack.
+
+; =====================================================================
+; --- ACTION SELECTION: physical vs spell vs item ---
+; d3 bit 0 set   -> physical allowed -> original dice roll
+; d3 bit 0 clear -> physical blocked -> force spell or item, no dice
+; =====================================================================
 @UseSpellOrItem:
-                
-                move.w  d4,d1
-                andi.b  #6,d1
-                cmpi.b  #6,d1
-                beq.w   @loc_15
+                btst    #0,d3
+                bne.s   @DoOriginalDiceRoll    ; physical allowed -> dice roll
+
+                ; physical blocked: force spell or item
                 btst    #1,d4
-                beq.s   @loc_11
+                bne.w   @loc_18                ; spell -> cast
+                btst    #2,d4
+                bne.w   @loc_19                ; item  -> use
+                bra.w   @loc_17                ; fallback (should not happen)
+
+; =====================================================================
+; --- ORIGINAL DICE ROLL ---
+; Reached only when physical is allowed (d3 bit 0 set).
+; Randomly picks physical / spell / item from the d4 bitmask:
+;   bit 0 = physical, bit 1 = spell, bit 2 = item
+; =====================================================================
+@DoOriginalDiceRoll:
+                move.w  d4,d1
+                andi.b  #6,d1                  ; isolate spell+item bits
+                cmpi.b  #6,d1
+                beq.w   @loc_15                ; both spell and item -> special branch
+
+                btst    #1,d4
+                beq.s   @loc_11                ; no spell -> item-only case
+
+                ; Spell available: check for hardcoded AQUA priority
                 lea     ((ATTACK_COMMAND_SPELL-$1000000)).w,a1
                 move.w  (a1),d1
                 cmpi.w  #SPELL_AQUA,d1
-                bne.s   @loc_6
-                bra.w   @loc_18
+                bne.s   @loc_6                 ; not Aqua -> random roll
+                bra.w   @loc_18                ; Aqua -> cast directly
+
 @loc_6:
-                
                 move.b  #6,d6
                 jsr     (GenerateRandomNumber).w
                 cmpi.b  #2,d7
-                bne.s   @loc_7          ; if d7 = 0,2,4 then go to loc_EEFA
-                bra.w   @loc_18         ;  else go to loc_EEE0
+                bne.s   @loc_7
+                bra.w   @loc_18
 @loc_7:
-                
                 cmpi.b  #4,d7
                 bne.s   @loc_8
                 bra.w   @loc_18
 @loc_8:
-                
                 btst    #0,d3
                 bne.s   @loc_9
                 bra.w   @loc_18
-                bra.s   @loc_10         ; not reachable
+                bra.s   @loc_10
 @loc_9:
-                
                 bra.w   @loc_17         
 @loc_10:
-                
-                bra.s   @loc_15         ; unnecessary
+                bra.s   @loc_15
+
 @loc_11:
-                
                 move.b  #6,d6
                 jsr     (GenerateRandomNumber).w
                 cmpi.b  #3,d7
-                bne.s   @loc_12         ; if d7 = 1,3,5 then go to loc_EF14
-                bra.w   @loc_19         ;  else go to loc_EEE0
+                bne.s   @loc_12
+                bra.w   @loc_19
 @loc_12:
-                
                 cmpi.b  #5,d7
                 bne.s   @loc_13
                 bra.w   @loc_19
 @loc_13:
-                
                 btst    #0,d3
                 bne.s   @loc_14
                 bra.w   @loc_19
-                bra.s   @loc_15         ; not reachable
+                bra.s   @loc_15
 @loc_14:
-                
                 bra.w   @loc_17         
+
 @loc_15:
-                
                 move.b  #2,d6
             if (STANDARD_BUILD=1)
                 jsr     (GenerateRandomNumberUnderD6).w
@@ -144,8 +239,8 @@ DetermineBattleactionForAttackAiCommand:
                 bra.w   @loc_19
                 bra.s   @loc_17         
 @loc_16:
-                
                 bra.w   @loc_18
+
 @loc_17:
                 
                 lea     ((FF8804_LOADING_SPACE-$1000000)).w,a0 ; physical -- # targets reachable by phsyical attack
