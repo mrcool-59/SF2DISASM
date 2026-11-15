@@ -30,17 +30,17 @@ PrioritizeTargetsForAttackAiCommand:
                 move.l  (sp)+,d0
                 
                 ; Check Item Use
-                move.w  d0,-(sp)
+                move.w  d0,-(sp)						; BUG FIX
                 moveq   #0,d3
                 bsr.w   GetNextUsableAttackItem
-                move.w  (sp)+,d0
+                move.w  (sp)+,d0						; BUG FIX
                 cmpi.w  #ITEM_NOTHING,d1
                 beq.w   @CheckSpellCast
                 
-                move.w  d0,-(sp)                        ; сохраняем caster
+                move.w  d0,-(sp)                        ; BUG FIX
                 bsr.w   BuildTargetsArrayWithAllCombatants
                 bsr.w   GetTargetsReachableByItem
-                move.w  (sp)+,d0                        ; восстанавливаем caster
+                move.w  (sp)+,d0                        ; BUG FIX
                 move.w  ((TARGETS_REACHABLE_BY_ITEM_NUMBER-$1000000)).w,d7
                 subq.w  #1,d7
                 bcs.w   @CheckSpellCast ; if no targets are reachable by item, skip ahead to check for targets reachable by spell
