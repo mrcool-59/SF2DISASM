@@ -49,7 +49,10 @@ loc_1D2F6:
                 addq.w  #VDP_SPELL_ENTRY_SIZE,a0
                 cmpi.w  #ENEMYBATTLESPRITE_WYVERN,d2
                 beq.s   loc_1D33C
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Final position: Dragon
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
+                cmpi.w  #ENEMYBATTLESPRITE_GRIFFIN,d2
+                beq.s   loc_1D33C
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0							; Final position: Lesser Demon
 loc_1D33C:
                 
                 bsr.w   ConstructSimpleGraphic
@@ -228,7 +231,8 @@ graphic_FlameBreathParticle:
                 vdpSpell 210, 236, SPELLTILE1, V1|H1|32  ; cerberus
                 vdpSpell 223, 214, SPELLTILE1, V1|H1|32  ; hydra
                 vdpSpell 208, 216, SPELLTILE1, V1|H1|32  ; wyvern
-                vdpSpell 212, 204, SPELLTILE1, V1|H1|32  ; dragon
+                vdpSpell 212, 204, SPELLTILE1, V1|H1|32  ; griffin
+				vdpSpell 207, 229, SPELLTILE1, V1|H1|32  ; lesser demon
                 
 table_1D4C8:    ; dc.w [yet unknown][location offset?]     <= this is probably the tick count until the particle advances to the next frame
                 ; dc.w [spell graphic dimensions]

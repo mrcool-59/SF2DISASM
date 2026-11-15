@@ -44,6 +44,12 @@ spellanimationSetup_FlameBreath:
                 ; Enemy cone limits
                 move.w  #192,(a1) 
                 clr.w   2(a1)
+				
+				; Lesser demon cone limits
+                cmp.w   #ENEMYBATTLESPRITE_GARGOYLE,((BATTLESCENE_ENEMYBATTLESPRITE-$1000000)).w
+                bne.s   @Continue
+                move.w  #224,(a1) 
+                move.w  #16,2(a1)
 @Continue:
                 
                 andi.w  #7,d1

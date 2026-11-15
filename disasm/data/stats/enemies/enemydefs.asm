@@ -627,7 +627,7 @@ table_EnemyDefinitions:
                     NOTHING, &
                     NOTHING
                 spells &
-                    BOOST|LV2, &
+                    NOTHING, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
@@ -1178,7 +1178,7 @@ table_EnemyDefinitions:
                     NOTHING
                 spells &
                     BLAZE|LV3, &
-                    BOOST|LV2, &
+                    FLAME, &
                     NOTHING, &
                     NOTHING
                 initialStatus NONE
