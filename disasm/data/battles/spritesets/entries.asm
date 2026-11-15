@@ -52,7 +52,7 @@ pt_BattleSpritesets:
                 include "data\battles\spritesets\spriteset01.asm"    ; Battle Spritesets 01
                 include "data\battles\spritesets\spriteset02.asm"    ; Battle Spritesets 02
                 include "data\battles\spritesets\spriteset03.asm"    ; Battle Spritesets 03
-                include "data\battles\spritesets\spriteset04.asm"    ; Battle Spritesets 04
+                include "data\battles\spritesets\spriteset04-standard.asm"    ; Battle Spritesets 04
                 include "data\battles\spritesets\spriteset05.asm"    ; Battle Spritesets 05
                 include "data\battles\spritesets\spriteset06.asm"    ; Battle Spritesets 06
                 include "data\battles\spritesets\spriteset07.asm"    ; Battle Spritesets 07

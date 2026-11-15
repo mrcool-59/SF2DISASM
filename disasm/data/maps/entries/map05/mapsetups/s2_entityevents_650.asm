@@ -21,6 +21,21 @@ ms_map5_flag650_EntityEvents:
 
 ; =============== S U B R O U T I N E =======================================
 
+Map5_EntityEventExtra0:
+				chkFlg	72
+				beq.s	@KazinNotFollowing
+				txt		4357			; "{NAME;4} will guide us to{N}Mr. Hawel? OK, let's go!{W1}"
+				bra.s	@CheckSunny
+@KazinNotFollowing:
+				txt		4342			; "Maybe we can find someone here{N}who can guide us to Mr. Hawel?{W1}"
+@CheckSunny:
+				chkFlg	557				; Set after meeting Sunny in Yeel
+                bne.s   @SkipSunny
+				clsTxt
+				txt		4343			; "Oh {LEADER}...I'm hearing something{N}peculiar around here...{N}Don't you?{W1}"
+@SkipSunny:
+				rts
+
 
 Map5_EntityEvent0:
                 

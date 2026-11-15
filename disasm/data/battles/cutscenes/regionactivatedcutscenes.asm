@@ -2,6 +2,10 @@
 ; ASM FILE data\battles\cutscenes\regionactivatedcutscenes.asm :
 ; 0x47EC8..0x47EEA : Region-activated cutscenes data
 table_BattleRegionCutscenes:
+                dc.b BATTLE_AMBUSHED_BY_GALAM_SOLDIERS
+                dc.b 2
+                dc.w 558
+                dc.l rbcs_battle4
                 dc.b BATTLE_TO_MOUN     ; battle index
                 dc.b 0                  ; region index
                 dc.w 386                ; associated flag

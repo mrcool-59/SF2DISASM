@@ -67,4 +67,17 @@ cs_5249E:       playSound SOUND_COMMAND_FADE_OUT
                 nextText $0,ALLY_CHESTER ; "{LEADER}!{N}You finally woke up!{W2}"
                 nextSingleText $0,ALLY_CHESTER ; "We're talking about{N}Ground Seal.{N}Please, join in.{W1}"
                 setFacing ALLY_CHESTER,LEFT
+				; ---------------------------
+				jumpIfFlagClear 558,@Skip ; Set after triggering Sunny's help in battle 4
+				jumpIfFlagClear 559,@Skip ; Set if battle 4 was lost
+                textCursor 4379
+                nextSingleText $0,ALLY_BOWIE ; "What happened to {NAME;31}?{W1}"
+				setCameraEntity ALLY_SARAH
+				shiver ALLY_SARAH
+                nextSingleText $0,ALLY_SARAH ; "Mr. {NAME;28} threatened to{N}hurt us if she stayed.{W2}{N}I told her to not worry about{N}us and she went on her way.{W2}{CLEAR}I hope we'll meet her again{N}someday...{W1}"
+				setCameraEntity ALLY_BOWIE
+				csWait 60
+				nod ALLY_BOWIE
+			@Skip:
+				; ---------------------------
                 csc_end

@@ -6,6 +6,10 @@ bbcs_04:        textCursor 2311
                 loadMapEntities ce_4989E
                 setActscriptWait ALLY_BOWIE,eas_Init
                 setPos ALLY_KAZIN,6,9,DOWN
+				; -------------------------------
+				clearF 558 ; Set after triggering Sunny's help in battle 4
+				setF 559 ; Set if battle 4 was lost
+				; -------------------------------
                 fadeInB
                 setActscriptWait ALLY_KAZIN,eas_Jump
                 nextSingleText $0,ALLY_KAZIN ; "Who are they?{W1}"
@@ -34,6 +38,7 @@ bbcs_04:        textCursor 2311
                  moveRight 2
                  moveDown 1
                 endActions
+				resetForceBattleStats
                 csc_end
 ce_4989E:       mainEntity 5,9,DOWN
                 entity 6,9,DOWN,ALLY_KAZIN,eas_Init
@@ -45,4 +50,8 @@ ce_4989E:       mainEntity 5,9,DOWN
                 entity 11,18,UP,MAPSPRITE_GALAM_SOLDIER,eas_Init
                 entity 12,18,UP,MAPSPRITE_GALAM_SOLDIER,eas_Init
                 entity 14,16,UP,MAPSPRITE_GALAM_SOLDIER,eas_Init
+				; Make it seem more threatening
+                entity 11,20,UP,MAPSPRITE_GALAM_SOLDIER,eas_Init
+                entity 12,20,UP,MAPSPRITE_GALAM_ARCHER,eas_Init
+                entity 13,20,UP,MAPSPRITE_GALAM_SOLDIER,eas_Init
                 cscEntitiesEnd

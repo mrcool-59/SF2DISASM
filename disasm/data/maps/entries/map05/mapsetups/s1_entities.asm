@@ -3,6 +3,8 @@
 ; 0x51942..0x519C4 : 
 ms_map5_Entities:
                 msFixedEntity 7, 6, DOWN, ALLY_KAZIN, eas_Init
+                msFixedEntity 25, 21, LEFT, ALLY_SARAH, eas_Init
+                msFixedEntity 26, 9, UP, ALLY_31, eas_Init
                 msWalkingEntity 22, 36, DOWN, MAPSPRITE_OLD_MAN, 22, 36, 1
                 msWalkingEntity 20, 28, DOWN, MAPSPRITE_YOUNG_MAN, 20, 28, 1
                 msFixedEntity 20, 16, RIGHT, MAPSPRITE_OLD_MAN, eas_Init

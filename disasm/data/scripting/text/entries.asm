@@ -18,6 +18,7 @@ TextBank13:     incbin "data/scripting/text/textbank13.bin"
 TextBank14:     incbin "data/scripting/text/textbank14.bin"
 TextBank15:     incbin "data/scripting/text/textbank15.bin"
 TextBank16:     incbin "data/scripting/text/textbank16.bin"
+TextBank17:     incbin "data/scripting/text/textbank17.bin"
                 align
 pt_TextBanks:   dc.l TextBank00
                 dc.l TextBank01
@@ -36,3 +37,4 @@ pt_TextBanks:   dc.l TextBank00
                 dc.l TextBank14
                 dc.l TextBank15
                 dc.l TextBank16
+                dc.l TextBank17

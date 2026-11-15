@@ -3,6 +3,7 @@
                 include "data\battles\entries\battle03\cs_beforebattle.asm"    ; Cutscene before battle 3
                 include "data\battles\entries\battle04\cs_beforebattle.asm"    ; Cutscene before battle 4
                 include "data\battles\entries\battle04\cs_afterbattle.asm"    ; Cutscene after battle 4
+                include "data\battles\entries\battle04\cs_regiontriggered_1.asm"    ; Region-activated cutscene for battle 4
                 include "data\battles\entries\battle05\cs_battleend.asm"    ; Enemy defeated cutscene for battle 5
                 include "data\battles\entries\battle05\cs_afterbattle.asm"    ; Cutscene after battle 5
                 include "data\battles\entries\battle06\cs_beforebattle.asm"    ; Cutscene before battle 6

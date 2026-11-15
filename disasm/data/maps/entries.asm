@@ -202,8 +202,8 @@ Map05s5_RoofEvents:include "data\maps\entries\map05\5-roof-events.asm"    ;
 Map05s6_WarpEvents:include "data\maps\entries\map05\6-warp-events.asm"    ; 
 Map05s7_ChestItems:include "data\maps\entries\map05\7-chest-items.asm"    ; 
 Map05s8_OtherItems:include "data\maps\entries\map05\8-other-items.asm"    ; 
-Map05s0_Blocks: incbin "data/maps/entries/map05/0-blocks.bin"
-Map05s1_Layout: incbin "data/maps/entries/map05/1-layout.bin"
+Map05s0_Blocks: incbin "data/maps/entries/map05-standard/0-blocks.bin"
+Map05s1_Layout: incbin "data/maps/entries/map05-standard/1-layout.bin"
 Map06:          include "data\maps\entries\map06\00-tilesets.asm"    ; 
                 dc.l Map06s0_Blocks
                 dc.l Map06s1_Layout

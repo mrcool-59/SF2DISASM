@@ -3,6 +3,7 @@
 ; 0x51A3E..0x51A82 : 
 ms_map5_EntityEvents:
                 msEntityEvent ALLY_KAZIN, DOWN, Map5_EntityEvent0-ms_map5_EntityEvents
+                msEntityEvent ALLY_SARAH, DOWN, Map5_EntityEventExtra0-ms_map5_EntityEvents
                 msEntityEvent 128, UP, Map5_EntityEvent1-ms_map5_EntityEvents
                 msEntityEvent 129, UP, Map5_EntityEvent2-ms_map5_EntityEvents
                 msEntityEvent 130, DOWN, Map5_EntityEvent3-ms_map5_EntityEvents
