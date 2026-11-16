@@ -991,7 +991,7 @@ byte_25066:
                 move.w  combatant(a6),d0
                 move.w  d0,((DIALOGUE_NAME_INDEX_1-$1000000)).w
                 bsr.w   GetEntityPositionAfterApplyingFacing
-                bsr.w   sub_256E6
+                bsr.w   GetCombatantIndexAtPosition
                 cmpi.w  #-1,d3
                 beq.s   loc_250B0
                 

@@ -43,8 +43,8 @@ GetEntityPositionAfterApplyingFacing:
 ; =============== S U B R O U T I N E =======================================
 
 
-sub_256E6:
-                
+GetCombatantIndexAtPosition:			; in: d0.w = X position, d1.w = Y position
+										; out: d3.w = combatant index (-1 if not found)
                 movem.l d0-d2/d7,-(sp)
                 move.w  d0,d2
                 move.w  d1,d3
@@ -75,5 +75,5 @@ loc_25724:
                 movem.l (sp)+,d0-d2/d7
                 rts
 
-    ; End of function sub_256E6
+    ; End of function GetCombatantIndexAtPosition
 
