@@ -4380,6 +4380,13 @@
 4378=10EA=Please stay close to me.{N}I'll keep you safe.{W1}
 4379=10EB=What happened to {NAME;31}?{W1}
 4380=10EC=Mr. {NAME;28} threatened to{N}hurt us if she stayed.{W2}{N}I told her to not worry about{N}us and she went on her way.{W2}{CLEAR}I hope we'll meet her again{N}someday...{W1}
-4381=10ED=x
-4382=10EE=x
-4383=10EF=x
+4381=10ED=Hi. I'm {NAME;31}.{D1}{D1}{N}Wait...{D1}{D1}You look familiar...{D1}{D1}{N}Oh my.{D1} I remember now!{W2}
+4382=10EE=You're {LEADER} from 2 years{N}ago!{D1} Wow, you've changed a lot!{W1}
+4383=10EF={LEADER}, you gotta tell me later{N}what happened back then{N}with {NAME;31}!{W1}
+4384=10F0=Did I hear ''{NAME;31}'' right?{W1}
+4385=10F1={NAME;31}! I'm so happy{N}to see you again!{W1}
+4386=10F2={NAME;1}! Aww... Me too!{W1}
+4387=10F3=Wow, you flew across the ocean{N}and the whole continent to build{N}your home here!{W1}
+4388=10F4=OK guys, before we continue...{N}{D1}I have to ask you something.{W2}
+4389=10F5=As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}
+4390=10F6=Aww.{D1} That's a shame after{N}all the work you did here.{W1}

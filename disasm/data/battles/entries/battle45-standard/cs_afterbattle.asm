@@ -35,6 +35,27 @@ abcs_battle45:  textCursor 4299
 
 				nextSingleText $0,ALLY_31 ; "Thank you very much.{N}These devils are getting more{N}and more annoying.{W2}{CLEAR}I think I'll pack my things{N}and go live somewhere else...{W1}"
 				
+				jumpIfFlagClear 557,@NoSarahBonus
+				setCamDest 	36,4
+				csWait 40
+				setFacing ALLY_SARAH,RIGHT
+				csWait 40
+				setFacing ALLY_SARAH,DOWN
+				csWait 40
+				setFacing ALLY_SARAH,LEFT
+				csWait 40
+				setFacing ALLY_SARAH,UP
+				csWait 40
+				setFacing ALLY_SARAH,RIGHT
+				csWait 40
+				setFacing ALLY_SARAH,DOWN
+				shiver ALLY_SARAH
+				textCursor 4390
+				nextSingleText $0,ALLY_SARAH	; "Aww.{D1} That's a shame after{N}all the work you did here.{W1}"
+				csWait 40
+				setCamDest 	36,7
+				
+			@NoSarahBonus:
 				jumpIfFlagClear 222,@BreadNotStolen
 				shiver 		ALLY_31
 				textCursor 4323
@@ -92,6 +113,7 @@ abcs_battle45:  textCursor 4299
 @SetupEntities: mainEntity 42,11,LEFT
 				entity 41,10,DOWN,ALLY_31,eas_Init
                 entity 41,12,UP,ALLY_PETER,eas_Init
+                entity 42,6,UP,ALLY_SARAH,eas_Init
 				; In case they are followers
                 entity 63,63,UP,ALLY_FRAYJA,eas_Init
                 entity 63,63,UP,ALLY_ZYNK,eas_Init

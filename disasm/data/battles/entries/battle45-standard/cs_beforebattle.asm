@@ -18,6 +18,7 @@ bbcs_45:        textCursor 4294
                 setActscriptWait ALLY_LEMON,eas_Init
 				setPos ALLY_LEMON,63,63,UP
 				
+                setBlocks 32,0,1,1,43,17 ; Open door for cutscene
                 fadeInB
 				csWait 60
 				
@@ -81,9 +82,12 @@ bbcs_45:        textCursor 4294
 				setFacing 	ALLY_BOWIE,UP
 				setFacing 	FOLLOWER_B,UP
 				
+				jumpIfFlagSet 557,@BonusScene
+				
 				playSound SOUND_COMMAND_FADE_OUT
 				shiver		ALLY_31
 				nextSingleText $0,ALLY_31 ; "Hi. I'm {NAME;31}.{W2}{N}As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}"
+@ShowMonsters:
 				setFacing	ALLY_31,UP
 				csWait 		30
 				setCamDest 	38,3
@@ -117,9 +121,55 @@ bbcs_45:        textCursor 4294
 				
                 csc_end
 				
+@BonusScene:
+				textCursor 4381
+				nextText $0,ALLY_31 ; "Hi. I'm {NAME;31}.{D1}{D1}{N}Wait...{D1}{D1}You look familiar...{D1}{D1}{N}Oh my.{D1} I remember now!{W2}"
+				setActscriptWait ALLY_31,eas_Jump
+				nextSingleText $0,ALLY_31 ; "You're {LEADER} from 2 years{N}ago!{D1} Wow, you've changed a lot!{W1}"
+
+				setFacing 	ALLY_BOWIE,LEFT
+				setFacing 	ALLY_PETER,RIGHT
+				setActscriptWait ALLY_PETER,eas_Jump
+				nextSingleText $0,ALLY_PETER ; "{LEADER}, you gotta tell me later{N}what happened back then{N}with {NAME;31}!{W1}"
+				nod			ALLY_BOWIE
+				setFacing 	ALLY_BOWIE,UP
+				setFacing 	ALLY_PETER,UP
+
+				nextSingleText $0,ALLY_SARAH ; "Did I hear ''{NAME;31}'' right?{W1}"
+				setPriority ALLY_SARAH,$FFFF
+				setPriority ALLY_BOWIE,$0
+                entityActionsWait ALLY_SARAH
+                 moveUp 6
+                endActions
+				setPriority ALLY_BOWIE,$FFFF
+				
+				setActscriptWait ALLY_SARAH,eas_Jump
+				setActscriptWait ALLY_SARAH,eas_Jump
+				setActscriptWait ALLY_SARAH,eas_Jump
+				nextSingleText $0,ALLY_SARAH ; "{NAME;31}! I'm so happy{N}to see you again!{W1}"
+				
+				setActscriptWait ALLY_31,eas_Jump
+				setActscriptWait ALLY_31,eas_Jump
+				setActscriptWait ALLY_31,eas_Jump
+				nextSingleText $0,ALLY_31 ; "{NAME;1}! Aww... Me too!{W1}"
+
+				shiver ALLY_SARAH
+				nod ALLY_SARAH
+				nextSingleText $0,ALLY_SARAH ; "Wow, you flew across the ocean{N}and the whole continent to build{N}your home here!{W1}"
+				
+				nod ALLY_31
+				nextText $0,ALLY_31 ; "OK guys, before we continue...{N}{D1}I have to ask you something.{W2}"
+
+				playSound 	SOUND_COMMAND_FADE_OUT
+				shiver		ALLY_31
+				nextSingleText $0,ALLY_31 ; "As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}"
+
+				jump @ShowMonsters
+				
 @SetupEntities: mainEntity 43,15,UP
 				entity 41,6,DOWN,ALLY_31,eas_Init
                 entity 42,15,UP,ALLY_PETER,eas_Init
+                entity 43,20,UP,ALLY_SARAH,eas_Init
 				; In case they are followers
                 entity 63,63,UP,ALLY_FRAYJA,eas_Init
                 entity 63,63,UP,ALLY_ZYNK,eas_Init
