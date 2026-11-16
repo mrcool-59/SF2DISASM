@@ -1,9 +1,11 @@
+spawn_x = 19
+spawn_y = 13
 
 rbcs_battle4:
 				jumpIfDead ALLY_SARAH,@Skip
 				jumpIfFlagClear 557,@Skip		; Set after meeting Sunny in Yeel
 
-				newEntity ALLY_31, 19, 13, LEFT, MAPSPRITE_SUNNY_PROMO
+				newEntity ALLY_31, spawn_x, spawn_y, LEFT, MAPSPRITE_SUNNY_PROMO
                 executeSubroutine csub_SunnyGalamAmbushJoin
 				textCursor 4369
                 nextSingleText $80,ALLY_31 		; "What's going on over here?{W1}"
@@ -12,7 +14,7 @@ rbcs_battle4:
                 csWait 60
                 nextSingleText $80,ALLY_31 		; "Oh my!{D1}{N}These kids are in trouble!{W1}"
 				
-				executeSubroutine csub_MoveAwayCombatantOnSunnyPosition
+				executeSubroutine csub_MoveCombatantAwayFromSunnyPosition
 				setCameraEntity ALLY_BOWIE
 				moveNextToPlayer ALLY_31,RIGHT
 				faceEntity ALLY_SARAH,ALLY_31
@@ -55,25 +57,74 @@ rbcs_battle4:
 
 
 csub_SunnyGalamAmbushJoin:
-	jsr		SubtractSunnyStats
+	jsr		SetBattle4SunnyStats
 	
-	move.w  #ALLY_BOWIE,d0
-	jsr     GetCombatantX
-	move.w  d1,d7
-	jsr     GetCombatantY
-	move.w  d1,d6
-	addq.w  #1,d7
-
-	moveq   #ALLY_31,d0
-	move.w  d7,d1
+	move    #ALLY_31,d0
+	move.w  #spawn_x,d1
 	jsr     SetCombatantX
-	move.w  d6,d1
+	move.w  #spawn_y,d1
 	jsr     SetCombatantY
 	jsr     JoinForce
 	jsr     JoinBattleParty
 	rts
 
 
-csub_MoveAwayCombatantOnSunnyPosition:
-	; TODO
+csub_MoveCombatantAwayFromSunnyPosition:
+	move.w  #ALLY_BOWIE,d0
+	jsr     GetCombatantX
+	move.w  d1,d7
+	jsr     GetCombatantY
+	move.w  d1,d6
+	addq.w  #1,d7	; Sunny will move to 1 tile on the right of Bowie
+	
+	; d7.w = spawn X
+	; d6.w = spawn Y
+
+	move.w 	d7,d0
+	move.w 	d6,d1
+	jsr		GetCombatantIndexAtPosition		; d3.w = combatant index
+	cmpi.w	#-1,d3
+	beq.s	@NoOtherCombatant
+	move.w	d3,d4							; d4.w = combatant index to move to empty space
+
+	; Combatant with index d4 needs to be moved away
+@SearchLoop:
+	addq.w	#1,d0
+	jsr		GetCombatantIndexAtPosition		; d3.w = combatant index
+	cmpi.w	#-1,d3
+	bne.s	@SearchLoop
+											; d1.w = safe position Y
+	move.w	d0,d2							; d2.w = safe position X
+	move.w  d4,d0
+	jsr     SetCombatantY
+	move.w  d2,d1
+	jsr     SetCombatantX
+	
+	bsr.s	SnapCombatantEntity
+
+@NoOtherCombatant:
+	; Sunny can now be safely moved on spawn position
+	move.w  #ALLY_31,d0
+	move.w  d7,d1
+	jsr     SetCombatantX
+	move.w  d6,d1
+	jsr     SetCombatantY
+	
+	rts
+
+
+SnapCombatantEntity:		; In: d0.w = combatant index
+	movem.l d0-d2,-(sp)
+
+    jsr     GetCombatantY
+	move.w  d1,d2					; d2.w = map Y
+    jsr     GetCombatantX			; d1.w = map X
+
+	jsr 	GetEntityIndexForCombatant 	; d0.w = entity index
+	
+	muls.w  #MAP_TILE_SIZE,d2
+	muls.w  #MAP_TILE_SIZE,d1
+	jsr 	SetEntityPosition
+
+    movem.l (sp)+,d0-d2
 	rts

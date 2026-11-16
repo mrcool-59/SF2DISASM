@@ -1695,3 +1695,39 @@ DecreaseCurrentMov:
 
     ; End of function DecreaseCurrentMov
 
+
+; =============== S U B R O U T I N E =======================================
+
+
+SetMainStats:		; in: d0.w = ally index, a0 = address of stats table
+					;     d1.w = reserved
+
+				clr.w   d1
+				
+				move.b  (a0)+,d1
+				bsr.w   SetLevel
+
+				move.b  (a0)+,d1
+				jsr   	SetMaxHp
+				bsr.w   SetCurrentHp
+
+				move.b  (a0)+,d1
+				bsr.w   SetMaxMp
+				bsr.w   SetCurrentMp
+
+				move.b  (a0)+,d1
+				bsr.w   SetBaseAtt
+
+				move.b  (a0)+,d1
+				bsr.w   SetBaseDef
+
+				move.b  (a0)+,d1
+				bsr.w   SetBaseAgi
+				
+				move.b  (a0)+,d1
+				bsr.w   SetBaseMov
+
+				bsr.w   UpdateCombatantStats
+
+    ; End of function SetMainStats
+

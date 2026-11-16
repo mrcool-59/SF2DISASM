@@ -20,3 +20,36 @@ AllyStats31:    forClass  CLASS_34	; Gold Dragon
                     48, THUNDER_BREATH|LV4, &
                     52, AURA|LV4
 					
+
+table_SunnyBattle4Stats:
+	dc.b 0  ; Level (20)
+	dc.b 50 ; HP
+	dc.b 50	; MP
+	dc.b 28 ; ATT
+	dc.b 5  ; DEF (+5 from Protect Ring)
+	dc.b 15+128 ; AGI (double turn)
+	dc.b 4  ; MOV
+	align
+
+
+table_SunnyPlayerStats:
+	dc.b 10 ; Level (30)
+	dc.b 80 ; HP
+	dc.b 50	; MP
+	dc.b 73 ; ATT
+	dc.b 53 ; DEF (+5 from Protect Ring)
+	dc.b 42 ; AGI
+	dc.b 7  ; MOV
+	align
+
+
+SetBattle4SunnyStats:
+	move.w	#ALLY_31,d0
+	lea		table_SunnyBattle4Stats(pc),a0
+	jmp		SetMainStats
+	
+	
+SetPlayerSunnyStats:
+	move.w	#ALLY_31,d0
+	lea		table_SunnyPlayerStats(pc),a0
+	jmp		SetMainStats
