@@ -7,7 +7,7 @@ rpt_BattleStartCutscenes:
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
-                dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
+                dc.w bscs_battle4-rpt_BattleStartCutscenes
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF
                 dc.w (ms_Empty-rpt_BattleStartCutscenes) & $FFFF

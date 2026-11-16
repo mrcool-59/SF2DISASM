@@ -8,5 +8,5 @@ bscs_battle27:  textCursor 2658
                 setCameraEntity 132
                 nextSingleText $0,132   ; "Don't you know about the{N}restrictions?{W1}"
                 setCameraEntity 128
-                nextSingleText $0,128   ; "Even if you didn't know,{N}that's just to bad.{W1}"
+                nextSingleText $0,128   ; "Even if you didn't know,{N}that's just too bad.{W1}"
                 csc_end

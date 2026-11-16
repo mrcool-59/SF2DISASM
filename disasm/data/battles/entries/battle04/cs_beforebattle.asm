@@ -9,6 +9,10 @@ bbcs_04:        textCursor 2311
 				; -------------------------------
 				clearF 558 ; Set after triggering Sunny's help in battle 4
 				setF 559 ; Set if battle 4 was lost
+				jumpIfFlagSet 557,@Skip ; Remove 2 soldiers from the cutscene if we play the version without Sunny
+				setPos 132,63,63,UP
+				setPos 134,63,63,UP
+			@Skip:
 				; -------------------------------
                 fadeInB
                 setActscriptWait ALLY_KAZIN,eas_Jump

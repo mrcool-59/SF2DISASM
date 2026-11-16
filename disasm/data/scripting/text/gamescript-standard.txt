@@ -2659,7 +2659,7 @@
 2657=0A61=Let's go to Pacalon.{W1}
 2658=0A62=Where did you come from?{N}What are you doing here?{W1}
 2659=0A63=Don't you know about the{N}restrictions?{W1}
-2660=0A64=Even if you didn't know,{N}that's just to bad.{W1}
+2660=0A64=Even if you didn't know,{N}that's just too bad.{W1}
 2661=0A65=Wow, look at that?{W1}
 2662=0A66=Those monsters are eating{N}the bridge.{W1}
 2663=0A67=Help!  Help me!{W1}
