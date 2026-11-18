@@ -10,14 +10,14 @@ table_EnemyLeaderPresentFlags:
                 dc.b 0                  ; 2: To Yeel
                 dc.b 0                  ; 3: To Hawel's house
                 dc.b -1                 ; 4: Ambushed by Galam Soldiers
-                dc.b 0                  ; 5: Galam Castle
+                dc.b -1                 ; 5: Galam Castle
                 dc.b 0                  ; 6: To Granseal
                 dc.b 0                  ; 7: Versus Dark Smokes
                 dc.b 0                  ; 8: North Cliff
                 dc.b 0                  ; 9: To Ribble
                 dc.b 0                  ; 10: To the East
                 dc.b -1                 ; 11: Cave of Darkness
-                dc.b 0                  ; 12: Mt. Volcano
+                dc.b -1                 ; 12: Mt. Volcano
                 dc.b 0                  ; 13: Polca Village
                 dc.b 0                  ; 14: Southeast Desert
                 dc.b 0                  ; 15: Shrine south of Ribble
