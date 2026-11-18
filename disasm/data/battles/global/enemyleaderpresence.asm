@@ -16,7 +16,7 @@ table_EnemyLeaderPresentFlags:
                 dc.b 0                  ; 8: North Cliff
                 dc.b 0                  ; 9: To Ribble
                 dc.b 0                  ; 10: To the East
-                dc.b 0                  ; 11: Cave of Darkness
+                dc.b -1                 ; 11: Cave of Darkness
                 dc.b 0                  ; 12: Mt. Volcano
                 dc.b 0                  ; 13: Polca Village
                 dc.b 0                  ; 14: Southeast Desert
