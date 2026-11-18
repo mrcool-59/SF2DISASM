@@ -24,7 +24,9 @@ return_55830:
     ; End of function ms_map7_InitFunction
 
 cs_map7_HideSunny:
-				hide ALLY_31
+				jumpIfFlagClear 805,@Skip
+				hide ALLY_31	; This will break the game if the mapsetup doesn't contain the character that is being hidden!
+			@Skip:
 				csc_end
                 
 cs_55832:       textCursor 1290
