@@ -400,18 +400,49 @@ AdjustEnemyBaseAttForDifficulty:
                 jsr     SetBaseAtt
 				move.l  d2,(sp)+
 				
-                clr.l   d1
-                jsr     GetBaseDef
-                mulu.w  #9,d1
-                lsr.l   #3,d1           ; if SPICY difficulty, multiply base DEF by 1.125
-                jsr     SetBaseDef
 
-				; The next adjustments are skipped for bosses
+				; Normal monsters and bosses get different stat adjustments
                 clr.l   d1
                 jsr     GetBaseAgi
                 cmpi.w  #TWO_TURN_THRESHOLD,d1
-				bpl.s   @Done
+				bpl.w   @BossAdjustment
 
+
+				; Second half of the game will grant higher adjustment to normal monsters
+				chkFlg	805				; Astral has joined the party as an advisor
+				bne.s	@SecondHalf
+
+				
+@FirstHalf:
+                
+                clr.l   d1
+                jsr     GetMaxHp
+                mulu.w  #5,d1
+                lsr.l   #3,d1           ; if SPICY difficulty, multiply HP by 1.125
+                jsr     SetMaxHp
+
+                clr.l   d1
+                jsr     GetCurrentHp
+                mulu.w  #5,d1
+                lsr.l   #3,d1           ; if SPICY difficulty, multiply HP by 1.125
+                jsr     SetCurrentHp
+
+                clr.l   d1
+                jsr     GetMaxMp
+                mulu.w  #3,d1
+                lsr.l   #2,d1           ; if SPICY difficulty, multiply MP by 1.25
+                jsr     SetMaxMp
+
+                clr.l   d1
+                jsr     GetCurrentMp
+                mulu.w  #3,d1
+                lsr.l   #2,d1           ; if SPICY difficulty, multiply MP by 1.25
+                jsr     SetCurrentMp
+                
+				bra.s   @Done
+				
+@SecondHalf:
+                
                 clr.l   d1
                 jsr     GetMaxHp
                 mulu.w  #5,d1
@@ -436,6 +467,16 @@ AdjustEnemyBaseAttForDifficulty:
                 lsr.l   #1,d1           ; if SPICY difficulty, multiply MP by 1.50
                 jsr     SetCurrentMp
                 
+				bra.s   @Done
+				
+@BossAdjustment:
+                
+                clr.l   d1
+                jsr     GetBaseDef
+                mulu.w  #9,d1
+                lsr.l   #3,d1           ; if SPICY difficulty, multiply base DEF by 1.125 for bosses
+                jsr     SetBaseDef
+
 @Done:
                 
                 move.l  (sp)+,d1
