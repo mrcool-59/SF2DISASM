@@ -82,6 +82,7 @@ cs_55A36:       textCursor 1198
                 nextSingleText $C0,ALLY_PETER ; "Mt. Volcano is in the east....{N}It's very far away.{W1}"
             if (STANDARD_BUILD&NO_AI_PETER=1)
                 join ALLY_PETER
+				textCursor 1231	; Otherwise all lines will be off by 1
             else
                 nextSingleText $FF,ENTITY_NONE  ; "{CLEAR}{LEADER} decides to take{N}{NAME;7} with him.{W1}{CLEAR}"
                 joinForceAI ALLY_PETER,$FFFF ; 0054 JOIN FORCE WITH AI
