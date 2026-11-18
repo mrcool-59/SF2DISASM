@@ -4365,7 +4365,7 @@
 4363=10DB=Please continue searching for{N}your perfect home...{N}We'll be okay!{W2}
 4364=10DC=This man will keep his word,{N}I'm sure of it!{W1}
 4365=10DD=...{D1}{D1}I will.{W1}
-4366=10DE=...{D1}{D1} ...{D1}OK.{D1} Until we meet again,{N}please stay safe!{W1}
+4366=10DE=...{D1}{D1} ...{D1}OK.{D1} I hope we meet again,{N}please stay safe!{W1}
 4367=10DF=Thank you.{W1}
 4368=10E0=OK.{D1}{N}We can go back on track now.{W1}
 4369=10E1=What's going on over here?{W1}
