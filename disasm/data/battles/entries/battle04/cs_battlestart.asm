@@ -36,4 +36,8 @@ csub_ApplyEasierEnemies:
 	bra.s	@Loop
 	
 @Return:
+	jsr UpdateOccupiedByAlliesTerrain
+	jsr UpdateOccupiedByEnemiesTerrain
+	jsr BuildTargetsArrayWithAllCombatants
+	
 	rts
