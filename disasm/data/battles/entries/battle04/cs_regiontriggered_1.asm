@@ -48,6 +48,8 @@ rbcs_battle4:
                 nextSingleText $80,ALLY_31 		; "Please stay close to me.{N}I'll keep you safe.{W1}"
 				
                 joinForceAI ALLY_31,$FFFF 		; 0054 JOIN FORCE WITH AI
+				;join ALLY_31					; NOTE: this is in case I still have the AI illegal position bug
+				
                 setF 558                		; Set after triggering Sunny's help in battle 4
 			@Skip:
                 csc_end
@@ -109,6 +111,11 @@ csub_MoveCombatantAwayFromSunnyPosition:
 	jsr     SetCombatantX
 	move.w  d6,d1
 	jsr     SetCombatantY
+	
+	; Update spatial partition structures (hopefully this is enough to fix the AI doing an illegal move to cast a spell)
+	jsr UpdateOccupiedByAlliesTerrain
+	jsr UpdateOccupiedByEnemiesTerrain
+	jsr BuildTargetsArrayWithAllCombatants
 	
 	rts
 
