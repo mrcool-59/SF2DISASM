@@ -14,10 +14,14 @@ ms_map21_InitFunction:
 ms_map21_flag609_InitFunction:
                 
                 chkFlg  507             ; Battle 7 completed - BATTLE_VERSUS_DARK_SMOKES           
-                beq.s   return_53F28
-                script  cs_53FD8
-return_53F28:
-                
+                beq.s   @CheckGalamInvasion
+                script  cs_EarthquakeMusic
+				bra.s   @Return
+@CheckGalamInvasion:
+                chkFlg	506             ; Battle 6 completed
+                beq.s   @Return
+				script  cs_GransealInvasionMusic
+@Return:
                 rts
 
     ; End of function ms_map21_InitFunction

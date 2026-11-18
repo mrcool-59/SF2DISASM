@@ -219,8 +219,10 @@ cs_534AC:       entityActionsWait 140
                 followEntity ALLY_CHESTER,ALLY_SARAH,2
                 csc_end
 cs_534D2:       textCursor 694
+				playSound SOUND_COMMAND_FADE_OUT
                 nextSingleText $0,ALLY_LEMON ; "Stop, please stop!{N}Don't make me use my{N}sword any more!{W1}"
                 setCamDest 17,6
+				playSound MUSIC_CUSTOM_MILITARY
                 nextText $80,128        ; "Where is King Galam?{N}He went into the tower,{N}Ground Seal, right?{W2}"
                 nextSingleText $80,128  ; "Then, I must go there!{W1}"
                 entityActionsWait 128

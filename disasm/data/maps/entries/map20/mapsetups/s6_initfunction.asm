@@ -20,10 +20,14 @@ byte_53982:
 ms_map20_flag501_InitFunction:
                 
                 chkFlg  507             ; Battle 7 completed - BATTLE_VERSUS_DARK_SMOKES           
-                beq.s   return_53994
-                script  cs_53FD8
-return_53994:
-                
+                beq.s   @CheckGalamInvasion
+                script  cs_EarthquakeMusic
+				bra.s   @Return
+@CheckGalamInvasion:
+                chkFlg	506             ; Battle 6 completed
+                beq.s   @Return
+				script  cs_GransealInvasionMusic
+@Return:
                 rts
 
     ; End of function ms_map20_InitFunction

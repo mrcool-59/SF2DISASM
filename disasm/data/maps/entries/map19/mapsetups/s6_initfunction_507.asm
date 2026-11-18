@@ -9,9 +9,9 @@ ms_map19_flag507_InitFunction:
                 
                  
                 chkFlg  507             ; Battle 7 completed - BATTLE_VERSUS_DARK_SMOKES           
-                beq.s   return_53174
-                script  cs_53FD8
-return_53174:
+                beq.s   @Return
+                script  cs_EarthquakeMusic
+@Return:
                 
                 rts
 

@@ -27,7 +27,10 @@ byte_5314C:
                 move.w  #130,d0
                 jsr     MoveEntityOutOfMap
 return_53166:
-                
+				chkFlg  507
+				bne.s	@Skip			; Just to be safe
+				script  cs_GransealInvasionMusic
+@Skip:
                 rts
 
     ; End of function ms_map19_flag506_InitFunction

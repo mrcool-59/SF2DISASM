@@ -101,6 +101,7 @@ bbcs_07:        textCursor 2357
                 nextText $0,129         ; "But, so have you!{N}Or had you not noticed?{W2}"
                 nextSingleText $0,129   ; "You cannot move.{N}Princess Elis, run away!{W1}"
                 setCamDest 8,13
+				playSound SOUND_COMMAND_FADE_OUT
                 nextSingleText $0,130   ; "I'll try.{W1}"
                 customActscriptWait 130
                  ac_setSpeed 48,48      ;   
@@ -113,6 +114,7 @@ bbcs_07:        textCursor 2357
                 setPos 133,12,18,UP
                 animEntityFX 133,SLIDE_IN
                 waitIdle 130
+				playSound MUSIC_ENEMY_ATTACK
                 nextSingleText $0,133   ; "Stop, my dear!{W1}"
                 setActscriptWait 130,eas_Jump
                 nextSingleText $0,130   ; "Oh!{W1}"
