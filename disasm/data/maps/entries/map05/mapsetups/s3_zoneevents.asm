@@ -103,7 +103,7 @@ cs_MeetingSunnyScene:
                  moveUp 3
                 endActions
 				
-                entityActions ALLY_SARAH
+                entityActionsWait ALLY_SARAH
 				 moveRight 1
 				 moveDown 3
 				 moveLeft 1
