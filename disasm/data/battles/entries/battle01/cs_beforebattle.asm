@@ -52,11 +52,13 @@ bbcs_01:        textCursor 2292
                 csWait 5
                 setActscript ALLY_CHESTER,eas_2xRightLeft
                 csWait 60
+				playSound SOUND_COMMAND_FADE_OUT
                 nextSingleText $0,ALLY_CHESTER ; "What's happening?{W1}"
                 entityActionsWait ALLY_SARAH
                  moveUp 1
                 endActions
                 nextSingleText $0,ALLY_SARAH ; "Look!  Something is{N}appearing.  What's that?{W1}"
+				playSound MUSIC_CUSTOM_ENEMY_HEALING
                 setFacing 135,UP
                 setCamDest 2,1
                 setPos 128,7,4,DOWN
