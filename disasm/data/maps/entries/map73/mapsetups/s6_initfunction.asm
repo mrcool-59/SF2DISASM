@@ -378,11 +378,22 @@ cs_50806:       textCursor 2288
                 setPos ALLY_BOWIE,0,0,DOWN
                 csWait 60
                 nextSingleText $FF,ENTITY_NONE  ; "They worked hard to build{N}their new town.{W1}"
+				; ------------------------------
+				jumpIfFlagClear 557,@SkipSunny
+				csWait 60
+                setCamDest 25,52
+                entityActions ALLY_31
+                 moveRight 20
+                endActions
+				csWait 180
+			@SkipSunny:
+				; ------------------------------
                 playSound SOUND_COMMAND_FADE_OUT
                 resetForceBattleStats
                 warp MAP_NEW_GRANSEAL_CASTLE,11,10,UP
                 csc_end
 ce_5094A:       mainEntity 61,48,LEFT
+				entity 23,60,RIGHT,ALLY_31,eas_Init
                 entity 62,48,LEFT,MAPSPRITE_WORKER,eas_Init
                 entity 63,48,LEFT,MAPSPRITE_WORKER,eas_Init
                 entity 28,49,RIGHT,MAPSPRITE_SHIP,eas_Init
