@@ -6,7 +6,7 @@ AllyStats01:    forClass  PRST
                 mpGrowth  10, 42, EARLY
                 attGrowth 6, 26, LINEAR
                 defGrowth 5, 25, LINEAR
-                agiGrowth 5, 31, LINEAR
+                agiGrowth 6, 33, LINEAR
                 spellList &
                     1, HEAL, &
                     4, DETOX, &
@@ -28,7 +28,7 @@ AllyStats01:    forClass  PRST
                 mpGrowth  35, 75, LINEAR
                 attGrowth 19, 34, LINEAR
                 defGrowth 18, 59, LINEAR
-                agiGrowth 22, 61, MIDDLE
+                agiGrowth 24, 63, MIDDLE
                 useFirstSpellList
                 
                 forClass  MMNK
@@ -36,6 +36,6 @@ AllyStats01:    forClass  PRST
                 mpGrowth  25, 67, LINEAR
                 attGrowth 19, 50, LINEAR
                 defGrowth 18, 69, LATE
-                agiGrowth 22, 61, MIDDLE
+                agiGrowth 24, 63, MIDDLE
                 useFirstSpellList
                 
