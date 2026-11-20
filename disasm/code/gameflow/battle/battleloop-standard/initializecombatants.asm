@@ -417,25 +417,25 @@ AdjustEnemyBaseAttForDifficulty:
                 
                 clr.l   d1
                 jsr     GetMaxHp
-                mulu.w  #5,d1
+                mulu.w  #9,d1
                 lsr.l   #3,d1           ; if SPICY difficulty, multiply HP by 1.125
                 jsr     SetMaxHp
 
                 clr.l   d1
                 jsr     GetCurrentHp
-                mulu.w  #5,d1
+                mulu.w  #9,d1
                 lsr.l   #3,d1           ; if SPICY difficulty, multiply HP by 1.125
                 jsr     SetCurrentHp
 
                 clr.l   d1
                 jsr     GetMaxMp
-                mulu.w  #3,d1
+                mulu.w  #5,d1
                 lsr.l   #2,d1           ; if SPICY difficulty, multiply MP by 1.25
                 jsr     SetMaxMp
 
                 clr.l   d1
                 jsr     GetCurrentMp
-                mulu.w  #3,d1
+                mulu.w  #5,d1
                 lsr.l   #2,d1           ; if SPICY difficulty, multiply MP by 1.25
                 jsr     SetCurrentMp
                 
