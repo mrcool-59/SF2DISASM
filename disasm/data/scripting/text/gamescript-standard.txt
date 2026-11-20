@@ -4346,15 +4346,15 @@
 4344=10C8={LEADER}, look!...{W2}
 4345=10C9={N}Wow! It's not everyday you{N}see a dragon.{W1}
 4346=10CA=Hi kids, I'm {NAME;31}!{W2}
-4347=10CB=I feel uncomfortable around{N}big crowds. I prefer to stay{N}in a quiet spot.{W1}
-4348=10CC=I'm {NAME;1} and this is {LEADER}!{N}Are you visiting Grans Island?{W1}
+4347=10CB=Keep your voice low, OK?{N}I don't want to draw attention...{N}I feel uneasy around big crowds.{W1}
+4348=10CC=Gotcha! I'm {NAME;1} and{N}this is {LEADER}.{N}Are you visiting Grans Island?{W1}
 4349=10CD=Yeah, but I don't like it very{N}much. I was about to leave.{W1}
-4350=10CE=Actually... {D1}I'm trying to find a{N}great spot for my home.{W2}
+4350=10CE=Actually... {D1}I'm trying to find a{N}nice spot for my home.{W2}
 4351=10CF=Mountains near a desert would{N}be perfect! Can I find this{N}around here?{W1}
 4352=10D0=Hmm... {D1}I'm not sure you'll find{N}this on Grans... {D1}Maybe north?{W2}{N}I never went to this part of{N}the island.{W1}
 4353=10D1=Look around some more?{W2}
 4354=10D2=...{D1}I dunno...{D1}I guess I can stay{N}around a bit longer...{D1} {D1}...{W1}
-4355=10D3=Well, in any case, it was fun{N}meeting you kids!{W1}
+4355=10D3=Well, in any case, it was fun{N}talking to you kids!{W1}
 4356=10D4=Maybe we'll meet again.{N}Take care!{W1}
 4357=10D5={NAME;4} will guide us to{N}Mr. Hawel? OK, let's go!{W1}
 4358=10D6=This doesn't concern you,{N}dragon.{W1}
@@ -4365,10 +4365,10 @@
 4363=10DB=Please continue searching for{N}your perfect home...{N}We'll be okay!{W2}
 4364=10DC=This man will keep his word,{N}I'm sure of it!{W1}
 4365=10DD=...{D1}{D1}I will.{W1}
-4366=10DE=...{D1}{D1} ...{D1}OK.{D1} I hope we meet again,{N}please stay safe!{W1}
+4366=10DE=...{D1}{D1} ...{D1}OK.{D1} I hope we'll meet again.{W1}
 4367=10DF=Thank you.{W1}
 4368=10E0=OK.{D1}{N}We can go back on track now.{W1}
-4369=10E1=What's going on over here?{W1}
+4369=10E1=What's going on over there?{W1}
 4370=10E2=Oh my!{D1}{N}These kids are in trouble!{W1}
 4371=10E3={NAME;1}! {LEADER}!{N}Are you OK?{W1}
 4372=10E4={NAME;31}!{W1}

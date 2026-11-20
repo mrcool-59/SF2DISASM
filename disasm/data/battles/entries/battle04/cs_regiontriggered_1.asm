@@ -8,7 +8,7 @@ rbcs_battle4:
 				newEntity ALLY_31, spawn_x, spawn_y, LEFT, MAPSPRITE_SUNNY_PROMO
                 executeSubroutine csub_SunnyGalamAmbushJoin
 				textCursor 4369
-                nextSingleText $80,ALLY_31 		; "What's going on over here?{W1}"
+                nextSingleText $80,ALLY_31 		; "What's going on over there?{W1}"
                 cameraSpeed $38
                 setCameraEntity ALLY_31
                 csWait 60

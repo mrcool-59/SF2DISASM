@@ -37,7 +37,7 @@ abcs_battle04:  resetForceBattleStats
                 nextSingleText $0,ALLY_LEMON ; "...{D1}{D1}I will.{W1}"
 
 				shiver ALLY_31
-                nextSingleText $80,ALLY_31 	 ; "...{D1}{D1} ...{D1}OK.{D1} I hope we meet again,{N}please stay safe!{W1}"
+                nextSingleText $80,ALLY_31 	 ; "...{D1}{D1} ...{D1}OK.{D1} I hope we'll meet again.{W1}"
 
                 nextSingleText $0,ALLY_SARAH ; "Thank you.{W1}"
 				nod	ALLY_31

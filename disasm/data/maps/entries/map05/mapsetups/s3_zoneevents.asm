@@ -63,15 +63,15 @@ cs_MeetingSunnyScene:
 				playSound		MUSIC_CUSTOM_COZY_CAVE
 				nextText 		$80,ALLY_31   	; "Hi kids, I'm {NAME;31}!{W2}"
 				shiver			ALLY_31
-				nextSingleText 	$80,ALLY_31   	; "I feel uncomfortable around{N}big crowds. I prefer to stay{N}in a quiet spot.{W1}"
+				nextSingleText 	$80,ALLY_31   	; "Keep your voice low, OK?{N}I don't want to draw attention...{N}I feel uneasy around big crowds.{W1}"
 				
                 setActscript 	ALLY_SARAH,eas_Jump
-				nextSingleText 	$0,ALLY_SARAH   ; "I'm {NAME;1} and this is {LEADER}!{N}Are you visiting Grans Island?{W1}"
+				nextSingleText 	$0,ALLY_SARAH   ; "Gotcha! I'm {NAME;1} and{N}this is {LEADER}.{N}Are you visiting Grans Island?{W1}"
 				
 				shiver			ALLY_31
 				nextText 		$80,ALLY_31   	; "Yeah, but I don't like it very{N}much. I was about to leave.{W1}"
 				shiver			ALLY_31
-				nextText 		$80,ALLY_31   	; "Actually... {D1}I'm trying to find a{N}great spot for my home.{W2}"
+				nextText 		$80,ALLY_31   	; "Actually... {D1}I'm trying to find a{N}nice spot for my home.{W2}"
                 setActscript 	ALLY_31,eas_Jump
 				nextSingleText 	$80,ALLY_31   	; "Mountains near a desert would{N}be perfect! Can I find this{N}around here?{W1}"
 				
@@ -89,7 +89,7 @@ cs_MeetingSunnyScene:
 				nextSingleText 	$80,ALLY_31   	; "...{D1}I dunno...{D1}I guess I can stay{N}around a bit longer...{D1} {D1}...{W1}"
 				csWait			20
                 setActscript 	ALLY_31,eas_Jump
-				nextText 		$80,ALLY_31   	; "Well, in any case, it was fun{N}meeting you kids!{W1}"
+				nextText 		$80,ALLY_31   	; "Well, in any case, it was fun{N}talking to you kids!{W1}"
 				playSound		SOUND_COMMAND_FADE_OUT
 				nod				ALLY_31
 				nextSingleText 	$80,ALLY_31   	; "Maybe we'll meet again.{N}Take care!{W1}"
