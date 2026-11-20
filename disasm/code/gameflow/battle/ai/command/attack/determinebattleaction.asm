@@ -142,14 +142,81 @@ DetermineBattleactionForAttackAiCommand:
                 andi.b  #%110,d4        ; #6 = 0110, so this ignores the physical and looks only at spell and item ranges
                 tst.b   d4
                 bne.s   @UseSpellOrItem
-                lea     ((FF8804_LOADING_SPACE-$1000000)).w,a0 ; physical -- # targets reachable
-                lea     ((TARGETS_REACHABLE_BY_ATTACK_LIST-$1000000)).w,a1
-                lea     ((ATTACK_MOVEMENT_TO_REACHABLE_TARGETS-$1000000)).w,a2
-                lea     ((ATTACK_TARGET_PRIORITIES_LIST-$1000000)).w,a3
-                move.b  #BATTLEACTION_ATTACK,battleaction(a6)
-                bra.w   @loc_20
-                                        ; Targets are in range of either the spell or item for the AI.
-                                        ; Remember that if the AI lacks a spell or item, it is replaced with a physical attack.
+				bra.w   @ChooseAttack
+
+			if (STANDARD_BUILD&ENABLE_CUSTOM_AI_PROBABILITY=1)
+@UseSpellOrItem:
+                move.w  d4,d1
+                andi.b  #6,d1					; examine spell and item usability flags
+                cmpi.b  #6,d1
+                beq.w   @HasSpellAndItem		; both spells and items are available
+                btst    #1,d4
+                beq.s   @HasItemOnly			; spell not available: we will roll to use item
+@HasSpellOnly:
+				move.l  #0,d4					; d4 = A offset in A/S section
+				bra.s   @Evaluate
+@HasItemOnly:
+				move.l  #2,d4					; d4 = A offset in A/I section
+				bra.s   @Evaluate
+@HasSpellAndItem:
+				move.l  #4,d4					; d4 = A offset in A/S/I section
+@Evaluate:
+                jsr     GetEnemy     			; d1 = enemy type (-1 if not an enemy)
+				cmpi.w  #-1,d1
+				beq.s   @Evaluate_ReadMoveType
+
+				lea     table_AIProbabilityPerEnemyType(pc), a0
+                moveq   #7,d2
+                jsr     (FindSpecialPropertyBytesAddressForObject).w
+				bcc.s   @Evaluate_Ready
+
+@Evaluate_ReadMoveType:
+                jsr     GetMovetype     		; d1 = move type
+				lea     table_AIProbabilityPerMoveType(pc), a0
+                moveq   #7,d2
+                jsr     (FindSpecialPropertyBytesAddressForObject).w
+				bcc.s   @Evaluate_Ready
+				
+				; Fall back to default table otherwise
+				lea     table_AIProbabilityDefault(pc), a0
+@Evaluate_Ready:
+				; a0 = pointer to the start of probability data for the current attacker
+				; d4 = 0, 2 or 4 (offset to the attack threshold byte of the relevant probability data section)
+				clr.w   d1
+                move.w  #64,d6						; d6.w = set roll range between 0..63
+                jsr     (GenerateRandomNumber).w	; d7.w = random number between 0..63					
+				
+				; Skip if target is not reachable with an attack
+				btst    #0,d3
+				beq.s	@Evaluate_AfterAttack
+
+				; Evaluate attack
+				move.b  (a0,d4.w),d6				; d6 = threshold value for attack
+				cmp.w   d6,d7
+				bmi.s   @ChooseAttack				; random number < threshold value -> match
+@Evaluate_AfterAttack:
+				addi.w  #1,d4						; d4 = 1, 3 or 5
+				
+				; Evaluate spell/item (item if d4 = 3)
+				move.b  (a0,d4.w),d6				; d6 = threshold value for spell/item
+				cmp.w   d6,d7
+				bpl.s   @Evaluate_AfterSecond		; random number >= threshold value -> no match
+
+				cmpi.b  #3,d4						; select spell (!= 3) or item (= 3)
+				beq.s   @ChooseItem
+				bra.s   @ChooseSpell
+
+@Evaluate_AfterSecond:
+				cmpi.b  #5,d4
+				bne.s	@ChooseAttack				; if d4 != 5 (1 or 3), we reached the end
+
+				addi.w  #1,d4						; d4 = 6
+				move.b  (a0,d4.w),d6				; d6 = threshold value for item
+				cmp.w   d6,d7
+				bmi.s   @ChooseItem					; random number < threshold value -> match
+				; bra.s	@ChooseAttack				; we reached the end (branch omitted since it's zero length)
+				
+			else
 
 ; =====================================================================
 ; --- ACTION SELECTION: physical vs spell vs item ---
@@ -162,10 +229,10 @@ DetermineBattleactionForAttackAiCommand:
 
                 ; physical blocked: force spell or item
                 btst    #1,d4
-                bne.w   @loc_18                ; spell -> cast
+                bne.w   @ChooseSpell           ; spell -> cast
                 btst    #2,d4
-                bne.w   @loc_19                ; item  -> use
-                bra.w   @loc_17                ; fallback (should not happen)
+                bne.w   @ChooseItem            ; item  -> use
+                bra.w   @ChooseAttack          ; fallback (should not happen)
 
 ; =====================================================================
 ; --- ORIGINAL DICE ROLL ---
@@ -187,25 +254,25 @@ DetermineBattleactionForAttackAiCommand:
                 move.w  (a1),d1
                 cmpi.w  #SPELL_AQUA,d1
                 bne.s   @loc_6                 ; not Aqua -> random roll
-                bra.w   @loc_18                ; Aqua -> cast directly
+                bra.w   @ChooseSpell           ; Aqua -> cast directly
 
 @loc_6:
                 move.b  #6,d6
                 jsr     (GenerateRandomNumber).w
                 cmpi.b  #2,d7
                 bne.s   @loc_7
-                bra.w   @loc_18
+                bra.w   @ChooseSpell
 @loc_7:
                 cmpi.b  #4,d7
                 bne.s   @loc_8
-                bra.w   @loc_18
+                bra.w   @ChooseSpell
 @loc_8:
                 btst    #0,d3
                 bne.s   @loc_9
-                bra.w   @loc_18
-                bra.s   @loc_10
+                bra.w   @ChooseSpell
+                bra.s   @loc_10 ; Useless
 @loc_9:
-                bra.w   @loc_17         
+                bra.w   @ChooseAttack       
 @loc_10:
                 bra.s   @loc_15
 
@@ -214,18 +281,18 @@ DetermineBattleactionForAttackAiCommand:
                 jsr     (GenerateRandomNumber).w
                 cmpi.b  #3,d7
                 bne.s   @loc_12
-                bra.w   @loc_19
+                bra.w   @ChooseItem
 @loc_12:
                 cmpi.b  #5,d7
                 bne.s   @loc_13
-                bra.w   @loc_19
+                bra.w   @ChooseItem
 @loc_13:
                 btst    #0,d3
                 bne.s   @loc_14
-                bra.w   @loc_19
-                bra.s   @loc_15
+                bra.w   @ChooseItem
+                bra.s   @loc_15 ; Useless
 @loc_14:
-                bra.w   @loc_17         
+                bra.w   @ChooseAttack        
 
 @loc_15:
                 move.b  #2,d6
@@ -236,12 +303,12 @@ DetermineBattleactionForAttackAiCommand:
             endif
                 cmpi.b  #1,d7
                 bne.s   @loc_16
-                bra.w   @loc_19
-                bra.s   @loc_17         
+                bra.w   @ChooseItem
+                bra.s   @ChooseAttack ; Useless
 @loc_16:
-                bra.w   @loc_18
-
-@loc_17:
+                bra.w   @ChooseSpell
+			endif
+@ChooseAttack:
                 
                 lea     ((FF8804_LOADING_SPACE-$1000000)).w,a0 ; physical -- # targets reachable by phsyical attack
                 lea     ((TARGETS_REACHABLE_BY_ATTACK_LIST-$1000000)).w,a1
@@ -249,7 +316,7 @@ DetermineBattleactionForAttackAiCommand:
                 lea     ((ATTACK_TARGET_PRIORITIES_LIST-$1000000)).w,a3
                 move.b  #BATTLEACTION_ATTACK,battleaction(a6)
                 bra.w   @loc_20
-@loc_18:
+@ChooseSpell:
                 
                 lea     ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w,a0
                 lea     ((TARGETS_REACHABLE_BY_SPELL_LIST-$1000000)).w,a1
@@ -257,7 +324,7 @@ DetermineBattleactionForAttackAiCommand:
                 lea     ((SPELL_TARGET_PRIORITIES_LIST-$1000000)).w,a3
                 move.b  #BATTLEACTION_CAST_SPELL,battleaction(a6)
                 bra.w   @loc_20
-@loc_19:
+@ChooseItem:
                 
                 lea     ((TARGETS_REACHABLE_BY_ITEM_NUMBER-$1000000)).w,a0
                 lea     ((TARGETS_REACHABLE_BY_ITEM_LIST-$1000000)).w,a1
