@@ -455,7 +455,7 @@ table_ItemDefinitions:
                 price        3000
                 itemType     RING|RARE|BREAKABLE
                 useSpell     NOTHING
-                equipEffects INCREASE_AGI, 5, &
+                equipEffects INCREASE_AGI, 8, &
                              NONE, 0, &
                              NONE, 0, &
                              NONE, 0, &
