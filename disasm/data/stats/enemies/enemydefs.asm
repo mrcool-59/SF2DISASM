@@ -2190,12 +2190,12 @@ table_EnemyDefinitions:
                 level    7
                 maxHp    25
                 maxMp    20
-                baseAtt  17
+                baseAtt  18
                 baseDef  12
-                baseAgi  (11+128)
-                baseMov  6
+                baseAgi  (12+128)
+                baseMov  4
                 baseresistance WIND_WEAKNESS|LIGHTNING_NONE|ICE_MAJOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_MAJOR
-                baseProwess    CRITICAL_SILENCE|DOUBLE_1IN16|COUNTER_1IN16
+                baseProwess    CRITICAL_SILENCE|DOUBLE_1IN32|COUNTER_1IN8
                 items &
                     NOTHING, &
                     NOTHING, &
