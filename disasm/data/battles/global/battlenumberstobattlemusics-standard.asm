@@ -2,6 +2,7 @@
 ; This table has the final say to determine what music should play in a battle.
 
 table_BattleNumbersToBattleMusics:
+				dc.b BATTLE_INSIDE_ANCIENT_TOWER, MUSIC_BATTLE_THEME_1
 				dc.b BATTLE_TO_YEEL, MUSIC_CUSTOM_NEWBIE_BATTLE
                 dc.b BATTLE_TO_HAWEL_HOUSE, MUSIC_CUSTOM_NEWBIE_BATTLE
                 dc.b BATTLE_AMBUSHED_BY_GALAM_SOLDIERS, MUSIC_CUSTOM_LEMON
