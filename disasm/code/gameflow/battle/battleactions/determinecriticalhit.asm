@@ -40,8 +40,11 @@ battlesceneScript_DetermineCriticalHit:
                 lea     table_CriticalHitDefinitions(pc,d2.w),a0
                 clr.w   d0
                 move.b  (a0),d0
+			if (STANDARD_BUILD=1)
+				beq.w   @Return
+			else
                 beq.s   @Return
-                
+			endif
                 tst.b   specialCritical(a2)
                 beq.s   @CheckDebugCritical
                 moveq   #1,d0
@@ -63,7 +66,7 @@ battlesceneScript_DetermineCriticalHit:
 @CheckInflictAilment:
                 
                 cmpi.w  #PROWESS_INFLICT_AILMENTS_START,d1
-                bcc.s   @SetInflictAilment
+                bcc.s   @TryInflictAilment
                 
                 move.b  #-1,criticalHit(a2)
                 move.b  (a4),d0
@@ -88,6 +91,26 @@ battlesceneScript_DetermineCriticalHit:
 @Skip:
                 
                 bra.s   @Return
+@TryInflictAilment:
+
+            if (STANDARD_BUILD&ATTACKS_CHECK_STATUS_RESISTANCE=1)
+                move.b	(a5),d0
+				bsr.w	GetResistanceToStatus 	; d2 = status resistance level
+                cmpi.w  #RESISTANCESETTING_NEUTRAL,d2
+                beq.s   @SetInflictAilment    	; no question asked if target has no resistance to status
+                cmpi.w  #RESISTANCESETTING_IMMUNITY,d2
+                beq.s   @Return           	  	; skip ailment if target is immune to status
+
+                moveq   #2,d0                 	; 50% chance of avoiding ailment with major status resistance
+                cmpi.w  #RESISTANCESETTING_MAJOR,d2
+                beq.s   @MajorResistance
+                moveq   #4,d0                 	; 25% chance of avoiding ailment with minor status resistance
+			@MajorResistance:
+                jsr     (GenerateRandomOrDebugNumber).w
+				tst.w   d0
+				beq.s	@Return               	; successful ailment avoidance
+			endif
+			
 @SetInflictAilment:
                 
                 move.b  #-1,inflictAilment(a2)

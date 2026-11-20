@@ -22,3 +22,23 @@ GetResistanceToSpell:
 
     ; End of function GetResistanceToSpell
 
+
+; =============== S U B R O U T I N E =======================================
+
+	if (STANDARD_BUILD=1)
+
+; Get combatant d0.b's resistance setting to status -> d2.w
+
+GetResistanceToStatus:
+
+                movem.l d0-d1/d3-a6,-(sp)
+                move.b  #SPELLELEMENT_STATUS,d2
+                jsr     GetCurrentResistance
+                andi.w  #RESISTANCEENTRY_MASK_ALL,d1
+                ror.w   d2,d1
+                move.w  d1,d2
+                andi.w  #RESISTANCEENTRY_LOWERMASK_SETTING,d2
+                movem.l (sp)+,d0-d1/d3-a6
+                rts
+
+	endif

@@ -90,8 +90,9 @@
                 includeIfVanilla "code\gameflow\battle\battleactions\attack.asm"    ; Write Battlescene Script : Attack
                 includeIfVanilla "code\gameflow\battle\battleactions\determinedodge.asm"    ; Determine dodge function
                 includeIfVanilla "code\gameflow\battle\battleactions\calculatedamage.asm"    ; Calculate attack damage function
+                includeIfStandard "data\stats\allies\classes\criticalhitdefs.asm"    ; Critical hit settings definitions
                 include "code\gameflow\battle\battleactions\determinecriticalhit.asm"    ; Determine critical hit function
-                include "data\stats\allies\classes\criticalhitdefs.asm"    ; Critical hit settings definitions
+                includeIfVanilla "data\stats\allies\classes\criticalhitdefs.asm"    ; Critical hit settings definitions
                 include "code\gameflow\battle\battleactions\inflictdamage.asm"    ; Write Battlescene Command : Inflict Damage function
                 include "code\gameflow\battle\battleactions\inflictailment.asm"    ; Write Battlescene Command : Inflict Ailment function
                 include "code\gameflow\battle\battleactions\inflictcursedamage.asm"    ; Write Battlescene Command : Inflict Curse Damage function

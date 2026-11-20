@@ -201,6 +201,7 @@ BOOST_DIVIDER:						equ 10		; Modify this value to adjust the power of Boost (8 
 SLOW_DIVIDER:						equ 10		; Modify this value to adjust the power of Slow (8 in the base game). As a reminder, first turn Slow decreases DEF/AGI stats by [3 * (100 / DIVIDER)]%.
 ARCHER_DAMAGE_BONUS_IGNORE_DEF:		equ 1		; 0 = OFF, 1 = ON   Change the Archer 25% damage bonus against Flying/Hovering characters to ignore DEF.
 PLAY_CONSUMABLE_ITEM_ANIMATION:		equ 1		; 0 = OFF, 1 = ON   If enabled, play spell animation attached to a consumable item.
+ATTACKS_CHECK_STATUS_RESISTANCE:	equ 1		; 0 = OFF, 1 = ON   If enabled, status resistance can prevent status ailments from attacks (minor: 1/4 chance of avoiding ailment, major: 1/2 chance).
 
 
 ; Menu enhancements
