@@ -231,6 +231,7 @@ witchMenuAction_New:
                 
 @loc_15:        addi.w  #233,d0 ; HARDCODED text index for difficulty choice reactions
                 jsr     (DisplayText).w
+				txt     4391			; "{CLEAR}One more thing. The AGI stat{N}does a few extra things here...{W2}{N}It will affect chance to dodge{N}(1% per AGI point difference){N}and chance to double attack.{W1}"
 				sndCom  SOUND_COMMAND_FADE_OUT
                 txt     224             ; "Now, good luck!{N}You have no time to waste!{D2}{N}...And please enjoy the ride!{D2}"
                 getCurrentSaveSlot d0

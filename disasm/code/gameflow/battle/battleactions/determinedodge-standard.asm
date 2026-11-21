@@ -72,10 +72,31 @@ battlesceneScript_DetermineDodge:
                 move.b  (a5),d0
                 bsr.w   GetCurrentAGI
                 andi.w  #TURN_AGILITY_MASK,d1   ; d1.w = target's AGI
-                lsl.w   #8,d1                   
-                divu.w  d4,d1
-                mulu.w  d1,d2
-                lsr.w   #8,d2                   ; d2.w = newDodge = (baseDodge * ((targetAgi * 256) / attackerAgi)) / 256
+				
+				sub.w   d4,d1
+				muls.w  #3,d1					; d4.w = (target's AGI - attacker's AGI) * 3
+
+				add.w   d1,d2					; d2.w = newDodge = baseDodge + (target's AGI - attacker's AGI) * 3
+				
+				; Low cap (0)
+				tst.w   d2
+				bpl.s   @Positive
+				clr.w   d2
+			@Positive:
+			
+				; Check if target is enemy
+				move.w  #52,d4
+				tst.w	d0
+				bmi.s	@Enemy
+				move.w  #128,d4
+			@Enemy:
+			
+				; High cap (128 aka 50% for allies, 52 aka 20% for enemies)
+				cmp.w	d2,d4
+				bpl.s   @BelowCap
+				move.w  d4,d2
+			@BelowCap:
+
             endif
                 
                 ; Determine dodge

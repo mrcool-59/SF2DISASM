@@ -103,7 +103,6 @@ CHARACTER_SWITCH_WAIT_FRAMES:		equ 0		; (30 in the base game) Number of extra wa
 
 
 ; Misc. features
-AGILITY_AFFECTS_CHANCE_TO_DODGE:    equ 1       ; Adjust chance to dodge proportionally to the difference between the attacker's and the target's current AGI.
 DIAGONAL_LASERS:                    equ 0       ; Allows laser based enemies to fire in 8 directions (Up, Up-Left, Left, Down-Left, etc).
 DIFFICULTY_FACTORS:                 equ 0       ; Allows 4 distinct difficulties.
 EXPANDED_RANGES:                    equ 1       ; Weapons/spells can have ranges up to 7 and spell radii up to 4.
@@ -203,6 +202,8 @@ ARCHER_DAMAGE_BONUS_IGNORE_DEF:		equ 1		; 0 = OFF, 1 = ON   Change the Archer 25
 PLAY_CONSUMABLE_ITEM_ANIMATION:		equ 1		; 0 = OFF, 1 = ON   If enabled, play spell animation attached to a consumable item.
 ATTACKS_CHECK_STATUS_RESISTANCE:	equ 1		; 0 = OFF, 1 = ON   If enabled, status resistance can prevent status ailments from attacks (minor: 1/4 chance of avoiding ailment, major: 1/2 chance).
 ENABLE_CUSTOM_AI_PROBABILITY:		equ 1		; 0 = OFF, 1 = ON   Enable per enemy type and per move type custom probability for the AI to attack/cast spell/use item. See aiprobability-standard.asm file!
+AGILITY_AFFECTS_CHANCE_TO_DODGE:    equ 1       ; Adjust chance to dodge to the difference between the attacker's and the target's current AGI.
+AGILITY_AFFECTS_DOUBLE_ATTACK:      equ 1       ; Adjust chance to perform a double back to the difference between the attacker's and the target's current AGI.
 
 
 ; Menu enhancements
