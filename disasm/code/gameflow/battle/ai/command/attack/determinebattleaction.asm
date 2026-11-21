@@ -153,27 +153,31 @@ DetermineBattleactionForAttackAiCommand:
                 btst    #1,d4
                 beq.s   @HasItemOnly			; spell not available: we will roll to use item
 @HasSpellOnly:
-				move.l  #0,d4					; d4 = A offset in A/S section
+				btst    #0,d3					; check if physical attack is allowed
+				beq.w   @ChooseSpell
+				move.l  #0,d4					; d4 = S section
 				bra.s   @Evaluate
 @HasItemOnly:
-				move.l  #2,d4					; d4 = A offset in A/I section
+				btst    #0,d3					; check if physical attack is allowed
+				beq.w   @ChooseItem
+				move.l  #1,d4					; d4 = I section
 				bra.s   @Evaluate
 @HasSpellAndItem:
-				move.l  #4,d4					; d4 = A offset in A/S/I section
+				move.l  #2,d4					; d4 = S offset in S/I section
 @Evaluate:
                 jsr     GetEnemy     			; d1 = enemy type (-1 if not an enemy)
 				cmpi.w  #-1,d1
 				beq.s   @Evaluate_ReadMoveType
 
 				lea     table_AIProbabilityPerEnemyType(pc), a0
-                moveq   #7,d2
+                moveq   #4,d2
                 jsr     (FindSpecialPropertyBytesAddressForObject).w
 				bcc.s   @Evaluate_Ready
 
 @Evaluate_ReadMoveType:
                 jsr     GetMovetype     		; d1 = move type
 				lea     table_AIProbabilityPerMoveType(pc), a0
-                moveq   #7,d2
+                moveq   #4,d2
                 jsr     (FindSpecialPropertyBytesAddressForObject).w
 				bcc.s   @Evaluate_Ready
 				
@@ -181,40 +185,38 @@ DetermineBattleactionForAttackAiCommand:
 				lea     table_AIProbabilityDefault(pc), a0
 @Evaluate_Ready:
 				; a0 = pointer to the start of probability data for the current attacker
-				; d4 = 0, 2 or 4 (offset to the attack threshold byte of the relevant probability data section)
+				; d4 = 0, 1 or 2 (offset to the threshold byte of the relevant probability data section)
 				clr.w   d1
                 move.w  #64,d6						; d6.w = set roll range between 0..63
                 jsr     (GenerateRandomNumber).w	; d7.w = random number between 0..63					
 				
-				; Skip if target is not reachable with an attack
-				btst    #0,d3
-				beq.s	@Evaluate_AfterAttack
-
-				; Evaluate attack
-				move.b  (a0,d4.w),d6				; d6 = threshold value for attack
-				cmp.w   d6,d7
-				bmi.s   @ChooseAttack				; random number < threshold value -> match
-@Evaluate_AfterAttack:
-				addi.w  #1,d4						; d4 = 1, 3 or 5
-				
-				; Evaluate spell/item (item if d4 = 3)
+				; Evaluate spell/item (item if d4 = 1)
 				move.b  (a0,d4.w),d6				; d6 = threshold value for spell/item
 				cmp.w   d6,d7
-				bpl.s   @Evaluate_AfterSecond		; random number >= threshold value -> no match
+				bpl.s   @Evaluate_Second			; random number >= threshold value -> no match
 
-				cmpi.b  #3,d4						; select spell (!= 3) or item (= 3)
+				cmpi.b  #1,d4						; select spell (!= 1) or item (= 1)
 				beq.s   @ChooseItem
 				bra.s   @ChooseSpell
 
-@Evaluate_AfterSecond:
-				cmpi.b  #5,d4
-				bne.s	@ChooseAttack				; if d4 != 5 (1 or 3), we reached the end
+@Evaluate_Second:
+				cmpi.b  #2,d4
+				bne.s	@ChooseAttack				; if d4 != 2 (0 or 1), we reached the end
 
-				addi.w  #1,d4						; d4 = 6
+				addi.w  #1,d4						; d4 = 3
 				move.b  (a0,d4.w),d6				; d6 = threshold value for item
 				cmp.w   d6,d7
 				bmi.s   @ChooseItem					; random number < threshold value -> match
-				; bra.s	@ChooseAttack				; we reached the end (branch omitted since it's zero length)
+				
+				; We reached the end without successful match
+				btst    #0,d3						; check if physical attack is allowed
+				bne.s   @ChooseAttack
+				
+				; Physical attack is not allowed and we didn't roll either spell or item
+				; Decide by checking the last bit of random number
+				andi.w  #1,d7
+				beq.s	@ChooseSpell
+				bra.s   @ChooseItem				
 				
 			else
 
