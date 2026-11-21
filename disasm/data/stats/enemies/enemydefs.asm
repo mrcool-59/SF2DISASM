@@ -502,7 +502,7 @@ table_EnemyDefinitions:
                     NOTHING, &
                     NOTHING
                 spells &
-                    ATTACK, &
+                    NOTHING, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
@@ -902,7 +902,7 @@ table_EnemyDefinitions:
                     NOTHING, &
                     NOTHING
                 spells &
-                    ATTACK, &
+                    NOTHING, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
