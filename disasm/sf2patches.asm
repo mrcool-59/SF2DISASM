@@ -54,6 +54,7 @@ FIX_EXPLORATION_MAGIC_MENU_ICONS:    equ 1   ; Applies the index mask $3F to spe
 FIX_FIELD_ITEM_CONSUMABLE:           equ 1   ; Field items will only be consumed if the CONSUMABLE flag is set.
 FIX_GARBLED_HP_BAR:                  equ 1   ; Prevents drawing garbage pixels when HP is greater then 600 by continuing to draw black bars instead.
 FIX_GIZMO_ARRANGEMENT:               equ 1   ; Moves the Gizmo enemies during the before battle cutscene to positions matching the battle formation.
+FIX_MASTER_MONK_IN_CUTSCENES:        equ 1   ; Fix cutscenes of battle 29, 31, 32 incorrectly showing death monks instead of master monks.
 FIX_GODDESS_STAFF_DEALS_EXPLOIT:     equ 1   ; If one of the following items is sitting in the Deals section after a DEF-CON switch is activated: Quick Ring, Protect Ring, White Ring, or Running Ring; a Goddess Staff will also be added to Deals.
 FIX_GOLD_GIFT:                       equ 1   ; Gold increases when Minister gives you gift in New Granseal.
 FIX_HIGINS_SPELL:                    equ 1   ; Prevents unequipping from possibly corrupting characters spell entries.

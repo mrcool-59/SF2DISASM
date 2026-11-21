@@ -122,7 +122,11 @@ bbcs_29:        textCursor 2718
 ce_4C5AE:       mainEntity 15,33,UP
                 entity 16,34,UP,ALLY_PETER,eas_Init
                 entity 15,30,DOWN,MAPSPRITE_PRIEST,eas_Init
+			if (STANDARD_BUILD&FIX_MASTER_MONK_IN_CUTSCENES=1)
+                entity 63,63,DOWN,MAPSPRITE_MASTER_MONK,eas_Init
+			else
                 entity 63,63,DOWN,MAPSPRITE_DEATH_MONK,eas_Init
+			endif
                 entity 63,63,DOWN,MAPSPRITE_ORC_LORD,eas_Init
                 entity 63,63,DOWN,MAPSPRITE_WIZARD,eas_Init
                 entity 63,63,DOWN,MAPSPRITE_WORM,eas_Init

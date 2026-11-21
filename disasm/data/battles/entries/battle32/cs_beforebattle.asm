@@ -54,7 +54,11 @@ ce_4CCC0:       mainEntity 15,44,UP
                 entity 15,46,UP,ALLY_FRAYJA,eas_Init
                 entity 14,21,DOWN,MAPSPRITE_DEATH_ARCHER,eas_Init
                 entity 12,21,DOWN,MAPSPRITE_NECROMANCER,eas_Init
+			if (STANDARD_BUILD&FIX_MASTER_MONK_IN_CUTSCENES=1)
+                entity 13,20,DOWN,MAPSPRITE_MASTER_MONK,eas_Init
+			else
                 entity 13,20,DOWN,MAPSPRITE_DEATH_MONK,eas_Init
+			endif
                 entity 16,22,DOWN,MAPSPRITE_PEGASUS_KNIGHT,eas_Init
                 entity 14,24,DOWN,MAPSPRITE_DEVIL_SOLDIER,eas_Init
                 entity 16,24,DOWN,MAPSPRITE_CERBERUS,eas_Init

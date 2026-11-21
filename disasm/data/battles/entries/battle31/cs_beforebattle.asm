@@ -118,7 +118,11 @@ ce_4CB92:       mainEntity 21,4,DOWN
                 entity 21,8,UP,MAPSPRITE_GESHP,eas_Init
                 entity 21,11,UP,MAPSPRITE_CAMEELA,eas_Init
                 entity 63,63,LEFT,MAPSPRITE_FLAME1,eas_Init
+			if (STANDARD_BUILD&FIX_MASTER_MONK_IN_CUTSCENES=1)
+                entity 63,63,UP,MAPSPRITE_MASTER_MONK,eas_Init
+			else
                 entity 63,63,UP,MAPSPRITE_DEATH_MONK,eas_Init
+			endif
                 entity 63,63,UP,MAPSPRITE_DARK_BISHOP,eas_Init
                 entity 63,63,UP,MAPSPRITE_ORC_LORD,eas_Init
                 entity 63,63,UP,MAPSPRITE_HARPY_QUEEN,eas_Init
