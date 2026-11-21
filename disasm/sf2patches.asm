@@ -205,6 +205,7 @@ ATTACKS_CHECK_STATUS_RESISTANCE:	equ 1		; 0 = OFF, 1 = ON   If enabled, status r
 ENABLE_CUSTOM_AI_PROBABILITY:		equ 1		; 0 = OFF, 1 = ON   Enable per enemy type and per move type custom probability for the AI to attack/cast spell/use item. See aiprobability-standard.asm file!
 AGILITY_AFFECTS_CHANCE_TO_DODGE:    equ 1       ; Adjust chance to dodge to the difference between the attacker's and the target's current AGI.
 AGILITY_AFFECTS_DOUBLE_ATTACK:      equ 1       ; Adjust chance to perform a double back to the difference between the attacker's and the target's current AGI.
+JEWELS_GRANT_STATUS_RESISTANCE:		equ 1		; 0 = OFF, 1 = ON   If enabled, give major/immunity to status effects to Bowie when he gets the Jewels.
 
 
 ; Menu enhancements

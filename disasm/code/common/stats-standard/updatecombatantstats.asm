@@ -42,6 +42,19 @@ UpdateCombatantStats:
                 move.b  COMBATANT_OFFSET_MOV_BASE(a2),COMBATANT_OFFSET_MOV_CURRENT(a2)
                 move.b  COMBATANT_OFFSET_PROWESS_BASE(a2),COMBATANT_OFFSET_PROWESS_CURRENT(a2)
                 getSavedWord a2, d1, COMBATANT_OFFSET_RESIST_BASE
+			if (JEWELS_GRANT_STATUS_RESISTANCE=1)
+				; Bowie special case: status major/immunity resistance with jewels
+				tst.w   d0
+				bne.s	@SkipSecondJewel	; Only for Bowie
+				chkFlg  384					; Set after Bowie obtains the first jewel
+				beq.s	@SkipFirstJewel
+				ori.w   #RESISTANCE_STATUS_MINOR,d1
+			@SkipFirstJewel:
+                chkFlg  385             	; Set after Bowie obtains King Galam's jewel
+				beq.s	@SkipSecondJewel
+				ori.w   #RESISTANCE_STATUS_MAJOR,d1
+			@SkipSecondJewel:
+			endif
                 setSavedWord d1, a2, COMBATANT_OFFSET_RESIST_CURRENT
                 
                 ; Unlearn all spells
