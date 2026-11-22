@@ -155,7 +155,7 @@ table_SpellDefinitions:
                 mpCost     5
                 animation  BUFF1
                 properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
-                range      1, 3
+                range      1, 2
                 radius     0
                 power      15
                 
