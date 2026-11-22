@@ -281,16 +281,16 @@ SpellIcon013:   incbin "data/graphics/icons/spell/icon013.bin"
 SpellIcon014:   incbin "data/graphics/icons/spell/icon014.bin"
 SpellIcon015:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon016:   incbin "data/graphics/icons/spell/icon016.bin"
-SpellIcon017:   incbin "data/graphics/icons/spell/icon017.bin"
-SpellIcon018:   incbin "data/graphics/icons/spell/icon018.bin"
-SpellIcon019:   incbin "data/graphics/icons/spell/icon019.bin"
+SpellIcon017:   incbin "data/graphics/icons/spell/icon017-standard.bin" ; FLAME
+SpellIcon018:   incbin "data/graphics/icons/spell/icon018-standard.bin" ; SNOW
+SpellIcon019:   incbin "data/graphics/icons/spell/icon019-standard.bin" ; DEMON
 SpellIcon020:   incbin "data/graphics/icons/spell/icon020.bin"
 SpellIcon021:   incbin "data/graphics/icons/spell/icon021.bin"
 SpellIcon022:   incbin "data/graphics/icons/spell/icon022.bin"
 SpellIcon023:   incbin "data/graphics/icons/spell/icon023.bin"
 SpellIcon024:   incbin "data/graphics/icons/spell/icon024.bin"
 SpellIcon025:   incbin "data/graphics/icons/spell/icon025.bin"
-SpellIcon026:   incbin "data/graphics/icons/spell/icon026.bin"
+SpellIcon026:   incbin "data/graphics/icons/spell/icon026-standard.bin" ; LASER
 SpellIcon027:   incbin "data/graphics/icons/spell/icon027.bin"
 SpellIcon028:   incbin "data/graphics/icons/spell/icon028.bin"
 SpellIcon029:   incbin "data/graphics/icons/spell/icon029.bin"
@@ -306,12 +306,12 @@ SpellIcon036:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon037:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon038:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon039:   incbin "data/graphics/icons/spell/icon015.bin"
-SpellIcon040:   incbin "data/graphics/icons/spell/icon015.bin"
-SpellIcon041:   incbin "data/graphics/icons/spell/icon015.bin"
+SpellIcon040:   incbin "data/graphics/icons/spell/icon040-standard.bin" ; AQUA
+SpellIcon041:   incbin "data/graphics/icons/spell/icon041-standard.bin" ; KIWI
 SpellIcon042:   incbin "data/graphics/icons/spell/icon015.bin"
-SpellIcon043:   incbin "data/graphics/icons/spell/icon015.bin"
-SpellIcon044:   incbin "data/graphics/icons/spell/icon027.bin" ; DRAGON_BREATH
-SpellIcon045:   incbin "data/graphics/icons/spell/icon028.bin" ; THUNDER_BREATH
+SpellIcon043:   incbin "data/graphics/icons/spell/icon043-standard.bin" ; BEAM
+SpellIcon044:   incbin "data/graphics/icons/spell/icon044-standard.bin" ; DRAGON_BREATH
+SpellIcon045:   incbin "data/graphics/icons/spell/icon045-standard.bin" ; THUNDER_BREATH
 SpellIcon046:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon047:   incbin "data/graphics/icons/spell/icon015.bin"
 SpellIcon048:   incbin "data/graphics/icons/spell/icon015.bin"
