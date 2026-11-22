@@ -4346,7 +4346,7 @@
 4344=10C8={LEADER}, look!...{W2}
 4345=10C9={N}Wow! It's not everyday you{N}see a dragon.{W1}
 4346=10CA=Hi kids, I'm {NAME;31}!{W2}
-4347=10CB=Keep your voice low, OK?{N}I don't want to draw attention...{N}I feel uneasy around big crowds.{W1}
+4347=10CB=Keep your voice low, OK?...{N}I don't want to draw attention,{N}I'm uneasy around big crowds.{W1}
 4348=10CC=Gotcha! I'm {NAME;1} and{N}this is {LEADER}.{N}Are you visiting Grans Island?{W1}
 4349=10CD=Yeah, but I don't like it very{N}much. I was about to leave.{W1}
 4350=10CE=Actually... {D1}I'm trying to find a{N}nice spot for my home.{W2}
@@ -4365,7 +4365,7 @@
 4363=10DB=Please continue searching for{N}your perfect home...{N}We'll be okay!{W2}
 4364=10DC=This man will keep his word,{N}I'm sure of it!{W1}
 4365=10DD=...{D1}{D1}I will.{W1}
-4366=10DE=...{D1}{D1} ...{D1}OK.{D1} I hope we'll meet again.{W1}
+4366=10DE=...{D1}{D1} ...{D1}OK.{D1}{N}I hope we'll meet again.{W1}
 4367=10DF=Thank you.{W1}
 4368=10E0=OK.{D1}{N}We can go back on track now.{W1}
 4369=10E1=What's going on over there?{W1}
