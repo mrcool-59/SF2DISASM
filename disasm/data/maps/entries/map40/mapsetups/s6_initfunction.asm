@@ -7,7 +7,11 @@
 
 ms_map40_InitFunction:
                 
-                 
+				chkFlg  506
+				beq.s   @SkipSunny
+				script  cs_HideSunny
+			@SkipSunny:
+
                 chkFlg  507             ; Battle 7 completed - BATTLE_VERSUS_DARK_SMOKES           
                 beq.s   @CheckGalamInvasion
                 script  cs_EarthquakeMusic
@@ -21,6 +25,10 @@ ms_map40_InitFunction:
 
     ; End of function ms_map40_InitFunction
 
+cs_HideSunny:
+				setPos ALLY_31,63,63,DOWN
+				csc_end
+				
 cs_GransealInvasionMusic:
 				jumpIfFlagClear 620,@Sad
 				playSound MUSIC_CUSTOM_MILITARY
