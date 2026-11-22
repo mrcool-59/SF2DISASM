@@ -5,7 +5,7 @@ BattleSpriteset39:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 14
+                dc.b 17
                 ; # AI Regions
                 dc.b 0
                 ; # AI Points
@@ -83,11 +83,11 @@ BattleSpriteset39:
                 
                 enemyCombatant WHITE_DRAGON, 2, 29
                 combatantAiAndItem ATTACKER1, NOTHING
-                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                combatantBehavior FOLLOW_TARGET|0, 15, NONE, 15, 0, STARTING
                 
                 enemyCombatant WHITE_DRAGON, 9, 28
                 combatantAiAndItem ATTACKER1, NOTHING
-                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                combatantBehavior FOLLOW_ENEMY|0, 15, NONE, 15, 0, STARTING
                 
                 enemyCombatant HELL_HOUND, 7, 19
                 combatantAiAndItem ATTACKER3, NOTHING
@@ -111,11 +111,23 @@ BattleSpriteset39:
                 
                 enemyCombatant CYCLOPS, 12, 2
                 combatantAiAndItem ATTACKER1, NOTHING
-                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                combatantBehavior FOLLOW_TARGET|0, 15, NONE, 15, 0, STARTING
                 
                 enemyCombatant WHITE_DRAGON, 17, 9
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant WHITE_DRAGON, 14, 1
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior FOLLOW_ENEMY|12, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant CYCLOPS, 10, 15
+                combatantAiAndItem SENTRY, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant CHAOS_WIZARD, 12, 18
+                combatantAiAndItem ATTACKER3, NOTHING
+                combatantBehavior FOLLOW_ENEMY|15, 15, NONE, 15, 0, STARTING
                 
                 ; AI Points
                 dc.b 8, 24

@@ -5,7 +5,7 @@ BattleSpriteset34:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 17
+                dc.b 19
                 ; # AI Regions
                 dc.b 6
                 ; # AI Points
@@ -128,6 +128,14 @@ BattleSpriteset34:
                 enemyCombatant DRAGONEWT, 8, 17
                 combatantAiAndItem ATTACKER2, NOTHING
                 combatantBehavior FOLLOW_TARGET|0, 2, NONE, 15, 0, STARTING
+                
+                enemyCombatant DRAGONEWT, 10, 6
+                combatantAiAndItem SENTRY, NOTHING
+                combatantBehavior FOLLOW_ENEMY|0, 1, NONE, 15, 0, STARTING
+                
+                enemyCombatant DRAGONEWT, 12, 6
+                combatantAiAndItem SENTRY, NOTHING
+                combatantBehavior FOLLOW_ENEMY|0, 1, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

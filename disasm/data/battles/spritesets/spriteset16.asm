@@ -65,11 +65,11 @@ BattleSpriteset16:
                 combatantAiAndItem SWARM, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant KRAKEN_ARM, 25, 17
+                enemyCombatant KRAKEN_ARM, 26, 17
                 combatantAiAndItem SWARM, NOTHING
                 combatantBehavior FOLLOW_ENEMY|7, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant KRAKEN_ARM, 6, 11
+                enemyCombatant KRAKEN_ARM, 3, 11
                 combatantAiAndItem SWARM, NOTHING
                 combatantBehavior FOLLOW_ENEMY|3, 15, NONE, 15, 0, STARTING
                 

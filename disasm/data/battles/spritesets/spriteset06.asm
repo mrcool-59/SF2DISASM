@@ -5,7 +5,7 @@ BattleSpriteset06:
                 ; # Allies
                 dc.b 6
                 ; # Enemies
-                dc.b 9
+                dc.b 10
                 ; # AI Regions
                 dc.b 1
                 ; # AI Points
@@ -49,7 +49,7 @@ BattleSpriteset06:
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant GALAM_KNIGHT, 7, 13
+                enemyCombatant GALAM_KNIGHT, 7, 16
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
@@ -72,6 +72,10 @@ BattleSpriteset06:
                 enemyCombatant GALAM_SOLDIER, 8, 29
                 combatantAiAndItem SENTRY, NOTHING
                 combatantBehavior NONE, 0, NONE, 15, 0, STARTING
+                
+                enemyCombatant GALAM_SOLDIER, 9, 20
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

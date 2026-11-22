@@ -5,7 +5,7 @@ BattleSpriteset33:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 16
+                dc.b 18
                 ; # AI Regions
                 dc.b 1
                 ; # AI Points
@@ -124,6 +124,14 @@ BattleSpriteset33:
                 enemyCombatant CERBERUS, 12, 22
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior FOLLOW_TARGET|0, 0, NONE, 15, 0, STARTING
+                
+                enemyCombatant PEGASUS_KNIGHT, 14, 32
+                combatantAiAndItem SENTRY, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant BOW_MASTER, 6, 17
+                combatantAiAndItem SENTRY, NOTHING
+                combatantBehavior FOLLOW_ENEMY|3, 0, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

@@ -5,7 +5,7 @@ BattleSpriteset12:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 12
+                dc.b 14
                 ; # AI Regions
                 dc.b 4
                 ; # AI Points
@@ -108,6 +108,14 @@ BattleSpriteset12:
                 enemyCombatant HOBGOBLIN, 8, 18
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant WITCH, 12, 16
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant WITCH, 24, 7
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior FOLLOW_ENEMY|0, 15, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

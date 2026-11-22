@@ -5,7 +5,7 @@ BattleSpriteset31:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 15
+                dc.b 17
                 ; # AI Regions
                 dc.b 4
                 ; # AI Points
@@ -109,17 +109,25 @@ BattleSpriteset31:
                 combatantAiAndItem HEALER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|10, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant ORC_LORD, 37, 4
+                enemyCombatant ORC_LORD, 31, 13
                 combatantAiAndItem HEALER3, NOTHING
-                combatantBehavior FOLLOW_ENEMY|13, 0, FOLLOW_ENEMY|13, 3, 0, STARTING
+                combatantBehavior FOLLOW_ENEMY|13, 15, FOLLOW_ENEMY|13, 3, 0, STARTING
                 
-                enemyCombatant DARK_KNIGHT, 39, 2
+                enemyCombatant DARK_KNIGHT, 30, 12
                 combatantAiAndItem ATTACKER2, NOTHING
-                combatantBehavior NONE, 0, NONE, 3, 0, STARTING
+                combatantBehavior NONE, 15, NONE, 3, 0, STARTING
                 
                 enemyCombatant HARPY_QUEEN, 23, 15
                 combatantAiAndItem SENTRY, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant NECROMANCER, 16, 12
+                combatantAiAndItem HEALER3, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant NECROMANCER, 25, 27
+                combatantAiAndItem HEALER3, NOTHING
+                combatantBehavior NONE, 2, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

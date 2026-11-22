@@ -5,7 +5,7 @@ BattleSpriteset23:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 12
+                dc.b 15
                 ; # AI Regions
                 dc.b 1
                 ; # AI Points
@@ -108,6 +108,18 @@ BattleSpriteset23:
                 enemyCombatant BUBBLING_OOZE, 5, 12
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant BUBBLING_OOZE, 23, 2
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 0, NONE, 15, 0, STARTING
+                
+                enemyCombatant BUBBLING_OOZE, 24, 3
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 0, NONE, 15, 0, STARTING
+                
+                enemyCombatant BUBBLING_OOZE, 22, 7
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 0, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

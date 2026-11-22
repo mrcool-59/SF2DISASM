@@ -5,7 +5,7 @@ BattleSpriteset26:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 15
+                dc.b 17
                 ; # AI Regions
                 dc.b 3
                 ; # AI Points
@@ -120,6 +120,14 @@ BattleSpriteset26:
                 enemyCombatant DARK_SNIPER, 14, 23
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant DARK_SNIPER, 25, 18
+                combatantAiAndItem ATTACKER3, NOTHING
+                combatantBehavior FOLLOW_ENEMY|10, 2, NONE, 2, 0, STARTING
+                
+                enemyCombatant LESSER_DEMON, 29, 16
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior FOLLOW_ENEMY|10, 2, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

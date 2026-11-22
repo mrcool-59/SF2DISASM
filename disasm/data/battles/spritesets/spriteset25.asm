@@ -5,7 +5,7 @@ BattleSpriteset25:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 15
+                dc.b 17
                 ; # AI Regions
                 dc.b 3
                 ; # AI Points
@@ -120,6 +120,14 @@ BattleSpriteset25:
                 enemyCombatant SKELETON, 20, 22
                 combatantAiAndItem ATTACKER1, MEDICAL_HERB|USABLE_BY_AI|UNUSED_ITEM_DROP
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant DARK_SNIPER, 25, 5
+                combatantAiAndItem ATTACKER3, NOTHING
+                combatantBehavior FOLLOW_ENEMY|0, 1, NONE, 1, 0, STARTING
+                
+                enemyCombatant LESSER_DEMON, 5, 8
+                combatantAiAndItem ATTACKER3, NOTHING
+                combatantBehavior FOLLOW_ENEMY|5, 1, NONE, 1, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

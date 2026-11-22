@@ -5,7 +5,7 @@ BattleSpriteset32:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 16
+                dc.b 18
                 ; # AI Regions
                 dc.b 2
                 ; # AI Points
@@ -97,9 +97,9 @@ BattleSpriteset32:
                 combatantAiAndItem ATTACKER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|7, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant MASTER_MONK, 6, 33
+                enemyCombatant MASTER_MONK, 8, 38
                 combatantAiAndItem HEALER3, NOTHING
-                combatantBehavior FOLLOW_ENEMY|9, 0, FOLLOW_ENEMY|9, 1, 0, STARTING
+                combatantBehavior FOLLOW_ENEMY|7, 15, NONE, 15, 0, STARTING
                 
                 enemyCombatant PEGASUS_KNIGHT, 23, 26
                 combatantAiAndItem ATTACKER1, NOTHING
@@ -124,6 +124,14 @@ BattleSpriteset32:
                 enemyCombatant JAR, 8, 31
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 0, NONE, 1, 0, STARTING
+                
+                enemyCombatant MASTER_MONK, 18, 32
+                combatantAiAndItem HEALER3, NOTHING
+                combatantBehavior FOLLOW_ENEMY|4, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant NECROMANCER, 21, 33
+                combatantAiAndItem ATTACKER3, NOTHING
+                combatantBehavior FOLLOW_ENEMY|4, 15, NONE, 0, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

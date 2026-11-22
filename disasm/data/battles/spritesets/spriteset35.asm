@@ -12,51 +12,51 @@ BattleSpriteset35:
                 dc.b 1
                 
                 ; Allies
-                allyCombatant 0, 45, 8
+                allyCombatant 0, 41, 15
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 1, 45, 7
+                allyCombatant 1, 41, 14
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 2, 44, 7
+                allyCombatant 2, 40, 14
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 3, 43, 7
+                allyCombatant 3, 39, 14
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 4, 45, 6
+                allyCombatant 4, 41, 13
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 5, 44, 6
+                allyCombatant 5, 40, 13
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 6, 43, 6
+                allyCombatant 6, 39, 13
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 7, 44, 8
+                allyCombatant 7, 40, 15
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 8, 43, 8
+                allyCombatant 8, 39, 15
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 9, 42, 6
+                allyCombatant 9, 38, 13
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 10, 42, 7
+                allyCombatant 10, 38, 14
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                allyCombatant 11, 42, 8
+                allyCombatant 11, 38, 15
                 combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 

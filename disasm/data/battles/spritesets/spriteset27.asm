@@ -5,7 +5,7 @@ BattleSpriteset27:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 16
+                dc.b 17
                 ; # AI Regions
                 dc.b 4
                 ; # AI Points
@@ -124,6 +124,10 @@ BattleSpriteset27:
                 enemyCombatant DARK_SNIPER, 16, 21
                 combatantAiAndItem ATTACKER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|0, 2, NONE, 2, 0, STARTING
+                
+                enemyCombatant WYVERN, 7, 23
+                combatantAiAndItem ATTACKER3, NOTHING
+                combatantBehavior FOLLOW_ENEMY|10, 15, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

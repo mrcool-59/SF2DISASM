@@ -37,7 +37,7 @@ BattleSpriteset05:
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
                 ; Enemies
-                enemyCombatant GALAM_KNIGHT, 17, 4
+                enemyCombatant GALAM_KNIGHT, 17, 2
                 combatantAiAndItem LEADER, NOTHING
                 combatantBehavior MOVE_TO|0, 0, NONE, 15, 0, STARTING
                 
@@ -80,5 +80,5 @@ BattleSpriteset05:
                 dc.b 0
                 
                 ; AI Points
-                dc.b 17, 4
+                dc.b 17, 2
                 

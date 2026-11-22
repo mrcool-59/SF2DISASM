@@ -5,7 +5,7 @@ BattleSpriteset21:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 12
+                dc.b 15
                 ; # AI Regions
                 dc.b 4
                 ; # AI Points
@@ -107,6 +107,18 @@ BattleSpriteset21:
                 
                 enemyCombatant ARROW_LAUNCHER, 26, 33
                 combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant DARK_MADAM, 18, 30
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 0, NONE, 15, 0, STARTING
+                
+                enemyCombatant HIGH_PRIEST, 16, 30
+                combatantAiAndItem HEALER3, NOTHING
+                combatantBehavior FOLLOW_ENEMY|12, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant HARPY, 25, 35
+                combatantAiAndItem HEALER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
                 ; AI Regions

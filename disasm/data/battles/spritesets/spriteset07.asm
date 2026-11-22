@@ -5,7 +5,7 @@ BattleSpriteset07:
                 ; # Allies
                 dc.b 7
                 ; # Enemies
-                dc.b 10
+                dc.b 12
                 ; # AI Regions
                 dc.b 4
                 ; # AI Points
@@ -80,6 +80,14 @@ BattleSpriteset07:
                 enemyCombatant GALAM_KNIGHT, 7, 29
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant GALAM_MAGE, 4, 19
+                combatantAiAndItem SENTRY, NOTHING
+                combatantBehavior FOLLOW_ENEMY|0, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant GALAM_KNIGHT, 3, 19
+                combatantAiAndItem SENTRY, NOTHING
+                combatantBehavior FOLLOW_ENEMY|0, 15, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4

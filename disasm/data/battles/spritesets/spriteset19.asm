@@ -5,7 +5,7 @@ BattleSpriteset19:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 15
+                dc.b 16
                 ; # AI Regions
                 dc.b 3
                 ; # AI Points
@@ -61,73 +61,86 @@ BattleSpriteset19:
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
                 ; Enemies
-                enemyCombatant ORC, 14, 19
+                enemyCombatant ORC, 23, 19
                 combatantAiAndItem LEADER, NOTHING
                 combatantBehavior MOVE_TO|0, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant HIGH_PRIEST, 15, 18
+                enemyCombatant HIGH_PRIEST, 24, 18
                 combatantAiAndItem HEALER3, SHINING_BALL|USABLE_BY_AI|UNUSED_ITEM_DROP
                 combatantBehavior FOLLOW_ENEMY|0, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant SOULSOWER, 16, 21
+                enemyCombatant SOULSOWER, 25, 21
                 combatantAiAndItem ATTACKER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|0, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant GARGOYLE, 13, 18
+                enemyCombatant GARGOYLE, 22, 18
                 combatantAiAndItem ATTACKER2, NOTHING
                 combatantBehavior NONE, 2, NONE, 15, 0, STARTING
                 
-                enemyCombatant HIGH_PRIEST, 16, 12
+                enemyCombatant HIGH_PRIEST, 21, 14
                 combatantAiAndItem HEALER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|5, 1, NONE, 15, 0, STARTING
                 
-                enemyCombatant ORC, 17, 13
+                enemyCombatant ORC, 22, 13
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 1, NONE, 15, 0, STARTING
                 
-                enemyCombatant DARK_MADAM, 26, 14
+                enemyCombatant DARK_MADAM, 31, 14
                 combatantAiAndItem ATTACKER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|7, 0, NONE, 15, 0, STARTING
                 
-                enemyCombatant SOULSOWER, 24, 16
+                enemyCombatant SOULSOWER, 29, 16
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 0, NONE, 15, 0, STARTING
                 
-                enemyCombatant GARGOYLE, 26, 21
+                enemyCombatant GARGOYLE, 29, 19
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 0, NONE, 15, 0, STARTING
                 
-                enemyCombatant ORC, 23, 27
+                enemyCombatant ORC, 28, 20
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 0, NONE, 15, 0, STARTING
                 
-                enemyCombatant ARROW_LAUNCHER, 30, 13
+                enemyCombatant ARROW_LAUNCHER, 32, 13
                 combatantAiAndItem ATTACKER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|11, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant SOULSOWER, 32, 15
+                enemyCombatant SOULSOWER, 34, 15
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant SOULSOWER, 38, 21
+                enemyCombatant SOULSOWER, 40, 19
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant ARROW_LAUNCHER, 40, 22
+                enemyCombatant ARROW_LAUNCHER, 41, 19
                 combatantAiAndItem ATTACKER3, NOTHING
                 combatantBehavior FOLLOW_ENEMY|12, 15, NONE, 15, 0, STARTING
                 
-                enemyCombatant GARGOYLE, 38, 3
+                enemyCombatant GARGOYLE, 34, 6
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant GARGOYLE, 39, 22
+                combatantAiAndItem ATTACKER2, NOTHING
+                combatantBehavior NONE, 2, NONE, 15, 0, STARTING
                 
                 ; AI Regions
                 dc.b 4
                 dc.b 0
                 dc.b 0, 0
                 dc.b 0, 31
-                dc.b 35, 31
-                dc.b 35, 0
+                dc.b 39, 31
+                dc.b 39, 0
+                dc.b 0
+                dc.b 0
+                
+                dc.b 4
+                dc.b 0
+                dc.b 0, 0
+                dc.b 0, 31
+                dc.b 33, 31
+                dc.b 33, 0
                 dc.b 0
                 dc.b 0
                 
@@ -140,15 +153,6 @@ BattleSpriteset19:
                 dc.b 0
                 dc.b 0
                 
-                dc.b 4
-                dc.b 0
-                dc.b 0, 0
-                dc.b 0, 31
-                dc.b 23, 31
-                dc.b 23, 0
-                dc.b 0
-                dc.b 0
-                
                 ; AI Points
-                dc.b 14, 19
+                dc.b 23, 19
                 

@@ -5,7 +5,7 @@ BattleSpriteset29:
                 ; # Allies
                 dc.b 12
                 ; # Enemies
-                dc.b 15
+                dc.b 16
                 ; # AI Regions
                 dc.b 4
                 ; # AI Points
@@ -118,6 +118,10 @@ BattleSpriteset29:
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
                 enemyCombatant WYVERN, 6, 29
+                combatantAiAndItem ATTACKER1, NOTHING
+                combatantBehavior NONE, 15, NONE, 15, 0, STARTING
+                
+                enemyCombatant WYVERN, 24, 28
                 combatantAiAndItem ATTACKER1, NOTHING
                 combatantBehavior NONE, 15, NONE, 15, 0, STARTING
                 
