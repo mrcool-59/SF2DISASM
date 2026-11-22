@@ -473,8 +473,14 @@ AdjustEnemyBaseAttForDifficulty:
                 
                 clr.l   d1
                 jsr     GetBaseDef
+				chkFlg	805				; Second half of the game will grant higher adjustment to bosses
+				bne.s   @BossSecondHalf
                 mulu.w  #9,d1
-                lsr.l   #3,d1           ; if SPICY difficulty, multiply base DEF by 1.125 for bosses
+				bra.s   @BossApplyDef
+			@BossSecondHalf:
+                mulu.w  #10,d1
+			@BossApplyDef:
+                lsr.l   #3,d1           ; if SPICY difficulty, multiply base DEF by 1.125 (1st half) or 1.25 (2nd half) for bosses
                 jsr     SetBaseDef
 
 @Done:
