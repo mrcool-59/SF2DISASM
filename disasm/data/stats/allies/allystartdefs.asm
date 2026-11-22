@@ -96,7 +96,7 @@ table_AllyStartDefinitions:
                 startClass BDMN         ; 10: LUKE
                 startLevel 14
                 startItems &
-                    MIDDLE_SWORD|EQUIPPED, &
+                    LONG_SWORD|EQUIPPED, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
