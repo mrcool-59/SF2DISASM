@@ -2040,8 +2040,8 @@ chanceToDodgeDefault = 32               ; 1/32
 
     if (STANDARD_BUILD=1)
 chanceToDodgeForMuddledAttacker = 128   ; n/256
-chanceToDodgeForAirborneTarget = 32     ; 
-chanceToDodgeDefault = 8                ; 
+chanceToDodgeForAirborneTarget = 38     ; roughly 15%
+chanceToDodgeDefault = 13               ; roughly 5%
     endif
 
 CHANCE_TO_DODGE_FOR_MUDDLED_ATTACKER: equ chanceToDodgeForMuddledAttacker ; 1/2 chance to dodge if attacker is muddled
