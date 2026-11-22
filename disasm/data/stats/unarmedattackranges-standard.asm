@@ -8,6 +8,7 @@ table_UnarmedAttackRangesForClasses:
                 dc.b CLASS_BRGN, 1, 2
                 dc.b CLASS_TORT, 1, 2
 				dc.b CLASS_MNST, 1, 2
+				dc.b CLASS_33, 1, 2
 				dc.b CLASS_35, 1, 2
 				
                 tableEnd.b
