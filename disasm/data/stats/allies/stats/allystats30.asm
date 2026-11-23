@@ -1,8 +1,8 @@
 
 AllyStats30:    forClass  CLASS_32	; Phoenix Kid
-                hpGrowth  10, 42, LINEAR
+                hpGrowth  12, 42, LINEAR
                 mpGrowth  5, 15, LINEAR
-                attGrowth 10, 55, LINEAR
+                attGrowth 12, 55, LINEAR
                 defGrowth 8, 39, LINEAR
                 agiGrowth 7, 34, LINEAR
                 spellList &
