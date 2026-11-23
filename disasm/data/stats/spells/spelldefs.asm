@@ -707,7 +707,7 @@ table_SpellDefinitions:
                 mpCost     0
                 animation  BUBBLE_BREATH|VARIATION2
                 properties TYPE_ATTACK
-                range      1, 1
+                range      1, 2
                 radius     0
                 power      15
                 

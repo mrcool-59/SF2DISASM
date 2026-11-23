@@ -166,7 +166,7 @@ PrioritizeTargetsForAttackAiCommand:
                 ; off the level bits before calling it.
                 move.w  d4,-16(a6)                  ; save full entry for later
                 move.w  d4,d1
-                andi.w  #SPELLENTRY_MASK_INDEX,d1   ; keep only the spell index
+                ; andi.w  #SPELLENTRY_MASK_INDEX,d1   ; (THIS IS A BUG) keep only the spell index
                 bsr.w   GetSpellDefinitionAddress
                 move.b  SPELLDEF_OFFSET_PROPS(a0),d2
                 andi.b  #SPELLPROPS_MASK_TYPE,d2
@@ -174,7 +174,7 @@ PrioritizeTargetsForAttackAiCommand:
 
                 ; --- MP check: cost vs current MP ---
                 move.w  -16(a6),d1
-                andi.w  #SPELLENTRY_MASK_INDEX,d1
+                ; andi.w  #SPELLENTRY_MASK_INDEX,d1   ; (THIS IS A BUG) keep only the spell index
                 bsr.w   GetSpellCost                ; out: d1 = MP cost
                 andi.w  #$00FF,d1
                 move.w  d1,-(sp)                    ; push cost
@@ -203,7 +203,7 @@ PrioritizeTargetsForAttackAiCommand:
 
                 move.w  -2(a6),d0                   ; d0 = caster
                 move.w  d4,d1
-                andi.w  #SPELLENTRY_MASK_INDEX,d1   ; keep only the spell index
+                ; andi.w  #SPELLENTRY_MASK_INDEX,d1   ; (THIS IS A BUG) keep only the spell index
                 bsr.w   GetTargetsReachableBySpell  ; fills TARGETS_REACHABLE_BY_SPELL_NUMBER
 
                 move.w  ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w,d3
@@ -260,7 +260,7 @@ PrioritizeTargetsForAttackAiCommand:
 
                 ; GetTargetsReachableBySpell reads the spell index from d1
                 move.w  -2(a6),d0
-                andi.w  #SPELLENTRY_MASK_INDEX,d1   ; keep only the spell index
+                ; andi.w  #SPELLENTRY_MASK_INDEX,d1   ; (THIS IS A BUG) keep only the spell index
                 bsr.w   GetTargetsReachableBySpell
 
                 ; ---- Filter reachable list by target side (-42(a6)) ----
