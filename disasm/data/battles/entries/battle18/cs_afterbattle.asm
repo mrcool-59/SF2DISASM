@@ -2,6 +2,9 @@
 ; ASM FILE data\battles\entries\battle18\cs_afterbattle.asm :
 ; 0x4B2F2..0x4B6CE : Cutscene after battle 18
 abcs_battle18:  textCursor 2528
+			if (STANDARD_BUILD&FIX_TAROS_CUTSCENE_WHEN_PETER_DEAD=1)
+                resetForceBattleStats
+			endif
                 loadMapFadeIn MAP_TAROS_SHRINE,7,5
                 loadMapEntities ce_4B6BE
                 setActscriptWait ALLY_BOWIE,eas_Init

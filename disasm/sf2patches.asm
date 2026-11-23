@@ -75,6 +75,7 @@ FIX_TIMER_WINDOW_POSITION:           equ 1   ; Re-positions the timer window dis
 FIX_USABLE_ITEM_VALIDATION:          equ 1   ; Compares an item's Use Spell index to the "No spell" index $3F instead of $FF.
 FIX_SPELL_ANIMATION_END_LAG:         equ 1   ; Ensure spell animation finishes at the same time actor reverts to idle animation (i.e: fixes breath animations still playing a little while while actor is idle).
 FIX_NO_ATTACK_RANDOM_SPELL_MUDDLED:  equ 1   ; Disable attack random spells (e.g: Kiwi's breath) when actor is muddled
+FIX_TAROS_CUTSCENE_WHEN_PETER_DEAD:  equ 1   ; Fix weird things happening with Peter sprite in the cutscene after Taros fight if Peter was defeated in this battle.
 
 
 ; Quality of life features
