@@ -146,9 +146,7 @@ DetermineBattleactionForAttackAiCommand:
 
 			if (STANDARD_BUILD&ENABLE_CUSTOM_AI_PROBABILITY=1)
 @UseSpellOrItem:
-                move.w  d4,d1
-                andi.b  #6,d1					; examine spell and item usability flags
-                cmpi.b  #6,d1
+                cmpi.b  #%110,d4
                 beq.w   @HasSpellAndItem		; both spells and items are available
                 btst    #1,d4
                 beq.s   @HasItemOnly			; spell not available: we will roll to use item
