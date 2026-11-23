@@ -28,7 +28,6 @@ AllyStats00:
                 agiGrowth 4, 32, EARLY
                 spellList &
                     1, EGRESS, &
-					1, SKIP_BATTLE, & ; TODO: remove this cheat!
                     22, BOLT, &
                     31, BOLT|LV2, &
                     42, BOLT|LV3, &
