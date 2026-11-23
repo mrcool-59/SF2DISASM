@@ -2220,7 +2220,7 @@ table_EnemyDefinitions:
                 baseAgi  (20+128)
                 baseMov  4
                 baseresistance WIND_NONE|LIGHTNING_WEAKNESS|ICE_WEAKNESS|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
-                baseProwess    CRITICAL150_1IN4|DOUBLE_1IN8|COUNTER_1IN8
+                baseProwess    CRITICAL150_1IN4|DOUBLE_1IN8|COUNTER_1IN16
                 items &
                     NOTHING, &
                     NOTHING, &
@@ -2240,12 +2240,12 @@ table_EnemyDefinitions:
                 level    20
                 maxHp    99
                 maxMp    0
-                baseAtt  9
-                baseDef  32
-                baseAgi  (18+128)
+                baseAtt  10
+                baseDef  30
+                baseAgi  (15+128)
                 baseMov  0
-                baseresistance WIND_MAJOR|LIGHTNING_MAJOR|ICE_MAJOR|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
-                baseProwess    CRITICAL150_1IN4|DOUBLE_1IN16|COUNTER_1IN8
+                baseresistance WIND_NONE|LIGHTNING_NONE|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
+                baseProwess    CRITICAL150_1IN8|DOUBLE_1IN16|COUNTER_1IN8
                 items &
                     TAROS_SWORD|EQUIPPED, &
                     NOTHING, &

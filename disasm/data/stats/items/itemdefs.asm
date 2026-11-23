@@ -422,7 +422,7 @@ table_ItemDefinitions:
                 
                 ; 19: Power Ring
                 equipFlags   ALL
-                equipFlags2  NONE
+                equipFlags2  ALL
                 range        0, 0
                 price        3000
                 itemType     RING|RARE|BREAKABLE
@@ -436,7 +436,7 @@ table_ItemDefinitions:
                 
                 ; 20: Protect Ring
                 equipFlags   ALL
-                equipFlags2  NONE
+                equipFlags2  ALL
                 range        0, 0
                 price        3000
                 itemType     RING|RARE|BREAKABLE
@@ -450,7 +450,7 @@ table_ItemDefinitions:
                 
                 ; 21: Quick Ring
                 equipFlags   ALL
-                equipFlags2  NONE
+                equipFlags2  ALL
                 range        0, 0
                 price        3000
                 itemType     RING|RARE|BREAKABLE
@@ -464,7 +464,7 @@ table_ItemDefinitions:
                 
                 ; 22: Running Ring
                 equipFlags   ALL
-                equipFlags2  NONE
+                equipFlags2  ALL
                 range        0, 0
                 price        3000
                 itemType     RING|RARE
@@ -1705,7 +1705,7 @@ table_ItemDefinitions:
                 price        10000
                 itemType     WEAPON|RARE|BREAKABLE
                 useSpell     BOLT|LV2
-                equipEffects INCREASE_ATT, 32, &
+                equipEffects INCREASE_ATT, 29, &
                              NONE, 0, &
                              NONE, 0, &
                              NONE, 0, &
