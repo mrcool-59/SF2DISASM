@@ -193,6 +193,9 @@ BattleLoop:
 ; ---------------------------------------------------------------------------
 @Victory:
                 
+				; If we forget to do this, Peter might have "dead" state for post battle cutscenes and that's no good
+				jsr     HealLivingAndImmortalAllies(pc)
+
                 lea     table_DisplayTimerBattles(pc), a0
                 getSavedByte CURRENT_BATTLE, d1
                 moveq   #0,d2
