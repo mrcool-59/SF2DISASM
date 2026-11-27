@@ -1174,6 +1174,7 @@ spellEffect_Blast:
 spellEffect_DemonBreath:
                 
                 moveq   #CHANCE_TO_CRITICAL_DEMON_BREATH,d3 ; no chance to critical hit
+				; NOTE: this is followed by battlesceneScript_CalculateSpellDamage!
 
     ; End of function spellEffect_DemonBreath
 
