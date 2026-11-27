@@ -1896,7 +1896,7 @@ table_ItemDefinitions:
                 
                 ; 124: Life Ring
                 equipFlags   ALL
-                equipFlags2  NONE
+                equipFlags2  ALL
                 range        0, 0
                 price        5000
                 itemType     RING|RARE
@@ -1924,7 +1924,7 @@ table_ItemDefinitions:
                 
                 ; 126: Chirrup Sandals
                 equipFlags   ALL
-                equipFlags2  NONE
+                equipFlags2  ALL
                 range        0, 0
                 price        5
                 itemType     RING|RARE
