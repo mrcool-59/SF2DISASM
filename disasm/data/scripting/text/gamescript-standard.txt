@@ -234,7 +234,7 @@
 0232=00E8=I'll let you decide the{N}difficulty level at this time.
 0233=00E9=Takin' it easy, eh?{W2}
 0234=00EA=Hmm, good choice.{W2}{CLEAR}This is the intended experience{N}for a first playthrough.{W1}
-0235=00EB=You're a brave person!{W2}{CLEAR}This is the intended experience{N}for confirmed players.{W2}{CLEAR}Monsters will have:{N}12.5% higher ATT (weapon ATT{N}is included){W2}{N}12.5% more HP and 25% more MP{N}This HP/MP boost is doubled in{N}the second half of the game.{W2}{N}Bosses don't get extra HP/MP.{W2}{CLEAR}Instead, bosses get 12.5% DEF.{N}This DEF boost is doubled in{N}the second half of the game.{W1}
+0235=00EB=You're a brave person!{W2}{CLEAR}This is the intended experience{N}for confirmed players.{W2}{CLEAR}Monsters will have:{N}15% more ATT (weapon ATT{N}is included){W2}{N}15% more magic damage{N}and 30% more MP (yes...{D1}{N}be careful hee,{D1} hee,{D1} hee!){W2}{CLEAR}15% more HP, this is doubled in{N}the second half of the game.{N}Bosses don't get extra HP/MP.{W2}{CLEAR}Instead, bosses get 15% DEF.{N}This DEF boost is doubled in{N}the second half of the game.{W1}
 0236=00EC=What?  Do you wanna die?!{W2}
 0237=00ED=Ooops!  Record {#} has{N}vanished!{W2}
 0238=00EE=Finally, you've fulfilled my{N}wish!{N}{D2}{D2}Thanks to you, I can{N}escape from this forest!{D2}{N}Are you really that{N}surprised?{D2}{D2}{D2}

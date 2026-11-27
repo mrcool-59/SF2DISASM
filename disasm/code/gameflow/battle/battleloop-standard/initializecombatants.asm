@@ -394,7 +394,8 @@ AdjustEnemyBaseAttForDifficulty:
                 clr.l   d1
                 jsr     GetCurrentAtt
 				move.w  d1,d2
-                lsr.w   #3,d2           ; if SPICY difficulty, multiply current ATT by 0.125 and add this to base ATT
+                mulu.w  #3,d2
+                divu.w  #20,d2          ; if SPICY difficulty, multiply current ATT by 0.15 and add this to base ATT
                 jsr     GetBaseAtt
 				add.w   d2,d1
                 jsr     SetBaseAtt
@@ -413,60 +414,48 @@ AdjustEnemyBaseAttForDifficulty:
 				bne.s	@SecondHalf
 
 				
-@FirstHalf:
-                
-                clr.l   d1
-                jsr     GetMaxHp
-                mulu.w  #9,d1
-                lsr.l   #3,d1           ; if SPICY difficulty, multiply HP by 1.125
-                jsr     SetMaxHp
-
-                clr.l   d1
-                jsr     GetCurrentHp
-                mulu.w  #9,d1
-                lsr.l   #3,d1           ; if SPICY difficulty, multiply HP by 1.125
-                jsr     SetCurrentHp
-
                 clr.l   d1
                 jsr     GetMaxMp
-                mulu.w  #5,d1
-                lsr.l   #2,d1           ; if SPICY difficulty, multiply MP by 1.25
+                mulu.w  #13,d1
+                divu.w  #10,d1          ; if SPICY difficulty, multiply MP by 1.30
                 jsr     SetMaxMp
 
                 clr.l   d1
                 jsr     GetCurrentMp
-                mulu.w  #5,d1
-                lsr.l   #2,d1           ; if SPICY difficulty, multiply MP by 1.25
+                mulu.w  #13,d1
+                divu.w  #10,d1          ; if SPICY difficulty, multiply MP by 1.30
                 jsr     SetCurrentMp
                 
+@FirstHalf:
+                
+                clr.l   d1
+                jsr     GetMaxHp
+                mulu.w  #23,d1
+                divu.w  #20,d1          ; if SPICY difficulty, multiply HP by 1.15
+                jsr     SetMaxHp
+
+                clr.l   d1
+                jsr     GetCurrentHp
+                mulu.w  #23,d1
+                divu.w  #20,d1          ; if SPICY difficulty, multiply HP by 1.15
+                jsr     SetCurrentHp
+
 				bra.s   @Done
 				
 @SecondHalf:
                 
                 clr.l   d1
                 jsr     GetMaxHp
-                mulu.w  #5,d1
-                lsr.l   #2,d1           ; if SPICY difficulty, multiply HP by 1.25
+                mulu.w  #13,d1
+                divu.w  #10,d1          ; if SPICY difficulty, multiply HP by 1.30
                 jsr     SetMaxHp
 
                 clr.l   d1
                 jsr     GetCurrentHp
-                mulu.w  #5,d1
-                lsr.l   #2,d1           ; if SPICY difficulty, multiply HP by 1.25
+                mulu.w  #13,d1
+                divu.w  #10,d1          ; if SPICY difficulty, multiply HP by 1.30
                 jsr     SetCurrentHp
 
-                clr.l   d1
-                jsr     GetMaxMp
-                mulu.w  #3,d1
-                lsr.l   #1,d1           ; if SPICY difficulty, multiply MP by 1.50
-                jsr     SetMaxMp
-
-                clr.l   d1
-                jsr     GetCurrentMp
-                mulu.w  #3,d1
-                lsr.l   #1,d1           ; if SPICY difficulty, multiply MP by 1.50
-                jsr     SetCurrentMp
-                
 				bra.s   @Done
 				
 @BossAdjustment:
@@ -475,12 +464,13 @@ AdjustEnemyBaseAttForDifficulty:
                 jsr     GetBaseDef
 				chkFlg	805				; Second half of the game will grant higher adjustment to bosses
 				bne.s   @BossSecondHalf
-                mulu.w  #9,d1
+                mulu.w  #23,d1
+                divu.w  #20,d1          ; if SPICY difficulty, multiply base DEF by 1.15 (1st half) for bosses
 				bra.s   @BossApplyDef
 			@BossSecondHalf:
-                mulu.w  #10,d1
+                mulu.w  #13,d1
+                divu.w  #10,d1          ; if SPICY difficulty, multiply base DEF by 1.30 (2nd half) for bosses
 			@BossApplyDef:
-                lsr.l   #3,d1           ; if SPICY difficulty, multiply base DEF by 1.125 (1st half) or 1.25 (2nd half) for bosses
                 jsr     SetBaseDef
 
 @Done:
