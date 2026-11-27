@@ -38,7 +38,20 @@ battlesceneScript_CalculateSpellDamage:
                 clr.w   d6
                 move.b  SPELLDEF_OFFSET_POWER(a0),d6
                 bsr.s   AdjustSpellPower
-                move.w  #100,d1			; 100% is the initial multiplier
+
+			if (RESISTANCE_SUPER_PERCENT<>0)
+                jsr     GetDifficulty								; d1 = difficulty level
+                cmpi.w  #DIFFICULTY_SUPER,d1
+                bne.s   @NotSuperOrNotEnemy
+                move.b  (a4),d0										; d0 = caster combatant index
+				bpl.s   @NotSuperOrNotEnemy
+                move.w  #(100+RESISTANCE_SUPER_PERCENT),d1			; d1 = resistance percentage, custom initial multiplier for SUPER difficulty level
+				bra.s   @Proceed
+@NotSuperOrNotEnemy:
+			endif
+                move.w  #100,d1										; d1 = resistance percentage, 100% is the initial multiplier
+@Proceed:
+                
                 cmpi.b  #RESISTANCESETTING_MINOR,d2
                 bne.s   @CheckMajorResistance
 				subi.w  #RESISTANCE_MINOR_PERCENT,d1
