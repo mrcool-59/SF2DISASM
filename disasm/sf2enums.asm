@@ -2045,11 +2045,11 @@ chanceToDodgeDefault = 13               ; roughly 5%
     endif
 
 CHANCE_TO_DODGE_FOR_MUDDLED_ATTACKER: equ chanceToDodgeForMuddledAttacker ; 1/2 chance to dodge if attacker is muddled
-CHANCE_TO_INFLICT_CURSE_DAMAGE: equ 2 ; 1/2 chance to inflict curse damage
+CHANCE_TO_INFLICT_CURSE_DAMAGE: equ 5 ; 1/5 chance to inflict curse damage
 CHANCE_TO_BREAK_USED_ITEM: equ 4 ; 1/4 chance to break used item
 CHANCE_TO_PERFORM_KIWI_FLAME_BREATH: equ 4 ; 1/4 chance to perform Kiwi's Flame Breath
-INACTION_CHANCE_CURSE: equ 4 ; 1/4 chance to be unable to attack due to being cursed
-INACTION_CHANCE_STUN: equ 4 ; 1/4 chance to be unable to attack due to being stunned
+INACTION_CHANCE_CURSE: equ 10 ; 1/10 chance to be unable to attack due to being cursed
+INACTION_CHANCE_STUN: equ 3 ; 1/3 chance to be unable to attack due to being stunned
 CHANCE_TO_DODGE_FOR_AIRBORNE_TARGET: equ chanceToDodgeForAirborneTarget ; 1/8 chance to dodge if target is flying or hovering, and attacker is not an archer
 CHANCE_TO_DODGE_DEFAULT: equ chanceToDodgeDefault ; 1/32 chance to dodge by default
 KIWI_FLAME_BREATH_UPGRADE_LEVEL1: equ 32 ; level as MNST (not effective level)
