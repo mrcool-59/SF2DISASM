@@ -56,23 +56,23 @@ table_SpellDefinitions:
                 power      255
                 
                 entry      AURA         ; AURA 1
-                mpCost     7
+                mpCost     8
                 animation  HEALING_FAIRY
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
-                range      0, 3
+                range      0, 2
                 radius     1
                 power      15
                 
                 entry      AURA|LV2     ; AURA 2
-                mpCost     11
+                mpCost     15
                 animation  HEALING_FAIRY|VARIATION2
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
-                range      0, 3
+                range      0, 2
                 radius     2
                 power      20
                 
                 entry      AURA|LV3     ; AURA 3
-                mpCost     15
+                mpCost     25
                 animation  HEALING_FAIRY|VARIATION3
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 3
@@ -80,7 +80,7 @@ table_SpellDefinitions:
                 power      30
                 
                 entry      AURA|LV4     ; AURA 4
-                mpCost     30
+                mpCost     50
                 animation  HEALING_FAIRY|VARIATION4
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 0
