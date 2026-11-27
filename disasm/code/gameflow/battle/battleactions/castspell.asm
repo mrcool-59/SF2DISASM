@@ -120,13 +120,13 @@ spellEffect_Heal:
                 move.b  (a5),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B16A       
+                bne.s   @Enemy       
                 executeAllyReaction d6,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
-                bra.s   byte_B17A       
-byte_B16A:
+                bra.s   @BattleMessage       
+@Enemy:
                 
                 executeEnemyReaction d6,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
-byte_B17A:
+@BattleMessage:
                 
                 displayMessage #MESSAGE_BATTLE_RECOVERED_HIT_POINTS,d0,#0,d6 
                                                         ; Message, Combatant, Item or Spell, Number
@@ -173,10 +173,10 @@ spellEffect_Detox:
                 tst.b   d2
                 beq.w   @Ineffective
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B1F4       
+                bne.s   @Enemy       
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @GiveEXP
-byte_B1F4:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @GiveEXP:
@@ -242,10 +242,10 @@ spellEffect_Boost:
 @WriteScriptCommands:
                 
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B2B6       
+                bne.s   @Enemy       
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @BattleMessage
-byte_B2B6:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
@@ -320,10 +320,10 @@ spellEffect_Slow:
 @WriteScriptCommands:
                 
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B350       ; @Reaction_Enemy
+                bne.s   @Enemy
                 executeAllyReaction #0,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @GiveEXP
-byte_B350:
+@Enemy:
                 
                 @Reaction_Enemy:
                 executeEnemyReaction #0,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
@@ -390,10 +390,10 @@ spellEffect_Attack:
 @WriteScriptCommands:
                 
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B3E2       
+                bne.s   @Enemy       
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @BattleMessage
-byte_B3E2:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
@@ -450,10 +450,10 @@ spellEffect_Dispel:
                 jsr     GetStatusEffects
                 ori.w   #STATUSEFFECT_SILENCE,d1
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B45A       
+                bne.s   @Enemy       
                 executeAllyReaction #0,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @BattleMessage
-byte_B45A:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
@@ -501,10 +501,10 @@ spellEffect_Muddle:
 @WriteScriptCommands:
                 
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B4EA       
+                bne.s   @Enemy       
                 executeAllyReaction #0,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @BattleMessage
-byte_B4EA:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
@@ -552,10 +552,10 @@ spellEffect_Desoul:
                 bsr.w   battlesceneScript_DetermineSpellEffectiveness
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B53C       
+                bne.s   @Enemy       
                 executeAllyReaction #$8000,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @DetermineBattleMessage
-byte_B53C:
+@Enemy:
                 
                 executeEnemyReaction #$8000,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
 @DetermineBattleMessage:
@@ -564,11 +564,11 @@ byte_B53C:
                 btst    #COMBATANT_BIT_ENEMY,d0
                 bne.s   @EnemyMessage
                 move.w  #MESSAGE_BATTLE_SOUL_WAS_STOLEN_ALLY,d2 ; ally message
-                bra.s   byte_B562       
+                bra.s   @BattleMessage       
 @EnemyMessage:
                 
                 move.w  #MESSAGE_BATTLE_SOUL_WAS_STOLEN_ENEMY,d2
-byte_B562:
+@BattleMessage:
                 
                 displayMessage d2,d0,#0,#0 ; Message, Combatant, Item or Spell, Number
                 move.b  #-1,targetDies(a2)
@@ -591,10 +591,10 @@ spellEffect_Sleep:
                 jsr     GetStatusEffects
                 ori.w   #STATUSEFFECT_SLEEP,d1
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B5A8       
+                bne.s   @Enemy       
                 executeAllyReaction #0,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @BattleMessage
-byte_B5A8:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
@@ -640,10 +640,10 @@ spellEffect_AbsorbMp:
                 move.b  (a4),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B642       
+                bne.s   @EnemyActor       
                 executeAllyReaction #0,d2,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @DetermineMessage
-byte_B642:
+@EnemyActor:
                 
                 executeEnemyReaction #0,d2,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @DetermineMessage:
@@ -653,12 +653,12 @@ byte_B642:
                 btst    #COMBATANT_BIT_ENEMY,d0
                 bne.s   @EnemyMessage
                 move.w  #MESSAGE_BATTLE_ABSORBED_MAGIC_POINTS,d1 ; ally message
-                bra.s   byte_B66C       
+                bra.s   @BattleMessage       
 @EnemyMessage:
                 
                 move.b  (a5),d0
                 move.w  #MESSAGE_BATTLE_MP_WAS_DRAINED_BY,d1
-byte_B66C:
+@BattleMessage:
                 
                 displayMessage d1,d0,#0,d2 ; Message, Combatant, Item or Spell, Number
                 rts
@@ -676,10 +676,10 @@ spellEffect_PowerWater:
                 move.b  (a5),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B6A2       
+                bne.s   @Enemy       
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @Continue
-byte_B6A2:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @Continue:
@@ -708,10 +708,10 @@ spellEffect_ProtectMilk:
                 move.b  (a5),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B708       
+                bne.s   @Enemy
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @BattleMessage
-byte_B708:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
@@ -740,10 +740,10 @@ spellEffect_QuickChicken:
                 move.b  (a5),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B76E       
+                bne.s   @Enemy
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @BattleMessage
-byte_B76E:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
@@ -772,10 +772,10 @@ spellEffect_RunningPimento:
                 move.b  (a5),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B7D4       
+                bne.s   @Enemy
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @DetermineIncreaseValue
-byte_B7D4:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @DetermineIncreaseValue:
@@ -783,12 +783,12 @@ byte_B7D4:
                 jsr     GetBaseMov
                 clr.w   d2
                 cmpi.b  #9,d1
-                beq.w   byte_B802       
+                beq.w   @BattleMessage
                 moveq   #1,d2
                 cmpi.b  #8,d1
-                beq.w   byte_B802       
+                beq.w   @BattleMessage
                 moveq   #2,d2
-byte_B802:
+@BattleMessage:
                 
                 displayMessage #MESSAGE_BATTLE_MOVEMENT_RANGE_IS_ENLARGED_BY,d0,#0,d2 
                                                         ; Message, Combatant, Item or Spell, Number
@@ -810,12 +810,11 @@ spellEffect_CheerfulBread:
                 move.b  (a5),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B848       ; @Reaction_Enemy
+                bne.s   @Enemy
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @Message
-byte_B848:
+@Enemy:
                 
-                @Reaction_Enemy:
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @Message:
                 
@@ -850,10 +849,10 @@ spellEffect_BrightHoney:
                 move.b  (a5),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B8BA       
+                bne.s   @Enemy
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @BattleMessage
-byte_B8BA:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
@@ -896,10 +895,10 @@ spellEffect_BraveApple:
                 move.b  (a5),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_B93A       
+                bne.s   @Enemy
                 executeAllyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @BattleMessage
-byte_B93A:
+@Enemy:
                 
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
@@ -1000,13 +999,13 @@ spellEffect_FairyTear:
                 move.b  (a5),d0
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_BA6C       
+                bne.s   @Enemy
                 executeAllyReaction #0,d6,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
-                bra.s   byte_BA7C       
-byte_BA6C:
+                bra.s   @BattleMessage       
+@Enemy:
                 
                 executeEnemyReaction #0,d6,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
-byte_BA7C:
+@BattleMessage:
                 
                 displayMessage #MESSAGE_BATTLE_RECOVERED_MAGIC_POINTS,d0,#0,d6 
                                                         ; Message, Combatant, Item or Spell, Number
