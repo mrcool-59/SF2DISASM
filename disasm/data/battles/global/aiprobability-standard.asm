@@ -50,11 +50,12 @@ table_AIProbabilityPerMoveType:
 table_AIProbabilityPerEnemyType:
 				;                              S  |  I  |  S - I
 				dc.b ENEMY_KRAKEN_HEAD,       64,   64,   32, 64
+				dc.b ENEMY_TAROS,             26,   26,   26, 52
 				dc.b ENEMY_ZALBARD,           32,   32,   32, 64
-				dc.b ENEMY_CAMEELA,           32,   32,   32, 64
+				dc.b ENEMY_CAMEELA,           26,   26,   26, 52
 				dc.b ENEMY_RED_BARON,         16,   16,   16, 32
 				dc.b ENEMY_GESHP,             58,   58,   45, 58
-				dc.b ENEMY_ODD_EYE,           22,   22,   22, 45
+				dc.b ENEMY_ODD_EYE,           26,   26,   26, 52
                 tableEnd.b
 				
 table_AIProbabilityDefault:
