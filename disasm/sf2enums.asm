@@ -2024,7 +2024,7 @@ CHANCE_TO_INFLICT_MUDDLE1: equ 45 ; 45/64 base chance to inflict muddle 1
 CHANCE_TO_INFLICT_MUDDLE2: equ 24 ; 24/64 base chance to inflict muddle 2
 CHANCE_TO_INFLICT_DESOUL: equ 13 ; 13/64 base chance to inflict desoul
 CHANCE_TO_INFLICT_DESOUL_BETTER: equ 51 ; 51/64 base chance to inflict desoul when target is below 50% HP
-CHANCE_TO_INFLICT_SLOW: equ 45 ; 45/64 base chance to inflict slow
+CHANCE_TO_INFLICT_SLOW: equ 51 ; 51/64 base chance to inflict slow
 CHANCE_TO_INFLICT_SILENCE: equ 45 ; 45/64 base chance to inflict silence
 CHANCE_TO_INFLICT_SLEEP: equ 32 ; 32/64 base chance to inflict sleep
 CHANCE_TO_INFLICT_STUN: equ 16 ; 16/64 base chance to inflict stun
