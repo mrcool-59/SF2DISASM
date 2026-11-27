@@ -523,7 +523,7 @@ CLASS_ACHR: equ 5
 CLASS_BDMN: equ 6
 CLASS_WFMN: equ 7
 CLASS_RNGR: equ 8
-CLASS_PHNK: equ 9
+CLASS_PHNK: equ 9	; Brass Drake
 CLASS_THIF: equ 10
 CLASS_TORT: equ 11
 CLASS_HERO: equ 12
@@ -540,17 +540,17 @@ CLASS_BRGN: equ 22
 CLASS_BDBT: equ 23
 CLASS_WFBR: equ 24
 CLASS_BWNT: equ 25
-CLASS_PHNX: equ 26
+CLASS_PHNX: equ 26	; Brass Dragon
 CLASS_NINJ: equ 27
 CLASS_MNST: equ 28
 CLASS_RBT: equ 29
 CLASS_GLM: equ 30
 CLASS_RDBN: equ 31
     if (STANDARD_BUILD&EXPANDED_CLASSES=1)
-CLASS_32: equ 32
-CLASS_33: equ 33
+CLASS_32: equ 32	; Phoenix Kid
+CLASS_33: equ 33	; Phoenix
 CLASS_34: equ 34	; Gold Dragon
-CLASS_35: equ 35
+CLASS_35: equ 35	; Serpent Dragon
 CLASS_36: equ 36
 CLASS_37: equ 37
 CLASS_38: equ 38

@@ -4391,3 +4391,5 @@
 4389=10F5=As you can see,{N}I got uninvited guests while{N}I was taking a nap.{W2}
 4390=10F6=Aww.{D1} That's a shame after{N}all the work you did here.{W1}
 4391=10F7={CLEAR}One more thing. The AGI stat{N}does a few extra things here...{W2}{N}It will affect chance to dodge{N}(1% per AGI point difference){N}and chance to double attack.{W2}{N}Characters with 8 AGI points{N}advantage will avoid all double{N}attacks. Keep that in mind...{W1}
+4392=10F8=You grew up quickly too, by{N}the way.{W1}
+4393=10F9=... {D1}... {D1}{D1}Good point.{W1}

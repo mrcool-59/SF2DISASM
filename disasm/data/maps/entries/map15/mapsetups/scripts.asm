@@ -96,4 +96,25 @@ cs_5D04E:       textCursor 2006
                 followEntity FOLLOWER_B,ALLY_PETER,2
                 followEntity ALLY_SKREECH,ALLY_BOWIE,5
                 fly ALLY_SKREECH,$0
+				; ------------------------------
+				executeSubroutine csub_CheckIxenPromo
+				jumpIfFlagClear 89,@Skip
+				textCursor 4392
+                nextSingleText $80,ALLY_SKREECH ; "You grew up quickly too, by{N}the way.{W1}"
+                nextSingleText $0,ALLY_PETER ; "... {D1}... {D1}{D1}Good point.{W1}"
+			@Skip:
+				; ------------------------------
                 csc_end
+
+csub_CheckIxenPromo:
+	moveq	#ALLY_PETER,d0
+	jsr		GetClass
+	cmpi.w  #CLASS_PHNX,d1
+	bne.s   @Clear
+	setFlg  89
+	bra.s 	@Return
+@Clear:
+	clrFlg  89
+@Return:	
+	rts
+
