@@ -720,7 +720,7 @@ table_ItemDefinitions:
                 range        1, 1
                 price        7200
                 itemType     WEAPON|RARE|BREAKABLE
-                useSpell     BLAZE|LV2
+                useSpell     KATON|LV1
                 equipEffects INCREASE_ATT, 32, &
                              NONE, 0, &
                              NONE, 0, &
