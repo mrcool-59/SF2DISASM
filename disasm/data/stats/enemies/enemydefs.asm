@@ -1590,7 +1590,7 @@ table_EnemyDefinitions:
                 level    24
                 maxHp    38
                 maxMp    0
-                baseAtt  11
+                baseAtt  10
                 baseDef  37
                 baseAgi  35
                 baseMov  5
@@ -1615,7 +1615,7 @@ table_EnemyDefinitions:
                 level    30
                 maxHp    46
                 maxMp    0
-                baseAtt  50
+                baseAtt  48
                 baseDef  53
                 baseAgi  40
                 baseMov  5
@@ -1640,7 +1640,7 @@ table_EnemyDefinitions:
                 level    33
                 maxHp    61
                 maxMp    0
-                baseAtt  44
+                baseAtt  40
                 baseDef  55
                 baseAgi  44
                 baseMov  7
@@ -1690,7 +1690,7 @@ table_EnemyDefinitions:
                 level    41
                 maxHp    67
                 maxMp    0
-                baseAtt  59
+                baseAtt  56
                 baseDef  57
                 baseAgi  55
                 baseMov  7
