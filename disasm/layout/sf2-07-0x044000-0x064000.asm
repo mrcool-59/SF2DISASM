@@ -65,6 +65,8 @@
                 includeIfStandard "code\gameflow\battle\cutscenes\regionactivatedcutscenes-standard.asm"
                 includeIfVanilla "code\gameflow\battle\cutscenes\regionactivatedcutscenes.asm"    ; Region-activated cutscenes functions
                 include "data\battles\cutscenes\regionactivatedcutscenes.asm"    ; Region-activated cutscenes data
+				includeIfStandard "data\scripting\map\debugscripts.asm"    ; Debugging scripts
+                includeIfStandard "data\battles\entries\battlecutscenesstorage.asm"
                 include "code\common\tech\graphics\flashwhite.asm"    ; Flash white function and script
                 include "data\scripting\map\cs_introendroutine.asm"    ; Subroutine launching intro and end cutscenes
                 include "data\scripting\map\cs_intro1.asm"    ; Intro cutscene 1
@@ -73,8 +75,8 @@
                 include "data\scripting\map\cs_intro4.asm"    ; Intro cutscene 4
                 include "data\scripting\map\cs_intro_stormeffect.asm"    ; Storm Effect
                 include "data\scripting\map\cs_end.asm"    ; End cutscene
-                include "data\scripting\map\debugscripts.asm"    ; Debugging scripts
-                include "data\battles\entries\battlecutscenesstorage.asm"
+				includeIfVanilla "data\scripting\map\debugscripts.asm"    ; Debugging scripts
+                includeIfVanilla "data\battles\entries\battlecutscenesstorage.asm"
                 includeIfVanilla "code\common\stats\iteminventory.asm"    ; Item inventory management functions
                 include "data\maps\mapsetups.asm"    ; Map setups table
                 include "data\maps\mapsetupsstorage.asm"

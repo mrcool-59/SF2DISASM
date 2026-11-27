@@ -479,7 +479,11 @@ j_SpawnEnemyEntity:
 
 j_PlayIntroOrEndCutscene:
                 
+			if (STANDARD_BUILD=1)
+                jmp     PlayIntroOrEndCutscene
+			else
                 jmp     PlayIntroOrEndCutscene(pc)
+			endif
 
     ; End of function j_PlayIntroOrEndCutscene
 
@@ -489,7 +493,11 @@ j_PlayIntroOrEndCutscene:
 
 j_ExecuteFlashScreenScript:
                 
+			if (STANDARD_BUILD=1)
+                jmp     ExecuteFlashScreenScript
+			else
                 jmp     ExecuteFlashScreenScript(pc)
+			endif
 
     ; End of function j_ExecuteFlashScreenScript
 
