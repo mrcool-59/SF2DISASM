@@ -12,7 +12,7 @@ AllyStats13:    forClass  ACHR
                 forClass  SNIP
                 hpGrowth  33, 84, LATE
                 mpGrowth  0, 0, NONE
-                attGrowth 20, 43, LINEAR
+                attGrowth 20, 47, LINEAR
                 defGrowth 20, 62, LINEAR
                 agiGrowth 25, 67, LINEAR
                 spellList 
@@ -20,7 +20,7 @@ AllyStats13:    forClass  ACHR
                 forClass  BRGN
                 hpGrowth  33, 84, LATE
                 mpGrowth  0, 0, NONE
-                attGrowth 20, 44, LINEAR
+                attGrowth 20, 48, LINEAR
                 defGrowth 20, 80, EARLY
                 agiGrowth 24, 57, LINEAR
                 spellList 
