@@ -52,7 +52,7 @@ table_ExpectedLevelForBattles:
 	dc.b  46 ; BATTLE_VERSUS_GALAM: equ 42
 	dc.b  48 ; BATTLE_VERSUS_ZEON: equ 43
 	dc.b  25 ; BATTLE_FAIRY_WOODS: equ 44
-	dc.b  31 ; BATTLE_INSIDE_SUNNY_CAVE: equ 45
+	dc.b  32 ; BATTLE_INSIDE_SUNNY_CAVE: equ 45
 	dc.b   1 ; Unused (46)
 	dc.b   1 ; Unused (47)
 	dc.b   1 ; Unused (48)

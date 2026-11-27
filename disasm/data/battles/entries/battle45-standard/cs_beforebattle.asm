@@ -175,7 +175,7 @@ bbcs_45:        textCursor 4294
                 entity 63,63,UP,ALLY_ZYNK,eas_Init
 				entity 63,63,UP,ALLY_LEMON,eas_Init
 				; Uninvited guests
-                entity 40,7,DOWN,MAPSPRITE_DRAGONEWT,eas_Init
+                entity 39,7,DOWN,MAPSPRITE_DRAGONEWT,eas_Init
                 entity 42,6,DOWN,MAPSPRITE_BOW_MASTER,eas_Init
                 entity 45,6,DOWN,MAPSPRITE_DEVIL_SOLDIER,eas_Init
                 cscEntitiesEnd

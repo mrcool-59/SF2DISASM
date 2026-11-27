@@ -73,23 +73,23 @@ BattleSpriteset45:
 				combatantAiAndItem HEALER3, NOTHING
 				combatantBehavior FOLLOW_ENEMY|9, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant CERBERUS, 4, 12
+				enemyCombatant CERBERUS, 4, 10
 				combatantAiAndItem ATTACKER1, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant BOW_MASTER, 5, 9
+				enemyCombatant BOW_MASTER, 4, 12
 				combatantAiAndItem ATTACKER1, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant GRIFFIN, 15, 4
+				enemyCombatant HARPY_QUEEN, 15, 4
 				combatantAiAndItem ATTACKER1, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant EXECUTIONER, 5, 7
+				enemyCombatant EXECUTIONER, 4, 11
 				combatantAiAndItem ATTACKER3, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant NECROMANCER, 16, 7
+				enemyCombatant WIZARD, 16, 7
 				combatantAiAndItem ATTACKER2, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
@@ -97,15 +97,15 @@ BattleSpriteset45:
 				combatantAiAndItem ATTACKER3, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant DRAGONEWT, 15, 6
+				enemyCombatant DARK_KNIGHT, 15, 6
 				combatantAiAndItem ATTACKER1, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant DEVIL_SOLDIER, 15, 10
+				enemyCombatant ORC_LORD, 15, 10
 				combatantAiAndItem ATTACKER1, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant DRAGONEWT, 8, 6
+				enemyCombatant DRAGONEWT, 7, 6
 				combatantAiAndItem ATTACKER1, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
@@ -113,7 +113,7 @@ BattleSpriteset45:
 				combatantAiAndItem ATTACKER1, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
-				enemyCombatant NECROMANCER, 6, 6
+				enemyCombatant NECROMANCER, 4, 6
 				combatantAiAndItem ATTACKER1, NOTHING
 				combatantBehavior FOLLOW_TARGET|11, 0, NONE, 15, 0, STARTING
 
