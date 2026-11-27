@@ -323,7 +323,13 @@ CalculateBonusExp:
                 movem.l d2/a0,-(sp)
 				clr		d2
 				
-                jsr     CalculateTotalLevel			; d1 = actor total levels
+				; Additional levels earned before late-promoting are halved once promoted because they contribute significantly less to character's power
+                jsr     CalculateTotalLevel
+				move.w  d1,d2						; d2 = actor total levels
+				jsr     CalculateEffectiveLevel		; d1 = actor effective level
+				add.w   d2,d1
+				lsr.w   #1,d1						; d1 = (actor total levels + actor effective level) / 2
+				
 				getSavedByte CURRENT_BATTLE, d2		; d2 = current battle
 				
                 lea     table_ExpectedLevelForBattles(pc), a0
