@@ -1269,7 +1269,7 @@ table_EnemyDefinitions:
                 baseDef  45
                 baseAgi  48
                 baseMov  7
-                baseresistance WIND_WEAKNESS|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_NONE
+                baseresistance WIND_WEAKNESS|LIGHTNING_WEAKNESS|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_NONE
                 baseProwess    CRITICAL150_1IN8|DOUBLE_1IN16|COUNTER_1IN16
                 items &
                     NOTHING, &
@@ -1277,7 +1277,7 @@ table_EnemyDefinitions:
                     NOTHING, &
                     NOTHING
                 spells &
-                    NOTHING, &
+                    SNOW, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
@@ -1327,7 +1327,7 @@ table_EnemyDefinitions:
                     NOTHING, &
                     NOTHING
                 spells &
-                    SNOW, &
+                    SNOW|LV2, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
@@ -1377,7 +1377,7 @@ table_EnemyDefinitions:
                     NOTHING, &
                     NOTHING
                 spells &
-                    SNOW|LV2, &
+                    SNOW|LV3, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
