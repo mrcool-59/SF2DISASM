@@ -230,7 +230,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass WIZ          ; 27: CHAZ
-                startLevel 21
+                startLevel 19
                 startItems &
                     MAGE_STAFF|EQUIPPED, &
                     NOTHING, &
