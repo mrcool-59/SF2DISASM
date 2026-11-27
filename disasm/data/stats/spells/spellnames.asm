@@ -50,7 +50,7 @@ table_SpellNames:
                 spellName "BREATH"
                 spellName "THUNBR"
                 spellName "SKIP"
-                spellName "spell47"
+                spellName "TAROS"
                 spellName "spell48"
                 spellName "spell49"
                 spellName "spell50"

@@ -53,7 +53,7 @@ table_SpellElements:
                 spellElement FIRE    	; 44: DRAGON_BREATH
                 spellElement LIGHTNING  ; 45: THUNDER_BREATH
                 spellElement NEUTRAL    ; 46: SKIP_BATTLE
-                spellElement NEUTRAL    ; 47: 
+                spellElement LIGHTNING  ; 47: TAROS
                 spellElement NEUTRAL    ; 48: 
                 spellElement NEUTRAL    ; 49: 
                 spellElement NEUTRAL    ; 50: 

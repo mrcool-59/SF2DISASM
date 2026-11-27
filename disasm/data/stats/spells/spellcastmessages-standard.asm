@@ -15,7 +15,7 @@ table_SpellcastMessagesForIndexes:
                 dc.w SPELL_NEPTUN, MESSAGE_SPELLCAST_SUMMONED               ; {NAME} summoned{N}{SPELL}!{D1}
                 dc.w SPELL_ATLAS, MESSAGE_SPELLCAST_SUMMONED                ; {NAME} summoned{N}{SPELL}!{D1}
                 dc.w SPELL_DRAGON_BREATH, MESSAGE_SPELLCAST_BREATHED_FIRE   ; {NAME} breathed fire!
-				dc.w SPELL_THUNDER_BREATH, MESSAGE_SPELLCAST_THUNDER_BREATH ; {NAME} spat lightning!
+				dc.w SPELL_THUNDER_BREATH, MESSAGE_SPELLCAST_THUNDER_BREATH ; {NAME} shot lightning breath!
 				
                 tableEnd
 

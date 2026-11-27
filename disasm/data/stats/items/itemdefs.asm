@@ -1704,7 +1704,7 @@ table_ItemDefinitions:
                 range        1, 2
                 price        10000
                 itemType     WEAPON|RARE|BREAKABLE
-                useSpell     BOLT|LV2
+                useSpell     TAROS
                 equipEffects INCREASE_ATT, 29, &
                              NONE, 0, &
                              NONE, 0, &

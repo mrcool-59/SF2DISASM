@@ -833,13 +833,13 @@ table_SpellDefinitions:
                 radius     0
                 power      250
                 
-                entry      47
+                entry      TAROS
                 mpCost     0
-                animation  NONE
+                animation  BOLT|VARIATION2
                 properties TYPE_ATTACK
-                range      0, 0
-                radius     0
-                power      0
+                range      1, 3
+                radius     2
+                power      14
                 
                 entry      48
                 mpCost     0
