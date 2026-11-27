@@ -48,7 +48,7 @@ table_SpellElements:
                 spellElement ICE        ; 40: AQUA
                 spellElement FIRE       ; 41: KIWI
                 spellElement NEUTRAL    ; 42: SHINE
-                spellElement LIGHTNING  ; 43: ODDEYE
+                spellElement NEUTRAL    ; 43: ODDEYE
             if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
                 spellElement FIRE    	; 44: DRAGON_BREATH
                 spellElement LIGHTNING  ; 45: THUNDER_BREATH
