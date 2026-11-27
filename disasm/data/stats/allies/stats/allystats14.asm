@@ -5,23 +5,23 @@ AllyStats14:    forClass  KNTE
                 hpGrowth  10, 61, MIDDLE
                 mpGrowth  0, 0, NONE
                 attGrowth 7, 36, EARLY
-                defGrowth 7, 34, LATE
-                agiGrowth 6, 35, LATE
+                defGrowth 7, 36, LATE
+                agiGrowth 6, 37, LATE
                 spellList 
                 
                 forClass  PLDN
                 hpGrowth  44, 100, LATE
                 mpGrowth  0, 0, NONE
-                attGrowth 28, 57, LATE
-                defGrowth 23, 81, LATE
+                attGrowth 28, 61, LATE
+                defGrowth 23, 85, LATE
                 agiGrowth 23, 73, LATE
                 spellList 
                 
                 forClass  PGNT
                 hpGrowth  44, 100, LATE
                 mpGrowth  0, 0, NONE
-                attGrowth 28, 58, LATE
-                defGrowth 23, 88, LATE
+                attGrowth 28, 62, LATE
+                defGrowth 23, 90, LATE
                 agiGrowth 23, 69, LATE
                 spellList 
                 
