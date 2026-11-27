@@ -238,7 +238,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass RDBN         ; 28: LEMON
-                startLevel 21
+                startLevel 20
                 startItems &
                     DARK_SWORD, &
                     NOTHING, &
