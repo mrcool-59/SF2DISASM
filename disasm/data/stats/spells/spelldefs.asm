@@ -285,7 +285,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      18
+                power      20
                 
                 entry      BLAZE|LV4    ; BLAZE 4
                 mpCost     10
@@ -293,7 +293,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      45
+                power      50
                 
                 entry      FREEZE       ; FREEZE 1
                 mpCost     3
@@ -301,15 +301,15 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      11
+                power      10
                 
                 entry      FREEZE|LV2   ; FREEZE 2
-                mpCost     7
+                mpCost     5
                 animation  FREEZE|VARIATION2
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     0
-                power      15
+                power      14
                 
                 entry      FREEZE|LV3   ; FREEZE 3
                 mpCost     12
@@ -317,7 +317,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     1
-                power      21
+                power      18
                 
                 entry      FREEZE|LV4   ; FREEZE 4
                 mpCost     12
@@ -325,7 +325,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     0
-                power      55
+                power      48
                 
                 entry      BOLT         ; BOLT 1
                 mpCost     8
@@ -341,7 +341,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     2
-                power      18
+                power      19
                 
                 entry      BOLT|LV3     ; BOLT 3
                 mpCost     20
@@ -352,12 +352,12 @@ table_SpellDefinitions:
                 power      28
                 
                 entry      BOLT|LV4     ; BOLT 4
-                mpCost     20
+                mpCost     15
                 animation  BOLT|VARIATION4
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     0
-                power      65
+                power      56
                 
                 entry      BLAST        ; BLAST 1
                 mpCost     2
@@ -368,12 +368,12 @@ table_SpellDefinitions:
                 power      8
                 
                 entry      BLAST|LV2    ; BLAST 2
-                mpCost     5
+                mpCost     4
                 animation  BLAST|VARIATION2
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
-                radius     1
-                power      10
+                radius     0
+                power      13
                 
                 entry      BLAST|LV3    ; BLAST 3
                 mpCost     8
@@ -381,7 +381,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      15
+                power      17
                 
                 entry      BLAST|LV4    ; BLAST 4
                 mpCost     8
@@ -389,7 +389,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      35
+                power      39
                 
                 entry      SPOIT        ; SPOIT 1
                 mpCost     0
@@ -471,7 +471,7 @@ table_SpellDefinitions:
                 radius     1
                 power      44
 
-                entry      SNOW|LV4     ; SNOW 4
+                entry      SNOW|LV4     ; SNOW 4 (SDRG only)
                 mpCost     0
                 animation  SNOW_BREATH|VARIATION4
                 properties TYPE_ATTACK
@@ -541,7 +541,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      0, 0
                 radius     2
-                power      20
+                power      27
                 
                 entry      LASER        ; LASER 1
                 mpCost     0
@@ -549,7 +549,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      0, 0
                 radius     3
-                power      20
+                power      22
                 
                 entry      KATON        ; KATON 1
                 mpCost     6
@@ -557,7 +557,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      14
+                power      15
                 
                 entry      KATON|LV2    ; KATON 2
                 mpCost     10
@@ -565,7 +565,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
-                power      19
+                power      20
                 
                 entry      KATON|LV3    ; KATON 3
                 mpCost     12
@@ -573,15 +573,15 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     0
-                power      47
+                power      54
 
                 entry      KATON|LV4    ; KATON 4
-                mpCost     20
+                mpCost     18
                 animation  BLAZE|VARIATION4
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     2
-                power      32
+                power      29
                 
                 entry      RAIJIN       ; RAIJIN 1
                 mpCost     15
@@ -592,7 +592,7 @@ table_SpellDefinitions:
                 power      20
                 
                 entry      RAIJIN|LV2   ; RAIJIN 2
-                mpCost     18
+                mpCost     21
                 animation  BOLT|VARIATION3
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
@@ -600,12 +600,12 @@ table_SpellDefinitions:
                 power      29
                 
                 entry      RAIJIN|LV3   ; RAIJIN 3
-                mpCost     20
+                mpCost     15
                 animation  BOLT|VARIATION4
                 properties TYPE_ATTACK|AFFECTEDBYSILENCE
                 range      1, 3
                 radius     0
-                power      63
+                power      54
                 
                 entry      DAO          ; DAO 1
                 mpCost     8
@@ -789,7 +789,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 1
                 radius     1
-                power      58
+                power      57
                 
                 entry      SHINE        ; SHINE 1
                 mpCost     0
@@ -823,7 +823,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     0
-                power      20
+                power      21
                 
                 entry      DRAGON_BREATH|LV3
                 mpCost     10
@@ -831,7 +831,7 @@ table_SpellDefinitions:
                 properties TYPE_ATTACK
                 range      1, 2
                 radius     1
-                power      25
+                power      27
 				
                 entry      DRAGON_BREATH|LV4
                 mpCost     15
@@ -842,7 +842,7 @@ table_SpellDefinitions:
                 power      40
 				
                 entry      THUNDER_BREATH
-                mpCost     6
+                mpCost     5
                 animation  THUNDER_BREATH
                 properties TYPE_ATTACK
                 range      1, 2
@@ -850,7 +850,7 @@ table_SpellDefinitions:
                 power      23
                 
                 entry      THUNDER_BREATH|LV2
-                mpCost     10
+                mpCost     9
                 animation  THUNDER_BREATH|VARIATION2
                 properties TYPE_ATTACK
                 range      1, 3
@@ -858,7 +858,7 @@ table_SpellDefinitions:
                 power      29
                 
                 entry      THUNDER_BREATH|LV3
-                mpCost     17
+                mpCost     15
                 animation  THUNDER_BREATH|VARIATION3
                 properties TYPE_ATTACK
                 range      1, 2
@@ -866,12 +866,12 @@ table_SpellDefinitions:
                 power      35
                 
                 entry      THUNDER_BREATH|LV4
-                mpCost     25
+                mpCost     20
                 animation  THUNDER_BREATH|VARIATION4
                 properties TYPE_ATTACK
                 range      1, 3
                 radius     1
-                power      45
+                power      44
 				
                 entry      SKIP_BATTLE
                 mpCost     0
