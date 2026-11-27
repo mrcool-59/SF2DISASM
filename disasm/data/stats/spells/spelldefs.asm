@@ -120,7 +120,7 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      BOOST        ; BOOST 1
-                mpCost     2
+                mpCost     4
                 animation  BUFF1
                 properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 1
@@ -128,27 +128,43 @@ table_SpellDefinitions:
                 power      15
                 
                 entry      BOOST|LV2    ; BOOST 2
-                mpCost     7
+                mpCost     10
                 animation  BUFF1|VARIATION2
                 properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 2
                 radius     1
                 power      15
+
+                entry      BOOST|LV3    ; BOOST 3
+                mpCost     20
+                animation  BUFF1|VARIATION3
+                properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
+                range      0, 2
+                radius     2
+                power      15
                 
                 entry      SLOW         ; SLOW 1
-                mpCost     5
-                animation  DEBUFF1
+                mpCost     7
+                animation  DEBUFF1|VARIATION2
                 properties TYPE_SUPPORT|AFFECTEDBYSILENCE
                 range      1, 1
                 radius     1
                 power      15
                 
                 entry      SLOW|LV2     ; SLOW 2
-                mpCost     9
+                mpCost     15
                 animation  DEBUFF1|VARIATION2
                 properties TYPE_SUPPORT|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     2
+                power      15
+
+                entry      SLOW|LV3     ; SLOW 3
+                mpCost     30
+                animation  DEBUFF1|VARIATION2
+                properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
+                range      0, 0
+                radius     0
                 power      15
                 
                 entry      ATTACK       ; ATTACK 1
@@ -158,9 +174,25 @@ table_SpellDefinitions:
                 range      1, 2
                 radius     0
                 power      15
+
+                entry      ATTACK|LV2   ; ATTACK 2
+                mpCost     12
+                animation  BUFF1|VARIATION2
+                properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
+                range      1, 2
+                radius     1
+                power      15
+                
+                entry      ATTACK|LV3   ; ATTACK 3
+                mpCost     25
+                animation  BUFF1|VARIATION3
+                properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
+                range      1, 2
+                radius     2
+                power      15
                 
                 entry      DISPEL       ; DISPEL 1
-                mpCost     5
+                mpCost     7
                 animation  DEBUFF1
                 properties TYPE_SUPPORT|AFFECTEDBYSILENCE
                 range      1, 2
@@ -168,7 +200,7 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      MUDDLE       ; MUDDLE 1
-                mpCost     6
+                mpCost     7
                 animation  DEBUFF1
                 properties TYPE_SUPPORT|AFFECTEDBYSILENCE
                 range      1, 2
@@ -176,7 +208,7 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      MUDDLE|LV2   ; MUDDLE 2
-                mpCost     11
+                mpCost     15
                 animation  DEBUFF1
                 properties TYPE_SUPPORT|AFFECTEDBYSILENCE
                 range      1, 2
@@ -200,11 +232,27 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      SLEEP        ; SLEEP 1
-                mpCost     6
-                animation  DEBUFF1
+                mpCost     10
+                animation  DEBUFF1|VARIATION3
                 properties TYPE_SUPPORT|AFFECTEDBYSILENCE
                 range      1, 2
                 radius     1
+                power      0
+                
+                entry      SLEEP|LV2    ; SLEEP 2
+                mpCost     20
+                animation  DEBUFF1|VARIATION3
+                properties TYPE_SUPPORT|AFFECTEDBYSILENCE
+                range      1, 2
+                radius     2
+                power      0
+                
+                entry      SLEEP|LV3    ; SLEEP 3
+                mpCost     40
+                animation  DEBUFF1|VARIATION3
+                properties TYPE_SUPPORT|TARGET_TEAMMATES|AFFECTEDBYSILENCE
+                range      0, 0
+                radius     0
                 power      0
                 
                 entry      EGRESS       ; EGRESS 1
