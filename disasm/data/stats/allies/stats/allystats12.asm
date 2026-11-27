@@ -12,7 +12,7 @@ AllyStats12:    forClass  KNTE
                 forClass  PLDN
                 hpGrowth  36, 92, EARLY
                 mpGrowth  0, 0, NONE
-                attGrowth 23, 44, EARLY
+                attGrowth 23, 47, EARLY
                 defGrowth 28, 93, LINEAR
                 agiGrowth 30, 74, LATE
                 spellList 
@@ -20,7 +20,7 @@ AllyStats12:    forClass  KNTE
                 forClass  PGNT
                 hpGrowth  36, 92, EARLY
                 mpGrowth  0, 0, NONE
-                attGrowth 23, 44, EARLY
+                attGrowth 23, 48, EARLY
                 defGrowth 28, 98, LINEAR
                 agiGrowth 30, 69, LATE
                 spellList 
