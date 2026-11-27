@@ -6,16 +6,20 @@
 
 
 ms_map75_InitFunction:
-                
-                chkFlg 999
-				bne.s @Skip
-				script cs_map75_SetMusic
-@Skip:
+                chkFlg  999			; Play main theme while Nazca ship has not crashed yet
+				beq.s   @NotCrashed
+				script  cs_map75_UseCrashMusic
+				bra.s   @Return
+@NotCrashed:
+                script  cs_map75_UseMainMusic
+@Return:
                 rts
+
+cs_map75_UseCrashMusic: playSound MUSIC_CUSTOM_AIRSHIP
+					    csc_end
+
+cs_map75_UseMainMusic:	playSound MUSIC_MAIN_THEME
+						csc_end
 
     ; End of function ms_map75_InitFunction
 
-
-cs_map75_SetMusic:	csWait 1
-					playSound MUSIC_MAIN_THEME		; Play main theme while Nazca ship has not crashed yet
-					csc_end

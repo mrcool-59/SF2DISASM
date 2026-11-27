@@ -10,11 +10,11 @@ ms_map59_InitFunction:
                  
                 chkFlg  999             ; Set after the Nazca ship shootdown scene
                 bne.s   byte_5EB18      
-                script  cs_5EB44
-                script  cs_5EBFC
-                script  cs_5ED06
-                script  cs_5EDB8
-                script  cs_5EF60
+                script  cs_5EB44		; NOTE: the various cutscenes have been combined into a single cutscene to have the proper music resuming behavior
+                ;script  cs_5EBFC
+                ;script  cs_5ED06
+                ;script  cs_5EDB8
+                ;script  cs_5EF60
                 setFlg  999             ; Set after the Nazca ship shootdown scene
                 setSavedByte #MAP_DOJO, EGRESS_MAP
                 setFlg  436             ; Battle 36 unlocked - BATTLE_VERSUS_PRISM_FLOWERS      
@@ -96,8 +96,9 @@ cs_5EB44:       textCursor 3699
                 nextText $0,130         ; "I was just thinking of{N}{LEADER}'s hidden powers.{W2}"
                 nextSingleText $0,130   ; "We must never underestimate{N}him.{W1}"
                 nextSingleText $0,128   ; "Anyway, it will be a{N}fantastic show!  Ha, ha!{W1}"
-                csc_end
-cs_5EBFC:       loadMapFadeIn MAP_PRISM_FLOWERS_BATTLEFIELD,8,14
+                ;csc_end
+;cs_5EBFC:
+                loadMapFadeIn MAP_PRISM_FLOWERS_BATTLEFIELD,8,14
                 textCursor 3723
                 loadMapEntities ce_5F1DE
                 setActscriptWait ALLY_BOWIE,eas_Init
@@ -105,6 +106,7 @@ cs_5EBFC:       loadMapFadeIn MAP_PRISM_FLOWERS_BATTLEFIELD,8,14
                 stopEntity 131
                 stopEntity 132
                 stopEntity 133
+				playSound SOUND_COMMAND_ACTIVATE_RESUMING
                 playSound MUSIC_BATTLE_THEME_1
                 fadeInB
                 setActscriptWait 130,eas_Init
@@ -162,8 +164,9 @@ cs_5EBFC:       loadMapFadeIn MAP_PRISM_FLOWERS_BATTLEFIELD,8,14
                 nextSingleText $80,129  ; "The Prism Flowers are waiting{N}for you!  Hee, heee!{W1}"
                 nod 129
                 nod 129
-                csc_end
-cs_5ED06:       textCursor 3729
+                ;csc_end
+;cs_5ED06:       
+                textCursor 3729
                 loadMapFadeIn MAP_OVERWORLD_NEW_GRANSEAL_KINGDOM,0,0
                 loadMapEntities ce_5F1BE
                 setActscriptWait ALLY_BOWIE,eas_Init
@@ -197,12 +200,14 @@ cs_5ED06:       textCursor 3729
                 nextSingleText $80,ALLY_PETER ; "I didn't see it.  You must be{N}seeing things because you're{N}so old!  Ha, ha!{W1}"
                 nextText $0,FOLLOWER_B  ; "(Grumble)....{W2}"
                 nextSingleText $0,FOLLOWER_B ; "Someday, {NAME;7}....{W1}"
-                csc_end
-cs_5EDB8:       textCursor 3737
+                ;csc_end
+;cs_5EDB8:       
+                textCursor 3737
                 loadMapFadeIn MAP_PRISM_FLOWERS_BATTLEFIELD,10,13
                 loadMapEntities ce_5F28E
                 setActscriptWait ALLY_BOWIE,eas_Init
                 playSound MUSIC_ENEMY_ATTACK
+				playSound SOUND_COMMAND_DEACTIVATE_RESUMING
                 setActscript 133,eas_5EF46
                 setActscript 134,eas_5EF46
                 setActscript 135,eas_5EF46
@@ -294,14 +299,9 @@ cs_5EDB8:       textCursor 3737
                 entityActionsWait 140
                  moveUpRight 10
                 endActions
-                csc_end
-eas_5EF46:       ac_animSpeedX2 ON
-                 ac_transparency ON
-                 ac_entityUncollidable OFF
-                 ac_autoFacing OFF
-                 ac_setSpeed 64,64
-                 ac_jump eas_Idle
-cs_5EF60:       textCursor 3739
+                ;csc_end
+;cs_5EF60:
+                textCursor 3739
                 loadMapFadeIn MAP_NAZCA_SHIP,4,6
                 loadEntitiesFromMapSetup 9,11,DOWN
                 executeSubroutine InitializeNazcaShipForceMembers
@@ -420,6 +420,15 @@ cs_5EF60:       textCursor 3739
                 csWait 120
                 warp MAP_NAZCA_SHIP,8,12,DOWN
                 csc_end
+				
+				
+eas_5EF46:      ac_animSpeedX2 ON
+                ac_transparency ON
+                ac_entityUncollidable OFF
+                ac_autoFacing OFF
+                ac_setSpeed 64,64
+                ac_jump eas_Idle
+
 
 ; =============== S U B R O U T I N E =======================================
 

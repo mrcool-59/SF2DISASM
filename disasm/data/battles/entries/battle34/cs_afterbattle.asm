@@ -113,7 +113,11 @@ csub_4D694:
                 
                 moveq   #ITEM_SKY_ORB,d0
                 moveq   #1,d1
+			if (STANDARD_BUILD=1)
+                jmp     ReceiveMandatoryItemWithMusicResuming
+			else
                 jmp     ReceiveMandatoryItem
+			endif
 
     ; End of function csub_4D694
 

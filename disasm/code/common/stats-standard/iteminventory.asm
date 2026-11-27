@@ -10,6 +10,17 @@
 ; Out: d0.w = 0 if item was received, 1 if there was no room, or 2 if another item was discarded
 
 
+ReceiveMandatoryItemWithMusicResuming:
+				; This variant should be called whenever some ASM routine WITHIN A CUTSCENE gives an item to the player
+            if (MUSIC_RESUMING&RESUME_MUSIC_AFTER_CUTSCENE_ITEM=1)
+                activateMusicResuming
+            endif
+				bsr.s     ReceiveMandatoryItem
+            if (MUSIC_RESUMING&RESUME_MUSIC_AFTER_CUTSCENE_ITEM=1)
+                deactivateMusicResuming
+            endif
+				rts
+
 ReceiveMandatoryItem:
                 
                 movem.l d1-d5/a0,-(sp)

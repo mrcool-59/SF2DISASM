@@ -29,6 +29,7 @@ cs_5FB6A:       textCursor 3377
                 nextSingleText $80,ALLY_PETER ; "Wow, the ship is vibrating!{W1}"
                 setFacing 128,UP
                 nextSingleText $0,128   ; "What's going on?{W1}"
+                playSound SOUND_COMMAND_FADE_OUT
                 setDest ALLY_ZYNK,11,11
                 setDest ALLY_ZYNK,14,11
                 setDest ALLY_ZYNK,15,10
@@ -39,7 +40,6 @@ cs_5FB6A:       textCursor 3377
                 nextSingleText $80,ALLY_PETER ; "But...but...{N}Woooooow!{W1}"
                 setCamDest 4,6
                 setFacing ALLY_BOWIE,UP
-                playSound SOUND_COMMAND_CUT_OUT
                 playSound SFX_BIG_DOOR_RUMBLE
                 setQuake 3
                 csWait 20

@@ -70,7 +70,7 @@ Map7_SunnyGift_ASM:
 				move.w  #0,((CURRENT_SPEECH_SFX-$1000000)).w
                 move.w  #ITEM_DRAGON_RING,d0
                 moveq   #1,d1
-                jmp     ReceiveMandatoryItem
+                jmp     ReceiveMandatoryItemWithMusicResuming
 
 
 Map7_EntityEvent11:

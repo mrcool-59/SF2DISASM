@@ -9,6 +9,7 @@ ms_map66_InitFunction:
                 chkFlg  ALLY_KAZIN    ; Play newbie music for the very first part of the overworld, while Bowie's quest is to simply go fetch Hawel
                 beq.s   @NewbieMusic
                 script  cs_map66_UseMainMusic
+				bra.s   @Return
 @NewbieMusic:
                 script  cs_map66_UseNewbieMusic
 @Return:				

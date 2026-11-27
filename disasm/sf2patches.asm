@@ -233,6 +233,7 @@ SECOND_MEMBERS_LIST_PAGE: equ secondMembersListPage
 ; Sound driver
 MUSIC_RESUMING:                     equ 1       ; Enable music resuming (musics only resume in battlescenes if they are added to 'resumingbattlescenemusics-standard.asm' list)
 RESUME_MUSIC_AFTER_JOIN_JINGLE:     equ 1       ; Resume background music after playing a "Joined the Force" jingle.
+RESUME_MUSIC_AFTER_CUTSCENE_ITEM:   equ 1       ; Resume background music after an item is given to the player in a cutscene.
 
 ; Sound driver facts [DO NOT CHANGE THESE VALUES WITHOUT UPDATING THE CUBEWIZ SOUND DRIVER CODE FIRST, these values are used by SF2 Music Cooker tool to know what it is allowed to do]
 EXPANDED_PCM_ENTRIES:		equ 128		; Set to 128 because Cubewiz sound driver layout was changed to support extra sample entries (128, up from vanilla 17).

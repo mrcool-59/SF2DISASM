@@ -62,7 +62,11 @@ csub_5FF56:
                 
                 move.w  #ITEM_FORCE_SWORD,d0
                 moveq   #1,d1
+			if (STANDARD_BUILD=1)
+                jmp     ReceiveMandatoryItemWithMusicResuming
+			else
                 jmp     ReceiveMandatoryItem
+			endif
 
     ; End of function csub_5FF56
 
