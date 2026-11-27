@@ -2388,10 +2388,10 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 94: RED BARON
                 spellPower ENHANCED
                 level    60
-                maxHp    200
+                maxHp    250
                 maxMp    0
                 baseAtt  42
-                baseDef  65
+                baseDef  62
                 baseAgi  (50+128)
                 baseMov  6
                 baseresistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_IMMUNITY
@@ -2413,22 +2413,22 @@ table_EnemyDefinitions:
                 unknownByte 0           ; 95: GESHP
                 spellPower ENHANCED
                 level    70
-                maxHp    180
+                maxHp    200
                 maxMp    150
-                baseAtt  61
-                baseDef  53
+                baseAtt  45
+                baseDef  50
                 baseAgi  (51+128)
                 baseMov  6
                 baseresistance WIND_MAJOR|LIGHTNING_MAJOR|ICE_MAJOR|FIRE_MAJOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 baseProwess    CRITICAL_SLEEP|DOUBLE_1IN8|COUNTER_1IN8
                 items &
-                    FLAIL|EQUIPPED, &
+                    MYSTERY_STAFF|EQUIPPED, &
                     PROTECT_RING|EQUIPPED, &
                     NOTHING, &
                     NOTHING
                 spells &
                     FREEZE|LV4, &
-                    NOTHING, &
+                    BOLT|LV4, &
                     NOTHING, &
                     NOTHING
                 initialStatus NONE
