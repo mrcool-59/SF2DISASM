@@ -1959,7 +1959,7 @@ table_ItemDefinitions:
                 price        5000
                 itemType     RING|RARE
                 useSpell     NOTHING
-                equipEffects INCREASE_DEF, 5, &
+                equipEffects INCREASE_DEF, 8, &
                              HP_RECOVERY, 10, &
                              NONE, 0, &
                              NONE, 0, &
