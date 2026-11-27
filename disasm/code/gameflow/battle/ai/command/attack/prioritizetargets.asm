@@ -99,7 +99,7 @@ PrioritizeTargetsForAttackAiCommand:
 ; highest-priority target for that spell. Valid means:
 ;   - the slot is not empty
 ;   - the spell is an attack-type spell (SPELLPROPS_MASK_TYPE = 0)
-;   - the caster has enough MP
+;   - the caster has enough MP (automatically downcasts to lower levels if needed)
 ;   - at least one target is within spell range
 ; ==========================================================================================
 @CheckSpellCast:
@@ -162,19 +162,18 @@ PrioritizeTargetsForAttackAiCommand:
                 beq.w   @CollectLoop
 
                 ; Check whether the spell is an attack-type spell.
-                ; GetSpellDefinitionAddress compares only the low byte of d1, so mask
-                ; off the level bits before calling it.
+                ; Pass the full spell entry (with level).
                 move.w  d4,-16(a6)                  ; save full entry for later
                 move.w  d4,d1
-                ; andi.w  #SPELLENTRY_MASK_INDEX,d1   ; (THIS IS A BUG) keep only the spell index
                 bsr.w   GetSpellDefinitionAddress
                 move.b  SPELLDEF_OFFSET_PROPS(a0),d2
                 andi.b  #SPELLPROPS_MASK_TYPE,d2
                 bne.w   @CollectLoop                ; not an attack spell -> skip slot
 
-                ; --- MP check: cost vs current MP ---
+                ; --- MP check: cost vs current MP (with automatic downcast) ---
+                move.w  d4,-16(a6)                  ; save full entry for later
+@CheckMP_Loop:
                 move.w  -16(a6),d1
-                ; andi.w  #SPELLENTRY_MASK_INDEX,d1   ; (THIS IS A BUG) keep only the spell index
                 bsr.w   GetSpellCost                ; out: d1 = MP cost
                 andi.w  #$00FF,d1
                 move.w  d1,-(sp)                    ; push cost
@@ -185,14 +184,25 @@ PrioritizeTargetsForAttackAiCommand:
 
                 move.w  (sp)+,d2                    ; d2 = cost
                 cmp.w   d2,d1
-                blt.w   @CollectLoop                ; not enough MP -> skip slot
+                bge.s   @MP_Enough                  ; if current MP >= cost, we are good
+
+                ; Not enough MP. Try downcasting to a lower level (e.g., LV2 -> LV1).
+                move.w  -16(a6),d1                  ; d1 = full entry
+                move.w  d1,d3
+                lsr.w   #SPELLENTRY_OFFSET_LV,d3
+                tst.w   d3
+                beq.w   @CollectLoop                ; level 0, can't downcast, skip slot
+                
+                subi.w  #(1<<SPELLENTRY_OFFSET_LV),d1
+                move.w  d1,-16(a6)                  ; save downcasted entry
+                bra.s   @CheckMP_Loop               ; check MP again
+                
+@MP_Enough:
+                move.w  -16(a6),d4                  ; update d4 to the downcasted entry
 
                 ; --- Range check: count targets reachable by this spell ---
-                ; GetTargetsReachableBySpell reads the spell index from d1 (via
-                ; GetSpellDefinitionAddress) to look up the spell's min/max range.
-                ; Pass only the spell index (no level bits), otherwise the definition
-                ; lookup fails and the range is wrong.
-                ; d4 is preserved across BuildTargetsArrayWithAllCombatants.
+                ; Pass the full spell entry (with level) so the game calculates
+                ; the correct min/max range for this specific spell level.
                 move.w  -2(a6),d0
                 move.w  d4,ATTACK_COMMAND_SPELL     ; set active spell
                 clr.w   ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w
@@ -203,7 +213,6 @@ PrioritizeTargetsForAttackAiCommand:
 
                 move.w  -2(a6),d0                   ; d0 = caster
                 move.w  d4,d1
-                ; andi.w  #SPELLENTRY_MASK_INDEX,d1   ; (THIS IS A BUG) keep only the spell index
                 bsr.w   GetTargetsReachableBySpell  ; fills TARGETS_REACHABLE_BY_SPELL_NUMBER
 
                 move.w  ((TARGETS_REACHABLE_BY_SPELL_NUMBER-$1000000)).w,d3
@@ -211,7 +220,6 @@ PrioritizeTargetsForAttackAiCommand:
                 beq.w   @CollectLoop                ; no targets in range -> skip slot
 
                 ; Slot passed every check: store the entry in the candidate list.
-                ; Candidates are words at -40(a6) + candidate_index * 2.
                 move.w  -14(a6),d3
                 add.w   d3,d3                       ; convert to byte offset
                 move.w  d4,-40(a6,d3.w)             ; store spell entry
@@ -258,9 +266,8 @@ PrioritizeTargetsForAttackAiCommand:
                 bsr.w   BuildTargetsArrayWithAllCombatants
                 move.w  (sp)+,d1
 
-                ; GetTargetsReachableBySpell reads the spell index from d1
+                ; GetTargetsReachableBySpell reads the full spell entry from d1
                 move.w  -2(a6),d0
-                ; andi.w  #SPELLENTRY_MASK_INDEX,d1   ; (THIS IS A BUG) keep only the spell index
                 bsr.w   GetTargetsReachableBySpell
 
                 ; ---- Filter reachable list by target side (-42(a6)) ----
@@ -295,18 +302,32 @@ PrioritizeTargetsForAttackAiCommand:
 @Proc_PriorityInner:
                 move.b  (a0,d7.w),d2                ; d2 = target
                 move.b  (a1,d7.w),d5                ; d5 = movement cost to target
+                
+                ; Temporarily strip the spell level for priority calculation.
+                ; The vanilla CalculateTargetPriorityForAttack function expects only a base
+                ; spell index and fails to calculate damage/priority if level bits are present.
+                move.w  ATTACK_COMMAND_SPELL,-(sp)  ; Save full spell entry (with level)
                 move.w  -6(a6),d1                   ; d1 = chosen spell
-                andi.w  #SPELLENTRY_MASK_INDEX,d1   ; keep only the spell index
-                bsr.w   CalculateTargetPriorityForAttack
-                move.b  d6,(a2,d7.w)                ; store priority for this target
+                move.w  d1,-(sp)                    ; Save full spell entry to d1
+                
+                andi.w  #SPELLENTRY_MASK_INDEX,d1   ; Strip level bits (e.g., leave just "Blaze")
+                move.w  d1,ATTACK_COMMAND_SPELL     ; Temporarily set the base spell
+                
+                bsr.w   CalculateTargetPriorityForAttack ; Calculate priority
+                
+                move.w  (sp)+,d1                    ; Restore full spell entry to d1
+                move.w  (sp)+,ATTACK_COMMAND_SPELL  ; Restore full spell entry to ATTACK_COMMAND_SPELL
+                
+                move.b  d6,(a2,d7.w)                ; Store priority for this target
 
+                ; Keep the highest priority target
                 cmp.w   -10(a6),d6
-                ble.s   @Proc_Next                  ; not better than current best
+                ble.s   @Proc_Next                  ; Not better than current best
 
-                move.w  d6,-10(a6)                  ; new best priority
+                move.w  d6,-10(a6)                  ; New best priority
                 move.b  (a0,d7.w),d3
-                move.w  d3,-8(a6)                   ; new best target
-                move.b  d5,-12(a6)                  ; movement to new best target
+                move.w  d3,-8(a6)                   ; New best target
+                move.b  d5,-12(a6)                  ; Movement to new best target
 @Proc_Next:
                 dbf     d7,@Proc_PriorityInner
 
@@ -334,7 +355,7 @@ PrioritizeTargetsForAttackAiCommand:
 ; ==========================================================================================
 
 @CheckAttack:
-                
+              
                 bsr.w   BuildTargetsArrayWithAllCombatants
                 bsr.w   GetTargetsReachableByAttack
                 move.w  ((FF8804_LOADING_SPACE-$1000000)).w,d7 ; # targets reachable
