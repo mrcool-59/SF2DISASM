@@ -366,7 +366,7 @@ table_EnemyDefinitions:
                 maxHp    33
                 maxMp    0
                 baseAtt  23
-                baseDef  36
+                baseDef  38
                 baseAgi  25
                 baseMov  3
                 baseresistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
