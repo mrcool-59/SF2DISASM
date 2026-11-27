@@ -812,7 +812,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 31          ; 31: CYCLOPS
                 spellPower ENHANCED
-                level    36
+                level    39
                 maxHp    64
                 maxMp    0
                 baseAtt  88
@@ -862,7 +862,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 33          ; 33: HYDRA
                 spellPower ENHANCED
-                level    39
+                level    40
                 maxHp    70
                 maxMp    0
                 baseAtt  96
@@ -1162,7 +1162,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 45          ; 45: LESSER DEMON
                 spellPower ENHANCED
-                level    22
+                level    24
                 maxHp    40
                 maxMp    21
                 baseAtt  49
@@ -1212,7 +1212,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 47          ; 47: HARPY QUEEN
                 spellPower ENHANCED
-                level    27
+                level    28
                 maxHp    53
                 maxMp    20
                 baseAtt  65
@@ -2362,7 +2362,7 @@ table_EnemyDefinitions:
                 
                 unknownByte 0           ; 93: PRISM FLOWER
                 spellPower ENHANCED
-                level    40
+                level    38
                 maxHp    62
                 maxMp    0
                 baseAtt  16
