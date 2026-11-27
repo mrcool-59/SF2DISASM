@@ -2021,14 +2021,14 @@ CHANCE_TO_INFLICT_DESOUL: equ 5 ; 3/8 base chance to inflict desoul
 CHANCE_TO_INFLICT_SLOW: equ 5 ; 3/8 base chance to inflict slow
 CHANCE_TO_INFLICT_SILENCE: equ 5 ; 3/8 base chance to inflict silence
 CHANCE_TO_INFLICT_SLEEP: equ 5 ; 3/8 base chance to inflict sleep
-CHANCE_TO_CRITICAL_BUBBLE_BREATH: equ 8 ; 1/8 chance to critical hit
+CHANCE_TO_CRITICAL_BUBBLE_BREATH: equ 32 ; 1/32 chance to critical hit
 CHANCE_TO_CRITICAL_BOLT: equ 8 ; 1/8 chance to critical hit (Bolt, Raijin, Atlas, Holy Thunder, Odd-eye beam)
 CHANCE_TO_CRITICAL_FLAME_BREATH: equ 16 ; 1/16 chance to critical hit (Flame Breath, Kiwi's Flame Breath)
 CHANCE_TO_CRITICAL_THUNDER_BREATH: equ 8 ; 1/8 chance to critical hit
 CHANCE_TO_CRITICAL_NEPTUN: equ 16 ; 1/16 chance to critical hit
 CHANCE_TO_CRITICAL_BLAZE: equ 32 ; 1/32 chance to critical hit (Blaze, Katon, Apollo, Shining Ball)
 CHANCE_TO_CRITICAL_FREEZE: equ 32 ; 1/32 chance to critical hit (Freeze, Snow Breath, Blizzard)
-CHANCE_TO_CRITICAL_BLAST: equ 32 ; 1/32 chance to critical hit (Blast, Dao)
+CHANCE_TO_CRITICAL_BLAST: equ 16 ; 1/16 chance to critical hit (Blast, Dao)
 
 ; ---------------------------------------------------------------------------
 
