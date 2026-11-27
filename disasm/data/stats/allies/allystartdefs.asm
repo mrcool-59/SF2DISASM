@@ -222,7 +222,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass RBT          ; 26: ZYNK
-                startLevel 18
+                startLevel 16
                 startItems &
                     NOTHING, &
                     NOTHING, &
@@ -246,7 +246,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass GLM          ; 29: CLAUDE
-                startLevel 19
+                startLevel 17
                 startItems &
                     NOTHING, &
                     NOTHING, &
