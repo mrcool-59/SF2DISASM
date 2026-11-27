@@ -23,6 +23,9 @@ table_RandomAttackSpellsForClasses:
 				; Sunny's dragon breath (35% chance)
 				dc.b CLASS_34, 90, 25, 34, 46, SPELL_DRAGON_BREATH
 				
+				; Zynk's beam (HARCODED: 0% chance in melee, 100% chance at range)
+				dc.b CLASS_RBT, 0, 40, 44, 48, SPELL_BEAM
+				
                 tableEnd.b
 
 

@@ -51,7 +51,7 @@ table_SpellNames:
                 spellName "THUNBR"
                 spellName "SKIP"
                 spellName "TAROS"
-                spellName "spell48"
+                spellName "BEAM"
                 spellName "spell49"
                 spellName "spell50"
                 spellName "spell51"

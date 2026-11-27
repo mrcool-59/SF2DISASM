@@ -889,13 +889,37 @@ table_SpellDefinitions:
                 radius     2
                 power      14
                 
-                entry      48
+                entry      BEAM
                 mpCost     0
-                animation  NONE
+                animation  ODD_EYE_BEAM|VARIATION2
                 properties TYPE_ATTACK
-                range      0, 0
+                range      1, 3
                 radius     0
-                power      0
+                power      20
+                
+                entry      BEAM|LV2
+                mpCost     0
+                animation  ODD_EYE_BEAM|VARIATION2
+                properties TYPE_ATTACK
+                range      1, 3
+                radius     0
+                power      26
+                
+                entry      BEAM|LV3
+                mpCost     0
+                animation  ODD_EYE_BEAM|VARIATION2
+                properties TYPE_ATTACK
+                range      1, 3
+                radius     0
+                power      33
+                
+                entry      BEAM|LV4
+                mpCost     0
+                animation  ODD_EYE_BEAM|VARIATION2
+                properties TYPE_ATTACK
+                range      1, 3
+                radius     0
+                power      40
                 
                 entry      49
                 mpCost     0

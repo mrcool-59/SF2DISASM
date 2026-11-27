@@ -52,7 +52,7 @@ table_SpellNames:
                 spellName "Thunder", 13, "Breath"
                 spellName "Skip", 13, "Battle"
                 spellName "Taros", 13, "Bolt"
-                spellName "spell48"
+                spellName "Beam"
                 spellName "spell49"
                 spellName "spell50"
                 spellName "spell51"

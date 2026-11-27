@@ -10,6 +10,7 @@ table_UnarmedAttackRangesForClasses:
 				dc.b CLASS_MNST, 1, 2
 				dc.b CLASS_33, 1, 2
 				dc.b CLASS_35, 1, 2
+				dc.b CLASS_RBT, 1, 3
 				
                 tableEnd.b
 

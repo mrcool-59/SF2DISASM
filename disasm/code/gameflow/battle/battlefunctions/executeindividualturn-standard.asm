@@ -282,6 +282,19 @@ DetermineRandomAttackSpell:
 @Continue:      jsr     (FindSpecialPropertyBytesAddressForObject).w
                 bcs.w   @Done
                 
+				; HARDCODED robot special case: 100% chance when ranged, 0% in melee
+                jsr     GetClass
+				cmpi.w	#CLASS_RBT,d1
+				bne.s	@Roll
+                lea     ((TARGETS_LIST-$1000000)).w,a0
+				clr.w   d1
+				move.b  (a0),d1							; d1.w = first target combatant index
+				jsr		GetDistanceBetweenCombatants	; d2.w = distance in blocks
+				cmpi.w	#1,d2							; distance <= 1: no special attack, otherwise special attack
+				ble.w   @Done
+				bra.s   @Apply
+
+@Roll:
                 ; Randomly determine if spell is cast
                 move.w  #256,d6
                 jsr     (GenerateRandomNumber).w
@@ -293,6 +306,7 @@ DetermineRandomAttackSpell:
                 bhs.w   @Done
                 
                 ; Determine spell level
+@Apply:
                 move.w  ((BATTLEACTION_ITEM_OR_SPELL-$1000000)).w,((BATTLEACTION_ITEM_OR_SPELL_COPY-$1000000)).w
                 move.w  #BATTLEACTION_CAST_SPELL,((CURRENT_BATTLEACTION-$1000000)).w
             if (FIX_KIWI_BREATH_UPGRADE_LEVELS=1)

@@ -367,7 +367,7 @@
 0365=016D={LEADER} and his companions{N}avoided the monsters!{W2}{CLEAR}Monsters might come back{N}later...{W1}
 0366=016E={NAME} received {#}{N}bonus EXP. points!{D1}{D1}
 0367=016F={CLEAR}Hmmm... The light has deemed{N}you are not worthy yet.{N}(Progress the story more!){W2}
-0368=0170=x
+0368=0170={NAME} fired a laser beam!
 0369=0171={NAME} can't carry{N}the {ITEM}.{D2}{N}It will be sent to the Caravan.{D2}
 0370=0172={CLEAR}You played through this story{N}once, well done!{N}{D1}Here is a little bonus for you...{W2}
 0371=0173={CLEAR}Oooh I almost forgot.{N}There is another important{N}character in this story.{W2}{CLEAR}You can rename him...{D1}{N}but this is a spoiler.{N}It is your choice, hee, hee, hee.{W2}{CLEAR}Do you want to rename the{N}new character? (spoiler)

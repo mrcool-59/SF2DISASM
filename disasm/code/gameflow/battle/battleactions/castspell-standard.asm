@@ -70,8 +70,8 @@ rjt_SpellEffects:
                 dc.w spellEffect_FlameBreath-rjt_SpellEffects   ; DRAGON_BREATH
                 dc.w spellEffect_ThunderBreath-rjt_SpellEffects ; THUNDER_BREATH
                 dc.w spellEffect_Bolt-rjt_SpellEffects          ; SKIP_BATTLE
-                dc.w spellEffect_Bolt-rjt_SpellEffects          ; TAROS
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell48
+                dc.w spellEffect_FlameBreath-rjt_SpellEffects   ; TAROS (with nerfed crit)
+                dc.w spellEffect_FlameBreath-rjt_SpellEffects   ; BEAM
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell49
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell50
                 dc.w spellEffect_None-rjt_SpellEffects       ; spell51

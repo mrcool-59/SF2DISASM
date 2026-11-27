@@ -54,7 +54,7 @@ table_SpellElements:
                 spellElement LIGHTNING  ; 45: THUNDER_BREATH
                 spellElement NEUTRAL    ; 46: SKIP_BATTLE
                 spellElement LIGHTNING  ; 47: TAROS
-                spellElement NEUTRAL    ; 48: 
+                spellElement NEUTRAL    ; 48: BEAM
                 spellElement NEUTRAL    ; 49: 
                 spellElement NEUTRAL    ; 50: 
                 spellElement NEUTRAL    ; 51: 
