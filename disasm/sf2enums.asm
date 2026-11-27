@@ -2015,13 +2015,35 @@ PER_ACTION_EXP_CAP: equ 49
 ; ---------------------------------------------------------------------------
 
 ; enum BattleActionEngine_SpellEffects
-CHANCE_TO_CRITICAL_DEMON_BREATH: equ 0 ; no chance to critical hit
+
+	if (STANDARD_BUILD=1)
+; Standard build game code works by multiplying the base chance by 0.75, 0.5 or 0 depending on status ailment resistance
+; The two quirks described below can be kept by turning on the appropriate patch in sf2patches.asm!
+CHANCE_TO_INFLICT: equ 64 ; N/64 chance
+CHANCE_TO_INFLICT_MUDDLE1: equ 45 ; 45/64 base chance to inflict muddle 1
+CHANCE_TO_INFLICT_MUDDLE2: equ 24 ; 24/64 base chance to inflict muddle 2
+CHANCE_TO_INFLICT_DESOUL: equ 13 ; 13/64 base chance to inflict desoul
+CHANCE_TO_INFLICT_DESOUL_BETTER: equ 51 ; 51/64 base chance to inflict desoul when target is below 50% HP
+CHANCE_TO_INFLICT_SLOW: equ 45 ; 45/64 base chance to inflict slow
+CHANCE_TO_INFLICT_SILENCE: equ 45 ; 45/64 base chance to inflict silence
+CHANCE_TO_INFLICT_SLEEP: equ 32 ; 32/64 base chance to inflict sleep
+CHANCE_TO_INFLICT_STUN: equ 16 ; 16/64 base chance to inflict stun
+	else
+; Original game code is based on maths: up to 3 (depending on status ailment resistance) is added to base value to get the final value
+; This means "status immunity" won't grant full immunity if you increase the chance of a status ailment...
+; There are 2 additional quirks to know:
+; - Slow always land if the target has no status ailment resistance
+; - Muddle 1 ignores status ailment resistance and will always use CHANCE_TO_INFLICT_MUDDLE1 unmodified probability
+CHANCE_TO_INFLICT: equ 8 ; (8-N)/8 chance
 CHANCE_TO_INFLICT_MUDDLE1: equ 5 ; 3/8 base chance to inflict muddle 1
 CHANCE_TO_INFLICT_MUDDLE2: equ 5 ; 3/8 base chance to inflict muddle 2
 CHANCE_TO_INFLICT_DESOUL: equ 5 ; 3/8 base chance to inflict desoul
 CHANCE_TO_INFLICT_SLOW: equ 5 ; 3/8 base chance to inflict slow
 CHANCE_TO_INFLICT_SILENCE: equ 5 ; 3/8 base chance to inflict silence
 CHANCE_TO_INFLICT_SLEEP: equ 5 ; 3/8 base chance to inflict sleep
+	endif
+
+CHANCE_TO_CRITICAL_DEMON_BREATH: equ 0 ; no chance to critical hit
 CHANCE_TO_CRITICAL_BUBBLE_BREATH: equ 32 ; 1/32 chance to critical hit
 CHANCE_TO_CRITICAL_BOLT: equ 8 ; 1/8 chance to critical hit (Bolt, Raijin, Atlas, Holy Thunder, Odd-eye beam)
 CHANCE_TO_CRITICAL_FLAME_BREATH: equ 16 ; 1/16 chance to critical hit (Flame Breath, Kiwi's Flame Breath)

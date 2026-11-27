@@ -207,6 +207,8 @@ ENABLE_CUSTOM_AI_PROBABILITY:		equ 1		; 0 = OFF, 1 = ON   Enable per enemy type 
 AGILITY_AFFECTS_CHANCE_TO_DODGE:    equ 1       ; Adjust chance to dodge to the difference between the attacker's and the target's current AGI.
 AGILITY_AFFECTS_DOUBLE_ATTACK:      equ 1       ; Adjust chance to perform a double back to the difference between the attacker's and the target's current AGI.
 JEWELS_GRANT_STATUS_RESISTANCE:		equ 1		; 0 = OFF, 1 = ON   If enabled, give major/immunity to status effects to Bowie when he gets the Jewels.
+UNRESISTED_SLOW_ALWAYS_LAND:		equ 0		; 0 = OFF, 1 = ON   If enabled, Slow debuff will always land successfully if the target has no status resistance (this is enabled in the base game).
+MUDDLE1_IGNORES_STATUS_RESISTANCE:  equ 0		; 0 = OFF, 1 = ON	If enabled, Muddle 1 will ignore status resistance of the target (this is enabled in the base game).
 
 
 ; Menu enhancements

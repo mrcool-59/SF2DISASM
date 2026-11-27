@@ -98,7 +98,8 @@
                 include "code\gameflow\battle\battleactions\inflictcursedamage.asm"    ; Write Battlescene Command : Inflict Curse Damage function
                 include "code\gameflow\battle\battleactions\determinedoubleandcounter.asm"    ; Write Battlescene Command : Determine Double And Counter function
                 include "code\gameflow\battle\battleactions\displaydeathmessage.asm"    ; Write Battlescene Command : Display Death Message function
-                include "code\gameflow\battle\battleactions\castspell.asm"    ; Write Battlescene Script : Cast Spell
+                includeIfStandard "code\gameflow\battle\battleactions\castspell-standard.asm"    ; Write Battlescene Script : Cast Spell
+				includeIfVanilla "code\gameflow\battle\battleactions\castspell.asm"    ; Write Battlescene Script : Cast Spell
                 includeIfStandard "code\gameflow\battle\battleactions\calculatespelldamage-standard.asm"
                 includeIfVanilla "code\gameflow\battle\battleactions\calculatespelldamage.asm"    ; Calculate Spell Damage function
                 include "code\gameflow\battle\battleactions\useitem.asm"    ; Write Battlescene Script : Use Item

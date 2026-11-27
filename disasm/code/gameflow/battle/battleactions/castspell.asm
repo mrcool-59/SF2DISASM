@@ -66,27 +66,6 @@ rjt_SpellEffects:
                 dc.w spellEffect_FlameBreath-rjt_SpellEffects ; KIWI
                 dc.w spellEffect_FairyTear-rjt_SpellEffects ; SHINE
                 dc.w spellEffect_Bolt-rjt_SpellEffects ; ODDEYE
-            if (STANDARD_BUILD&EXPANDED_ITEMS_AND_SPELLS=1)
-                dc.w spellEffect_FlameBreath-rjt_SpellEffects   ; DRAGON_BREATH
-                dc.w spellEffect_ThunderBreath-rjt_SpellEffects ; THUNDER_BREATH
-                dc.w spellEffect_Bolt-rjt_SpellEffects          ; SKIP_BATTLE
-                dc.w spellEffect_Bolt-rjt_SpellEffects          ; TAROS
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell48
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell49
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell50
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell51
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell52
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell53
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell54
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell55
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell56
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell57
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell58
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell59
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell60
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell61
-                dc.w spellEffect_None-rjt_SpellEffects       ; spell62
-            endif
 
 ; =============== S U B R O U T I N E =======================================
 
@@ -206,7 +185,7 @@ spellEffect_Detox:
                 bra.s   @UpdateStatusEffects
 @Ineffective:
                 
-                moveq   #8,d2
+                moveq   #CHANCE_TO_INFLICT,d2
                 bsr.w   battlesceneScript_DetermineSpellEffectiveness
 @UpdateStatusEffects:
                 
@@ -231,13 +210,8 @@ spellEffect_Boost:
                 ori.w   #STATUSEFFECT_BOOST,d1
                 jsr     SetStatusEffects
                 andi.w  #STATUSEFFECT_BOOST,d3
-            if (STANDARD_BUILD&SPELLS_REFRESH_STATUS_COUNTERS=1)
-                cmpi.w  #STATUSEFFECT_BOOST,d3 ; check if status counter is already at max value
-                bne.s   @WriteScriptCommands
-            else
                 beq.s   @WriteScriptCommands
-            endif
-                moveq   #8,d2
+                moveq   #CHANCE_TO_INFLICT,d2
                 bsr.w   battlesceneScript_DetermineSpellEffectiveness
 @WriteScriptCommands:
                 
@@ -250,30 +224,8 @@ spellEffect_Boost:
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
                 
-            if (STANDARD_BUILD=1)
-                bsr.w   battlesceneScript_AddStatusEffectBuffSpellExp
-			else
                 bsr.w   battlesceneScript_AddStatusEffectSpellExp
-			endif
                 jsr     GetBaseAgi
-            if (STANDARD_BUILD&SPELLS_REFRESH_STATUS_COUNTERS=1)
-                move.w  d1,d2
-                mulu.w  #3,d1
-				buffDivide8  BOOST_DIVIDER,d1
-                rol.w   #4,d3           ; calculate difference between full and current BOOST increase values
-                mulu.w  d3,d2
-				buffDivide8  BOOST_DIVIDER,d2
-                sub.w   d2,d1
-                displayMessage #MESSAGE_BATTLE_BOOST_SPELL_AGI_INCREASE,d0,#0,d1 
-                                                        ; Message, Combatant, Item or Spell, Number
-                jsr     GetBaseDef
-                move.w  d1,d2
-                mulu.w  #3,d1
-				buffDivide8  BOOST_DIVIDER,d1
-                mulu.w  d3,d2
-				buffDivide8  BOOST_DIVIDER,d2
-                sub.w   d2,d1
-            else
                 mulu.w  #3,d1
 				buffDivide8  BOOST_DIVIDER,d1
                 displayMessage #MESSAGE_BATTLE_BOOST_SPELL_AGI_INCREASE,d0,#0,d1 
@@ -281,7 +233,6 @@ spellEffect_Boost:
                 jsr     GetBaseDef
                 mulu.w  #3,d1
 				buffDivide8  BOOST_DIVIDER,d1
-            endif
                 displayMessage #MESSAGE_BATTLE_BOOST_SPELL_DEF_INCREASE,d0,#0,d1 
                                                         ; Message, Combatant, Item or Spell, Number
                 rts
@@ -309,13 +260,8 @@ spellEffect_Slow:
                 ori.w   #STATUSEFFECT_SLOW,d1
                 jsr     SetStatusEffects
                 andi.w  #STATUSEFFECT_SLOW,d3
-            if (STANDARD_BUILD&SPELLS_REFRESH_STATUS_COUNTERS=1)
-                cmpi.w  #STATUSEFFECT_SLOW,d3 ; check if status counter is already at max value
-                bne.s   @WriteScriptCommands
-            else
                 beq.s   @WriteScriptCommands
-            endif
-                moveq   #8,d2
+                moveq   #CHANCE_TO_INFLICT,d2
                 bsr.w   battlesceneScript_DetermineSpellEffectiveness
 @WriteScriptCommands:
                 
@@ -333,24 +279,6 @@ spellEffect_Slow:
 battlesceneScript_DisplaySlowMessages:
                 
                 jsr     GetBaseAgi
-            if (STANDARD_BUILD&SPELLS_REFRESH_STATUS_COUNTERS=1)
-                move.w  d1,d2
-                mulu.w  #3,d1
-				buffDivide8  SLOW_DIVIDER,d1
-                rol.w   #6,d3           ; calculate difference between full and current SLOW increase values
-                mulu.w  d3,d2
-				buffDivide8  SLOW_DIVIDER,d2
-                sub.w   d2,d1
-                displayMessage #MESSAGE_BATTLE_AGILITY_DECREASED_BY,d0,#0,d1 
-                                                        ; Message, Combatant, Item or Spell, Number
-                jsr     GetBaseDef
-                move.w  d1,d2
-                mulu.w  #3,d1
-				buffDivide8  SLOW_DIVIDER,d1
-                mulu.w  d3,d2
-				buffDivide8  SLOW_DIVIDER,d2
-                sub.w   d2,d1
-            else
                 mulu.w  #3,d1
 				buffDivide8  SLOW_DIVIDER,d1
                 displayMessage #MESSAGE_BATTLE_AGILITY_DECREASED_BY,d0,#0,d1 
@@ -358,7 +286,6 @@ battlesceneScript_DisplaySlowMessages:
                 jsr     GetBaseDef
                 mulu.w  #3,d1
 				buffDivide8  SLOW_DIVIDER,d1
-            endif
                 displayMessage #MESSAGE_BATTLE_DEFENSE_DECREASED_BY,d0,#0,d1 
                                                         ; Message, Combatant, Item or Spell, Number
                 rts
@@ -379,13 +306,8 @@ spellEffect_Attack:
                 ori.w   #STATUSEFFECT_ATTACK,d1
                 jsr     SetStatusEffects
                 andi.w  #STATUSEFFECT_ATTACK,d3
-            if (STANDARD_BUILD&SPELLS_REFRESH_STATUS_COUNTERS=1)
-                cmpi.w  #STATUSEFFECT_ATTACK,d3 ; check if status counter is already at max value
-                bne.s   @WriteScriptCommands
-            else
                 beq.s   @WriteScriptCommands
-            endif
-                moveq   #8,d2
+                moveq   #CHANCE_TO_INFLICT,d2
                 bsr.w   battlesceneScript_DetermineSpellEffectiveness
 @WriteScriptCommands:
                 
@@ -398,24 +320,10 @@ spellEffect_Attack:
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
                 
-            if (STANDARD_BUILD=1)
-                bsr.w   battlesceneScript_AddStatusEffectBuffSpellExp
-			else
                 bsr.w   battlesceneScript_AddStatusEffectSpellExp
-			endif
                 jsr     GetBaseAtt
-            if (STANDARD_BUILD&SPELLS_REFRESH_STATUS_COUNTERS=1)
-                move.w  d1,d2
                 mulu.w  #3,d1
 				buffDivide8  ATTACK_DIVIDER,d1
-                rol.w   #2,d3           ; calculate difference between full and current ATTACK increase values
-                mulu.w  d3,d2
-				buffDivide8  ATTACK_DIVIDER,d2
-                sub.w   d2,d1
-            else
-                mulu.w  #3,d1
-				buffDivide8  ATTACK_DIVIDER,d1
-            endif
                 displayMessage #MESSAGE_BATTLE_ATTACK_SPELL_EFFECT,d0,#0,d1 
                                                         ; Message, Combatant, Item or Spell, Number
                 rts
@@ -438,7 +346,7 @@ spellEffect_Dispel:
                 jsr     GetSpellAndNumberOfSpells
                 tst.w   d2
                 bne.s   @TargetHasSpells
-                moveq   #8,d3
+                moveq   #CHANCE_TO_INFLICT,d3
                 bra.s   @DetermineSuccess
 @TargetHasSpells:
                 
@@ -487,7 +395,7 @@ spellEffect_Muddle:
                 bra.w   @WriteScriptCommands
 @Muddle1:
                 
-                moveq   #8,d2           ; muddle 1
+                moveq   #CHANCE_TO_INFLICT,d2           ; muddle 1
                 jsr     GetStatusEffects
                 andi.w  #STATUSEFFECT_MUDDLE2,d1
                 bne.s   @DetermineSuccess ; if target already affected by Muddle 2, then no chance for Muddle 1 to work
@@ -842,7 +750,7 @@ spellEffect_BrightHoney:
                 jsr     GetMaxMp
                 tst.w   d1
                 bne.s   @TargetHasMP
-                moveq   #8,d2
+                moveq   #CHANCE_TO_INFLICT,d2
                 bsr.w   battlesceneScript_DetermineSpellEffectiveness
 @TargetHasMP:
                 
@@ -878,17 +786,13 @@ spellEffect_BraveApple:
                 
                 module
                 move.b  (a5),d0
-			if (STANDARD_BUILD&KEEP_EXP_ON_APPLE=1)
-				; Exp is retained
-			else
                 moveq   #0,d1
                 jsr     SetCurrentExp
-			endif
                 jsr     LevelUp         
                 lea     ((LEVELUP_ARGUMENTS-$1000000)).w,a1
                 cmpi.b  #-1,(a1)        ; check if target is able to level up
                 bne.s   @AbleToLevelUp
-                moveq   #8,d2
+                moveq   #CHANCE_TO_INFLICT,d2
                 bsr.w   battlesceneScript_DetermineSpellEffectiveness
 @AbleToLevelUp:
                 
@@ -936,20 +840,9 @@ spellEffect_BraveApple:
                 displayMessage #MESSAGE_BATTLE_AGILITY_INCREASED_BY,d0,#0,d1 
                                                         ; Message, Combatant, Item or Spell, Number
 @EvaluateLearnedSpell:
-                
-			if (STANDARD_BUILD=1)
-                txt     MESSAGE_DELAY   ; Shows "{D1}" so the last stat up message has a little time to breathe! 
-			endif
-			
                 move.b  (a1)+,d1
                 cmpi.b  #-1,d1
                 beq.s   @Return
-                
-			if (STANDARD_BUILD=1)
-			if (SPELL_LEARNING_SOUND_EFFECT>=1)
-				sndCom	SPELL_LEARNING_SOUND_EFFECT
-			endif
-			endif
 
                 move.w  d1,d2
                 andi.w  #SPELLENTRY_MASK_INDEX,d2
@@ -1059,10 +952,10 @@ battlesceneScript_DetermineSpellEffectiveness:
                 move.l  d0,-(sp)
                 tst.b   debugDodge(a2)
                 beq.s   @DetermineSuccess
-                moveq   #8,d2
+                moveq   #CHANCE_TO_INFLICT,d2
 @DetermineSuccess:
                 
-                moveq   #8,d0
+                moveq   #CHANCE_TO_INFLICT,d0
                 jsr     (GenerateRandomOrDebugNumber).w
                 cmp.w   d2,d0
                 bcc.s   @Success
@@ -1089,17 +982,6 @@ spellEffect_FlameBreath:
                 bra.w   battlesceneScript_CalculateSpellDamage
 
     ; End of function spellEffect_FlameBreath
-
-
-; =============== S U B R O U T I N E =======================================
-
-
-spellEffect_ThunderBreath:
-                
-                moveq   #CHANCE_TO_CRITICAL_THUNDER_BREATH,d3 ; 1/8 chance to critical hit
-                bra.w   battlesceneScript_CalculateSpellDamage
-
-    ; End of function spellEffect_ThunderBreath
 
 
 ; =============== S U B R O U T I N E =======================================
