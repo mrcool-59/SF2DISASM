@@ -206,7 +206,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass GLDT         ; 24: GYAN
-                startLevel 16
+                startLevel 14
                 startItems &
                     GREAT_AXE|EQUIPPED, &
                     NOTHING, &
