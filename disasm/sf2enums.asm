@@ -1553,7 +1553,7 @@ maxBlacksmithOrdersNumber = 16
 BLACKSMITH_ORDERS_COUNTER: equ BLACKSMITH_MAX_ORDERS_NUMBER-1
 BLACKSMITH_MAX_ORDERS_NUMBER: equ maxBlacksmithOrdersNumber ; ordered mithril weapon slots in RAM
 BLACKSMITH_MITHRIL_ITEM: equ 123 ; ITEM_MITHRIL
-BLACKSMITH_ORDER_COST: equ 5000
+BLACKSMITH_ORDER_COST: equ 10000
 
 ; ---------------------------------------------------------------------------
 
