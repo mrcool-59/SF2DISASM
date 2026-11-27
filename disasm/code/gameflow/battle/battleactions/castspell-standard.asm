@@ -1123,7 +1123,7 @@ battlesceneScript_DetermineSpellEffectiveness:
                                                         ; Message, Combatant, Item or Spell, Number
                 move.b  #-1,dodge(a2)
                 move.l  (sp)+,d0
-                move.l  (sp)+,d0
+                ;move.l  (sp)+,d0 ; <- SUSPICIOUS
                 rts
 @Success:
                 
