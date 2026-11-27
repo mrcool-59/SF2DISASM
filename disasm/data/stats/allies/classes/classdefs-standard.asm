@@ -35,15 +35,15 @@ table_ClassDefinitions:
                 mov 5                   ; 5: ACHR
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 moveType   ARCHER
-                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
+                prowess    CRITICAL150_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 
                 mov 6                   ; 6: BDMN
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                resistance WIND_MINOR|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 moveType   FLYING
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 
                 mov 6                   ; 7: WFMN
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_MINOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_MINOR
                 moveType   STEALTH
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN16|COUNTER_1IN32
                 
@@ -75,20 +75,20 @@ table_ClassDefinitions:
                 mov 7                   ; 13: PLDN
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 moveType   CENTAUR
-                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
+                prowess    CRITICAL125_1IN16|DOUBLE_1IN16|COUNTER_1IN16
                 
                 mov 7                   ; 14: PGNT
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 moveType   FLYING
-                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
+                prowess    CRITICAL125_1IN16|DOUBLE_1IN16|COUNTER_1IN16
                 
                 mov 6                   ; 15: GLDT
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
                 moveType   REGULAR
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                 
                 mov 6                   ; 16: BRN
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MAJOR
                 moveType   REGULAR
                 prowess    CRITICAL150_1IN8|DOUBLE_1IN32|COUNTER_1IN16
                 
@@ -115,22 +115,22 @@ table_ClassDefinitions:
                 mov 6                   ; 21: SNIP
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
                 moveType   ARCHER
-                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
+                prowess    CRITICAL150_1IN8|DOUBLE_1IN32|COUNTER_1IN32
                 
                 mov 5                   ; 22: BRGN
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_MINOR
                 moveType   BRASS_GUNNER
-                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
+                prowess    CRITICAL125_1IN8|DOUBLE_1IN32|COUNTER_1IN8
                 
                 mov 6                   ; 23: BDBT
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                resistance WIND_MAJOR|LIGHTNING_NONE|ICE_NONE|FIRE_MINOR|NEUTRAL_NONE|STATUS_NONE
                 moveType   FLYING
-                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
+                prowess    CRITICAL125_1IN8|DOUBLE_1IN16|COUNTER_1IN16
                 
-                mov 6                   ; 24: WFBR
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                mov 7                   ; 24: WFBR
+                resistance WIND_NONE|LIGHTNING_NONE|ICE_MAJOR|FIRE_WEAKNESS|NEUTRAL_NONE|STATUS_MAJOR
                 moveType   STEALTH
-                prowess    CRITICAL125_1IN8|DOUBLE_1IN8|COUNTER_1IN16
+                prowess    CRITICAL150_1IN8|DOUBLE_1IN8|COUNTER_1IN16
                 
                 mov 6                   ; 25: BWNT
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
@@ -143,7 +143,7 @@ table_ClassDefinitions:
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN16|COUNTER_1IN8
                 
                 mov 7                   ; 27: NINJ
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
+                resistance WIND_NONE|LIGHTNING_MINOR|ICE_NONE|FIRE_MINOR|NEUTRAL_NONE|STATUS_NONE
                 moveType   STEALTH
                 prowess    CRITICAL150_1IN8|DOUBLE_1IN16|COUNTER_1IN8
                 
@@ -158,7 +158,7 @@ table_ClassDefinitions:
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                 
                 mov 5                   ; 30: GLM
-                resistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
+                resistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_IMMUNITY
                 moveType   REGULAR
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN4
                 
@@ -175,17 +175,17 @@ table_ClassDefinitions:
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 
                 mov 7                   ; 33: PHNX
-                resistance WIND_MINOR|LIGHTNING_WEAKNESS|ICE_NONE|FIRE_MAJOR|NEUTRAL_NONE|STATUS_MAJOR
+                resistance WIND_MINOR|LIGHTNING_WEAKNESS|ICE_MINOR|FIRE_MAJOR|NEUTRAL_NONE|STATUS_MAJOR
                 moveType   FLYING
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                 
                 mov 7                   ; 34: GDRG
-                resistance WIND_WEAKNESS|LIGHTNING_MAJOR|ICE_NONE|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
+                resistance WIND_WEAKNESS|LIGHTNING_MAJOR|ICE_NONE|FIRE_MINOR|NEUTRAL_NONE|STATUS_MINOR
                 moveType   FLYING
                 prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN32
                 
                 mov 7                   ; 35: SDRG
-                resistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_MAJOR
+                resistance WIND_MINOR|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_MINOR
                 moveType   FLYING
                 prowess    CRITICAL125_1IN32|DOUBLE_1IN32|COUNTER_1IN16
                     
