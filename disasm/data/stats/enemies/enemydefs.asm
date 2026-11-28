@@ -288,9 +288,9 @@ table_EnemyDefinitions:
                 unknownByte 10          ; 10: KRAKEN LEG
                 spellPower REGULAR
                 level    14
-                maxHp    24
+                maxHp    25
                 maxMp    0
-                baseAtt  29
+                baseAtt  30
                 baseDef  24
                 baseAgi  19
                 baseMov  6
@@ -1513,9 +1513,9 @@ table_EnemyDefinitions:
                 unknownByte 59          ; 59: KRAKEN ARM
                 spellPower REGULAR
                 level    16
-                maxHp    30
+                maxHp    33
                 maxMp    0
-                baseAtt  32
+                baseAtt  33
                 baseDef  26
                 baseAgi  22
                 baseMov  5
