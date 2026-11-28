@@ -4,11 +4,11 @@ BattleSpriteset43:
 				; # Allies
 				dc.b 12
 				; # Enemies
-				dc.b 17
+				dc.b 16
 				; # AI Regions
 				dc.b 1
 				; # AI Points
-				dc.b 2
+				dc.b 1
 
 				; Allies
 				allyCombatant 0, 13, 16
@@ -109,39 +109,34 @@ BattleSpriteset43:
 				combatantAiAndItem ATTACKER3, NOTHING
 				combatantBehavior FOLLOW_ENEMY|10, 15, NONE, 15, 0, STARTING
 
-				enemyCombatant PYROHYDRA, 15, 22
+				enemyCombatant PYROHYDRA, 12, 27
+				combatantAiAndItem ATTACKER2, NOTHING
+				combatantBehavior FOLLOW_TARGET|0, 15, NONE, 15, 0, STARTING
+
+				enemyCombatant ARCH_DEMON, 3, 25
 				combatantAiAndItem ATTACKER1, NOTHING
 				combatantBehavior FOLLOW_TARGET|0, 15, NONE, 15, 0, STARTING
 
-				enemyCombatant ARCH_DEMON, 4, 22
-				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_ENEMY|12, 15, NONE, 15, 0, STARTING
+				enemyCombatant DEVIL_GRIFFIN, 23, 26
+				combatantAiAndItem ATTACKER2, NOTHING
+				combatantBehavior FOLLOW_TARGET|0, 15, NONE, 15, 0, STARTING
 
-				enemyCombatant DEVIL_GRIFFIN, 19, 26
-				combatantAiAndItem ATTACKER1, NOTHING
-				combatantBehavior FOLLOW_ENEMY|12, 15, NONE, 15, 0, STARTING
-
-				enemyCombatant BLUE_SHAMAN_0, 12, 7
+				enemyCombatant BLUE_SHAMAN_0, 13, 5
 				combatantAiAndItem HEALER5, HEALING_RAIN|USABLE_BY_AI|UNUSED_ITEM_DROP
-				combatantBehavior MOVE_TO|1, 0, NONE, 15, 0, STARTING
-
-				enemyCombatant DEMON_MASTER, 16, 23
-				combatantAiAndItem ATTACKER3, NOTHING
-				combatantBehavior FOLLOW_ENEMY|12, 15, NONE, 15, 0, STARTING
+				combatantBehavior NONE, 0, NONE, 15, 0, STARTING
 
 
 				; AI Regions
 				dc.b 4
 				dc.b 0
-				dc.b 2, 4
+				dc.b 3, 0
 				dc.b 10, 12
 				dc.b 16, 12
-				dc.b 19, 4
+				dc.b 22, 0
 				dc.b 0
 				dc.b 0
 
 
 				; AI Points
 				dc.b 16, 13
-				dc.b 15, 8
 
