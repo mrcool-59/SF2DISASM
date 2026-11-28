@@ -469,7 +469,7 @@ sub_12CB0:
 				; HARDCODED: Kiwi SDRG should always be a green dot and Lemon should be a red dot in battle 4
 				cmpi.w  #MAPSPRITE_KIWI_SPECIAL,d1
 				beq.s   @isLargeMapsprite
-				cmpi.w  #MAPSPRITE_LEMON,d1
+				cmpi.w  #MAPSPRITE_LEMON_SPECIAL,d1
 				bne.s   @CheckRanges
 				compareToSavedByte  #BATTLE_AMBUSHED_BY_GALAM_SOLDIERS, CURRENT_BATTLE
 				beq.s   @RedDot
