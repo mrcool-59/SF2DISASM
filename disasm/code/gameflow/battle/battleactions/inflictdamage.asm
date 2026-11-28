@@ -112,12 +112,11 @@ battlesceneScript_InflictDamage:
                 
                 jsr     GetStatusEffects
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_ADD8       ; @Reaction_Enemy
+                bne.s   @Enemy
                 executeAllyReaction d2,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @DetermineBattleMessage
-byte_ADD8:
+@Enemy:
                 
-                @Reaction_Enemy:
                 executeEnemyReaction d2,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
 @DetermineBattleMessage:
                 
@@ -145,11 +144,10 @@ byte_ADD8:
 @CutoffMessage:
                 
                 tst.b   cutoff(a2)
-                beq.s   byte_AE1A       ; @Message
+                beq.s   @BattleMessage
                 move.w  #MESSAGE_BATTLE_CUTOFF,d1 ; message when target is cut off
-byte_AE1A:
+@BattleMessage:
                 
-                @Message:
                 displayMessage d1,(a5),#0,d6 ; Message, Combatant, Item or Spell, Number
 @Return:
                 
