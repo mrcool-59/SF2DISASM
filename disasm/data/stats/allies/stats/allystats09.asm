@@ -12,7 +12,7 @@ AllyStats09:    forClass  WFMN
                 forClass  WFBR
                 hpGrowth  40, 100, LINEAR
                 mpGrowth  0, 0, NONE
-                attGrowth 53, 121, LINEAR
+                attGrowth 53, 118, LINEAR
                 defGrowth 35, 87, LINEAR
                 agiGrowth 35, 75, LATE
                 spellList 
