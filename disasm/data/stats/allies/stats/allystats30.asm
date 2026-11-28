@@ -3,7 +3,7 @@ AllyStats30:    forClass  CLASS_32	; Phoenix Kid
                 hpGrowth  12, 42, LINEAR
                 mpGrowth  7, 22, LINEAR
                 attGrowth 12, 57, LINEAR
-                defGrowth 8, 40, LINEAR
+                defGrowth 8, 38, LINEAR
                 agiGrowth 7, 36, LINEAR
                 spellList &
                     5, HEAL, &
@@ -26,7 +26,7 @@ AllyStats30:    forClass  CLASS_32	; Phoenix Kid
                 hpGrowth  35, 95, LINEAR
                 mpGrowth  30, 60, LINEAR
                 attGrowth 45, 110, LINEAR
-                defGrowth 30, 92, LINEAR
+                defGrowth 30, 90, LINEAR
                 agiGrowth 27, 67, LINEAR
                 useFirstSpellList
                 
