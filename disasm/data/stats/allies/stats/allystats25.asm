@@ -2,11 +2,11 @@
 ; ASM FILE data\stats\allies\stats\allystats25.asm :
 ; 0x1EE748..0x1EE771 : Ally stats 25
 AllyStats25:    forClass  MMNK
-                hpGrowth  29, 79, LINEAR
+                hpGrowth  33, 83, LINEAR
                 mpGrowth  35, 72, LINEAR
-                attGrowth 19, 36, LINEAR
-                defGrowth 19, 61, EARLYANDLATE
-                agiGrowth 21, 62, LINEAR
+                attGrowth 25, 42, LINEAR
+                defGrowth 23, 65, EARLYANDLATE
+                agiGrowth 25, 66, LINEAR
                 spellList &
                     1, HEAL, &
                     5, HEAL|LV2, &
