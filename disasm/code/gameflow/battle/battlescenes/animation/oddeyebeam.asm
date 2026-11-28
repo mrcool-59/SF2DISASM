@@ -49,6 +49,7 @@ loc_1B764:
                 move.b  #1,((UPDATE_SPELLANIMATION_TOGGLE-$1000000)).w
                 move.b  #1,((BATTLESCENE_ACTOR_SWITCH_STATE-$1000000)).w
                 move.b  #1,((SPELLANIMATION_HIT_TRIGGER-$1000000)).w
+				sndCom  SFX_PRISM_LASER_FIRING
                 bra.w   StoreBattlespritePalette
 
     ; End of function spellanimationSetup_OddEyeBeam
