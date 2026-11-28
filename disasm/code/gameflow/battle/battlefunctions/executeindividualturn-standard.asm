@@ -287,9 +287,9 @@ DetermineRandomAttackSpell:
 				cmpi.w	#CLASS_RBT,d1
 				bne.s	@Roll
 				movem.l a0,-(sp)
-                lea     ((TARGETS_LIST-$1000000)).w,a0
+                lea     ((CURRENT_BATTLEACTION-$1000000)).w,a0
 				clr.w   d1
-				move.b  (a0),d1							; d1.w = first target combatant index
+				move.b  BATTLEACTION_OFFSET_ITEM_OR_SPELL_LOWER_BYTE(a0),d1	; d1.w = first target combatant index
 				movem.l (sp)+,a0
 				jsr		GetDistanceBetweenCombatants	; d2.w = distance in blocks
 				cmpi.w	#1,d2							; distance <= 1: no special attack, otherwise special attack
