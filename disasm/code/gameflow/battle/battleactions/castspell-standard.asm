@@ -645,6 +645,7 @@ spellEffect_ThunderBreath:
                 bcs.s   @Return		; Roll failed
 
 				; Successful!
+				move.b  (a5),d0
                 jsr     GetStatusEffects
                 ori.w   #STATUSEFFECT_STUN,d1
                 btst    #COMBATANT_BIT_ENEMY,d0
