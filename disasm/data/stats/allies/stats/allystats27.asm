@@ -15,10 +15,12 @@ AllyStats27:    forClass  WIZ
                     20, FREEZE|LV3, &
                     25, BOLT, &
                     30, SLEEP, &
-                    34, BOLT|LV2, &
-                    38, BLAZE|LV3, &
-                    40, FREEZE|LV4, &
-                    42, BOLT|LV3, &
-                    45, BLAZE|LV4, &
-                    50, BOLT|LV4
+                    32, BOLT|LV2, &
+                    34, BLAZE|LV3, &
+                    36, FREEZE|LV4, &
+                    38, BOLT|LV3, &
+                    40, BLAZE|LV4, &
+                    43, SLEEP|LV2, &
+                    46, BOLT|LV4, &
+                    50, SLEEP|LV3
                 

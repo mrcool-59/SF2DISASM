@@ -10,15 +10,17 @@ AllyStats31:    forClass  CLASS_34	; Gold Dragon
                      7, AURA|LV1, &
                     14, THUNDER_BREATH|LV1, &
                     22, BOLT|LV2, &
-                    26, THUNDER_BREATH|LV2, &
-					29, AURA|LV2, &
-                    33, BOLT|LV3, &
-                    36, THUNDER_BREATH|LV3, &
-                    39, SLEEP|LV1, &
-                    42, AURA|LV3, &
-					45, BOLT|LV4, &
-                    48, THUNDER_BREATH|LV4, &
-                    52, AURA|LV4
+                    25, THUNDER_BREATH|LV2, &
+					27, AURA|LV2, &
+                    32, BOLT|LV3, &
+                    34, THUNDER_BREATH|LV3, &
+                    36, SLEEP|LV1, &
+                    39, AURA|LV3, &
+					41, BOLT|LV4, &
+                    43, THUNDER_BREATH|LV4, &
+                    46, SLEEP|LV2, &
+                    50, AURA|LV4, &
+                    52, SLEEP|LV3
 					
 
 table_SunnyBattle4Stats:

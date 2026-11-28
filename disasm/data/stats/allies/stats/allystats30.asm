@@ -6,18 +6,22 @@ AllyStats30:    forClass  CLASS_32	; Phoenix Kid
                 defGrowth 8, 39, LINEAR
                 agiGrowth 7, 34, LINEAR
                 spellList &
-                    7, HEAL, &
-                    12, BLAST, &
-                    17, BLAST|LV2, &
-                    22, HEAL|LV2, &
-                    27, BLAST|LV3, &
-                    32, KATON, &
-                    37, HEAL|LV3, &
-                    42, KATON|LV2, &
-                    47, BLAST|LV4, &
-                    52, KATON|LV3, &
-                    57, HEAL|LV4, &
-                    62, KATON|LV4
+                    5, HEAL, &
+                    10, BLAST, &
+                    15, BLAST|LV2, &
+                    20, HEAL|LV2, &
+                    25, BLAST|LV3, &
+                    30, KATON, &
+                    31, DETOX, &
+                    33, HEAL|LV3, &
+                    34, DETOX|LV2, &
+                    36, KATON|LV2, &
+                    40, DETOX|LV3, &
+                    42, BLAST|LV4, &
+                    44, KATON|LV3, &
+                    46, DETOX|LV4, &
+                    50, HEAL|LV4, &
+                    55, KATON|LV4
 					
                 forClass  CLASS_33	; Phoenix
                 hpGrowth  30, 95, LINEAR

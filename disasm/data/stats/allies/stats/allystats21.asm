@@ -8,12 +8,12 @@ AllyStats21:    forClass  SORC
                 defGrowth 22, 58, LINEAR
                 agiGrowth 31, 73, LINEAR
                 spellList &
-                    21, DAO, &
-                    32, APOLLO, &
-                    35, DAO|LV2, &
-                    39, APOLLO|LV2, &
-                    42, NEPTUN, &
-                    45, ATLAS, &
-                    49, NEPTUN|LV2, &
-                    54, ATLAS|LV2
+                    17, DAO, &
+                    28, APOLLO, &
+                    31, DAO|LV2, &
+                    35, APOLLO|LV2, &
+                    38, NEPTUN, &
+                    41, ATLAS, &
+                    45, NEPTUN|LV2, &
+                    50, ATLAS|LV2
                 

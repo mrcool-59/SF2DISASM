@@ -14,10 +14,11 @@ AllyStats25:    forClass  MMNK
                     11, MUDDLE, &
                     18, BLAST|LV2, &
                     20, BOOST, &
-                    34, MUDDLE|LV2, &
-                    37, BLAST|LV3, &
-                    40, HEAL|LV3, &
-                    43, BOOST|LV2, &
-                    46, BLAST|LV4, &
-                    50, HEAL|LV4
+                    30, MUDDLE|LV2, &
+                    33, BLAST|LV3, &
+                    36, HEAL|LV3, &
+                    39, BOOST|LV2, &
+                    42, BLAST|LV4, &
+                    46, HEAL|LV4, &
+                    50, BOOST|LV3
                 
