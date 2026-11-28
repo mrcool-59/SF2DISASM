@@ -2,7 +2,7 @@
 ; ASM FILE data\stats\allies\stats\allystats17.asm :
 ; 0x1EE628..0x1EE685 : Ally stats 17
 AllyStats17:    forClass  MAGE
-                hpGrowth  8, 28, LINEAR
+                hpGrowth  8, 30, LINEAR
                 mpGrowth  6, 54, EARLY
                 attGrowth 4, 22, LINEAR
                 defGrowth 3, 27, LINEAR
@@ -10,21 +10,21 @@ AllyStats17:    forClass  MAGE
                 spellList &
                     1, BLAZE, &
                     5, FREEZE, &
-                    11, BLAZE|LV2, &
-                    22, FREEZE|LV2, &
+                    9, BLAZE|LV2, &
+                    12, FREEZE|LV2, &
+                    21, FREEZE|LV3, &
                     25, DESOUL, &
                     28, BOLT, &
-                    31, FREEZE|LV3, &
+                    31, BLAZE|LV3, &
                     35, BOLT|LV2, &
                     38, FREEZE|LV4, &
                     40, DESOUL|LV2, &
-                    45, BLAZE|LV3, &
-                    48, BOLT|LV3, &
-                    51, BLAZE|LV4, &
-                    55, BOLT|LV4
+                    42, BLAZE|LV4, &
+                    45, BOLT|LV3, &
+                    50, BOLT|LV4
                 
                 forClass  WIZ
-                hpGrowth  21, 69, LINEAR
+                hpGrowth  25, 75, LINEAR
                 mpGrowth  40, 80, LINEAR
                 attGrowth 16, 30, EARLYANDLATE
                 defGrowth 19, 57, EARLY
@@ -32,7 +32,7 @@ AllyStats17:    forClass  MAGE
                 useFirstSpellList
                 
                 forClass  SORC
-                hpGrowth  21, 69, LINEAR
+                hpGrowth  25, 75, LINEAR
                 mpGrowth  40, 87, LINEAR
                 attGrowth 16, 30, EARLYANDLATE
                 defGrowth 19, 60, EARLY
