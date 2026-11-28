@@ -357,7 +357,7 @@
 0355=0163={CLEAR}{NAME} is fine.{D3}
 0356=0164={CLEAR}{NAME} recovered{N}{#} hit points.{D3}
 0357=0165={CLEAR}{NAME} recovered{N}{#} magic points.{D3}
-0358=0166={CLEAR}{NAME} is no longer paralyzed.{D3}
+0358=0166={CLEAR}{NAME} is no longer{N}paralyzed.{D3}
 0359=0167={NAME} is cursed!{D3}{N}And is paralyzed.{N}
 0360=0168={NAME} is cursed!{D3}{N}And is damaged by {#}.
 0361=0169={NAME} is paralyzed.{N}And can't move.
