@@ -21,7 +21,8 @@ AllyStats17:    forClass  MAGE
                     40, DESOUL|LV2, &
                     42, BLAZE|LV4, &
                     45, BOLT|LV3, &
-                    50, BOLT|LV4
+                    50, BOLT|LV4, &
+                    55, DESOUL|LV3
                 
                 forClass  WIZ
                 hpGrowth  25, 75, LINEAR

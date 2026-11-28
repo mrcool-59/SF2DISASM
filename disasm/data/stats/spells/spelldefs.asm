@@ -230,6 +230,14 @@ table_SpellDefinitions:
                 range      1, 2
                 radius     1
                 power      0
+
+                entry      DESOUL|LV3   ; DESOUL 3
+                mpCost     30
+                animation  DESOUL|VARIATION2
+                properties TYPE_ATTACK|AFFECTEDBYSILENCE
+                range      1, 2
+                radius     2
+                power      0
                 
                 entry      SLEEP        ; SLEEP 1
                 mpCost     10

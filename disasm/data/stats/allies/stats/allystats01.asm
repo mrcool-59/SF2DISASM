@@ -14,15 +14,16 @@ AllyStats01:    forClass  PRST
                     10, BLAST, &
                     13, DETOX|LV2, &
                     16, BLAST|LV2, &
-                    19, SLOW, &
-                    22, HEAL|LV3, &
-                    25, BLAST|LV3, &
-                    29, SLOW|LV2, &
-                    33, DETOX|LV3, &
-                    36, BLAST|LV4, &
-                    40, HEAL|LV4, &
-                    45, DETOX|LV4
-                
+                    20, SLOW, &
+                    23, HEAL|LV3, &
+                    26, BLAST|LV3, &
+                    32, DETOX|LV3, &
+                    37, BLAST|LV4, &
+                    40, SLOW|LV2, &
+                    45, HEAL|LV4, &
+                    50, DETOX|LV4, &
+                    55, SLOW|LV3
+					
                 forClass  VICR
                 hpGrowth  30, 84, LINEAR
                 mpGrowth  35, 75, LINEAR

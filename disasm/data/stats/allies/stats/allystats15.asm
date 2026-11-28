@@ -18,9 +18,11 @@ AllyStats15:    forClass  PRST
                     30, BOOST|LV2, &
                     33, AURA, &
                     38, AURA|LV2, &
-                    41, BLAST|LV4, &
-                    44, AURA|LV3, &
-                    52, AURA|LV4
+                    42, BLAST|LV4, &
+                    46, AURA|LV3, &
+                    50, BOOST|LV3, &
+                    52, HEAL|LV4, &
+                    55, AURA|LV4
                 
                 forClass  VICR
                 hpGrowth  33, 92, LATE
