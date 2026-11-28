@@ -815,7 +815,7 @@ Music_55_Channel_6:
 		psgNoteL E7,3
 		setRelease 0
 		psgNoteL E7,255
-		psgInst 253
+		psgInst 254
 		psgNoteL E6,40
 		psgNoteL B5,4
 		psgNote  A5
@@ -848,7 +848,7 @@ Music_55_Channel_6:
 		psgNoteL E6,16
 		setRelease 8
 		psgNoteL B5,144
-		psgInst 254
+		psgInst 255
 		setRelease 0
 		psgNoteL E7,16
 		psgNote  D7
@@ -911,7 +911,7 @@ Music_55_Channel_7:
 		wait
 		waitL 135
 		mainLoopStart
-		psgInst 253
+		psgInst 254
 		vibrato 00h
 		setRelease 0
 		psgNoteL E7,40
@@ -946,7 +946,7 @@ Music_55_Channel_7:
 		psgNoteL E7,16
 		setRelease 8
 		psgNoteL B6,144
-		psgInst 254
+		psgInst 255
 		setRelease 0
 		psgNoteL E6,16
 		psgNote  D6
