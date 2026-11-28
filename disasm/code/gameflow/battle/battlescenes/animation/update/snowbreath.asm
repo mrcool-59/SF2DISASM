@@ -22,10 +22,14 @@ loc_1E7CC:
                 addq.w  #1,(a5)
                 cmpi.w  #2,(a5)
                 bne.w   loc_1E806
-                lea     table_1E8E2(pc), a0
+                lea     table_1E8E2(pc), a0 		; Ally variant
                 btst    #SPELLANIMATION_BIT_MIRRORED,((SPELLANIMATION_VARIATION_AND_MIRRORED_BIT-$1000000)).w
                 beq.s   loc_1E7EE
-                addq.w  #VDP_SPELL_ENTRY_SIZE,a0
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0 	; Griffin variant
+                move.w  ((BATTLESCENE_ENEMYBATTLESPRITE-$1000000)).w,d2
+                cmpi.w  #ENEMYBATTLESPRITE_GRIFFIN,d2
+                beq.s   loc_1E7EE
+                addq.w  #VDP_SPELL_ENTRY_SIZE,a0 	; Enemy variant
 loc_1E7EE:
                 
                 bsr.w   ConstructSimpleGraphic
@@ -126,6 +130,7 @@ loc_1E8D6:
     ; End of function spellanimationUpdate_SnowBreath
 
 table_1E8E2:    vdpSpell 270, 222, VDPTILE_SPELLTILE1, V1|H1|VALUE1		; Kiwi (special)
+                vdpSpell 208, 200, VDPTILE_SPELLTILE1, V1|H1|VALUE2		; Griffin
                 vdpSpell 224, 223, VDPTILE_SPELLTILE1, V1|H1|VALUE2		; Enemy
                 
 table_1E8F2:    dc.w 2

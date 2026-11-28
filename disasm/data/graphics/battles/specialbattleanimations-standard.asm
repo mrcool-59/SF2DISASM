@@ -51,7 +51,8 @@ table_SpellcastAnimationsForEnemies:
                 dc.w ENEMY_CERBERUS, ENEMYBATTLEANIMATION_SPECIAL_HELL_HOUND
                 dc.w ENEMY_DEVIL_GRIFFIN, ENEMYBATTLEANIMATION_SPECIAL_DEVIL_GRIFFIN
                 dc.w ENEMY_ODD_EYE, ENEMYBATTLEANIMATION_SPECIAL_ODD_EYE
-                
+                dc.w ENEMY_GRIFFIN, ENEMYBATTLEANIMATION_SPECIAL_DEVIL_GRIFFIN
+				
                 tableEnd
 
 
