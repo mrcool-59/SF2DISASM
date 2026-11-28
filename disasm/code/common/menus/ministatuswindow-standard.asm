@@ -178,6 +178,10 @@ OpenEnemyBattlesceneMiniStatusWindow:
                 cmpi.b  #-1,d0
                 beq.w   return_11714
                 
+			if (FIX_BATTLESCENE_WINDOW_OVERLAP=1)
+				clsTxt
+			endif
+				
                 movem.l d0-a1,-(sp)
                 move.w  d1,-(sp)
                 move.b  #-1,((IS_TARGETING-$1000000)).w
