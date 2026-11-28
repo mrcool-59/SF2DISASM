@@ -96,27 +96,27 @@ table_SpellDefinitions:
                 power      0
                 
                 entry      DETOX|LV2    ; DETOX 2
-                mpCost     5
+                mpCost     6
                 animation  DETOX|VARIATION2
-                properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
-                range      0, 2
-                radius     0
-                power      0
-                
-                entry      DETOX|LV3    ; DETOX 3
-                mpCost     9
-                animation  DETOX|VARIATION3
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 2
                 radius     1
                 power      0
                 
-                entry      DETOX|LV4    ; DETOX 4
-                mpCost     15
-                animation  DETOX|VARIATION4
+                entry      DETOX|LV3    ; DETOX 3
+                mpCost     12
+                animation  DETOX|VARIATION3
                 properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
                 range      0, 3
                 radius     2
+                power      0
+                
+                entry      DETOX|LV4    ; DETOX 4
+                mpCost     25
+                animation  DETOX|VARIATION4
+                properties TYPE_HEAL|TARGET_TEAMMATES|AFFECTEDBYSILENCE
+                range      0, 0
+                radius     0
                 power      0
                 
                 entry      BOOST        ; BOOST 1

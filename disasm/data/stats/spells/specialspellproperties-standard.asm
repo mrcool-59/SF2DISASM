@@ -6,6 +6,7 @@ table_AllTargetingSpells:
                 
                 ; Spell entry (index|level), target opponents toggle (0 = same side, -1 = opponents)
                 dc.b SPELL_AURA|SPELL_LV4, 0
+                dc.b SPELL_DETOX|SPELL_LV4, 0
 				dc.b SPELL_SLOW|SPELL_LV3, -1
 				dc.b SPELL_SLEEP|SPELL_LV3, -1
 				dc.b SPELL_SKIP_BATTLE|SPELL_LV1, -1
