@@ -252,7 +252,7 @@
 0250=00FA=Muttered terrible words.
 0251=00FB=HP drained!
 0252=00FC=Said evil words.
-0253=00FD=Stunned!  Can't move!
+0253=00FD=Paralyzed!  Can't move!
 0254=00FE=Was poisoned.
 0255=00FF=Belched out flames!
 0256=0100=Became an amnesiac!  Gosh!
@@ -301,14 +301,14 @@
 0299=012B=Everybody recovered{N}{#} hit points.
 0300=012C={NAME} recovered{N}{#} magic points.
 0301=012D={NAME} is no longer{N}poisoned.
-0302=012E={NAME} is no longer{N}stunned.
+0302=012E={NAME} is no longer{N}paralyzed.
 0303=012F={NAME} is no longer{N}cursed.
 0304=0130={NAME}'s soul was{N}stolen.
 0305=0131={NAME}'s soul was{N}stolen. *
 0306=0132={NAME} is sleeping.{D3}
 0307=0133={CLEAR}{NAME} gets damaged{N}by {#} because of the poison.{D3}
 0308=0134={NAME} is exhausted.{D3}
-0309=0135={NAME} is stunned.{D3}
+0309=0135={NAME} is paralyzed.{D3}
 0310=0136={NAME} put on{N}a demon's smile.
 0311=0137={NAME}'s MP was{N}drained by {#}.
 0312=0138=But nothing happened.
@@ -346,7 +346,7 @@
 0344=0158={NAME}'s max. HP{N}increased by {#}.
 0345=0159={NAME}'s movement{N}range increased by {#}.
 0346=015A={NAME} becomes{N}confused.
-0347=015B={NAME} is{N}stunned.
+0347=015B={NAME} is paralyzed.
 0348=015C={CLEAR}{SPELL} expired.{N}Agility and defense{N}return to normal.{D3}
 0349=015D={CLEAR}{SPELL} expired.{N}Agility and defense{N}return to normal.{D3} *
 0350=015E={CLEAR}{SPELL} expired.{N}Attack returns to normal.{D3}
@@ -357,10 +357,10 @@
 0355=0163={CLEAR}{NAME} is fine.{D3}
 0356=0164={CLEAR}{NAME} recovered{N}{#} hit points.{D3}
 0357=0165={CLEAR}{NAME} recovered{N}{#} magic points.{D3}
-0358=0166={CLEAR}{NAME} is no longer stunned.{D3}
-0359=0167={NAME} is cursed!{D3}{N}And is stunned.{N}
+0358=0166={CLEAR}{NAME} is no longer paralyzed.{D3}
+0359=0167={NAME} is cursed!{D3}{N}And is paralyzed.{N}
 0360=0168={NAME} is cursed!{D3}{N}And is damaged by {#}.
-0361=0169={NAME} is stunned.{N}And can't move.
+0361=0169={NAME} is paralyzed.{N}And can't move.
 0362=016A={DICT}{W2}
 0363=016B={LEADER} is exhausted.{W1}
 0364=016C=There are monsters ahead!{N}Will you sneak past them?
