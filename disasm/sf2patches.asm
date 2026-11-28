@@ -210,6 +210,7 @@ AGILITY_AFFECTS_DOUBLE_ATTACK:      equ 1       ; Adjust chance to perform a dou
 JEWELS_GRANT_STATUS_RESISTANCE:		equ 1		; 0 = OFF, 1 = ON   If enabled, give major/immunity to status effects to Bowie when he gets the Jewels.
 UNRESISTED_SLOW_ALWAYS_LAND:		equ 0		; 0 = OFF, 1 = ON   If enabled, Slow debuff will always land successfully if the target has no status resistance (this is enabled in the base game).
 MUDDLE1_IGNORES_STATUS_RESISTANCE:  equ 0		; 0 = OFF, 1 = ON	If enabled, Muddle 1 will ignore status resistance of the target (this is enabled in the base game).
+DAMAGE_CURE_SLEEP:					equ 0		; 0 = OFF, 1 = ON	If enabled, receiving damage will cure sleep status ailment.
 
 
 ; Menu enhancements

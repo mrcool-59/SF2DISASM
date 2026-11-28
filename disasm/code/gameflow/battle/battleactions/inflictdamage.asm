@@ -35,6 +35,10 @@ cutoff = -1
 battlesceneScript_InflictDamage:
                 
                 module
+			if (STANDARD_BUILD&DAMAGE_CURE_SLEEP=1)
+                movem.w d3,-(sp)
+				clr.w   d3				; d3.w = has awakened flag
+			endif
                 move.b  (a5),d0
                 jsr     GetEnemy        
                 cmpi.w  #ENEMY_TAROS,d1 ; if enemy target is Taros, check if attack is ineffective
@@ -111,6 +115,18 @@ battlesceneScript_InflictDamage:
 @WriteScriptCommands:
                 
                 jsr     GetStatusEffects
+			if (STANDARD_BUILD&DAMAGE_CURE_SLEEP=1)
+				tst.w   targetDies(a2)
+				bne.s   @SkipWakeUp
+				movem.w d1,-(sp)
+				andi.w  #STATUSEFFECT_SLEEP,d1
+				movem.w (sp)+,d1
+				beq.s   @SkipWakeUp
+				andi.w  #$FFFF-STATUSEFFECT_SLEEP,d1
+                move.w  #-1,d3
+@SkipWakeUp:
+			endif
+                
                 btst    #COMBATANT_BIT_ENEMY,d0
                 bne.s   @Enemy
                 executeAllyReaction d2,#0,d1,#1 ; HP change (signed), MP change (signed), Status Effects, Flags
@@ -149,8 +165,15 @@ battlesceneScript_InflictDamage:
 @BattleMessage:
                 
                 displayMessage d1,(a5),#0,d6 ; Message, Combatant, Item or Spell, Number
+			if (STANDARD_BUILD&DAMAGE_CURE_SLEEP=1)
+				tst.w	d3
+				beq.s	@Return
+				displayMessage #354,(a5),#0,0 ; "{CLEAR}{NAME} has awakened.{D3}"
+			endif
 @Return:
-                
+			if (STANDARD_BUILD&DAMAGE_CURE_SLEEP=1)
+                movem.w (sp)+,d3
+			endif
                 rts
 
     ; End of function battlesceneScript_InflictDamage
