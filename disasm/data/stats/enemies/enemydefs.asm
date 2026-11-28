@@ -2102,7 +2102,7 @@ table_EnemyDefinitions:
                     NOTHING, &
                     NOTHING
                 spells &
-                    HEAL|LV4, &
+                    HEAL|LV3, &
                     DISPEL, &
                     NOTHING, &
                     NOTHING
