@@ -741,9 +741,9 @@ spellEffect_PowerWater:
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @Continue:
                 
-                moveq   #3,d0
+                moveq   #STAT_BOOST_MAX-STAT_BOOST_MIN+1,d0
                 jsr     (GenerateRandomOrDebugNumber).w
-                addq.w  #2,d0
+                addq.w  #STAT_BOOST_MIN,d0
                 displayMessage #MESSAGE_BATTLE_ATTACK_POWER_IS_BOOSTED_BY,(a5),#0,d0 
                                                         ; Message, Combatant, Item or Spell, Number
                 move.w  d0,d1
@@ -773,9 +773,9 @@ spellEffect_ProtectMilk:
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
                 
-                moveq   #3,d0
+                moveq   #STAT_BOOST_MAX-STAT_BOOST_MIN+1,d0
                 jsr     (GenerateRandomOrDebugNumber).w
-                addq.w  #2,d0
+                addq.w  #STAT_BOOST_MIN,d0
                 displayMessage #MESSAGE_BATTLE_DEFENSIVE_POWER_IS_BOOSTED_BY,(a5),#0,d0 
                                                         ; Message, Combatant, Item or Spell, Number
                 move.w  d0,d1
@@ -805,9 +805,9 @@ spellEffect_QuickChicken:
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
                 
-                moveq   #3,d0
+                moveq   #STAT_BOOST_MAX-STAT_BOOST_MIN+1,d0
                 jsr     (GenerateRandomOrDebugNumber).w
-                addq.w  #2,d0
+                addq.w  #STAT_BOOST_MIN,d0
                 displayMessage #MESSAGE_BATTLE_AGILITY_IS_BOOSTED_BY,(a5),#0,d0 
                                                         ; Message, Combatant, Item or Spell, Number
                 move.w  d0,d1
@@ -839,12 +839,12 @@ spellEffect_RunningPimento:
                 
                 jsr     GetBaseMov
                 clr.w   d2
-                cmpi.b  #9,d1
+                cmpi.b  #STAT_BOOST_MOV_CAP,d1
                 beq.w   @BattleMessage
                 moveq   #1,d2
-                cmpi.b  #8,d1
+                cmpi.b  #STAT_BOOST_MOV_CAP-1,d1
                 beq.w   @BattleMessage
-                moveq   #2,d2
+                moveq   #STAT_BOOST_MOV,d2
 @BattleMessage:
                 
                 displayMessage #MESSAGE_BATTLE_MOVEMENT_RANGE_IS_ENLARGED_BY,d0,#0,d2 
@@ -875,9 +875,9 @@ spellEffect_CheerfulBread:
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @Message:
                 
-                moveq   #3,d0
+                moveq   #STAT_BOOST_MAX-STAT_BOOST_MIN+1,d0
                 jsr     (GenerateRandomOrDebugNumber).w
-                addq.w  #2,d0
+                addq.w  #STAT_BOOST_MIN+STAT_BOOST_HP_BONUS,d0
                 displayMessage #MESSAGE_BATTLE_MAX_HP_ARE_RAISED_BY,(a5),#0,d0 
                                                         ; Message, Combatant, Item or Spell, Number
                 move.w  d0,d1
@@ -914,9 +914,9 @@ spellEffect_BrightHoney:
                 executeEnemyReaction #0,#0,d1,#2 ; HP change (signed), MP change (signed), Status Effects, Flags
 @BattleMessage:
                 
-                moveq   #3,d0
+                moveq   #STAT_BOOST_MAX-STAT_BOOST_MIN+1,d0
                 jsr     (GenerateRandomOrDebugNumber).w
-                addq.w  #2,d0
+                addq.w  #STAT_BOOST_MIN+STAT_BOOST_MP_BONUS,d0
                 displayMessage #MESSAGE_BATTLE_MAX_MP_ARE_RAISED_BY,(a5),#0,d0 
                                                         ; Message, Combatant, Item or Spell, Number
                 move.w  d0,d1

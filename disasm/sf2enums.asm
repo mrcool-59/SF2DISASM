@@ -1197,7 +1197,7 @@ MODIFY_STATUS3: equ $C000
 ; ---------------------------------------------------------------------------
 
 ; enum ItemStatBoosters
-STAT_BOOST_MOV: equ 2
+STAT_BOOST_MOV: equ 2 ; NOTE: the current MOV increase code won't handle correctly a value higher than 2
 STAT_BOOST_MIN: equ 3
 STAT_BOOST_MAX: equ 3
 STAT_BOOST_HP_BONUS: equ 2
