@@ -46,12 +46,11 @@ battlesceneScript_InflictAilment:
                 movea.l pt_InflictAilmentFunctions(pc,d2.w),a1
                 jsr     (a1)
                 btst    #COMBATANT_BIT_ENEMY,d0
-                bne.s   byte_AE76       ; @Reaction_Enemy
+                bne.s   @Enemy
                 executeAllyReaction #0,#0,d1,#0 ; HP change (signed), MP change (signed), Status Effects, Flags
                 bra.s   @Return
-byte_AE76:
+@Enemy:
                 
-                @Reaction_Enemy:
                 executeEnemyReaction #0,#0,d1,#0 ; HP change (signed), MP change (signed), Status Effects, Flags
 @Return:
                 
@@ -69,23 +68,19 @@ pt_InflictAilmentFunctions:
                 dc.l inflictAilment_AbsorbMp
                 dc.l inflictAilment_Silence
 inflictAilment_Poison:
-                displayMessageWithNoWait #MESSAGE_BATTLE_IS_POISONED,d0,#0,#0 
-                                                        ; Message, Combatant, Item or Spell, Number
+                displayMessage #MESSAGE_BATTLE_IS_POISONED,d0,#0,#0 ; Message, Combatant, Item or Spell, Number
                 ori.w   #STATUSEFFECT_POISON,d1
                 rts
 inflictAilment_Sleep:
-                displayMessageWithNoWait #MESSAGE_BATTLE_FELL_ASLEEP,d0,#0,#0 
-                                                        ; Message, Combatant, Item or Spell, Number
+                displayMessage #MESSAGE_BATTLE_FELL_ASLEEP,d0,#0,#0 ; Message, Combatant, Item or Spell, Number
                 ori.w   #STATUSEFFECT_SLEEP,d1
                 rts
 inflictAilment_Stun:
-                displayMessageWithNoWait #MESSAGE_BATTLE_IS_STUNNED,d0,#0,#0 
-                                                        ; Message, Combatant, Item or Spell, Number
+                displayMessage #MESSAGE_BATTLE_IS_STUNNED,d0,#0,#0 ; Message, Combatant, Item or Spell, Number
                 ori.w   #STATUSEFFECT_STUN,d1
                 rts
 inflictAilment_Muddle:
-                displayMessageWithNoWait #MESSAGE_BATTLE_BECOMES_CONFUSED,d0,#0,#0 
-                                                        ; Message, Combatant, Item or Spell, Number
+                displayMessage #MESSAGE_BATTLE_BECOMES_CONFUSED,d0,#0,#0 ; Message, Combatant, Item or Spell, Number
                 ori.w   #STATUSEFFECT_MUDDLE2,d1
                 ori.w   #STATUSEFFECT_MUDDLE,d1
                 rts
@@ -132,8 +127,7 @@ inflictAilment_Silence:
                 jsr     GetSpellAndNumberOfSpells
                 tst.w   d2
                 beq.s   @Skip           ; skip if target has no spells
-                displayMessageWithNoWait #MESSAGE_BATTLE_HAS_BEEN_SILENCED,d0,#0,#0 
-                                                        ; Message, Combatant, Item or Spell, Number
+                displayMessage #MESSAGE_BATTLE_HAS_BEEN_SILENCED,d0,#0,#0 ; Message, Combatant, Item or Spell, Number
                 ori.w   #STATUSEFFECT_SILENCE,d3
 @Skip:
                 
