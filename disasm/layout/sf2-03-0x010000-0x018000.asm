@@ -45,7 +45,8 @@
                 include "data\graphics\tech\windowlayouts\allykilldefeatwindowlayout.asm"    ; Member screen kills and defeat window layout
                 include "data\graphics\tech\windowlayouts\goldwindowlayout.asm"    ; Member screen gold window layout
             endif
-                include "code\common\menus\minimapscreen.asm"    ; Menu engine, part 5 : Minimap screen functions
+                includeIfStandard "code\common\menus\minimapscreen-standard.asm"    ; Menu engine, part 5 : Minimap screen functions
+                includeIfVanilla "code\common\menus\minimapscreen.asm"    ; Menu engine, part 5 : Minimap screen functions
                 include "code\common\menus\endingkiss.asm"    ; Ending kiss sequence function
                 includeIfStandard "code\specialscreens\endkiss\endkissfunctions_0.asm"    ; End kiss function
                 includeIfStandard "code\common\menus\goldwindow-standard.asm"
