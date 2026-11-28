@@ -6,7 +6,7 @@ table_SpecialCriticalHitsForClasses:
                 
                 ; Class index, n/256 chance to crit, ally animation index
                 dc.w CLASS_MMNK, 16, ALLYBATTLEANIMATION_SPECIAL_MMNK
-                dc.w CLASS_RBT, 16, ALLYBATTLEANIMATION_SPECIAL_RBT
+                ; dc.w CLASS_RBT, 16, ALLYBATTLEANIMATION_SPECIAL_RBT
                 
                 tableEnd
 
@@ -41,6 +41,7 @@ table_SpellcastAnimationsForClasses:
                 dc.w CLASS_MNST, ALLYBATTLEANIMATION_SPECIAL_MNST
 				dc.w CLASS_PHNK, ALLYBATTLEANIMATION_SPECIAL_IXEN
 				dc.w CLASS_34, ALLYBATTLEANIMATION_SPECIAL_SUNNY_CAST
+				dc.w CLASS_RBT, ALLYBATTLEANIMATION_SPECIAL_RBT
 
                 tableEnd
 
@@ -63,6 +64,7 @@ table_UseItemAnimationsForClasses:
 				dc.w CLASS_PHNX, ALLYBATTLEANIMATION_SPECIAL_IXEN_PROMOTED_ITEM
 				dc.w CLASS_34, ALLYBATTLEANIMATION_SPECIAL_SUNNY_CAST
 				dc.w CLASS_35, ALLYBATTLEANIMATION_SPECIAL_KIWI_SPECIAL_ITEM
+				dc.w CLASS_RBT, ALLYBATTLEANIMATION_SPECIAL_RBT
 
                 tableEnd
 
