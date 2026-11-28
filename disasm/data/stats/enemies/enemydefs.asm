@@ -1690,7 +1690,7 @@ table_EnemyDefinitions:
                 level    41
                 maxHp    67
                 maxMp    0
-                baseAtt  56
+                baseAtt  58
                 baseDef  57
                 baseAgi  55
                 baseMov  7
