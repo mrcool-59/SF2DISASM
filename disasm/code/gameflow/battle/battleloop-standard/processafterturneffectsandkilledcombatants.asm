@@ -200,14 +200,27 @@ ApplyAfterTurnRecovery:
                 add.w   d1,d5
                 
 @CheckRingHp:   move.w  d4,d1
-                bmi.s   @RecoverHp          ; skip if no equipped ring
+                bmi.s   @CheckClass       ; skip if no equipped ring
                 lea     table_AfterTurnHpRecoveryForRings(pc), a0
                 jsr     (FindSpecialPropertyBytesAddressForObject).w
-                bcs.s   @RecoverHp
+                bcs.s   @CheckClass
                 clr.w   d1
                 move.b  (a0),d1
                 add.w   d1,d5
                 
+@CheckClass:    jsr		GetClass	; d1.w = class index of combatant
+                lea     table_AfterTurnHpRecoveryPercentageForClasses(pc), a0
+                jsr     (FindSpecialPropertyBytesAddressForObject).w
+                bcs.s   @RecoverHp
+                clr.w   d6
+                move.b  (a0),d6		; d6.w = recovery percentage
+				jsr     GetMaxHp	; d1.w = max HP
+				mulu.w  d6,d1		; d1.w = max HP * recovery percentage
+				lsr.w   #1,d6		; d6.w = recovery percentage / 2
+				add.w   d6,d1
+				divu.w  #100,d1		; d1.w = (max HP * recovery percentage + recovered percentage / 2) / 100
+                add.w   d1,d5
+
 @RecoverHp:     tst.w   d5
                 beq.s   @CheckWeaponMp
                 jsr     GetCurrentHp

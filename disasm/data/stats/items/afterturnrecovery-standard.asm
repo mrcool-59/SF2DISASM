@@ -28,3 +28,11 @@ table_AfterTurnMpRecoveryForWeapons:
 table_AfterTurnMpRecoveryForRings:
                 
                 tableEnd.b
+
+
+table_AfterTurnHpRecoveryPercentageForClasses:
+                
+                dc.b CLASS_32, 10
+                dc.b CLASS_33, 15
+                
+                tableEnd.b
